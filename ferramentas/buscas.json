@@ -67,15 +67,6 @@
     "views": "9.990 visualizações"
    },
    {
-    "id": "dKdxC78NwWY",
-    "titulo": "Randolfe anuncia: Petrobras fará exercício na Margem Equatorial no dia 24 de agosto",
-    "canal": "Vozes da Amazônia: O GUARANI em Podcasts",
-    "canal_id": "UCCg2wphaAKWlZx0PEfGtzIQ",
-    "duracao": "1:57",
-    "quando": "há 1 ano",
-    "views": "841 visualizações"
-   },
-   {
     "id": "23_P2jwAAbs",
     "titulo": "Petrobras detalha descoberta de petróleo no Amapá",
     "canal": "Record News",
@@ -83,6 +74,15 @@
     "duracao": "1:57",
     "quando": "há 1 mês",
     "views": "6.663 visualizações"
+   },
+   {
+    "id": "dKdxC78NwWY",
+    "titulo": "Randolfe anuncia: Petrobras fará exercício na Margem Equatorial no dia 24 de agosto",
+    "canal": "Vozes da Amazônia: O GUARANI em Podcasts",
+    "canal_id": "UCCg2wphaAKWlZx0PEfGtzIQ",
+    "duracao": "1:57",
+    "quando": "há 1 ano",
+    "views": "841 visualizações"
    },
    {
     "id": "Qo_pTF8U0wo",
@@ -163,15 +163,6 @@
     "views": "1.832 visualizações"
    },
    {
-    "id": "IDgvdnZ5MaU",
-    "titulo": "Petrobras aguarda avaliação para exploração da Margem Equatorial",
-    "canal": "Jovem Pan News",
-    "canal_id": "UCP391YRAjSOdM_bwievgaZA",
-    "duracao": "2:14",
-    "quando": "há 1 ano",
-    "views": "675 visualizações"
-   },
-   {
     "id": "KpRgyDXuM2Y",
     "titulo": "No CNN Talks, Magda Chambriard fala sobre transição energética | ABERTURA DE MERCADO",
     "canal": "CNN Brasil Money",
@@ -179,6 +170,15 @@
     "duracao": "36:10",
     "quando": "há 6 meses",
     "views": "1.904 visualizações"
+   },
+   {
+    "id": "IDgvdnZ5MaU",
+    "titulo": "Petrobras aguarda avaliação para exploração da Margem Equatorial",
+    "canal": "Jovem Pan News",
+    "canal_id": "UCP391YRAjSOdM_bwievgaZA",
+    "duracao": "2:14",
+    "quando": "há 1 ano",
+    "views": "675 visualizações"
    },
    {
     "id": "R25QBHk2OgY",
@@ -206,6 +206,15 @@
     "duracao": "34:54",
     "quando": "há 6 meses",
     "views": "1.179 visualizações"
+   },
+   {
+    "id": "D0YM6wpXvBw",
+    "titulo": "Conversa com Hildegard Angel - Magda Chambriard: Exploração da Margem Equatorial pode mudar o Brasil",
+    "canal": "TV 247",
+    "canal_id": "UCRuy5PigeeBuecKnwqhM4yg",
+    "duracao": "1:28:23",
+    "quando": "Transmitido há 1 ano",
+    "views": "18.766 visualizações"
    },
    {
     "id": "SNcmRFfKP5c",
@@ -253,15 +262,6 @@
     "views": "9.023 visualizações"
    },
    {
-    "id": "D0YM6wpXvBw",
-    "titulo": "Conversa com Hildegard Angel - Magda Chambriard: Exploração da Margem Equatorial pode mudar o Brasil",
-    "canal": "TV 247",
-    "canal_id": "UCRuy5PigeeBuecKnwqhM4yg",
-    "duracao": "1:28:23",
-    "quando": "Transmitido há 1 ano",
-    "views": "18.766 visualizações"
-   },
-   {
     "id": "8aQ1GYKGWx0",
     "titulo": "Magda Chambriard: gestão de desafios na Petrobras",
     "canal": "fatorbrasil",
@@ -295,15 +295,6 @@
     "views": "1.871 visualizações"
    },
    {
-    "id": "aQc6jcHwwA0",
-    "titulo": "Guilherme Estrella: Petróleo na margem equatorial e soberania energética do Brasil",
-    "canal": "Rede Unidade e Resistência",
-    "canal_id": "UC06BC5VZ2uIiZPNSiYb_4XQ",
-    "duracao": "19:16",
-    "quando": "há 1 ano",
-    "views": "9 visualizações"
-   },
-   {
     "id": "mFalHWXyknc",
     "titulo": "Lula defende exploração de petróleo na Margem Equatorial",
     "canal": "Poder360",
@@ -331,22 +322,13 @@
     "views": "528 visualizações"
    },
    {
-    "id": "tsb-FGOM4-Y",
-    "titulo": "Margem Equatorial: os planos da Petrobras para a nova fronteira energética",
-    "canal": "InvestNews BR",
-    "canal_id": "UCo0jMsIPccAXghE_FCWIdNg",
-    "duracao": "6:06",
-    "quando": "há 11 meses",
-    "views": "42.801 visualizações"
-   },
-   {
-    "id": "_EDt33fRaso",
-    "titulo": "CONEXÃO MARGEM EQUATORIAL 27ago26",
-    "canal": "ALM - TREINAMENTO, DESENVOLVIMENTO & CONSULTORIA",
-    "canal_id": "UC89R8LDNAx5JW44944v8rGA",
-    "duracao": "33:06",
-    "quando": "há 1 mês",
-    "views": "318 visualizações"
+    "id": "aQc6jcHwwA0",
+    "titulo": "Guilherme Estrella: Petróleo na margem equatorial e soberania energética do Brasil",
+    "canal": "Rede Unidade e Resistência",
+    "canal_id": "UC06BC5VZ2uIiZPNSiYb_4XQ",
+    "duracao": "19:16",
+    "quando": "há 1 ano",
+    "views": "9 visualizações"
    },
    {
     "id": "qBlloyDFU_U",
@@ -358,6 +340,15 @@
     "views": "2.110 visualizações"
    },
    {
+    "id": "_EDt33fRaso",
+    "titulo": "CONEXÃO MARGEM EQUATORIAL 27ago26",
+    "canal": "ALM - TREINAMENTO, DESENVOLVIMENTO & CONSULTORIA",
+    "canal_id": "UC89R8LDNAx5JW44944v8rGA",
+    "duracao": "33:06",
+    "quando": "há 1 mês",
+    "views": "318 visualizações"
+   },
+   {
     "id": "3VkyEX_CnB4",
     "titulo": "Petrobras confirma petróleo no Amapá | Especial Margem Equatorial",
     "canal": "Cidades & Negócios. Revista de Direito Público",
@@ -365,6 +356,15 @@
     "duracao": "1:15",
     "quando": "há 1 mês",
     "views": "65 visualizações"
+   },
+   {
+    "id": "tsb-FGOM4-Y",
+    "titulo": "Margem Equatorial: os planos da Petrobras para a nova fronteira energética",
+    "canal": "InvestNews BR",
+    "canal_id": "UCo0jMsIPccAXghE_FCWIdNg",
+    "duracao": "6:06",
+    "quando": "há 11 meses",
+    "views": "42.801 visualizações"
    },
    {
     "id": "H_ZPm_HFtbU",
@@ -385,15 +385,6 @@
     "views": "547 visualizações"
    },
    {
-    "id": "3G2oB2plxM0",
-    "titulo": "Análise: Petrobras quer apoio de ministros por Margem Equatorial  \\ WW",
-    "canal": "CNN Brasil",
-    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
-    "duracao": "16:59",
-    "quando": "há 2 anos",
-    "views": "9.518 visualizações"
-   },
-   {
     "id": "Puv9ASkXAps",
     "titulo": "Petrobras: o que está em jogo na Margem Equatorial",
     "canal": "Seu Dinheiro",
@@ -401,6 +392,15 @@
     "duracao": "0:42",
     "quando": "há 10 meses",
     "views": "789 visualizações"
+   },
+   {
+    "id": "3G2oB2plxM0",
+    "titulo": "Análise: Petrobras quer apoio de ministros por Margem Equatorial  \\ WW",
+    "canal": "CNN Brasil",
+    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
+    "duracao": "16:59",
+    "quando": "há 2 anos",
+    "views": "9.518 visualizações"
    },
    {
     "id": "CLSUKEw7Rs0",
@@ -452,15 +452,6 @@
     "duracao": "1:51",
     "quando": "há 11 meses",
     "views": "7.361 visualizações"
-   },
-   {
-    "id": "LHqs2O95UY8",
-    "titulo": "Ze Trovão e Marina debatem sobre exploração de petróleo na Amazônia",
-    "canal": "Portal Uai",
-    "canal_id": "UCwhewR9UsxcBiG3LGZiA0bw",
-    "duracao": "6:12",
-    "quando": "há 3 anos",
-    "views": "712.672 visualizações"
    },
    {
     "id": "uSDVFcHqkec",
@@ -560,6 +551,15 @@
     "duracao": "1:01",
     "quando": "há 3 anos",
     "views": "1.137 visualizações"
+   },
+   {
+    "id": "-_5zX77eRhE",
+    "titulo": "Marina Silva: uma espécie de greenwash governamental, pouco ouvida na exploração de petróleo",
+    "canal": "Meio",
+    "canal_id": "UCugK_9W-5o56H0pEnJtFQnw",
+    "duracao": "14:00",
+    "quando": "há 9 meses",
+    "views": "2.397 visualizações"
    }
   ]
  },
@@ -568,6 +568,15 @@
   "busca": "Observatório do Clima foz do Amazonas petróleo",
   "resultados": [
    {
+    "id": "n5q7XswP4sE",
+    "titulo": "Quais são os desafios da exploração de petróleo na Foz do Amazonas? | JP SUSTENTÁVEL",
+    "canal": "Jovem Pan News",
+    "canal_id": "UCP391YRAjSOdM_bwievgaZA",
+    "duracao": "1:19",
+    "quando": "há 11 meses",
+    "views": "630 visualizações"
+   },
+   {
     "id": "SBlrTYrqXMQ",
     "titulo": "O que a Petrobras encontrou na Foz do Amazonas?",
     "canal": "ClimaInfo",
@@ -575,15 +584,6 @@
     "duracao": "1:00:27",
     "quando": "Transmitido há 1 mês",
     "views": "328 visualizações"
-   },
-   {
-    "id": "mwEwQfj6XEA",
-    "titulo": "Exploração de petróleo na foz do Amazonas ameaça santuário ecológico",
-    "canal": "TV Unicamp",
-    "canal_id": "UCIbv86TkZal7E9QWkatWBLA",
-    "duracao": "34:40",
-    "quando": "há 11 meses",
-    "views": "497 visualizações"
    },
    {
     "id": "JAo4IzWiClI",
@@ -595,31 +595,13 @@
     "views": "4.305 visualizações"
    },
    {
-    "id": "ExZYH-LWu6w",
-    "titulo": "Quais os impactos da exploração de petróleo na foz do Amazonas?",
-    "canal": "Brasil de Fato",
-    "canal_id": "UCOnuheHbS2DgZiAZFL0-Sbg",
-    "duracao": "3:53",
-    "quando": "há 1 ano",
-    "views": "14.626 visualizações"
-   },
-   {
-    "id": "n5q7XswP4sE",
-    "titulo": "Quais são os desafios da exploração de petróleo na Foz do Amazonas? | JP SUSTENTÁVEL",
-    "canal": "Jovem Pan News",
-    "canal_id": "UCP391YRAjSOdM_bwievgaZA",
-    "duracao": "1:19",
+    "id": "mwEwQfj6XEA",
+    "titulo": "Exploração de petróleo na foz do Amazonas ameaça santuário ecológico",
+    "canal": "TV Unicamp",
+    "canal_id": "UCIbv86TkZal7E9QWkatWBLA",
+    "duracao": "34:40",
     "quando": "há 11 meses",
-    "views": "630 visualizações"
-   },
-   {
-    "id": "oVcDm8UBR7E",
-    "titulo": "Petrobrás anuncia nova descoberta de petróleo na foz amazonas",
-    "canal": "Canal Rural",
-    "canal_id": "UCcmbSgSpK0dQhw3IBaBGo-g",
-    "duracao": "1:33",
-    "quando": "há 12 dias",
-    "views": "565 visualizações"
+    "views": "497 visualizações"
    },
    {
     "id": "6JJ2yQ-yTVE",
@@ -631,6 +613,24 @@
     "views": "5.672 visualizações"
    },
    {
+    "id": "oVcDm8UBR7E",
+    "titulo": "Petrobrás anuncia nova descoberta de petróleo na foz amazonas",
+    "canal": "Canal Rural",
+    "canal_id": "UCcmbSgSpK0dQhw3IBaBGo-g",
+    "duracao": "1:33",
+    "quando": "há 12 dias",
+    "views": "565 visualizações"
+   },
+   {
+    "id": "ExZYH-LWu6w",
+    "titulo": "Quais os impactos da exploração de petróleo na foz do Amazonas?",
+    "canal": "Brasil de Fato",
+    "canal_id": "UCOnuheHbS2DgZiAZFL0-Sbg",
+    "duracao": "3:53",
+    "quando": "há 1 ano",
+    "views": "14.626 visualizações"
+   },
+   {
     "id": "frCo7wKyLc8",
     "titulo": "Petrobras anuncia nova descoberta de petróleo na Foz do Amazonas | #NewsNoite",
     "canal": "SBT News",
@@ -640,22 +640,22 @@
     "views": "17.461 visualizações"
    },
    {
-    "id": "I8PH_WHoja4",
-    "titulo": "Riscos da exploração de petróleo na foz do Amazonas",
-    "canal": "PROAM-Instituto Brasileiro de Proteção Ambiental  ",
-    "canal_id": "UCuWHF_kJgmoUZ-0R48tmZ4A",
-    "duracao": "8:37",
-    "quando": "há 3 anos",
-    "views": "785 visualizações"
+    "id": "Qch7tvsGoDM",
+    "titulo": "Petrobras encontra indícios de petróleo na Foz do Amazonas | #NewsSábado",
+    "canal": "SBT News",
+    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
+    "duracao": "16:52",
+    "quando": "há 1 mês",
+    "views": "13.260 visualizações"
    },
    {
-    "id": "HZfsmPmcvyc",
-    "titulo": "Ibama libera exploração de petróleo na foz do rio Amazonas; Patrícia Costa comenta",
-    "canal": "Jovem Pan News",
-    "canal_id": "UCP391YRAjSOdM_bwievgaZA",
-    "duracao": "1:27",
-    "quando": "há 11 meses",
-    "views": "951 visualizações"
+    "id": "0wg91dSPHZw",
+    "titulo": "Petrobras anuncia descoberta de petróleo na Foz do Amazonas | HORA H",
+    "canal": "CNN Brasil e CNN Brasil Money",
+    "canal_id": null,
+    "duracao": "12:09",
+    "quando": "há 2 meses",
+    "views": "52.346 visualizações"
    },
    {
     "id": "JhEUvtRPeLM",
@@ -676,24 +676,6 @@
     "views": "5.528 visualizações"
    },
    {
-    "id": "VjBta3wid5k",
-    "titulo": "Exploração de petróleo na Foz do Amazonas reacende disputa entre Ibama, Petrobras e ala ambiental...",
-    "canal": "Rádio CBN",
-    "canal_id": "UCbiGwU0-W1XCDUrt3BTVrag",
-    "duracao": "7:40",
-    "quando": "há 11 meses",
-    "views": "2.120 visualizações"
-   },
-   {
-    "id": "0wg91dSPHZw",
-    "titulo": "Petrobras anuncia descoberta de petróleo na Foz do Amazonas | HORA H",
-    "canal": "CNN Brasil e CNN Brasil Money",
-    "canal_id": null,
-    "duracao": "12:09",
-    "quando": "há 2 meses",
-    "views": "52.346 visualizações"
-   },
-   {
     "id": "8zavEblDI04",
     "titulo": "Petrobras identificou indícios de petróleo na Foz do Amazonas #brasil",
     "canal": "MM MONTEIROS",
@@ -701,6 +683,24 @@
     "duracao": "0:15",
     "quando": "há 1 mês",
     "views": "1.042 visualizações"
+   },
+   {
+    "id": "Nl0ldQRS4s8",
+    "titulo": "Exploração de petróleo na Foz do Amazonas e mais notícias socioambientais - VERDE MAR #73",
+    "canal": "CUMULUS TV",
+    "canal_id": "UCBNUPpxK5WNm54dul-grxvg",
+    "duracao": "24:13",
+    "quando": "Transmitido há 6 anos",
+    "views": "230 visualizações"
+   },
+   {
+    "id": "pXzU2J-vq8o",
+    "titulo": "Exploração de petróleo na foz do rio Amazonas divide opiniões - 24/11/2022",
+    "canal": "Câmara dos Deputados",
+    "canal_id": "UC-ZkSRh-7UEuwXJQ9UMCFJA",
+    "duracao": "3:38",
+    "quando": "há 3 anos",
+    "views": "831 visualizações"
    }
   ]
  },
@@ -745,13 +745,40 @@
     "views": "11.495 visualizações"
    },
    {
-    "id": "bBZTjXtWDq4",
-    "titulo": "⛽ Infra em 1 Minuto: Exploração de petróleo na Margem Equatorial",
+    "id": "W0Y044qfGLE",
+    "titulo": "Petróleo na Margem Equatorial - 10/11/2025 #BoraEntender",
+    "canal": "Câmara dos Deputados",
+    "canal_id": "UC-ZkSRh-7UEuwXJQ9UMCFJA",
+    "duracao": "1:01:01",
+    "quando": "Transmitido há 11 meses",
+    "views": "542 visualizações"
+   },
+   {
+    "id": "mFalHWXyknc",
+    "titulo": "Lula defende exploração de petróleo na Margem Equatorial",
     "canal": "Poder360",
     "canal_id": "UCFCiSRbCVwQ_BQaDQBYxN_A",
-    "duracao": "2:15",
+    "duracao": "2:45",
     "quando": "há 11 meses",
-    "views": "2.930 visualizações"
+    "views": "1.725 visualizações"
+   },
+   {
+    "id": "LdoC0VyOPkI",
+    "titulo": "EXPLORAÇÃO DO PETRÓLEO NA MARGEM EQUATORIAL",
+    "canal": "Os Economistas Podcast",
+    "canal_id": "UCIX5uq1meeqhtKdBIFwHGWg",
+    "duracao": "7:02",
+    "quando": "há 1 ano",
+    "views": "8.428 visualizações"
+   },
+   {
+    "id": "3VkyEX_CnB4",
+    "titulo": "Petrobras confirma petróleo no Amapá | Especial Margem Equatorial",
+    "canal": "Cidades & Negócios. Revista de Direito Público",
+    "canal_id": "UCE-KbatLa6WzNMD-nthu99g",
+    "duracao": "1:15",
+    "quando": "há 1 mês",
+    "views": "65 visualizações"
    },
    {
     "id": "z5twTzKSndc",
@@ -763,13 +790,13 @@
     "views": "547 visualizações"
    },
    {
-    "id": "9F-sskF9apQ",
-    "titulo": "🔥 Briga Explosiva: Petrobras vs IBAMA na Margem Equatorial! #Petróleo #Ambiente",
-    "canal": "Supremo Flow",
-    "canal_id": "UC592j5XkYrHMtPBZ4rB__jg",
-    "duracao": "0:43",
-    "quando": "há 1 ano",
-    "views": "912 visualizações"
+    "id": "bjkIWuHJFNs",
+    "titulo": "Em junho, Petrobras deve anunciar os primeiros resultados da Margem Equatorial- Macaé Energy 2026",
+    "canal": "CPG Click Petróleo e Gás",
+    "canal_id": "UCpTvNicZ16HXmTPQoyNY04Q",
+    "duracao": "1:36",
+    "quando": "há 6 meses",
+    "views": "364 visualizações"
    },
    {
     "id": "Lm5BDGs_WeA",
@@ -781,6 +808,15 @@
     "views": "3.789 visualizações"
    },
    {
+    "id": "9F-sskF9apQ",
+    "titulo": "🔥 Briga Explosiva: Petrobras vs IBAMA na Margem Equatorial! #Petróleo #Ambiente",
+    "canal": "Supremo Flow",
+    "canal_id": "UC592j5XkYrHMtPBZ4rB__jg",
+    "duracao": "0:43",
+    "quando": "há 1 ano",
+    "views": "912 visualizações"
+   },
+   {
     "id": "JYDHvjdChas",
     "titulo": "LULA: Petróleo na Margem Equatorial e Educação [PARTE 38/99]",
     "canal": "UpCuts!",
@@ -790,22 +826,13 @@
     "views": "45 visualizações"
    },
    {
-    "id": "LAK4-59woPE",
-    "titulo": "Marina Silva: Exploração de petróleo na Margem Equatorial precisa de governança ambiental",
-    "canal": "TV 247",
-    "canal_id": "UCRuy5PigeeBuecKnwqhM4yg",
-    "duracao": "35:22",
-    "quando": "há 11 meses",
-    "views": "1.131 visualizações"
-   },
-   {
-    "id": "LdoC0VyOPkI",
-    "titulo": "EXPLORAÇÃO DO PETRÓLEO NA MARGEM EQUATORIAL",
-    "canal": "Os Economistas Podcast",
-    "canal_id": "UCIX5uq1meeqhtKdBIFwHGWg",
-    "duracao": "7:02",
-    "quando": "há 1 ano",
-    "views": "8.427 visualizações"
+    "id": "ktS8fIthnrg",
+    "titulo": "Coluna: Conexão Margem Equatorial #17",
+    "canal": "Cleber Barbosa",
+    "canal_id": "UCmJFCbe7stAh8rZhfNK0wbw",
+    "duracao": "19:06",
+    "quando": "há 2 semanas",
+    "views": "4 visualizações"
    },
    {
     "id": "tsb-FGOM4-Y",
@@ -815,33 +842,6 @@
     "duracao": "6:06",
     "quando": "há 11 meses",
     "views": "42.801 visualizações"
-   },
-   {
-    "id": "EDqwX_Vlynk",
-    "titulo": "Petróleo e Gás Natural  Segredos da Margem Equatorial",
-    "canal": "Bits & Cortes",
-    "canal_id": "UCAh8WIFF3lFxHb7SbqXQsBw",
-    "duracao": "0:59",
-    "quando": "há 1 ano",
-    "views": "717 visualizações"
-   },
-   {
-    "id": "_9RYj5LFnv8",
-    "titulo": "Petróleo na Margem Equatorial: Potencial Energético e Desafios da Transição",
-    "canal": "Fabrini Galo",
-    "canal_id": "UC3CNuBwXyukkT_p2g8H7Upg",
-    "duracao": "0:48",
-    "quando": "há 3 meses",
-    "views": "21 visualizações"
-   },
-   {
-    "id": "G6Lmh4NCc04",
-    "titulo": "Petrobras: IBAMA Libera Licença Para Exploração na Margem Equatorial! #petrobras #petróleo #lula",
-    "canal": "Universo Observável",
-    "canal_id": "UCCFN8i_MYUN-VTUTS3LyFyg",
-    "duracao": "2:48",
-    "quando": "há 11 meses",
-    "views": "324 visualizações"
    }
   ]
  },
@@ -849,6 +849,51 @@
   "tema": "civico",
   "busca": "escola cívico-militar pais aprovam disciplina resultado",
   "resultados": [
+   {
+    "id": "BSFb5NtIpmU",
+    "titulo": "Escola cívico-militar: valorizando a cidadania e disciplina no ensino",
+    "canal": "Programa ND Notícias",
+    "canal_id": "UCsv_0d3QHC1Gsxwwsk5wIxg",
+    "duracao": "4:04",
+    "quando": "há 2 anos",
+    "views": "727 visualizações"
+   },
+   {
+    "id": "_sQkQ6_1d_4",
+    "titulo": "Escola cívico-militar #educação #stf #disciplina",
+    "canal": "Izalci Lucas",
+    "canal_id": "UCKDa5K0okYZFF68qddBxnaw",
+    "duracao": "0:48",
+    "quando": "há 1 ano",
+    "views": "1.188 visualizações"
+   },
+   {
+    "id": "BkchXqRFJl4",
+    "titulo": "Escola Cívico-Militar Educação e Disciplina",
+    "canal": "Veterano Madruga",
+    "canal_id": "UC11-ngHzH2a-E028cTW9LJg",
+    "duracao": "0:21",
+    "quando": "há 3 anos",
+    "views": "42.990 visualizações"
+   },
+   {
+    "id": "1vTlXy84pyU",
+    "titulo": "7 regras de uma escola cívico-militar",
+    "canal": "UOL Prime ",
+    "canal_id": "UCY0tVnGvYPmYm7RbwJ89UNg",
+    "duracao": "2:13",
+    "quando": "há 1 ano",
+    "views": "22.832 visualizações"
+   },
+   {
+    "id": "evZvcwuh8Tk",
+    "titulo": "Escolas cívico-militares melhoram a disciplina? Especialistas discutem | Visão Crítica",
+    "canal": "Jovem Pan News",
+    "canal_id": "UCP391YRAjSOdM_bwievgaZA",
+    "duracao": "7:49",
+    "quando": "há 8 meses",
+    "views": "1.007 visualizações"
+   },
    {
     "id": "Wz09u9s4-QQ",
     "titulo": "Disciplina da escola cívico militar @Rodrigo-Pimentel #crimes #boperj #militarismo",
@@ -877,58 +922,13 @@
     "views": "846 visualizações"
    },
    {
-    "id": "b2KpFPy5kE8",
-    "titulo": "Banner convida pais de alunos para importante reunião. Escola Cívico-militar é o tema",
-    "canal": "Câmara Municipal de União do Sul - MT",
-    "canal_id": "UC4VZfZPBwSS_em7Yc_YKIFg",
-    "duracao": "1:39",
-    "quando": "há 6 meses",
-    "views": "41 visualizações"
-   },
-   {
-    "id": "BkchXqRFJl4",
-    "titulo": "Escola Cívico-Militar Educação e Disciplina",
-    "canal": "Veterano Madruga",
-    "canal_id": "UC11-ngHzH2a-E028cTW9LJg",
-    "duracao": "0:21",
-    "quando": "há 3 anos",
-    "views": "42.990 visualizações"
-   },
-   {
-    "id": "Ae6YhPiYBio",
-    "titulo": "ESCOLA CÍVICO-MILITAR - DISCIPLINA, RESPEITO E VALORES",
-    "canal": "Senador Astronauta Marcos Pontes",
-    "canal_id": "UCVbVLuQTP-EZn61Y0lyuxiA",
-    "duracao": "2:50",
-    "quando": "há 11 meses",
-    "views": "750 visualizações"
-   },
-   {
-    "id": "pwQV4U2XZNQ",
-    "titulo": "Disciplina nas escolas Cívico-militar #podcast",
-    "canal": "Vale Uma Prosa",
-    "canal_id": "UCYTFD3F6ru2JLB2yD1xsO7A",
-    "duracao": "1:00",
-    "quando": "há 2 anos",
-    "views": "553 visualizações"
-   },
-   {
-    "id": "E77J8fOdZFw",
-    "titulo": "Escolas Cívico-Militares: Resultados e Mudança de Mentalidade #shorts",
-    "canal": "Palavrão Tático",
-    "canal_id": "UCLb6hJNIsvyvit3lZsbChhg",
-    "duracao": "0:14",
-    "quando": "há 10 meses",
-    "views": "928 visualizações"
-   },
-   {
-    "id": "zSdCD3cNYuM",
-    "titulo": "Seminário - Escolas cívico-militares",
-    "canal": "Professora Rosa Neide",
-    "canal_id": "UC4CfnB9C6PN_RHQJ0gEgXNw",
-    "duracao": "3:53:45",
-    "quando": "há 7 anos",
-    "views": "36 visualizações"
+    "id": "Xfsv6LwTyEo",
+    "titulo": "Veja por dentro como é uma escola cívico-militar",
+    "canal": "Estadão",
+    "canal_id": "UCrtOL8bJsh-csozGS2aV77Q",
+    "duracao": "6:02",
+    "quando": "há 5 anos",
+    "views": "59.586 visualizações"
    },
    {
     "id": "UoVJ5eVNsW4",
@@ -940,49 +940,49 @@
     "views": "18.221 visualizações"
    },
    {
-    "id": "z3YUptsJ61k",
-    "titulo": "O que está por trás das escolas cívico-militares?",
-    "canal": "Le Monde Diplomatique Brasil",
-    "canal_id": "UCO0Wd2SV2Wp_661FEFkN08A",
-    "duracao": "54:30",
+    "id": "b2KpFPy5kE8",
+    "titulo": "Banner convida pais de alunos para importante reunião. Escola Cívico-militar é o tema",
+    "canal": "Câmara Municipal de União do Sul - MT",
+    "canal_id": "UC4VZfZPBwSS_em7Yc_YKIFg",
+    "duracao": "1:39",
+    "quando": "há 6 meses",
+    "views": "41 visualizações"
+   },
+   {
+    "id": "lttn0h0dmEY",
+    "titulo": "No Sul do estado, Colégio Militar é exemplo de educação e disciplina",
+    "canal": "Balanço Geral Criciúma",
+    "canal_id": "UCIdN11UZFANc6gjtFqJJrOw",
+    "duracao": "5:37",
+    "quando": "há 5 anos",
+    "views": "57.031 visualizações"
+   },
+   {
+    "id": "H7rN0pJYbf4",
+    "titulo": "🔴 Escola cívico-militar: especialistas debatem fim do PECIM, decisão de Lula e mais | UOL Debate",
+    "canal": "UOL",
+    "canal_id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
+    "duracao": "55:58",
+    "quando": "Transmitido há 3 anos",
+    "views": "10.659 visualizações"
+   },
+   {
+    "id": "zSdCD3cNYuM",
+    "titulo": "Seminário - Escolas cívico-militares",
+    "canal": "Professora Rosa Neide",
+    "canal_id": "UC4CfnB9C6PN_RHQJ0gEgXNw",
+    "duracao": "3:53:45",
+    "quando": "há 7 anos",
+    "views": "36 visualizações"
+   },
+   {
+    "id": "2pxrKRVIYoE",
+    "titulo": "Governadores anunciam manutenção do modelo de escolas cívico-militares | SBT Brasil (13/07/23)",
+    "canal": "SBT News",
+    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
+    "duracao": "2:41",
     "quando": "há 3 anos",
-    "views": "1.114 visualizações"
-   },
-   {
-    "id": "z38JPQohV9U",
-    "titulo": "Educação de qualidade e disciplina dão resultado! Um estudante da Escola Cívico-Militar!",
-    "canal": "Major Vitor Santos",
-    "canal_id": "UCql9_TB0uLn9lWFHVfwbwRA",
-    "duracao": "0:32",
-    "quando": "há 1 ano",
-    "views": "2.717 visualizações"
-   },
-   {
-    "id": "FSC2uDJunTQ",
-    "titulo": "Escolas Cívico-Militares recebem certificação do MEC",
-    "canal": "TV Brasil",
-    "canal_id": "UCSv9d0kQegylHWpP83jWSQg",
-    "duracao": "1:35",
-    "quando": "há 4 anos",
-    "views": "352 visualizações"
-   },
-   {
-    "id": "lnPyeDzzqfk",
-    "titulo": "Justiça suspende regras de escolas cívico militares",
-    "canal": "Jornal da Gazeta",
-    "canal_id": "UCNl_i-ggJbZNyOLlhE7yyhw",
-    "duracao": "1:52",
-    "quando": "há 8 meses",
-    "views": "27.158 visualizações"
-   },
-   {
-    "id": "wJbfCO8f9Xo",
-    "titulo": "06/07/2019  Escola Cívico - Militar: disciplina, respeito e aprendizado.  MUDA BRASIL DE VERDADE!!",
-    "canal": "Coronel TV",
-    "canal_id": "UCjnNAzY6efIikeBJ64pY0XA",
-    "duracao": "0:45",
-    "quando": "há 6 anos",
-    "views": "38 visualizações"
+    "views": "25.612 visualizações"
    }
   ]
  },
@@ -1072,6 +1072,24 @@
     "views": "1.132 visualizações"
    },
    {
+    "id": "UO8HktQ74aw",
+    "titulo": "RF News - TCE-SP suspende programa de escolas cívico-militares de Tarcísio",
+    "canal": "RFTV ",
+    "canal_id": "UC9n34_IrC-Bgt3DIlfdC8pQ",
+    "duracao": "3:24",
+    "quando": "há 1 ano",
+    "views": "30 visualizações"
+   },
+   {
+    "id": "BrfpWwRFESU",
+    "titulo": "Tarcísio defende monitor de escola cívico-militar que escreveu 'descançar': 'Quem não erra?'",
+    "canal": "UOL",
+    "canal_id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
+    "duracao": "5:07",
+    "quando": "há 8 meses",
+    "views": "45.846 visualizações"
+   },
+   {
     "id": "rbIpzlXAW-Q",
     "titulo": "Tarcísio sobre escolas cívico-militares: “Adesão é voluntária” | LINHA DE FRENTE",
     "canal": "Jovem Pan News",
@@ -1079,6 +1097,15 @@
     "duracao": "20:22",
     "quando": "há 2 anos",
     "views": "35.485 visualizações"
+   },
+   {
+    "id": "hIWFZp8fTm0",
+    "titulo": "📢 Tarcísio recorre a Alesp para implantar escola cívico-militar à força",
+    "canal": "Carlos Giannazi",
+    "canal_id": "UCcw5LxOx4RABRj4h3M15NcA",
+    "duracao": "5:05",
+    "quando": "há 2 anos",
+    "views": "3.661 visualizações"
    },
    {
     "id": "kCUFSEFmvuU",
@@ -1090,15 +1117,6 @@
     "views": "5.748 visualizações"
    },
    {
-    "id": "d3-S6f6NXYg",
-    "titulo": "Tarcísio reage a Lula e fará escolas cívico militares em SP",
-    "canal": "Poder360",
-    "canal_id": "UCFCiSRbCVwQ_BQaDQBYxN_A",
-    "duracao": "0:51",
-    "quando": "há 3 anos",
-    "views": "3.171 visualizações"
-   },
-   {
     "id": "1ez9PeQ0FKw",
     "titulo": "Foco das escolas cívico-militares não é qualidade já que Tarcísio diminuiu recursos para a Educação",
     "canal": "Instituto Conhecimento Liberta",
@@ -1106,24 +1124,6 @@
     "duracao": "5:11",
     "quando": "há 2 anos",
     "views": "716 visualizações"
-   },
-   {
-    "id": "7xN93WNam4w",
-    "titulo": "Giannazi alerta: Tarcísio quer formar \"novos Bolsonaros\" com escolas cívico-militares",
-    "canal": "TV 247",
-    "canal_id": "UCRuy5PigeeBuecKnwqhM4yg",
-    "duracao": "1:02:23",
-    "quando": "Transmitido há 2 anos",
-    "views": "4.036 visualizações"
-   },
-   {
-    "id": "U8zIdPWaqdo",
-    "titulo": "TARCÍSIO SANCIONA LEI DAS ESCOLAS CÍVICO-MILITARES EM SP: 'NO CAMINHO CERTO'",
-    "canal": "Itatiaia",
-    "canal_id": "UC9T0ZAarQHL4cJGFzORVsFg",
-    "duracao": "2:35",
-    "quando": "há 2 anos",
-    "views": "1.350 visualizações"
    }
   ]
  },
@@ -1139,15 +1139,6 @@
     "duracao": "27:57",
     "quando": "Transmitido há 7 meses",
     "views": "1.958 visualizações"
-   },
-   {
-    "id": "E3QnSCtQ7Rc",
-    "titulo": "A violência da militarização das escolas no Brasil | Conferência com Daniel Cara (USP)",
-    "canal": "Laboratório de Políticas Públicas",
-    "canal_id": "UCHXQGcNkySEwsWO2zq2souw",
-    "duracao": "8:22",
-    "quando": "Transmitido há 7 dias",
-    "views": "135 visualizações"
    },
    {
     "id": "1Biy0FzoZXU",
@@ -1168,15 +1159,6 @@
     "views": "333 visualizações"
    },
    {
-    "id": "UulYSmUvcxM",
-    "titulo": "Daniel Cara analisa tamanho da extrema direita, Pablo Marçal e escolas cívico-militares de Tarcísio",
-    "canal": "TV Fórum",
-    "canal_id": "UC3sMBA3BdnsKSVI0WB9yVWQ",
-    "duracao": "36:46",
-    "quando": "há 2 anos",
-    "views": "12.177 visualizações"
-   },
-   {
     "id": "iR5pIufPtN8",
     "titulo": "DANIEL CARA COMENTA O ATAQUE À ESCOLA EM SP | Direto da Redação AO VIVO",
     "canal": "CartaCapital",
@@ -1186,13 +1168,22 @@
     "views": "3.963 visualizações"
    },
    {
-    "id": "ReBQUVQbz_E",
-    "titulo": "Educação Brasileira 144 - José Marcelino Pinto e Daniel Cara",
-    "canal": "UNIVESP",
-    "canal_id": "UCBL2tfrwhEhX52Dze_aO3zA",
-    "duracao": "30:57",
-    "quando": "há 12 anos",
-    "views": "3.344 visualizações"
+    "id": "UulYSmUvcxM",
+    "titulo": "Daniel Cara analisa tamanho da extrema direita, Pablo Marçal e escolas cívico-militares de Tarcísio",
+    "canal": "TV Fórum",
+    "canal_id": "UC3sMBA3BdnsKSVI0WB9yVWQ",
+    "duracao": "36:46",
+    "quando": "há 2 anos",
+    "views": "12.177 visualizações"
+   },
+   {
+    "id": "Elr6ncjgyZU",
+    "titulo": "Daniel Cara: “nossas escolas estão sendo incapazes de enfrentar o extremismo”",
+    "canal": "TV Fórum",
+    "canal_id": "UC3sMBA3BdnsKSVI0WB9yVWQ",
+    "duracao": "32:03",
+    "quando": "há 1 ano",
+    "views": "11.585 visualizações"
    },
    {
     "id": "nu0uKLuQ6-k",
@@ -1213,33 +1204,6 @@
     "views": "27.158 visualizações"
    },
    {
-    "id": "bdxNhXe6YMg",
-    "titulo": "Daniel Cara fala sobre militarização das escolas, operação de Castro no Rio e prisão de Bolsonaro",
-    "canal": "TV Fórum",
-    "canal_id": "UC3sMBA3BdnsKSVI0WB9yVWQ",
-    "duracao": "54:10",
-    "quando": "há 10 meses",
-    "views": "1.368 visualizações"
-   },
-   {
-    "id": "Elr6ncjgyZU",
-    "titulo": "Daniel Cara: “nossas escolas estão sendo incapazes de enfrentar o extremismo”",
-    "canal": "TV Fórum",
-    "canal_id": "UC3sMBA3BdnsKSVI0WB9yVWQ",
-    "duracao": "32:03",
-    "quando": "há 1 ano",
-    "views": "11.585 visualizações"
-   },
-   {
-    "id": "LvspH-JMLvw",
-    "titulo": "Escola Cívico-Militar e sua verdadeira realidade",
-    "canal": "Clayson Felizola",
-    "canal_id": "UCWE75Qq5ExU0qlwQSkx18wQ",
-    "duracao": "19:03",
-    "quando": "há 7 anos",
-    "views": "14.481 visualizações"
-   },
-   {
     "id": "z3YUptsJ61k",
     "titulo": "O que está por trás das escolas cívico-militares?",
     "canal": "Le Monde Diplomatique Brasil",
@@ -1256,6 +1220,33 @@
     "duracao": "7:35",
     "quando": "há 8 meses",
     "views": "30 visualizações"
+   },
+   {
+    "id": "EOdvOWgbwqo",
+    "titulo": "Modelo de escola cívico-militar não é democrático, avalia professora da Unicamp",
+    "canal": "Instituto Claro",
+    "canal_id": "UCTSXpxZFVk0sneQ2ZIBxyrA",
+    "duracao": "9:33",
+    "quando": "há 6 anos",
+    "views": "21.445 visualizações"
+   },
+   {
+    "id": "0rv629vCLZU",
+    "titulo": "Ultraconservadorismo e extremismo de direita entre jovens, com Letícia Oliveira e Daniel Cara",
+    "canal": "Carlos Alberto Jr.",
+    "canal_id": "UCc4eZav_MB7LUDH_jKmSAdg",
+    "duracao": "1:20:42",
+    "quando": "há 3 anos",
+    "views": "1.410 visualizações"
+   },
+   {
+    "id": "IUfN6Fmc9Zw",
+    "titulo": "Escola Tradicional ou Cívico-Militar? O Debate Sobre Educação | O Cara Cast",
+    "canal": "O Cara Cast",
+    "canal_id": "UC8fKxhA9VwZ4KRjL1qMywOQ",
+    "duracao": "1:56:50",
+    "quando": "há 8 meses",
+    "views": "606 visualizações"
    }
   ]
  },
@@ -1264,13 +1255,13 @@
   "busca": "Flow escola cívico-militar debate",
   "resultados": [
    {
-    "id": "2uP08vbbG6k",
-    "titulo": "Sargento Castro diz a verdade sobre escolas cívico-militares no Flow#sargentocastro #podcast #escola",
-    "canal": "ShinClips",
-    "canal_id": "UCepLUIV4ZGEKOCzB6Rj3AhQ",
-    "duracao": "0:47",
-    "quando": "há 10 meses",
-    "views": "7.165 visualizações"
+    "id": "dfki1CCSY8E",
+    "titulo": "OS DEBATES ELEITORAIS são INJUSTOS? ⚖️ #lula #flownews #politica #eleicoes",
+    "canal": "Flow Podcast",
+    "canal_id": "UC4ncvgh5hFr5O83MH7-jRJg",
+    "duracao": "0:31",
+    "quando": "há 5 horas",
+    "views": "17.651 visualizações"
    },
    {
     "id": "GMy-sQP5w6w",
@@ -1282,103 +1273,31 @@
     "views": "2.194 visualizações"
    },
    {
-    "id": "la-1P76jfns",
-    "titulo": "DEBATE ESCOLAS CÍVICO-MILITARES: Tenente Coimbra e Mônica Seixas AO VIVO no Talk Churras #EP95",
-    "canal": "MathiasTV",
-    "canal_id": "UCARu6TU-jEPZISboI3TEYZw",
-    "duracao": "1:17:51",
+    "id": "H7rN0pJYbf4",
+    "titulo": "🔴 Escola cívico-militar: especialistas debatem fim do PECIM, decisão de Lula e mais | UOL Debate",
+    "canal": "UOL",
+    "canal_id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
+    "duracao": "55:58",
     "quando": "Transmitido há 3 anos",
-    "views": "2.788 visualizações"
+    "views": "10.659 visualizações"
    },
    {
-    "id": "3LQLtfJHTnA",
-    "titulo": "Debate Público sobre Escola Cívico-Militar 16-12-2019",
-    "canal": "TV CÂMARA CAMPINAS",
-    "canal_id": "UCCRttUKYDsV-YHKrsGzSoGA",
-    "duracao": "2:48:30",
-    "quando": "há 6 anos",
-    "views": "182 visualizações"
-   },
-   {
-    "id": "I_jwAwaagUA",
-    "titulo": "É CERTO O FIM DAS ESCOLAS CÍVICO MILITARES? #TN",
-    "canal": "Flow News",
-    "canal_id": "UCYpE7GffL46a9WT5b-Rekpg",
-    "duracao": "6:32",
-    "quando": "há 3 anos",
-    "views": "1.780 visualizações"
-   },
-   {
-    "id": "MojpmjpKl2M",
-    "titulo": "Escola Cívico-Militar em debate.",
-    "canal": "FEUSP Oficial",
-    "canal_id": "UC6luO3sc355cppo1l-6B24g",
-    "duracao": "3:20:50",
-    "quando": "Transmitido há 7 meses",
-    "views": "881 visualizações"
-   },
-   {
-    "id": "mOhyo2KnAQs",
-    "titulo": "Escolas cívico-militar (debate Faixa Livre 14-02-2020)",
-    "canal": "Faixa Livre",
-    "canal_id": "UC0FuVyieidmqk9bcELQDR5Q",
-    "duracao": "1:10:41",
-    "quando": "há 6 anos",
-    "views": "80 visualizações"
-   },
-   {
-    "id": "VCgoGRBd8gs",
-    "titulo": "Alesc debate em audiência pública escola cívico-militar de São Bento do Sul - 01/12/25",
-    "canal": "assembleiasc",
-    "canal_id": "UCeBR3fhWb-Jyt8i7Hy6_mjA",
-    "duracao": "3:12",
-    "quando": "há 10 meses",
-    "views": "39 visualizações"
-   },
-   {
-    "id": "isPd00cpQ9c",
-    "titulo": "JORNAL CÂMARA NOTÍCIA - Debate Escola Cívico-Militar 17-12-2019",
-    "canal": "TV CÂMARA CAMPINAS",
-    "canal_id": "UCCRttUKYDsV-YHKrsGzSoGA",
-    "duracao": "2:49",
-    "quando": "há 6 anos",
-    "views": "48 visualizações"
-   },
-   {
-    "id": "EoHoUnxzHk0",
-    "titulo": "Escolas cívico-militares: STF debate limites do modelo",
-    "canal": "TV 247",
-    "canal_id": "UCRuy5PigeeBuecKnwqhM4yg",
-    "duracao": "6:17",
-    "quando": "há 1 mês",
-    "views": "2.459 visualizações"
-   },
-   {
-    "id": "-MCdJKS_svo",
-    "titulo": "O povo só quer ver a bagunça #DebatePresidencial #Eleicoes2026 #FlowNews",
+    "id": "liS-SUSreGw",
+    "titulo": "DEBATE PRESIDENCIAL FLOW 2026",
     "canal": "Flow Podcast",
     "canal_id": "UC4ncvgh5hFr5O83MH7-jRJg",
-    "duracao": "0:34",
-    "quando": "há 3 semanas",
-    "views": "22.343 visualizações"
+    "duracao": "3:49:25",
+    "quando": "Transmitido há 3 semanas",
+    "views": "4.974.174 visualizações"
    },
    {
-    "id": "UoVJ5eVNsW4",
-    "titulo": "Escola militarizada: um debate sobre a proposta de gestão compartilhada da educação",
-    "canal": "TV Senado",
-    "canal_id": "UCLgti7NuK0RuW9wty-fxPjQ",
-    "duracao": "27:51",
-    "quando": "há 7 anos",
-    "views": "18.221 visualizações"
-   },
-   {
-    "id": "K9SUxV2K-bk",
-    "titulo": "Charqueadas Debate Educação: escola cívico-militar",
-    "canal": "Paula Ynajá",
-    "canal_id": "UC_l1xjHXR6mJmAwdlj6hH4A",
-    "duracao": "15:08",
-    "quando": "há 4 anos",
-    "views": "142 visualizações"
+    "id": "cfTPtZ5dsMQ",
+    "titulo": "Como são as escolas cívico-militares?",
+    "canal": "Política em Cortes",
+    "canal_id": "UCDG16czkYetXHznlzV0JkJg",
+    "duracao": "0:40",
+    "quando": "há 2 dias",
+    "views": "1.349 visualizações"
    },
    {
     "id": "pWMtzsm7bsQ",
@@ -1390,13 +1309,85 @@
     "views": "24.234 visualizações"
    },
    {
-    "id": "H7rN0pJYbf4",
-    "titulo": "🔴 Escola cívico-militar: especialistas debatem fim do PECIM, decisão de Lula e mais | UOL Debate",
-    "canal": "UOL",
-    "canal_id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
-    "duracao": "55:58",
+    "id": "2uP08vbbG6k",
+    "titulo": "Sargento Castro diz a verdade sobre escolas cívico-militares no Flow#sargentocastro #podcast #escola",
+    "canal": "ShinClips",
+    "canal_id": "UCepLUIV4ZGEKOCzB6Rj3AhQ",
+    "duracao": "0:47",
+    "quando": "há 10 meses",
+    "views": "7.165 visualizações"
+   },
+   {
+    "id": "la-1P76jfns",
+    "titulo": "DEBATE ESCOLAS CÍVICO-MILITARES: Tenente Coimbra e Mônica Seixas AO VIVO no Talk Churras #EP95",
+    "canal": "MathiasTV",
+    "canal_id": "UCARu6TU-jEPZISboI3TEYZw",
+    "duracao": "1:17:51",
     "quando": "Transmitido há 3 anos",
-    "views": "10.659 visualizações"
+    "views": "2.788 visualizações"
+   },
+   {
+    "id": "mOhyo2KnAQs",
+    "titulo": "Escolas cívico-militar (debate Faixa Livre 14-02-2020)",
+    "canal": "Faixa Livre",
+    "canal_id": "UC0FuVyieidmqk9bcELQDR5Q",
+    "duracao": "1:10:41",
+    "quando": "há 6 anos",
+    "views": "80 visualizações"
+   },
+   {
+    "id": "3LQLtfJHTnA",
+    "titulo": "Debate Público sobre Escola Cívico-Militar 16-12-2019",
+    "canal": "TV CÂMARA CAMPINAS",
+    "canal_id": "UCCRttUKYDsV-YHKrsGzSoGA",
+    "duracao": "2:48:30",
+    "quando": "há 6 anos",
+    "views": "182 visualizações"
+   },
+   {
+    "id": "isPd00cpQ9c",
+    "titulo": "JORNAL CÂMARA NOTÍCIA - Debate Escola Cívico-Militar 17-12-2019",
+    "canal": "TV CÂMARA CAMPINAS",
+    "canal_id": "UCCRttUKYDsV-YHKrsGzSoGA",
+    "duracao": "2:49",
+    "quando": "há 6 anos",
+    "views": "48 visualizações"
+   },
+   {
+    "id": "MDEFywIVSQw",
+    "titulo": "Debate sobre escolas civico militar e ideologia",
+    "canal": "Eduardo Girão",
+    "canal_id": "UCnCLvcoF4iYagNOFA86ooAg",
+    "duracao": "3:11",
+    "quando": "há 2 anos",
+    "views": "123 visualizações"
+   },
+   {
+    "id": "UoVJ5eVNsW4",
+    "titulo": "Escola militarizada: um debate sobre a proposta de gestão compartilhada da educação",
+    "canal": "TV Senado",
+    "canal_id": "UCLgti7NuK0RuW9wty-fxPjQ",
+    "duracao": "27:51",
+    "quando": "há 7 anos",
+    "views": "18.221 visualizações"
+   },
+   {
+    "id": "I_jwAwaagUA",
+    "titulo": "É CERTO O FIM DAS ESCOLAS CÍVICO MILITARES? #TN",
+    "canal": "Flow News",
+    "canal_id": "UCYpE7GffL46a9WT5b-Rekpg",
+    "duracao": "6:32",
+    "quando": "há 3 anos",
+    "views": "1.780 visualizações"
+   },
+   {
+    "id": "wFYhQFVB-WE",
+    "titulo": "Grande debate sobre Escolas Cívico-Militares",
+    "canal": "Comandante Nádia",
+    "canal_id": "UCnjyRntU_CvtYHQ7gvjTOmw",
+    "duracao": "43:39",
+    "quando": "Transmitido há 4 anos",
+    "views": "271 visualizações"
    }
   ]
  },
@@ -1438,7 +1429,16 @@
     "canal_id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
     "duracao": "2:43",
     "quando": "há 3 semanas",
-    "views": "418.273 visualizações"
+    "views": "418.396 visualizações"
+   },
+   {
+    "id": "j5MI3yEX3jc",
+    "titulo": "\"Que moral a senhora tem pra falar de corrupção?\", diz Derrite a Tebet | #Shorts",
+    "canal": "Band Jornalismo",
+    "canal_id": "UCoa-D_VfMkFrCYodrOC9-mA",
+    "duracao": "0:58",
+    "quando": "há 1 mês",
+    "views": "2.815.843 visualizações"
    },
    {
     "id": "UFCAESRoxPA",
@@ -1459,24 +1459,6 @@
     "views": "2.428 visualizações"
    },
    {
-    "id": "XMSksUBjbaY",
-    "titulo": "🚨 Câmeras Corporais: A Revolução na Segurança Pública! #segurançapública #combateaocrime",
-    "canal": "CortesCast",
-    "canal_id": "UCHPvnCHQ2Dz9ed2Trk1y_EQ",
-    "duracao": "1:05",
-    "quando": "há 1 ano",
-    "views": "144 visualizações"
-   },
-   {
-    "id": "RUJeOF_uiFI",
-    "titulo": "O poder do governo, Derrite e as câmeras corporais",
-    "canal": "Deputado Reis",
-    "canal_id": "UC2kqdSmgEW1I7DBKUDyQIDA",
-    "duracao": "12:14",
-    "quando": "há 1 ano",
-    "views": "1.554 visualizações"
-   },
-   {
     "id": "BjSbk1i6r2Q",
     "titulo": "Uso de câmeras em uniformes de PMs reduziu mais de 50% das mortes em ações | SBT Brasil (06/12/22)",
     "canal": "SBT News",
@@ -1486,13 +1468,13 @@
     "views": "6.757 visualizações"
    },
    {
-    "id": "7bQmu3-23bI",
-    "titulo": "Derrite muda de opinião: “Câmeras protegem o bom policial”",
-    "canal": "Metrópoles",
-    "canal_id": "UC9mdw2mmn49ZuqGOpSri7Fw",
-    "duracao": "2:56",
+    "id": "XMSksUBjbaY",
+    "titulo": "🚨 Câmeras Corporais: A Revolução na Segurança Pública! #segurançapública #combateaocrime",
+    "canal": "CortesCast",
+    "canal_id": "UCHPvnCHQ2Dz9ed2Trk1y_EQ",
+    "duracao": "1:05",
     "quando": "há 1 ano",
-    "views": "2.771 visualizações"
+    "views": "144 visualizações"
    },
    {
     "id": "TAXuvrKRERE",
@@ -1504,13 +1486,22 @@
     "views": "746 visualizações"
    },
    {
-    "id": "VzmYeTE3hJs",
-    "titulo": "🚨Derrite REBATE jornalistas ao vivo e dá AULA de Segurança Pública na GLOBO!",
-    "canal": "Mão Direita",
-    "canal_id": "UCi1SAQpJZ7AV3myrsfyhF2w",
-    "duracao": "13:04",
-    "quando": "há 11 meses",
-    "views": "101.313 visualizações"
+    "id": "RUJeOF_uiFI",
+    "titulo": "O poder do governo, Derrite e as câmeras corporais",
+    "canal": "Deputado Reis",
+    "canal_id": "UC2kqdSmgEW1I7DBKUDyQIDA",
+    "duracao": "12:14",
+    "quando": "há 1 ano",
+    "views": "1.554 visualizações"
+   },
+   {
+    "id": "7bQmu3-23bI",
+    "titulo": "Derrite muda de opinião: “Câmeras protegem o bom policial”",
+    "canal": "Metrópoles",
+    "canal_id": "UC9mdw2mmn49ZuqGOpSri7Fw",
+    "duracao": "2:56",
+    "quando": "há 1 ano",
+    "views": "2.771 visualizações"
    },
    {
     "id": "0tqTIAb0dtQ",
@@ -1522,13 +1513,13 @@
     "views": "294 visualizações"
    },
    {
-    "id": "EB7fa5lUocc",
-    "titulo": "Tarcísio e Derrite mudaram, repentinamente, de opinião sobre as câmeras nos uniformes de policiais.",
-    "canal": "Deputado Reis",
-    "canal_id": "UC2kqdSmgEW1I7DBKUDyQIDA",
-    "duracao": "6:44",
-    "quando": "há 2 anos",
-    "views": "615 visualizações"
+    "id": "VzmYeTE3hJs",
+    "titulo": "🚨Derrite REBATE jornalistas ao vivo e dá AULA de Segurança Pública na GLOBO!",
+    "canal": "Mão Direita",
+    "canal_id": "UCi1SAQpJZ7AV3myrsfyhF2w",
+    "duracao": "13:04",
+    "quando": "há 11 meses",
+    "views": "101.313 visualizações"
    },
    {
     "id": "qDIvE7zZhko",
@@ -1624,7 +1615,7 @@
     "canal_id": "UC9T0ZAarQHL4cJGFzORVsFg",
     "duracao": "0:34",
     "quando": "há 1 dia",
-    "views": "51.821 visualizações"
+    "views": "51.988 visualizações"
    },
    {
     "id": "hrhNcCtbJxg",
@@ -1651,7 +1642,7 @@
     "canal_id": "UCaGmdJSSiR7fkh2A-c6emsA",
     "duracao": "1:26",
     "quando": "há 3 anos",
-    "views": "314.002 visualizações"
+    "views": "314.010 visualizações"
    },
    {
     "id": "oWlcgJ0WAz0",
@@ -1660,7 +1651,7 @@
     "canal_id": "UCUmN4RWoL4HavTlMLrkaxHQ",
     "duracao": "2:54",
     "quando": "há 1 hora",
-    "views": "4.019 visualizações"
+    "views": "4.086 visualizações"
    },
    {
     "id": "6alVDqd1Vik",
@@ -1702,7 +1693,7 @@
     "canal_id": "UC4ncvgh5hFr5O83MH7-jRJg",
     "duracao": "0:40",
     "quando": "há 4 meses",
-    "views": "767.267 visualizações"
+    "views": "767.275 visualizações"
    },
    {
     "id": "xuaGh45PFFw",
@@ -1721,6 +1712,15 @@
     "duracao": "0:05",
     "quando": "há 2 anos",
     "views": "11.934 visualizações"
+   },
+   {
+    "id": "0V3Dg2wOxbM",
+    "titulo": "Giro News: Ministério divulga regras para câmeras corporais por policiais",
+    "canal": "SBT News",
+    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
+    "duracao": "0:59",
+    "quando": "há 2 anos",
+    "views": "4.333 visualizações"
    },
    {
     "id": "rRiKPRbp-kA",
@@ -1750,15 +1750,6 @@
     "views": "372 visualizações"
    },
    {
-    "id": "Dt6WIyQLEaQ",
-    "titulo": "Câmeras em Policiais: Proteção ou Desconfiança do Estado? | Flow Podcast",
-    "canal": "A Verdade Está Aqui Dentro",
-    "canal_id": "UCbL4YmJMYqwv0rzH3aF73Sg",
-    "duracao": "1:44",
-    "quando": "há 8 meses",
-    "views": "854 visualizações"
-   },
-   {
     "id": "xODGLO70NXs",
     "titulo": "Câmeras corporais em policiais: Lewandowski assina portaria com diretrizes nesta terça (28)",
     "canal": "SBT News",
@@ -1766,24 +1757,6 @@
     "duracao": "9:41",
     "quando": "há 2 anos",
     "views": "4.612 visualizações"
-   },
-   {
-    "id": "gBHKCkZd840",
-    "titulo": "USO DE CÂMERAS POR POLICIAIS MILITARES PODERIA REDUZIR VIOLÊNCIA POLICIAL",
-    "canal": "TV Band Minas",
-    "canal_id": "UC4HvOqEHSll8ieikr6ffvqQ",
-    "duracao": "3:49",
-    "quando": "há 5 anos",
-    "views": "712 visualizações"
-   },
-   {
-    "id": "BjSbk1i6r2Q",
-    "titulo": "Uso de câmeras em uniformes de PMs reduziu mais de 50% das mortes em ações | SBT Brasil (06/12/22)",
-    "canal": "SBT News",
-    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
-    "duracao": "2:31",
-    "quando": "há 3 anos",
-    "views": "6.757 visualizações"
    },
    {
     "id": "6k7oyUJKpRc",
@@ -1795,13 +1768,31 @@
     "views": "1.896 visualizações"
    },
    {
-    "id": "QN0RiPMYiJ0",
-    "titulo": "Sargento Castro: Camera Corporal",
-    "canal": "CorteHub",
-    "canal_id": "UC7QlLZq93ZCAEWRpg52yM9w",
-    "duracao": "0:46",
-    "quando": "há 5 meses",
-    "views": "1.939 visualizações"
+    "id": "gBHKCkZd840",
+    "titulo": "USO DE CÂMERAS POR POLICIAIS MILITARES PODERIA REDUZIR VIOLÊNCIA POLICIAL",
+    "canal": "TV Band Minas",
+    "canal_id": "UC4HvOqEHSll8ieikr6ffvqQ",
+    "duracao": "3:49",
+    "quando": "há 5 anos",
+    "views": "712 visualizações"
+   },
+   {
+    "id": "Dt6WIyQLEaQ",
+    "titulo": "Câmeras em Policiais: Proteção ou Desconfiança do Estado? | Flow Podcast",
+    "canal": "A Verdade Está Aqui Dentro",
+    "canal_id": "UCbL4YmJMYqwv0rzH3aF73Sg",
+    "duracao": "1:44",
+    "quando": "há 8 meses",
+    "views": "854 visualizações"
+   },
+   {
+    "id": "BjSbk1i6r2Q",
+    "titulo": "Uso de câmeras em uniformes de PMs reduziu mais de 50% das mortes em ações | SBT Brasil (06/12/22)",
+    "canal": "SBT News",
+    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
+    "duracao": "2:31",
+    "quando": "há 3 anos",
+    "views": "6.757 visualizações"
    },
    {
     "id": "MV9k1zyLlSc",
@@ -1813,13 +1804,13 @@
     "views": "53.094 visualizações"
    },
    {
-    "id": "YLPz1cgzxrY",
-    "titulo": "Câmeras nas SALAS DE AULA ou nos POLICIAIS?!",
-    "canal": "Flow INC",
-    "canal_id": "UCjmP6SouOgOupZdM4TpvNKg",
-    "duracao": "0:36",
-    "quando": "há 2 anos",
-    "views": "924 visualizações"
+    "id": "QN0RiPMYiJ0",
+    "titulo": "Sargento Castro: Camera Corporal",
+    "canal": "CorteHub",
+    "canal_id": "UC7QlLZq93ZCAEWRpg52yM9w",
+    "duracao": "0:46",
+    "quando": "há 5 meses",
+    "views": "1.939 visualizações"
    }
   ]
  },
@@ -1835,15 +1826,6 @@
     "duracao": "3:01",
     "quando": "há 3 anos",
     "views": "3.040 visualizações"
-   },
-   {
-    "id": "eL-ANlvWoW4",
-    "titulo": "Câmeras corporais diminuem letalidade em ações da Polícia Militar",
-    "canal": "RedeTV",
-    "canal_id": "UCd7VVhgnd2eCv9JEghvR_1w",
-    "duracao": "2:37",
-    "quando": "há 5 anos",
-    "views": "3.905 visualizações"
    },
    {
     "id": "0fs0MNCg1Ro",
@@ -1864,6 +1846,15 @@
     "views": "53 visualizações"
    },
    {
+    "id": "eL-ANlvWoW4",
+    "titulo": "Câmeras corporais diminuem letalidade em ações da Polícia Militar",
+    "canal": "RedeTV",
+    "canal_id": "UCd7VVhgnd2eCv9JEghvR_1w",
+    "duracao": "2:37",
+    "quando": "há 5 anos",
+    "views": "3.905 visualizações"
+   },
+   {
     "id": "BjSbk1i6r2Q",
     "titulo": "Uso de câmeras em uniformes de PMs reduziu mais de 50% das mortes em ações | SBT Brasil (06/12/22)",
     "canal": "SBT News",
@@ -1882,6 +1873,15 @@
     "views": "32 visualizações"
    },
    {
+    "id": "B8jQF5COuEU",
+    "titulo": "O uso de câmeras corporais pela polícia, explicado por Melina Risso do Instituto Igarapé",
+    "canal": "Headline Brasil",
+    "canal_id": "UCMkxP79lf86HnR_a7qoaY1A",
+    "duracao": "3:04",
+    "quando": "há 4 anos",
+    "views": "372 visualizações"
+   },
+   {
     "id": "vjfsVXpD3dY",
     "titulo": "Letalidade policial:Estudo compara antes e depois do uso de câmeras corporais|#SBTNewsnaTV(17/05/23)",
     "canal": "SBT News",
@@ -1889,6 +1889,15 @@
     "duracao": "2:22",
     "quando": "há 3 anos",
     "views": "1.066 visualizações"
+   },
+   {
+    "id": "pP13PS87UEw",
+    "titulo": "Entendendo a metodologia usada na avaliação de impacto do uso das câmeras corporais pela PMESP",
+    "canal": "FGV CCAS",
+    "canal_id": "UC7lmZNF6kNpCXR8Q8KOj_sg",
+    "duracao": "6:03",
+    "quando": "há 3 anos",
+    "views": "481 visualizações"
    },
    {
     "id": "9DlZLyBaVv8",
@@ -1900,49 +1909,13 @@
     "views": "24 visualizações"
    },
    {
-    "id": "jahuC6J0zJ4",
-    "titulo": "SP l Uso de câmeras corporais na PM será analisado por universidades",
-    "canal": "TV Brasil",
-    "canal_id": "UCSv9d0kQegylHWpP83jWSQg",
-    "duracao": "1:02",
-    "quando": "há 4 anos",
-    "views": "570 visualizações"
-   },
-   {
-    "id": "dJNhizEBgj0",
-    "titulo": "Câmera Corporal Polícia Militar SP [POLÍCIA ENQUADRANDO POLÍCIA]",
-    "canal": "Lucelmo Lacerda",
-    "canal_id": "UCIjH8rZQ2UAjeipxnG3Kozw",
-    "duracao": "18:19",
-    "quando": "há 4 anos",
-    "views": "1.167 visualizações"
-   },
-   {
-    "id": "B8jQF5COuEU",
-    "titulo": "O uso de câmeras corporais pela polícia, explicado por Melina Risso do Instituto Igarapé",
-    "canal": "Headline Brasil",
-    "canal_id": "UCMkxP79lf86HnR_a7qoaY1A",
-    "duracao": "3:04",
-    "quando": "há 4 anos",
-    "views": "372 visualizações"
-   },
-   {
-    "id": "xODGLO70NXs",
-    "titulo": "Câmeras corporais em policiais: Lewandowski assina portaria com diretrizes nesta terça (28)",
+    "id": "L0lHUbH6W8o",
+    "titulo": "Entenda decisão do STF que obriga uso de câmeras corporais da Polícia Militar de São Paulo",
     "canal": "SBT News",
     "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
-    "duracao": "9:41",
-    "quando": "há 2 anos",
-    "views": "4.612 visualizações"
-   },
-   {
-    "id": "QiDx4pgEbT8",
-    "titulo": "Justiça de SP determina uso de câmeras corporais em todos os uniformes de PMs | CNN NOVO DIA",
-    "canal": "CNN Brasil",
-    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
-    "duracao": "2:38",
-    "quando": "há 3 anos",
-    "views": "4.676 visualizações"
+    "duracao": "8:02",
+    "quando": "há 1 ano",
+    "views": "1.289 visualizações"
    },
    {
     "id": "L27vsOdG3f0",
@@ -1954,13 +1927,31 @@
     "views": "153 visualizações"
    },
    {
-    "id": "9iBWXh30EBg",
-    "titulo": "BRASIL REGISTRA MAIS DE 6 MIL MORTES POR POLICIAIS EM UM ANO | CASOS CHOCANTES EM SP",
-    "canal": "Portal VIU",
-    "canal_id": "UChyNmfny8wngE9qaFFFMCPg",
-    "duracao": "2:44",
+    "id": "fg9Pe5xYj-4",
+    "titulo": "Letalidade Policial em São Paulo",
+    "canal": "FGV EAESP Pesquisa",
+    "canal_id": "UCTW1CKZpNIXVRs-KrqQr2cA",
+    "duracao": "10:32",
+    "quando": "há 8 anos",
+    "views": "1.423 visualizações"
+   },
+   {
+    "id": "vlylUBqynbU",
+    "titulo": "Barroso estabelece situações para uso obrigatório de câmeras corporais por PMs em São Paulo",
+    "canal": "Record News",
+    "canal_id": "UCuiLR4p6wQ3xLEm15pEn1Xw",
+    "duracao": "0:40",
     "quando": "há 1 ano",
-    "views": "10 visualizações"
+    "views": "1.038 visualizações"
+   },
+   {
+    "id": "78rcnnTvPhM",
+    "titulo": "Novas imagens mostram abordagem policial que terminou com morte de jovem em SP | #SBTBrasil",
+    "canal": "SBT News e SBT Jornalismo",
+    "canal_id": null,
+    "duracao": "2:29",
+    "quando": "há 23 horas",
+    "views": "60.711 visualizações"
    }
   ]
  }
