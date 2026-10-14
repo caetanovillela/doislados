@@ -317,10 +317,25 @@ tbody td { width: 40%; font-size: 1rem; line-height: 1.45; }
 .fontes a::after { content: "↗"; font-family: var(--f-mono); }
 .fontes a:hover { text-decoration: underline; }
 
-.autoria { flex-basis: 100%; }
-.autoria a { color: var(--tinta); text-underline-offset: 3px; }
+.rodape {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; align-items: start;
+  border-top: 2px solid var(--tinta); padding-top: 48px; padding-bottom: 56px; margin-top: 96px;
+}
+.rodape p { margin: 0; }
+.rodape-marca, .autoria { display: grid; gap: 6px; }
+.rodape-marca strong { font-family: var(--f-titulo); font-weight: 800; font-size: 1.25rem; letter-spacing: -0.03em; line-height: 1; }
+.rodape-aviso { color: var(--apagado); font-size: 0.95rem; line-height: 1.55; justify-self: center; text-align: center; }
+.autoria { justify-items: end; text-align: right; }
+.autoria a { font-family: var(--f-titulo); font-weight: 700; font-size: 1.05rem; color: var(--tinta); text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 4px; }
 .autoria a:hover { background: var(--grifo); color: var(--grifo-texto); }
-.rodape { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-top: 2px solid var(--tinta); padding-top: 18px; padding-bottom: 40px; margin-top: 72px; color: var(--apagado); }
+
+/* Transição entre páginas */
+.topo { view-transition-name: topo; }
+::view-transition-old(root) { animation: 120ms ease-in both pagina-sai; }
+::view-transition-new(root) { animation: 320ms cubic-bezier(0.2, 0.7, 0.2, 1) 120ms both pagina-entra; }
+#app.entra { animation: pagina-entra 340ms cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+@keyframes pagina-sai { to { opacity: 0; } }
+@keyframes pagina-entra { from { opacity: 0; transform: translateY(10px); } }
 
 /* Página da categoria */
 a.menu-cat { text-decoration: none; }
@@ -393,9 +408,12 @@ a.menu-cat { text-decoration: none; }
   .sumario button { padding: 16px 0 13px; }
   .dossie p { font-size: 1.1rem; }
   .capa .sub { font-size: 1.08rem; }
+  .rodape { grid-template-columns: minmax(0, 1fr); gap: 28px; padding-top: 36px; margin-top: 72px; }
+  .rodape-aviso, .autoria { justify-self: start; justify-items: start; text-align: left; }
   .em-alta { padding: 20px 18px 22px 28px; }
 }
 @media (prefers-reduced-motion: reduce) {
+  #app.entra, ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
   .pulso { animation: none; }
   .video-capa:hover .video-play { transform: none; }
 }

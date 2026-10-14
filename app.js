@@ -465,7 +465,7 @@
     return m && categorias.some((c) => c.id === m[1]) ? m[1] : null;
   }
 
-  function rotear() {
+  function pintarRota() {
     const hash = decodeURIComponent(location.hash.replace(/^#/, ""));
     const tema = temas.find((t) => t.id === hash.split(".")[0] && !t.emBreve);
     const cat = categoriaDaRota();
@@ -474,6 +474,16 @@
     else paginaInicio();
     pintarCategorias();
     window.scrollTo(0, 0);
+  }
+
+  // Troca de página com transição leve: crossfade nativo quando o navegador permite, senão um fade simples.
+  let primeiraRota = true;
+  function rotear() {
+    const calmo = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (primeiraRota || calmo) { primeiraRota = false; pintarRota(); return; }
+    if (document.startViewTransition) { document.startViewTransition(pintarRota); return; }
+    pintarRota();
+    raiz.classList.remove("entra"); void raiz.offsetWidth; raiz.classList.add("entra");
   }
 
   /* ---------- Modo claro / escuro ---------- */
