@@ -1,17 +1,14 @@
-aborto | Debora Diniz aborto descriminalização
-aborto | Drauzio Varella aborto
-aborto | Rosa Weber voto aborto 12 semanas
-aborto | aborto pró-vida argumentos contra legalização
-aborto | Flow aborto debate pró-vida
-redes | Flow regulação das redes sociais censura
-redes | Felipe Neto regulação redes sociais
-redes | regulação big techs a favor especialista
-redes | PL das fake news censura crítica
-superricos | taxação de dividendos crítica economista
-superricos | imposto mínimo alta renda críticas investimento
-superricos | Flow taxar super ricos
-superricos | isenção imposto de renda 5 mil compensação crítica
-marco | marco temporal a favor produtor rural segurança jurídica
-marco | Flow marco temporal indígenas
-marco | Ailton Krenak marco temporal
-marco | marco temporal Pedro Lupion
+foz | Randolfe petróleo margem equatorial Amapá desenvolvimento
+foz | Magda Chambriard margem equatorial
+foz | margem equatorial petróleo a favor soberania energética
+foz | Marina Silva foz do Amazonas petróleo
+foz | Observatório do Clima foz do Amazonas petróleo
+foz | Flow petróleo margem equatorial
+civico | escola cívico-militar pais aprovam disciplina resultado
+civico | Tarcísio escolas cívico-militares defende
+civico | Daniel Cara escola cívico-militar
+civico | Flow escola cívico-militar debate
+cameras | Derrite câmeras corporais críticas
+cameras | câmeras corporais policiais atrapalham trabalho policial
+cameras | Flow câmera corporal policial
+cameras | câmeras corporais FGV estudo letalidade policial São Paulo
