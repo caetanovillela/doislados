@@ -60,6 +60,10 @@ window.CATEGORIAS = [
   {
     "id": "direitos",
     "nome": "Direitos e liberdades"
+  },
+  {
+    "id": "ambiente",
+    "nome": "Meio ambiente e energia"
   }
 ];
 
@@ -1903,6 +1907,292 @@ window.TEMAS = [
     ]
   },
   {
+    "id": "cameras-corporais",
+    "titulo": "Câmeras corporais na polícia",
+    "categoria": "seguranca",
+    "tags": [
+      "Olho Vivo",
+      "PM de São Paulo",
+      "letalidade policial",
+      "Derrite",
+      "gravação contínua",
+      "Ministério da Justiça",
+      "uso da força"
+    ],
+    "pergunta": "Policiais devem usar câmeras que gravam todo o turno de trabalho?",
+    "resumo": "Em São Paulo, as câmeras ajudaram a derrubar as mortes em ações da PM. O governo Tarcísio trocou a gravação contínua por câmeras que o policial ou a central acionam, e o debate voltou.",
+    "atualizado": "2026-10-14",
+    "rotulos": {
+      "favoravel": "A favor da gravação contínua",
+      "contrario": "Contra ou com ressalvas"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "As câmeras corporais ficam presas à farda e filmam as abordagens. São Paulo começou o programa Olho Vivo em 2020, com câmeras que gravavam o turno inteiro, sem que o policial pudesse desligar.",
+        "Estudos da FGV e do Fórum Brasileiro de Segurança Pública mostraram que as mortes em ações da PM caíram muito mais nos batalhões com câmeras. Em 2023, o secretário Guilherme Derrite disse que reveria o programa, e a nova compra de 2024 trocou a gravação contínua por câmeras acionadas pelo policial ou pela central.",
+        "Em 2024, o Ministério da Justiça publicou regras nacionais para o uso das câmeras, e outros estados passaram a adotar o equipamento.",
+        "Quem defende diz que a câmera protege o cidadão e o bom policial. Quem critica diz que a gravação contínua expõe a intimidade e a tática dos policiais, gera desconfiança e deixa a tropa hesitante."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Queda da letalidade nos batalhões com câmera (FGV/FBSP)",
+          "valor": "−77%"
+        },
+        {
+          "rotulo": "Paulistanos a favor das câmeras (Datafolha 2024)",
+          "valor": "88%"
+        },
+        {
+          "rotulo": "Queda do uso da força em teste em SC",
+          "valor": "−61%"
+        },
+        {
+          "rotulo": "Início do programa em SP",
+          "valor": "2020"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Mortes",
+        "favoravel": "Com a câmera, as mortes em ações policiais caíram fortemente em São Paulo.",
+        "contrario": "A queda tem várias causas. A câmera sozinha não explica tudo."
+      },
+      {
+        "tema": "Proteção do policial",
+        "favoravel": "A gravação defende o policial de acusações falsas e serve de prova contra criminosos.",
+        "contrario": "Gravar o turno inteiro expõe conversas, intimidade e táticas, e pode virar arma contra o policial."
+      },
+      {
+        "tema": "Eficiência",
+        "favoravel": "Não há sinal de que a câmera atrapalhe o combate ao crime. Prisões e ocorrências registradas não caíram.",
+        "contrario": "Policiais ficam com medo de agir, e o crime ganha espaço."
+      },
+      {
+        "tema": "Quem liga",
+        "favoravel": "Se o policial pode desligar, a câmera falha justamente nos casos de abuso.",
+        "contrario": "O policial já é muito fiscalizado. Acionar a câmera nas ocorrências basta."
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Câmera corporal",
+        "definicao": "Câmera presa ao uniforme que grava imagem e som das ações do policial."
+      },
+      {
+        "termo": "Gravação contínua",
+        "definicao": "Modelo em que a câmera grava o turno todo, sem o policial poder desligar."
+      },
+      {
+        "termo": "Acionamento intencional",
+        "definicao": "Modelo em que o policial ou a central liga a gravação em momentos específicos."
+      },
+      {
+        "termo": "Letalidade policial",
+        "definicao": "Número de mortes causadas por policiais em serviço."
+      },
+      {
+        "termo": "Uso da força",
+        "definicao": "Toda ação física do policial sobre alguém, de imobilizar e algemar até atirar."
+      }
+    ],
+    "incertezas": [
+      "Se o modelo de acionamento pelo policial mantém os resultados da gravação contínua.",
+      "Quanto da queda das mortes em SP veio das câmeras e quanto de outras mudanças na PM.",
+      "O efeito das câmeras sobre a coragem dos policiais em ocorrências de risco, que é difícil de medir."
+    ],
+    "fontes": [
+      {
+        "titulo": "Conjur: secretário de Segurança de SP diz que vai rever câmeras da PM (jan/2023)",
+        "url": "https://www.conjur.com.br/2023-jan-04/secretario-seguranca-sp-rever-cameras-pm/"
+      },
+      {
+        "titulo": "Correio Braziliense: Datafolha, 88% dos paulistanos são a favor das câmeras corporais (mar/2024)",
+        "url": "https://www.correiobraziliense.com.br/brasil/2024/03/6820473-datafolha-88-dos-paulistanos-sao-a-favor-das-cameras-corporais-da-pm.html"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "fgv-fbsp-2022",
+        "posicao": "favoravel",
+        "instituicao": "FGV EAESP e FBSP",
+        "natureza": "Escola de Administração de Empresas da FGV e Fórum Brasileiro de Segurança Pública",
+        "tipo": "Estudo",
+        "titulo": "Em São Paulo, câmeras corporais contribuem para redução de mortes em intervenções da PM",
+        "autores": "Renato Sérgio de Lima, Samira Bueno, Isabela Sobral e Dennis Pacheco",
+        "data": "22/12/2022",
+        "formato": "Página",
+        "url": "https://eaesp.fgv.br/administracao-publica/politicas-publicas/em-sao-paulo-cameras-corporais-contribuem-para-reducao-de-mortes-em-intervencoes-da-pm",
+        "tese": "Nos batalhões que receberam câmeras, as mortes causadas por policiais caíram 77% contra 47% nos demais. Os autores estimam que cerca de 88 mortes foram evitadas.",
+        "numero": {
+          "valor": "−77%",
+          "legenda": "de mortes em ações da PM nos batalhões com câmera"
+        },
+        "premissas": [
+          "Compara batalhões com e sem câmera no mesmo período."
+        ],
+        "pergunte": [
+          "Os batalhões escolhidos primeiro eram os mais letais. Isso pode exagerar o efeito?"
+        ]
+      },
+      {
+        "id": "nev-nota-2024",
+        "posicao": "favoravel",
+        "instituicao": "NEV-USP e organizações da sociedade civil",
+        "natureza": "Nota técnica publicada pelo Núcleo de Estudos da Violência da USP",
+        "tipo": "Nota técnica",
+        "titulo": "Nota técnica sobre as câmeras corporais da PM de São Paulo",
+        "autores": "NEV-USP e outras organizações",
+        "data": "05/2024",
+        "formato": "PDF",
+        "url": "https://nev.prp.usp.br/wp-content/uploads/2024/05/nota-tecnica-cameras.pdf",
+        "tese": "A letalidade policial em SP caiu 62,7% entre 2019 e 2022, a população apoia as câmeras, e a nova compra, ao acabar com a gravação contínua, ameaça o principal ganho do programa.",
+        "numero": {
+          "valor": "−62,7%",
+          "legenda": "de letalidade policial em SP entre 2019 e 2022"
+        },
+        "premissas": [
+          "Se o policial escolhe quando gravar, a câmera perde força justamente nos casos de abuso."
+        ],
+        "pergunte": [
+          "Existe meio-termo entre gravar tudo e deixar o policial decidir?"
+        ]
+      },
+      {
+        "id": "sc-uso-forca-2021",
+        "posicao": "favoravel",
+        "instituicao": "PUC-Rio, Queen Mary, Warwick e LSE",
+        "natureza": "Experimento de universidades com a Polícia Militar de Santa Catarina",
+        "tipo": "Estudo",
+        "titulo": "Câmeras reduzem uso da força por PMs, diz estudo",
+        "autores": "Pedro Souza (Queen Mary) e coautores (relato do Estadão, reproduzido pela IstoÉ Dinheiro)",
+        "data": "01/10/2021",
+        "formato": "Reportagem",
+        "url": "https://istoedinheiro.com.br/cameras-reduzem-uso-da-forca-por-pms-diz-estudo",
+        "tese": "Em Santa Catarina, cerca de 150 policiais sorteados usaram câmeras e 300 não. Quem usava câmera recorreu muito menos à força, e as ocorrências registradas aumentaram.",
+        "numero": {
+          "valor": "−61%",
+          "legenda": "no uso da força por policiais com câmera"
+        },
+        "premissas": [
+          "O sorteio de quem recebe a câmera permite comparar grupos parecidos."
+        ],
+        "pergunte": [
+          "Os policiais sabiam que faziam parte de um estudo. Isso pode ter mudado o comportamento?"
+        ]
+      },
+      {
+        "id": "conjur-derrite-2023",
+        "posicao": "contrario",
+        "instituicao": "Secretaria da Segurança de SP",
+        "natureza": "Declaração do secretário de Segurança Pública de São Paulo",
+        "tipo": "Declaração",
+        "titulo": "Secretário de Segurança de SP diz que vai rever câmeras da PM",
+        "autores": "Guilherme Derrite (relato do Conjur)",
+        "data": "04/01/2023",
+        "formato": "Reportagem",
+        "url": "https://www.conjur.com.br/2023-jan-04/secretario-seguranca-sp-rever-cameras-pm/",
+        "tese": "O novo governo anunciou que reveria o programa Olho Vivo e manteria só o que se provasse eficaz, com base em estudos próprios da PM e da FGV.",
+        "premissas": [
+          "Uma política pública deve ser reavaliada quando muda o governo."
+        ],
+        "pergunte": [
+          "Os dados da própria PM mostravam bons resultados. Que evidência justificaria mudar o programa?"
+        ]
+      },
+      {
+        "id": "oeste-criticas-2022",
+        "posicao": "contrario",
+        "instituicao": "Revista Oeste",
+        "natureza": "Reportagem que reúne as críticas de policiais e políticos às câmeras",
+        "tipo": "Reportagem",
+        "titulo": "Câmeras nas fardas policiais: segurança ou repressão?",
+        "autores": "Rute Moraes",
+        "data": "25/06/2022",
+        "formato": "Página",
+        "url": "https://www.revistaoeste.com/brasil/cameras-nas-fardas-policiais-seguranca-ou-repressao/",
+        "tese": "Para os críticos, a gravação contínua vigia o policial em vez do criminoso, expõe táticas, entrega provas à defesa dos suspeitos e deixa a tropa hesitante em ocorrências de risco.",
+        "premissas": [
+          "O policial deve ter controle sobre quando grava.",
+          "O dinheiro renderia mais em outras ações, como tornozeleiras para presos soltos."
+        ],
+        "pergunte": [
+          "Se a câmera deixa o policial mais cauteloso, isso é um problema ou o objetivo?"
+        ]
+      },
+      {
+        "id": "adpesp-2024",
+        "posicao": "contrario",
+        "instituicao": "ADPESP",
+        "natureza": "Artigo de opinião do presidente da Associação dos Delegados de Polícia de São Paulo",
+        "tipo": "Artigo de opinião",
+        "titulo": "“Policiais são, talvez, os profissionais mais fiscalizados e não saem às ruas para cometer excessos”",
+        "autores": "André Santos Pereira (Tribuna de Jundiaí)",
+        "data": "04/04/2024",
+        "formato": "Página",
+        "url": "https://tribunadejundiai.com.br/mais/opiniao/policiais-sao-talvez-os-profissionais-mais-fiscalizados-e-nao-saem-as-ruas-para-cometer-excessos-diz-especialista/",
+        "tese": "As câmeras podem ajudar, mas só com regras claras de sigilo e de quem pode pedir as imagens. Vigiar o policial o tempo todo parte da ideia errada de que ele sai para cometer abusos.",
+        "premissas": [
+          "O policial já é controlado por superiores, Ministério Público, corregedoria e imprensa."
+        ],
+        "pergunte": [
+          "Se a vigilância constante vale para a polícia, por que não para outros servidores com poder sobre os cidadãos?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "BjSbk1i6r2Q",
+        "lado": "favoravel",
+        "titulo": "Uso de câmeras em uniformes de PMs reduziu mais de 50% das mortes em ações",
+        "canal": "SBT News",
+        "nota": "A reportagem mostra os números do programa paulista.",
+        "duracao": "2:31"
+      },
+      {
+        "id": "B8jQF5COuEU",
+        "lado": "favoravel",
+        "titulo": "O uso de câmeras corporais pela polícia, explicado",
+        "canal": "Headline Brasil",
+        "nota": "Melina Risso, do Instituto Igarapé, explica o que as pesquisas mostram.",
+        "duracao": "3:04"
+      },
+      {
+        "id": "L27vsOdG3f0",
+        "lado": "favoravel",
+        "titulo": "“Não faltavam dados para mostrar que as câmeras eram uma política bem-sucedida”",
+        "canal": "Rádio CBN",
+        "nota": "Comentário sobre a mudança no programa de São Paulo.",
+        "duracao": "2:19"
+      },
+      {
+        "id": "Ei1SHiBwQuI",
+        "lado": "contrario",
+        "titulo": "Igor e Sargento Castro discutem sobre o uso de câmera em policiais",
+        "canal": "Cortes do Flow",
+        "nota": "O policial e youtuber explica por que vê problemas na câmera.",
+        "duracao": "8:56"
+      },
+      {
+        "id": "PE0e21HJ6cw",
+        "lado": "contrario",
+        "titulo": "Sargento Nantes: as câmeras corporais só atrapalham o trabalho da polícia",
+        "canal": "TR_SOUZA",
+        "nota": "A visão de um policial da ponta sobre a gravação contínua.",
+        "duracao": "7:05"
+      },
+      {
+        "id": "SCflb-YSjQ8",
+        "lado": "contrario",
+        "titulo": "Minha opinião sincera sobre câmeras corporais em policiais",
+        "canal": "Delegado Palumbo",
+        "nota": "O delegado e vereador de São Paulo em um minuto.",
+        "duracao": "1:00"
+      }
+    ]
+  },
+  {
     "id": "privatizacoes",
     "titulo": "Privatização de estatais",
     "categoria": "economia",
@@ -3069,6 +3359,292 @@ window.TEMAS = [
     ]
   },
   {
+    "id": "civico-militares",
+    "titulo": "Escolas cívico-militares",
+    "categoria": "educacao",
+    "tags": [
+      "Pecim",
+      "Tarcísio",
+      "Paraná",
+      "disciplina",
+      "Ideb",
+      "STF",
+      "militarização",
+      "gestão escolar"
+    ],
+    "pergunta": "Escolas públicas devem ter militares na gestão e na disciplina?",
+    "resumo": "O governo federal encerrou seu programa em 2023, mas estados como São Paulo e Paraná criaram os próprios. O STF julga se o modelo paulista é constitucional, e o julgamento está suspenso.",
+    "atualizado": "2026-10-14",
+    "rotulos": {
+      "favoravel": "A favor do modelo",
+      "contrario": "Contra o modelo"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "Na escola cívico-militar, a escola continua pública e as aulas seguem com professores civis, mas policiais ou militares da reserva cuidam da disciplina, da organização e de atividades cívicas, como hino e uniforme. É diferente do colégio militar, que é mantido pelas Forças Armadas ou pela PM.",
+        "O programa federal (Pecim) foi criado em 2019 e chegou a cerca de 200 escolas. O governo Lula o encerrou em 2023. Vários estados mantiveram ou criaram programas próprios. O Paraná tem mais de 300 escolas no modelo, e São Paulo aprovou o seu em 2024 (Lei Complementar 1.398).",
+        "A lei paulista é questionada no STF. Em maio de 2026, o relator Gilmar Mendes votou para mantê-la, desde que a direção continue civil, a parte pedagógica fique com os professores e haja outra escola por perto para quem não quiser o modelo. Cristiano Zanin pediu vista, e o julgamento parou.",
+        "Defensores falam em mais disciplina, segurança e melhora nas notas. Críticos dizem que os dados são fracos, que militares não são educadores e que o modelo pode limitar a liberdade de expressão de alunos e professores."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Escolas no modelo no Paraná",
+          "valor": "312"
+        },
+        {
+          "rotulo": "Aprovação entre pais no Paraná (pesquisa do governo)",
+          "valor": "89%"
+        },
+        {
+          "rotulo": "Escolas do programa federal até o fim, em 2023",
+          "valor": "≈ 200"
+        },
+        {
+          "rotulo": "Situação no STF",
+          "valor": "Suspenso"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Disciplina",
+        "favoravel": "Regras claras e presença de autoridade reduzem brigas, faltas e indisciplina.",
+        "contrario": "Disciplina imposta pelo medo não ensina convivência. Pode abafar conflitos em vez de resolvê-los."
+      },
+      {
+        "tema": "Aprendizado",
+        "favoravel": "Há estudos que mostram notas melhores em matemática e português depois da adoção do modelo.",
+        "contrario": "Muitas escolas escolhidas já eram melhores ou recebem mais verba. Comparações sérias mostram resultados mistos."
+      },
+      {
+        "tema": "Quem educa",
+        "favoravel": "Os militares não dão aula. Cuidam da gestão e liberam os professores para ensinar.",
+        "contrario": "Policiais não têm formação pedagógica, e a lógica do quartel não combina com a escola."
+      },
+      {
+        "tema": "Liberdade",
+        "favoravel": "A adesão é voluntária, e famílias que não querem podem escolher outra escola.",
+        "contrario": "Em muitas cidades não há outra escola por perto. Regras sobre cabelo, roupa e opinião atingem alunos e professores."
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Pecim",
+        "definicao": "Programa Nacional das Escolas Cívico-Militares, criado pelo governo federal em 2019 e encerrado em 2023."
+      },
+      {
+        "termo": "Colégio militar",
+        "definicao": "Escola mantida pelas Forças Armadas ou pela Polícia Militar, com processo seletivo próprio. Não é o mesmo que a cívico-militar."
+      },
+      {
+        "termo": "Ideb",
+        "definicao": "Índice do MEC que junta as notas das provas nacionais e a taxa de aprovação das escolas."
+      },
+      {
+        "termo": "Distorção idade-série",
+        "definicao": "Quando o aluno está dois ou mais anos atrasado em relação à série esperada para a idade."
+      },
+      {
+        "termo": "Pedido de vista",
+        "definicao": "Quando um ministro pede mais tempo para analisar o processo, o que suspende o julgamento."
+      }
+    ],
+    "incertezas": [
+      "Se a melhora nas notas vem do modelo ou de mais verba, seleção de escolas e saída de alunos com dificuldade.",
+      "Como o STF vai decidir sobre a lei de São Paulo depois do pedido de vista.",
+      "Que efeito o modelo tem, a longo prazo, sobre a formação cidadã dos alunos."
+    ],
+    "fontes": [
+      {
+        "titulo": "Brasil de Fato: Zanin pede vista e suspende julgamento sobre escolas cívico-militares de SP (mai/2026)",
+        "url": "https://www.brasildefato.com.br/2026/05/26/zanin-pede-vista-e-suspende-julgamento-sobre-escolas-civico-militares-de-sao-paulo/"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "enap-goias",
+        "posicao": "favoravel",
+        "instituicao": "Enap",
+        "natureza": "Escola Nacional de Administração Pública (Cadernos Enap)",
+        "tipo": "Estudo",
+        "titulo": "Caderno 124: o efeito das escolas militarizadas de Goiás sobre o desempenho dos alunos",
+        "autores": "Jevuks Matheus de Araújo",
+        "data": "2021",
+        "formato": "PDF",
+        "url": "https://bibliotecadigital.enap.gov.br/bitstream/1/7587/1/Sum%c3%a1rio%20Executivo%20Caderno%20124%20Final.pdf",
+        "tese": "Escolas estaduais de Goiás que passaram à gestão militar tiveram notas maiores em matemática e português e menos alunos atrasados do que escolas parecidas que não mudaram.",
+        "numero": {
+          "valor": "+15 pontos",
+          "legenda": "em matemática no Saeb, em média"
+        },
+        "premissas": [
+          "Compara as mesmas escolas antes e depois, contra um grupo de escolas semelhantes."
+        ],
+        "pergunte": [
+          "Os colégios militares de Goiás recebem mais verba. Dá para separar esse efeito do efeito da disciplina?"
+        ]
+      },
+      {
+        "id": "stf-gilmar-2026",
+        "posicao": "favoravel",
+        "instituicao": "STF",
+        "natureza": "Voto do relator no Supremo Tribunal Federal (ADIs 7662 e 7675)",
+        "tipo": "Voto",
+        "titulo": "Gilmar Mendes vota pela validade das escolas cívico-militares de São Paulo, com condições",
+        "autores": "Gilmar Mendes (relato do Brasil de Fato)",
+        "data": "26/05/2026",
+        "formato": "Reportagem",
+        "url": "https://www.brasildefato.com.br/2026/05/26/zanin-pede-vista-e-suspende-julgamento-sobre-escolas-civico-militares-de-sao-paulo/",
+        "tese": "O estado pode adotar o modelo, desde que a direção seja civil, a parte pedagógica fique com os professores e as famílias tenham outra escola próxima como alternativa.",
+        "premissas": [
+          "A Constituição permite aos estados organizar suas redes de ensino."
+        ],
+        "pergunte": [
+          "As condições do voto bastam para responder às críticas sobre liberdade e formação dos militares?"
+        ]
+      },
+      {
+        "id": "parana-pesquisa-2025",
+        "posicao": "favoravel",
+        "instituicao": "Governo do Paraná",
+        "natureza": "Pesquisa da Paraná Pesquisas encomendada pela Secretaria de Educação do estado",
+        "tipo": "Pesquisa de opinião",
+        "titulo": "Modelo cívico-militar na educação do Paraná é aprovado por 90% de pais e professores",
+        "autores": "Paraná Pesquisas (Agência Estadual de Notícias)",
+        "data": "06/11/2025",
+        "formato": "Página",
+        "url": "https://www.parana.pr.gov.br/Audio/Modelo-civico-militar-na-educacao-do-Parana-e-aprovado-por-90-de-pais-e-professores",
+        "tese": "Pais e professores das escolas cívico-militares do Paraná aprovam o modelo e dizem ver mais disciplina e mais aprendizado.",
+        "numero": {
+          "valor": "89%",
+          "legenda": "dos pais e responsáveis aprovam o modelo"
+        },
+        "premissas": [
+          "A satisfação de quem vive a escola é um bom indicador do resultado."
+        ],
+        "pergunte": [
+          "A pesquisa foi encomendada pelo próprio governo que criou o programa. Isso muda como você lê os números?"
+        ]
+      },
+      {
+        "id": "undf-ideb",
+        "posicao": "contrario",
+        "instituicao": "UnDF e Inep",
+        "natureza": "Artigo de pesquisadores da Universidade do Distrito Federal e do Inep, na revista Inter-Ação (UFG)",
+        "tipo": "Artigo",
+        "titulo": "Escolas cívico-militares do Distrito Federal e o Ideb",
+        "autores": "Lima e Oliveira (revista Inter-Ação)",
+        "data": "2025",
+        "formato": "PDF",
+        "url": "https://revistas.ufg.br/interacao/article/download/82994/43991/429375",
+        "tese": "Das 14 escolas que adotaram o modelo no DF, só 6 tinham dados comparáveis no Ideb. Dessas, 4 subiram e 2 caíram. Os dados não sustentam a promessa de melhora garantida.",
+        "numero": {
+          "valor": "6 de 14",
+          "legenda": "escolas tinham Ideb comparável"
+        },
+        "premissas": [
+          "Uma política deve ser avaliada pelos indicadores oficiais, não só pela percepção."
+        ],
+        "pergunte": [
+          "Com tão poucas escolas comparáveis, o estudo prova que o modelo não funciona ou só que ainda não dá para saber?"
+        ]
+      },
+      {
+        "id": "carta-entidades-2026",
+        "posicao": "contrario",
+        "instituicao": "Inesc e mais de 100 entidades",
+        "natureza": "Carta de organizações da sociedade civil ao STF",
+        "tipo": "Carta aberta",
+        "titulo": "Carta pela desmilitarização das escolas, enviada ao julgamento do STF",
+        "autores": "Mais de 100 entidades (documento hospedado pelo Inesc)",
+        "data": "05/2026",
+        "formato": "PDF",
+        "url": "https://inesc.org.br/wp-content/uploads/2026/05/carta-desmilitarizacao-_-julgamento-stf.pdf",
+        "tese": "Militarizar escolas desvia policiais da segurança pública, viola a gestão democrática prevista na Constituição e expõe alunos a regras e punições incompatíveis com a educação.",
+        "numero": {
+          "valor": "100+",
+          "legenda": "entidades assinam a carta"
+        },
+        "premissas": [
+          "A Constituição exige gestão democrática do ensino público."
+        ],
+        "pergunte": [
+          "Se a família escolhe a escola, a gestão continua sendo democrática?"
+        ]
+      },
+      {
+        "id": "ihu-catarina",
+        "posicao": "contrario",
+        "instituicao": "UnB",
+        "natureza": "Entrevista com professora da Faculdade de Educação da UnB ao Instituto Humanitas Unisinos",
+        "tipo": "Entrevista",
+        "titulo": "A escola militarizada é a escola que nega as diferenças",
+        "autores": "Catarina de Almeida Santos (IHU Unisinos)",
+        "data": "24/08/2024",
+        "formato": "Página",
+        "url": "https://www.ihu.unisinos.br/642850-a-escola-militarizada-e-a-escola-que-nega-as-diferencas-entrevista-com-catarina-de-almeida-santos",
+        "tese": "O modelo padroniza corpos e comportamentos, pune a diferença e troca o diálogo pela obediência. Isso afasta justamente os alunos que mais precisam da escola.",
+        "premissas": [
+          "Escola pública deve acolher a diversidade, não uniformizá-la."
+        ],
+        "pergunte": [
+          "Regras de cabelo e uniforme são questão de disciplina ou de identidade?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "1-Xu1sn65cc",
+        "lado": "favoravel",
+        "titulo": "Fim das escolas militares? Tarcísio de Freitas",
+        "canal": "Cortes do Flow",
+        "nota": "O governador de São Paulo explica por que criou o programa paulista.",
+        "duracao": "4:08"
+      },
+      {
+        "id": "19x1L0j5RW8",
+        "lado": "favoravel",
+        "titulo": "Como funciona uma escola cívico-militar",
+        "canal": "Tenente Coimbra",
+        "nota": "O deputado autor da lei paulista mostra o dia a dia do modelo.",
+        "duracao": "6:52"
+      },
+      {
+        "id": "Ae6YhPiYBio",
+        "lado": "favoravel",
+        "titulo": "Escola cívico-militar: disciplina, respeito e valores",
+        "canal": "Senador Marcos Pontes",
+        "nota": "O senador defende o modelo.",
+        "duracao": "2:50"
+      },
+      {
+        "id": "Wq9q0S6CeII",
+        "lado": "contrario",
+        "titulo": "“Crianças não são soldados; escolas não são quartéis”",
+        "canal": "UOL",
+        "nota": "A pesquisadora Catarina de Almeida Santos (UnB) explica por que é contra.",
+        "duracao": "7:28"
+      },
+      {
+        "id": "nu0uKLuQ6-k",
+        "lado": "contrario",
+        "titulo": "“Escolas cívico-militares não preparam para um mundo mais pacífico”",
+        "canal": "Estadão",
+        "nota": "Especialista em educação critica o modelo.",
+        "duracao": "2:34"
+      },
+      {
+        "id": "E3QnSCtQ7Rc",
+        "lado": "contrario",
+        "titulo": "A violência da militarização das escolas no Brasil",
+        "canal": "Laboratório de Políticas Públicas",
+        "nota": "Daniel Cara, professor da USP, resume as críticas.",
+        "duracao": "8:22"
+      }
+    ]
+  },
+  {
     "id": "aborto",
     "titulo": "Descriminalização do aborto",
     "categoria": "direitos",
@@ -3926,6 +4502,297 @@ window.TEMAS = [
         "canal": "Greenpeace Brasil",
         "nota": "A tese explicada por quem é contra, em um minuto.",
         "duracao": "1:17"
+      }
+    ]
+  },
+  {
+    "id": "foz-amazonas",
+    "titulo": "Petróleo na Foz do Amazonas",
+    "categoria": "ambiente",
+    "tags": [
+      "Margem Equatorial",
+      "Petrobras",
+      "Ibama",
+      "Amapá",
+      "licenciamento",
+      "transição energética",
+      "COP30",
+      "royalties"
+    ],
+    "pergunta": "O Brasil deve explorar petróleo na Margem Equatorial, perto da foz do Amazonas?",
+    "resumo": "O Ibama liberou a perfuração em 2025 e a Petrobras anunciou petróleo no Amapá em agosto de 2026. Agora o debate é se vale abrir uma nova fronteira de petróleo numa das regiões mais sensíveis do litoral.",
+    "atualizado": "2026-10-14",
+    "rotulos": {
+      "favoravel": "A favor de explorar",
+      "contrario": "Contra explorar"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "A Margem Equatorial é a faixa do litoral que vai do Amapá ao Rio Grande do Norte. A parte mais disputada fica no mar do Amapá, na chamada bacia da Foz do Amazonas, perto de manguezais, de recifes de corais pouco estudados e de comunidades que vivem da pesca.",
+        "A Petrobras comprou o bloco FZA-M-59 em 2013. Em 2023, o Ibama negou a licença por falhas no plano de resposta a vazamentos. Depois de novos testes, o órgão emitiu a licença em 20 de outubro de 2025, embora a área técnica tivesse recomendado a rejeição um ano antes.",
+        "Em 14 de agosto de 2026, a Petrobras anunciou que encontrou petróleo no poço Morpho, a cerca de 175 km da costa do Amapá e em quase 2.900 metros de profundidade de água. Ainda não se sabe se a reserva é grande o bastante para virar produção comercial.",
+        "De um lado, o governo e os estados do Norte veem empregos, royalties e uma forma de pagar a transição energética. De outro, ambientalistas, cientistas e povos indígenas apontam o risco de vazamento e a contradição de abrir petróleo novo no país que sediou a COP30."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Distância do poço até a costa do Amapá",
+          "valor": "≈ 175 km"
+        },
+        {
+          "rotulo": "Licença do Ibama para perfurar",
+          "valor": "20/10/2025"
+        },
+        {
+          "rotulo": "Empregos projetados pela CNI se houver produção",
+          "valor": "≈ 326 mil"
+        },
+        {
+          "rotulo": "Técnicos do Ibama que recomendaram negar a licença (2024)",
+          "valor": "26"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Economia",
+        "favoravel": "O petróleo pode trazer empregos, royalties e investimento para estados pobres como o Amapá.",
+        "contrario": "Projetos de petróleo costumam deixar pouca riqueza local e muito risco. Outros usos da região geram renda sem destruí-la."
+      },
+      {
+        "tema": "Risco ambiental",
+        "favoravel": "A Petrobras opera em águas profundas há décadas, e o licenciamento exigiu um plano de emergência testado.",
+        "contrario": "As correntes são fortes e a região tem corais e manguezais pouco conhecidos. Um vazamento seria difícil de conter."
+      },
+      {
+        "tema": "Clima",
+        "favoravel": "O mundo ainda vai usar petróleo por décadas. Melhor que o Brasil produza e use o dinheiro na transição.",
+        "contrario": "Para limitar o aquecimento, não se deveria abrir nenhuma nova fronteira de petróleo. O Brasil perde credibilidade climática."
+      },
+      {
+        "tema": "Soberania",
+        "favoravel": "Sem novas reservas, a produção brasileira começa a cair na próxima década e o país volta a importar.",
+        "contrario": "Segurança energética também vem de solar, eólica e biocombustíveis, em que o Brasil já é forte."
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Margem Equatorial",
+        "definicao": "Área do litoral norte do Brasil, do Amapá ao Rio Grande do Norte, vista como nova fronteira de petróleo."
+      },
+      {
+        "termo": "Licença de operação",
+        "definicao": "Autorização do Ibama para uma atividade começar, depois de avaliar os riscos e os planos de controle."
+      },
+      {
+        "termo": "Poço exploratório",
+        "definicao": "Perfuração feita para descobrir se há petróleo. Não é ainda a produção comercial."
+      },
+      {
+        "termo": "Royalties",
+        "definicao": "Compensação paga pelas petroleiras à União, a estados e a municípios pelo petróleo extraído."
+      },
+      {
+        "termo": "Plano de emergência",
+        "definicao": "Conjunto de equipamentos e procedimentos para conter um vazamento e resgatar fauna atingida."
+      }
+    ],
+    "incertezas": [
+      "Se a reserva encontrada é grande e viável o bastante para produção comercial.",
+      "Quanto dos empregos e da arrecadação projetados ficaria de fato no Amapá.",
+      "Como reagiriam as correntes e os recifes da região a um vazamento real."
+    ],
+    "fontes": [
+      {
+        "titulo": "eixos: área técnica do Ibama recomenda rejeição de licença na Foz do Amazonas (out/2024)",
+        "url": "https://eixos.com.br/petroleo-e-gas/mercado-offshore/area-tecnica-do-ibama-recomenda-rejeicao-de-licenca-para-poco-na-foz-do-amazonas/"
+      },
+      {
+        "titulo": "Portal da Indústria: projeção da CNI para a Margem Equatorial",
+        "url": "https://noticias.portaldaindustria.com.br/noticias/economia/producao-de-petroleo-na-margem-equatorial-brasileira-pode-criar-mais-de-320-mil-empregos-projeta-cni/"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "cni-margem",
+        "posicao": "favoravel",
+        "instituicao": "CNI",
+        "natureza": "Confederação Nacional da Indústria (Observatório Nacional da Indústria)",
+        "tipo": "Estudo",
+        "titulo": "Produção de petróleo na Margem Equatorial pode criar mais de 320 mil empregos",
+        "autores": "Observatório Nacional da Indústria (relato da Agência de Notícias da Indústria)",
+        "data": "2025",
+        "formato": "Reportagem",
+        "url": "https://noticias.portaldaindustria.com.br/noticias/economia/producao-de-petroleo-na-margem-equatorial-brasileira-pode-criar-mais-de-320-mil-empregos-projeta-cni/",
+        "tese": "Se a região produzir petróleo, a atividade pode gerar centenas de milhares de empregos e dezenas de bilhões de reais no PIB, sobretudo em estados do Norte e Nordeste.",
+        "numero": {
+          "valor": "R$ 65 bi",
+          "legenda": "de acréscimo ao PIB por ano no cenário da CNI"
+        },
+        "premissas": [
+          "Supõe produção de 100 mil barris por dia, com o barril a US$ 80."
+        ],
+        "pergunte": [
+          "O cálculo parte de uma produção que ainda não existe. O que acontece se a reserva for menor?"
+        ]
+      },
+      {
+        "id": "cientistas-amapa",
+        "posicao": "favoravel",
+        "instituicao": "Cientistas do Amapá",
+        "natureza": "Carta de cerca de 130 pesquisadores de instituições do Amapá ao presidente Lula",
+        "tipo": "Carta aberta",
+        "titulo": "Em carta a Lula, cientistas do Amapá rejeitam ideia de fundos para não explorar a Margem Equatorial",
+        "autores": "Cerca de 130 pesquisadores (relato da agência eixos)",
+        "data": "05/2025",
+        "formato": "Reportagem",
+        "url": "https://eixos.com.br/petroleo-e-gas/em-carta-a-lula-cientistas-do-amapa-rejeitam-ideia-de-fundos-para-nao-explorar-margem-equatorial/",
+        "tese": "Pesquisadores do próprio Amapá defendem a exploração como chance de desenvolvimento para um dos estados mais pobres do país e rejeitam trocá-la por fundos de compensação pagos de fora.",
+        "numero": {
+          "valor": "≈ 130",
+          "legenda": "pesquisadores assinaram a carta"
+        },
+        "premissas": [
+          "Quem vive na região deve ter peso na decisão sobre ela."
+        ],
+        "pergunte": [
+          "Cientistas locais e ambientalistas nacionais divergem. Quem deve decidir o futuro da região?"
+        ]
+      },
+      {
+        "id": "poder360-tadeu",
+        "posicao": "favoravel",
+        "instituicao": "Governo do Amazonas",
+        "natureza": "Artigo de opinião do vice-governador do Amazonas",
+        "tipo": "Artigo de opinião",
+        "titulo": "A exploração da Margem Equatorial é oportunidade para a Amazônia",
+        "autores": "Tadeu de Souza (Poder360)",
+        "data": "11/04/2025",
+        "formato": "Página",
+        "url": "https://www.poder360.com.br/opiniao/a-exploracao-da-margem-equatorial-e-oportunidade-para-a-amazonia/",
+        "tese": "A renda do petróleo pode financiar desenvolvimento e preservação na Amazônia, onde boa parte da população vive com pouca oportunidade de emprego formal.",
+        "premissas": [
+          "Desenvolvimento econômico e proteção ambiental podem caminhar juntos."
+        ],
+        "pergunte": [
+          "Que garantias existem de que os royalties vão de fato para a região?"
+        ]
+      },
+      {
+        "id": "unifap-riscos",
+        "posicao": "contrario",
+        "instituicao": "Unifap",
+        "natureza": "Universidade Federal do Amapá (revista Planeta Amazônia)",
+        "tipo": "Artigo",
+        "titulo": "Riscos da exploração de petróleo na foz do Amazonas",
+        "autores": "Tadaiesky e outros (revista Planeta Amazônia, nº 17)",
+        "data": "2025",
+        "formato": "PDF",
+        "url": "https://periodicos.unifap.br/planetaamazonia/article/download/1588/1077/4855",
+        "tese": "A região reúne manguezais, recifes e comunidades pesqueiras muito vulneráveis a um vazamento, e ainda há pouco conhecimento científico sobre ela para avaliar o risco com segurança.",
+        "premissas": [
+          "Falta de dados é motivo para cautela, não para avançar."
+        ],
+        "pergunte": [
+          "Quanto conhecimento seria suficiente para liberar a exploração?"
+        ]
+      },
+      {
+        "id": "ibama-parecer-2024",
+        "posicao": "contrario",
+        "instituicao": "Ibama",
+        "natureza": "Parecer da área técnica do órgão federal de licenciamento ambiental",
+        "tipo": "Parecer técnico",
+        "titulo": "Área técnica do Ibama recomenda rejeição de licença para poço na Foz do Amazonas",
+        "autores": "26 técnicos do Ibama (relato da agência eixos)",
+        "data": "29/10/2024",
+        "formato": "Reportagem",
+        "url": "https://eixos.com.br/petroleo-e-gas/mercado-offshore/area-tecnica-do-ibama-recomenda-rejeicao-de-licenca-para-poco-na-foz-do-amazonas/",
+        "tese": "O plano da Petrobras para atender fauna atingida por óleo continuava insuficiente, sobretudo pela distância até a base de resgate. Os técnicos recomendaram negar a licença.",
+        "numero": {
+          "valor": "26",
+          "legenda": "técnicos assinaram a recomendação de rejeição"
+        },
+        "premissas": [
+          "O tempo de resposta a um vazamento decide o tamanho do estrago."
+        ],
+        "pergunte": [
+          "A direção do Ibama liberou a licença um ano depois. O que mudou entre o parecer e a decisão?"
+        ]
+      },
+      {
+        "id": "acao-entidades-2025",
+        "posicao": "contrario",
+        "instituicao": "Apib, Observatório do Clima e outras",
+        "natureza": "Ação judicial de oito entidades ambientais e indígenas",
+        "tipo": "Ação judicial",
+        "titulo": "Ação contra a licença de perfuração na Foz do Amazonas",
+        "autores": "Apib, Observatório do Clima, Greenpeace, WWF-Brasil e outras (documento publicado pelo Poder360)",
+        "data": "22/10/2025",
+        "formato": "PDF",
+        "url": "https://static.poder360.com.br/2025/10/PR-Judicializa-Foz-do-Amazonas1.pdf",
+        "tese": "A licença foi dada sem consulta prévia aos povos indígenas e comunidades tradicionais da costa do Amapá e sem avaliar o efeito do petróleo extraído sobre o clima.",
+        "numero": {
+          "valor": "8",
+          "legenda": "entidades assinam a ação"
+        },
+        "premissas": [
+          "Povos afetados têm direito a ser consultados antes da decisão.",
+          "O impacto climático da queima do petróleo deve entrar no licenciamento."
+        ],
+        "pergunte": [
+          "Se a Justiça exigir consulta, a decisão final passa a ser dos povos consultados?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "kpR2l6Xe238",
+        "lado": "favoravel",
+        "titulo": "Lula comenta Margem Equatorial e diz que petróleo financiará transição",
+        "canal": "CNN Brasil",
+        "nota": "O presidente explica por que defende explorar a região.",
+        "duracao": "1:39"
+      },
+      {
+        "id": "4lS8xI2Awq4",
+        "lado": "favoravel",
+        "titulo": "O Amapá tem margem equatorial e potencial para extrair petróleo",
+        "canal": "Assembleia Legislativa do Amapá",
+        "nota": "A visão de quem vive no estado e espera o desenvolvimento.",
+        "duracao": "3:57"
+      },
+      {
+        "id": "SNcmRFfKP5c",
+        "lado": "favoravel",
+        "titulo": "Magda Chambriard: produção de petróleo vai continuar aumentando",
+        "canal": "CNN Brasil",
+        "nota": "A presidente da Petrobras sobre a necessidade de novas reservas.",
+        "duracao": "3:40"
+      },
+      {
+        "id": "ExZYH-LWu6w",
+        "lado": "contrario",
+        "titulo": "Quais os impactos da exploração de petróleo na foz do Amazonas?",
+        "canal": "Brasil de Fato",
+        "nota": "Os riscos para o mar, os mangues e quem vive da pesca.",
+        "duracao": "3:53"
+      },
+      {
+        "id": "I8PH_WHoja4",
+        "lado": "contrario",
+        "titulo": "Riscos da exploração de petróleo na foz do Amazonas",
+        "canal": "PROAM",
+        "nota": "Especialistas apontam falhas no licenciamento.",
+        "duracao": "8:37"
+      },
+      {
+        "id": "uSDVFcHqkec",
+        "lado": "contrario",
+        "titulo": "Marina Silva reforça que negativa do Ibama à Petrobras é técnica",
+        "canal": "TV Senado",
+        "nota": "A ministra do Meio Ambiente defende a cautela do Ibama.",
+        "duracao": "5:48"
       }
     ]
   }
