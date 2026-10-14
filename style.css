@@ -317,6 +317,9 @@ tbody td { width: 40%; font-size: 1rem; line-height: 1.45; }
 .fontes a::after { content: "↗"; font-family: var(--f-mono); }
 .fontes a:hover { text-decoration: underline; }
 
+.autoria { flex-basis: 100%; }
+.autoria a { color: var(--tinta); text-underline-offset: 3px; }
+.autoria a:hover { background: var(--grifo); color: var(--grifo-texto); }
 .rodape { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-top: 2px solid var(--tinta); padding-top: 18px; padding-bottom: 40px; margin-top: 72px; color: var(--apagado); }
 
 @media (max-width: 760px) {
