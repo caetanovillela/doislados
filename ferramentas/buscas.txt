@@ -1,20 +1,17 @@
-armas | Bene Barbosa armas legítima defesa
-armas | Flow podcast porte de arma a favor
-armas | direito à legítima defesa arma de fogo cidadão
-armas | Instituto Sou da Paz armas violência
-armas | mais armas mais crimes Ipea Cerqueira
-armas | Fórum Brasileiro de Segurança Pública armas de fogo
-privatizacoes | privatização Eletrobras resultado positivo
-privatizacoes | Salim Mattar privatização estatais
-privatizacoes | Flow podcast privatização Correios a favor
-privatizacoes | privatização saneamento marco legal investimentos
-privatizacoes | Eduardo Moreira privatização Sabesp
-privatizacoes | privatização Sabesp tarifa crítica
-privatizacoes | Flow Haddad privatização Sabesp
-maconha | Drauzio Varella maconha descriminalização
-maconha | Sidarta Ribeiro maconha
-maconha | legalização da maconha argumentos a favor
-maconha | Osmar Terra maconha
-maconha | Ronaldo Laranjeira maconha
-maconha | maconha psiquiatra riscos adolescentes
-maconha | Flow maconha legalização debate
+aborto | Debora Diniz aborto descriminalização
+aborto | Drauzio Varella aborto
+aborto | Rosa Weber voto aborto 12 semanas
+aborto | aborto pró-vida argumentos contra legalização
+aborto | Flow aborto debate pró-vida
+redes | Flow regulação das redes sociais censura
+redes | Felipe Neto regulação redes sociais
+redes | regulação big techs a favor especialista
+redes | PL das fake news censura crítica
+superricos | taxação de dividendos crítica economista
+superricos | imposto mínimo alta renda críticas investimento
+superricos | Flow taxar super ricos
+superricos | isenção imposto de renda 5 mil compensação crítica
+marco | marco temporal a favor produtor rural segurança jurídica
+marco | Flow marco temporal indígenas
+marco | Ailton Krenak marco temporal
+marco | marco temporal Pedro Lupion
