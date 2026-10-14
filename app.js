@@ -1,126 +1,294 @@
 /*
   Navegação pelo endereço (#):
-    (vazio)              -> lista de temas
-    #escala-6x1          -> página do tema
-    #escala-6x1.slug     -> artigo
+    (vazio)        -> início: busca, categorias e índice de temas
+    #escala-6x1    -> dossiê do tema
 */
 (function () {
   const temas = window.TEMAS || [];
+  const categorias = window.CATEGORIAS || [];
   const raiz = document.getElementById("app");
-  let filtro = "todos";
-  let busca = "";
+  const estado = { filtro: "todos", busca: "", categoria: "todas" };
 
   const esc = (s) =>
     String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const normal = (s) => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 
-  const contar = (tema, pos) => tema.artigos.filter((a) => a.posicao === pos).length;
+  const LETRA = { favoravel: "A", contrario: "B" };
+  const numero = (tema) => String(temas.indexOf(tema) + 1).padStart(2, "0");
+  const nomeCategoria = (id) => (categorias.find((c) => c.id === id) || {}).nome || "";
+  const doLado = (tema, pos) => (tema.leituras || []).filter((a) => a.posicao === pos);
   const rotulo = (tema, pos) => (tema.rotulos && tema.rotulos[pos]) || (pos === "favoravel" ? "A favor" : "Contra");
-  const selo = (tema, pos) => `<span class="selo ${pos}">${esc(rotulo(tema, pos))}</span>`;
+  const sinal = (pos) => `<span class="lado-sinal ${LETRA[pos].toLowerCase()}" aria-hidden="true">${LETRA[pos]}</span>`;
+  const codigo = (tema, a) => LETRA[a.posicao] + (doLado(tema, a.posicao).indexOf(a) + 1);
+  const dataBR = (iso) => (iso ? iso.split("-").reverse().join("/") : "");
 
-  function cartao(tema, a) {
+  /* ---------- Cartão de leitura (link para o texto da instituição) ---------- */
+
+  // Versão enxuta, usada quando os dois lados aparecem juntos.
+  function leituraCurta(tema, a) {
     return `
-      <a class="cartao" href="#${tema.id}.${a.id}">
-        <h3>${esc(a.titulo)}</h3>
-        <p>${esc(a.resumo)}</p>
-        <span class="meta">${esc(a.autor)} · ${a.leitura} min de leitura</span>
-      </a>`;
+      <article class="leitura curta" id="l-${a.id}">
+        <span class="cod">${codigo(tema, a)}</span>
+        <div class="curta-corpo">
+          <span class="inst">${esc(a.instituicao)}</span>
+          <h3><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.titulo)}<span class="seta" aria-hidden="true"> ↗</span></a></h3>
+          <span class="mono apagado">${esc(a.tipo)} · ${esc(a.data)}${a.formato === "PDF" ? " · PDF" : ""}</span>
+          <button type="button" class="botao-texto detalhes" data-detalhe="${a.posicao}" data-alvo="${a.id}">Ver resumo e números</button>
+        </div>
+      </article>`;
   }
 
-  function paginaInicio() {
-    const termo = busca.trim().toLowerCase();
-    const lista = temas.filter((t) => !termo || (t.titulo + " " + t.pergunta + " " + t.resumo).toLowerCase().includes(termo));
-    const pastas = lista
-      .map((t) => {
-        if (t.emBreve) {
-          return `
-          <div class="pasta em-breve" data-aba="Em preparação">
-            <h2>${esc(t.titulo)}</h2>
-            <p class="pergunta">${esc(t.pergunta)}</p>
-          </div>`;
-        }
-        return `
-          <a class="pasta" href="#${t.id}" data-aba="${t.artigos.length} artigos">
-            <h2>${esc(t.titulo)}</h2>
-            <p class="pergunta">${esc(t.pergunta)}</p>
-            <p>${esc(t.resumo)}</p>
-            <div class="pasta-lados">
-              <span class="selo favoravel">${contar(t, "favoravel")} a favor</span>
-              <span class="selo contrario">${contar(t, "contrario")} contra</span>
-            </div>
-          </a>`;
-      })
-      .join("");
+  function leitura(tema, a) {
+    const lista = (xs) => `<ul>${xs.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>`;
+    return `
+      <article class="leitura" id="l-${a.id}">
+        <header class="leitura-cab">
+          <span class="cod">${codigo(tema, a)}</span>
+          <div>
+            <span class="inst">${esc(a.instituicao)}</span>
+            <span class="mono apagado">${esc(a.natureza)}</span>
+          </div>
+        </header>
+        <h3><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.titulo)}</a></h3>
+        <span class="mono apagado">${esc(a.tipo)} · ${esc(a.autores)} · ${esc(a.data)}</span>
+        <p class="tese">${esc(a.tese)}</p>
+        ${a.numero ? `<p class="destaque"><strong>${esc(a.numero.valor)}</strong> <span>${esc(a.numero.legenda)}</span></p>` : ""}
+        ${a.premissas || a.pergunte ? `
+        <details class="critica">
+          <summary>Leitura crítica</summary>
+          ${a.premissas ? `<h4>O argumento parte de que</h4>${lista(a.premissas)}` : ""}
+          ${a.pergunte ? `<h4>Pergunte-se</h4>${lista(a.pergunte)}` : ""}
+        </details>` : ""}
+        <a class="ir-fonte" href="${esc(a.url)}" target="_blank" rel="noopener">Ler o texto original${a.formato === "PDF" ? " (PDF)" : ""}</a>
+      </article>`;
+  }
 
-    raiz.innerHTML = `
-      <section class="abertura">
-        <h1>Escolha um tema. Leia os dois lados.</h1>
-        <p>Cada tema é uma pasta com um resumo do debate e artigos que defendem posições opostas, para você formar a sua opinião.</p>
-        <label class="busca" for="busca-temas">
-          <span class="rotulo">Buscar tema</span>
-          <input id="busca-temas" type="search" placeholder="Ex.: jornada de trabalho" value="${esc(busca)}" autocomplete="off">
-        </label>
-      </section>
-      <section class="pastas" aria-label="Temas">
-        ${pastas || `<p class="vazio">Nenhum tema encontrado para “${esc(busca)}”.</p>`}
-      </section>`;
+  /* ---------- Início ---------- */
 
-    const campo = document.getElementById("busca-temas");
-    campo.addEventListener("input", () => {
-      busca = campo.value;
-      const pos = campo.selectionStart;
-      paginaInicio();
-      const novo = document.getElementById("busca-temas");
-      novo.focus();
-      novo.setSelectionRange(pos, pos);
+  function filtrarTemas() {
+    const termos = normal(estado.busca).split(/\s+/).filter(Boolean);
+    return temas.filter((t) => {
+      if (estado.categoria !== "todas" && t.categoria !== estado.categoria) return false;
+      const fontes = (t.leituras || []).map((l) => l.instituicao).join(" ");
+      const alvo = normal([t.titulo, t.pergunta, t.resumo, nomeCategoria(t.categoria), fontes, ...(t.tags || [])].join(" "));
+      return termos.every((x) => alvo.includes(x));
     });
   }
 
+  function linhasIndice() {
+    const lista = filtrarTemas();
+    const cat = estado.categoria !== "todas" ? ` em ${nomeCategoria(estado.categoria)}` : "";
+    const busca = estado.busca.trim() ? ` para “${esc(estado.busca.trim())}”` : "";
+    const meta = `<div class="indice-cab mono apagado"><span>${lista.length} ${lista.length === 1 ? "tema" : "temas"}${cat}${busca}</span><span class="so-largo">Leituras por lado</span></div>`;
+    if (!lista.length) {
+      return meta + `<div class="vazio"><p>Nenhum tema encontrado. Tente outra palavra ou veja todas as categorias.</p>
+        <button type="button" class="botao-texto" data-limpar>Limpar busca e filtros</button></div>`;
+    }
+    if (estado.categoria === "todas" && !estado.busca.trim()) {
+      // Sem filtro: um grupo fechado por categoria, para a tela inicial não virar uma lista enorme.
+      return categorias.map((c) => {
+        const doGrupo = lista.filter((t) => t.categoria === c.id);
+        if (!doGrupo.length) return "";
+        return `<details class="grupo">
+          <summary><span class="grupo-nome">${esc(c.nome)}</span><span class="grupo-temas apagado">${doGrupo.map((t) => esc(t.titulo)).join(" · ")}</span><span class="grupo-conta mono">${doGrupo.length}</span></summary>
+          <div class="grupo-lista">${doGrupo.map(linhaTema).join("")}</div>
+        </details>`;
+      }).join("");
+    }
+    return meta + lista.map(linhaTema).join("");
+  }
+
+  function linhaTema(t) {
+      const corpo = `
+        <span class="num">${numero(t)}</span>
+        <span class="linha-txt">
+          <span class="mono apagado">${esc(nomeCategoria(t.categoria))}</span>
+          <span class="nome">${esc(t.titulo)}</span>
+          <span class="perg">${esc(t.pergunta)}</span>
+        </span>`;
+      if (t.emBreve) return `<div class="linha em-breve">${corpo}<span class="placar mono">Em preparação</span></div>`;
+      return `<a class="linha" href="#${t.id}">${corpo}
+        <span class="placar">
+          <span title="${esc(rotulo(t, "favoravel"))}">${sinal("favoravel")}${doLado(t, "favoravel").length}</span>
+          <span title="${esc(rotulo(t, "contrario"))}">${sinal("contrario")}${doLado(t, "contrario").length}</span>
+        </span></a>`;
+  }
+
+  // Barra do topo: busca e menu de categorias valem em qualquer página e levam ao índice filtrado.
+  function pintarCategorias() {
+    const painel = document.getElementById("menu-painel");
+    if (!painel) return;
+    const conta = (id) => temas.filter((t) => id === "todas" || t.categoria === id).length;
+    const item = (id, nome) => `<li><button type="button" class="menu-cat" data-categoria="${id}" aria-pressed="${estado.categoria === id}">${esc(nome)}<span>${conta(id)}</span></button></li>`;
+    painel.innerHTML = `<ul class="menu-lista">${item("todas", "Todos os temas")}${categorias.map((c) => item(c.id, c.nome)).join("")}</ul>`;
+  }
+
+  function irParaIndice() {
+    if (location.hash.replace(/^#/, "")) {
+      try { history.pushState(null, "", location.pathname + location.search); rotear(); } catch (e) { location.hash = ""; }
+    }
+    const ind = document.getElementById("indice");
+    if (ind) {
+      ind.innerHTML = linhasIndice();
+      const topo = ind.getBoundingClientRect().top;
+      if (topo < 0 || topo > window.innerHeight * 0.6) ind.scrollIntoView({ block: "start" });
+    }
+    pintarCategorias();
+  }
+
+  function ligarBarra() {
+    const campo = document.getElementById("busca-global");
+    const form = document.getElementById("form-busca");
+    if (campo) {
+      campo.addEventListener("input", () => { estado.busca = campo.value; irParaIndice(); });
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const unico = filtrarTemas().filter((t) => !t.emBreve);
+        if (unico.length === 1) { campo.blur(); location.hash = unico[0].id; }
+      });
+    }
+    const botao = document.getElementById("menu-botao");
+    const painel = document.getElementById("menu-painel");
+    if (botao && painel) {
+      const abrir = (sim) => {
+        painel.hidden = !sim;
+        botao.setAttribute("aria-expanded", String(sim));
+        if (sim) { pintarCategorias(); const f = painel.querySelector("button, a"); if (f) f.focus(); }
+      };
+      botao.addEventListener("click", () => abrir(painel.hidden));
+      painel.addEventListener("click", (e) => {
+        const c = e.target.closest("[data-categoria]");
+        if (c) { estado.categoria = c.dataset.categoria; abrir(false); irParaIndice(); return; }
+        if (e.target.closest("[data-fechar]")) abrir(false);
+      });
+      document.addEventListener("click", (e) => {
+        if (!painel.hidden && !painel.contains(e.target) && !botao.contains(e.target)) abrir(false);
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && !painel.hidden) { abrir(false); botao.focus(); }
+      });
+    }
+    pintarCategorias();
+  }
+
+  function emAlta() {
+    const e = window.EM_ALTA;
+    const tema = e && temas.find((t) => t.id === e.tema && !t.emBreve);
+    if (!tema) return "";
+    return `
+      <section class="em-alta" aria-labelledby="em-alta-titulo">
+        <div class="em-alta-selo mono"><span class="pulso" aria-hidden="true"></span>Em alta agora<span class="apagado">· ${esc(e.selo)} · ${esc(e.data)}</span></div>
+        <h2 id="em-alta-titulo"><a href="#${tema.id}">${esc(e.titulo)}</a></h2>
+        <p>${esc(e.texto)}</p>
+        <div class="em-alta-acoes">
+          <a class="botao" href="#${tema.id}">Entenda os dois lados</a>
+          <span class="mono apagado">${doLado(tema, "favoravel").length + doLado(tema, "contrario").length} estudos · ${esc(nomeCategoria(tema.categoria))}</span>
+          ${e.fonte ? `<a class="botao-texto" href="${esc(e.fonte.url)}" target="_blank" rel="noopener">Ver a notícia ↗</a>` : ""}
+        </div>
+      </section>`;
+  }
+
+  function paginaInicio() {
+    raiz.innerHTML = `
+      <section class="capa">
+        <h1>Duvide.<br><span class="grifo">Compare.</span><br>Decida.</h1>
+        <p class="sub">Cada tema reúne estudos das principais universidades e instituições do país, de um lado e do outro, com quem fez cada um e de onde ele parte.</p>
+      </section>
+      ${emAlta()}
+      <section class="metodo" aria-labelledby="metodo-titulo">
+        <h2 id="metodo-titulo" class="mono apagado">Como usar</h2>
+        <ol>
+          <li><strong>Escolha um tema.</strong> Use a busca ou o menu de categorias no topo. Cada tema é um dossiê com o contexto e os números.</li>
+          <li><strong>Leia os dois lados.</strong> Cada lado traz estudos de universidades, institutos e entidades, com quem os fez e o que defendem.</li>
+          <li><strong>Vá na fonte.</strong> Os links levam ao texto original. A leitura crítica mostra as premissas de cada estudo.</li>
+        </ol>
+      </section>
+      <section class="temas" aria-labelledby="temas-titulo"><h2 id="temas-titulo">Temas</h2><div id="indice">${linhasIndice()}</div></section>
+`;
+    raiz.onclick = (e) => {
+      if (!e.target.closest("[data-limpar]")) return;
+      estado.busca = ""; estado.categoria = "todas";
+      const campo = document.getElementById("busca-global");
+      if (campo) { campo.value = ""; campo.focus(); }
+      irParaIndice();
+    };
+  }
+
+  /* ---------- Dossiê ---------- */
+
+  const SECOES = [
+    ["contexto", "Contexto"],
+    ["leituras", "Os dois lados"],
+    ["ponto-a-ponto", "Ponto a ponto"],
+    ["videos", "Vídeos"],
+    ["glossario", "Glossário"],
+    ["fontes", "Fontes"],
+  ];
+
   function paginaTema(tema) {
+    raiz.onclick = null;
     const ctx = tema.contexto;
     const coluna = (pos) => `
       <div class="lado">
-        <div class="lado-cab ${pos}">${esc(rotulo(tema, pos))}</div>
-        ${tema.artigos.filter((a) => a.posicao === pos).map((a) => cartao(tema, a)).join("")}
+        <div class="lado-cab">${sinal(pos)}<strong>Lado ${LETRA[pos]}</strong><span class="mono apagado">${esc(rotulo(tema, pos))}</span></div>
+        ${doLado(tema, pos).map((a) => (estado.filtro === "todos" ? leituraCurta(tema, a) : leitura(tema, a))).join("") || `<p class="vazio">Nenhuma leitura selecionada ainda.</p>`}
       </div>`;
-    const colunas = filtro === "todos" ? coluna("favoravel") + coluna("contrario") : coluna(filtro);
+    const colunas = () => (estado.filtro === "todos" ? coluna("favoravel") + coluna("contrario") : coluna(estado.filtro));
     const botao = (valor, texto) =>
-      `<button type="button" data-filtro="${valor}" aria-pressed="${filtro === valor}">${esc(texto)}</button>`;
+      `<button type="button" data-filtro="${valor}" aria-pressed="${estado.filtro === valor}">${esc(texto)}</button>`;
+    const tem = {
+      contexto: !!ctx, leituras: true, "ponto-a-ponto": !!(tema.pontos && tema.pontos.length),
+      videos: !!(tema.videos && tema.videos.length),
+      glossario: !!((tema.glossario && tema.glossario.length) || (tema.incertezas && tema.incertezas.length)),
+      fontes: !!(tema.fontes && tema.fontes.length),
+    };
+    const instituicoes = [...new Set((tema.leituras || []).map((l) => l.instituicao.split(" · ")[0]))];
 
     raiz.innerHTML = `
-      <nav class="migalha"><a href="#">Temas</a><span>/</span><span>${esc(tema.titulo)}</span></nav>
-      <header class="tema-cab">
-        <span class="rotulo">${esc(tema.titulo)}</span>
+      <nav class="migalha mono"><a href="#">Início</a><span>/</span><span>${esc(nomeCategoria(tema.categoria))}</span><span>/</span><span>${esc(tema.titulo)}</span></nav>
+      <header class="dossie">
+        <span class="mono apagado">Dossiê ${numero(tema)} · ${esc(nomeCategoria(tema.categoria))}${tema.atualizado ? " · atualizado em " + dataBR(tema.atualizado) : ""}</span>
         <h1>${esc(tema.pergunta)}</h1>
         <p>${esc(tema.resumo)}</p>
+        ${instituicoes.length ? `<p class="quem mono">Leituras de ${instituicoes.map(esc).join(", ")}</p>` : ""}
       </header>
+      ${ctx && ctx.fatos ? `<dl class="numeros">${ctx.fatos.map((f) => `<div><dt>${esc(f.rotulo)}</dt><dd>${esc(f.valor)}</dd></div>`).join("")}</dl>` : ""}
+
+      <nav class="sumario" aria-label="Seções do dossiê">
+        <div class="sumario-trilho">
+          ${SECOES.filter(([id]) => tem[id]).map(([id, nome]) => `<button type="button" data-ir="${id}">${nome}</button>`).join("")}
+        </div>
+      </nav>
 
       ${ctx ? `
-      <section class="contexto">
-        <div>
-          <h2>${esc(ctx.titulo)}</h2>
-          <div class="leitura">${ctx.paragrafos.map((p) => `<p>${esc(p)}</p>`).join("")}</div>
-        </div>
-        <dl class="fatos">
-          ${ctx.fatos.map((f) => `<div><dt>${esc(f.rotulo)}</dt><dd>${esc(f.valor)}</dd></div>`).join("")}
-        </dl>
+      <section class="bloco" id="s-contexto">
+        <div class="bloco-cab"><h2>${esc(ctx.titulo)}</h2></div>
+        <div class="texto-corrido">${ctx.paragrafos.map((p) => `<p>${esc(p)}</p>`).join("")}</div>
       </section>` : ""}
 
-      <section class="secao">
-        <div class="secao-cab">
-          <h2>Artigos</h2>
-          <div class="filtro" role="group" aria-label="Filtrar por posição">
-            ${botao("todos", "Os dois lados")}${botao("favoravel", "A favor")}${botao("contrario", "Contra")}
+      <section class="bloco" id="s-leituras">
+        <div class="bloco-cab">
+          <div>
+            <h2>Os dois lados</h2>
+            <p class="bloco-sub" id="dica-lados"></p>
+          </div>
+          <div class="filtro" role="group" aria-label="Mostrar">
+            ${botao("todos", "Os dois lados")}${botao("favoravel", "Só lado A")}${botao("contrario", "Só lado B")}
           </div>
         </div>
-        <div class="lados ${filtro === "todos" ? "" : "um"}">${colunas}</div>
+        <div class="lados ${estado.filtro === "todos" ? "" : "um"}" id="lados">${colunas()}</div>
       </section>
 
-      ${tema.pontos && tema.pontos.length ? `
-      <section class="secao">
-        <div class="secao-cab"><h2>Pontos em disputa</h2></div>
+      ${tem["ponto-a-ponto"] ? `
+      <section class="bloco" id="s-ponto-a-ponto">
+        <div class="bloco-cab"><h2>Ponto a ponto</h2><span class="mono apagado">Onde os lados discordam</span></div>
         <div class="tabela-rolagem">
           <table>
-            <thead><tr><th>Questão</th><th class="favoravel">${esc(rotulo(tema, "favoravel"))}</th><th class="contrario">${esc(rotulo(tema, "contrario"))}</th></tr></thead>
+            <thead><tr>
+              <th>Questão</th>
+              <th><span>${sinal("favoravel")}${esc(rotulo(tema, "favoravel"))}</span></th>
+              <th><span>${sinal("contrario")}${esc(rotulo(tema, "contrario"))}</span></th>
+            </tr></thead>
             <tbody>
               ${tema.pontos.map((p) => `<tr><th scope="row">${esc(p.tema)}</th><td>${esc(p.favoravel)}</td><td>${esc(p.contrario)}</td></tr>`).join("")}
             </tbody>
@@ -128,58 +296,173 @@
         </div>
       </section>` : ""}
 
-      ${tema.fontes && tema.fontes.length ? `
-      <section class="secao">
-        <div class="secao-cab"><h2>Para aprofundar</h2></div>
+      ${tem.videos ? `
+      <section class="bloco" id="s-videos">
+        <div class="bloco-cab"><h2>Vídeos</h2><span class="mono apagado">Curtos, de canais que pensam diferente</span></div>
+        ${secaoVideos(tema)}
+      </section>` : ""}
+
+      ${tem.glossario ? `
+      <section class="bloco duas" id="s-glossario">
+        ${tema.glossario ? `<div>
+          <div class="bloco-cab"><h2>Glossário</h2></div>
+          <dl class="glossario">${tema.glossario.map((g) => `<div><dt>${esc(g.termo)}</dt><dd>${esc(g.definicao)}</dd></div>`).join("")}</dl>
+        </div>` : ""}
+        ${tema.incertezas ? `<div>
+          <div class="bloco-cab"><h2>O que ninguém sabe ainda</h2></div>
+          <ol class="duvidas">${tema.incertezas.map((q) => `<li><span>${esc(q)}</span></li>`).join("")}</ol>
+        </div>` : ""}
+      </section>` : ""}
+
+      ${tem.fontes ? `
+      <section class="bloco" id="s-fontes">
+        <div class="bloco-cab"><h2>Vá na fonte</h2><span class="mono apagado">Documentos e reportagens</span></div>
         <ul class="fontes">
           ${tema.fontes.map((f) => `<li><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.titulo)}</a></li>`).join("")}
         </ul>
       </section>` : ""}`;
 
-    raiz.querySelectorAll("[data-filtro]").forEach((b) =>
-      b.addEventListener("click", () => {
-        filtro = b.dataset.filtro;
-        try { localStorage.setItem("filtro", filtro); } catch (e) {}
-        paginaTema(tema);
+    // Filtro de lados: com os dois lados, cartões enxutos; com um lado só, cartões completos
+    const DICAS = {
+      todos: "Estudos de instituições do país, lado a lado. Escolha um lado para ver o resumo, os números e a leitura crítica de cada um.",
+      favoravel: "Resumo, números e premissas de cada estudo do lado A. Os links levam ao texto original.",
+      contrario: "Resumo, números e premissas de cada estudo do lado B. Os links levam ao texto original.",
+    };
+    const aplicarFiltro = (valor, alvo) => {
+      estado.filtro = valor;
+      try { localStorage.setItem("filtro", estado.filtro); } catch (e) {}
+      raiz.querySelectorAll("[data-filtro]").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.filtro === estado.filtro)));
+      const lados = document.getElementById("lados");
+      lados.className = "lados " + (estado.filtro === "todos" ? "" : "um");
+      lados.innerHTML = colunas();
+      document.getElementById("dica-lados").textContent = DICAS[estado.filtro];
+      const el = alvo && document.getElementById("l-" + alvo);
+      if (el) el.scrollIntoView({ block: "start" });
+    };
+    document.getElementById("dica-lados").textContent = DICAS[estado.filtro];
+    raiz.querySelectorAll("[data-filtro]").forEach((b) => b.addEventListener("click", () => aplicarFiltro(b.dataset.filtro)));
+    document.getElementById("lados").addEventListener("click", (e) => {
+      const b = e.target.closest("[data-detalhe]");
+      if (b) aplicarFiltro(b.dataset.detalhe, b.dataset.alvo);
+    });
+
+    // Sumário: rolar até a seção e marcar a seção atual
+    const botoes = [...raiz.querySelectorAll("[data-ir]")];
+    botoes.forEach((b) => b.addEventListener("click", () => irPara(b.dataset.ir)));
+    if ("IntersectionObserver" in window) {
+      const obs = new IntersectionObserver((entradas) => {
+        entradas.forEach((en) => {
+          if (!en.isIntersecting) return;
+          const id = en.target.id.slice(2);
+          botoes.forEach((b) => b.toggleAttribute("aria-current", b.dataset.ir === id));
+        });
+      }, { rootMargin: "-30% 0px -60% 0px" });
+      raiz.querySelectorAll("section[id^='s-']").forEach((s) => obs.observe(s));
+    }
+
+    ligarVideos();
+  }
+
+  function irPara(id) {
+    const s = document.getElementById("s-" + id);
+    if (!s) return;
+    const reduzir = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    s.scrollIntoView({ behavior: reduzir ? "auto" : "smooth", block: "start" });
+  }
+
+  /* ---------- Vídeos ---------- */
+
+  // A prévia roda dentro de um quadro que bloqueia o YouTube: lá os vídeos abrem em outra aba.
+  const podeIncorporar = (() => { try { return window.self === window.top; } catch (e) { return false; } })();
+
+  // Miniatura salva no próprio site (img/videos); se faltar, tenta a do YouTube.
+  function cartaoVideo(v) {
+    const id = encodeURIComponent(v.id);
+    return `
+      <figure class="video">
+        <a class="video-capa" href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener" data-video="${esc(v.id)}" aria-label="Assistir: ${esc(v.titulo)}">
+          <img src="img/videos/${id}.jpg" alt="" loading="lazy" onerror="if(!this.dataset.yt){this.dataset.yt=1;this.src='https://i.ytimg.com/vi/${id}/hqdefault.jpg'}else{this.remove()}">
+          <span class="video-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+          ${v.duracao ? `<span class="video-tempo mono">${esc(v.duracao)}</span>` : ""}
+        </a>
+        <figcaption>
+          <strong>${esc(v.titulo)}</strong>
+          ${v.nota ? `<span>${esc(v.nota)}</span>` : ""}
+          <span class="mono apagado">${[v.canal, v.data].filter(Boolean).map(esc).join(" · ")}${podeIncorporar ? "" : " · abre no YouTube"}</span>
+        </figcaption>
+      </figure>`;
+  }
+
+  function secaoVideos(tema) {
+    const lados = ["favoravel", "contrario"].map((pos) => {
+      const lista = tema.videos.filter((v) => v.lado === pos);
+      if (!lista.length) return "";
+      return `
+        <div class="videos-lado">
+          <div class="lado-cab">${sinal(pos)}<strong>Lado ${LETRA[pos]}</strong><span class="mono apagado">${esc(rotulo(tema, pos))}</span></div>
+          <div class="videos">${lista.map(cartaoVideo).join("")}</div>
+        </div>`;
+    }).join("");
+    const soltos = tema.videos.filter((v) => !v.lado);
+    return `<div class="videos-lados">${lados}</div>${soltos.length ? `<div class="videos">${soltos.map(cartaoVideo).join("")}</div>` : ""}`;
+  }
+
+  function ligarVideos() {
+    if (!podeIncorporar) return;
+    raiz.querySelectorAll("[data-video]").forEach((a) =>
+      a.addEventListener("click", (e) => {
+        e.preventDefault();
+        const id = encodeURIComponent(a.dataset.video);
+        const f = document.createElement("iframe");
+        f.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+        f.title = a.getAttribute("aria-label");
+        f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+        f.allowFullscreen = true;
+        f.className = "video-capa";
+        a.replaceWith(f);
       })
     );
   }
 
-  function paginaArtigo(tema, a) {
-    const oposto = a.posicao === "favoravel" ? "contrario" : "favoravel";
-    const outros = tema.artigos.filter((x) => x.posicao === oposto);
-    raiz.innerHTML = `
-      <nav class="migalha"><a href="#">Temas</a><span>/</span><a href="#${tema.id}">${esc(tema.titulo)}</a></nav>
-      <article class="artigo">
-        <header class="artigo-cab">
-          ${selo(tema, a.posicao)}
-          <h1>${esc(a.titulo)}</h1>
-          <p class="linha-fina">${esc(a.resumo)}</p>
-          <span class="meta">${esc(a.autor)} · ${a.leitura} min de leitura</span>
-        </header>
-        <div class="leitura">${a.corpo.map((p) => `<p>${esc(p)}</p>`).join("")}</div>
-        <p class="aviso">Este é um texto de exemplo, escrito para demonstrar o site. Na versão final, cada artigo terá autor identificado e fontes.</p>
-        ${outros.length ? `
-        <section class="outro-lado">
-          <span class="rotulo">Leia o outro lado</span>
-          ${outros.map((x) => cartao(tema, x)).join("")}
-        </section>` : ""}
-      </article>`;
-  }
+  /* ---------- Rotas ---------- */
 
   function rotear() {
     const hash = decodeURIComponent(location.hash.replace(/^#/, ""));
-    const [temaId, artigoId] = hash.split(".");
-    const tema = temas.find((t) => t.id === temaId && !t.emBreve);
-    const artigo = tema && artigoId && tema.artigos.find((a) => a.id === artigoId);
-    if (artigo) paginaArtigo(tema, artigo);
-    else if (tema) paginaTema(tema);
+    const tema = temas.find((t) => t.id === hash.split(".")[0] && !t.emBreve);
+    if (tema) paginaTema(tema);
     else paginaInicio();
     window.scrollTo(0, 0);
   }
 
-  try { filtro = localStorage.getItem("filtro") || "todos"; } catch (e) {}
-  if (!["todos", "favoravel", "contrario"].includes(filtro)) filtro = "todos";
+  /* ---------- Modo claro / escuro ---------- */
+
+  const html = document.documentElement;
+  // O site abre sempre no modo claro; o escuro só vale se a pessoa escolher.
+  const temaAtual = () => html.dataset.theme === "dark" ? "dark" : "light";
+  const botaoTema = document.getElementById("alternar-tema");
+  function pintarBotao() {
+    if (!botaoTema) return;
+    const escuro = temaAtual() === "dark";
+    botaoTema.setAttribute("aria-pressed", String(escuro));
+    const rotuloTema = escuro ? "Mudar para o modo claro" : "Mudar para o modo escuro";
+    botaoTema.setAttribute("aria-label", rotuloTema);
+    botaoTema.title = rotuloTema;
+  }
+  try { const salvo = localStorage.getItem("tema"); if (salvo === "dark" || salvo === "light") html.dataset.theme = salvo; } catch (e) {}
+  if (botaoTema) {
+    botaoTema.addEventListener("click", () => {
+      html.dataset.theme = temaAtual() === "dark" ? "light" : "dark";
+      try { localStorage.setItem("tema", html.dataset.theme); } catch (e) {}
+      pintarBotao();
+    });
+    new MutationObserver(pintarBotao).observe(html, { attributes: true, attributeFilter: ["data-theme"] });
+    pintarBotao();
+  }
+
+  try { estado.filtro = localStorage.getItem("filtro") || "todos"; } catch (e) {}
+  if (!["todos", "favoravel", "contrario"].includes(estado.filtro)) estado.filtro = "todos";
   window.addEventListener("hashchange", rotear);
+  window.addEventListener("popstate", rotear);
+  ligarBarra();
   rotear();
 })();

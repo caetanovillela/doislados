@@ -1,164 +1,2777 @@
 /*
-  Conteúdo do site. Para adicionar um tema, copie o bloco de um tema existente
-  e troque os campos. O layout (app.js e style.css) não precisa mudar.
+  Conteúdo do site. O layout (app.js e style.css) não precisa mudar para adicionar conteúdo.
 
-  posicao de cada artigo:
-    "favoravel" | "contrario" | "contexto"
-  Os rótulos de cada posição ficam em `rotulos` dentro do tema, porque
-  "favorável" e "contrário" mudam de sentido conforme a pergunta.
+  EM_ALTA: o assunto em destaque no topo da página inicial. Troque quando outro tema esquentar.
+    tema   id do tema que o botão abre
+    data   quando aconteceu (aparece no selo)
 
-  ATENÇÃO: os artigos abaixo são textos de exemplo, escritos para o protótipo.
-  Antes de publicar, substitua-os por artigos reais, com autoria e fontes.
+  CATEGORIAS: lista de categorias usadas nos filtros da página inicial.
+
+  TEMAS: cada tema tem
+    categoria   id de uma categoria acima
+    tags        palavras extras que a busca encontra
+    emBreve     true para mostrar o tema como "em preparação"
+    rotulos     nome de cada lado (lado A = "favoravel", lado B = "contrario")
+    contexto, pontos, glossario, incertezas, fontes
+    leituras    textos de instituições: posicao ("favoravel" | "contrario"), instituicao, natureza,
+                tipo, titulo, autores, data, formato, url, tese, numero, premissas, pergunte
+    videos      { id: código do YouTube (o que vem depois de watch?v=), lado ("favoravel" ou "contrario"), titulo, canal, nota, duracao opcional }
+                A miniatura fica em img/videos/<id>.jpg.
+
+  Antes de adicionar uma leitura, confira o link, a data e a posição do texto.
 */
+window.EM_ALTA = {
+  "tema": "escala-6x1",
+  "data": "14/10/2026",
+  "selo": "Votação no Senado",
+  "titulo": "O Senado aprovou em primeiro turno a PEC que acaba com a escala 6x1",
+  "texto": "O texto que veio da Câmara reduz a jornada de 44 para 40 horas semanais e garante duas folgas por semana. O presidente do Senado, Davi Alcolumbre, disse que o segundo turno pode ser votado em seguida, se os senadores aprovarem um calendário especial. Se passar sem mudanças, a emenda é promulgada.",
+  "fonte": {
+    "titulo": "O Tempo: Senado aprova em primeiro turno PEC do fim da escala 6x1",
+    "url": "https://www.otempo.com.br/politica/congresso/2026/10/14/senado-aprova-em-primeiro-turno-pec-do-fim-da-escala-6x1"
+  }
+};
+
+window.CATEGORIAS = [
+  {
+    "id": "trabalho",
+    "nome": "Trabalho"
+  },
+  {
+    "id": "economia",
+    "nome": "Economia"
+  },
+  {
+    "id": "seguranca",
+    "nome": "Segurança pública"
+  },
+  {
+    "id": "educacao",
+    "nome": "Educação"
+  },
+  {
+    "id": "cidades",
+    "nome": "Cidades e transporte"
+  },
+  {
+    "id": "assistencia",
+    "nome": "Assistência social"
+  }
+];
+
 window.TEMAS = [
   {
-    id: "escala-6x1",
-    titulo: "Escala 6x1",
-    pergunta: "A escala 6x1 deve acabar?",
-    resumo:
-      "Seis dias de trabalho para um de folga. Uma proposta de emenda à Constituição quer reduzir a jornada e acabar com esse modelo.",
-    atualizado: "2026-10-14",
-    rotulos: {
-      favoravel: "A favor do fim da 6x1",
-      contrario: "Contra o fim da 6x1",
+    "id": "escala-6x1",
+    "titulo": "Escala 6x1",
+    "categoria": "trabalho",
+    "pergunta": "A escala 6x1 deve acabar?",
+    "resumo": "Seis dias de trabalho para um de folga. A Câmara aprovou uma PEC que acaba com esse modelo, e o Senado aprovou o texto em primeiro turno em 14/10/2026.",
+    "atualizado": "2026-10-14",
+    "rotulos": {
+      "favoravel": "A favor do fim da 6x1",
+      "contrario": "Contra o fim ou com ressalvas"
     },
-    contexto: {
-      titulo: "O que está em debate",
-      paragrafos: [
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
         "Na escala 6x1, a pessoa trabalha seis dias seguidos e folga um. É comum no comércio, em supermercados, restaurantes, telemarketing e outros serviços que funcionam todos os dias.",
         "A Constituição de 1988 (art. 7º, XIII) limita a jornada a 8 horas por dia e 44 horas por semana. Antes de 1988 o limite era de 48 horas. A CLT garante uma folga semanal de 24 horas seguidas, de preferência aos domingos, mas não proíbe a 6x1.",
-        "O debate ganhou força a partir de 2024 com o movimento Vida Além do Trabalho (VAT). A deputada Erika Hilton (PSOL-SP) apresentou uma PEC que reduz o limite para 36 horas semanais e prevê quatro dias de trabalho por semana. Há outras propostas no Congresso com transições mais longas.",
-        "Para mudar a Constituição, uma PEC precisa ser aprovada em dois turnos na Câmara e no Senado, com pelo menos três quintos dos votos em cada Casa (308 deputados e 49 senadores).",
+        "O debate ganhou força em 2024 com o movimento Vida Além do Trabalho (VAT). Duas propostas tramitaram juntas na Câmara: a PEC 221/2019, de Reginaldo Lopes (PT-MG), e a PEC 8/2025, de Erika Hilton (PSOL-SP), que previa 36 horas e quatro dias de trabalho. O relator, Leo Prates (Republicanos-BA), juntou as duas num texto só.",
+        "Em 27 de maio de 2026, a Câmara aprovou esse texto em dois turnos (461 votos a 19 no segundo). Ele reduz a jornada de 44 para 40 horas semanais, sem corte de salário, e garante duas folgas por semana, uma de preferência no domingo. A redução é gradual: 42 horas a partir de 60 dias após a promulgação e 40 horas um ano depois. Uma lei complementar poderá criar regras de transição para MEIs, micro e pequenas empresas.",
+        "Em 14 de outubro de 2026, o Senado aprovou a PEC em primeiro turno. Para passar, ela precisa de 49 dos 81 senadores em cada um dos dois turnos. Se o Senado aprovar sem mudar o conteúdo, a emenda é promulgada; se mudar, o texto volta para a Câmara."
       ],
-      fatos: [
-        { rotulo: "Limite atual", valor: "44 h/semana" },
-        { rotulo: "Proposta da PEC", valor: "36 h/semana" },
-        { rotulo: "Votos na Câmara", valor: "308 de 513" },
-        { rotulo: "Votos no Senado", valor: "49 de 81" },
-      ],
+      "fatos": [
+        {
+          "rotulo": "Limite atual",
+          "valor": "44 h/semana"
+        },
+        {
+          "rotulo": "Texto da Câmara",
+          "valor": "40 h/semana"
+        },
+        {
+          "rotulo": "Placar na Câmara (2º turno)",
+          "valor": "461 × 19"
+        },
+        {
+          "rotulo": "Votos para passar no Senado",
+          "valor": "49 de 81"
+        }
+      ]
     },
-    pontos: [
+    "pontos": [
       {
-        tema: "Saúde e vida pessoal",
-        favoravel: "Um dia de folga não basta para descansar, cuidar da casa e conviver com a família.",
-        contrario: "Concorda que o descanso importa, mas defende que isso seja resolvido em acordos por setor.",
+        "tema": "Saúde e vida pessoal",
+        "favoravel": "Um dia de folga não basta para descansar, cuidar da casa e conviver com a família.",
+        "contrario": "Concorda que o descanso importa, mas defende que isso seja resolvido em acordos por setor."
       },
       {
-        tema: "Emprego",
-        favoravel: "Menos horas por pessoa exigem mais contratações para cobrir a mesma operação.",
-        contrario: "O custo maior pode levar a demissões, automação e mais trabalho informal.",
+        "tema": "Emprego",
+        "favoravel": "Menos horas por pessoa exigem mais contratações para cobrir a mesma operação.",
+        "contrario": "O custo maior pode levar a demissões, automação e mais trabalho informal."
       },
       {
-        tema: "Custos e preços",
-        favoravel: "Trabalhadores descansados erram menos e faltam menos, o que reduz parte do custo.",
-        contrario: "Pequenos negócios teriam de contratar mais gente, e o custo iria para os preços.",
+        "tema": "Custos e preços",
+        "favoravel": "Trabalhadores descansados erram menos e faltam menos, o que reduz parte do custo.",
+        "contrario": "Pequenos negócios teriam de contratar mais gente, e o custo iria para os preços."
       },
       {
-        tema: "Produtividade",
-        favoravel: "Testes com semana de quatro dias mostraram produção estável com menos horas.",
-        contrario: "A produtividade brasileira está estagnada há anos; reduzir horas antes de elevá-la é arriscado.",
+        "tema": "Produtividade",
+        "favoravel": "Testes com semana de quatro dias mostraram produção estável com menos horas.",
+        "contrario": "A produtividade brasileira está estagnada há anos; reduzir horas antes de elevá-la é arriscado."
       },
       {
-        tema: "Como mudar",
-        favoravel: "Só uma regra geral protege quem tem pouco poder de negociação.",
-        contrario: "Cada setor tem uma realidade; a negociação coletiva se adapta melhor.",
-      },
+        "tema": "Como mudar",
+        "favoravel": "Só uma regra geral protege quem tem pouco poder de negociação.",
+        "contrario": "Cada setor tem uma realidade; a negociação coletiva se adapta melhor."
+      }
     ],
-    fontes: [
+    "glossario": [
       {
-        titulo: "Constituição Federal, art. 7º (direitos dos trabalhadores)",
-        url: "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+        "termo": "PEC",
+        "definicao": "Proposta de Emenda à Constituição. Muda o texto da Constituição e precisa de três quintos dos votos, em dois turnos, na Câmara e no Senado."
       },
       {
-        titulo: "Consolidação das Leis do Trabalho (CLT)",
-        url: "https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm",
+        "termo": "Jornada",
+        "definicao": "Tempo de trabalho contratado por dia ou por semana, sem contar horas extras."
       },
       {
-        titulo: "Câmara dos Deputados: busca de propostas e andamento",
-        url: "https://www.camara.leg.br/busca-portal/proposicoes/pesquisa-simplificada",
+        "termo": "Escala",
+        "definicao": "Como os dias de trabalho e de folga se organizam: 6x1, 5x2, 12x36 e outras."
       },
+      {
+        "termo": "Negociação coletiva",
+        "definicao": "Acordo entre sindicatos e empresas que define regras para uma categoria inteira, como escala e reajuste."
+      },
+      {
+        "termo": "Produtividade do trabalho",
+        "definicao": "Quanto se produz, em valor, por hora trabalhada. É a base para comparar países e setores."
+      },
+      {
+        "termo": "Informalidade",
+        "definicao": "Trabalho sem carteira assinada, fora das proteções da CLT, inclusive do limite de jornada."
+      }
     ],
-    artigos: [
-      {
-        id: "descanso-e-saude",
-        posicao: "favoravel",
-        titulo: "Um dia de folga não é descanso",
-        autor: "Texto de exemplo",
-        leitura: 4,
-        resumo:
-          "Na 6x1, o único dia livre vira dia de tarefas. A defesa do fim da escala começa pela saúde de quem trabalha.",
-        corpo: [
-          "Quem trabalha na escala 6x1 conhece a rotina: o único dia de folga é usado para lavar roupa, ir ao mercado, resolver pendências e, se sobrar tempo, dormir. Descanso de verdade raramente cabe nessa conta.",
-          "Nas grandes cidades o problema é maior. Uma jornada de oito horas pode vir acompanhada de duas ou três horas de transporte por dia. Na prática, a vida inteira gira em torno do trabalho durante seis dias seguidos.",
-          "Os defensores do fim da escala lembram que cansaço acumulado tem custo. Ele aparece em afastamentos por doença, em acidentes, em faltas e na rotatividade alta, que obriga empresas a treinar gente nova o tempo todo.",
-          "Há também a questão da convivência. Pais e mães que trabalham aos fins de semana passam pouco tempo com os filhos. Estudar à noite depois de seis dias de trabalho é, para muitos, inviável.",
-          "Para esse lado do debate, o tempo livre não é luxo. É a condição para que a pessoa cuide da saúde, da família e da própria formação.",
-        ],
-      },
-      {
-        id: "precedente-de-1988",
-        posicao: "favoravel",
-        titulo: "O país já reduziu a jornada antes",
-        autor: "Texto de exemplo",
-        leitura: 4,
-        resumo:
-          "Em 1988 o limite caiu de 48 para 44 horas. Quem defende a mudança diz que as previsões de crise se repetem a cada redução.",
-        corpo: [
-          "Quando a Constituinte discutiu a redução da jornada de 48 para 44 horas, parte do empresariado previu desemprego e falências. A mudança foi aprovada, e a economia se adaptou.",
-          "Para quem defende o fim da 6x1, isso mostra que a jornada é uma escolha da sociedade, e não uma lei da natureza. Países ricos reduziram horas de trabalho ao longo do século XX conforme a produtividade cresceu.",
-          "Experiências recentes reforçam o argumento. No teste da semana de quatro dias feito no Reino Unido em 2022, com dezenas de empresas, a grande maioria decidiu manter o modelo depois do período de teste.",
-          "Outro ponto é a distribuição do trabalho. Se cada pessoa trabalha menos horas, as empresas que funcionam todos os dias precisam de mais gente nas equipes, o que pode abrir vagas.",
-          "Os defensores reconhecem que a transição exige cuidado e propõem regras de adaptação. Mas argumentam que esperar que o mercado resolva sozinho deixa sem proteção justamente quem tem menos poder de negociação.",
-        ],
-      },
-      {
-        id: "pequeno-negocio",
-        posicao: "contrario",
-        titulo: "Quem paga a conta é o pequeno negócio",
-        autor: "Texto de exemplo",
-        leitura: 4,
-        resumo:
-          "Uma padaria aberta sete dias por semana teria de contratar mais. Os críticos dizem que o custo cai sobre quem tem margem menor.",
-        corpo: [
-          "Imagine uma padaria de bairro que abre todos os dias. Com jornadas menores, ela precisaria de mais funcionários para manter o mesmo horário. Para uma grande rede, isso é um ajuste. Para o pequeno comerciante, pode ser a diferença entre lucro e prejuízo.",
-          "Os críticos da proposta lembram que o custo de um empregado no Brasil vai muito além do salário, com encargos e obrigações trabalhistas. Contratar mais gente para cobrir as mesmas horas aumenta esse custo de forma direta.",
-          "As saídas possíveis para o empresário não são boas para o trabalhador: reduzir o horário de funcionamento, repassar o custo para os preços, automatizar funções ou contratar sem carteira assinada.",
-          "Há o risco de o efeito ser o contrário do pretendido. Em vez de mais empregos formais, a mudança pode empurrar parte dos trabalhadores para a informalidade, onde não há limite de jornada nenhum.",
-          "Por isso, esse lado defende que qualquer mudança considere o porte das empresas e venha acompanhada de compensações, como desoneração da folha.",
-        ],
-      },
-      {
-        id: "produtividade-primeiro",
-        posicao: "contrario",
-        titulo: "Produtividade vem antes da jornada",
-        autor: "Texto de exemplo",
-        leitura: 4,
-        resumo:
-          "Os países que trabalham menos horas chegaram lá produzindo mais. Para os críticos, o Brasil inverte a ordem.",
-        corpo: [
-          "É verdade que os países ricos trabalham menos horas. Mas eles chegaram a isso depois de aumentar muito a produtividade, com mais investimento, tecnologia e educação. A redução da jornada foi consequência, e não causa.",
-          "A produtividade do trabalho no Brasil cresce pouco há décadas. Para os críticos, cortar horas por lei sem resolver esse problema significa produzir menos com o mesmo custo.",
-          "Eles também questionam a comparação com os testes de semana de quatro dias. Esses testes reuniram, em geral, empresas de escritório e tecnologia que escolheram participar. O resultado não se aplica facilmente a um caixa de supermercado ou a um hospital, onde a presença física é o próprio serviço.",
-          "A alternativa proposta é a negociação coletiva. Sindicatos e empresas de cada setor sabem o que funciona na sua realidade, e já podem negociar escalas como 5x2 ou 12x36.",
-          "Para esse lado, uma mudança gradual, setor a setor, protege o emprego melhor do que uma regra única na Constituição.",
-        ],
-      },
+    "incertezas": [
+      "Quanto a mudança custaria de verdade. As estimativas vão de menos de 1% do custo total das empresas (Ipea) a até 13% nos preços do comércio (CNC). A diferença está nas premissas sobre produtividade, repasse aos preços e reação do emprego.",
+      "Se os resultados dos testes de semana de quatro dias, feitos sobretudo em escritórios, valem para comércio e serviços presenciais.",
+      "Como a lei complementar vai tratar MEIs, micro e pequenas empresas durante a transição. O texto aprovado na Câmara prevê essa lei, mas deixa os detalhes para depois.",
+      "Se o Senado vai confirmar o texto no segundo turno como veio da Câmara ou mudar o conteúdo, o que faria a PEC voltar para os deputados."
     ],
+    "fontes": [
+      {
+        "titulo": "Constituição Federal, art. 7º (direitos dos trabalhadores)",
+        "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+        "titulo": "Consolidação das Leis do Trabalho (CLT)",
+        "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm"
+      },
+      {
+        "titulo": "Câmara dos Deputados: busca de propostas e andamento",
+        "url": "https://www.camara.leg.br/busca-portal/proposicoes/pesquisa-simplificada"
+      },
+      {
+        "titulo": "Agência Brasil: Câmara aprova, em dois turnos, a PEC pelo fim da escala 6x1 (27/05/2026)",
+        "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-05/camara-aprova-em-dois-turnos-pec-pelo-fim-da-escala-6x1"
+      },
+      {
+        "titulo": "Rádio Senado: PEC que acaba com a escala 6x1 deve ser votada nesta quarta (13/10/2026)",
+        "url": "https://www12.senado.leg.br/radio/1/noticia/2026/10/13/pec-que-acaba-com-a-escala-6x1-deve-ser-votada-nesta-quarta-feira"
+      },
+      {
+        "titulo": "Agência Brasil: Fim da escala 6x1, estudos divergem sobre impactos no PIB e inflação (28/04/2026)",
+        "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-04/fim-da-escala-6-1-estudos-divergem-sobre-impactos-no-pib-e-inflacao"
+      }
+    ],
+    "tags": [
+      "jornada",
+      "CLT",
+      "PEC 221/2019",
+      "5x2",
+      "folga",
+      "Senado",
+      "Câmara"
+    ],
+    "videos": [
+      {
+        "id": "9jLot1VITcM",
+        "lado": "favoravel",
+        "titulo": "Renan Santos é sincero sobre a escala 6x1",
+        "canal": "Cortes do Flow",
+        "nota": "O líder do MBL, de direita, explica por que apoia o fim da escala.",
+        "duracao": "10:38"
+      },
+      {
+        "id": "WvP1x1DfLs8",
+        "lado": "favoravel",
+        "titulo": "Michael Jackson (Lord) é sincero sobre a escala 6x1",
+        "canal": "Cortes do Flow",
+        "nota": "Convidado conta a rotina de quem trabalha seis dias por semana.",
+        "duracao": "4:31"
+      },
+      {
+        "id": "WW9Fnuk4oiU",
+        "lado": "favoravel",
+        "titulo": "O terrorismo econômico contra o fim da escala 6x1",
+        "canal": "Frederico Krepe",
+        "nota": "Comentarista rebate as previsões de demissões e quebradeira."
+      },
+      {
+        "id": "jJziTJdnjrw",
+        "lado": "contrario",
+        "titulo": "Fim da escala 6x1 não deve trazer ganhos de produtividade, diz economista",
+        "canal": "CNN Brasil",
+        "nota": "Economista questiona a ideia de que folga a mais aumenta a produtividade."
+      },
+      {
+        "id": "EcpTkixsta8",
+        "lado": "contrario",
+        "titulo": "Fim da escala 6x1 resultará na troca de pessoas por máquinas, diz deputado do Novo",
+        "canal": "UOL",
+        "nota": "Deputado do Novo diz que o custo extra vai acelerar a automação."
+      },
+      {
+        "id": "_uZzA37vAvw",
+        "lado": "contrario",
+        "titulo": "Economista alerta para riscos do fim da escala 6x1 nos negócios",
+        "canal": "Jovem Pan News",
+        "nota": "Os efeitos sobre pequenas empresas e preços.",
+        "duracao": "11:07"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "unicamp-juventude",
+        "posicao": "favoravel",
+        "instituicao": "Unicamp · CESIT",
+        "natureza": "Centro de pesquisa de universidade pública",
+        "tipo": "Artigo",
+        "titulo": "O impacto da escala 6×1 para a juventude brasileira e a necessidade da redução da jornada de trabalho",
+        "autores": "Débora de Araújo Costa e Ezequiela Zanco Scapini",
+        "data": "16/10/2025",
+        "formato": "Página",
+        "url": "https://pesquisa.ie.unicamp.br/cesit/dossie-fim-da-escala-6x1/o-impacto-da-escala-6x1-para-a-juventude-brasileira-e-a-necessidade-da-reducao-da-jornada-de-trabalho-artigo-3/",
+        "tese": "Jovens trabalham demais e em condições precárias, o que tira o estudo da lista de prioridades. Reduzir a jornada seria condição para que eles entrem e fiquem na escola ou na faculdade.",
+        "numero": {
+          "valor": "72,8%",
+          "legenda": "dos jovens ocupados de 14 a 29 anos trabalham 40 horas ou mais"
+        },
+        "premissas": [
+          "Horas a menos no trabalho virariam horas de estudo."
+        ],
+        "pergunte": [
+          "O dado separa quem trabalha 40 horas de quem trabalha 44? A PEC só muda a vida do segundo grupo."
+        ]
+      },
+      {
+        "id": "unicamp-dossie",
+        "posicao": "favoravel",
+        "instituicao": "Unicamp · CESIT",
+        "natureza": "Centro de pesquisa de universidade pública",
+        "tipo": "Coletânea",
+        "titulo": "Dossiê Fim da escala 6×1",
+        "autores": "Vários autores",
+        "data": "jan. a abr. 2026",
+        "formato": "Página",
+        "url": "https://pesquisa.ie.unicamp.br/centros-e-nucleos/cesit/dossie-fim-da-escala-6x1/",
+        "tese": "Reúne mais de uma dezena de textos sobre viabilidade econômica, saúde mental, trabalho de cuidado e experiências de outros países, como Chile e México.",
+        "premissas": [
+          "O excesso de trabalho é causa relevante de adoecimento e de desigualdade de gênero."
+        ],
+        "pergunte": [
+          "Os textos estimam o custo da mudança para micro e pequenas empresas?"
+        ]
+      },
+      {
+        "id": "ipea-nota-tecnica",
+        "posicao": "favoravel",
+        "instituicao": "Ipea",
+        "natureza": "Fundação pública ligada ao governo federal",
+        "tipo": "Nota técnica",
+        "titulo": "Nota técnica sobre a redução da jornada para 40 horas semanais",
+        "autores": "Felipe Pateo e outros",
+        "data": "fev. 2026",
+        "formato": "PDF",
+        "url": "https://repositorio.ipea.gov.br/server/api/core/bitstreams/7083c3f2-81ee-48e6-a525-c9fe4b56d5e7/content",
+        "tese": "O mercado de trabalho consegue absorver o fim da 6x1. O custo da mão de obra sobe, mas pesa pouco no custo total da maioria das empresas. Limpeza, segurança e pequenos negócios precisariam de transição mais longa.",
+        "numero": {
+          "valor": "+7,84%",
+          "legenda": "no custo médio do trabalhador CLT; menos de 1% no custo total da indústria e do comércio"
+        },
+        "premissas": [
+          "O salário pesa pouco no custo total das empresas grandes.",
+          "Aumentos de custo parecidos, como os do salário mínimo em 2001 e 2012, não reduziram o emprego."
+        ],
+        "pergunte": [
+          "A comparação com o salário mínimo vale para setores em que o trabalho é quase todo o custo?"
+        ]
+      },
+      {
+        "id": "rbe-1988",
+        "posicao": "favoravel",
+        "instituicao": "PUC-Rio e USP",
+        "natureza": "Artigo acadêmico revisado por pares (Revista Brasileira de Economia, FGV)",
+        "tipo": "Artigo acadêmico",
+        "titulo": "Os efeitos da redução da jornada de trabalho de 48 para 44 horas semanais em 1988",
+        "autores": "Gustavo Gonzaga, Naércio Menezes Filho e José Márcio Camargo",
+        "data": "2003",
+        "formato": "Página",
+        "url": "https://periodicos.fgv.br/rbe/article/view/843",
+        "tese": "A redução feita pela Constituição de 1988 diminuiu as horas trabalhadas e aumentou o salário por hora, sem elevar a chance de desemprego dos trabalhadores afetados no ano seguinte.",
+        "premissas": [
+          "O que aconteceu em 1988 diz algo sobre a economia de hoje."
+        ],
+        "pergunte": [
+          "O estudo olha só os 12 meses seguintes. O que se sabe sobre o longo prazo?"
+        ]
+      },
+      {
+        "id": "fgv-impacto-imediato",
+        "posicao": "contrario",
+        "instituicao": "FGV · Ibre",
+        "natureza": "Instituto de pesquisa de fundação privada (texto assinado pelo autor)",
+        "tipo": "Artigo",
+        "titulo": "O impacto econômico imediato do fim da escala de trabalho 6x1",
+        "autores": "Daniel Duque",
+        "data": "27/11/2024",
+        "formato": "Página",
+        "url": "https://blogdoibre.fgv.br/posts/o-impacto-economico-imediato-do-fim-da-escala-de-trabalho-6x1",
+        "tese": "Simula a perda de PIB com jornadas de 40 e 36 horas. Reconhece que os benefícios sociais podem ser grandes, mas mostra que o custo econômico imediato é relevante e precisa entrar na conta.",
+        "numero": {
+          "valor": "−2,6%",
+          "legenda": "do PIB no cenário base com 40 horas; até −3,3% e cerca de 1 milhão de empregos a menos no cenário pessimista"
+        },
+        "premissas": [
+          "Produtividade e emprego reagem pouco à redução da jornada."
+        ],
+        "pergunte": [
+          "Quanto ganho de produtividade seria preciso para zerar a perda?"
+        ]
+      },
+      {
+        "id": "fgv-potenciais-custos",
+        "posicao": "contrario",
+        "instituicao": "FGV · Ibre",
+        "natureza": "Instituto de pesquisa de fundação privada (texto assinado pelo autor)",
+        "tipo": "Artigo",
+        "titulo": "Potenciais custos do fim da jornada 6x1",
+        "autores": "Fernando de Holanda Barbosa Filho",
+        "data": "14/04/2025",
+        "formato": "Página",
+        "url": "https://blogdoibre.fgv.br/posts/potenciais-custos-do-fim-da-jornada-6x1",
+        "tese": "Com a produtividade brasileira estagnada, é improvável que ela cresça o bastante para compensar menos horas de trabalho. O resultado seria uma perda significativa de produção.",
+        "numero": {
+          "valor": "−3,8% a −6,9%",
+          "legenda": "no valor produzido pela economia, conforme o efeito sobre o emprego (cenário com 36 horas)"
+        },
+        "premissas": [
+          "A produtividade continuará estagnada como nos últimos anos."
+        ],
+        "pergunte": [
+          "As simulações usam 36 horas. O texto aprovado na Câmara prevê 40. Como os números mudam?"
+        ]
+      },
+      {
+        "id": "cnc-parecer",
+        "posicao": "contrario",
+        "instituicao": "CNC",
+        "natureza": "Entidade que representa empresas do comércio, serviços e turismo",
+        "tipo": "Parecer técnico",
+        "titulo": "Análise dos impactos do fim da jornada 6×1 no Brasil",
+        "autores": "Confederação Nacional do Comércio",
+        "data": "23/02/2026",
+        "formato": "PDF",
+        "url": "https://portal-bucket.azureedge.net/wp-content/2026/02/Jornada6x1_Geade.pdf",
+        "tese": "O comércio seria o setor mais atingido, porque quase todos os seus trabalhadores passam de 40 horas. O custo extra pressionaria preços e cortaria vagas formais.",
+        "numero": {
+          "valor": "R$ 122,4 bi",
+          "legenda": "por ano de custo para o comércio (+21% na folha); preços até 13% maiores e 631 mil empregos formais a menos"
+        },
+        "premissas": [
+          "As empresas cobririam as horas perdidas contratando ou pagando hora extra, sem reorganizar as escalas.",
+          "A maior parte do custo seria repassada aos preços."
+        ],
+        "pergunte": [
+          "Por que a estimativa da CNC para o comércio é tão maior que a do Ipea?",
+          "Quem encomendou o estudo representa o setor afetado. Que dados independentes confirmam os números?"
+        ]
+      },
+      {
+        "id": "cni-custo",
+        "posicao": "contrario",
+        "instituicao": "CNI",
+        "natureza": "Entidade que representa a indústria",
+        "tipo": "Estudo",
+        "titulo": "Redução da jornada de trabalho pode aumentar custo empresarial em até R$ 267 bilhões ao ano",
+        "autores": "Confederação Nacional da Indústria",
+        "data": "2026",
+        "formato": "Página",
+        "url": "https://noticias.portaldaindustria.com.br/noticias/economia/reducao-da-jornada-de-trabalho-pode-aumentar-custo-empresarial-em-ate-r-267-bilhoes-ao-ano/",
+        "tese": "Reduzir a jornada de 44 para 40 horas sem ganho de produtividade encareceria a produção, diminuiria o PIB e chegaria ao bolso do consumidor.",
+        "numero": {
+          "valor": "R$ 267 bi",
+          "legenda": "por ano de custo adicional para as empresas, no cenário mais alto"
+        },
+        "premissas": [
+          "O custo é calculado sem ganhos de produtividade."
+        ],
+        "pergunte": [
+          "Quem fez o estudo representa o setor afetado. Que dados independentes confirmam os números?"
+        ]
+      }
+    ]
   },
   {
-    id: "reforma-tributaria",
-    titulo: "Reforma tributária",
-    pergunta: "O novo sistema de impostos sobre o consumo é melhor?",
-    resumo: "Tema em preparação.",
-    emBreve: true,
-    artigos: [],
+    "id": "reforma-tributaria",
+    "titulo": "Reforma tributária",
+    "categoria": "economia",
+    "tags": [
+      "IBS",
+      "CBS",
+      "IVA",
+      "impostos",
+      "imposto seletivo",
+      "consumo",
+      "EC 132"
+    ],
+    "pergunta": "A reforma dos impostos sobre o consumo é boa para o país?",
+    "resumo": "Cinco tributos sobre o consumo vão virar um imposto sobre valor agregado dividido em dois, o IBS e a CBS. A transição começa em 2026 e vai até 2033.",
+    "atualizado": "2026-10-14",
+    "rotulos": {
+      "favoravel": "A favor da reforma",
+      "contrario": "Críticas à reforma"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "O Brasil cobra cinco tributos diferentes sobre o consumo: PIS, Cofins e IPI, que são federais, o ICMS, dos estados, e o ISS, dos municípios. Cada um tem regras próprias, o que gera custo para as empresas, disputas na Justiça e a chamada guerra fiscal entre estados.",
+        "A Emenda Constitucional 132, promulgada em dezembro de 2023, troca esses tributos por um imposto sobre valor agregado (IVA) dual: a CBS, federal, e o IBS, de estados e municípios. Também cria o Imposto Seletivo, sobre produtos que fazem mal à saúde ou ao meio ambiente.",
+        "A regulamentação veio com a Lei Complementar 214, de janeiro de 2025. A transição começa em 2026 com alíquotas de teste e termina em 2033, quando os tributos antigos deixam de existir.",
+        "O debate hoje é sobre o tamanho da alíquota, quem paga mais e quem paga menos. Serviços, que pagavam menos no sistema antigo, tendem a pagar mais. Há exceções e regimes especiais para saúde, educação, alimentos e outros setores, o que eleva a alíquota de quem fica na regra geral."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Tributos substituídos",
+          "valor": "5"
+        },
+        {
+          "rotulo": "Novos tributos",
+          "valor": "IBS + CBS"
+        },
+        {
+          "rotulo": "Fim da transição",
+          "valor": "2033"
+        },
+        {
+          "rotulo": "Ganho de PIB (Ipea)",
+          "valor": "+2,4%"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Crescimento",
+        "favoravel": "Simplificar e acabar com impostos em cascata aumenta a produtividade e o PIB.",
+        "contrario": "As exceções aprovadas reduzem muito o ganho previsto."
+      },
+      {
+        "tema": "Quem paga",
+        "favoravel": "Um IVA uniforme é menos regressivo que o sistema atual, sobretudo com devolução de imposto aos mais pobres.",
+        "contrario": "O sistema continua apoiado no consumo, que pesa mais para quem ganha menos."
+      },
+      {
+        "tema": "Serviços",
+        "favoravel": "O setor pagava menos que a indústria; equalizar corrige uma distorção.",
+        "contrario": "Serviços usam muita mão de obra e não têm muito crédito a abater, então a carga sobe."
+      },
+      {
+        "tema": "Estados e municípios",
+        "favoravel": "A cobrança no destino acaba com a guerra fiscal e ajuda estados mais pobres.",
+        "contrario": "Estados e cidades perdem autonomia para usar impostos como política de desenvolvimento."
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "IVA",
+        "definicao": "Imposto sobre valor agregado. Cada etapa da produção paga imposto só sobre o valor que acrescentou, abatendo o que já foi pago antes."
+      },
+      {
+        "termo": "IBS e CBS",
+        "definicao": "Os dois novos tributos. A CBS é federal e o IBS é de estados e municípios. Juntos formam o IVA dual."
+      },
+      {
+        "termo": "Cumulatividade",
+        "definicao": "Quando imposto é cobrado sobre imposto ao longo da cadeia. O IVA foi pensado para acabar com isso."
+      },
+      {
+        "termo": "Regressivo",
+        "definicao": "Imposto que pesa proporcionalmente mais no orçamento de quem ganha menos."
+      },
+      {
+        "termo": "Guerra fiscal",
+        "definicao": "Disputa entre estados que oferecem descontos de ICMS para atrair empresas."
+      },
+      {
+        "termo": "Cashback",
+        "definicao": "Devolução de parte do imposto pago para famílias de baixa renda, prevista na reforma."
+      }
+    ],
+    "incertezas": [
+      "Qual será a alíquota final. Ela depende de quantas exceções sobrarem e de quanto a arrecadação precisa render.",
+      "Se os preços dos serviços vão subir na prática, ou se o crédito de imposto vai compensar parte do aumento.",
+      "Se o ganho de crescimento estimado vai aparecer, já que ele depende de as empresas mudarem como produzem e investem."
+    ],
+    "fontes": [
+      {
+        "titulo": "Emenda Constitucional 132/2023",
+        "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm"
+      },
+      {
+        "titulo": "Instituição Fiscal Independente (Senado): Estudo Especial 19, reforma tributária, contexto e impactos (2024)",
+        "url": "https://www2.senado.leg.br/bdsf/bitstream/handle/id/647648/EE19_2024.pdf"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "insper-sete-mitos",
+        "posicao": "favoravel",
+        "instituicao": "Insper",
+        "natureza": "Instituição de ensino e pesquisa privada",
+        "tipo": "Estudo",
+        "titulo": "Sete mitos sobre a reforma tributária",
+        "autores": "Marcos Lisboa, Marcos Mendes, Sérgio Gobetti (Ipea) e Breno Vasconcelos",
+        "data": "fev. 2021",
+        "formato": "PDF",
+        "url": "https://repositorio-api.insper.edu.br/server/api/core/bitstreams/589ed23a-b017-4878-a04f-8ee49ffe030e/content",
+        "tese": "Responde às sete críticas mais comuns ao IVA, como a de que ele seria regressivo ou prejudicaria estados pobres, e argumenta que todas estão erradas.",
+        "premissas": [
+          "Isenções setoriais distorcem mais a economia do que protegem os mais pobres.",
+          "A devolução de imposto às famílias pobres funcionaria melhor que descontos em produtos."
+        ],
+        "pergunte": [
+          "O texto é de 2021. Quanto das exceções aprovadas depois mudam a conclusão?"
+        ]
+      },
+      {
+        "id": "ipea-impactos",
+        "posicao": "favoravel",
+        "instituicao": "Ipea",
+        "natureza": "Fundação pública ligada ao governo federal",
+        "tipo": "Carta de Conjuntura",
+        "titulo": "Propostas de reforma tributária e seus impactos: uma avaliação comparativa",
+        "autores": "João Maria de Oliveira",
+        "data": "06/07/2023",
+        "formato": "PDF",
+        "url": "https://www.ipea.gov.br/cartadeconjuntura/wp-content/uploads/2023/07/230706_cc_60_nota_01_reforma_tributaria.pdf",
+        "tese": "Todas as versões da reforma aumentam o PIB, a produtividade e o emprego. A versão mais próxima da aprovada ganha menos que a original, porque mantém exceções, mas reduz perdas regionais e setoriais.",
+        "numero": {
+          "valor": "+2,39%",
+          "legenda": "no PIB ao fim da transição, na versão que serviu de base ao texto aprovado (+5,75% na proposta original)"
+        },
+        "premissas": [
+          "O modelo assume que a economia se reorganiza conforme os novos preços relativos."
+        ],
+        "pergunte": [
+          "Por que as exceções reduzem tanto o ganho? Quem se beneficia delas?"
+        ]
+      },
+      {
+        "id": "cnc-servicos",
+        "posicao": "contrario",
+        "instituicao": "CNC",
+        "natureza": "Entidade que representa empresas do comércio, serviços e turismo",
+        "tipo": "Estudo",
+        "titulo": "Tributação de serviços na reforma tributária",
+        "autores": "Confederação Nacional do Comércio",
+        "data": "16/02/2023",
+        "formato": "PDF",
+        "url": "https://static.poder360.com.br/2023/02/cnc-estudo-tributacao-servicos.pdf",
+        "tese": "Com um IVA de 25%, a carga sobre os serviços subiria muito, porque o setor usa muita mão de obra e tem pouco imposto a abater. Isso desestimularia contratações e encareceria serviços.",
+        "numero": {
+          "valor": "até +188%",
+          "legenda": "na carga de tributos de alguns serviços; média de +84% em 30 segmentos"
+        },
+        "premissas": [
+          "A alíquota seria de 25% sem tratamento diferenciado para serviços.",
+          "Todo o aumento seria repassado aos preços."
+        ],
+        "pergunte": [
+          "O texto aprovado criou regimes especiais para vários serviços. Quanto isso muda os números?"
+        ]
+      },
+      {
+        "id": "ufjf-justica-fiscal",
+        "posicao": "contrario",
+        "instituicao": "UFJF",
+        "natureza": "Universidade pública (trabalho de conclusão de curso da Faculdade de Direito)",
+        "tipo": "Trabalho acadêmico",
+        "titulo": "Reforma tributária e justiça fiscal à luz do Estado social",
+        "autores": "Caio Vinícius Ribeiro Guimarães, orientado por Elizabete Rosa de Mello",
+        "data": "2020",
+        "formato": "PDF",
+        "url": "https://repositorio.ufjf.br/jspui/bitstream/ufjf/12467/1/caioviniciusribeiroguimaraes.pdf",
+        "tese": "O sistema brasileiro cobra sobretudo do consumo, e não da renda e do patrimônio. As propostas de reforma discutidas não resolvem essa injustiça e por isso não bastam para os objetivos do Estado social.",
+        "premissas": [
+          "Justiça fiscal exige tributar mais a renda e o patrimônio, e não só simplificar o consumo."
+        ],
+        "pergunte": [
+          "Simplificar o consumo e tributar mais a renda são caminhos opostos ou complementares?",
+          "O trabalho é anterior à emenda de 2023. O que ele diria do texto final?"
+        ]
+      },
+      {
+        "id": "ufpe-distributivo",
+        "posicao": "favoravel",
+        "instituicao": "UFPE e Fiocruz",
+        "natureza": "Universidade pública e fundação pública de pesquisa",
+        "tipo": "Artigo",
+        "titulo": "Impacto distributivo potencial de reformas na tributação indireta no Brasil: simulações baseadas na PEC 45/2019",
+        "autores": "Rozane Bezerra de Siqueira e José Ricardo Bezerra Nogueira (UFPE) e Carlos Feitosa Luna (Fiocruz)",
+        "data": "04/2024",
+        "formato": "PDF",
+        "url": "https://arxiv.org/pdf/2404.07651",
+        "tese": "Trocar os tributos atuais por um IVA torna o sistema um pouco menos injusto com os mais pobres. O efeito é modesto, e seria maior sem tantas alíquotas reduzidas, que beneficiam mais os ricos do que os pobres.",
+        "numero": {
+          "valor": "26%",
+          "legenda": "do benefício da cesta básica isenta vai para os 20% mais ricos; menos de 16% para os 20% mais pobres"
+        },
+        "premissas": [
+          "As famílias não mudam o consumo por causa dos impostos.",
+          "As simulações aproximam a lei, que ainda dependia de regulamentação."
+        ],
+        "pergunte": [
+          "Se o efeito é modesto, a reforma deve ser julgada pela justiça social ou pela eficiência?"
+        ]
+      },
+      {
+        "id": "anfip-fenafisco",
+        "posicao": "contrario",
+        "instituicao": "Anfip e Fenafisco (coordenação na Unicamp)",
+        "natureza": "Associações de auditores fiscais, com estudo coordenado por professor da Unicamp",
+        "tipo": "Estudo",
+        "titulo": "A reforma tributária necessária: justiça fiscal é possível",
+        "autores": "Eduardo Fagnani (Unicamp), organizador, com mais de 40 especialistas",
+        "data": "2018",
+        "formato": "PDF",
+        "url": "https://static.congressoemfoco.com.br/2019/09/Livros_17_10_2018_19_49_54.pdf",
+        "tese": "Simplificar os impostos sobre o consumo não basta. O Brasil tributa pouco a renda e o patrimônio e muito o consumo, e só uma reforma que mude esse peso reduziria a desigualdade.",
+        "numero": {
+          "valor": "49,7%",
+          "legenda": "da arrecadação vem do consumo no Brasil, contra 32,4% na média da OCDE"
+        },
+        "premissas": [
+          "A carga total pode ficar igual, mudando só quem paga.",
+          "Tributar mais a renda alta não prejudica o crescimento."
+        ],
+        "pergunte": [
+          "O estudo é anterior à reforma aprovada. A isenção do IR até R$ 5 mil, de 2025, vai na direção que ele defende?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "LM7bFbphX_I",
+        "lado": "favoravel",
+        "titulo": "A maior reforma tributária da história, com Fernando Haddad",
+        "canal": "Cortes do Flow",
+        "nota": "O ministro da Fazenda defende a reforma no Flow.",
+        "duracao": "6:38"
+      },
+      {
+        "id": "XKXSNKXxsUo",
+        "lado": "favoravel",
+        "titulo": "O que muda com a reforma tributária? Entenda com Bernard Appy",
+        "canal": "Valor Econômico",
+        "nota": "O principal formulador da reforma explica o novo sistema."
+      },
+      {
+        "id": "rHPvNqN4ozY",
+        "lado": "favoravel",
+        "titulo": "Bernard Appy fala sobre a reforma tributária",
+        "canal": "Record News",
+        "nota": "Entrevista com o secretário que conduziu a reforma no governo."
+      },
+      {
+        "id": "hBKfSw-zcdY",
+        "lado": "contrario",
+        "titulo": "O que não te contaram sobre a reforma tributária no Brasil",
+        "canal": "Cortes do Flow",
+        "nota": "Os pontos da reforma que pesam no bolso de quem consome.",
+        "duracao": "8:26"
+      },
+      {
+        "id": "VssJp5eDXsI",
+        "lado": "contrario",
+        "titulo": "Setor de serviços será mais impactado pela nova reforma tributária, diz especialista",
+        "canal": "CNN Brasil Money",
+        "nota": "Por que serviços tendem a pagar mais imposto."
+      },
+      {
+        "id": "cXXZE8-6rFQ",
+        "lado": "contrario",
+        "titulo": "Livro reúne críticas e aponta riscos na reforma tributária",
+        "canal": "Band Jornalismo",
+        "nota": "Reportagem sobre as críticas de tributaristas ao texto aprovado."
+      }
+    ]
   },
   {
-    id: "maioridade-penal",
-    titulo: "Maioridade penal",
-    pergunta: "A maioridade penal deve ser reduzida para 16 anos?",
-    resumo: "Tema em preparação.",
-    emBreve: true,
-    artigos: [],
+    "id": "maioridade-penal",
+    "titulo": "Maioridade penal",
+    "categoria": "seguranca",
+    "tags": [
+      "ECA",
+      "adolescentes",
+      "crime",
+      "PEC 171",
+      "imputabilidade",
+      "medidas socioeducativas"
+    ],
+    "pergunta": "A maioridade penal deve cair para 16 anos?",
+    "resumo": "Hoje, menores de 18 anos não respondem ao Código Penal e cumprem medidas do ECA. Propostas no Congresso querem baixar esse limite para 16 anos em crimes graves.",
+    "atualizado": "2026-10-14",
+    "rotulos": {
+      "favoravel": "A favor da redução",
+      "contrario": "Contra a redução"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "O artigo 228 da Constituição diz que menores de 18 anos são penalmente inimputáveis. Isso não significa que fiquem sem punição: quem comete um ato infracional responde pelo Estatuto da Criança e do Adolescente (ECA), de 1990.",
+        "O ECA prevê medidas socioeducativas, da advertência à internação. A internação, a mais dura, dura no máximo três anos, e o jovem precisa ser liberado aos 21.",
+        "Em 2015, a Câmara aprovou a PEC 171/1993, que reduz a maioridade para 16 anos em crimes hediondos, homicídio doloso e lesão corporal seguida de morte. O texto foi para o Senado e não foi votado em definitivo.",
+        "Há também uma discussão jurídica: parte dos juristas considera o artigo 228 uma cláusula pétrea, que não poderia ser mudada por emenda. Outra parte discorda."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Maioridade penal hoje",
+          "valor": "18 anos"
+        },
+        {
+          "rotulo": "Proposta da PEC 171",
+          "valor": "16 anos"
+        },
+        {
+          "rotulo": "Internação máxima (ECA)",
+          "valor": "3 anos"
+        },
+        {
+          "rotulo": "Crimes graves entre atos de internos (2013)",
+          "valor": "12,7%"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Discernimento",
+        "favoravel": "Jovens de 16 e 17 anos entendem o que fazem e podem responder como adultos.",
+        "contrario": "Adolescentes ainda estão em formação, e a lei deve priorizar a recuperação."
+      },
+      {
+        "tema": "Violência",
+        "favoravel": "A punição mais dura desestimularia crimes e acabaria com a sensação de impunidade.",
+        "contrario": "Comparações entre países não mostram menos violência onde a idade penal é menor."
+      },
+      {
+        "tema": "Sistema prisional",
+        "favoravel": "Jovens que cometem crimes hediondos precisam de penas proporcionais.",
+        "contrario": "Prisões superlotadas aproximariam adolescentes de facções criminosas."
+      },
+      {
+        "tema": "Constituição",
+        "favoravel": "A idade penal não está entre os direitos individuais e pode mudar por emenda.",
+        "contrario": "O artigo 228 é uma garantia individual e, por isso, cláusula pétrea."
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Inimputável",
+        "definicao": "Quem não pode ser responsabilizado pelo Código Penal. É o caso de menores de 18 anos."
+      },
+      {
+        "termo": "Ato infracional",
+        "definicao": "Conduta de um adolescente que, se fosse cometida por adulto, seria crime."
+      },
+      {
+        "termo": "Medida socioeducativa",
+        "definicao": "Resposta prevista no ECA ao ato infracional: advertência, prestação de serviços, liberdade assistida, semiliberdade ou internação."
+      },
+      {
+        "termo": "Crime hediondo",
+        "definicao": "Crime considerado de extrema gravidade pela Lei 8.072/1990, como latrocínio e estupro, com regras mais duras."
+      },
+      {
+        "termo": "Cláusula pétrea",
+        "definicao": "Parte da Constituição que não pode ser abolida nem por emenda, como os direitos e garantias individuais."
+      }
+    ],
+    "incertezas": [
+      "Se reduzir a maioridade diminuiria a violência no Brasil. Os estudos comparados entre países mostram correlações, não causa e efeito.",
+      "Se o Supremo aceitaria a mudança, já que a discussão sobre cláusula pétrea nunca foi decidida.",
+      "Onde os jovens condenados cumpririam pena, diante da superlotação do sistema prisional."
+    ],
+    "fontes": [
+      {
+        "titulo": "Constituição Federal, art. 228",
+        "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+      },
+      {
+        "titulo": "Estatuto da Criança e do Adolescente (Lei 8.069/1990)",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l8069.htm"
+      },
+      {
+        "titulo": "Câmara dos Deputados, Consultoria Legislativa: texto base com os argumentos dos dois lados (2013)",
+        "url": "https://www2.camara.leg.br/atividade-legislativa/estudos-e-notas-tecnicas/fiquePorDentro/temas/maioridade-penal/texto-base-da-conle-pdf"
+      },
+      {
+        "titulo": "Poder360: CCJ aprova redução da maioridade penal de 18 para 16 anos (10/06/2026)",
+        "url": "https://www.poder360.com.br/poder-congresso/ccj-aprova-reducao-da-maioridade-penal-de-18-para-16-anos/"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "mprj-capez",
+        "posicao": "favoravel",
+        "instituicao": "Ministério Público do RJ",
+        "natureza": "Revista do Ministério Público do Rio de Janeiro (artigo assinado)",
+        "tipo": "Artigo",
+        "titulo": "A questão da diminuição da maioridade penal",
+        "autores": "Fernando Capez, mestre em Direito Penal pela USP e então promotor de justiça licenciado",
+        "data": "2007",
+        "formato": "PDF",
+        "url": "https://www.mprj.mp.br/documents/20184/2740997/Fernando_Capez.pdf",
+        "tese": "Jovens de 16 e 17 anos têm plena capacidade de entender o que fazem. Pela proporcionalidade, quem comete crime hediondo deveria responder como adulto. Como alternativa, propõe ampliar o tempo de internação.",
+        "premissas": [
+          "Entender que algo é errado basta para responder como adulto.",
+          "Penas mais duras desestimulam crimes."
+        ],
+        "pergunte": [
+          "O autor era deputado estadual quando escreveu. Isso muda como você lê o texto?",
+          "Que dados mostram que punir mais cedo reduz crimes?"
+        ]
+      },
+      {
+        "id": "ipea-adolescente",
+        "posicao": "contrario",
+        "instituicao": "Ipea",
+        "natureza": "Fundação pública ligada ao governo federal",
+        "tipo": "Nota técnica",
+        "titulo": "O adolescente em conflito com a lei e o debate sobre a redução da maioridade penal: esclarecimentos necessários",
+        "autores": "Enid Rocha Andrade da Silva e Raissa Menezes de Oliveira",
+        "data": "2015",
+        "formato": "PDF",
+        "url": "https://repositorio.ipea.gov.br/bitstreams/183ecbc0-950a-4d5d-b3fd-1372f48f1644/download",
+        "tese": "A ideia de impunidade é um mito: o ECA já responsabiliza o adolescente, e a internação é usada até mais do que a lei prevê. A redução não ataca as causas da violência juvenil, ligadas à pobreza e à falta de escola.",
+        "numero": {
+          "valor": "12,7%",
+          "legenda": "dos atos dos adolescentes internados em 2013 eram crimes graves contra a vida ou a pessoa; furto, roubo e tráfico somavam 67%"
+        },
+        "premissas": [
+          "Atacar as causas sociais reduz mais a violência do que punir mais cedo."
+        ],
+        "pergunte": [
+          "Os dados são de 2013. O perfil mudou desde então?"
+        ]
+      },
+      {
+        "id": "ufpe-comparado",
+        "posicao": "contrario",
+        "instituicao": "UFPE",
+        "natureza": "Artigo acadêmico revisado por pares (revista Opinião Pública, Unicamp)",
+        "tipo": "Artigo acadêmico",
+        "titulo": "A redução da maioridade penal diminui a violência? Evidências de um estudo comparado",
+        "autores": "Rodrigo Lins, Dalson Figueiredo Filho e Lucas Silva",
+        "data": "2016",
+        "formato": "Página",
+        "url": "https://www.scielo.br/j/op/a/bhwWJbhzNBSrHN8ssQVdWmm/?lang=pt",
+        "tese": "Comparando 197 países, os autores não encontram relação entre maioridade penal mais baixa e menos violência. Se há alguma relação, é a contrária: onde a idade é menor, a violência tende a ser maior.",
+        "numero": {
+          "valor": "197",
+          "legenda": "países comparados"
+        },
+        "premissas": [
+          "Comparar países ajuda a prever o efeito de uma mudança dentro do Brasil."
+        ],
+        "pergunte": [
+          "Os próprios autores dizem que vários resultados não são estatisticamente significativos. O que isso permite concluir?"
+        ]
+      },
+      {
+        "id": "senado-pec-33-2012",
+        "posicao": "favoravel",
+        "instituicao": "Senado Federal",
+        "natureza": "Proposta legislativa (PEC 33/2012, de Aloysio Nunes, PSDB-SP)",
+        "tipo": "Proposta de emenda",
+        "titulo": "PEC 33/2012: desconsideração da inimputabilidade de jovens de 16 e 17 anos",
+        "autores": "Senador Aloysio Nunes Ferreira e outros",
+        "data": "2012",
+        "formato": "Página",
+        "url": "https://www12.senado.leg.br/ecidadania/visualizacaomateria?id=106330",
+        "tese": "Em vez de baixar a maioridade para todos, a proposta deixa o Ministério Público pedir que jovens de 16 e 17 anos respondam como adultos em casos graves, definidos em lei. A ideia é punir crimes violentos sem mudar a regra geral.",
+        "numero": {
+          "valor": "81%",
+          "legenda": "de apoio na consulta pública do Senado (12.303 sim e 2.881 não)"
+        },
+        "premissas": [
+          "Jovens de 16 e 17 anos podem ter discernimento para crimes graves.",
+          "A análise caso a caso evita punir todos os adolescentes do mesmo jeito."
+        ],
+        "pergunte": [
+          "Consulta pública do Senado mede opinião de quem votou no site, não da população. O que ela permite concluir?",
+          "Quem decidiria se o jovem tem maturidade, e com que critério?"
+        ]
+      },
+      {
+        "id": "camara-pec-32-2015",
+        "posicao": "favoravel",
+        "instituicao": "Câmara dos Deputados",
+        "natureza": "Parecer aprovado na Comissão de Constituição e Justiça",
+        "tipo": "Documento legislativo",
+        "titulo": "PEC 32/2015: redução da maioridade penal para 16 anos (parecer da CCJ)",
+        "autores": "Relator: deputado Coronel Assis (PL-MT)",
+        "data": "10/06/2026",
+        "formato": "Página",
+        "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=1228863",
+        "tese": "Jovens de 16 e 17 anos cometem crimes tão graves quanto adultos e devem responder como adultos. A CCJ aprovou a admissibilidade da proposta por 44 votos a 18, e o relator citou pesquisa em que 90% apoiam a redução.",
+        "numero": {
+          "valor": "44 a 18",
+          "legenda": "placar da aprovação na CCJ da Câmara em junho de 2026"
+        },
+        "premissas": [
+          "Punição maior desestimula o crime.",
+          "A opinião majoritária da população deve orientar a lei."
+        ],
+        "pergunte": [
+          "O parecer apresenta dados sobre o efeito da redução no crime, ou só sobre a opinião pública?",
+          "A maioridade penal é cláusula pétrea? Esse é um dos pontos em disputa."
+        ]
+      },
+      {
+        "id": "sbp-2026",
+        "posicao": "contrario",
+        "instituicao": "Sociedade Brasileira de Pediatria",
+        "natureza": "Entidade médica",
+        "tipo": "Posicionamento",
+        "titulo": "Posicionamento da SBP sobre a PEC para redução da maioridade penal",
+        "autores": "Sociedade Brasileira de Pediatria",
+        "data": "10/08/2026",
+        "formato": "PDF",
+        "url": "https://www.sbp.com.br/wp-content/uploads/2026/08/PEC-DIMINUICAO-DA-IDADE-PENALPOSICIONAMENTO-DA-SOCIEDADE-BRASILEIRA-DE-PEDIATRIA-1-1.pdf",
+        "tese": "Não há evidência consistente de que reduzir a idade penal diminua a criminalidade juvenil. Adolescentes respondem por uma parcela pequena dos homicídios e são, sobretudo, vítimas. O caminho seria cumprir o ECA e investir em prevenção.",
+        "numero": {
+          "valor": "0,5% a 2%",
+          "legenda": "dos homicídios ou crimes hediondos atribuídos a menores de 18 anos, conforme a metodologia"
+        },
+        "premissas": [
+          "Adolescentes ainda estão em desenvolvimento e respondem melhor a medidas educativas.",
+          "A experiência internacional serve de referência para o Brasil."
+        ],
+        "pergunte": [
+          "A própria SBP diz que não há dados consensuais no Brasil. Isso enfraquece os dois lados?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "Fc-ffSyxZcA",
+        "lado": "favoravel",
+        "titulo": "Derrite sobre redução da maioridade penal: “Sou 100% favorável”",
+        "canal": "Jovem Pan News",
+        "nota": "O ex-secretário de Segurança de SP defende a redução.",
+        "duracao": "2:29"
+      },
+      {
+        "id": "S7rCLZlJ6H8",
+        "lado": "favoravel",
+        "titulo": "Kim Kataguiri defende a redução da maioridade penal",
+        "canal": "Rádio Bandeirantes",
+        "nota": "Deputado apresenta os argumentos a favor da redução para 16 anos."
+      },
+      {
+        "id": "vZINcut0CrM",
+        "lado": "favoravel",
+        "titulo": "Argumento: redução da maioridade penal, com Sérgio Souza",
+        "canal": "TV Senado",
+        "nota": "Parlamentar explica por que defende a mudança."
+      },
+      {
+        "id": "xOlbW1o44R4",
+        "lado": "contrario",
+        "titulo": "Liberação de armas e maioridade penal no Brasil, com Reinaldo Azevedo",
+        "canal": "Cortes do Flow",
+        "nota": "O jornalista explica por que é contra reduzir a maioridade.",
+        "duracao": "15:07"
+      },
+      {
+        "id": "BmpWjuXtVZA",
+        "lado": "contrario",
+        "titulo": "Redução da maioridade penal",
+        "canal": "Drauzio Varella",
+        "nota": "O médico, que atendeu por anos em presídios, fala dos efeitos da prisão em jovens.",
+        "duracao": "2:38"
+      },
+      {
+        "id": "sTi55E33SSg",
+        "lado": "contrario",
+        "titulo": "Maioridade penal não diminui violência, mas reduziria a percepção de impunidade, diz ex-Bope",
+        "canal": "UOL",
+        "nota": "Ex-policial do Bope avalia o efeito real da medida sobre o crime."
+      }
+    ]
   },
+  {
+    "id": "tarifa-zero",
+    "titulo": "Tarifa zero no transporte",
+    "categoria": "cidades",
+    "tags": [
+      "transporte público",
+      "ônibus",
+      "passe livre",
+      "mobilidade urbana",
+      "SUS do transporte",
+      "vale-transporte"
+    ],
+    "pergunta": "O ônibus deve ser de graça para todo mundo?",
+    "resumo": "Mais de 140 cidades já não cobram passagem de ônibus, e o governo federal estuda um programa nacional. A dúvida é quem paga a conta e se o serviço aguenta mais passageiros.",
+    "atualizado": "2026-10-14",
+    "rotulos": {
+      "favoravel": "A favor da tarifa zero",
+      "contrario": "Críticas à tarifa zero"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "No modelo mais comum no Brasil, quem paga o ônibus é o passageiro: a tarifa cobre a maior parte do custo do sistema. Quando a passagem sobe, parte das pessoas deixa de usar o ônibus, a receita cai e a tarifa sobe de novo.",
+        "A tarifa zero inverte essa lógica: o transporte passa a ser pago por impostos, taxas cobradas de empresas ou outras fontes, como acontece com a saúde e a educação públicas. Segundo a NTU, que reúne as empresas de ônibus, 143 municípios tinham tarifa zero universal em junho de 2026, quase todos de pequeno e médio porte.",
+        "O governo federal encomendou ao Ministério da Fazenda um estudo sobre um programa nacional, apelidado de “SUS do transporte”. Uma das ideias em discussão é trocar o vale-transporte por uma contribuição paga pelas empresas.",
+        "O debate gira em torno de três perguntas: quanto custa, quem paga e se a qualidade se mantém quando mais gente passa a andar de ônibus. Oito cidades já voltaram atrás, segundo a mesma pesquisa da NTU."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Cidades com tarifa zero",
+          "valor": "143"
+        },
+        {
+          "rotulo": "Custo anual dos ônibus urbanos (NTU)",
+          "valor": "R$ 75,7 bi"
+        },
+        {
+          "rotulo": "Custo com tarifa zero no país (NTU)",
+          "valor": "R$ 90,7 bi"
+        },
+        {
+          "rotulo": "Cidades que desistiram",
+          "valor": "8"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Quem paga",
+        "favoravel": "Empresas e toda a sociedade se beneficiam do transporte, então faz sentido dividir o custo por impostos e contribuições.",
+        "contrario": "A conta recai sobre empresas e orçamentos municipais que já estão apertados."
+      },
+      {
+        "tema": "Renda",
+        "favoravel": "A passagem pesa muito no orçamento dos mais pobres. Zerar a tarifa funciona como transferência de renda.",
+        "contrario": "Parte do benefício vai para quem já tem vale-transporte ou poderia pagar."
+      },
+      {
+        "tema": "Qualidade",
+        "favoravel": "Pagar as empresas pelo serviço prestado, e não por passageiro, acaba com o incentivo a lotar os ônibus.",
+        "contrario": "Com mais passageiros e a mesma verba, os ônibus podem ficar mais cheios e piores."
+      },
+      {
+        "tema": "Cidade",
+        "favoravel": "Menos carros na rua significa menos trânsito, poluição e acidentes.",
+        "contrario": "Quem migra para o ônibus de graça muitas vezes ia a pé ou de bicicleta, e não de carro."
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Tarifa zero universal",
+        "definicao": "Quando ninguém paga passagem, em todos os horários. É diferente de gratuidades parciais, como a dos idosos ou a de domingo."
+      },
+      {
+        "termo": "Vale-transporte",
+        "definicao": "Benefício pago pelo empregador para o deslocamento do trabalhador, que pode ter até 6% do salário descontado."
+      },
+      {
+        "termo": "Subsídio",
+        "definicao": "Dinheiro público que cobre parte do custo de um serviço para baixar o preço para o usuário."
+      },
+      {
+        "termo": "Remuneração por passageiro",
+        "definicao": "Modelo em que a empresa de ônibus ganha conforme o número de passageiros pagantes. É o mais usado no Brasil."
+      },
+      {
+        "termo": "NTU",
+        "definicao": "Associação Nacional das Empresas de Transportes Urbanos, que representa as operadoras de ônibus."
+      }
+    ],
+    "incertezas": [
+      "Se a demanda aumenta muito com a gratuidade e quanto isso encarece o sistema.",
+      "Se a cobrança das empresas no lugar do vale-transporte seria suficiente, e como ela afetaria o emprego formal.",
+      "Se a experiência de cidades pequenas vale para capitais e regiões metropolitanas."
+    ],
+    "fontes": [
+      {
+        "titulo": "NTU: Pesquisa Temática Tarifa Zero 2026",
+        "url": "https://www.ntu.org.br/publicacoes?title=Pesquisa%20Tem%C3%A1tica%20-%20Tarifa%20Zero%202026"
+      },
+      {
+        "titulo": "Portal do Trânsito: tarifa zero perde fôlego, revela estudo da NTU (jun/2026)",
+        "url": "https://www.portaldotransito.com.br/noticias/mobilidade-e-tecnologia/transporte-coletivo/tarifa-zero-no-transporte-publico-perde-folego-revela-estudo-da-ntu/"
+      },
+      {
+        "titulo": "Diário do Transporte: Haddad deve entregar estudo da tarifa zero a Lula (fev/2026)",
+        "url": "https://diariodotransporte.com.br/2026/02/23/tarifa-zero-haddad-deve-entregar-estudo-a-lula-antes-de-deixar-ministerio-em-abril-e-presidente-vai-usar-nome-sus-do-transporte-coletivo-como-propaganda-eleitoral/"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "unb-distribuicao-renda",
+        "posicao": "favoravel",
+        "instituicao": "UnB",
+        "natureza": "Universidade pública (Instituto de Ciência Política, com pesquisador da UFRJ)",
+        "tipo": "Estudo",
+        "titulo": "A tarifa zero no transporte público como política de distribuição de renda",
+        "autores": "Daniel Caribé, Gustavo Serafim, João Lucas Machado Campos, Juciano Martins Rodrigues, Paulo Henrique da Silva Santarém e Thiago Trindade",
+        "data": "05/2026",
+        "formato": "PDF",
+        "url": "https://tarifazero.unb.br/wp-content/uploads/2026/05/TARIFA-ZERO-maio.pdf",
+        "tese": "A tarifa zero deve ser vista como política de renda, além de política de mobilidade. A passagem exclui pessoas do trabalho, da escola e da saúde, e o dinheiro que deixa de ir para a catraca volta para a economia.",
+        "numero": {
+          "valor": "R$ 45,6 bi",
+          "legenda": "por ano a mais no bolso da população com tarifa zero nas 27 capitais e regiões metropolitanas"
+        },
+        "premissas": [
+          "O transporte é um direito social, como saúde e educação.",
+          "O custo pode ser coberto por fontes fora da tarifa sem prejudicar a economia."
+        ],
+        "pergunte": [
+          "O estudo calcula o dinheiro que fica com as famílias. Quanto custaria para quem vai pagar a conta?",
+          "O que acontece com a qualidade se a demanda crescer muito?"
+        ]
+      },
+      {
+        "id": "unicamp-gregori",
+        "posicao": "favoravel",
+        "instituicao": "Unicamp",
+        "natureza": "Universidade pública (Instituto de Economia), em revista acadêmica",
+        "tipo": "Entrevista acadêmica",
+        "titulo": "Mobilidade urbana e direito à cidade: uma entrevista com Lúcio Gregori sobre transporte coletivo e tarifa zero",
+        "autores": "Mariana Fix, Giovani Espíndola Ribeiro e André Doca Prado (Revista Brasileira de Estudos Urbanos e Regionais)",
+        "data": "2015",
+        "formato": "PDF",
+        "url": "https://www.redalyc.org/pdf/5139/513951514011.pdf",
+        "tese": "O ex-secretário que propôs a tarifa zero em São Paulo nos anos 1990 explica a ideia: pagar as empresas pelo custo do serviço, e não por passageiro, e financiar o transporte com impostos progressivos, como se faz com a coleta de lixo.",
+        "premissas": [
+          "O modelo de pagamento por passageiro cria um ciclo de tarifa alta e serviço ruim.",
+          "Impostos sobre patrimônio e veículos podem bancar o sistema."
+        ],
+        "pergunte": [
+          "A proposta é de 1990. O que mudou no custo e no financiamento do transporte desde então?"
+        ]
+      },
+      {
+        "id": "fiemg-bh",
+        "posicao": "contrario",
+        "instituicao": "FIEMG",
+        "natureza": "Federação que representa as indústrias de Minas Gerais",
+        "tipo": "Estudo",
+        "titulo": "Impactos econômicos decorrentes dos custos com a tarifa zero em Belo Horizonte",
+        "autores": "Gerência de Economia e Finanças Empresariais da FIEMG",
+        "data": "06/2025",
+        "formato": "PDF",
+        "url": "https://www.fiemg.com.br/wp-content/uploads/2025/10/ESTUDO-TARIFA-ZERO.pdf",
+        "tese": "A taxa cobrada das empresas no projeto de BH não cobriria o custo do sistema, que tende a crescer com mais passageiros. A conta passaria para o setor produtivo e para o orçamento da prefeitura.",
+        "numero": {
+          "valor": "até 19,4%",
+          "legenda": "do orçamento de BH de 2024 seria comprometido nos cenários de maior demanda"
+        },
+        "premissas": [
+          "A demanda pelo ônibus cresce bastante com a gratuidade.",
+          "O custo extra recai sobre as empresas e a prefeitura."
+        ],
+        "pergunte": [
+          "A FIEMG representa quem pagaria a taxa. Como isso pesa na leitura do estudo?",
+          "O estudo considera os ganhos, como menos trânsito, ou só os custos?"
+        ]
+      },
+      {
+        "id": "ntu-2026",
+        "posicao": "contrario",
+        "instituicao": "NTU",
+        "natureza": "Associação que representa as empresas de ônibus urbano",
+        "tipo": "Pesquisa",
+        "titulo": "Pesquisa Temática: Tarifa Zero 2026",
+        "autores": "Associação Nacional das Empresas de Transportes Urbanos",
+        "data": "06/2026",
+        "formato": "Página",
+        "url": "https://www.ntu.org.br/publicacoes?title=Pesquisa%20Tem%C3%A1tica%20-%20Tarifa%20Zero%202026",
+        "tese": "A tarifa zero avança devagar e quase só em cidades pequenas. Oito municípios já desistiram. Levar a gratuidade a todo o país exigiria ampliar a frota e aumentar bastante o custo do sistema.",
+        "numero": {
+          "valor": "+R$ 15 bi",
+          "legenda": "por ano: de R$ 75,7 bi para R$ 90,7 bi, com 20% mais ônibus"
+        },
+        "premissas": [
+          "Sem fonte de dinheiro estável, a gratuidade não se sustenta.",
+          "Mais passageiros exigem mais ônibus."
+        ],
+        "pergunte": [
+          "As empresas de ônibus ganham ou perdem com a tarifa zero? Depende de como serão pagas.",
+          "Por que as oito cidades desistiram: falta de dinheiro ou outra razão?"
+        ]
+      },
+      {
+        "id": "usp-zilbovicius",
+        "posicao": "favoravel",
+        "instituicao": "USP",
+        "natureza": "Universidade pública (Escola Politécnica), artigo no Jornal da USP",
+        "tipo": "Artigo de opinião",
+        "titulo": "Tarifa zero: viável, necessária, contra a exclusão social. Quem paga? Por que paga?",
+        "autores": "Mauro Zilbovicius, professor da Escola Politécnica da USP",
+        "data": "29/04/2024",
+        "formato": "Página",
+        "url": "https://jornal.usp.br/artigos/tarifa-zero-viavel-necessaria-contra-a-exclusao-social-quem-paga-por-que-paga/",
+        "tese": "A tarifa é um mecanismo que exclui quem não pode pagar. Como saúde e vacina, o transporte deveria ser pago por todos via impostos. Em Paris, a passagem já cobre só cerca de um terço do custo.",
+        "premissas": [
+          "O transporte coletivo beneficia toda a cidade, inclusive quem não usa.",
+          "Há fontes de dinheiro públicas suficientes para cobrir o sistema."
+        ],
+        "pergunte": [
+          "Paris subsidia, mas não zera a tarifa. O exemplo apoia a tarifa zero ou só mais subsídio?"
+        ]
+      },
+      {
+        "id": "semob-modicidade",
+        "posicao": "contrario",
+        "instituicao": "Ministério das Cidades",
+        "natureza": "Governo federal (Secretaria Nacional de Mobilidade Urbana)",
+        "tipo": "Declaração",
+        "titulo": "Antes de tarifa zero, é necessário buscar modicidade tarifária, defende secretário nacional de mobilidade",
+        "autores": "Denis Eduardo Andia, secretário nacional de Mobilidade Urbana (reportagem do Diário do Transporte)",
+        "data": "05/11/2025",
+        "formato": "Página",
+        "url": "https://diariodotransporte.com.br/2025/11/05/antes-de-tarifa-zero-e-necessario-buscar-modicidade-tarifaria-defende-secretario-nacional-de-mobilidade-do-governo-lula/",
+        "tese": "Até dentro do governo há cautela: o secretário defende primeiro baratear a passagem e melhorar o serviço, com financiamento federal permanente, antes de falar em tarifa zero nacional.",
+        "numero": {
+          "valor": "R$ 57 bi",
+          "legenda": "por ano para tarifa zero todos os dias no país, segundo estimativa da XP citada na reportagem"
+        },
+        "premissas": [
+          "Não há dinheiro garantido no orçamento federal para zerar a tarifa.",
+          "Qualidade do serviço importa tanto quanto o preço."
+        ],
+        "pergunte": [
+          "Baratear aos poucos é um caminho para a tarifa zero ou uma alternativa a ela?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "dB9252ZQwew",
+        "lado": "favoravel",
+        "titulo": "Tarifa zero pode beneficiar pessoas de baixa renda e desempregados",
+        "canal": "Rádio Bandeirantes",
+        "nota": "Quem mais ganha com o ônibus de graça.",
+        "duracao": "3:34"
+      },
+      {
+        "id": "6-4OoR8G4jM",
+        "lado": "favoravel",
+        "titulo": "Tarifa zero no transporte público",
+        "canal": "Senador Paulo Paim",
+        "nota": "Senador defende o transporte gratuito como direito."
+      },
+      {
+        "id": "g4Rgqyx4fro",
+        "lado": "favoravel",
+        "titulo": "Lúcio Gregori fala sobre a tarifa zero",
+        "canal": "Coletivo Maruim",
+        "nota": "O ex-secretário que criou a proposta em São Paulo explica a ideia."
+      },
+      {
+        "id": "qVxj49bdrbU",
+        "lado": "contrario",
+        "titulo": "Secretário municipal explica por que projeto de tarifa zero foi rejeitado na Câmara de BH",
+        "canal": "Itatiaia",
+        "nota": "Os motivos financeiros que barraram a proposta em Belo Horizonte."
+      },
+      {
+        "id": "7idbokYAhR4",
+        "lado": "contrario",
+        "titulo": "Tarifa zero: quais são os custos do transporte?",
+        "canal": "Rádio BandNews FM",
+        "nota": "Quanto custa o sistema e quem teria de pagar.",
+        "duracao": "3:46"
+      },
+      {
+        "id": "6KERqXKCzkA",
+        "lado": "contrario",
+        "titulo": "Vantagens e desvantagens da tarifa zero",
+        "canal": "Via Trolebus",
+        "nota": "Mostra os riscos: lotação, queda de qualidade e dependência do orçamento.",
+        "duracao": "7:31"
+      }
+    ]
+  },
+  {
+    "id": "bolsa-familia",
+    "titulo": "Bolsa Família",
+    "categoria": "assistencia",
+    "tags": [
+      "transferência de renda",
+      "pobreza",
+      "Cadastro Único",
+      "Auxílio Brasil",
+      "mercado de trabalho",
+      "porta de saída"
+    ],
+    "pergunta": "O Bolsa Família deve continuar como está?",
+    "resumo": "O programa paga em média cerca de R$ 700 por mês a quase 19 milhões de famílias. O debate é se ele reduz a pobreza sem afastar as pessoas do trabalho.",
+    "atualizado": "2026-10-14",
+    "rotulos": {
+      "favoravel": "A favor do modelo atual",
+      "contrario": "Críticas ao modelo atual"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "Criado em 2003, o Bolsa Família paga um valor mensal a famílias pobres inscritas no Cadastro Único. Em troca, as famílias precisam manter as crianças na escola e em dia com vacinas e consultas.",
+        "Entre 2021 e 2022 o programa virou Auxílio Brasil e teve o piso elevado para R$ 600. Em 2023 voltou a se chamar Bolsa Família, com adicionais por criança. O custo subiu de cerca de R$ 35 bilhões por ano antes da pandemia para perto de R$ 170 bilhões.",
+        "Em janeiro de 2026, segundo o governo, 18,8 milhões de famílias recebiam o benefício, com valor médio de R$ 697,77.",
+        "Quase ninguém no debate público defende acabar com o programa. A disputa é sobre o desenho: se um valor maior tira as pessoas do mercado de trabalho, se faltam portas de saída e para quem o dinheiro deveria ir primeiro."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Famílias atendidas (jan/2026)",
+          "valor": "18,8 mi"
+        },
+        {
+          "rotulo": "Valor médio",
+          "valor": "R$ 698"
+        },
+        {
+          "rotulo": "Piso por família",
+          "valor": "R$ 600"
+        },
+        {
+          "rotulo": "Criado em",
+          "valor": "2003"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Pobreza",
+        "favoravel": "É uma das políticas mais baratas e eficientes para reduzir a pobreza extrema.",
+        "contrario": "Reduz a pobreza no curto prazo, mas não basta para tirar as famílias dela de vez."
+      },
+      {
+        "tema": "Trabalho",
+        "favoravel": "Quem sai do mercado deixa sobretudo empregos precários, e muitas vezes para cuidar dos filhos.",
+        "contrario": "O valor maior reduziu a busca por emprego, sobretudo entre homens jovens."
+      },
+      {
+        "tema": "Custo",
+        "favoravel": "Custa pouco perto de outros gastos públicos e o dinheiro volta para a economia local.",
+        "contrario": "O custo quadruplicou e pesa num orçamento federal apertado."
+      },
+      {
+        "tema": "Desenho",
+        "favoravel": "Os adicionais por criança focam o dinheiro em quem mais precisa.",
+        "contrario": "O valor fixo por família deveria cair, e o dinheiro ir para mães de crianças pequenas e jovens que estudam."
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Transferência condicionada",
+        "definicao": "Pagamento em dinheiro que exige contrapartidas, como frequência escolar e vacinação."
+      },
+      {
+        "termo": "Cadastro Único",
+        "definicao": "Registro do governo federal com as famílias de baixa renda. É a porta de entrada para o Bolsa Família e outros programas."
+      },
+      {
+        "termo": "Regra de proteção",
+        "definicao": "Permite que a família que aumenta a renda continue recebendo metade do benefício por um tempo, para não ter medo de perder o auxílio ao conseguir emprego."
+      },
+      {
+        "termo": "Oferta de trabalho",
+        "definicao": "Quantas pessoas estão trabalhando ou procurando trabalho, e quantas horas querem trabalhar."
+      },
+      {
+        "termo": "Porta de saída",
+        "definicao": "Políticas que ajudam a família a ganhar renda própria e deixar de precisar do benefício."
+      }
+    ],
+    "incertezas": [
+      "O tamanho real do efeito sobre o trabalho. Os estudos da FGV Ibre e do Ipea medem coisas parecidas e chegam a leituras diferentes.",
+      "Quanto da saída do mercado de trabalho é desincentivo e quanto é fuga de empregos precários ou cuidado com a família.",
+      "Qual o efeito de longo prazo sobre os filhos de beneficiários, em escolaridade e renda futura."
+    ],
+    "fontes": [
+      {
+        "titulo": "Conexão Tocantins: Bolsa Família chega a 18,77 milhões de beneficiários com valor médio de R$ 697,77 (jan/2026)",
+        "url": "https://conexaoto.com.br/2026/01/19/bolsa-familia-chega-a-18-77-milhoes-de-beneficiarios-com-valor-medio-de-r-697-77"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "ipea-15-anos",
+        "posicao": "favoravel",
+        "instituicao": "Ipea",
+        "natureza": "Instituto público de pesquisa do governo federal",
+        "tipo": "Texto para discussão",
+        "titulo": "Os efeitos do Programa Bolsa Família sobre a pobreza e a desigualdade: um balanço dos primeiros quinze anos",
+        "autores": "Pedro H. G. Ferreira de Souza, Rafael Guerreiro Osorio, Luis Henrique Paiva e Sergei Soares",
+        "data": "2019",
+        "formato": "PDF (resumo)",
+        "url": "https://ipcig.org/sites/default/files/pub/pt-br/OP429PT_Os_efeitos_do_programa_Bolsa_Familia_sobre_a_pobreza_e_a_desigualdade.pdf",
+        "tese": "Com menos de 0,5% do PIB, o programa reduziu a pobreza extrema em mais de 25% e respondeu por quase 10% da queda da desigualdade entre 2001 e 2015.",
+        "numero": {
+          "valor": "3,4 mi",
+          "legenda": "de pessoas fora da extrema pobreza em 2017 por causa do programa"
+        },
+        "premissas": [
+          "Compara a renda das famílias com e sem o benefício, sem medir efeitos sobre o trabalho."
+        ],
+        "pergunte": [
+          "O estudo é anterior ao aumento do benefício. Os números valem para o programa de hoje, que custa quatro vezes mais?"
+        ]
+      },
+      {
+        "id": "ipea-nt-78",
+        "posicao": "favoravel",
+        "instituicao": "Ipea",
+        "natureza": "Instituto público de pesquisa do governo federal",
+        "tipo": "Nota técnica",
+        "titulo": "O efeito do aumento no valor das transferências de renda sobre a inserção dos beneficiários no mercado de trabalho",
+        "autores": "Ricardo Campante Vale e Fábio Veras Soares",
+        "data": "2025",
+        "formato": "PDF",
+        "url": "https://static.poder360.com.br/2025/10/NT_Dinte_78_O_Efeito_aumento_valor_transferencias_renda_Publicacao.pdf",
+        "tese": "O aumento para R$ 600 reduziu um pouco a participação no mercado de trabalho, mas quem saiu estava sobretudo desempregado ou em trabalho precário, e muitas vezes eram mulheres cuidando dos filhos. Seria uma fuga da precariedade, não preguiça.",
+        "numero": {
+          "valor": "2,2 a 4,7 p.p.",
+          "legenda": "de queda na participação no mercado de trabalho, sem efeito sobre a formalidade"
+        },
+        "premissas": [
+          "Acompanha as mesmas pessoas ao longo do tempo na PNAD Contínua.",
+          "Sair de um trabalho precário para cuidar da família não é necessariamente ruim."
+        ],
+        "pergunte": [
+          "O estudo também encontra queda na participação. O que muda é a interpretação. Qual parece mais convincente?"
+        ]
+      },
+      {
+        "id": "fgv-ibre-duque",
+        "posicao": "contrario",
+        "instituicao": "FGV Ibre",
+        "natureza": "Instituto privado de pesquisa econômica",
+        "tipo": "Artigo",
+        "titulo": "Bolsa Família ampliado reduz oferta de trabalho, mas pode ser aperfeiçoado",
+        "autores": "Luiz Guilherme Schymura, sobre pesquisa de Daniel Duque (Carta do Ibre, Conjuntura Econômica)",
+        "data": "13/08/2025",
+        "formato": "Página",
+        "url": "https://blogdoibre.fgv.br/node/2108",
+        "tese": "O benefício ampliado reduziu a oferta de trabalho e o emprego formal entre homens, sobretudo jovens do Norte e Nordeste. O programa deveria ser redesenhado, com piso menor e mais dinheiro para mães de crianças pequenas e jovens que estudam.",
+        "numero": {
+          "valor": "-11%",
+          "legenda": "na participação no mercado de trabalho de quem passou a ser elegível, frente aos não elegíveis"
+        },
+        "premissas": [
+          "Usa a mudança de regra de 2023 como experimento natural.",
+          "Menos gente procurando emprego é um custo para a economia."
+        ],
+        "pergunte": [
+          "O efeito aparece entre homens e não entre mulheres. Por que essa diferença?",
+          "A proposta é redesenhar, não cortar. Quem ganharia e quem perderia?"
+        ]
+      },
+      {
+        "id": "ufjf-mulheres",
+        "posicao": "contrario",
+        "instituicao": "UFJF",
+        "natureza": "Universidade pública (mestrado em Psicologia)",
+        "tipo": "Dissertação",
+        "titulo": "O que cabe às mulheres no Programa Bolsa Família? Uma história de muitas Marias, Mahins, Marielles e Malês",
+        "autores": "Camila Borges Machado",
+        "data": "2019",
+        "formato": "Página",
+        "url": "https://repositorio.ufjf.br/jspui/handle/ufjf/10544",
+        "tese": "Pesquisa com beneficiárias de um CRAS de Juiz de Fora. O programa ajuda as famílias e dá às mulheres mais voz em casa, mas as condicionalidades jogam sobre as mães todo o cuidado com os filhos, sem remuneração, e limitam a autonomia delas.",
+        "premissas": [
+          "Uma crítica pelo lado do desenho e do gênero, não contra a existência do programa.",
+          "Estudo qualitativo, com grupo de 18 mulheres e quatro entrevistas."
+        ],
+        "pergunte": [
+          "Como seria um programa que reduz a pobreza sem reforçar que cuidar é tarefa só da mãe?"
+        ]
+      },
+      {
+        "id": "imds-geracoes",
+        "posicao": "favoravel",
+        "instituicao": "Imds",
+        "natureza": "Instituto privado de pesquisa sobre mobilidade social",
+        "tipo": "Estudo",
+        "titulo": "Primeiras gerações do Bolsa Família (versão acadêmica publicada na World Development Perspectives)",
+        "autores": "Instituto Mobilidade e Desenvolvimento Social",
+        "data": "08/2024",
+        "formato": "Página",
+        "url": "https://imdsbrasil.org/en/em_pauta/edition-51-project-first-generations-of-bolsa-familia-yields-scientific-publication-to-imds/",
+        "tese": "Acompanhando crianças e jovens que recebiam o Bolsa Família em 2005, o estudo mostra que a maioria deixou de depender de programas sociais quando adulta. É um dado contra a ideia de dependência entre gerações.",
+        "numero": {
+          "valor": "64%",
+          "legenda": "dos jovens beneficiários em 2005 já não dependiam de programas federais em 2019"
+        },
+        "premissas": [
+          "Sair do Cadastro Único indica melhora de renda.",
+          "O acompanhamento por registros administrativos capta bem a trajetória das pessoas."
+        ],
+        "pergunte": [
+          "E os outros 36%? O que explica quem continuou no programa?"
+        ]
+      },
+      {
+        "id": "tcu-cadunico",
+        "posicao": "contrario",
+        "instituicao": "TCU",
+        "natureza": "Tribunal de Contas da União, órgão de controle do Congresso",
+        "tipo": "Auditoria",
+        "titulo": "Auditoria aponta falhas no CadÚnico com prejuízo potencial de R$ 34 bilhões até dezembro",
+        "autores": "Tribunal de Contas da União (Acórdão 2342/2023, Plenário)",
+        "data": "22/11/2023",
+        "formato": "Página",
+        "url": "https://portal.tcu.gov.br/imprensa/noticias/auditoria-aponta-falhas-no-cadunico-com-prejuizo-potencial-de-r-34-bilhoes-ate-dezembro",
+        "tese": "Visitas a 2.662 famílias mostraram que muitos cadastros têm renda ou composição familiar diferentes da realidade. O TCU estimou que uma parte grande dos pagamentos foi para quem não cumpria as regras.",
+        "numero": {
+          "valor": "22,5%",
+          "legenda": "das famílias visitadas não se enquadravam nas regras do programa"
+        },
+        "premissas": [
+          "A amostra representa o conjunto dos beneficiários.",
+          "Diferença no cadastro indica pagamento indevido, e não apenas desatualização."
+        ],
+        "pergunte": [
+          "Falhas no cadastro são um argumento contra o programa ou a favor de fiscalizar melhor?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "lMRUN7Kq_IQ",
+        "lado": "favoravel",
+        "titulo": "Bolsa Família deixa as pessoas preguiçosas? A verdade baseada em estudos",
+        "canal": "Daniel Martins de Barros",
+        "nota": "Psiquiatra revisa o que as pesquisas dizem sobre trabalho e benefício.",
+        "duracao": "8:55"
+      },
+      {
+        "id": "Q2vYC_GRjHs",
+        "lado": "favoravel",
+        "titulo": "Economista critica tese de que Bolsa Família afasta pessoas do trabalho",
+        "canal": "VEJA+",
+        "nota": "Economista contesta a ideia de que o benefício desestimula o emprego."
+      },
+      {
+        "id": "KwBEofa-xBE",
+        "lado": "favoravel",
+        "titulo": "Luciano Huck x Bolsa Família: estudos desmentem falas sobre dependência",
+        "canal": "UOL",
+        "nota": "O que as pesquisas dizem sobre a dependência do programa.",
+        "duracao": "12:53"
+      },
+      {
+        "id": "dw5_IU9NoLw",
+        "lado": "contrario",
+        "titulo": "Cury explode sobre o aumento do Bolsa Família",
+        "canal": "Cortes do Flow",
+        "nota": "Crítica ao custo e ao aumento do benefício.",
+        "duracao": "3:00"
+      },
+      {
+        "id": "pJG-ls1kT24",
+        "lado": "contrario",
+        "titulo": "Cidade do RS mostra que o trabalho liberta da dependência do Bolsa Família",
+        "canal": "Gazeta do Povo",
+        "nota": "Alexandre Garcia comenta o caso de Bento Gonçalves, que trocou benefícios por emprego."
+      },
+      {
+        "id": "3gqvU4wIcWs",
+        "lado": "contrario",
+        "titulo": "Não há estímulo para sair do Bolsa Família, diz Luciano Huck",
+        "canal": "Poder360",
+        "nota": "A fala que reacendeu o debate sobre as portas de saída do programa."
+      }
+    ]
+  },
+  {
+    "id": "armas",
+    "titulo": "Acesso a armas de fogo",
+    "categoria": "seguranca",
+    "tags": [
+      "Estatuto do Desarmamento",
+      "posse",
+      "porte",
+      "CAC",
+      "legítima defesa",
+      "violência",
+      "referendo de 2005"
+    ],
+    "pergunta": "Deve ficar mais fácil para o cidadão comum ter e portar uma arma?",
+    "resumo": "Entre 2019 e 2022 as regras para comprar armas foram afrouxadas, e em 2023 voltaram a ser apertadas. A dúvida é se armas nas mãos de cidadãos protegem ou aumentam a violência.",
+    "atualizado": "2026-10-14",
+    "rotulos": {
+      "favoravel": "A favor de facilitar o acesso",
+      "contrario": "A favor de mais controle"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "Desde o Estatuto do Desarmamento, de 2003, comprar uma arma no Brasil exige ter pelo menos 25 anos, ficha limpa, curso de tiro, exame psicológico e justificar a necessidade à Polícia Federal. Andar armado na rua, o chamado porte, é proibido para a maioria dos civis.",
+        "Em 2005, um referendo perguntou se a venda de armas e munição deveria ser proibida. O Não venceu com 63,9% dos votos válidos, em todos os estados.",
+        "Entre 2019 e 2022, uma série de decretos facilitou a compra, sobretudo para caçadores, atiradores e colecionadores (os CACs), e aumentou a quantidade de armas e munição que cada pessoa podia ter. Em 2023, um novo decreto voltou a restringir e passou o controle dos CACs do Exército para a Polícia Federal.",
+        "O debate opõe o direito de se defender às pesquisas que ligam mais armas em circulação a mais homicídios e ao desvio de armas legais para o crime."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Estatuto do Desarmamento",
+          "valor": "2003"
+        },
+        {
+          "rotulo": "Votaram Não no referendo de 2005",
+          "valor": "63,9%"
+        },
+        {
+          "rotulo": "Apreensões de pistolas 9mm no Sudeste, 2018 a 2023",
+          "valor": "+119%"
+        },
+        {
+          "rotulo": "Idade mínima para comprar",
+          "valor": "25 anos"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Defesa",
+        "favoravel": "O Estado não consegue proteger todo mundo o tempo todo. A arma dá ao cidadão uma chance de se defender.",
+        "contrario": "Reagir armado a um assalto aumenta o risco de morrer, e a arma em casa costuma ser usada em brigas, feminicídios e suicídios."
+      },
+      {
+        "tema": "Homicídios",
+        "favoravel": "Os homicídios caíram justamente no período em que o acesso a armas foi ampliado.",
+        "contrario": "Estudos com dados brasileiros mostram que mais armas em circulação andam junto com mais homicídios."
+      },
+      {
+        "tema": "Crime organizado",
+        "favoravel": "Bandido não compra arma em loja. Restringir o acesso legal só desarma quem segue a lei.",
+        "contrario": "Armas compradas legalmente, sobretudo por CACs, acabaram desviadas para facções."
+      },
+      {
+        "tema": "Vontade popular",
+        "favoravel": "A maioria votou no referendo de 2005 para manter o direito de comprar armas.",
+        "contrario": "O referendo tratou da venda, não da quantidade de armas e munição liberada depois por decreto."
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Posse",
+        "definicao": "Autorização para manter a arma em casa ou no local de trabalho."
+      },
+      {
+        "termo": "Porte",
+        "definicao": "Autorização para andar com a arma fora de casa. É restrita a algumas profissões e casos excepcionais."
+      },
+      {
+        "termo": "CAC",
+        "definicao": "Caçadores, atiradores desportivos e colecionadores. Têm regras próprias e podem ter mais armas que o cidadão comum."
+      },
+      {
+        "termo": "Estatuto do Desarmamento",
+        "definicao": "Lei 10.826, de 2003, que define as regras de compra, registro, posse e porte de armas no país."
+      },
+      {
+        "termo": "Elasticidade",
+        "definicao": "Quanto uma coisa muda quando outra muda 1%. Uma elasticidade de 2 entre armas e homicídios quer dizer que 1% a mais de armas acompanha 2% a mais de homicídios."
+      }
+    ],
+    "incertezas": [
+      "Quanto da queda dos homicídios depois de 2018 tem a ver com armas, e quanto com mudanças na população, nas facções e no policiamento.",
+      "Em que escala armas compradas legalmente chegam ao crime.",
+      "Se resultados medidos em São Paulo nos anos 2000 valem para o país de hoje."
+    ],
+    "fontes": [
+      {
+        "titulo": "Congresso em Foco: Não vence referendo com 63,94% (out/2005)",
+        "url": "https://www.congressoemfoco.com.br/noticia/103497/referendo-diferenca-final-do-nao-foi-de-quase-26-milhoes-de-votos"
+      },
+      {
+        "titulo": "JB: flexibilização de armas em 2019 levou a desvio de pistolas para o crime (dez/2025)",
+        "url": "https://www.jb.com.br/brasil/2025/12/1057912-flexibilizacao-de-armas-em-2019-levou-a-desvio-de-pistolas-para-crime.html"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "senado-td-234",
+        "posicao": "favoravel",
+        "instituicao": "Senado Federal",
+        "natureza": "Consultoria Legislativa do Senado (estudo técnico, não é a posição oficial da Casa)",
+        "tipo": "Texto para discussão",
+        "titulo": "Desarmamento: o que ele tem a ver com vigilantes, prisões lotadas, tribunais congestionados e pequenos traficantes de drogas?",
+        "autores": "Tiago Ivo Odon",
+        "data": "06/2017",
+        "formato": "Página",
+        "url": "https://www12.senado.leg.br/publicacoes/estudos-legislativos/tipos-de-estudos/textos-para-discussao/td234",
+        "tese": "O Estatuto do Desarmamento não reduziu a violência como prometia. O autor diz não tomar partido sobre o desarmamento em si, mas conclui que polícia fraca, tráfico, prisões lotadas e Justiça lenta anularam os efeitos da lei.",
+        "premissas": [
+          "O problema da violência está mais na estrutura de segurança e Justiça do que na arma do cidadão."
+        ],
+        "pergunte": [
+          "Se a lei não funcionou por causa de outros fatores, isso prova que liberar armas ajudaria?"
+        ]
+      },
+      {
+        "id": "conjur-sannini",
+        "posicao": "favoravel",
+        "instituicao": "ConJur",
+        "natureza": "Artigo de opinião de delegado de polícia e professor universitário, em revista jurídica",
+        "tipo": "Artigo",
+        "titulo": "Armas e crimes",
+        "autores": "Francisco Sannini",
+        "data": "29/11/2022",
+        "formato": "Página",
+        "url": "https://www.conjur.com.br/2022-nov-29/francisco-sannini-armas-crimes-ou-armas-crimes/",
+        "tese": "A ligação entre acesso legal a armas e crimes é contestada e não está provada. O autor lembra que a população decidiu no referendo de 2005 manter o direito de comprar armas.",
+        "premissas": [
+          "Quem compra arma legalmente não é quem comete a maior parte dos crimes."
+        ],
+        "pergunte": [
+          "Que tipo de dado seria preciso para resolver essa disputa?"
+        ]
+      },
+      {
+        "id": "referendo-2005",
+        "posicao": "favoravel",
+        "instituicao": "TSE",
+        "natureza": "Resultado oficial do referendo, noticiado pela imprensa",
+        "tipo": "Dado oficial",
+        "titulo": "Referendo de 2005: diferença final do Não foi de quase 26 milhões de votos",
+        "autores": "Congresso em Foco, com dados do Tribunal Superior Eleitoral",
+        "data": "24/10/2005",
+        "formato": "Página",
+        "url": "https://www.congressoemfoco.com.br/noticia/103497/referendo-diferenca-final-do-nao-foi-de-quase-26-milhoes-de-votos",
+        "tese": "A maioria votou contra proibir a venda de armas, e o Não ganhou em todos os estados. Para quem defende o acesso, é a prova de que a população quer manter o direito de se defender.",
+        "numero": {
+          "valor": "63,94%",
+          "legenda": "dos votos válidos foram contra proibir a venda de armas"
+        },
+        "premissas": [
+          "Uma votação popular deve orientar as regras sobre armas."
+        ],
+        "pergunte": [
+          "A pergunta de 2005 era sobre proibir a venda. Ela diz algo sobre quantas armas cada pessoa deve poder ter?"
+        ]
+      },
+      {
+        "id": "ipea-td-1721",
+        "posicao": "contrario",
+        "instituicao": "Ipea",
+        "natureza": "Instituto público de pesquisa do governo federal",
+        "tipo": "Texto para discussão",
+        "titulo": "Menos armas, menos crimes",
+        "autores": "Daniel Cerqueira e João Manoel Pinho de Mello",
+        "data": "03/2012",
+        "formato": "PDF",
+        "url": "https://repositorio.ipea.gov.br/bitstream/11058/2927/1/TD_1721.pdf",
+        "tese": "Nos 645 municípios paulistas, a redução de armas depois do Estatuto ajudou a derrubar os homicídios. Não houve efeito parecido sobre roubos e tráfico.",
+        "numero": {
+          "valor": "≈ 2",
+          "legenda": "de elasticidade: 1% a mais de armas acompanha cerca de 2% a mais de homicídios"
+        },
+        "premissas": [
+          "Mede a quantidade de armas pela proporção de suicídios cometidos com arma de fogo, um método usado na literatura internacional."
+        ],
+        "pergunte": [
+          "Os dados são de São Paulo entre 2001 e 2007. O resultado vale para outros estados e para hoje?"
+        ]
+      },
+      {
+        "id": "ufv-dutra",
+        "posicao": "contrario",
+        "instituicao": "UFV",
+        "natureza": "Universidade pública (mestrado em Economia Aplicada)",
+        "tipo": "Dissertação",
+        "titulo": "Análise da relação entre acesso a armas de fogo e homicídios no Brasil",
+        "autores": "Gilson José Dutra",
+        "data": "08/2017",
+        "formato": "Página",
+        "url": "https://locus.ufv.br/items/09bcfa48-f9f3-4498-bcee-7e089196201c",
+        "tese": "Nas capitais brasileiras, mais armas em circulação andam junto com mais homicídios por arma de fogo. O efeito é maior entre vítimas negras e homens.",
+        "numero": {
+          "valor": "3,9",
+          "legenda": "de elasticidade média entre armas e homicídios por arma de fogo nas capitais"
+        },
+        "premissas": [
+          "Usa o mesmo método do estudo do Ipea, com dados de todas as capitais."
+        ],
+        "pergunte": [
+          "Andar junto prova que uma coisa causa a outra? O que mais poderia explicar a relação?"
+        ]
+      },
+      {
+        "id": "sou-da-paz-arsenal",
+        "posicao": "contrario",
+        "instituicao": "Instituto Sou da Paz",
+        "natureza": "Organização da sociedade civil que defende o controle de armas",
+        "tipo": "Estudo",
+        "titulo": "Arsenal do Crime",
+        "autores": "Instituto Sou da Paz (reportagem de Bruno de Freitas Moura)",
+        "data": "12/2025",
+        "formato": "Reportagem",
+        "url": "https://www.jb.com.br/brasil/2025/12/1057912-flexibilizacao-de-armas-em-2019-levou-a-desvio-de-pistolas-para-crime.html",
+        "tese": "Depois da flexibilização de 2019, a pistola 9mm, antes de uso restrito, virou uma das armas mais apreendidas com criminosos no Sudeste. Para o instituto, é sinal de desvio de armas compradas legalmente.",
+        "numero": {
+          "valor": "+119%",
+          "legenda": "de apreensões de pistolas 9mm no ES, MG, RJ e SP entre 2018 e 2023"
+        },
+        "premissas": [
+          "O aumento das apreensões reflete armas que saíram do mercado legal."
+        ],
+        "pergunte": [
+          "O Sou da Paz é uma ONG pelo controle de armas. Que dado mostraria de onde vieram as pistolas apreendidas?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "5a75td96eRY",
+        "lado": "favoravel",
+        "titulo": "A verdade sobre legítima defesa, com Bene Barbosa no Flow",
+        "canal": "Mundo dos Cortes",
+        "nota": "O principal defensor do armamento civil no país explica seu argumento.",
+        "duracao": "7:32"
+      },
+      {
+        "id": "0XB4c71GPPc",
+        "lado": "favoravel",
+        "titulo": "Porte de armas: as pessoas querem, mas não podem",
+        "canal": "Nada ProLixo Cortes",
+        "nota": "Bene Barbosa no Flow critica as barreiras para andar armado.",
+        "duracao": "5:30"
+      },
+      {
+        "id": "xxXdY5in8s0",
+        "lado": "favoravel",
+        "titulo": "“Temos um avanço no direito de defesa do cidadão”, diz especialista sobre decreto de armas",
+        "canal": "Balanço Geral Florianópolis",
+        "nota": "Especialista defende o decreto que facilitou a posse em 2019.",
+        "duracao": "5:26"
+      },
+      {
+        "id": "UyHRBY2PAXs",
+        "lado": "contrario",
+        "titulo": "A liberação das armas de fogo é equivocada, afirma Daniel Cerqueira",
+        "canal": "Exame",
+        "nota": "O autor do estudo do Ipea explica por que mais armas trazem mais mortes.",
+        "duracao": "4:12"
+      },
+      {
+        "id": "UTXIMe7bJEM",
+        "lado": "contrario",
+        "titulo": "Armas para a população resultam em menos crimes? Veja os mitos da segurança pública",
+        "canal": "Estadão",
+        "nota": "O que os dados dizem sobre armas e criminalidade.",
+        "duracao": "3:54"
+      },
+      {
+        "id": "uV7mOtZqclQ",
+        "lado": "contrario",
+        "titulo": "Maior rigor na posse de armas teria evitado mais de seis mortes por dia, diz estudo",
+        "canal": "Jornalismo TV Cultura",
+        "nota": "Estimativa de vidas que um controle mais rígido teria poupado.",
+        "duracao": "2:44"
+      }
+    ]
+  },
+  {
+    "id": "privatizacoes",
+    "titulo": "Privatização de estatais",
+    "categoria": "economia",
+    "tags": [
+      "Eletrobras",
+      "Sabesp",
+      "Correios",
+      "Petrobras",
+      "saneamento",
+      "concessão",
+      "desestatização"
+    ],
+    "pergunta": "O governo deve vender suas empresas?",
+    "resumo": "Eletrobras e Sabesp foram privatizadas nos últimos anos, e Correios e Petrobras sempre voltam à discussão. A dúvida é se a empresa privada entrega serviço melhor e mais barato, ou se o país perde o controle de áreas essenciais.",
+    "atualizado": "2026-10-14",
+    "rotulos": {
+      "favoravel": "A favor de privatizar",
+      "contrario": "Contra ou com ressalvas"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "A União controla dezenas de empresas, como Petrobras, Banco do Brasil, Caixa e Correios. Os estados também têm as suas, sobretudo de água, esgoto e energia.",
+        "Nos anos 1990, o Programa Nacional de Desestatização vendeu siderúrgicas, a Vale e as empresas de telefonia. Em 2022 a Eletrobras foi privatizada por capitalização: o governo vendeu ações na bolsa e deixou de ser o dono majoritário. Em 2024, São Paulo privatizou a Sabesp, a maior empresa de saneamento do país.",
+        "O marco legal do saneamento, de 2020, facilitou a entrada de empresas privadas no setor. Segundo o Instituto Trata Brasil, 1.557 municípios já tinham contrato com operadoras privadas em 2025. Do lado federal, o governo retirou os Correios e outras estatais da lista de privatizações em 2023.",
+        "A discussão não se resume a vender ou não. Pesa também como vender, quem fiscaliza depois e o que acontece com as tarifas e com quem mora onde o serviço não dá lucro."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Eletrobras privatizada em",
+          "valor": "2022"
+        },
+        {
+          "rotulo": "Sabesp privatizada em",
+          "valor": "2024"
+        },
+        {
+          "rotulo": "Municípios com saneamento privado (2025)",
+          "valor": "1.557"
+        },
+        {
+          "rotulo": "Serviços reestatizados por cidades no mundo, 2000 a 2019",
+          "valor": "311"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Eficiência",
+        "favoravel": "Empresas privadas respondem a acionistas e à concorrência, e tendem a gastar melhor.",
+        "contrario": "Em monopólios naturais, como água e esgoto, não há concorrência, e o ganho de eficiência pode virar só lucro."
+      },
+      {
+        "tema": "Investimento",
+        "favoravel": "Sem as amarras do orçamento público, a empresa privada consegue investir mais e mais rápido.",
+        "contrario": "Boa parte do investimento continua vindo de bancos públicos e das tarifas pagas pela população."
+      },
+      {
+        "tema": "Tarifas",
+        "favoravel": "Com regulação e metas no contrato, a tarifa pode até cair, como prometido na Sabesp.",
+        "contrario": "A busca por lucro e dividendos pressiona as contas de luz e de água para cima."
+      },
+      {
+        "tema": "Política",
+        "favoravel": "Estatais sofrem com indicações políticas e corrupção, como mostrou a Lava Jato.",
+        "contrario": "Setores estratégicos, como energia, deveriam ficar sob controle público para atender o interesse do país."
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Desestatização",
+        "definicao": "Quando o governo vende uma empresa ou passa um serviço para a iniciativa privada."
+      },
+      {
+        "termo": "Capitalização",
+        "definicao": "Venda de novas ações na bolsa que dilui a participação do governo até ele perder o controle. Foi o modelo da Eletrobras."
+      },
+      {
+        "termo": "Concessão",
+        "definicao": "O governo continua dono do serviço, mas uma empresa privada o opera por um prazo, seguindo metas de contrato."
+      },
+      {
+        "termo": "Golden share",
+        "definicao": "Ação especial que dá ao governo poder de veto em algumas decisões, mesmo depois da privatização."
+      },
+      {
+        "termo": "Monopólio natural",
+        "definicao": "Serviço em que só faz sentido ter uma rede, como canos de água ou fios de energia. Por isso precisa de regulação forte."
+      },
+      {
+        "termo": "Remunicipalização",
+        "definicao": "Quando uma cidade retoma um serviço que tinha sido entregue a uma empresa privada."
+      }
+    ],
+    "incertezas": [
+      "Os efeitos da privatização da Eletrobras e da Sabesp sobre tarifas e investimentos, que ainda são recentes.",
+      "Se as metas do marco do saneamento para 2033 serão cumpridas, com operadoras públicas ou privadas.",
+      "Se os ganhos medidos nas privatizações dos anos 1990 se repetem em serviços regulados de hoje."
+    ],
+    "fontes": [
+      {
+        "titulo": "Agência Brasil: estudo aponta estagnação no saneamento cinco anos após novo marco legal (ago/2025)",
+        "url": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2025-08/estudo-aponta-estagnacao-no-saneamento-5-anos-apos-novo-marco-legal"
+      },
+      {
+        "titulo": "Gazeta do Povo: privatização deslancha investimentos em saneamento (ago/2022)",
+        "url": "https://www.gazetadopovo.com.br/economia/privatizacao-deslancha-investimentos-em-saneamento-o-que-vem-por-ai/"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "rbe-privatizadas",
+        "posicao": "favoravel",
+        "instituicao": "FGV",
+        "natureza": "Revista Brasileira de Economia, da FGV, com autores da USP e da FGV",
+        "tipo": "Artigo acadêmico",
+        "titulo": "Os efeitos da privatização sobre o desempenho econômico e financeiro das empresas privatizadas",
+        "autores": "Francisco Anuatti-Neto, Milton Barossi-Filho, Antonio Gledson de Carvalho e Roberto Macedo",
+        "data": "2005",
+        "formato": "PDF",
+        "url": "https://www.scielo.br/j/rbe/a/TVjgv545MGj565LfWVRGc5M/?format=pdf&lang=pt",
+        "tese": "As empresas vendidas desde 1991 passaram a lucrar mais, ficaram mais eficientes e reduziram dívidas. Os efeitos sobre investimento, produção e impostos pagos não ficaram claros.",
+        "premissas": [
+          "Compara 15 indicadores das mesmas empresas antes e depois da venda."
+        ],
+        "pergunte": [
+          "Lucro maior é bom para quem? Para o acionista, para o consumidor ou para os dois?"
+        ]
+      },
+      {
+        "id": "ppe-saneamento",
+        "posicao": "favoravel",
+        "instituicao": "Ipea",
+        "natureza": "Revista Pesquisa e Planejamento Econômico, do Ipea, com autores da UFU, do Insper e da UnB",
+        "tipo": "Artigo acadêmico",
+        "titulo": "Privatização e equidade no acesso a serviços de saneamento básico no Brasil",
+        "autores": "Carlos Cesar Santejo Saiani, Paulo Furquim de Azevedo e Rafael Terra de Menezes",
+        "data": "08/2023",
+        "formato": "PDF",
+        "url": "https://repositorio.ipea.gov.br/bitstream/11058/14444/2/PPE_v53_n2_artigo1_privatizacao_e_equipe.pdf",
+        "tese": "Nos municípios que passaram o esgoto para empresas privadas, o acesso à rede cresceu mais que nos outros, e mais onde ele era pior. No abastecimento de água, não houve ganho claro.",
+        "numero": {
+          "valor": "+26%",
+          "legenda": "de acesso à rede de esgoto com concessão privada (6,1 pontos percentuais)"
+        },
+        "premissas": [
+          "Compara municípios parecidos com e sem concessão privada usando os Censos de 1991, 2000 e 2010."
+        ],
+        "pergunte": [
+          "Os autores notam que o ganho cresce com a renda. A empresa privada prioriza quem pode pagar mais?"
+        ]
+      },
+      {
+        "id": "ufu-eletrobras",
+        "posicao": "favoravel",
+        "instituicao": "UFU",
+        "natureza": "Universidade pública (curso de Ciências Contábeis)",
+        "tipo": "Trabalho de conclusão de curso",
+        "titulo": "Efeitos da privatização por capitalização no desempenho econômico-financeiro da Eletrobras",
+        "autores": "João Victor Vieira da Silva",
+        "data": "06/2026",
+        "formato": "PDF",
+        "url": "https://repositorio.ufu.br/bitstream/123456789/49706/1/EfeitosPrivatiza%c3%a7%c3%a3oCapitaliza%c3%a7%c3%a3o.pdf",
+        "tese": "Logo depois da capitalização, o investimento da Eletrobras deu um salto e a dívida passou a ter prazos mais longos. A lucratividade não mudou de forma significativa.",
+        "premissas": [
+          "Compara os indicadores antes e depois de 2022 com dados trimestrais."
+        ],
+        "pergunte": [
+          "O próprio estudo mostra que o investimento perdeu força depois do salto inicial. Dá para concluir algo com três anos de dados?"
+        ]
+      },
+      {
+        "id": "manifesto-saneamento",
+        "posicao": "contrario",
+        "instituicao": "Ondas e 116 pesquisadores",
+        "natureza": "Manifesto assinado por pesquisadores da UFRJ, USP, UFMG, Unicamp, Fiocruz e outras instituições",
+        "tipo": "Manifesto",
+        "titulo": "Acesso ao saneamento é direito humano",
+        "autores": "Observatório Nacional dos Direitos à Água e ao Saneamento (Ondas) e signatários",
+        "data": "06/01/2023",
+        "formato": "PDF",
+        "url": "https://ondasbrasil.org/wp-content/uploads/2023/01/Manifesto-Saneamento-Comunidade-Academica-06012023.pdf",
+        "tese": "Não há evidência de que a empresa privada universalize o saneamento mais rápido ou mais barato. Água e esgoto são monopólio natural, difícil de regular, e a busca por lucro pode subir tarifas. Pelo mundo, a tendência é as cidades retomarem o serviço.",
+        "numero": {
+          "valor": "311",
+          "legenda": "casos de cidades que retomaram o serviço de água e esgoto entre 2000 e 2019"
+        },
+        "premissas": [
+          "Saneamento é um direito, não uma mercadoria.",
+          "Municípios pequenos não têm força para fiscalizar grandes grupos."
+        ],
+        "pergunte": [
+          "O manifesto cita casos ruins. Há casos em que a concessão privada deu certo no Brasil?"
+        ]
+      },
+      {
+        "id": "ufmg-eletrobras",
+        "posicao": "contrario",
+        "instituicao": "UFMG",
+        "natureza": "Universidade pública (curso de Administração, campus Montes Claros)",
+        "tipo": "Trabalho de conclusão de curso",
+        "titulo": "Análise crítica sobre a privatização da Eletrobrás",
+        "autores": "Jéssica Santos Felix",
+        "data": "01/2025",
+        "formato": "PDF",
+        "url": "https://www.ufmg.br/montesclaros/tccs/2024/TCC-JessicaSantosFelix.pdf",
+        "tese": "A capitalização da Eletrobras foi menos transparente que um leilão e pode ter rendido menos ao governo. Os “jabutis” da lei favorecem usinas a gás e podem encarecer a energia, e a empresa deixou de ser obrigada a apoiar programas como o Luz para Todos.",
+        "premissas": [
+          "Leilão aberto traria mais concorrência e mais dinheiro.",
+          "A estatal cumpria funções sociais que o mercado não cumpre."
+        ],
+        "pergunte": [
+          "O estudo não mede tarifas diretamente. Que dado mostraria se a conta de luz subiu por causa da privatização?"
+        ]
+      },
+      {
+        "id": "trata-brasil-2025",
+        "posicao": "contrario",
+        "instituicao": "Instituto Trata Brasil",
+        "natureza": "Organização da sociedade civil dedicada ao saneamento",
+        "tipo": "Estudo",
+        "titulo": "Avanços do Marco Legal do Saneamento Básico no Brasil 2025",
+        "autores": "Instituto Trata Brasil, com dados do Ministério das Cidades",
+        "data": "08/2025",
+        "formato": "Reportagem",
+        "url": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2025-08/estudo-aponta-estagnacao-no-saneamento-5-anos-apos-novo-marco-legal",
+        "tese": "Cinco anos depois do marco que abriu o setor às empresas privadas, o acesso à água ficou praticamente parado e o investimento está bem abaixo do necessário para cumprir as metas de 2033.",
+        "numero": {
+          "valor": "R$ 126",
+          "legenda": "por habitante ao ano investidos, contra R$ 224 necessários"
+        },
+        "premissas": [
+          "O próprio estudo diz que cinco anos é pouco para obras de saneamento darem resultado."
+        ],
+        "pergunte": [
+          "O problema é a privatização ou a falta de investimento em geral, público e privado?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "PbxfQAxbl_I",
+        "lado": "favoravel",
+        "titulo": "Por que a privatização da Sabesp era necessária",
+        "canal": "Tarcísio de Freitas",
+        "nota": "O governador de SP defende a venda da empresa de saneamento.",
+        "duracao": "9:31"
+      },
+      {
+        "id": "o_OlzlpfqTA",
+        "lado": "favoravel",
+        "titulo": "“É muito positivo”, diz Wilson Ferreira Jr. sobre a privatização da Eletrobras",
+        "canal": "Roda Viva",
+        "nota": "O ex-presidente da Eletrobras explica o que muda com a venda.",
+        "duracao": "2:48"
+      },
+      {
+        "id": "vroVI314kGc",
+        "lado": "favoravel",
+        "titulo": "Salim Mattar explica a diferença entre empresa estatal e privada",
+        "canal": "Jovem Pan News",
+        "nota": "O ex-secretário de Desestatização expõe a lógica da privatização.",
+        "duracao": "2:51"
+      },
+      {
+        "id": "OM50BxU8vuc",
+        "lado": "contrario",
+        "titulo": "As privatizações foram um erro!",
+        "canal": "Cortes do Flow",
+        "nota": "Fernando Haddad critica a venda da Sabesp.",
+        "duracao": "1:04"
+      },
+      {
+        "id": "KTXHt1OQj_o",
+        "lado": "contrario",
+        "titulo": "Privatização da Eletrobras deve aumentar conta de energia, alertam debatedores",
+        "canal": "TV Senado",
+        "nota": "Especialistas apontam o risco de alta nas tarifas.",
+        "duracao": "5:25"
+      },
+      {
+        "id": "ZOxOkvKK-Zo",
+        "lado": "contrario",
+        "titulo": "Privatização da Sabesp: bolsos cheios no mercado, povo sem água e esgoto",
+        "canal": "Eduardo Moreira",
+        "nota": "O economista critica quem ganha com a venda da Sabesp.",
+        "duracao": "8:00"
+      }
+    ]
+  },
+  {
+    "id": "maconha",
+    "titulo": "Descriminalização da maconha",
+    "categoria": "seguranca",
+    "tags": [
+      "drogas",
+      "STF",
+      "PEC das drogas",
+      "Lei de Drogas",
+      "usuário",
+      "tráfico",
+      "encarceramento",
+      "saúde mental"
+    ],
+    "pergunta": "Portar maconha para uso próprio deve deixar de ser crime?",
+    "resumo": "Em 2024 o STF decidiu que portar até 40 gramas de maconha para consumo próprio não é crime, e o Senado aprovou uma emenda à Constituição que diz o contrário. O debate envolve prisões, saúde pública e o tráfico.",
+    "atualizado": "2026-10-14",
+    "rotulos": {
+      "favoravel": "A favor de descriminalizar",
+      "contrario": "Contra descriminalizar"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "A Lei de Drogas, de 2006, já não manda prender quem carrega droga para uso próprio: as penas são advertência, serviço comunitário e curso. Mas portar continua sendo crime, e a lei não diz que quantidade separa o usuário do traficante. Na prática, quem decide é a polícia e o juiz.",
+        "Em junho de 2024, o STF decidiu que portar até 40 gramas de maconha, ou seis plantas fêmeas, para consumo próprio deixa de ser crime e passa a ser infração administrativa. Vender continua proibido, e a polícia ainda pode apreender a droga.",
+        "Em abril de 2024, o Senado aprovou por 53 votos a 9 a PEC 45/2023, que coloca na Constituição que portar qualquer quantidade de droga é crime. O texto seguiu para a Câmara.",
+        "Descriminalizar não é legalizar: a venda segue ilegal. A dúvida é se tirar o usuário da esfera criminal reduz prisões injustas e libera a polícia para o tráfico, ou se aumenta o consumo e fortalece as facções."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Limite fixado pelo STF",
+          "valor": "40 g"
+        },
+        {
+          "rotulo": "Votação da PEC no Senado",
+          "valor": "53 a 9"
+        },
+        {
+          "rotulo": "Uso de maconha no último ano, 2012 → 2023",
+          "valor": "2,8% → 6%"
+        },
+        {
+          "rotulo": "Réus por tráfico com quantidade de usuário (Ipea)",
+          "valor": "23% a 35%"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Prisões",
+        "favoravel": "Sem critério claro, muita gente pega com pouca droga é presa como traficante. Isso enche os presídios e alimenta as facções lá dentro.",
+        "contrario": "Traficantes passam a andar com quantidades pequenas para se passar por usuários."
+      },
+      {
+        "tema": "Saúde",
+        "favoravel": "Uso de droga é questão de saúde. O usuário deve ser tratado, não processado.",
+        "contrario": "A maconha causa dependência e pode desencadear psicose, sobretudo em adolescentes. Tolerar o uso passa a ideia de que é inofensiva."
+      },
+      {
+        "tema": "Tráfico",
+        "favoravel": "A polícia gasta tempo com usuários em vez de investigar o tráfico.",
+        "contrario": "Quem compra financia o tráfico. Mais consumo significa mais dinheiro para as facções."
+      },
+      {
+        "tema": "Igualdade",
+        "favoravel": "Jovens negros e pobres pegos com pouca droga são enquadrados como traficantes com mais frequência que brancos de classe média.",
+        "contrario": "A solução para abusos é corrigir a atuação da polícia, não mudar a lei."
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Descriminalizar",
+        "definicao": "Deixar de tratar uma conduta como crime. Ela pode continuar proibida e punida com sanções administrativas."
+      },
+      {
+        "termo": "Legalizar",
+        "definicao": "Permitir e regular a produção e a venda, como acontece com álcool e cigarro."
+      },
+      {
+        "termo": "Despenalizar",
+        "definicao": "Manter como crime, mas sem pena de prisão. É o que a Lei de Drogas fez com o usuário em 2006."
+      },
+      {
+        "termo": "Artigo 28",
+        "definicao": "Trecho da Lei de Drogas que trata de quem porta droga para consumo próprio. Foi ele que o STF julgou."
+      },
+      {
+        "termo": "PEC",
+        "definicao": "Proposta de Emenda à Constituição. Precisa de 3/5 dos votos, em dois turnos, na Câmara e no Senado."
+      }
+    ],
+    "incertezas": [
+      "Se a decisão do STF muda o consumo. Não há ainda dados brasileiros sobre o período depois de 2024.",
+      "Quantas pessoas presas hoje como traficantes seriam consideradas usuárias pelo novo critério.",
+      "Se a PEC 45 será aprovada na Câmara e como ficaria a decisão do STF nesse caso."
+    ],
+    "fontes": [
+      {
+        "titulo": "Migalhas: Senado aprova PEC que criminaliza porte de drogas (abr/2024)",
+        "url": "https://www.migalhas.com.br/quentes/405614/senado-aprova-pec-que-criminaliza-porte-de-drogas-texto-vai-a-camara"
+      },
+      {
+        "titulo": "Alma Preta: até 35% dos réus por tráfico poderiam ser considerados usuários (jun/2024)",
+        "url": "https://almapreta.com.br/sessao/cotidiano/descriminalizacao-da-maconha-ate-35-dos-reus-por-trafico-poderiam-ser-considerados-usuarios/"
+      },
+      {
+        "titulo": "Revista Pesquisa Fapesp: consumo de drogas ilícitas cresceu cerca de 80% de 2012 a 2023",
+        "url": "https://revistapesquisa.fapesp.br/consumo-de-drogas-ilicitas-cresceu-cerca-de-80-no-brasil-de-2012-a-2023/"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "ipea-stf-2024",
+        "posicao": "favoravel",
+        "instituicao": "Ipea",
+        "natureza": "Instituto público de pesquisa do governo federal",
+        "tipo": "Estudo",
+        "titulo": "Impactos da descriminalização do porte de maconha para uso pessoal",
+        "autores": "Milena Karla Soares (Ipea)",
+        "data": "06/2024",
+        "formato": "Reportagem",
+        "url": "https://almapreta.com.br/sessao/cotidiano/descriminalizacao-da-maconha-ate-35-dos-reus-por-trafico-poderiam-ser-considerados-usuarios/",
+        "tese": "Uma parte grande dos réus por tráfico carregava quantidades compatíveis com uso pessoal. Com um critério objetivo, milhares de pessoas deixariam de ser presas, e o Estado economizaria bilhões.",
+        "numero": {
+          "valor": "23% a 35%",
+          "legenda": "dos réus por tráfico tinham quantidade compatível com uso pessoal"
+        },
+        "premissas": [
+          "A quantidade apreendida é um bom indicador de quem é usuário."
+        ],
+        "pergunte": [
+          "Só com maconha, o efeito estimado cai para 1% a 2,4% dos presos. O impacto é grande ou pequeno?"
+        ]
+      },
+      {
+        "id": "ipea-criterios-2023",
+        "posicao": "favoravel",
+        "instituicao": "Ipea",
+        "natureza": "Instituto público de pesquisa do governo federal",
+        "tipo": "Estudo",
+        "titulo": "Critérios objetivos no processamento criminal por tráfico de drogas",
+        "autores": "Ipea",
+        "data": "05/2023",
+        "formato": "Reportagem",
+        "url": "https://abcdoabc.com.br/pesquisa-do-ipea-aponta-falha-em-acoes-criminais-por-trafico-de-drogas/",
+        "tese": "Os processos por tráfico registram mal as quantidades apreendidas, e boa parte deles envolve pouca droga. Um critério objetivo de quantidade evitaria tratar usuários como traficantes.",
+        "numero": {
+          "valor": "31%",
+          "legenda": "dos processos com maconha poderiam ser presumidos como uso pessoal, no cenário mais conservador"
+        },
+        "premissas": [
+          "Analisa processos de tráfico julgados no primeiro semestre de 2019 em todo o país."
+        ],
+        "pergunte": [
+          "Quem decide hoje se a pessoa é usuária ou traficante, e com que critério?"
+        ]
+      },
+      {
+        "id": "ufjf-possato",
+        "posicao": "favoravel",
+        "instituicao": "UFJF",
+        "natureza": "Universidade pública (Faculdade de Direito)",
+        "tipo": "Trabalho de conclusão de curso",
+        "titulo": "Uma análise das políticas regulatórias da posse de drogas para consumo pessoal",
+        "autores": "Arthur Navarro Possato (orientação de Wagner Silveira Rezende)",
+        "data": "03/2021",
+        "formato": "Página",
+        "url": "https://repositorio.ufjf.br/jspui/handle/ufjf/12862",
+        "tese": "O artigo 28 da Lei de Drogas é inconstitucional. Tirar o uso de maconha da esfera criminal ajudaria a combater o tráfico e o hiperencarceramento, e a garantir tratamento a pacientes.",
+        "premissas": [
+          "Compara políticas de drogas de vários países.",
+          "O Estado não deve punir condutas que afetam só a própria pessoa."
+        ],
+        "pergunte": [
+          "Que país tem a política de drogas mais parecida com a que o autor defende, e como estão os resultados lá?"
+        ]
+      },
+      {
+        "id": "cfm-abp-nota",
+        "posicao": "contrario",
+        "instituicao": "CFM e ABP",
+        "natureza": "Conselho Federal de Medicina e Associação Brasileira de Psiquiatria",
+        "tipo": "Nota técnica",
+        "titulo": "CFM e ABP publicam nota contra a descriminalização da maconha no país",
+        "autores": "Conselho Federal de Medicina e Associação Brasileira de Psiquiatria",
+        "data": "16/08/2023",
+        "formato": "Página",
+        "url": "https://portal.cfm.org.br/noticias/na-vespera-de-debate-no-senado-o-cfm-e-a-abp-publicam-nota-contra-a-descriminalizacao-da-maconha-no-pais/",
+        "tese": "A maconha causa dependência grave e pode desencadear psicoses, algumas irreversíveis. Facilitar o uso tende a aumentar o consumo, acidentes, homicídios e suicídios, e a fortalecer o tráfico.",
+        "premissas": [
+          "Menos restrição leva a mais consumo.",
+          "O Estado deve investir em prevenção e tratamento, não em flexibilizar."
+        ],
+        "pergunte": [
+          "A nota não apresenta fontes para seus números. Que estudos sustentariam essas previsões?",
+          "Riscos à saúde justificam tratar o usuário como criminoso?"
+        ]
+      },
+      {
+        "id": "senado-pec-45",
+        "posicao": "contrario",
+        "instituicao": "Senado Federal",
+        "natureza": "Decisão do Senado (votação em plenário)",
+        "tipo": "Proposta legislativa",
+        "titulo": "PEC 45/2023: posse e porte de qualquer quantidade de droga como crime",
+        "autores": "Senador Rodrigo Pacheco (autor)",
+        "data": "16/04/2024",
+        "formato": "Reportagem",
+        "url": "https://www.migalhas.com.br/quentes/405614/senado-aprova-pec-que-criminaliza-porte-de-drogas-texto-vai-a-camara",
+        "tese": "Cabe ao Congresso, e não ao STF, decidir o que é crime. A PEC mantém o porte de qualquer quantidade como crime, mas prevê penas alternativas e tratamento, sem prisão, para o usuário.",
+        "numero": {
+          "valor": "53 a 9",
+          "legenda": "votos no Senado no primeiro turno"
+        },
+        "premissas": [
+          "A distinção entre usuário e traficante deve olhar as circunstâncias de cada caso, não só a quantidade."
+        ],
+        "pergunte": [
+          "Sem um critério de quantidade, como evitar que pessoas parecidas sejam tratadas de forma diferente?"
+        ]
+      },
+      {
+        "id": "lenad-iii",
+        "posicao": "contrario",
+        "instituicao": "Unifesp",
+        "natureza": "Universidade pública (Levantamento Nacional de Álcool e Drogas)",
+        "tipo": "Pesquisa",
+        "titulo": "3º Levantamento Nacional de Álcool e Drogas (Lenad III): cannabis",
+        "autores": "Pesquisadores da Unifesp, coordenação de Clarice Sandi Madruga",
+        "data": "2023 (dados)",
+        "formato": "Reportagem",
+        "url": "https://revistapesquisa.fapesp.br/consumo-de-drogas-ilicitas-cresceu-cerca-de-80-no-brasil-de-2012-a-2023/",
+        "tese": "O uso de maconha mais que dobrou no país entre 2012 e 2023, e muitos jovens acham que experimentar quase não tem risco. Para os críticos da descriminalização, sinalizar tolerância tende a agravar esse quadro.",
+        "numero": {
+          "valor": "2,8% → 6%",
+          "legenda": "dos brasileiros usaram maconha no último ano, de 2012 para 2023"
+        },
+        "premissas": [
+          "O levantamento mede consumo e percepção de risco. Ele não avalia a decisão do STF, que é posterior."
+        ],
+        "pergunte": [
+          "O consumo subiu antes da decisão do STF. O que explica essa alta?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "u-p4mowR3Tc",
+        "lado": "favoravel",
+        "titulo": "Igor e Whindersson Nunes 100% sinceros sobre a legalização da maconha",
+        "canal": "Talk Flow",
+        "nota": "Os dois conversam sem rodeios sobre legalizar.",
+        "duracao": "15:33"
+      },
+      {
+        "id": "agAWz6TkueU",
+        "lado": "favoravel",
+        "titulo": "Kim Kataguiri diz ser a favor da liberação da maconha",
+        "canal": "INVEST Cortes",
+        "nota": "Um deputado de direita explica por que apoia a liberação.",
+        "duracao": "5:19"
+      },
+      {
+        "id": "SR23ET60M-g",
+        "lado": "favoravel",
+        "titulo": "“Proibir maconha é a mesma lógica que proibir cachorro”, diz o neurocientista Sidarta Ribeiro",
+        "canal": "Santa Cannabis",
+        "nota": "O pesquisador da UFRN critica a proibição.",
+        "duracao": "2:51"
+      },
+      {
+        "id": "wNcSePF53MA",
+        "lado": "contrario",
+        "titulo": "Vamos impedir a liberação da maconha!",
+        "canal": "Deputado Osmar Terra",
+        "nota": "O ex-ministro e médico defende manter o porte como crime.",
+        "duracao": "3:26"
+      },
+      {
+        "id": "Z_7TODf5JSs",
+        "lado": "contrario",
+        "titulo": "Maconha e adolescência: depressão e suicídio",
+        "canal": "Dr Ronaldo Laranjeira",
+        "nota": "O psiquiatra da Unifesp fala dos riscos para quem começa cedo.",
+        "duracao": "2:44"
+      },
+      {
+        "id": "XE4gBkkKEvw",
+        "lado": "contrario",
+        "titulo": "Prejuízos da maconha na infância e adolescência",
+        "canal": "Café com o Psiquiatra",
+        "nota": "Os efeitos do uso precoce no cérebro em formação.",
+        "duracao": "4:43"
+      }
+    ]
+  },
+  {
+    "id": "cotas-universidades",
+    "titulo": "Cotas nas universidades",
+    "categoria": "educacao",
+    "tags": [
+      "Lei de Cotas",
+      "ações afirmativas",
+      "cotas raciais",
+      "UFJF",
+      "ensino superior",
+      "Lei 12.711"
+    ],
+    "pergunta": "As cotas raciais nas universidades devem continuar?",
+    "resumo": "Desde 2012, metade das vagas das universidades federais é reservada a alunos de escola pública, com parte para pretos, pardos, indígenas e pessoas com deficiência. O debate é se o critério racial deve continuar.",
+    "atualizado": "2026-10-14",
+    "rotulos": {
+      "favoravel": "A favor das cotas raciais",
+      "contrario": "Contra ou com ressalvas"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "A Lei 12.711, de 2012, reserva 50% das vagas das universidades e institutos federais para quem estudou o ensino médio em escola pública. Dentro dessa reserva, há vagas para estudantes de baixa renda e para pretos, pardos e indígenas, na proporção da população de cada estado.",
+        "Em 2023, a lei foi revista: passou a incluir quilombolas, mudou a forma de preencher as vagas e manteve a avaliação a cada dez anos.",
+        "Os defensores dizem que as cotas mudaram a cara das universidades sem piorar a qualidade. Os críticos dizem que o critério racial divide a sociedade, que é difícil definir quem é negro no Brasil e que o problema principal é a renda, já coberto pela cota social.",
+        "Há também quem apoie as cotas, mas aponte problemas: falta de apoio para os cotistas se manterem no curso e fraudes na autodeclaração."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Vagas reservadas nas federais",
+          "valor": "50%"
+        },
+        {
+          "rotulo": "Pretos, pardos e indígenas no ensino superior público (2001)",
+          "valor": "31%"
+        },
+        {
+          "rotulo": "Mesmo grupo em 2020",
+          "valor": "52%"
+        },
+        {
+          "rotulo": "Lei de Cotas",
+          "valor": "2012"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Desempenho",
+        "favoravel": "Cotistas têm notas e taxas de conclusão parecidas com as dos demais, e evadem menos.",
+        "contrario": "Em cursos mais exigentes, cotistas reprovam mais, sinal de que a escola básica não foi resolvida."
+      },
+      {
+        "tema": "Critério",
+        "favoravel": "A desigualdade racial existe mesmo entre pessoas de mesma renda, então só a cota social não basta.",
+        "contrario": "A renda explica boa parte da desigualdade; cotas sociais já incluiriam muitos negros sem classificar ninguém por raça."
+      },
+      {
+        "tema": "Sociedade",
+        "favoravel": "Diversidade nas universidades forma profissionais e referências para toda a população negra.",
+        "contrario": "Oficializar a raça pode dividir um país miscigenado em grupos rivais."
+      },
+      {
+        "tema": "Quem se beneficia",
+        "favoravel": "As vagas vão para alunos de escola pública, o que já filtra os mais ricos.",
+        "contrario": "Parte das vagas fica com a classe média negra, e não com os mais pobres."
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Ação afirmativa",
+        "definicao": "Política que dá tratamento diferenciado a um grupo para corrigir uma desigualdade histórica."
+      },
+      {
+        "termo": "PPI",
+        "definicao": "Pretos, pardos e indígenas, o grupo atendido pela cota racial."
+      },
+      {
+        "termo": "Autodeclaração",
+        "definicao": "Quando o próprio candidato informa sua cor ou raça. Muitas universidades confirmam com bancas de heteroidentificação."
+      },
+      {
+        "termo": "Heteroidentificação",
+        "definicao": "Verificação, feita por uma comissão, de que o candidato é visto socialmente como negro, para evitar fraudes."
+      },
+      {
+        "termo": "Evasão",
+        "definicao": "Quando o aluno abandona o curso antes de terminar."
+      }
+    ],
+    "incertezas": [
+      "O efeito das cotas sobre a renda e a carreira dos cotistas depois de formados.",
+      "Quanto da inclusão de negros viria só com cotas sociais, sem o critério racial.",
+      "Se as bancas de heteroidentificação resolvem as fraudes sem criar injustiças."
+    ],
+    "fontes": [
+      {
+        "titulo": "Lei 12.711/2012 (Lei de Cotas)",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12711.htm"
+      },
+      {
+        "titulo": "Poder360: ingresso nas universidades aumenta 205% com Lei de Cotas, segundo estudo do Lepes/UFRJ e Ação Educativa (2022)",
+        "url": "https://www.poder360.com.br/educacao/ingresso-de-negros-em-universidades-aumenta-205-com-lei-de-cotas/"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "ipea-enade-cotas",
+        "posicao": "favoravel",
+        "instituicao": "Ipea",
+        "natureza": "Instituto público de pesquisa do governo federal (revista Planejamento e Políticas Públicas)",
+        "tipo": "Artigo",
+        "titulo": "Impacto das cotas no desempenho de estudantes no curso e no longo prazo",
+        "autores": "Artigo publicado na revista PPP, n. 64",
+        "data": "10/2023",
+        "formato": "PDF",
+        "url": "https://repositorio.ipea.gov.br/bitstream/11058/12388/3/ppp_n64_Artigo2_impacto_das_cotas_no_desempenho.pdf",
+        "tese": "Com dados do Enade de 2017, o estudo conclui que as cotas ampliaram o acesso ao ensino superior sem prejudicar o desempenho dos cursos. No conjunto do país, cotistas foram até melhor.",
+        "premissas": [
+          "A nota no Enade mede bem o aprendizado no fim do curso."
+        ],
+        "pergunte": [
+          "Em letras, matemática e engenharias não houve diferença. Por que o efeito varia tanto entre cursos?"
+        ]
+      },
+      {
+        "id": "ipea-ufpe-cotas",
+        "posicao": "favoravel",
+        "instituicao": "UFPE e Ufal (revista do Ipea)",
+        "natureza": "Universidades públicas, artigo na revista PPP do Ipea",
+        "tipo": "Artigo",
+        "titulo": "Avaliação do desempenho de cotistas e não cotistas na UFPE entre 2018 e 2022",
+        "autores": "Felipe Lucena Carneiro de Albuquerque (UFPE) e Anderson Moreira Aristides dos Santos (Ufal)",
+        "data": "2024",
+        "formato": "PDF",
+        "url": "https://repositorio.ipea.gov.br/bitstreams/b333dc79-6dfe-4ceb-8df5-3759ce04eb16/download",
+        "tese": "Com 345 mil registros de alunos da UFPE, o estudo mostra que cotistas abandonam menos, trancam menos e se formam mais no prazo. As notas são um pouco menores, mas a diferença tem pouca importância prática.",
+        "numero": {
+          "valor": "-9,7 p.p.",
+          "legenda": "na chance de o cotista se formar com atraso, frente ao não cotista"
+        },
+        "premissas": [
+          "Medicina ficou de fora da análise.",
+          "Os resultados de uma universidade ajudam a entender as demais."
+        ],
+        "pergunte": [
+          "Cotistas reprovam um pouco mais, mas se formam mais no prazo. Como as duas coisas convivem?"
+        ]
+      },
+      {
+        "id": "gemaa-10-anos",
+        "posicao": "favoravel",
+        "instituicao": "Gemaa/UERJ",
+        "natureza": "Grupo de pesquisa da UERJ, no Consórcio de Acompanhamento das Ações Afirmativas",
+        "tipo": "Relatório",
+        "titulo": "10 perguntas para entender a primeira década da Lei de Cotas",
+        "autores": "Consórcio de Acompanhamento das Ações Afirmativas",
+        "data": "08/2022",
+        "formato": "PDF",
+        "url": "https://teste.gemaa.iesp.uerj.br/wp-content/uploads/2022/08/CAA_cartilha_08_bxa.pdf",
+        "tese": "Em dez anos, a universidade pública ficou mais parecida com o Brasil: pretos, pardos e indígenas viraram maioria, e os mais pobres também. Os cotistas têm desempenho equivalente e evadem menos.",
+        "numero": {
+          "valor": "31% → 52%",
+          "legenda": "de pretos, pardos e indígenas no ensino superior público entre 2001 e 2020"
+        },
+        "premissas": [
+          "A mudança no perfil dos alunos se deve em boa parte às cotas, e não só à expansão das vagas."
+        ],
+        "pergunte": [
+          "As vagas também cresceram muito no período (Reuni). Como separar o efeito das cotas do efeito da expansão?"
+        ]
+      },
+      {
+        "id": "ufmg-color-blind",
+        "posicao": "contrario",
+        "instituicao": "UFMG",
+        "natureza": "Universidade pública (Cedeplar), em revista acadêmica da UFF",
+        "tipo": "Artigo",
+        "titulo": "Como combater o racismo de forma eficaz: a reação da democracia racial e a instituição de políticas color-blind",
+        "autores": "Alvaro Alberto Ferreira Mendes Junior (doutorando em Economia, Cedeplar/UFMG)",
+        "data": "2015",
+        "formato": "PDF",
+        "url": "https://periodicos.uff.br/revistaeconomica/article/download/34968/20222/117354",
+        "tese": "Raça não tem base biológica e classificar pessoas por cor gera fraudes e tribunais raciais. Boa parte da desigualdade racial é de renda, e cotas para escola pública e baixa renda já aumentariam o número de negros sem usar a raça.",
+        "premissas": [
+          "A desigualdade entre brancos e negros é explicada sobretudo pela classe social.",
+          "O ideal da democracia racial ainda é útil para combater o racismo."
+        ],
+        "pergunte": [
+          "Se a cota social já inclui muitos negros, por que a desigualdade racial persiste entre pessoas de mesma renda?"
+        ]
+      },
+      {
+        "id": "ufrj-maggie",
+        "posicao": "contrario",
+        "instituicao": "UFRJ",
+        "natureza": "Universidade pública (antropologia), em revista acadêmica espanhola",
+        "tipo": "Artigo",
+        "titulo": "Em breve um país dividido? O Brasil do século XXI e as novas políticas públicas com base na raça",
+        "autores": "Yvonne Maggie, professora de antropologia da UFRJ",
+        "data": "2006",
+        "formato": "Página",
+        "url": "https://raco.cat/index.php/Periferia/article/view/146545",
+        "tese": "O Brasil nunca separou as pessoas em duas raças, e as cotas obrigam o país a fazer isso. A autora acompanha o debate que dividiu intelectuais e movimentos sociais e a carta pública que defendeu políticas universais.",
+        "premissas": [
+          "A classificação racial oficial muda a forma como as pessoas se veem.",
+          "Políticas universais combatem melhor a desigualdade."
+        ],
+        "pergunte": [
+          "O texto é de 2006, antes da lei. Os temores de divisão se confirmaram nesses anos?"
+        ]
+      },
+      {
+        "id": "ufjf-eficacia",
+        "posicao": "contrario",
+        "instituicao": "UFJF",
+        "natureza": "Universidade pública (professores e então pró-reitor de graduação)",
+        "tipo": "Artigo",
+        "titulo": "Política de cotas na UFJF: eficácia e eficiência",
+        "autores": "Antonio Fernando de Castro Alves Beraldo e Eduardo Magrone (UFJF), Revista de Ciências Humanas (UFV)",
+        "data": "2012",
+        "formato": "PDF",
+        "url": "https://periodicos.ufv.br/RCH/article/download/3447/Pol%C3%ADtica%20de%20Cotas%20na%20UFJF%3A%20Efic%C3%A1cia%20e%20Efici%C3%AAncia/16075",
+        "tese": "Avaliação crítica da própria UFJF: as cotas ampliaram o acesso, mas a universidade não se preparou para receber os cotistas, que reprovaram mais em algumas áreas. E a parcela de alunos negros não chegou à meta.",
+        "numero": {
+          "valor": "70%",
+          "legenda": "dos cotistas negros tiveram ao menos uma reprovação, contra 54% dos não cotistas"
+        },
+        "premissas": [
+          "É uma crítica à execução, não ao princípio das cotas.",
+          "Dados de uma única universidade, antes da Lei de Cotas."
+        ],
+        "pergunte": [
+          "O problema está nas cotas ou na falta de apoio aos alunos depois que entram?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "P5nTR282gwE",
+        "lado": "favoravel",
+        "titulo": "A importância das cotas",
+        "canal": "Cortes do Flow",
+        "nota": "Por que as cotas fazem diferença na vida de quem entra pela reserva.",
+        "duracao": "4:28"
+      },
+      {
+        "id": "4c5HPYMzo-g",
+        "lado": "favoravel",
+        "titulo": "Helio de La Peña diz por que mudou de ideia sobre cotas raciais",
+        "canal": "UOL",
+        "nota": "O humorista, que já foi contra, explica por que passou a defender.",
+        "duracao": "9:53"
+      },
+      {
+        "id": "-m7eO7hPkOA",
+        "lado": "favoravel",
+        "titulo": "Por que precisamos de cotas raciais no Brasil?",
+        "canal": "Nem 5 Minutos",
+        "nota": "Desigualdade e representatividade em cinco minutos.",
+        "duracao": "5:01"
+      },
+      {
+        "id": "71TfULwLyHk",
+        "lado": "contrario",
+        "titulo": "Professor Paulo Cruz explica por que é contra as cotas raciais",
+        "canal": "Pânico Jovem Pan",
+        "nota": "Professor negro e conservador expõe seus argumentos.",
+        "duracao": "4:53"
+      },
+      {
+        "id": "Q_TDtYatslI",
+        "lado": "contrario",
+        "titulo": "À CNN, Renan pede fim de cotas raciais: “injustas” e atendem a classe média",
+        "canal": "CNN Brasil",
+        "nota": "Candidato defende trocar as cotas raciais por foco na escola básica.",
+        "duracao": "7:59"
+      },
+      {
+        "id": "FjLLIC4fdXU",
+        "lado": "contrario",
+        "titulo": "Cotas em universidades e suas falhas",
+        "canal": "Arthur do Val",
+        "nota": "Os problemas que ele vê no sistema de cotas.",
+        "duracao": "8:12"
+      }
+    ]
+  }
 ];
