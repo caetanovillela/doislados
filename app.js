@@ -290,7 +290,7 @@
               <th><span>${sinal("contrario")}${esc(rotulo(tema, "contrario"))}</span></th>
             </tr></thead>
             <tbody>
-              ${tema.pontos.map((p) => `<tr><th scope="row">${esc(p.tema)}</th><td>${esc(p.favoravel)}</td><td>${esc(p.contrario)}</td></tr>`).join("")}
+              ${tema.pontos.map((p) => `<tr><th scope="row">${esc(p.tema)}</th><td data-lado="A" data-rotulo="${esc(rotulo(tema, "favoravel"))}">${esc(p.favoravel)}</td><td data-lado="B" data-rotulo="${esc(rotulo(tema, "contrario"))}">${esc(p.contrario)}</td></tr>`).join("")}
             </tbody>
           </table>
         </div>
