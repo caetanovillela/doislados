@@ -1,48 +1,7 @@
-escala-6x1 | cortes do flow escala 6x1
-escala-6x1 | fim da escala 6x1 economista a favor
-escala-6x1 | fim da escala 6x1 críticas empresários
-reforma-tributaria | cortes do flow reforma tributária
-reforma-tributaria | reforma tributária vantagens explicação
-reforma-tributaria | reforma tributária críticas aumento de imposto
-maioridade-penal | cortes do flow maioridade penal
-maioridade-penal | redução da maioridade penal a favor
-maioridade-penal | redução da maioridade penal contra especialista
-tarifa-zero | cortes do flow tarifa zero
-tarifa-zero | tarifa zero transporte público a favor
-tarifa-zero | tarifa zero críticas inviável custo
-bolsa-familia | cortes do flow bolsa família
-bolsa-familia | bolsa família defesa pobreza estudo
-bolsa-familia | bolsa família críticas dependência
-cotas | cortes do flow cotas raciais
-cotas | cotas raciais universidades a favor resultados
-cotas | cotas raciais críticas contra
-armas | cortes do flow armas
-armas | posse de armas a favor flexibilização
-armas | armas de fogo contra flexibilização especialista
-privatizacoes | cortes do flow privatização
-privatizacoes | privatização estatais a favor Correios Petrobras
-privatizacoes | privatização críticas Sabesp Eletrobras
-maconha | cortes do flow maconha
-maconha | descriminalização da maconha STF a favor
-maconha | descriminalização da maconha contra
-aborto | cortes do flow aborto
-aborto | descriminalização do aborto Brasil a favor
-aborto | aborto contra pró-vida Brasil
-redes-sociais | cortes do flow regulação redes sociais
-redes-sociais | regulação das redes sociais a favor STF marco civil
-redes-sociais | regulação das redes sociais censura críticas
-imposto-renda | cortes do flow taxar ricos imposto
-imposto-renda | isenção IR 5 mil taxação super-ricos a favor
-imposto-renda | taxação dos super-ricos críticas fuga de capital
-marco-temporal | cortes do flow marco temporal indígena
-marco-temporal | marco temporal terras indígenas contra
-marco-temporal | marco temporal a favor agronegócio
-foz-amazonas | petróleo foz do amazonas a favor exploração
-foz-amazonas | petróleo foz do amazonas contra ambientalistas
-foz-amazonas | cortes do flow petróleo amazônia
-civico-militares | cortes do flow escola cívico-militar
-civico-militares | escola cívico-militar a favor resultados
-civico-militares | escola cívico-militar críticas
-cameras-corporais | cortes do flow câmera corporal policial
-cameras-corporais | câmeras corporais policiais a favor estudo
-cameras-corporais | câmeras corporais policiais críticas
+tarifa-zero | tarifa zero não funciona problemas
+tarifa-zero | tarifa zero críticas MBL OR Novo OR Kataguiri
+tarifa-zero | cidades desistem da tarifa zero
+tarifa-zero | tarifa zero quem paga a conta empresas
+cotas | contra cotas raciais Paulo Cruz
+cotas | cotas raciais crítica Thomas Sowell
+cotas | cotas raciais injustas classe média negra
