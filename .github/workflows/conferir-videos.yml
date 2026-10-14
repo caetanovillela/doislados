@@ -2,7 +2,7 @@ name: Conferir vídeos
 on:
   push:
     branches: [miniaturas]
-    paths: [ferramentas/videos.txt, ferramentas/conferir_videos.py, .github/workflows/conferir-videos.yml]
+    paths: [ferramentas/**, .github/workflows/conferir-videos.yml]
   workflow_dispatch:
 permissions:
   contents: write
@@ -11,11 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: pip install -q yt-dlp
+      - run: python3 ferramentas/buscar_videos.py
       - run: python3 ferramentas/conferir_videos.py
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
-          git add img/videos ferramentas/videos.json
-          git commit -m "Miniaturas e dados dos vídeos" || exit 0
+          git add img/videos ferramentas/videos.json ferramentas/buscas.json
+          git commit -m "Busca, miniaturas e dados dos vídeos" || exit 0
           git push
