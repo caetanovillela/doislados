@@ -56,6 +56,10 @@ window.CATEGORIAS = [
   {
     "id": "assistencia",
     "nome": "Assistência social"
+  },
+  {
+    "id": "direitos",
+    "nome": "Direitos e liberdades"
   }
 ];
 
@@ -2487,6 +2491,296 @@ window.TEMAS = [
     ]
   },
   {
+    "id": "super-ricos",
+    "titulo": "Imposto mínimo para os super-ricos",
+    "categoria": "economia",
+    "tags": [
+      "imposto de renda",
+      "isenção até R$ 5 mil",
+      "dividendos",
+      "alta renda",
+      "Lei 15.270",
+      "desigualdade",
+      "tributação"
+    ],
+    "pergunta": "Quem ganha muito deve pagar um imposto mínimo de 10%?",
+    "resumo": "Desde 2026, quem ganha até R$ 5 mil por mês não paga imposto de renda, e quem ganha mais de R$ 1,2 milhão por ano paga no mínimo 10%. A dúvida é se a conta fecha e se a cobrança afasta investimentos.",
+    "atualizado": "2026-10-14",
+    "rotulos": {
+      "favoravel": "A favor do imposto mínimo",
+      "contrario": "Contra ou com ressalvas"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "Desde 1996, lucros e dividendos que as empresas pagam aos sócios não têm imposto de renda no Brasil. Como os mais ricos recebem boa parte da renda assim, eles acabam pagando, proporcionalmente, menos que muitos assalariados.",
+        "A Lei 15.270, sancionada em novembro de 2025, isentou do imposto quem ganha até R$ 5 mil por mês e reduziu o imposto de quem ganha até R$ 7.350. Para compensar, criou um imposto mínimo que sobe aos poucos a partir de R$ 600 mil por ano e chega a 10% para rendas acima de R$ 1,2 milhão. Também passou a reter 10% dos dividendos acima de R$ 50 mil por mês.",
+        "Segundo o governo, 20 milhões de pessoas ficam sem pagar imposto de renda e cerca de 140 mil contribuintes de alta renda são atingidos pelo imposto mínimo.",
+        "Em julho de 2026, a Receita reduziu de R$ 28 bilhões para R$ 17,2 bilhões a previsão de arrecadação com os dividendos neste ano. O debate agora é se a compensação funciona e se a cobrança prejudica o investimento."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Isenção do IR",
+          "valor": "até R$ 5 mil/mês"
+        },
+        {
+          "rotulo": "Imposto mínimo acima de R$ 1,2 mi/ano",
+          "valor": "10%"
+        },
+        {
+          "rotulo": "Contribuintes atingidos",
+          "valor": "≈ 140 mil"
+        },
+        {
+          "rotulo": "Previsão com dividendos em 2026",
+          "valor": "R$ 17,2 bi"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Justiça",
+        "favoravel": "Hoje um assalariado de R$ 6 mil paga proporcionalmente mais que um milionário. O imposto mínimo corrige isso.",
+        "contrario": "O lucro já paga imposto na empresa. Cobrar de novo no dividendo é tributar duas vezes."
+      },
+      {
+        "tema": "Investimento",
+        "favoravel": "Países ricos tributam dividendos e continuam atraindo investimento.",
+        "contrario": "Encarecer o capital afasta investimento estrangeiro e reduz empregos."
+      },
+      {
+        "tema": "Arrecadação",
+        "favoravel": "A cobrança dos mais ricos paga a isenção de milhões de trabalhadores sem aumentar o rombo.",
+        "contrario": "A arrecadação veio abaixo do previsto, e os mais ricos acham formas legais de escapar."
+      },
+      {
+        "tema": "Quem é rico",
+        "favoravel": "Quem ganha mais de R$ 1,2 milhão por ano está entre os 0,2% do topo.",
+        "contrario": "Médicos e profissionais liberais que ganham R$ 600 mil por ano não são super-ricos e também são atingidos."
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Dividendos",
+        "definicao": "Parte do lucro que a empresa distribui aos sócios e acionistas."
+      },
+      {
+        "termo": "Alíquota efetiva",
+        "definicao": "O quanto de imposto a pessoa paga de fato, em relação a toda a sua renda, depois de isenções e deduções."
+      },
+      {
+        "termo": "Imposto mínimo",
+        "definicao": "Regra que garante que rendas muito altas paguem pelo menos um percentual, somando tudo o que a pessoa recebe."
+      },
+      {
+        "termo": "Progressividade",
+        "definicao": "Quando quem ganha mais paga uma parcela maior da renda em impostos."
+      },
+      {
+        "termo": "Bitributação",
+        "definicao": "Cobrar imposto duas vezes sobre a mesma renda, como no lucro da empresa e depois no dividendo do sócio."
+      }
+    ],
+    "incertezas": [
+      "Quanto o imposto mínimo vai arrecadar de verdade, já que a primeira declaração com a regra nova só acontece em 2027.",
+      "Quanto os contribuintes vão mudar a forma de receber renda para pagar menos.",
+      "Se o efeito sobre investimento estrangeiro previsto pelas câmaras de comércio vai aparecer nos dados."
+    ],
+    "fontes": [
+      {
+        "titulo": "Reforma Tributária: Lula sanciona isenção do IR até R$ 5 mil e cria imposto mínimo (nov/2025)",
+        "url": "https://www.reformatributaria.com/governo/lula-sanciona-isencao-do-ir-ate-r-5-000-mes-e-cria-imposto-minimo-a-rendas-acima-de-r-600-ano-entenda-regras/"
+      },
+      {
+        "titulo": "O Povo: Receita prevê arrecadar R$ 17,2 bilhões com IR sobre dividendos (jul/2026)",
+        "url": "https://www.opovo.com.br/noticias/economia/2026/07/24/amp/receita-preve-arrecadar-rs-172-bilhoes-com-ir-sobre-dividendos.html"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "ipea-progressividade",
+        "posicao": "favoravel",
+        "instituicao": "Ipea",
+        "natureza": "Instituto público de pesquisa do governo federal",
+        "tipo": "Nota técnica",
+        "titulo": "Progressividade tributária: diagnóstico para uma proposta de reforma",
+        "autores": "Sérgio Wulff Gobetti",
+        "data": "10/2024",
+        "formato": "Reportagem",
+        "url": "https://www.infomoney.com.br/?p=2655062",
+        "tese": "A alíquota efetiva sobe até rendas de cerca de R$ 500 mil por ano e depois cai. O 0,01% mais rico paga proporcionalmente menos que um assalariado de R$ 6 mil por mês.",
+        "numero": {
+          "valor": "12,9% x 14,2%",
+          "legenda": "alíquota efetiva do 0,01% mais rico x a de quem ganha R$ 6 mil por mês"
+        },
+        "premissas": [
+          "Soma o imposto pago pela empresa e pela pessoa para comparar."
+        ],
+        "pergunte": [
+          "Mesmo contando o imposto da empresa, o topo paga menos. O que explicaria isso?"
+        ]
+      },
+      {
+        "id": "made-usp-minimo",
+        "posicao": "favoravel",
+        "instituicao": "Made/USP",
+        "natureza": "Centro de Pesquisa em Macroeconomia das Desigualdades, da FEA-USP",
+        "tipo": "Estudo",
+        "titulo": "Imposto mínimo sobre milionários",
+        "autores": "Made-USP (relato do Sindifisco-MS, a partir da Folha de S.Paulo)",
+        "data": "10/2024",
+        "formato": "Reportagem",
+        "url": "https://sindifisco-ms.org.br/tributos/imposto-de-milionarios-reduz-desigualdade-e-pode-chegar-a-r-90-bi-diz-centro-da-usp",
+        "tese": "Um imposto mínimo sobre milionários pagaria a isenção para quem ganha até R$ 5 mil e ainda reduziria a desigualdade. Quem ganha entre R$ 3 mil e R$ 29 mil por mês sairia ganhando.",
+        "numero": {
+          "valor": "até R$ 90 bi",
+          "legenda": "por ano com alíquota mínima de 15%"
+        },
+        "premissas": [
+          "Simula alíquotas de 12% e 15%, maiores que os 10% aprovados."
+        ],
+        "pergunte": [
+          "Com 10%, a arrecadação seria bem menor que a simulada. A conta ainda fecha?"
+        ]
+      },
+      {
+        "id": "ipea-td-2449",
+        "posicao": "favoravel",
+        "instituicao": "Ipea",
+        "natureza": "Instituto público de pesquisa do governo federal, com autores da UFMG",
+        "tipo": "Texto para discussão",
+        "titulo": "Imposto de renda e distribuição de renda no Brasil",
+        "autores": "Rodrigo Cardoso Fernandes, Bernardo Campolina e Fernando Gaiger Silveira",
+        "data": "02/2019",
+        "formato": "PDF",
+        "url": "https://repositorio.ipea.gov.br/bitstream/11058/9136/2/TD_2449_sumex.pdf",
+        "tese": "O sistema brasileiro é regressivo porque cobra muito no consumo e pouco na renda e no patrimônio. Voltar a tributar dividendos, reduzindo impostos sobre consumo, diminuiria a desigualdade de forma significativa.",
+        "premissas": [
+          "O 10% mais rico concentra mais da metade da renda do país."
+        ],
+        "pergunte": [
+          "A lei aprovada tributa dividendos, mas não reduziu impostos sobre consumo. O efeito seria o mesmo?"
+        ]
+      },
+      {
+        "id": "amcham-ufmg",
+        "posicao": "contrario",
+        "instituicao": "Amcham e Britcham",
+        "natureza": "Câmaras de comércio Brasil-EUA e Brasil-Reino Unido, com modelo de professor da UFMG",
+        "tipo": "Estudo",
+        "titulo": "Impactos da tributação de dividendos remetidos ao exterior",
+        "autores": "Amcham e Britcham, modelo de Edson Paulo Domingues (UFMG)",
+        "data": "08/2025",
+        "formato": "Reportagem",
+        "url": "https://netcpa.com.br/colunas/proposta-de-taxar-remessas-de-dividendos-ao-exterior-pode-causar-perdas-de-r-68-bi-no-pib-em-dez-anos-aponta-estudo/26152",
+        "tese": "Cobrar 10% sobre dividendos enviados ao exterior encarece o capital e afasta investimento estrangeiro. Para cada real arrecadado, a economia perderia 70 centavos.",
+        "numero": {
+          "valor": "34,5 mil",
+          "legenda": "empregos a menos até 2035, segundo a simulação"
+        },
+        "premissas": [
+          "Investidores estrangeiros reagem ao custo extra levando o dinheiro para outros países."
+        ],
+        "pergunte": [
+          "Quem encomendou o estudo representa empresas estrangeiras. Como isso pesa?",
+          "Uma perda de 0,06% do PIB em dez anos é grande ou pequena?"
+        ]
+      },
+      {
+        "id": "receita-2026",
+        "posicao": "contrario",
+        "instituicao": "Receita Federal",
+        "natureza": "Órgão do governo federal (relatório bimestral de receitas)",
+        "tipo": "Dado oficial",
+        "titulo": "Previsão de arrecadação com IR sobre dividendos em 2026",
+        "autores": "Receita Federal (relato do O Povo)",
+        "data": "24/07/2026",
+        "formato": "Reportagem",
+        "url": "https://www.opovo.com.br/noticias/economia/2026/07/24/amp/receita-preve-arrecadar-rs-172-bilhoes-com-ir-sobre-dividendos.html",
+        "tese": "A arrecadação com dividendos deve ficar bem abaixo do previsto no orçamento. Para os críticos, é sinal de que os mais ricos se ajustam e de que a isenção pode não ter compensação suficiente.",
+        "numero": {
+          "valor": "−R$ 10,8 bi",
+          "legenda": "abaixo do previsto no orçamento de 2026"
+        },
+        "premissas": [
+          "O governo diz que outras receitas estão compensando e que é cedo para concluir."
+        ],
+        "pergunte": [
+          "O imposto mínimo anual só aparece na declaração de 2027. Dá para julgar a lei agora?"
+        ]
+      },
+      {
+        "id": "ibdt-dividendos",
+        "posicao": "contrario",
+        "instituicao": "IBDT",
+        "natureza": "Revista Direito Tributário Atual, do Instituto Brasileiro de Direito Tributário",
+        "tipo": "Artigo acadêmico",
+        "titulo": "A tributação dos dividendos: análise comparativa da incidência do imposto de renda das empresas no Brasil com os países membros da OCDE",
+        "autores": "Gileno G. Barreto",
+        "data": "c. 2018",
+        "formato": "PDF",
+        "url": "https://revista.ibdt.org.br/index.php/RDTA/article/download/1503/925/4810",
+        "tese": "Quem diz que o Brasil tributa pouco o capital olha só para o dividendo e esquece que o lucro já paga até 34% na empresa. Somando tudo, tributar também o dividendo poria o país entre os que mais cobram do capital na OCDE.",
+        "premissas": [
+          "O imposto da empresa recai, no fim, sobre o sócio."
+        ],
+        "pergunte": [
+          "O artigo analisa uma proposta de 2015, mais pesada que a lei aprovada. As conclusões valem para a regra atual?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "yJLt5aiPWhk",
+        "lado": "favoravel",
+        "titulo": "Precisamos taxar os mais ricos",
+        "canal": "Cortes do Flow",
+        "nota": "Convidado do Flow defende cobrar mais de quem está no topo.",
+        "duracao": "11:49"
+      },
+      {
+        "id": "2rnlmxbXNS4",
+        "lado": "favoravel",
+        "titulo": "Por que os super-ricos pagam menos impostos que você",
+        "canal": "Cortes do Flow News",
+        "nota": "Como os dividendos isentos reduzem o imposto do topo.",
+        "duracao": "7:10"
+      },
+      {
+        "id": "sxRE7OlCRcg",
+        "lado": "favoravel",
+        "titulo": "Bilionários: como os super-ricos escapam dos impostos no Brasil",
+        "canal": "Politize!",
+        "nota": "Uma explicação didática das brechas usadas pelo topo.",
+        "duracao": "7:45"
+      },
+      {
+        "id": "VqRCGmi8XOQ",
+        "lado": "contrario",
+        "titulo": "Taxação dos super-ricos fracassa, diz Caio Coppolla",
+        "canal": "Caio Coppolla",
+        "nota": "O comentarista critica a arrecadação abaixo do previsto.",
+        "duracao": "6:06"
+      },
+      {
+        "id": "prWlxQXWMM8",
+        "lado": "contrario",
+        "titulo": "Taxar dividendos é um erro",
+        "canal": "Luiz Barsi",
+        "nota": "O investidor explica por que vê a cobrança como prejudicial.",
+        "duracao": "2:05"
+      },
+      {
+        "id": "SWX7BzmUXTI",
+        "lado": "contrario",
+        "titulo": "“Quem ganha 600 mil por ano não é super-rico”, diz Kim Kataguiri",
+        "canal": "BBC News Brasil",
+        "nota": "A crítica à linha de corte do imposto mínimo.",
+        "duracao": "0:58"
+      }
+    ]
+  },
+  {
     "id": "cotas-universidades",
     "titulo": "Cotas nas universidades",
     "categoria": "educacao",
@@ -2771,6 +3065,867 @@ window.TEMAS = [
         "canal": "Arthur do Val",
         "nota": "Os problemas que ele vê no sistema de cotas.",
         "duracao": "8:12"
+      }
+    ]
+  },
+  {
+    "id": "aborto",
+    "titulo": "Descriminalização do aborto",
+    "categoria": "direitos",
+    "tags": [
+      "ADPF 442",
+      "STF",
+      "12 semanas",
+      "saúde da mulher",
+      "nascituro",
+      "PEC 164",
+      "pró-vida",
+      "pró-escolha"
+    ],
+    "pergunta": "Interromper a gravidez até a 12ª semana deve deixar de ser crime?",
+    "resumo": "Dois ministros do STF já votaram para descriminalizar o aborto até a 12ª semana, e o julgamento está parado. Na Câmara, avança uma proposta que vai no sentido oposto.",
+    "atualizado": "2026-10-14",
+    "rotulos": {
+      "favoravel": "A favor de descriminalizar",
+      "contrario": "Contra descriminalizar"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "No Brasil, o aborto é crime previsto no Código Penal, com pena de prisão para a gestante e para quem faz o procedimento. Ele só é permitido em três casos: gravidez causada por estupro, risco de vida para a gestante e feto anencéfalo, este último liberado pelo STF em 2012.",
+        "Em 2017, o PSOL pediu ao STF que deixasse de ser crime o aborto feito até a 12ª semana (ADPF 442). A relatora, Rosa Weber, votou a favor em 2023. Luís Roberto Barroso votou no mesmo sentido em outubro de 2025, antes de se aposentar. Gilmar Mendes pediu que o caso fosse ao plenário físico, e o julgamento está suspenso com 2 votos a 0.",
+        "No Congresso, a Comissão de Constituição e Justiça da Câmara aprovou em novembro de 2024, por 35 a 15, a admissibilidade da PEC 164/2012, que garante o direito à vida “desde a concepção”. Se aprovada, pode proibir o aborto também nos casos hoje permitidos.",
+        "O debate opõe dois valores: a proteção da vida desde a concepção e a autonomia da mulher sobre o próprio corpo, junto com o argumento de saúde pública, já que abortos clandestinos continuam acontecendo."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Placar no STF (julgamento suspenso)",
+          "valor": "2 a 0"
+        },
+        {
+          "rotulo": "Mulheres que já abortaram até os 40 anos",
+          "valor": "≈ 1 em 7"
+        },
+        {
+          "rotulo": "Querem manter a lei como está (Datafolha 2024)",
+          "valor": "42%"
+        },
+        {
+          "rotulo": "Casos em que o aborto é legal hoje",
+          "valor": "3"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Vida",
+        "favoravel": "Nas primeiras semanas não há sistema nervoso formado, e a mulher já é uma vida plena com direitos.",
+        "contrario": "A vida começa na concepção. O embrião é um ser humano e merece proteção desde o início."
+      },
+      {
+        "tema": "Saúde pública",
+        "favoravel": "A proibição não impede o aborto, só o torna inseguro. Muitas mulheres são internadas, e algumas morrem.",
+        "contrario": "O Estado deve reduzir os abortos com educação sexual, contracepção e apoio à gestante, não legalizá-los."
+      },
+      {
+        "tema": "Desigualdade",
+        "favoravel": "Quem tem dinheiro aborta com segurança em clínicas ou no exterior. Quem é pobre e negra corre os riscos.",
+        "contrario": "A pobreza se combate com política social, não com o fim da proteção ao nascituro."
+      },
+      {
+        "tema": "Quem decide",
+        "favoravel": "Direitos fundamentais não dependem de maioria. Cabe ao STF proteger a liberdade da mulher.",
+        "contrario": "A maioria da população é contra, e o tema deve ser decidido pelo Congresso eleito, não pelo STF."
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "ADPF 442",
+        "definicao": "Ação no STF que pede para excluir do Código Penal o aborto feito até a 12ª semana."
+      },
+      {
+        "termo": "Descriminalizar",
+        "definicao": "Deixar de punir como crime. Não obriga ninguém a abortar nem cria, sozinha, um serviço público."
+      },
+      {
+        "termo": "Nascituro",
+        "definicao": "O ser humano já concebido que ainda não nasceu. O Código Civil protege alguns direitos dele."
+      },
+      {
+        "termo": "Aborto legal",
+        "definicao": "Os três casos em que a lei brasileira já permite interromper a gravidez."
+      },
+      {
+        "termo": "Pedido de destaque",
+        "definicao": "Quando um ministro tira um julgamento do plenário virtual e o leva para o plenário físico. A votação recomeça lá."
+      }
+    ],
+    "incertezas": [
+      "Quantos abortos acontecem de fato no país. Os números vêm de pesquisas por amostra, porque o procedimento é clandestino.",
+      "Se a descriminalização aumentaria ou reduziria o número de abortos no Brasil. Outros países tiveram resultados diferentes.",
+      "Quando o STF retoma o julgamento e como votarão os novos ministros."
+    ],
+    "fontes": [
+      {
+        "titulo": "Congresso em Foco: Barroso vota por descriminalizar aborto e Gilmar suspende julgamento (out/2025)",
+        "url": "https://www.congressoemfoco.com.br/noticia/113066/barroso-vota-por-descriminalizar-aborto-e-gilmar-suspende-julgamento"
+      },
+      {
+        "titulo": "Poder360: CCJ aprova PEC que pode proibir o aborto em todos os casos (nov/2024)",
+        "url": "https://www.poder360.com.br/poder-congresso/ccj-aprova-pec-que-pode-proibir-o-aborto-em-todos-os-casos/"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "pna-2021",
+        "posicao": "favoravel",
+        "instituicao": "UnB",
+        "natureza": "Pesquisa de pesquisadores da UnB, publicada na revista Ciência & Saúde Coletiva",
+        "tipo": "Pesquisa",
+        "titulo": "Pesquisa Nacional de Aborto – Brasil, 2021",
+        "autores": "Debora Diniz, Marcelo Medeiros e Alberto Madeiro",
+        "data": "05/2023",
+        "formato": "Página",
+        "url": "https://www.scielo.br/j/csc/a/mDCFKkqkyPbXtHXY9qcpMqD/",
+        "tese": "O aborto é comum entre mulheres de todas as classes e religiões no Brasil, mesmo sendo crime. Quase metade das que abortam precisa ser internada, e mais da metade fez o primeiro aborto com 19 anos ou menos.",
+        "numero": {
+          "valor": "≈ 1 em 7",
+          "legenda": "mulheres já fez ao menos um aborto até os 40 anos"
+        },
+        "premissas": [
+          "Entrevista 2.000 mulheres de 18 a 39 anos em cidades, com urna para garantir o sigilo das respostas."
+        ],
+        "pergunte": [
+          "A pesquisa mostra que o aborto já acontece. Isso responde à pergunta sobre se ele deve ser crime?"
+        ]
+      },
+      {
+        "id": "stf-barroso-2025",
+        "posicao": "favoravel",
+        "instituicao": "STF",
+        "natureza": "Voto de ministro do Supremo Tribunal Federal na ADPF 442",
+        "tipo": "Voto",
+        "titulo": "Voto do ministro Barroso pela descriminalização do aborto até 12 semanas",
+        "autores": "Luís Roberto Barroso (relato do Congresso em Foco)",
+        "data": "17/10/2025",
+        "formato": "Reportagem",
+        "url": "https://www.congressoemfoco.com.br/noticia/113066/barroso-vota-por-descriminalizar-aborto-e-gilmar-suspende-julgamento",
+        "tese": "O aborto deve ser tratado como questão de saúde pública, não de polícia. A punição atinge sobretudo mulheres pobres, e o Estado deve evitar abortos com educação sexual, contracepção e apoio às mulheres.",
+        "premissas": [
+          "Liberdade sexual e reprodutiva é direito fundamental e não depende de maioria política.",
+          "Ser contra o aborto por razões morais ou religiosas é legítimo, mas não justifica prender quem pensa diferente."
+        ],
+        "pergunte": [
+          "Quem deve decidir esse tema: o STF ou o Congresso?"
+        ]
+      },
+      {
+        "id": "fiocruz-ufba-racismo",
+        "posicao": "favoravel",
+        "instituicao": "UFBA e Fiocruz",
+        "natureza": "Pesquisa de universidades públicas e da Fiocruz, apresentada em congresso da Abrasco",
+        "tipo": "Artigo",
+        "titulo": "Barreiras de acesso à atenção ao aborto inseguro pelas mulheres negras: evidências do racismo institucional no Brasil",
+        "autores": "Emanuelle Freitas Goes, Greice Menezes, Estela Aquino e outras",
+        "data": "2019",
+        "formato": "Página",
+        "url": "https://www.arca.fiocruz.br/handle/icict/38456",
+        "tese": "Entre 2.640 mulheres internadas por aborto em Salvador, Recife e São Luís, as pretas esperaram mais e tiveram mais dificuldade para conseguir leito, mesmo em condições parecidas. A criminalização soma estigma ao racismo.",
+        "numero": {
+          "valor": "1,6 vez",
+          "legenda": "mais chance de mulheres pretas terem dificuldade para ser internadas"
+        },
+        "premissas": [
+          "Compara mulheres em situação clínica parecida para isolar o efeito da cor."
+        ],
+        "pergunte": [
+          "O problema apontado é o atendimento depois do aborto. Ele se resolve só com descriminalização?"
+        ]
+      },
+      {
+        "id": "datafolha-2024",
+        "posicao": "contrario",
+        "instituicao": "Datafolha",
+        "natureza": "Instituto privado de pesquisa de opinião",
+        "tipo": "Pesquisa de opinião",
+        "titulo": "Opinião dos brasileiros sobre a lei do aborto",
+        "autores": "Datafolha (relato do DOL)",
+        "data": "03/2024",
+        "formato": "Reportagem",
+        "url": "https://dol.com.br/noticias/brasil/852923/datafolha-apenas-6-dos-brasileiros-defendem-aborto",
+        "tese": "A maioria quer manter a lei como está ou proibir o aborto por completo. Só 6% defendem liberar em qualquer situação. Para quem é contra a descriminalização, a mudança não pode vir contra a vontade da maioria.",
+        "numero": {
+          "valor": "77%",
+          "legenda": "querem manter a lei atual (42%) ou proibir totalmente (35%)"
+        },
+        "premissas": [
+          "Uma mudança desse peso deve refletir o que a população pensa."
+        ],
+        "pergunte": [
+          "A pesquisa pergunta sobre liberar em qualquer situação. Como responderiam a uma pergunta sobre o limite de 12 semanas?"
+        ]
+      },
+      {
+        "id": "ufpb-nascituro",
+        "posicao": "contrario",
+        "instituicao": "UFPB",
+        "natureza": "Universidade pública (curso de Direito)",
+        "tipo": "Trabalho de conclusão de curso",
+        "titulo": "Dos direitos do nascituro: há mitigação do direito à vida na busca pela legalização do aborto?",
+        "autores": "Soraya Meira Cavalcanti",
+        "data": "2023",
+        "formato": "PDF",
+        "url": "https://repositorio.ufpb.br/jspui/bitstream/123456789/29726/1/SMC%20071123.pdf",
+        "tese": "Lida como um todo, a lei brasileira já protege o nascituro: o Código Civil, o ECA e o Pacto de São José da Costa Rica reconhecem direitos a ele. Qualquer discussão sobre aborto que ignore isso fica incompleta.",
+        "premissas": [
+          "A corrente que reconhece direitos desde a concepção é a que mais combina com as leis em vigor."
+        ],
+        "pergunte": [
+          "Se o nascituro tem direitos, como pesá-los contra os direitos da mulher?"
+        ]
+      },
+      {
+        "id": "pec-164-ccj",
+        "posicao": "contrario",
+        "instituicao": "Câmara dos Deputados",
+        "natureza": "Decisão da Comissão de Constituição e Justiça",
+        "tipo": "Proposta legislativa",
+        "titulo": "PEC 164/2012: direito à vida desde a concepção",
+        "autores": "Eduardo Cunha (autor) e Chris Tonietto (relatora)",
+        "data": "27/11/2024",
+        "formato": "Reportagem",
+        "url": "https://www.poder360.com.br/poder-congresso/ccj-aprova-pec-que-pode-proibir-o-aborto-em-todos-os-casos/",
+        "tese": "A Constituição deve garantir o direito à vida desde a concepção. Para os defensores, o tema cabe ao Congresso, e não ao STF.",
+        "numero": {
+          "valor": "35 a 15",
+          "legenda": "votos na CCJ da Câmara"
+        },
+        "premissas": [
+          "A CCJ só julgou se a proposta respeita a Constituição. O mérito ainda vai a uma comissão especial e ao plenário."
+        ],
+        "pergunte": [
+          "A PEC pode proibir até os abortos hoje permitidos, como em caso de estupro. Isso muda sua avaliação?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "tyKDUrx7ZzM",
+        "lado": "favoravel",
+        "titulo": "Por que o aborto é um problema de saúde pública?",
+        "canal": "Drauzio Varella",
+        "nota": "O médico explica o que acontece com as mulheres que abortam na clandestinidade.",
+        "duracao": "13:38"
+      },
+      {
+        "id": "rpoIqxlaFvg",
+        "lado": "favoravel",
+        "titulo": "Falar de aborto é falar de uma necessidade de saúde da mulher, diz Debora Diniz",
+        "canal": "TV Senado",
+        "nota": "A pesquisadora da UnB apresenta seus argumentos no Senado.",
+        "duracao": "10:29"
+      },
+      {
+        "id": "vvEgKoc5vNI",
+        "lado": "favoravel",
+        "titulo": "Rosa Weber vota pela descriminalização do aborto até a 12ª semana",
+        "canal": "SBT News",
+        "nota": "O voto que abriu o julgamento no STF.",
+        "duracao": "1:38"
+      },
+      {
+        "id": "bMSNPlkuHWE",
+        "lado": "contrario",
+        "titulo": "O que Lucas Pavanato tem a dizer sobre o aborto",
+        "canal": "Cortes do Flow News",
+        "nota": "O influenciador conservador defende a proteção da vida desde a concepção.",
+        "duracao": "6:30"
+      },
+      {
+        "id": "Jd8b-ZEesWY",
+        "lado": "contrario",
+        "titulo": "Aborto: quando começa a vida humana?",
+        "canal": "Brasil Paralelo",
+        "nota": "O argumento de que a vida começa na fecundação.",
+        "duracao": "5:20"
+      },
+      {
+        "id": "BBLupcvOFNE",
+        "lado": "contrario",
+        "titulo": "O melhor argumento contra o aborto",
+        "canal": "Victor Victorelli – Academia de Lógica",
+        "nota": "Um argumento filosófico curto contra o aborto.",
+        "duracao": "1:26"
+      }
+    ]
+  },
+  {
+    "id": "redes-sociais",
+    "titulo": "Regulação das redes sociais",
+    "categoria": "direitos",
+    "tags": [
+      "Marco Civil da Internet",
+      "artigo 19",
+      "big techs",
+      "fake news",
+      "PL 2630",
+      "liberdade de expressão",
+      "censura",
+      "STF"
+    ],
+    "pergunta": "As redes sociais devem responder pelo que os usuários publicam?",
+    "resumo": "Em 2025 o STF decidiu que as plataformas podem ser punidas por conteúdos ilegais que não removerem depois de avisadas. Uns veem proteção contra golpes e ataques; outros, risco de censura.",
+    "atualizado": "2026-10-14",
+    "rotulos": {
+      "favoravel": "A favor de responsabilizar as redes",
+      "contrario": "Contra ou com ressalvas"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "O Marco Civil da Internet, de 2014, dizia no artigo 19 que uma plataforma só podia ser punida por um post de usuário se descumprisse uma ordem judicial para tirá-lo do ar. A ideia era proteger a liberdade de expressão e não transformar as empresas em censoras.",
+        "O Congresso tentou criar regras novas com o PL 2630, o “PL das Fake News”, aprovado no Senado em 2020. Na Câmara, a votação foi adiada em 2023 sob forte pressão das plataformas, e o projeto parou.",
+        "Em junho de 2025, por 8 votos a 3, o STF decidiu que o artigo 19 é parcialmente inconstitucional. A ordem judicial continua exigida para crimes contra a honra, como calúnia. Nos demais casos ilegais, a plataforma pode ser responsabilizada se não remover o conteúdo depois de notificada, e tem deveres maiores com anúncios pagos e redes de robôs.",
+        "O debate é sobre o equilíbrio: proteger as pessoas de golpes, ataques e desinformação sem levar as empresas a apagar conteúdo legítimo por precaução."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Placar no STF (jun/2025)",
+          "valor": "8 a 3"
+        },
+        {
+          "rotulo": "Marco Civil da Internet",
+          "valor": "2014"
+        },
+        {
+          "rotulo": "Apoiam novas regras para as redes (Nexus, 2025)",
+          "valor": "60%"
+        },
+        {
+          "rotulo": "Anúncios de golpe achados em 11 dias (NetLab/UFRJ)",
+          "valor": "1.770"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Golpes e crimes",
+        "favoravel": "As plataformas lucram com anúncios de golpe e só agem quando a Justiça manda. Precisam ter dever de cuidado.",
+        "contrario": "Já existem leis para punir golpistas. O foco deve ser quem comete o crime, não a empresa."
+      },
+      {
+        "tema": "Liberdade de expressão",
+        "favoravel": "Liberdade de expressão não é absoluta e não protege ataques, fraudes e discurso de ódio.",
+        "contrario": "Com medo de multa, as empresas vão apagar conteúdo legítimo antes, sobretudo opiniões polêmicas."
+      },
+      {
+        "tema": "Quem decide",
+        "favoravel": "O Congresso não atualizou a lei em uma década. O STF agiu diante da omissão.",
+        "contrario": "Regras desse tamanho deveriam ser feitas pelo Congresso, não pelo STF."
+      },
+      {
+        "tema": "Algoritmos",
+        "favoravel": "As redes não são murais neutros: escolhem o que viraliza e ganham com isso.",
+        "contrario": "Moderação automática erra com ironia e contexto, e quem perde voz são grupos menores."
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Artigo 19",
+        "definicao": "Trecho do Marco Civil que exigia ordem judicial antes de punir a plataforma por um conteúdo de usuário."
+      },
+      {
+        "termo": "Notificação extrajudicial",
+        "definicao": "Aviso feito direto à plataforma, sem passar pela Justiça, pedindo a retirada de um conteúdo."
+      },
+      {
+        "termo": "Dever de cuidado",
+        "definicao": "Obrigação de a empresa prevenir riscos de forma ativa, e não só reagir quando avisada."
+      },
+      {
+        "termo": "Big techs",
+        "definicao": "As grandes empresas de tecnologia, como Google, Meta, X e TikTok."
+      },
+      {
+        "termo": "Efeito inibidor",
+        "definicao": "Quando as pessoas deixam de se expressar, ou as empresas removem demais, por medo de punição."
+      }
+    ],
+    "incertezas": [
+      "Se a decisão do STF vai levar a remoções em excesso ou só aos conteúdos ilegais. Ainda há pouca medição.",
+      "Quem fiscaliza as novas obrigações, já que não há agência reguladora definida.",
+      "Se o Congresso vai aprovar uma lei própria e como ela conviverá com a decisão do STF."
+    ],
+    "fontes": [
+      {
+        "titulo": "Jornal do Comércio: por 8 votos a 3, STF decide responsabilizar plataformas (jun/2025)",
+        "url": "https://www.jornaldocomercio.com/politica/2025/06/1208239-por-8-votos-a-3-ministros-do-stf-decidem-responsabilizar-plataformas.html"
+      },
+      {
+        "titulo": "Olhar Digital: maioria dos brasileiros apoia regulação das redes sociais (fev/2025)",
+        "url": "https://olhardigital.com.br/2025/02/05/internet-e-redes-sociais/maioria-dos-brasileiros-apoia-regulacao-das-redes-sociais-diz-pesquisa/"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "netlab-golpes",
+        "posicao": "favoravel",
+        "instituicao": "NetLab/UFRJ",
+        "natureza": "Laboratório de pesquisa da Universidade Federal do Rio de Janeiro",
+        "tipo": "Estudo",
+        "titulo": "Anúncios maliciosos nas plataformas da Meta",
+        "autores": "NetLab UFRJ (relato da Agência Brasil)",
+        "data": "02/2025",
+        "formato": "Reportagem",
+        "url": "https://teletime.com.br/07/02/2025/redes-da-meta-facilitam-aplicacao-de-golpes-financeiros-aponta-estudo/",
+        "tese": "Em 11 dias de janeiro de 2025, o laboratório achou 1.770 anúncios de golpe no Facebook e no Instagram, muitos fingindo ser do governo e feitos com inteligência artificial. A empresa lucra com eles e não os barra.",
+        "numero": {
+          "valor": "70%",
+          "legenda": "dos anúncios maliciosos usavam inteligência artificial, inclusive deepfakes"
+        },
+        "premissas": [
+          "Anúncio pago é diferente de post comum: a plataforma recebe para exibir."
+        ],
+        "pergunte": [
+          "Se a Meta fosse responsável por anúncios de golpe, o que mudaria na prática?"
+        ]
+      },
+      {
+        "id": "ufu-art19",
+        "posicao": "favoravel",
+        "instituicao": "UFU",
+        "natureza": "Universidade pública (Faculdade de Direito)",
+        "tipo": "Trabalho de conclusão de curso",
+        "titulo": "Ativismo judicial ou defesa constitucional? Os limites da atuação do STF frente ao artigo 19 do Marco Civil da Internet",
+        "autores": "Gabriel Furin Vasconcelos",
+        "data": "07/2026",
+        "formato": "Página",
+        "url": "https://repositorio.ufu.br/handle/123456789/49616",
+        "tese": "As plataformas deixaram de ser murais passivos e passaram a escolher e lucrar com o que circula. Exigir ordem judicial antes de qualquer responsabilidade deixava as vítimas desprotegidas, e o STF agiu diante da omissão do Congresso.",
+        "premissas": [
+          "O Estado tem o dever de não deixar direitos sem proteção suficiente."
+        ],
+        "pergunte": [
+          "O autor diz que o STF não tomou o lugar do Congresso. Você concorda?"
+        ]
+      },
+      {
+        "id": "nexus-opiniao",
+        "posicao": "favoravel",
+        "instituicao": "Nexus",
+        "natureza": "Instituto privado de pesquisa de opinião",
+        "tipo": "Pesquisa de opinião",
+        "titulo": "Maioria dos brasileiros apoia regulação das redes sociais",
+        "autores": "Nexus – Inteligência e Pesquisa de Dados (relato do Olhar Digital)",
+        "data": "02/2025",
+        "formato": "Reportagem",
+        "url": "https://olhardigital.com.br/2025/02/05/internet-e-redes-sociais/maioria-dos-brasileiros-apoia-regulacao-das-redes-sociais-diz-pesquisa/",
+        "tese": "Seis em cada dez brasileiros querem novas regras para as redes, e quase oito em cada dez acham que elas deveriam ter mais responsabilidade pelo que fazem.",
+        "numero": {
+          "valor": "78%",
+          "legenda": "acham que as redes devem ter mais responsabilidade"
+        },
+        "premissas": [
+          "A opinião pública deve pesar na decisão."
+        ],
+        "pergunte": [
+          "Quando a pergunta menciona liberdade de expressão, o apoio cai para 30%. O que isso revela?"
+        ]
+      },
+      {
+        "id": "artigo19-nota",
+        "posicao": "contrario",
+        "instituicao": "ARTIGO 19",
+        "natureza": "Organização de direitos humanos dedicada à liberdade de expressão",
+        "tipo": "Nota técnica",
+        "titulo": "Julgamento da constitucionalidade do artigo 19 do Marco Civil da Internet pelo STF",
+        "autores": "ARTIGO 19 Brasil",
+        "data": "07/2025",
+        "formato": "PDF",
+        "url": "https://artigo19.org/wp-content/blogs.dir/24/files/2025/08/NOTA-TECNICA_MCI_A19_pt-1.pdf",
+        "tese": "Com medo de punição, as plataformas vão remover conteúdos legais por precaução, e grupos organizados podem usar notificações em massa para calar opiniões. O problema de fundo é o algoritmo e a concentração de mercado, não a falta de remoção.",
+        "premissas": [
+          "Restringir a expressão deve ser exceção, decidida por juiz.",
+          "Empresas privadas não deveriam fazer papel de tribunal."
+        ],
+        "pergunte": [
+          "A organização também defende regular as big techs, mas de outro jeito. Qual seria a alternativa?"
+        ]
+      },
+      {
+        "id": "streck-conjur",
+        "posicao": "contrario",
+        "instituicao": "ConJur",
+        "natureza": "Artigo de opinião de jurista e professor de Direito Constitucional",
+        "tipo": "Artigo",
+        "titulo": "Escolhas do legislador e dignidade do Marco Civil da Internet",
+        "autores": "Lenio Streck",
+        "data": "27/03/2023",
+        "formato": "Página",
+        "url": "https://www.conjur.com.br/2023-mar-27/lenio-streck-escolhas-legislador-dignidade-marco-civil-internet/",
+        "tese": "O artigo 19 é constitucional e protege a liberdade de expressão. Achar que outro modelo seria melhor é questão de conveniência, que cabe ao Congresso, não ao STF.",
+        "premissas": [
+          "Quem deve decidir se um conteúdo é ilegal é o juiz, não a empresa."
+        ],
+        "pergunte": [
+          "O texto é de antes da decisão de 2025. Os argumentos ainda valem depois do 8 de janeiro e da onda de golpes?"
+        ]
+      },
+      {
+        "id": "camara-e-net",
+        "posicao": "contrario",
+        "instituicao": "Camara-e.net",
+        "natureza": "Entidade que reúne empresas da economia digital, como Google, Meta, Amazon e Mercado Livre",
+        "tipo": "Nota",
+        "titulo": "Nota sobre a decisão do STF a respeito do artigo 19",
+        "autores": "Câmara Brasileira da Economia Digital (relato do Poder360)",
+        "data": "28/06/2025",
+        "formato": "Reportagem",
+        "url": "https://www.poder360.com.br/poder-tech/big-techs-dizem-que-stf-criou-inseguranca-juridica-no-brasil/",
+        "tese": "A decisão criou deveres vagos e sem período de transição, tornando o Brasil um dos ambientes mais instáveis do mundo democrático. A tendência é remover conteúdo legítimo por precaução, e as empresas pequenas sofrem mais.",
+        "premissas": [
+          "Regras pouco claras levam a excesso de cautela."
+        ],
+        "pergunte": [
+          "A entidade representa as empresas afetadas. Como isso pesa na leitura?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "pjwUbbHFye0",
+        "lado": "favoravel",
+        "titulo": "Eugênio Bucci debate a regulação das redes e como responsabilizar as big techs",
+        "canal": "Roda Viva",
+        "nota": "O professor da USP defende regras para as plataformas.",
+        "duracao": "4:12"
+      },
+      {
+        "id": "Ai3BiIo9LaM",
+        "lado": "favoravel",
+        "titulo": "“Não é censura, é limite”, diz Jorge Viana sobre regulação da internet",
+        "canal": "RedeTV",
+        "nota": "O argumento de que regular não é calar.",
+        "duracao": "3:54"
+      },
+      {
+        "id": "dlI9Yk-9Hp4",
+        "lado": "favoravel",
+        "titulo": "“A lei ficou insuficiente”, diz especialista sobre regulação das redes",
+        "canal": "CNN Brasil",
+        "nota": "Por que o Marco Civil de 2014 não daria mais conta.",
+        "duracao": "7:02"
+      },
+      {
+        "id": "pj33wColNGA",
+        "lado": "contrario",
+        "titulo": "Igor solta o verbo sobre a regulação das redes sociais",
+        "canal": "Cortes do Flow",
+        "nota": "O apresentador do Flow critica a regulação e fala em risco de censura.",
+        "duracao": "15:22"
+      },
+      {
+        "id": "MTN-jbFyjX8",
+        "lado": "contrario",
+        "titulo": "Advogado do Google critica regulação no STF: “risco de censura”",
+        "canal": "Correio Braziliense",
+        "nota": "A posição das plataformas no julgamento.",
+        "duracao": "2:18"
+      },
+      {
+        "id": "3DwkDMzGmiU",
+        "lado": "contrario",
+        "titulo": "Telegram critica PL das Fake News e o considera censura",
+        "canal": "Jovem Pan News",
+        "nota": "Comentaristas analisam a reação das empresas ao projeto.",
+        "duracao": "5:07"
+      }
+    ]
+  },
+  {
+    "id": "marco-temporal",
+    "titulo": "Marco temporal das terras indígenas",
+    "categoria": "direitos",
+    "tags": [
+      "indígenas",
+      "demarcação",
+      "agronegócio",
+      "STF",
+      "PEC 48",
+      "Lei 14.701",
+      "Funai",
+      "segurança jurídica"
+    ],
+    "pergunta": "Os indígenas só devem ter direito às terras que ocupavam em 1988?",
+    "resumo": "O STF já derrubou duas vezes a tese do marco temporal, e o Senado aprovou uma emenda para colocá-la na Constituição. Está em jogo a segurança de quem produz no campo e o direito dos povos indígenas à terra.",
+    "atualizado": "2026-10-14",
+    "rotulos": {
+      "favoravel": "A favor do marco temporal",
+      "contrario": "Contra o marco temporal"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "A Constituição de 1988 garante aos indígenas as terras que eles “tradicionalmente ocupam” e manda a União demarcá-las. A tese do marco temporal diz que só valem as terras que estavam ocupadas por eles, ou em disputa, em 5 de outubro de 1988, dia em que a Constituição foi promulgada.",
+        "A ideia apareceu no julgamento da Raposa Serra do Sol, em 2009. Em 2023, o STF rejeitou a tese. O Congresso reagiu no mesmo ano com a Lei 14.701, que a incluiu na lei. Em dezembro de 2025, por 9 votos a 1, o STF derrubou esse trecho da lei e propôs um prazo de dez anos para concluir as demarcações pendentes.",
+        "No mesmo mês, o Senado aprovou por 52 a 14 a PEC 48/2023, que põe o marco temporal na Constituição e prevê indenização prévia a quem ocupa as terras. O texto está na Câmara, onde precisa de 308 votos em dois turnos.",
+        "Produtores rurais pedem segurança jurídica sobre terras que compraram e cultivam há décadas. Indígenas e pesquisadores lembram que muitos povos tinham sido expulsos antes de 1988, e que as terras indígenas são as mais preservadas do país."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Data de corte da tese",
+          "valor": "05/10/1988"
+        },
+        {
+          "rotulo": "Placar no STF (dez/2025)",
+          "valor": "9 a 1"
+        },
+        {
+          "rotulo": "Votação da PEC no Senado",
+          "valor": "52 a 14"
+        },
+        {
+          "rotulo": "Território nacional em terras indígenas",
+          "valor": "13,9%"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Segurança jurídica",
+        "favoravel": "Uma data fixa encerra disputas e dá certeza a quem tem título da terra.",
+        "contrario": "Segurança jurídica também vale para os indígenas, cujo direito à terra a Constituição reconhece como originário."
+      },
+      {
+        "tema": "História",
+        "favoravel": "Sem um corte, qualquer área do país poderia ser reivindicada com base em ocupações antigas.",
+        "contrario": "Muitos povos tinham sido expulsos à força antes de 1988 e não podiam estar nas terras naquela data."
+      },
+      {
+        "tema": "Produção",
+        "favoravel": "Famílias que produzem há gerações podem perder suas terras e o país perde produção de alimentos.",
+        "contrario": "A PEC e o próprio STF já preveem indenização a quem ocupou de boa-fé."
+      },
+      {
+        "tema": "Meio ambiente",
+        "favoravel": "Terras produtivas também podem ser sustentáveis, com as políticas certas.",
+        "contrario": "As terras indígenas perderam cerca de 1% da vegetação nativa em 30 anos, contra mais de 20% nas áreas privadas."
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Demarcação",
+        "definicao": "Processo da Funai e da União para identificar e oficializar os limites de uma terra indígena."
+      },
+      {
+        "termo": "Direito originário",
+        "definicao": "Direito que existe antes de qualquer título, por ser anterior à formação do Estado. É como a Constituição trata a terra indígena."
+      },
+      {
+        "termo": "Esbulho renitente",
+        "definicao": "Quando os indígenas foram expulsos e continuavam disputando a terra em 1988. É a exceção prevista na tese."
+      },
+      {
+        "termo": "Lei 14.701/2023",
+        "definicao": "Lei aprovada pelo Congresso que incluiu o marco temporal. O trecho foi derrubado pelo STF em 2025."
+      },
+      {
+        "termo": "PEC 48/2023",
+        "definicao": "Proposta de emenda que coloca o marco temporal na Constituição. Foi aprovada no Senado e está na Câmara."
+      }
+    ],
+    "incertezas": [
+      "Se a PEC 48 será aprovada na Câmara e se o STF poderá derrubar uma emenda constitucional sobre o tema.",
+      "Quanto custariam as indenizações aos ocupantes de boa-fé e quem pagaria.",
+      "Quantas demarcações pendentes seriam afetadas por cada uma das regras."
+    ],
+    "fontes": [
+      {
+        "titulo": "Tribuna do Sertão: STF consolida rejeição ao marco temporal por 9 a 1 (dez/2025)",
+        "url": "https://www.tribunadosertao.com.br/geral/2025/12/19/834292-stf-consolida-rejeicao-ao-marco-temporal-por-9-a-1-e-define-prazos-para-demarcacoes"
+      },
+      {
+        "titulo": "Compre Rural: Senado aprova em dois turnos PEC do marco temporal (dez/2025)",
+        "url": "https://comprerural.com/senado-aprova-em-dois-turnos-pec-do-marco-temporal-que-agora-segue-para-a-camara/"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "agu-sustentacao",
+        "posicao": "favoravel",
+        "instituicao": "AGU",
+        "natureza": "Advocacia-Geral da União, em defesa da posição do governo federal no STF",
+        "tipo": "Sustentação oral",
+        "titulo": "Roteiro de sustentação oral no RE 1.017.365",
+        "autores": "Advocacia-Geral da União (Secretaria-Geral de Contencioso)",
+        "data": "c. 2021",
+        "formato": "PDF",
+        "url": "https://www.conjur.com.br/wp-content/uploads/2023/09/agu-indios.pdf",
+        "tese": "O marco temporal é um critério objetivo que o próprio STF fixou no caso Raposa Serra do Sol e aplicou em decisões seguintes. Mudá-lo traz insegurança, e o tema deve esperar a decisão do Congresso.",
+        "premissas": [
+          "Terra tradicionalmente ocupada não é o mesmo que posse imemorial.",
+          "Ocupantes de boa-fé têm posse legítima até serem indenizados."
+        ],
+        "pergunte": [
+          "A posição da AGU mudou com o governo seguinte. O que isso diz sobre o tema?"
+        ]
+      },
+      {
+        "id": "cna-stf",
+        "posicao": "favoravel",
+        "instituicao": "CNA",
+        "natureza": "Confederação da Agricultura e Pecuária do Brasil, que representa produtores rurais",
+        "tipo": "Nota",
+        "titulo": "CNA vai ao STF defender lei que estabelece marco temporal",
+        "autores": "Confederação da Agricultura e Pecuária do Brasil",
+        "data": "01/02/2024",
+        "formato": "Página",
+        "url": "https://cnabrasil.org.br/noticias/cna-vai-ao-stf-defender-lei-que-estabelece-marco-temporal",
+        "tese": "A lei do marco temporal dá segurança jurídica ao campo, protege o direito de propriedade e evita que milhares de famílias percam suas terras. Cabe ao Congresso, e não ao STF, pacificar o tema.",
+        "premissas": [
+          "Quem comprou terra com título legítimo não pode ser surpreendido por uma demarcação."
+        ],
+        "pergunte": [
+          "A nota fala em milhares de famílias, sem números. Que dado ajudaria a medir esse impacto?"
+        ]
+      },
+      {
+        "id": "senado-pec-48",
+        "posicao": "favoravel",
+        "instituicao": "Senado Federal",
+        "natureza": "Decisão do Senado (votação em plenário)",
+        "tipo": "Proposta legislativa",
+        "titulo": "PEC 48/2023: marco temporal na Constituição",
+        "autores": "Dr. Hiran (autor) e Esperidião Amin (relator)",
+        "data": "09/12/2025",
+        "formato": "Reportagem",
+        "url": "https://comprerural.com/senado-aprova-em-dois-turnos-pec-do-marco-temporal-que-agora-segue-para-a-camara/",
+        "tese": "Colocar a data de 1988 na Constituição evita disputas fundiárias retroativas e reduz conflitos. O texto prevê indenização prévia a quem ocupa terras que venham a ser demarcadas.",
+        "numero": {
+          "valor": "52 a 14",
+          "legenda": "votos no primeiro turno no Senado"
+        },
+        "premissas": [
+          "Uma regra na Constituição dá estabilidade que decisões judiciais não dão."
+        ],
+        "pergunte": [
+          "Se o STF já disse que a tese viola direitos garantidos, uma emenda pode mudar isso?"
+        ]
+      },
+      {
+        "id": "mapbiomas-tis",
+        "posicao": "contrario",
+        "instituicao": "MapBiomas",
+        "natureza": "Rede de universidades, ONGs e empresas de tecnologia que mapeia o uso da terra no Brasil",
+        "tipo": "Estudo",
+        "titulo": "Fatos sobre o papel das terras indígenas na proteção das florestas",
+        "autores": "MapBiomas",
+        "data": "2023",
+        "formato": "PDF",
+        "url": "https://brasil.mapbiomas.org/wp-content/uploads/sites/4/2023/09/Fatos_sobre_o_Papel_das_Terras_Indigenas_18.04.pdf",
+        "tese": "Entre 1990 e 2020, as terras indígenas perderam cerca de 1% da vegetação nativa, enquanto as áreas privadas perderam mais de 20%. Proteger esses territórios é proteger a floresta.",
+        "numero": {
+          "valor": "1% x 20,6%",
+          "legenda": "de vegetação nativa perdida em terras indígenas x em áreas privadas"
+        },
+        "premissas": [
+          "Imagens de satélite medem a cobertura do solo ano a ano."
+        ],
+        "pergunte": [
+          "A preservação ambiental deve pesar numa decisão sobre direito à terra?"
+        ]
+      },
+      {
+        "id": "stf-dez-2025",
+        "posicao": "contrario",
+        "instituicao": "STF",
+        "natureza": "Decisão do plenário do Supremo Tribunal Federal",
+        "tipo": "Decisão",
+        "titulo": "STF declara inconstitucional o marco temporal da Lei 14.701",
+        "autores": "Gilmar Mendes (relator) e plenário (relato da Tribuna do Sertão)",
+        "data": "18/12/2025",
+        "formato": "Reportagem",
+        "url": "https://www.tribunadosertao.com.br/geral/2025/12/19/834292-stf-consolida-rejeicao-ao-marco-temporal-por-9-a-1-e-define-prazos-para-demarcacoes",
+        "tese": "Fixar 1988 como data obrigatória viola o direito dos indígenas às terras que tradicionalmente ocupam. A Corte propôs prazo de dez anos para a União concluir as demarcações e discutiu indenizar ocupantes de boa-fé.",
+        "numero": {
+          "valor": "9 a 1",
+          "legenda": "votos pela inconstitucionalidade"
+        },
+        "premissas": [
+          "O direito indígena à terra é anterior à Constituição, que apenas o reconhece."
+        ],
+        "pergunte": [
+          "Só um ministro votou contra. O STF e o Congresso podem continuar em lados opostos por quanto tempo?"
+        ]
+      },
+      {
+        "id": "ufjf-racismo-fundiario",
+        "posicao": "contrario",
+        "instituicao": "UFJF",
+        "natureza": "Universidade pública (curso de Direito, campus Governador Valadares)",
+        "tipo": "Trabalho de conclusão de curso",
+        "titulo": "A inconstitucionalidade do marco temporal de ocupação de territórios indígenas: uma perspectiva crítica do seu papel na persistência do racismo fundiário",
+        "autores": "Ana Carolina Assumpção Soares (orientação de Luciana Tasse Ferreira)",
+        "data": "12/2023",
+        "formato": "Página",
+        "url": "https://repositorio.ufjf.br/jspui/handle/ufjf/16410",
+        "tese": "A tese é inconstitucional e ajuda a manter uma estrutura fundiária concentrada, herdada de séculos de expulsão de povos indígenas, em benefício da expansão do agronegócio.",
+        "premissas": [
+          "A história de expulsões explica por que muitos povos não estavam nas terras em 1988."
+        ],
+        "pergunte": [
+          "Como reparar uma injustiça histórica sem criar outra para quem comprou a terra de boa-fé?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "eMy_KN7Ypts",
+        "lado": "favoravel",
+        "titulo": "“Marco temporal é a única maneira de preservar a segurança jurídica no país”",
+        "canal": "Rádio Bandeirantes",
+        "nota": "Defensor da tese explica o argumento da segurança jurídica.",
+        "duracao": "15:17"
+      },
+      {
+        "id": "r7Bz3z878QM",
+        "lado": "favoravel",
+        "titulo": "Quem é beneficiado pelo marco temporal? Pedro Lupion opina",
+        "canal": "Pânico Jovem Pan",
+        "nota": "O presidente da Frente Parlamentar da Agropecuária defende a tese.",
+        "duracao": "3:44"
+      },
+      {
+        "id": "QpZNMQuCXzI",
+        "lado": "favoravel",
+        "titulo": "Marco temporal assegura segurança jurídica",
+        "canal": "AgroMais",
+        "nota": "A visão dos produtores rurais.",
+        "duracao": "8:13"
+      },
+      {
+        "id": "KW4EtANXwBE",
+        "lado": "contrario",
+        "titulo": "Marco temporal é inconstitucional, diz Ailton Krenak",
+        "canal": "UOL",
+        "nota": "O pensador indígena explica por que é contra.",
+        "duracao": "4:22"
+      },
+      {
+        "id": "do8wR9_HQN4",
+        "lado": "contrario",
+        "titulo": "Marco temporal pode ter brechas para garimpo em terras indígenas",
+        "canal": "Cortes do Flow News",
+        "nota": "Os riscos que o projeto traria para os territórios.",
+        "duracao": "16:06"
+      },
+      {
+        "id": "izZmxp6QXMY",
+        "lado": "contrario",
+        "titulo": "O que é o marco temporal?",
+        "canal": "Greenpeace Brasil",
+        "nota": "A tese explicada por quem é contra, em um minuto.",
+        "duracao": "1:17"
       }
     ]
   }
