@@ -91,20 +91,21 @@
         if (!doGrupo.length) return "";
         return `<details class="grupo">
           <summary><span class="grupo-nome">${esc(c.nome)}</span><span class="grupo-temas apagado">${doGrupo.map((t) => esc(t.titulo)).join(" · ")}</span><span class="grupo-conta mono">${doGrupo.length}</span></summary>
-          <div class="grupo-lista">${doGrupo.map(linhaTema).join("")}</div>
+          <div class="grupo-lista">${doGrupo.map((t) => linhaTema(t)).join("")}<a class="grupo-ver botao-texto" href="#categoria/${c.id}">Ver a página de ${esc(c.nome)}</a></div>
         </details>`;
       }).join("");
     }
-    return meta + lista.map(linhaTema).join("");
+    return meta + lista.map((t) => linhaTema(t)).join("");
   }
 
-  function linhaTema(t) {
+  function linhaTema(t, comResumo) {
       const corpo = `
         <span class="num">${numero(t)}</span>
         <span class="linha-txt">
           <span class="mono apagado">${esc(nomeCategoria(t.categoria))}</span>
           <span class="nome">${esc(t.titulo)}</span>
           <span class="perg">${esc(t.pergunta)}</span>
+          ${comResumo && t.resumo ? `<span class="resumo-linha">${esc(t.resumo)}</span>` : ""}
         </span>`;
       if (t.emBreve) return `<div class="linha em-breve">${corpo}<span class="placar mono">Em preparação</span></div>`;
       return `<a class="linha" href="#${t.id}">${corpo}
@@ -119,8 +120,10 @@
     const painel = document.getElementById("menu-painel");
     if (!painel) return;
     const conta = (id) => temas.filter((t) => id === "todas" || t.categoria === id).length;
-    const item = (id, nome) => `<li><button type="button" class="menu-cat" data-categoria="${id}" aria-pressed="${estado.categoria === id}">${esc(nome)}<span>${conta(id)}</span></button></li>`;
-    painel.innerHTML = `<ul class="menu-lista">${item("todas", "Todos os temas")}${categorias.map((c) => item(c.id, c.nome)).join("")}</ul>`;
+    const atual = categoriaDaRota();
+    const todos = `<li><button type="button" class="menu-cat" data-categoria="todas" aria-pressed="${!atual && !location.hash.replace(/^#/, "")}">Todos os temas<span>${conta("todas")}</span></button></li>`;
+    const item = (c) => `<li><a class="menu-cat" href="#categoria/${c.id}" data-fechar${atual === c.id ? ' aria-current="page"' : ""}>${esc(c.nome)}<span>${conta(c.id)}</span></a></li>`;
+    painel.innerHTML = `<ul class="menu-lista">${todos}${categorias.map(item).join("")}</ul>`;
   }
 
   function irParaIndice() {
@@ -245,7 +248,7 @@
     const instituicoes = [...new Set((tema.leituras || []).map((l) => l.instituicao.split(" · ")[0]))];
 
     raiz.innerHTML = `
-      <nav class="migalha mono"><a href="#">Início</a><span>/</span><span>${esc(nomeCategoria(tema.categoria))}</span><span>/</span><span>${esc(tema.titulo)}</span></nav>
+      <nav class="migalha mono"><a href="#">Início</a><span>/</span><a href="#categoria/${tema.categoria}">${esc(nomeCategoria(tema.categoria))}</a><span>/</span><span>${esc(tema.titulo)}</span></nav>
       <header class="dossie">
         <span class="mono apagado">Dossiê ${numero(tema)} · ${esc(nomeCategoria(tema.categoria))}${tema.atualizado ? " · atualizado em " + dataBR(tema.atualizado) : ""}</span>
         <h1>${esc(tema.pergunta)}</h1>
@@ -424,13 +427,52 @@
     );
   }
 
+  /* ---------- Página da categoria ---------- */
+
+  function paginaCategoria(cat) {
+    raiz.onclick = null;
+    const lista = temas.filter((t) => t.categoria === cat.id);
+    const prontos = lista.filter((t) => !t.emBreve);
+    const estudos = prontos.reduce((n, t) => n + (t.leituras || []).length, 0);
+    const videos = prontos.reduce((n, t) => n + (t.videos || []).length, 0);
+    const outras = categorias.filter((c) => c.id !== cat.id && temas.some((t) => t.categoria === c.id));
+    raiz.innerHTML = `
+      <nav class="migalha mono"><a href="#">Início</a><span>/</span><span>Categorias</span><span>/</span><span>${esc(cat.nome)}</span></nav>
+      <header class="dossie categoria-cab">
+        <span class="mono apagado">Categoria</span>
+        <h1>${esc(cat.nome)}</h1>
+        ${cat.descricao ? `<p>${esc(cat.descricao)}</p>` : ""}
+      </header>
+      <dl class="numeros numeros-3">
+        <div><dt>Temas</dt><dd>${lista.length}</dd></div>
+        <div><dt>Estudos e leituras</dt><dd>${estudos}</dd></div>
+        <div><dt>Vídeos</dt><dd>${videos}</dd></div>
+      </dl>
+      <section class="temas categoria-temas" aria-label="Temas de ${esc(cat.nome)}">
+        <div class="indice-cab mono apagado"><span>${lista.length} ${lista.length === 1 ? "tema" : "temas"}</span><span class="so-largo">Leituras por lado</span></div>
+        ${lista.map((t) => linhaTema(t, true)).join("")}
+      </section>
+      ${outras.length ? `<section class="outras-cats" aria-labelledby="outras-titulo">
+        <h2 id="outras-titulo" class="mono apagado">Outras categorias</h2>
+        <ul>${outras.map((c) => `<li><a href="#categoria/${c.id}">${esc(c.nome)}<span class="mono">${temas.filter((t) => t.categoria === c.id).length}</span></a></li>`).join("")}</ul>
+      </section>` : ""}`;
+  }
+
   /* ---------- Rotas ---------- */
+
+  function categoriaDaRota() {
+    const m = decodeURIComponent(location.hash.replace(/^#/, "")).match(/^categoria\/([\w-]+)$/);
+    return m && categorias.some((c) => c.id === m[1]) ? m[1] : null;
+  }
 
   function rotear() {
     const hash = decodeURIComponent(location.hash.replace(/^#/, ""));
     const tema = temas.find((t) => t.id === hash.split(".")[0] && !t.emBreve);
+    const cat = categoriaDaRota();
     if (tema) paginaTema(tema);
+    else if (cat) paginaCategoria(categorias.find((c) => c.id === cat));
     else paginaInicio();
+    pintarCategorias();
     window.scrollTo(0, 0);
   }
 

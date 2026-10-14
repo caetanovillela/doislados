@@ -35,35 +35,43 @@ window.EM_ALTA = {
 window.CATEGORIAS = [
   {
     "id": "trabalho",
-    "nome": "Trabalho"
+    "nome": "Trabalho",
+    "descricao": "Jornada, escala, salário e direitos de quem trabalha. Como as regras do emprego deveriam mudar, e quem paga a conta de cada mudança."
   },
   {
     "id": "economia",
-    "nome": "Economia"
+    "nome": "Economia",
+    "descricao": "Impostos, contas públicas e o papel do Estado na economia. Quem deve pagar mais, o que deve ser público ou privado e o que isso muda no seu bolso."
   },
   {
     "id": "seguranca",
-    "nome": "Segurança pública"
+    "nome": "Segurança pública",
+    "descricao": "Crime, polícia, prisões e drogas. O que reduz a violência de verdade, e até onde vai o poder do Estado para combatê-la."
   },
   {
     "id": "educacao",
-    "nome": "Educação"
+    "nome": "Educação",
+    "descricao": "Quem entra na universidade, como a escola pública é gerida e o que de fato melhora o aprendizado."
   },
   {
     "id": "cidades",
-    "nome": "Cidades e transporte"
+    "nome": "Cidades e transporte",
+    "descricao": "Transporte, moradia e a vida nas cidades. Quem deve pagar pelos serviços urbanos e quem tem acesso a eles."
   },
   {
     "id": "assistencia",
-    "nome": "Assistência social"
+    "nome": "Assistência social",
+    "descricao": "Programas de renda e combate à pobreza. Como ajudar quem precisa sem criar dependência, e quanto isso custa."
   },
   {
     "id": "direitos",
-    "nome": "Direitos e liberdades"
+    "nome": "Direitos e liberdades",
+    "descricao": "Liberdades individuais, direitos de minorias e os limites entre o que decide o STF e o que decide o Congresso."
   },
   {
     "id": "ambiente",
-    "nome": "Meio ambiente e energia"
+    "nome": "Meio ambiente e energia",
+    "descricao": "Petróleo, floresta, clima e energia. Como conciliar crescimento econômico com a proteção do meio ambiente."
   }
 ];
 

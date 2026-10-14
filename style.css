@@ -322,6 +322,26 @@ tbody td { width: 40%; font-size: 1rem; line-height: 1.45; }
 .autoria a:hover { background: var(--grifo); color: var(--grifo-texto); }
 .rodape { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-top: 2px solid var(--tinta); padding-top: 18px; padding-bottom: 40px; margin-top: 72px; color: var(--apagado); }
 
+/* Página da categoria */
+a.menu-cat { text-decoration: none; }
+.menu-cat[aria-current="page"] { box-shadow: inset 3px 0 0 var(--foco); font-weight: 800; }
+.grupo-ver { display: inline-block; margin: 14px 0 4px 3.2rem; }
+.categoria-cab h1 { max-width: none; }
+.categoria-cab p { max-width: 44rem; }
+.numeros-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.categoria-temas { padding-top: 28px; }
+.categoria-temas .linha-txt > .mono { display: none; }
+.resumo-linha { font-size: 1rem; line-height: 1.5; max-width: 60ch; margin-top: 2px; }
+.outras-cats { padding-top: 56px; display: grid; gap: 14px; }
+.outras-cats ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.outras-cats a {
+  display: inline-flex; align-items: baseline; gap: 10px; padding: 10px 14px; border: 1.5px solid var(--tinta);
+  text-decoration: none; font-family: var(--f-titulo); font-weight: 700; font-size: 1rem;
+}
+.outras-cats a .mono { color: var(--apagado); }
+.outras-cats a:hover { background: var(--grifo); color: var(--grifo-texto); border-color: var(--grifo); }
+.outras-cats a:hover .mono { color: var(--grifo-texto); }
+
 @media (max-width: 760px) {
   body { font-size: 17px; }
   .duas { grid-template-columns: minmax(0, 1fr); gap: 32px; }
@@ -336,6 +356,11 @@ tbody td { width: 40%; font-size: 1rem; line-height: 1.45; }
   .grupo-temas { grid-column: 1 / -1; grid-row: 2; white-space: normal; }
   .grupo[open] > summary .grupo-temas { display: none; }
   .linha .placar { grid-column: 2; }
+  .grupo-ver { margin-left: 2.2rem; }
+  .numeros.numeros-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .numeros.numeros-3 div:nth-child(2n+1) { border-left: 1px solid var(--fio); padding-left: 12px; }
+  .numeros.numeros-3 div:first-child { border-left: 0; padding-left: 0; }
+  .resumo-linha { font-size: 0.95rem; }
   .so-largo { display: none; }
   .numeros { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .numeros div:nth-child(2n+1) { border-left: 0; padding-left: 0; }
