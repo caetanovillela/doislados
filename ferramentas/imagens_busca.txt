@@ -1,32 +1,34 @@
-escala-6x1 | trabalhadores supermercado Brasil
-escala-6x1 | comércio São Paulo rua 25 de Março
-reforma-tributaria | Congresso Nacional Brasília
-reforma-tributaria | nota fiscal Brasil imposto
-maioridade-penal | Fundação Casa São Paulo
-maioridade-penal | sistema prisional Brasil presídio
-tarifa-zero | ônibus São Paulo terminal
-tarifa-zero | ônibus urbano Brasil passageiros
-bolsa-familia | Bolsa Família cartão
-bolsa-familia | favela Brasil comunidade
-armas | arma de fogo pistola Taurus
-armas | Polícia Federal armas apreendidas
-cameras-corporais | Polícia Militar São Paulo policiais
-cameras-corporais | câmera corporal policial
-privatizacoes | Petrobras sede Rio de Janeiro
-privatizacoes | Eletrobras usina hidrelétrica
-maconha | Cannabis sativa planta
-maconha | marcha da maconha
-super-ricos | Faria Lima São Paulo prédios
-super-ricos | Avenida Paulista prédios
-cotas-universidades | Universidade de São Paulo campus estudantes
-cotas-universidades | Universidade Federal de Juiz de Fora
-civico-militares | escola pública Brasil sala de aula
-civico-militares | colégio militar Brasil alunos
-aborto | Supremo Tribunal Federal plenário
-aborto | manifestação aborto Brasil
-redes-sociais | smartphone redes sociais
-redes-sociais | Supremo Tribunal Federal Brasília prédio
-marco-temporal | indígenas Brasília acampamento terra livre
-marco-temporal | terra indígena Amazônia aldeia
-foz-amazonas | Foz do rio Amazonas
-foz-amazonas | plataforma de petróleo Petrobras
+escala-6x1 | trabalhadores comércio Agência Brasil
+escala-6x1 | supermercado funcionários Agência Brasil
+escala-6x1 | protesto escala 6x1
+reforma-tributaria | reforma tributária Agência Brasil
+reforma-tributaria | Câmara dos Deputados plenário votação
+maioridade-penal | Fundação Casa Agência Brasil
+maioridade-penal | presídio superlotação Agência Brasil
+tarifa-zero | ônibus passageiros Agência Brasil
+tarifa-zero | terminal de ônibus São Paulo Rovena Rosa
+bolsa-familia | Bolsa Família Agência Brasil
+bolsa-familia | Bolsa Família beneficiárias
+armas | armas apreendidas Agência Brasil
+armas | clube de tiro Brasil
+cameras-corporais | câmeras corporais policiais Agência Brasil
+cameras-corporais | Polícia Militar São Paulo Rovena Rosa
+privatizacoes | Petrobras sede Agência Brasil
+privatizacoes | Sabesp privatização
+maconha | cannabis medicinal Agência Brasil
+maconha | Marcha da Maconha São Paulo
+super-ricos | Faria Lima Agência Brasil
+super-ricos | imposto de renda Receita Federal Agência Brasil
+cotas-universidades | cotas raciais universidade Agência Brasil
+cotas-universidades | UFJF campus
+civico-militares | escola cívico-militar
+civico-militares | escola cívico-militar Agência Brasil
+aborto | aborto manifestação Agência Brasil
+aborto | Supremo Tribunal Federal plenário Agência Brasil
+redes-sociais | redes sociais celular Agência Brasil
+redes-sociais | fake news Agência Brasil
+marco-temporal | marco temporal indígenas Agência Brasil
+marco-temporal | Acampamento Terra Livre Agência Brasil
+foz-amazonas | Margem Equatorial Petrobras
+foz-amazonas | Amapá Oiapoque litoral
+foz-amazonas | navio sonda Petrobras Agência Petrobras

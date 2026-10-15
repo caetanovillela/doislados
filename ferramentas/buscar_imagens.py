@@ -35,6 +35,7 @@ def info(titulos, largura):
                     "autor": limpar(m.get("Artist", {}).get("value"))[:160], "licenca": lic,
                     "licenca_url": m.get("LicenseUrl", {}).get("value"),
                     "descricao": limpar(m.get("ImageDescription", {}).get("value"))[:300],
+                    "credito": limpar(m.get("Credit", {}).get("value"))[:160],
                     "livre": any(lic.lower().startswith(x) for x in LIVRES)})
     return out
 
@@ -49,7 +50,7 @@ if os.path.exists("ferramentas/imagens.json"):
 cands = saida.setdefault("candidatas", {})
 for tema, termos in ler("imagens_busca.txt"):
     try:
-        r = get({"action": "query", "list": "search", "srsearch": termos + " filetype:bitmap", "srnamespace": 6, "srlimit": 12})
+        r = get({"action": "query", "list": "search", "srsearch": termos + " filetype:bitmap", "srnamespace": 6, "srlimit": 20})
         titulos = [x["title"] for x in r["query"]["search"]]
         if not titulos: continue
         lista = [i for i in info(titulos, 480) if i["livre"] and i["mime"] == "image/jpeg" and (i["largura"] or 0) >= 1200]
