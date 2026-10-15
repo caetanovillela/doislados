@@ -228,6 +228,16 @@
     ["fontes", "Fontes"],
   ];
 
+  // Foto de topo do dossiê, sempre com autor, licença e link para a origem.
+  function fotoTopo(f) {
+    const autor = f.autor ? esc(f.autor) : "Autor desconhecido";
+    const licenca = f.licenca_url ? `<a href="${esc(f.licenca_url)}" target="_blank" rel="noopener">${esc(f.licenca)}</a>` : esc(f.licenca || "");
+    return `<figure class="foto-topo">
+        <img src="${esc(f.arquivo)}" alt="${esc(f.alt || "")}" style="object-position:${esc(f.posicao || "50% 50%")}" decoding="async" fetchpriority="high">
+        <figcaption class="mono">${f.legenda ? `<span>${esc(f.legenda)}</span>` : ""}<span>Foto: ${autor} · ${licenca} · <a href="${esc(f.fonte_url)}" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+      </figure>`;
+  }
+
   function paginaTema(tema) {
     raiz.onclick = null;
     const ctx = tema.contexto;
@@ -249,6 +259,7 @@
 
     raiz.innerHTML = `
       <nav class="migalha mono"><a href="#">Início</a><span>/</span><a href="#categoria/${tema.categoria}">${esc(nomeCategoria(tema.categoria))}</a><span>/</span><span>${esc(tema.titulo)}</span></nav>
+      ${tema.imagem ? fotoTopo(tema.imagem) : ""}
       <header class="dossie">
         <span class="mono apagado">Dossiê ${numero(tema)} · ${esc(nomeCategoria(tema.categoria))}${tema.atualizado ? " · atualizado em " + dataBR(tema.atualizado) : ""}</span>
         <h1>${esc(tema.pergunta)}</h1>

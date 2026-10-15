@@ -436,7 +436,17 @@ window.TEMAS = [
           "Quem fez o estudo representa o setor afetado. Que dados independentes confirmam os números?"
         ]
       }
-    ]
+    ],
+    "imagem": {
+      "arquivo": "img/temas/escala-6x1.jpg",
+      "autor": "Marcello Casal Jr./Agência Brasil",
+      "licenca": "CC BY 3.0 BR",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/br",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Carteiradetrabalho.jpg",
+      "legenda": "Carteira de trabalho sendo preenchida em Brasília.",
+      "alt": "Carteira de trabalho aberta sobre uma mesa enquanto alguém escreve com caneta",
+      "posicao": "50% 45%"
+    }
   },
   {
     "id": "reforma-tributaria",
@@ -730,7 +740,17 @@ window.TEMAS = [
         "canal": "Band Jornalismo",
         "nota": "Reportagem sobre as críticas de tributaristas ao texto aprovado."
       }
-    ]
+    ],
+    "imagem": {
+      "arquivo": "img/temas/reforma-tributaria.jpg",
+      "autor": "Isack Ryuji Minowa",
+      "licenca": "CC BY-SA 3.0",
+      "licenca_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Feira_livre_de_s%C3%A1bado_em_Jaguari%C3%BAna_-_2011-09-09_-_Isack_-_panoramio.jpg",
+      "legenda": "Feira livre em Jaguariúna (SP).",
+      "alt": "Feirantes e clientes numa feira livre com bancas de frutas",
+      "posicao": "50% 50%"
+    }
   },
   {
     "id": "maioridade-penal",
@@ -1034,7 +1054,17 @@ window.TEMAS = [
         "canal": "UOL",
         "nota": "Ex-policial do Bope avalia o efeito real da medida sobre o crime."
       }
-    ]
+    ],
+    "imagem": {
+      "arquivo": "img/temas/maioridade-penal.jpg",
+      "autor": "Fabio Rodrigues Pozzebom/Agência Brasil",
+      "licenca": "CC BY 3.0 BR",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/br",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:FRP-MaioridadePenal-20150701-15.jpg",
+      "legenda": "Votação da PEC da maioridade penal na Câmara, julho de 2015.",
+      "alt": "Deputados no plenário da Câmara erguendo cartazes durante a votação",
+      "posicao": "50% 50%"
+    }
   },
   {
     "id": "tarifa-zero",
@@ -1332,7 +1362,17 @@ window.TEMAS = [
         "nota": "Mostra os riscos: lotação, queda de qualidade e dependência do orçamento.",
         "duracao": "7:31"
       }
-    ]
+    ],
+    "imagem": {
+      "arquivo": "img/temas/tarifa-zero.jpg",
+      "autor": "Gabriel Fernandes",
+      "licenca": "CC BY-SA 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Ato_pela_tarifa_zero_(14275132479).jpg",
+      "legenda": "Ato pela tarifa zero em São Paulo, junho de 2014.",
+      "alt": "Manifestantes caminham por uma avenida de São Paulo",
+      "posicao": "50% 50%"
+    }
   },
   {
     "id": "bolsa-familia",
@@ -1623,7 +1663,17 @@ window.TEMAS = [
         "canal": "Poder360",
         "nota": "A fala que reacendeu o debate sobre as portas de saída do programa."
       }
-    ]
+    ],
+    "imagem": {
+      "arquivo": "img/temas/bolsa-familia.jpg",
+      "autor": "Ministério do Desenvolvimento Social",
+      "licenca": "CC BY-SA 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Bolsa_Fam%C3%ADlia_(16262553222).jpg",
+      "legenda": "Beneficiária do Bolsa Família em Mâncio Lima (AC), 2014.",
+      "alt": "Mulher sorri segurando o cartão do Bolsa Família",
+      "posicao": "50% 30%"
+    }
   },
   {
     "id": "armas",
@@ -1912,7 +1962,17 @@ window.TEMAS = [
         "nota": "Estimativa de vidas que um controle mais rígido teria poupado.",
         "duracao": "2:44"
       }
-    ]
+    ],
+    "imagem": {
+      "arquivo": "img/temas/armas.jpg",
+      "autor": "José Reynaldo da Fonseca",
+      "licenca": "CC BY-SA 3.0",
+      "licenca_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Campeonato_Club_tiro_160411_REFON_10.JPG",
+      "legenda": "Campeonato de tiro esportivo em Avaré (SP).",
+      "alt": "Atirador em uma pista de tiro esportivo com um árbitro ao lado",
+      "posicao": "50% 35%"
+    }
   },
   {
     "id": "cameras-corporais",
@@ -2198,7 +2258,17 @@ window.TEMAS = [
         "nota": "O delegado e vereador de São Paulo em um minuto.",
         "duracao": "1:00"
       }
-    ]
+    ],
+    "imagem": {
+      "arquivo": "img/temas/cameras-corporais.jpg",
+      "autor": "Rovena Rosa/Agência Brasil",
+      "licenca": "CC BY 3.0 BR",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/br",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Manifesta%C3%A7%C3%A3o_Fora_Temer_na_Avenida_Paulista_1040924-29.08.2016_rrs-8022.jpg",
+      "legenda": "Policiais militares na Avenida Paulista, São Paulo, 2016.",
+      "alt": "Policiais militares com capacetes em linha numa avenida à noite",
+      "posicao": "50% 50%"
+    }
   },
   {
     "id": "privatizacoes",
@@ -2489,7 +2559,17 @@ window.TEMAS = [
         "nota": "O economista critica quem ganha com a venda da Sabesp.",
         "duracao": "8:00"
       }
-    ]
+    ],
+    "imagem": {
+      "arquivo": "img/temas/privatizacoes.jpg",
+      "autor": "Corretor Carvalho",
+      "licenca": "CC BY-SA 3.0",
+      "licenca_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Esta%C3%A7%C3%A3o_de_Tratamento_de_Esgoto_SABESP_-_S%C3%83O_MIGUEL_-_panoramio.jpg",
+      "legenda": "Estação de tratamento de esgoto da Sabesp em São Miguel Paulista (SP).",
+      "alt": "Vista de uma estação de tratamento de esgoto com uma caixa-d'água ao fundo",
+      "posicao": "50% 50%"
+    }
   },
   {
     "id": "maconha",
@@ -2786,7 +2866,17 @@ window.TEMAS = [
         "nota": "Os efeitos do uso precoce no cérebro em formação.",
         "duracao": "4:43"
       }
-    ]
+    ],
+    "imagem": {
+      "arquivo": "img/temas/maconha.jpg",
+      "autor": "Fronteira",
+      "licenca": "CC BY-SA 4.0",
+      "licenca_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:12%C2%AA_Marcha_da_Maconha,_Pra%C3%A7a_Universit%C3%A1ria,_Goi%C3%A2nia,_junho_de_2024_(2).jpg",
+      "legenda": "Marcha da Maconha em Goiânia, junho de 2024.",
+      "alt": "Pessoas reunidas numa praça arborizada durante uma marcha",
+      "posicao": "50% 50%"
+    }
   },
   {
     "id": "super-ricos",
@@ -3076,7 +3166,17 @@ window.TEMAS = [
         "nota": "A crítica à linha de corte do imposto mínimo.",
         "duracao": "0:58"
       }
-    ]
+    ],
+    "imagem": {
+      "arquivo": "img/temas/super-ricos.jpg",
+      "autor": "Agent010",
+      "licenca": "CC BY-SA 4.0",
+      "licenca_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Avenida_Brigadeiro_Faria_Lima8.jpg",
+      "legenda": "Avenida Brigadeiro Faria Lima, centro financeiro de São Paulo.",
+      "alt": "Prédios de escritórios espelhados na Avenida Faria Lima",
+      "posicao": "50% 40%"
+    }
   },
   {
     "id": "cotas-universidades",
@@ -3364,7 +3464,17 @@ window.TEMAS = [
         "nota": "Os problemas que ele vê no sistema de cotas.",
         "duracao": "8:12"
       }
-    ]
+    ],
+    "imagem": {
+      "arquivo": "img/temas/cotas-universidades.jpg",
+      "autor": "Marcelo Camargo/Agência Brasil",
+      "licenca": "CC BY 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:ENEM_2017_(37652558774).jpg",
+      "legenda": "Candidatos chegam para o Enem em Brasília, 2017.",
+      "alt": "Estudantes passam pelos portões de um local de prova",
+      "posicao": "50% 40%"
+    }
   },
   {
     "id": "civico-militares",
@@ -3650,7 +3760,17 @@ window.TEMAS = [
         "nota": "Daniel Cara, professor da USP, resume as críticas.",
         "duracao": "8:22"
       }
-    ]
+    ],
+    "imagem": {
+      "arquivo": "img/temas/civico-militares.jpg",
+      "autor": "Governo do Estado de São Paulo",
+      "licenca": "CC BY 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Visita_%C3%A0_Escola_Estadual_Heckel_Tavares_e_almo%C3%A7o_com_professores_e_alunos._(52034860972).jpg",
+      "legenda": "Alunos de escola estadual em São Paulo.",
+      "alt": "Grupo de alunos sorrindo no pátio de uma escola",
+      "posicao": "50% 40%"
+    }
   },
   {
     "id": "aborto",
@@ -3941,7 +4061,17 @@ window.TEMAS = [
         "nota": "Um argumento filosófico curto contra o aborto.",
         "duracao": "1:26"
       }
-    ]
+    ],
+    "imagem": {
+      "arquivo": "img/temas/aborto.jpg",
+      "autor": "José Cruz/Agência Brasil",
+      "licenca": "CC BY 3.0 BR",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/br",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:ADPF_153_-_Plen%C3%A1rio.jpg",
+      "legenda": "Plenário do Supremo Tribunal Federal.",
+      "alt": "Ministros do STF sentados no plenário durante uma sessão",
+      "posicao": "50% 25%"
+    }
   },
   {
     "id": "redes-sociais",
@@ -4224,7 +4354,17 @@ window.TEMAS = [
         "nota": "Comentaristas analisam a reação das empresas ao projeto.",
         "duracao": "5:07"
       }
-    ]
+    ],
+    "imagem": {
+      "arquivo": "img/temas/redes-sociais.jpg",
+      "autor": "Agência Senado",
+      "licenca": "CC BY-SA 4.0",
+      "licenca_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Senado_Verifica_%E2%80%93_Fato_ou_Fake%3F_(54789294291).jpg",
+      "legenda": "Campanha do Senado contra a desinformação.",
+      "alt": "Mão segurando um celular com a palavra desinformação na tela",
+      "posicao": "50% 50%"
+    }
   },
   {
     "id": "marco-temporal",
@@ -4511,7 +4651,17 @@ window.TEMAS = [
         "nota": "A tese explicada por quem é contra, em um minuto.",
         "duracao": "1:17"
       }
-    ]
+    ],
+    "imagem": {
+      "arquivo": "img/temas/marco-temporal.jpg",
+      "autor": "Agência Senado",
+      "licenca": "CC BY 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Acampamento_Terra_Livre_2024_(53677903352).jpg",
+      "legenda": "Acampamento Terra Livre em Brasília, 2024.",
+      "alt": "Indígenas marcham em frente ao Congresso Nacional",
+      "posicao": "50% 50%"
+    }
   },
   {
     "id": "foz-amazonas",
@@ -4802,6 +4952,16 @@ window.TEMAS = [
         "nota": "A ministra do Meio Ambiente defende a cautela do Ibama.",
         "duracao": "5:48"
       }
-    ]
+    ],
+    "imagem": {
+      "arquivo": "img/temas/foz-amazonas.jpg",
+      "autor": "Petrobras/Agência Brasil",
+      "licenca": "CC BY 3.0 BR",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/br",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Oil_platform_P-51_(Brazil)-2.jpg",
+      "legenda": "Plataforma de petróleo P-51 da Petrobras.",
+      "alt": "Plataforma de petróleo em alto-mar",
+      "posicao": "50% 55%"
+    }
   }
 ];

@@ -337,6 +337,17 @@ tbody td { width: 40%; font-size: 1rem; line-height: 1.45; }
 @keyframes pagina-sai { to { opacity: 0; } }
 @keyframes pagina-entra { from { opacity: 0; transform: translateY(10px); } }
 
+/* Foto de topo do dossiê: preto e branco para manter a identidade neutra */
+.foto-topo { margin: 24px 0 0; display: grid; gap: 8px; }
+.foto-topo img {
+  display: block; width: 100%; aspect-ratio: 21 / 8; object-fit: cover; background: var(--fio);
+  filter: grayscale(1) contrast(1.05); border: 1.5px solid var(--tinta);
+}
+.foto-topo figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; color: var(--apagado); font-size: 0.66rem; line-height: 1.5; }
+.foto-topo figcaption a { color: inherit; text-underline-offset: 2px; }
+.foto-topo figcaption a:hover { color: var(--tinta); }
+.foto-topo + .dossie { padding-top: 28px; }
+
 /* Página da categoria */
 a.menu-cat { text-decoration: none; }
 .menu-cat[aria-current="page"] { box-shadow: inset 3px 0 0 var(--foco); font-weight: 800; }
@@ -408,6 +419,8 @@ a.menu-cat { text-decoration: none; }
   .sumario button { padding: 16px 0 13px; }
   .dossie p { font-size: 1.1rem; }
   .capa .sub { font-size: 1.08rem; }
+  .foto-topo img { aspect-ratio: 4 / 3; }
+  .foto-topo { margin-top: 16px; }
   .rodape { grid-template-columns: minmax(0, 1fr); gap: 28px; padding-top: 36px; margin-top: 72px; }
   .rodape-aviso, .autoria { justify-self: start; justify-items: start; text-align: left; }
   .em-alta { padding: 20px 18px 22px 28px; }
