@@ -1,820 +1,1153 @@
 [
  {
-  "tema": "foz",
-  "busca": "Randolfe petróleo margem equatorial Amapá desenvolvimento",
+  "tema": "armas",
+  "busca": "cortes do flow armas legítima defesa",
   "resultados": [
    {
-    "id": "pwrQsTE1CZw",
-    "titulo": "Petrobras faz nova descoberta de petróleo no Amapá na Margem Equatorial",
-    "canal": "Jovem Pan News",
-    "canal_id": "UCP391YRAjSOdM_bwievgaZA",
-    "duracao": "2:30",
-    "quando": "há 11 dias",
-    "views": "3.779 visualizações"
-   },
-   {
-    "id": "uWo9SKp6S-U",
-    "titulo": "Petrobras faz nova descoberta de petróleo na costa do Amapá | #PoderExpresso",
-    "canal": "SBT News",
-    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
-    "duracao": "2:09",
-    "quando": "há 12 dias",
-    "views": "15.142 visualizações"
-   },
-   {
-    "id": "4lS8xI2Awq4",
-    "titulo": "O Estado do Amapá possui margem equatorial e por isso tem potencial para a extração de petróleo",
-    "canal": "ALAP - ASSEMBLEIA LEGISLATIVA DO AMAPÁ",
-    "canal_id": "UCHakhE3KpoMFlsjy05lGhHA",
-    "duracao": "3:57",
-    "quando": "há 3 anos",
-    "views": "488 visualizações"
-   },
-   {
-    "id": "Cut5TKRGQHc",
-    "titulo": "Petrobras encontra petróleo no Amapá e planeja novos investimentos na Margem Equatorial",
-    "canal": "Rádio CBN",
-    "canal_id": "UCbiGwU0-W1XCDUrt3BTVrag",
-    "duracao": "1:50",
-    "quando": "há 1 mês",
-    "views": "236 visualizações"
-   },
-   {
-    "id": "39FKm6VGTJ4",
-    "titulo": "Randolfe Rodrigues denuncia desastre ambiental no Amapá após instalação de hidrelétricas",
-    "canal": "TV Senado",
-    "canal_id": "UCLgti7NuK0RuW9wty-fxPjQ",
-    "duracao": "16:18",
-    "quando": "há 10 anos",
-    "views": "328 visualizações"
-   },
-   {
-    "id": "A6euxZS7uJc",
-    "titulo": "Descoberta na Margem Equatorial reacende debate sobre exploração no Amapá #PoderExpresso",
-    "canal": "SBT News",
-    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
-    "duracao": "15:07",
-    "quando": "há 1 mês",
-    "views": "5.402 visualizações"
-   },
-   {
-    "id": "U4ExqP32bNk",
-    "titulo": "Petrobras anuncia nova descoberta de petróleo no litoral do Amapá na Margem Equatorial",
-    "canal": "Band Jornalismo",
-    "canal_id": "UCoa-D_VfMkFrCYodrOC9-mA",
-    "duracao": "2:21",
-    "quando": "há 12 dias",
-    "views": "9.990 visualizações"
-   },
-   {
-    "id": "23_P2jwAAbs",
-    "titulo": "Petrobras detalha descoberta de petróleo no Amapá",
-    "canal": "Record News",
-    "canal_id": "UCuiLR4p6wQ3xLEm15pEn1Xw",
-    "duracao": "1:57",
-    "quando": "há 1 mês",
-    "views": "6.663 visualizações"
-   },
-   {
-    "id": "dKdxC78NwWY",
-    "titulo": "Randolfe anuncia: Petrobras fará exercício na Margem Equatorial no dia 24 de agosto",
-    "canal": "Vozes da Amazônia: O GUARANI em Podcasts",
-    "canal_id": "UCCg2wphaAKWlZx0PEfGtzIQ",
-    "duracao": "1:57",
-    "quando": "há 1 ano",
-    "views": "841 visualizações"
-   },
-   {
-    "id": "Qo_pTF8U0wo",
-    "titulo": "Amapá em Pauta: Seminário sobre a Margem Equatorial amplia debate sobre energia e meio ambiente",
-    "canal": "Voz do Amapá",
-    "canal_id": "UC3vVGt3aSCm-KVkvU3O4HPg",
-    "duracao": "0:47",
-    "quando": "há 1 ano",
-    "views": "1.182 visualizações"
-   },
-   {
-    "id": "1dOecr2If6k",
-    "titulo": "Reservas marinhas no Amapá acirra debate sobre exploração de petróleo na Margem Equatorial",
-    "canal": "AgroMais",
-    "canal_id": "UCgxHcOl2hA1It6QOfOLyJLA",
-    "duracao": "44:41",
-    "quando": "há 1 ano",
-    "views": "401 visualizações"
-   },
-   {
-    "id": "Us8q1LzU6yE",
-    "titulo": "Petrobras confirma petróleo na margem equatorial do Amapá",
-    "canal": "Rádio Bandeirantes",
-    "canal_id": "UCF453hXTROcm9CfCERYUjtQ",
-    "duracao": "6:44",
-    "quando": "há 1 mês",
-    "views": "393 visualizações"
-   },
-   {
-    "id": "Sk9yfM_Sx-Y",
-    "titulo": "Petróleo no Amapá: A riqueza precisa ficar com o nosso povo!",
-    "canal": "PT no Senado",
-    "canal_id": "UCV2qpwAR3gXFn20s-qMTtrg",
-    "duracao": "1:11",
-    "quando": "há 4 semanas",
-    "views": "29 visualizações"
-   },
-   {
-    "id": "j0eFaCM25lE",
-    "titulo": "Economia verde é a saída para o Amapá, defende Randolfe Rodrigues",
-    "canal": "TV Senado",
-    "canal_id": "UCLgti7NuK0RuW9wty-fxPjQ",
-    "duracao": "23:58",
+    "id": "AuUYtaYapSk",
+    "titulo": "O QUE É A CONDIÇÃO DE LEGITIMA DEFESA? | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:40",
     "quando": "há 6 anos",
-    "views": "608 visualizações"
+    "views": "679.487 visualizações"
    },
    {
-    "id": "i5vpHX5cO7A",
-    "titulo": "RANDOLFE SEMPRE FOI CONTRA O PETRÓLEO NO AMAPÁ!!! #brasil #direita #amapá #macapá #senado #pt #stf",
-    "canal": "Márcos Malcher Politicando",
-    "canal_id": "UC8UhRhRDN3UWL-DMBU7KrXA",
-    "duracao": "0:44",
-    "quando": "há 11 meses",
-    "views": "227 visualizações"
-   }
-  ]
- },
- {
-  "tema": "foz",
-  "busca": "Magda Chambriard margem equatorial",
-  "resultados": [
-   {
-    "id": "E1dSLCpNWRU",
-    "titulo": "Petrobras vai perfurar margem equatorial no RN, diz Chambriard | ABERTURA DE MERCADO",
-    "canal": "CNN Brasil Money",
-    "canal_id": "UCqfm5IQhpMlfeAWMmVL_uNg",
-    "duracao": "9:58",
-    "quando": "há 6 meses",
-    "views": "24.077 visualizações"
+    "id": "0XB4c71GPPc",
+    "titulo": "Porte De Armas: As Pessoas Querem. Mas, Não Podem | Bene Barbosa | Flow Podcast | Cortes",
+    "canal": "Nada ProLixo Cortes",
+    "canal_id": "UCKbhbyCRBflT-Y0N3alEbcw",
+    "duracao": "5:30",
+    "quando": "há 5 anos",
+    "views": "31 visualizações"
    },
    {
-    "id": "5QPWhJosgzU",
-    "titulo": "Magda Chambriard fala sobre descoberta da Petrobras em águas profundas do Amapá",
-    "canal": "agência eixos",
-    "canal_id": "UCisdIUAA-WdZSaYsPSE6dAQ",
-    "duracao": "23:59",
-    "quando": "Transmitido há 1 mês",
-    "views": "1.832 visualizações"
+    "id": "7jf5LCKihRQ",
+    "titulo": "O QUE VOCÊ PRECISA PARA TER UMA ARMA? | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "6:04",
+    "quando": "há 6 anos",
+    "views": "396.294 visualizações"
    },
    {
-    "id": "KpRgyDXuM2Y",
-    "titulo": "No CNN Talks, Magda Chambriard fala sobre transição energética | ABERTURA DE MERCADO",
-    "canal": "CNN Brasil Money",
-    "canal_id": "UCqfm5IQhpMlfeAWMmVL_uNg",
-    "duracao": "36:10",
-    "quando": "há 6 meses",
-    "views": "1.904 visualizações"
+    "id": "DqyvScF9hK0",
+    "titulo": "DEBATE SOBRE DIFERENÇA ENTRE POSSE E PORTE DE ARMA | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "20:55",
+    "quando": "há 5 anos",
+    "views": "346.437 visualizações"
    },
    {
-    "id": "IDgvdnZ5MaU",
-    "titulo": "Petrobras aguarda avaliação para exploração da Margem Equatorial",
-    "canal": "Jovem Pan News",
-    "canal_id": "UCP391YRAjSOdM_bwievgaZA",
-    "duracao": "2:14",
-    "quando": "há 1 ano",
-    "views": "675 visualizações"
+    "id": "BNu1oVLwyds",
+    "titulo": "MAIS ARMAS SIGNIFICAM MAIS MORTES?  | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "7:35",
+    "quando": "há 5 anos",
+    "views": "99.438 visualizações"
    },
    {
-    "id": "R25QBHk2OgY",
-    "titulo": "Magda Chambriard fala sobre descoberta da Petrobras em águas profundas do Amapá",
-    "canal": "agência eixos",
-    "canal_id": "UCisdIUAA-WdZSaYsPSE6dAQ",
-    "duracao": "36:49",
-    "quando": "Transmitido há 1 mês",
-    "views": "651 visualizações"
-   },
-   {
-    "id": "OZSoPQuG5rg",
-    "titulo": "DESCOBERTA DA PETROBRAS: LULA E MAGDA CHAMBRIARD VISITAM NAVIO-SONDA NO LITORAL DO AMAPÁ",
-    "canal": "Itatiaia",
-    "canal_id": "UC9T0ZAarQHL4cJGFzORVsFg",
-    "duracao": "2:01",
-    "quando": "há 1 mês",
-    "views": "1.086 visualizações"
-   },
-   {
-    "id": "3Tqg_5517p4",
-    "titulo": "CNN Talks: Segurança e Competitividade - Magda Chambriard, Presidente da Petrobras",
-    "canal": "CNN Brasil Money",
-    "canal_id": "UCqfm5IQhpMlfeAWMmVL_uNg",
-    "duracao": "34:54",
-    "quando": "há 6 meses",
-    "views": "1.179 visualizações"
-   },
-   {
-    "id": "D0YM6wpXvBw",
-    "titulo": "Conversa com Hildegard Angel - Magda Chambriard: Exploração da Margem Equatorial pode mudar o Brasil",
-    "canal": "TV 247",
-    "canal_id": "UCRuy5PigeeBuecKnwqhM4yg",
-    "duracao": "1:28:23",
-    "quando": "Transmitido há 1 ano",
-    "views": "18.766 visualizações"
-   },
-   {
-    "id": "SNcmRFfKP5c",
-    "titulo": "Magda Chambriard: Produção de Petróleo vai continuar aumentando | CNN 360°",
-    "canal": "CNN Brasil",
-    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
-    "duracao": "3:40",
-    "quando": "há 10 meses",
-    "views": "16.033 visualizações"
-   },
-   {
-    "id": "E4rxeeWWccY",
-    "titulo": "BandNewsTV entrevista presidente da Petrobras, Magda Chambriard",
-    "canal": "Band Jornalismo",
-    "canal_id": "UCoa-D_VfMkFrCYodrOC9-mA",
-    "duracao": "16:09",
-    "quando": "há 1 mês",
-    "views": "6.381 visualizações"
-   },
-   {
-    "id": "Ct06fly8M4A",
-    "titulo": "Petrobras está perto de obter licença para explorar petróleo na Margem Equatorial",
-    "canal": "Jornalismo TV Cultura",
-    "canal_id": "UCXdXYG8dUmEv6jhEji_lSHg",
-    "duracao": "3:15",
-    "quando": "há 1 ano",
-    "views": "1.827 visualizações"
-   },
-   {
-    "id": "PzoaMF1YwZc",
-    "titulo": "Quem apostar contra a Petrobras vai perder dinheiro, diz Magda Chambriard #EP16",
-    "canal": "exame",
-    "canal_id": "UCauE-yGwb8bJ55BswgrGxAg",
-    "duracao": "43:42",
-    "quando": "há 1 ano",
-    "views": "4.525 visualizações"
-   },
-   {
-    "id": "HTbVPc8sGns",
-    "titulo": "CNN Talks: Magda Chambriard fala sobre transição energética | LIVE CNN",
-    "canal": "CNN Brasil",
-    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
-    "duracao": "4:32",
-    "quando": "há 6 meses",
-    "views": "9.023 visualizações"
-   },
-   {
-    "id": "8aQ1GYKGWx0",
-    "titulo": "Magda Chambriard: gestão de desafios na Petrobras",
-    "canal": "fatorbrasil",
-    "canal_id": "UCPxhtUbxQvuSpTMXQUTeqEQ",
-    "duracao": "1:08:14",
-    "quando": "há 2 anos",
-    "views": "152 visualizações"
-   },
-   {
-    "id": "ZJd7hBcvaxk",
-    "titulo": "Respondemos todas as demandas do Ibama na Margem Equatorial, diz CEO da Petrobras",
-    "canal": "agência eixos",
-    "canal_id": "UCisdIUAA-WdZSaYsPSE6dAQ",
-    "duracao": "0:40",
-    "quando": "há 1 ano",
-    "views": "1.894 visualizações"
-   }
-  ]
- },
- {
-  "tema": "foz",
-  "busca": "margem equatorial petróleo a favor soberania energética",
-  "resultados": [
-   {
-    "id": "kpR2l6Xe238",
-    "titulo": "Lula comenta Margem Equatorial e diz que petróleo financiará transição | BASTIDORES CNN",
-    "canal": "CNN Brasil",
-    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
-    "duracao": "1:39",
-    "quando": "há 11 meses",
-    "views": "1.871 visualizações"
-   },
-   {
-    "id": "mFalHWXyknc",
-    "titulo": "Lula defende exploração de petróleo na Margem Equatorial",
-    "canal": "Poder360",
-    "canal_id": "UCFCiSRbCVwQ_BQaDQBYxN_A",
-    "duracao": "2:45",
-    "quando": "há 11 meses",
-    "views": "1.725 visualizações"
-   },
-   {
-    "id": "IrmbnugQIKs",
-    "titulo": "Petrobras pede mais poços na Margem Equatorial e menos compensação ambiental | CNN 360º",
-    "canal": "CNN Brasil",
-    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
-    "duracao": "4:04",
-    "quando": "há 11 meses",
-    "views": "48.170 visualizações"
-   },
-   {
-    "id": "i5-23ZRLup0",
-    "titulo": "Petróleo na Margem Equatorial abre nova frente de disputa entre governo e ambientalistas",
-    "canal": "Rádio CBN",
-    "canal_id": "UCbiGwU0-W1XCDUrt3BTVrag",
-    "duracao": "5:56",
-    "quando": "há 1 mês",
-    "views": "528 visualizações"
-   },
-   {
-    "id": "aQc6jcHwwA0",
-    "titulo": "Guilherme Estrella: Petróleo na margem equatorial e soberania energética do Brasil",
-    "canal": "Rede Unidade e Resistência",
-    "canal_id": "UC06BC5VZ2uIiZPNSiYb_4XQ",
-    "duracao": "19:16",
-    "quando": "há 1 ano",
-    "views": "9 visualizações"
-   },
-   {
-    "id": "qBlloyDFU_U",
-    "titulo": "Infra em 1 Minuto: Exploração de petróleo na Margem Equatorial",
-    "canal": "Poder360",
-    "canal_id": "UCFCiSRbCVwQ_BQaDQBYxN_A",
-    "duracao": "2:26",
-    "quando": "há 11 meses",
-    "views": "2.110 visualizações"
-   },
-   {
-    "id": "_EDt33fRaso",
-    "titulo": "CONEXÃO MARGEM EQUATORIAL 27ago26",
-    "canal": "ALM - TREINAMENTO, DESENVOLVIMENTO & CONSULTORIA",
-    "canal_id": "UC89R8LDNAx5JW44944v8rGA",
-    "duracao": "33:06",
-    "quando": "há 1 mês",
-    "views": "318 visualizações"
-   },
-   {
-    "id": "3VkyEX_CnB4",
-    "titulo": "Petrobras confirma petróleo no Amapá | Especial Margem Equatorial",
-    "canal": "Cidades & Negócios. Revista de Direito Público",
-    "canal_id": "UCE-KbatLa6WzNMD-nthu99g",
-    "duracao": "1:15",
-    "quando": "há 1 mês",
-    "views": "65 visualizações"
-   },
-   {
-    "id": "tsb-FGOM4-Y",
-    "titulo": "Margem Equatorial: os planos da Petrobras para a nova fronteira energética",
-    "canal": "InvestNews BR",
-    "canal_id": "UCo0jMsIPccAXghE_FCWIdNg",
-    "duracao": "6:06",
-    "quando": "há 11 meses",
-    "views": "42.801 visualizações"
-   },
-   {
-    "id": "H_ZPm_HFtbU",
-    "titulo": "Petrobras avança na exploração da Margem Equatorial",
-    "canal": "Jovem Pan News",
-    "canal_id": "UCP391YRAjSOdM_bwievgaZA",
-    "duracao": "4:07",
+    "id": "g9F5CmgSENM",
+    "titulo": "O que NINGUÉM TE CONTA sobre A LEGISLAÇÃO BRASILEIRA de ARMAS BRANCAS",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:05",
     "quando": "há 3 semanas",
-    "views": "11.495 visualizações"
+    "views": "3.584 visualizações"
    },
    {
-    "id": "z5twTzKSndc",
-    "titulo": "Decisão sobre petróleo na Margem Equatorial é do Brasil, diz presidente da COP30 | CNN 360º",
-    "canal": "CNN Brasil",
-    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
-    "duracao": "1:30",
-    "quando": "há 11 meses",
-    "views": "547 visualizações"
+    "id": "5a75td96eRY",
+    "titulo": "A VERDADE SOBRE LEGÍTIMA DEFESA - BENE BARBOSA - FLOW",
+    "canal": "MUNDO DOS CORTES",
+    "canal_id": "UCJnDVoTV_QJC8dmzqFlf6Ag",
+    "duracao": "7:32",
+    "quando": "há 5 anos",
+    "views": "85 visualizações"
    },
    {
-    "id": "Puv9ASkXAps",
-    "titulo": "Petrobras: o que está em jogo na Margem Equatorial",
-    "canal": "Seu Dinheiro",
-    "canal_id": "UC4P5O9dt8f59roThO_w_xcQ",
-    "duracao": "0:42",
-    "quando": "há 10 meses",
-    "views": "789 visualizações"
+    "id": "3jZNIfufOA4",
+    "titulo": "Legítima Defesa - Hoje você pode ter um fuzil dentro de casa.",
+    "canal": "Cortes PodCasts Brazil",
+    "canal_id": "UCIVHvRbgVkJ1GZA6c_8w23A",
+    "duracao": "3:11",
+    "quando": "há 5 anos",
+    "views": "225 visualizações"
    },
    {
-    "id": "3G2oB2plxM0",
-    "titulo": "Análise: Petrobras quer apoio de ministros por Margem Equatorial  \\ WW",
-    "canal": "CNN Brasil",
-    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
-    "duracao": "16:59",
-    "quando": "há 2 anos",
-    "views": "9.518 visualizações"
+    "id": "A-3ffcadSUc",
+    "titulo": "QUAL O MELHOR CALIBRE PARA AUTODEFESA? | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "12:15",
+    "quando": "há 5 anos",
+    "views": "331.322 visualizações"
    },
    {
-    "id": "CLSUKEw7Rs0",
-    "titulo": "Entenda: Petrobras quer abrir nova frente de exploração na Margem Equatorial",
-    "canal": "Valor Econômico",
-    "canal_id": "UC48mLXk1ASg1EQbaS3MheWQ",
-    "duracao": "4:10",
-    "quando": "há 3 anos",
-    "views": "22.988 visualizações"
+    "id": "mdr_rkipOD0",
+    "titulo": "COMO NÃO DEFENDER A SUA CASA | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "6:10",
+    "quando": "há 5 anos",
+    "views": "651.169 visualizações"
    },
    {
-    "id": "Lm5BDGs_WeA",
-    "titulo": "PETRÓLEO na MARGEM EQUATORIAL: Marina Silva responde sobre exploração de combustíveis fósseis",
-    "canal": "Roda Viva",
-    "canal_id": "UCNVsZnDXOM4PodYIEgM2e4w",
-    "duracao": "3:21",
-    "quando": "há 1 ano",
-    "views": "3.789 visualizações"
+    "id": "yJKikElm6wM",
+    "titulo": "ARMAS SÃO BOAS PARA LEGÍTIMA DEFESA?",
+    "canal": "PodCrê Cortes - Podpah e Flow Cortes",
+    "canal_id": "UCpk53V6cluvrw9V9RhV2aDQ",
+    "duracao": "14:44",
+    "quando": "há 5 anos",
+    "views": "1 visualização"
+   },
+   {
+    "id": "33m2gIEm8_0",
+    "titulo": "Bene Barbosa Shotgun ou pistola para defesa residencial",
+    "canal": "Good Flow",
+    "canal_id": "UC-rFba-WO4AhkYjiwncAPoA",
+    "duracao": "2:05",
+    "quando": "há 5 anos",
+    "views": "3.681 visualizações"
+   },
+   {
+    "id": "EjLFWfbXC0I",
+    "titulo": "DELEGADO SE REVOLTA SOBRE PORTE DE ARMAS E FALA DE LEGÍTIMA DEFESA",
+    "canal": "Flow Time [CORTES]",
+    "canal_id": "UCAxwD3SydKyhxek6pWEejxw",
+    "duracao": "9:35",
+    "quando": "há 5 anos",
+    "views": "11 visualizações"
+   },
+   {
+    "id": "kfKRi383yHc",
+    "titulo": "QUEM TEM ARMA É PERIGOSO? | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "9:00",
+    "quando": "há 5 anos",
+    "views": "157.048 visualizações"
+   },
+   {
+    "id": "yJ9d-OiepHc",
+    "titulo": "Diferença entre Brasil e EUA em relação às armas - Bene Barbosa - Flow Podcast #19",
+    "canal": "CortesCast [OFICIAL]",
+    "canal_id": "UCPFKhHGjCJlsrrVwb-pWA8A",
+    "duracao": "5:28",
+    "quando": "há 5 anos",
+    "views": "198 visualizações"
    }
   ]
  },
  {
-  "tema": "foz",
-  "busca": "Marina Silva foz do Amazonas petróleo",
+  "tema": "armas",
+  "busca": "cortes do flow desarmamento",
   "resultados": [
    {
-    "id": "m1LAhmvN_IE",
-    "titulo": "Marina Silva descarta demissão por licença de exploração de petróleo na Foz do Amazonas | CNN 360°",
-    "canal": "CNN Brasil",
-    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
-    "duracao": "1:29",
-    "quando": "há 11 meses",
-    "views": "2.577 visualizações"
+    "id": "DqyvScF9hK0",
+    "titulo": "DEBATE SOBRE DIFERENÇA ENTRE POSSE E PORTE DE ARMA | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "20:55",
+    "quando": "há 5 anos",
+    "views": "346.437 visualizações"
    },
    {
-    "id": "HuDQIvJ7eMQ",
-    "titulo": "Marina avalia petróleo na Foz do Amazonas: Precisamos tratar com todo cuidado",
-    "canal": "Rede TVT",
-    "canal_id": "UCmQTY7b5w61WlmBbJ5a8XrQ",
-    "duracao": "1:07",
-    "quando": "há 1 mês",
-    "views": "4.098 visualizações"
+    "id": "c5r_NyJS1X4",
+    "titulo": "LULA 100% SINCERO sobre ALEXANDRE de Moraes",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "11:39",
+    "quando": "há 12 dias",
+    "views": "42.469 visualizações"
    },
    {
-    "id": "LBuA5ouQgVA",
-    "titulo": "Marina Silva nega influência política em licença para explorar petróleo na foz do Amazonas",
-    "canal": "Terra Brasil",
-    "canal_id": "UCWeXgaH6wwyTRAkA3n6sRxg",
-    "duracao": "1:51",
-    "quando": "há 11 meses",
-    "views": "7.361 visualizações"
+    "id": "UrbDzAJhP3Y",
+    "titulo": "LULA EXPÕE o real objetivo das TARIFAS de TRUMP e revela BASTIDORES com o presidente",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:31",
+    "quando": "há 12 dias",
+    "views": "17.054 visualizações"
    },
    {
-    "id": "uSDVFcHqkec",
-    "titulo": "Marina Silva reforça que negativa do Ibama à licença para Petrobras na Foz do Amazonas é técnica",
-    "canal": "TV Senado",
-    "canal_id": "UCLgti7NuK0RuW9wty-fxPjQ",
-    "duracao": "5:48",
+    "id": "-qkYuJvzCbo",
+    "titulo": "BENE BARBOSA REFUTA AS CRITICAS DO DESARMAMENTO | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "6:15",
+    "quando": "há 6 anos",
+    "views": "253.580 visualizações"
+   },
+   {
+    "id": "mnbgTSi_Wbg",
+    "titulo": "IGOR COLOCA LULA CONTRA A PAREDE sobre relação com STF",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "10:19",
+    "quando": "há 12 dias",
+    "views": "31.701 visualizações"
+   },
+   {
+    "id": "mZal-NT4xu0",
+    "titulo": "IGOR faz as PERGUNTAS que TODO MUNDO queria fazer pro LULA",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:41",
+    "quando": "há 12 dias",
+    "views": "283.331 visualizações"
+   },
+   {
+    "id": "ai6ON6sezyw",
+    "titulo": "'A população vai se ASSUSTAR': REINALDO AZEVEDO REFUTA TODO O PLANO ECONOMICO de Flávio Bolsonaro",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "35:30",
+    "quando": "há 5 dias",
+    "views": "1.203.141 visualizações"
+   },
+   {
+    "id": "1_0kdaqMbY4",
+    "titulo": "IGOR ENCURRALA LULA logo na primeira pergunta",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:27",
+    "quando": "há 12 dias",
+    "views": "60.674 visualizações"
+   },
+   {
+    "id": "RqANge5pFGk",
+    "titulo": "ARTHUR DO VAL é SINCERO ATÉ DEMAIS sobre o Partido Missão nas ELEIÇÕES 2026",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:17",
+    "quando": "há 22 horas",
+    "views": "251.411 visualizações"
+   },
+   {
+    "id": "qRwTUqdyG2k",
+    "titulo": "IGOR foi sincero ATÉ DEMAIS com Presidente Lula...",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "11:14",
+    "quando": "há 12 dias",
+    "views": "72.283 visualizações"
+   },
+   {
+    "id": "52x3Oz06q6I",
+    "titulo": "REINALDO AZEVEDO FAZ ALERTA: O DECRETO MAIS TEMIDO de Flávio Bolsonaro",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:04",
+    "quando": "há 5 dias",
+    "views": "68.631 visualizações"
+   },
+   {
+    "id": "yzKhSZUW2uk",
+    "titulo": "IGOR QUESTIONA o DEPOIMENTO de LULA: CARNE vs OVO",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:06",
+    "quando": "há 12 dias",
+    "views": "94.739 visualizações"
+   },
+   {
+    "id": "8xvuvy0-5wM",
+    "titulo": "Arthur do Val PERDE A PACIÊNCIA sobre as ELEIÇÕES 2026",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "10:08",
+    "quando": "há 21 horas",
+    "views": "30.704 visualizações"
+   },
+   {
+    "id": "4YwVbs7hn5E",
+    "titulo": "LULA RESPONDE CRÍTICAS e explica suas propostas",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "11:44",
+    "quando": "há 12 dias",
+    "views": "46.321 visualizações"
+   },
+   {
+    "id": "6pZJqCNx8og",
+    "titulo": "DEU RUIM DE NOVO: TUDO sobre o NOVO TARIFAÇO do Trump e o PLANO de Flávio Bolsonaro POR TRÁS disso",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "10:34",
+    "quando": "há 3 meses",
+    "views": "25.386 visualizações"
+   }
+  ]
+ },
+ {
+  "tema": "maconha",
+  "busca": "cortes do flow maconha legalização",
+  "resultados": [
+   {
+    "id": "dYkStJDoeTc",
+    "titulo": "MACONHA NUNCA SERÁ LEGALIZADA? | Flow Podcast",
+    "canal": "Découpod",
+    "canal_id": "UCELJbARahdYhIgR3AjWNq7g",
+    "duracao": "4:04",
+    "quando": "há 5 anos",
+    "views": "111 visualizações"
+   },
+   {
+    "id": "jOJ1fm0ea4U",
+    "titulo": "SENADOR FALA SOBRE A LEGALIZAÇÃO DA MACONHA | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "2:43",
+    "quando": "há 5 anos",
+    "views": "105.606 visualizações"
+   },
+   {
+    "id": "Wgmvo4pbybU",
+    "titulo": "JULIO BALESTRIN E MONARK DEBATEM SOBRE MACONHA",
+    "canal": "Cortes Da Internet",
+    "canal_id": "UCLtRT4rGyeKdvEHG_sVq40g",
+    "duracao": "4:45",
+    "quando": "há 5 anos",
+    "views": "53.418 visualizações"
+   },
+   {
+    "id": "a4OqL2BSeqU",
+    "titulo": "CONTRA-INDICAÇÕES DO CONSUMO DA CANNABIS | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "3:15",
+    "quando": "há 5 anos",
+    "views": "18.725 visualizações"
+   },
+   {
+    "id": "DvNeuUFsQCE",
+    "titulo": "A legalização da maconha acaba com o tráfico ? 🧐 - Cortes Flow Podcast",
+    "canal": "TáLigado Cortes",
+    "canal_id": "UCr4qUTR13NFOF2Log6TmnbA",
+    "duracao": "10:04",
+    "quando": "há 5 anos",
+    "views": "84 visualizações"
+   },
+   {
+    "id": "O_Po9E_Yxg0",
+    "titulo": "FUMAR MACONHA NA FRENTE DA POLÍCIA: O debate sobre legalização e o susto no Flow Podcast!",
+    "canal": "Cortes da Verdade",
+    "canal_id": "UCRo8XFmb7JKOQ7oeDRHniWA",
+    "duracao": "4:01",
+    "quando": "há 1 ano",
+    "views": "105 visualizações"
+   },
+   {
+    "id": "tKofR5ReSLU",
+    "titulo": "MÉDICO é 100% SINCERO sobre o uso da CANNABIS",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "10:39",
+    "quando": "há 9 meses",
+    "views": "109.006 visualizações"
+   },
+   {
+    "id": "oXPDHby452s",
+    "titulo": "Patrick Maia fala sobre a legalização da maconha - Flow Podcast -",
+    "canal": "Clipes Flow",
+    "canal_id": "UCt-f3eN9JqLJGQKnJ_6Xgaw",
+    "duracao": "21:18",
+    "quando": "há 5 anos",
+    "views": "92 visualizações"
+   },
+   {
+    "id": "iwYgi5JwIgg",
+    "titulo": "ESTAMOS PERTO DA LEGALIZAÇÃO DA MAC0NHA? | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "5:39",
+    "quando": "há 5 anos",
+    "views": "61.400 visualizações"
+   },
+   {
+    "id": "Y3hET9t27Uk",
+    "titulo": "A maconha vai ser legalizada no Brasil? Cortes do Flow Podcast com Fernando Haddad",
+    "canal": "CastCast Cortes",
+    "canal_id": "UCUlWBeK5LeHM8pnA24TV-1A",
+    "duracao": "11:59",
+    "quando": "há 5 anos",
+    "views": "23 visualizações"
+   },
+   {
+    "id": "r36EDCEFijM",
+    "titulo": "Legalização Da Maconha | Tico Santa Cruz | Micro Corte do Flow",
+    "canal": "Micro Cortes Podcasts",
+    "canal_id": "UCUXCefOAQw0lT6DCT_r3XIw",
+    "duracao": "1:55",
+    "quando": "há 5 anos",
+    "views": "46 visualizações"
+   },
+   {
+    "id": "su6PEkfElr0",
+    "titulo": "DELEGADO DA CUNHA FALA SOBRE A LEGALIZAÇÃO DA MACONHA - CORTES DO FLOW",
+    "canal": "Cortes do Podcast",
+    "canal_id": "UCSEjjbpPw04C5udEjciBypg",
+    "duracao": "8:14",
+    "quando": "há 5 anos",
+    "views": "49 visualizações"
+   },
+   {
+    "id": "l-xLG3MLuvs",
+    "titulo": "LEGALIZAÇÃO DA MACONHA",
+    "canal": "Small Flow's - Cortes do Flow Podcast e Podpah",
+    "canal_id": "UCFSP-oyzVEvuSBRrv3pGroA",
+    "duracao": "30:55",
+    "quando": "há 5 anos",
+    "views": "2 visualizações"
+   },
+   {
+    "id": "o4DV4zxPoxE",
+    "titulo": "A REALIDADE sobre a M4CONH4 no Brasil, o que a POLÍCIA não quer que você SAIBA",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "11:33",
+    "quando": "há 1 ano",
+    "views": "382.767 visualizações"
+   },
+   {
+    "id": "u-p4mowR3Tc",
+    "titulo": "IGOR E WHINDERSSON NUNES 100% SINCEROS sobre LEGALIZAÇÃO da MACONHA",
+    "canal": "Talk Flow",
+    "canal_id": "UCBKGVVNbt1Be3tspNHp-6Cw",
+    "duracao": "15:33",
+    "quando": "há 7 meses",
+    "views": "144.513 visualizações"
+   }
+  ]
+ },
+ {
+  "tema": "maconha",
+  "busca": "cortes do flow drogas descriminalização",
+  "resultados": [
+   {
+    "id": "AMhdopjTqsY",
+    "titulo": "EFEITO DAS DROGAS NA VIDA DO DANILO GENTILI | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "5:32",
+    "quando": "há 5 anos",
+    "views": "1.029.334 visualizações"
+   },
+   {
+    "id": "mnbgTSi_Wbg",
+    "titulo": "IGOR COLOCA LULA CONTRA A PAREDE sobre relação com STF",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "10:19",
+    "quando": "há 12 dias",
+    "views": "31.701 visualizações"
+   },
+   {
+    "id": "a-APDVJPRek",
+    "titulo": "DESCRIMINALIZAÇÃO DO ABORTO E DROGAS | Cortes do Flow Podquest",
+    "canal": "Flow Podquest",
+    "canal_id": "UCbTauqAmPgxW_NTvNOVUHgw",
+    "duracao": "6:00",
+    "quando": "há 5 anos",
+    "views": "332 visualizações"
+   },
+   {
+    "id": "dxWbQIOkZz8",
+    "titulo": "FLOW E DA CUNHA DEBATEM LEGALIZAÇÃO DAS DROGAS   Cortes do Flow",
+    "canal": "Cortes PodCast's",
+    "canal_id": "UCWhHTQMQyEeGFsg34a9P-wA",
+    "duracao": "20:48",
+    "quando": "há 5 anos",
+    "views": "3 visualizações"
+   },
+   {
+    "id": "UrbDzAJhP3Y",
+    "titulo": "LULA EXPÕE o real objetivo das TARIFAS de TRUMP e revela BASTIDORES com o presidente",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:31",
+    "quando": "há 12 dias",
+    "views": "17.054 visualizações"
+   },
+   {
+    "id": "MCdbcZHdFRs",
+    "titulo": "DESCRIMINALIZAÇÃO DE DROGAS  | JOICE HASSELMANN - Flow Podcast #252",
+    "canal": "Cortes do Flow [PODCAST]",
+    "canal_id": "UCX0j-RFG6dYlzbncCDxG_3g",
+    "duracao": "2:14",
+    "quando": "há 5 anos",
+    "views": "30 visualizações"
+   },
+   {
+    "id": "Q_1U3mHdJeI",
+    "titulo": "MINISTROS BATEM BOCA EM JULGAMENTO SOBRE PORTE DE DROGAS #FN",
+    "canal": "Cortes do Flow News [OFICIAL]",
+    "canal_id": "UCKonBrqdQ0ZgKicDsLTjO-g",
+    "duracao": "8:11",
+    "quando": "há 2 anos",
+    "views": "2.119 visualizações"
+   },
+   {
+    "id": "unZcDsqrgEM",
+    "titulo": "A LEGALIZAÇÃO RESOLVERIA A SUPERLOTAÇÃO DOS PRESÍDIOS? | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "14:08",
+    "quando": "há 5 anos",
+    "views": "129.323 visualizações"
+   },
+   {
+    "id": "N3eU-2VIByQ",
+    "titulo": "FABIO AKITA - Flow #663",
+    "canal": "Flow Podcast",
+    "canal_id": "UC4ncvgh5hFr5O83MH7-jRJg",
+    "duracao": "",
+    "quando": "",
+    "views": "6.750 assistindo"
+   },
+   {
+    "id": "umR_VLzDq6o",
+    "titulo": "ZANIN VOTA CONTRA DESCRIMINALIZAÇÃO DO PORTE DE DROGAS E IRRITA ESQUERDA - FLOW NEWS #79 #FN",
+    "canal": "Flow News",
+    "canal_id": "UCYpE7GffL46a9WT5b-Rekpg",
+    "duracao": "58:16",
+    "quando": "Transmitido há 3 anos",
+    "views": "2.904 visualizações"
+   },
+   {
+    "id": "M9-3tjhDVJo",
+    "titulo": "MONARK e MORO DEBATEM LIBERAÇÃO das DROGAS",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "9:48",
+    "quando": "há 4 anos",
+    "views": "467.373 visualizações"
+   },
+   {
+    "id": "ai6ON6sezyw",
+    "titulo": "'A população vai se ASSUSTAR': REINALDO AZEVEDO REFUTA TODO O PLANO ECONOMICO de Flávio Bolsonaro",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "35:30",
+    "quando": "há 5 dias",
+    "views": "1.203.141 visualizações"
+   },
+   {
+    "id": "mZal-NT4xu0",
+    "titulo": "IGOR faz as PERGUNTAS que TODO MUNDO queria fazer pro LULA",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:41",
+    "quando": "há 12 dias",
+    "views": "283.331 visualizações"
+   },
+   {
+    "id": "jPLky0Crh5I",
+    "titulo": "COMO CONSEGUIRAM ACABAR COM A LAVA JATO? | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "14:37",
+    "quando": "há 4 anos",
+    "views": "12.285 visualizações"
+   },
+   {
+    "id": "fCSP18sUpbY",
+    "titulo": "DESCRIMINALIZAÇÃO DA MACONHA  - FLOW | Cortes do AdHoc",
+    "canal": "AdHoc Podcast",
+    "canal_id": "UCGBVqE_6Lqg4GAoX-pP5LpA",
+    "duracao": "4:24",
+    "quando": "há 5 anos",
+    "views": "3.576 visualizações"
+   }
+  ]
+ },
+ {
+  "tema": "super-ricos",
+  "busca": "cortes do flow imposto ricos",
+  "resultados": [
+   {
+    "id": "yJLt5aiPWhk",
+    "titulo": "Precisamos TAXAR os mais RICOS",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "11:49",
     "quando": "há 3 anos",
-    "views": "958 visualizações"
+    "views": "27.103 visualizações"
    },
    {
-    "id": "KaTHpX0375U",
-    "titulo": "Marina Silva defende avaliação ambiental para exploração de petróleo na Foz do Amazonas",
-    "canal": "Jovem Pan News",
-    "canal_id": "UCP391YRAjSOdM_bwievgaZA",
-    "duracao": "5:12",
-    "quando": "há 1 mês",
-    "views": "721 visualizações"
-   },
-   {
-    "id": "f_0ijIvhDxU",
-    "titulo": "Marina Silva nega influência política em licença para explorar petróleo na foz do Amazonas",
-    "canal": "Terra Brasil",
-    "canal_id": "UCWeXgaH6wwyTRAkA3n6sRxg",
-    "duracao": "1:51",
-    "quando": "há 11 meses",
-    "views": "659 visualizações"
-   },
-   {
-    "id": "zhRlYL70Xw4",
-    "titulo": "Parecer da AGU deve pressionar Marina Silva e Ibama | CNN 360°",
-    "canal": "CNN Brasil",
-    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
-    "duracao": "5:00",
+    "id": "LUb0wYqXc40",
+    "titulo": "Por que pagamos IMPOSTOS?",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "7:43",
     "quando": "há 3 anos",
-    "views": "750 visualizações"
+    "views": "11.643 visualizações"
    },
    {
-    "id": "WQcDnbxjXQg",
-    "titulo": "Alckmin recebe Marina Silva e Silveira para discutir exploração de petróleo na foz do Amazonas",
-    "canal": "Jovem Pan  - 3 em 1",
-    "canal_id": "UCEsbaUdrM_87K-2um30hf8Q",
-    "duracao": "8:28",
+    "id": "2M9gaPXA-4k",
+    "titulo": "O BRASIL COBRA IMPOSTO DE FORMA BURRA | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "13:47",
+    "quando": "há 4 anos",
+    "views": "36.269 visualizações"
+   },
+   {
+    "id": "MLpsKK2KF1M",
+    "titulo": "RICO DEVERIA PAGAR MAIS IMPOSTO (Eduardo Marinho e Chavoso da USP)",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "6:00",
+    "quando": "há 4 anos",
+    "views": "9.485 visualizações"
+   },
+   {
+    "id": "P6dMGNvKI6g",
+    "titulo": "COMO FUNCIONA A TRIBUTAÇÃO DOS PRÊMIOS | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "4:10",
+    "quando": "há 5 anos",
+    "views": "6.713 visualizações"
+   },
+   {
+    "id": "oNj8gzjpdvg",
+    "titulo": "IMPOSTO não é ROUBO",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "3:44",
     "quando": "há 3 anos",
-    "views": "3.812 visualizações"
+    "views": "15.144 visualizações"
    },
    {
-    "id": "Pow47SFo_XA",
-    "titulo": "Marina Silva fala pela 1ª vez sobre governo liberar exploração da Foz do Amazonas; ouça",
-    "canal": "Rádio CBN",
-    "canal_id": "UCbiGwU0-W1XCDUrt3BTVrag",
-    "duracao": "3:06",
-    "quando": "há 11 meses",
-    "views": "553 visualizações"
+    "id": "2rnlmxbXNS4",
+    "titulo": "POR QUE OS SUPER RICOS PAGAM MENOS IMPOSTOS QUE VOCÊ #TN",
+    "canal": "Cortes do Flow News [OFICIAL]",
+    "canal_id": "UCKonBrqdQ0ZgKicDsLTjO-g",
+    "duracao": "7:10",
+    "quando": "há 2 anos",
+    "views": "1.652 visualizações"
    },
    {
-    "id": "LAK4-59woPE",
-    "titulo": "Marina Silva: Exploração de petróleo na Margem Equatorial precisa de governança ambiental",
-    "canal": "TV 247",
-    "canal_id": "UCRuy5PigeeBuecKnwqhM4yg",
-    "duracao": "35:22",
-    "quando": "há 11 meses",
-    "views": "1.131 visualizações"
+    "id": "m1on_mpbtDs",
+    "titulo": "E OS IMPOSTOS SOBRE CONSUMO ? | CIRO GOMES - FLOW PODCAST",
+    "canal": "CORTE SECO",
+    "canal_id": "UCU4WRzKawIbhubonXAbxBmQ",
+    "duracao": "6:26",
+    "quando": "há 5 anos",
+    "views": "164 visualizações"
    },
    {
-    "id": "pVa0lTE5v7g",
-    "titulo": "Marina Silva critica AGU por liberar exploração de petróleo na foz do Amazonas",
+    "id": "k3pd27C7Igs",
+    "titulo": "O problema do IMPOSTO no BRASIL",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:16",
+    "quando": "há 3 anos",
+    "views": "8.654 visualizações"
+   },
+   {
+    "id": "iwzrErtH-_w",
+    "titulo": "Lula se Revolta com Super-Ricos: \"Não Pagam 1% de Imposto!\", Desafia Bets e Banco Master",
+    "canal": "KilluaCortes",
+    "canal_id": "UCcGa13gGyVXAiWovcknzHEQ",
+    "duracao": "8:06",
+    "quando": "há 1 dia",
+    "views": "2 visualizações"
+   },
+   {
+    "id": "ROWCG8rACHs",
+    "titulo": "RICO DEVERIA PAGAR MAIS IMPOSTO (Eduardo Marinho e Chavoso da USP)",
+    "canal": "Cortes do Flow",
+    "canal_id": "UCm0JebooMtbIzzVG87IwG8A",
+    "duracao": "6:01",
+    "quando": "há 4 anos",
+    "views": "5 visualizações"
+   },
+   {
+    "id": "hcVJObLjhoE",
+    "titulo": "PRIMO RICO VAI COMPRAR O FLOW? | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "6:25",
+    "quando": "há 5 anos",
+    "views": "43.745 visualizações"
+   },
+   {
+    "id": "-cuhnwE_zHI",
+    "titulo": "CIRO GOMES SOBRE A COBRANÇA DESIGUAL DE IMPOSTOS NO BRASIL. FLOW PODCAST",
+    "canal": "Cortes Apimentados",
+    "canal_id": "UCSsT7zeRPwSiuR2dpdHjRDQ",
+    "duracao": "2:38",
+    "quando": "há 5 anos",
+    "views": "10 visualizações"
+   },
+   {
+    "id": "jjLva73A_KM",
+    "titulo": "DAVY JONES - Você conhece a escala de impostos no Brasil?",
+    "canal": "IDEIAS NO FLOW",
+    "canal_id": "UCu95nN1HJB98oxBfFBY9-5Q",
+    "duracao": "3:28",
+    "quando": "há 5 anos",
+    "views": "56 visualizações"
+   },
+   {
+    "id": "npO5_kd1GNg",
+    "titulo": "IGOR 3K DANDO RAGE COM OS IMPOSTOS DO BRASIL | FLOW PODCAST",
+    "canal": "Os melhores Podcasts do Mundo",
+    "canal_id": "UCOVo__wdoOeiIw1zY1VOuIg",
+    "duracao": "4:04",
+    "quando": "há 5 anos",
+    "views": "95 visualizações"
+   }
+  ]
+ },
+ {
+  "tema": "aborto",
+  "busca": "cortes do flow aborto",
+  "resultados": [
+   {
+    "id": "DVI9WHJ4eQE",
+    "titulo": "UM DEBATE SOBRE AB0RT0 | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "4:11",
+    "quando": "há 5 anos",
+    "views": "216.614 visualizações"
+   },
+   {
+    "id": "u0MwOPf9JLg",
+    "titulo": "ABORTO E FEMINISMO | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "5:27",
+    "quando": "há 6 anos",
+    "views": "72.962 visualizações"
+   },
+   {
+    "id": "YSbl4EElm7g",
+    "titulo": "Você é a favor da LEGALIZAÇÃO do ABORTO?",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:55",
+    "quando": "há 3 anos",
+    "views": "15.216 visualizações"
+   },
+   {
+    "id": "7hA73CvycCg",
+    "titulo": "MEU CORPO minhas regras? (PASTOR OPINA sobre ab0rto)",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "17:54",
+    "quando": "há 4 anos",
+    "views": "484.843 visualizações"
+   },
+   {
+    "id": "bMSNPlkuHWE",
+    "titulo": "O QUE LUCAS PAVANATO TEM A DIZER SOBRE O ABORTO? #FN",
+    "canal": "Cortes do Flow News [OFICIAL]",
+    "canal_id": "UCKonBrqdQ0ZgKicDsLTjO-g",
+    "duracao": "6:30",
+    "quando": "há 2 anos",
+    "views": "6.304 visualizações"
+   },
+   {
+    "id": "RqANge5pFGk",
+    "titulo": "ARTHUR DO VAL é SINCERO ATÉ DEMAIS sobre o Partido Missão nas ELEIÇÕES 2026",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:17",
+    "quando": "há 22 horas",
+    "views": "251.411 visualizações"
+   },
+   {
+    "id": "FRgzejpf7ds",
+    "titulo": "O DILEMA DA CRIMINALIZAÇÃO DO ABORTO E A MORALIDADE RELIGIOSA #PA",
+    "canal": "Cortes do Flow News [OFICIAL]",
+    "canal_id": "UCKonBrqdQ0ZgKicDsLTjO-g",
+    "duracao": "9:20",
+    "quando": "há 2 anos",
+    "views": "97 visualizações"
+   },
+   {
+    "id": "RRnXyFsGsPM",
+    "titulo": "TREINANDO os CANDIDATOS à PRESIDÊNCIA: Julio Balestrin é 100% SINCERO no Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:07",
+    "quando": "há 2 meses",
+    "views": "656.957 visualizações"
+   },
+   {
+    "id": "N3eU-2VIByQ",
+    "titulo": "FABIO AKITA - Flow #663",
+    "canal": "Flow Podcast",
+    "canal_id": "UC4ncvgh5hFr5O83MH7-jRJg",
+    "duracao": "",
+    "quando": "",
+    "views": "6.750 assistindo"
+   },
+   {
+    "id": "8xvuvy0-5wM",
+    "titulo": "Arthur do Val PERDE A PACIÊNCIA sobre as ELEIÇÕES 2026",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "10:08",
+    "quando": "há 21 horas",
+    "views": "30.704 visualizações"
+   },
+   {
+    "id": "SctscfQNTnw",
+    "titulo": "ESQUERDA x DIREITA: Debate e DENÚNCIAS GRAVES sobre ABORTO",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "7:15",
+    "quando": "há 1 ano",
+    "views": "5.614 visualizações"
+   },
+   {
+    "id": "0zxZVgHmPbY",
+    "titulo": "PROFESSOR CLÓVIS DE BARROS FILHO REVELA TUMOR | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "13:42",
+    "quando": "há 5 anos",
+    "views": "1.413.959 visualizações"
+   },
+   {
+    "id": "3Eik-3rbyDE",
+    "titulo": "CONVIDADA DEIXA MONARK SEM PALAVRAS | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "13:54",
+    "quando": "há 5 anos",
+    "views": "963.902 visualizações"
+   },
+   {
+    "id": "LfApAhXclvk",
+    "titulo": "Lula no Flow: Petista diz que é contra o aborto: ‘Não é bom para o pai, para a mãe para ninguém’",
     "canal": "UOL",
     "canal_id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
-    "duracao": "4:46",
+    "duracao": "0:40",
     "quando": "há 3 anos",
-    "views": "3.407 visualizações"
+    "views": "100.145 visualizações"
    },
    {
-    "id": "TXxjIMXNqrM",
-    "titulo": "Marina Silva diz que autorização para pesquisa na Foz do Amazonas foi técnica | #SBTBrasil",
-    "canal": "SBT News",
-    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
-    "duracao": "2:02",
-    "quando": "há 11 meses",
-    "views": "53.956 visualizações"
-   },
-   {
-    "id": "eX9-YY4IL1A",
-    "titulo": "Após derrota com exploração do petróleo, Marina tenta manter discurso de que decisão foi técnica",
-    "canal": "Rádio CBN",
-    "canal_id": "UCbiGwU0-W1XCDUrt3BTVrag",
-    "duracao": "3:24",
-    "quando": "há 11 meses",
-    "views": "2.942 visualizações"
-   },
-   {
-    "id": "okIYZaJJfJ8",
-    "titulo": "Briga por exploração de petróleo na Foz do Amazonas 'não está terminada e vai ser longa'",
-    "canal": "Rádio CBN",
-    "canal_id": "UCbiGwU0-W1XCDUrt3BTVrag",
-    "duracao": "1:01",
-    "quando": "há 3 anos",
-    "views": "1.137 visualizações"
-   },
-   {
-    "id": "-_5zX77eRhE",
-    "titulo": "Marina Silva: uma espécie de greenwash governamental, pouco ouvida na exploração de petróleo",
-    "canal": "Meio",
-    "canal_id": "UCugK_9W-5o56H0pEnJtFQnw",
-    "duracao": "14:00",
-    "quando": "há 9 meses",
-    "views": "2.397 visualizações"
+    "id": "a-APDVJPRek",
+    "titulo": "DESCRIMINALIZAÇÃO DO ABORTO E DROGAS | Cortes do Flow Podquest",
+    "canal": "Flow Podquest",
+    "canal_id": "UCbTauqAmPgxW_NTvNOVUHgw",
+    "duracao": "6:00",
+    "quando": "há 5 anos",
+    "views": "332 visualizações"
    }
   ]
  },
  {
-  "tema": "foz",
-  "busca": "Observatório do Clima foz do Amazonas petróleo",
+  "tema": "marco-temporal",
+  "busca": "cortes do flow marco temporal indígenas",
   "resultados": [
    {
-    "id": "n5q7XswP4sE",
-    "titulo": "Quais são os desafios da exploração de petróleo na Foz do Amazonas? | JP SUSTENTÁVEL",
-    "canal": "Jovem Pan News",
-    "canal_id": "UCP391YRAjSOdM_bwievgaZA",
-    "duracao": "1:19",
-    "quando": "há 11 meses",
-    "views": "630 visualizações"
+    "id": "do8wR9_HQN4",
+    "titulo": "MARCO TEMPORAL PODE TER BRECHAS PARA GARIMPO EM TERRAS INDÍGENAS",
+    "canal": "Cortes do Flow News [OFICIAL]",
+    "canal_id": "UCKonBrqdQ0ZgKicDsLTjO-g",
+    "duracao": "16:06",
+    "quando": "há 3 anos",
+    "views": "32 visualizações"
    },
    {
-    "id": "SBlrTYrqXMQ",
-    "titulo": "O que a Petrobras encontrou na Foz do Amazonas?",
-    "canal": "ClimaInfo",
-    "canal_id": "UCXVByzztFqj5L3AsDS28ANw",
-    "duracao": "1:00:27",
-    "quando": "Transmitido há 1 mês",
-    "views": "328 visualizações"
+    "id": "fEmmVkVjk8o",
+    "titulo": "IGOR ENCURRALA TEBET: A VERDADE sobre as TERRAS RARAS e o Governo Lula",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "12:25",
+    "quando": "há 2 semanas",
+    "views": "8.035 visualizações"
    },
    {
-    "id": "JAo4IzWiClI",
-    "titulo": "Petrobras se prepara para analisar óleo descoberto na Foz do Amazonas",
-    "canal": "Jovem Pan News",
-    "canal_id": "UCP391YRAjSOdM_bwievgaZA",
-    "duracao": "1:55",
-    "quando": "há 1 mês",
-    "views": "4.305 visualizações"
-   },
-   {
-    "id": "mwEwQfj6XEA",
-    "titulo": "Exploração de petróleo na foz do Amazonas ameaça santuário ecológico",
-    "canal": "TV Unicamp",
-    "canal_id": "UCIbv86TkZal7E9QWkatWBLA",
-    "duracao": "34:40",
-    "quando": "há 11 meses",
-    "views": "497 visualizações"
-   },
-   {
-    "id": "6JJ2yQ-yTVE",
-    "titulo": "#38 | Petróleo na Foz do Amazonas: soberania ou destruição?",
-    "canal": "Brasil de Fato",
-    "canal_id": "UCOnuheHbS2DgZiAZFL0-Sbg",
-    "duracao": "59:00",
-    "quando": "há 11 meses",
-    "views": "5.672 visualizações"
-   },
-   {
-    "id": "oVcDm8UBR7E",
-    "titulo": "Petrobrás anuncia nova descoberta de petróleo na foz amazonas",
-    "canal": "Canal Rural",
-    "canal_id": "UCcmbSgSpK0dQhw3IBaBGo-g",
-    "duracao": "1:33",
+    "id": "c5r_NyJS1X4",
+    "titulo": "LULA 100% SINCERO sobre ALEXANDRE de Moraes",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "11:39",
     "quando": "há 12 dias",
-    "views": "565 visualizações"
+    "views": "42.469 visualizações"
    },
    {
-    "id": "ExZYH-LWu6w",
-    "titulo": "Quais os impactos da exploração de petróleo na foz do Amazonas?",
-    "canal": "Brasil de Fato",
-    "canal_id": "UCOnuheHbS2DgZiAZFL0-Sbg",
-    "duracao": "3:53",
-    "quando": "há 1 ano",
-    "views": "14.626 visualizações"
+    "id": "ONARqavaGuw",
+    "titulo": "Análise: Marco Temporal das terras indígenas",
+    "canal": "AgroMais",
+    "canal_id": "UCgxHcOl2hA1It6QOfOLyJLA",
+    "duracao": "11:43",
+    "quando": "há 9 meses",
+    "views": "380 visualizações"
    },
    {
-    "id": "frCo7wKyLc8",
-    "titulo": "Petrobras anuncia nova descoberta de petróleo na Foz do Amazonas | #NewsNoite",
-    "canal": "SBT News",
-    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
-    "duracao": "13:27",
-    "quando": "há 11 dias",
-    "views": "17.461 visualizações"
-   },
-   {
-    "id": "Qch7tvsGoDM",
-    "titulo": "Petrobras encontra indícios de petróleo na Foz do Amazonas | #NewsSábado",
-    "canal": "SBT News",
-    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
-    "duracao": "16:52",
-    "quando": "há 1 mês",
-    "views": "13.260 visualizações"
-   },
-   {
-    "id": "0wg91dSPHZw",
-    "titulo": "Petrobras anuncia descoberta de petróleo na Foz do Amazonas | HORA H",
-    "canal": "CNN Brasil e CNN Brasil Money",
-    "canal_id": null,
-    "duracao": "12:09",
-    "quando": "há 2 meses",
-    "views": "52.346 visualizações"
-   },
-   {
-    "id": "JhEUvtRPeLM",
-    "titulo": "Petrobras anuncia descoberta de petróleo na Foz do Amazonas",
-    "canal": "Canal Rural",
-    "canal_id": "UCcmbSgSpK0dQhw3IBaBGo-g",
-    "duracao": "4:42",
-    "quando": "há 1 mês",
-    "views": "499 visualizações"
-   },
-   {
-    "id": "hwjoSkTADkc",
-    "titulo": "AGU abre caminho para exploração de petróleo na foz do Amazonas; Beraldo e d'Avila analisam",
+    "id": "hIkX_0FiNDw",
+    "titulo": "Entenda a polêmica do marco temporal para terras indígenas | Tá Explicado",
     "canal": "Jovem Pan News",
     "canal_id": "UCP391YRAjSOdM_bwievgaZA",
-    "duracao": "6:23",
+    "duracao": "3:14",
+    "quando": "há 5 anos",
+    "views": "22.340 visualizações"
+   },
+   {
+    "id": "QtCm_akvJjc",
+    "titulo": "Entenda o problema do marco temporal | Cortes Café com Boulos",
+    "canal": "Guilherme Boulos",
+    "canal_id": "UCFwzvNKpQWKMbiOHJ26IEnQ",
+    "duracao": "3:05",
     "quando": "há 3 anos",
-    "views": "5.528 visualizações"
+    "views": "5.536 visualizações"
    },
    {
-    "id": "8zavEblDI04",
-    "titulo": "Petrobras identificou indícios de petróleo na Foz do Amazonas #brasil",
-    "canal": "MM MONTEIROS",
-    "canal_id": "UC2MBe_bFxUFkTfmRE1P9wdQ",
-    "duracao": "0:15",
-    "quando": "há 1 mês",
-    "views": "1.042 visualizações"
-   },
-   {
-    "id": "Nl0ldQRS4s8",
-    "titulo": "Exploração de petróleo na Foz do Amazonas e mais notícias socioambientais - VERDE MAR #73",
-    "canal": "CUMULUS TV",
-    "canal_id": "UCBNUPpxK5WNm54dul-grxvg",
-    "duracao": "24:13",
-    "quando": "Transmitido há 6 anos",
-    "views": "230 visualizações"
-   },
-   {
-    "id": "pXzU2J-vq8o",
-    "titulo": "Exploração de petróleo na foz do rio Amazonas divide opiniões - 24/11/2022",
-    "canal": "Câmara dos Deputados",
-    "canal_id": "UC-ZkSRh-7UEuwXJQ9UMCFJA",
-    "duracao": "3:38",
+    "id": "FJRJ2uaA1DM",
+    "titulo": "Marco temporal e o futuro da demarcação de terras indígenas",
+    "canal": "Estadão",
+    "canal_id": "UCrtOL8bJsh-csozGS2aV77Q",
+    "duracao": "32:11",
     "quando": "há 3 anos",
-    "views": "831 visualizações"
+    "views": "1.133 visualizações"
+   },
+   {
+    "id": "6ecd6hGAAKM",
+    "titulo": "STF invalida marco temporal como critério para demarcação de terras indígenas | AFP",
+    "canal": "AFP Português",
+    "canal_id": "UCamgdcs45ToPrIV7wmT7iYg",
+    "duracao": "1:32",
+    "quando": "há 9 meses",
+    "views": "5.041 visualizações"
+   },
+   {
+    "id": "lWlwyEfNV-k",
+    "titulo": "O marco temporal e a ofensiva aos direitos indígenas | O Assunto",
+    "canal": "g1",
+    "canal_id": "UCaGmdJSSiR7fkh2A-c6emsA",
+    "duracao": "26:57",
+    "quando": "há 10 meses",
+    "views": "19.584 visualizações"
+   },
+   {
+    "id": "fo2pZZBxMts",
+    "titulo": "Senado aprova PEC do marco temporal de demarcação de terras indígenas | HORA H",
+    "canal": "CNN Brasil",
+    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
+    "duracao": "1:02",
+    "quando": "há 10 meses",
+    "views": "5.647 visualizações"
+   },
+   {
+    "id": "0tULMQq3DfY",
+    "titulo": "MARCO TEMPORAL: o que é e como afeta povos indígenas | Sociologia para o Enem | Fábio Pereira",
+    "canal": "Curso Enem Gratuito",
+    "canal_id": "UC_53VGoH_0XLFmYVpGMvhvg",
+    "duracao": "7:34",
+    "quando": "há 1 ano",
+    "views": "3.045 visualizações"
+   },
+   {
+    "id": "5vXztBXlXb0",
+    "titulo": "INDÍGENAS PROTESTAM EM RODOVIAS | FALA DE LULA SOBRE MADURO REPERCUTE - TRENDING TOPICS - #11 #TT",
+    "canal": "Flow News",
+    "canal_id": "UCYpE7GffL46a9WT5b-Rekpg",
+    "duracao": "41:06",
+    "quando": "Transmitido há 3 anos",
+    "views": "1.040 visualizações"
+   },
+   {
+    "id": "C9t7GuZZoxo",
+    "titulo": "Marco temporal: Extrema direita ruralista usa ataques a indígenas para se fortalecer | Sakamoto",
+    "canal": "UOL",
+    "canal_id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
+    "duracao": "6:53",
+    "quando": "há 3 anos",
+    "views": "16.154 visualizações"
+   },
+   {
+    "id": "HQ6pOpp1Iko",
+    "titulo": "Povos indígenas: Marco Temporal e exploração de terras em pauta",
+    "canal": "TV Brasil",
+    "canal_id": "UCSv9d0kQegylHWpP83jWSQg",
+    "duracao": "2:11",
+    "quando": "há 4 anos",
+    "views": "1.830 visualizações"
+   },
+   {
+    "id": "l7lCHExxh8A",
+    "titulo": "COMO O MARCO TEMPORAL AUMENTOU OS CONFLITOS INDÍGENAS | Cortes do Ian Neves",
+    "canal": "Ian Neves",
+    "canal_id": "UCAMExYqcweM7PUebKfmLdFA",
+    "duracao": "10:20",
+    "quando": "há 2 anos",
+    "views": "29.560 visualizações"
+   }
+  ]
+ },
+ {
+  "tema": "marco-temporal",
+  "busca": "cortes do flow terra indígena agro",
+  "resultados": [
+   {
+    "id": "qRwTUqdyG2k",
+    "titulo": "IGOR foi sincero ATÉ DEMAIS com Presidente Lula...",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "11:14",
+    "quando": "há 12 dias",
+    "views": "72.283 visualizações"
+   },
+   {
+    "id": "Z3BH2kjFnhw",
+    "titulo": "NADA É NOSSO: Como o AGRO ENGANOU você TODOS esses ANOS",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "10:11",
+    "quando": "há 1 ano",
+    "views": "27.659 visualizações"
+   },
+   {
+    "id": "qT_arzKV_Xg",
+    "titulo": "\"DE MIM O AGRO GOSTA!\" 🚜 #fernandohaddad #agronegocio #politica #flow #fyp",
+    "canal": "Flow Podcast",
+    "canal_id": "UC4ncvgh5hFr5O83MH7-jRJg",
+    "duracao": "0:38",
+    "quando": "há 2 semanas",
+    "views": "59.251 visualizações"
+   },
+   {
+    "id": "TTwnBEUdZHA",
+    "titulo": "✅MONARK Vocês tem Problema com Indígenas!? Ministro Tarcísio Gomes Podcast Flow",
+    "canal": "Cortes inteligentes Podcast",
+    "canal_id": "UClMTY1NAQJU1rfnvTWVfIfA",
+    "duracao": "4:26",
+    "quando": "há 4 anos",
+    "views": "17 visualizações"
+   },
+   {
+    "id": "UrbDzAJhP3Y",
+    "titulo": "LULA EXPÕE o real objetivo das TARIFAS de TRUMP e revela BASTIDORES com o presidente",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:31",
+    "quando": "há 12 dias",
+    "views": "17.054 visualizações"
+   },
+   {
+    "id": "FwzOqyk0_mQ",
+    "titulo": "O MODELO TRIBUTÁRIO BRASILEIRO PRECISA MUDAR? | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "10:36",
+    "quando": "há 5 anos",
+    "views": "26.017 visualizações"
+   },
+   {
+    "id": "3uI0uaexj7E",
+    "titulo": "IGOR REVELA BASTIDORES com a equipe de LULA em entrevista no PLANALTO CENTRAL",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:03",
+    "quando": "há 5 dias",
+    "views": "139.843 visualizações"
+   },
+   {
+    "id": "p_9lw8YVG0U",
+    "titulo": "O QUE ESPERAR se FLÁVIO BOLSONARO for PRESIDENTE?",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:06",
+    "quando": "há 7 dias",
+    "views": "49.486 visualizações"
+   },
+   {
+    "id": "mZal-NT4xu0",
+    "titulo": "IGOR faz as PERGUNTAS que TODO MUNDO queria fazer pro LULA",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:41",
+    "quando": "há 12 dias",
+    "views": "283.331 visualizações"
+   },
+   {
+    "id": "LtYAxJYUHKk",
+    "titulo": "ACHO BESTEIRA O TÉCNICO TER QUE SER BRASILEIRO | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:06",
+    "quando": "há 4 anos",
+    "views": "130.935 visualizações"
+   },
+   {
+    "id": "NbF_YSrp41c",
+    "titulo": "A guerra entre AGRO x AMBIENTALISTAS",
+    "canal": "Flow INC",
+    "canal_id": "UCjmP6SouOgOupZdM4TpvNKg",
+    "duracao": "0:58",
+    "quando": "há 2 anos",
+    "views": "434 visualizações"
+   },
+   {
+    "id": "v4qnSVem_WU",
+    "titulo": "A ORIGEM DE MARCELO TAS NA TV | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "4:23",
+    "quando": "há 5 anos",
+    "views": "18.374 visualizações"
+   },
+   {
+    "id": "_VBXtMHrcEk",
+    "titulo": "CIRO GOMES SOBRE GOVERNO DO PT | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "3:07",
+    "quando": "há 5 anos",
+    "views": "70.426 visualizações"
+   },
+   {
+    "id": "7Wj6p0Jr5h4",
+    "titulo": "EM QUEM VOTAR EM 2022? | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "5:51",
+    "quando": "há 5 anos",
+    "views": "88.383 visualizações"
+   },
+   {
+    "id": "RMcYVXS-qH8",
+    "titulo": "TAS CRITICA DURAMENTE RAFINHA BASTOS | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "5:25",
+    "quando": "há 5 anos",
+    "views": "266.512 visualizações"
    }
   ]
  },
  {
   "tema": "foz",
-  "busca": "Flow petróleo margem equatorial",
+  "busca": "cortes do flow petróleo margem equatorial",
   "resultados": [
    {
-    "id": "IrmbnugQIKs",
-    "titulo": "Petrobras pede mais poços na Margem Equatorial e menos compensação ambiental | CNN 360º",
-    "canal": "CNN Brasil",
-    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
-    "duracao": "4:04",
-    "quando": "há 11 meses",
-    "views": "48.170 visualizações"
+    "id": "UrbDzAJhP3Y",
+    "titulo": "LULA EXPÕE o real objetivo das TARIFAS de TRUMP e revela BASTIDORES com o presidente",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:31",
+    "quando": "há 12 dias",
+    "views": "17.054 visualizações"
    },
    {
-    "id": "qBlloyDFU_U",
-    "titulo": "Infra em 1 Minuto: Exploração de petróleo na Margem Equatorial",
-    "canal": "Poder360",
-    "canal_id": "UCFCiSRbCVwQ_BQaDQBYxN_A",
-    "duracao": "2:26",
-    "quando": "há 11 meses",
-    "views": "2.110 visualizações"
-   },
-   {
-    "id": "kpR2l6Xe238",
-    "titulo": "Lula comenta Margem Equatorial e diz que petróleo financiará transição | BASTIDORES CNN",
-    "canal": "CNN Brasil",
-    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
-    "duracao": "1:39",
-    "quando": "há 11 meses",
-    "views": "1.871 visualizações"
-   },
-   {
-    "id": "H_ZPm_HFtbU",
-    "titulo": "Petrobras avança na exploração da Margem Equatorial",
-    "canal": "Jovem Pan News",
-    "canal_id": "UCP391YRAjSOdM_bwievgaZA",
-    "duracao": "4:07",
-    "quando": "há 3 semanas",
-    "views": "11.495 visualizações"
-   },
-   {
-    "id": "W0Y044qfGLE",
-    "titulo": "Petróleo na Margem Equatorial - 10/11/2025 #BoraEntender",
-    "canal": "Câmara dos Deputados",
-    "canal_id": "UC-ZkSRh-7UEuwXJQ9UMCFJA",
-    "duracao": "1:01:01",
-    "quando": "Transmitido há 11 meses",
-    "views": "542 visualizações"
-   },
-   {
-    "id": "mFalHWXyknc",
-    "titulo": "Lula defende exploração de petróleo na Margem Equatorial",
-    "canal": "Poder360",
-    "canal_id": "UCFCiSRbCVwQ_BQaDQBYxN_A",
-    "duracao": "2:45",
-    "quando": "há 11 meses",
-    "views": "1.725 visualizações"
-   },
-   {
-    "id": "LdoC0VyOPkI",
-    "titulo": "EXPLORAÇÃO DO PETRÓLEO NA MARGEM EQUATORIAL",
-    "canal": "Os Economistas Podcast",
-    "canal_id": "UCIX5uq1meeqhtKdBIFwHGWg",
-    "duracao": "7:02",
+    "id": "10wA4ibkDvg",
+    "titulo": "LULA É CONFRONTADO POR CACIQUE RAONI SOBRE PETRÓLEO NA MARGEM EQUATORIAL #FN",
+    "canal": "Cortes do Flow News [OFICIAL]",
+    "canal_id": "UCKonBrqdQ0ZgKicDsLTjO-g",
+    "duracao": "7:11",
     "quando": "há 1 ano",
-    "views": "8.428 visualizações"
-   },
-   {
-    "id": "3VkyEX_CnB4",
-    "titulo": "Petrobras confirma petróleo no Amapá | Especial Margem Equatorial",
-    "canal": "Cidades & Negócios. Revista de Direito Público",
-    "canal_id": "UCE-KbatLa6WzNMD-nthu99g",
-    "duracao": "1:15",
-    "quando": "há 1 mês",
-    "views": "65 visualizações"
-   },
-   {
-    "id": "z5twTzKSndc",
-    "titulo": "Decisão sobre petróleo na Margem Equatorial é do Brasil, diz presidente da COP30 | CNN 360º",
-    "canal": "CNN Brasil",
-    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
-    "duracao": "1:30",
-    "quando": "há 11 meses",
-    "views": "547 visualizações"
-   },
-   {
-    "id": "bjkIWuHJFNs",
-    "titulo": "Em junho, Petrobras deve anunciar os primeiros resultados da Margem Equatorial- Macaé Energy 2026",
-    "canal": "CPG Click Petróleo e Gás",
-    "canal_id": "UCpTvNicZ16HXmTPQoyNY04Q",
-    "duracao": "1:36",
-    "quando": "há 6 meses",
-    "views": "364 visualizações"
-   },
-   {
-    "id": "Lm5BDGs_WeA",
-    "titulo": "PETRÓLEO na MARGEM EQUATORIAL: Marina Silva responde sobre exploração de combustíveis fósseis",
-    "canal": "Roda Viva",
-    "canal_id": "UCNVsZnDXOM4PodYIEgM2e4w",
-    "duracao": "3:21",
-    "quando": "há 1 ano",
-    "views": "3.789 visualizações"
-   },
-   {
-    "id": "9F-sskF9apQ",
-    "titulo": "🔥 Briga Explosiva: Petrobras vs IBAMA na Margem Equatorial! #Petróleo #Ambiente",
-    "canal": "Supremo Flow",
-    "canal_id": "UC592j5XkYrHMtPBZ4rB__jg",
-    "duracao": "0:43",
-    "quando": "há 1 ano",
-    "views": "912 visualizações"
+    "views": "1.488 visualizações"
    },
    {
     "id": "JYDHvjdChas",
@@ -826,1132 +1159,676 @@
     "views": "45 visualizações"
    },
    {
-    "id": "ktS8fIthnrg",
-    "titulo": "Coluna: Conexão Margem Equatorial #17",
-    "canal": "Cleber Barbosa",
-    "canal_id": "UCmJFCbe7stAh8rZhfNK0wbw",
-    "duracao": "19:06",
-    "quando": "há 2 semanas",
-    "views": "4 visualizações"
-   },
-   {
-    "id": "tsb-FGOM4-Y",
-    "titulo": "Margem Equatorial: os planos da Petrobras para a nova fronteira energética",
-    "canal": "InvestNews BR",
-    "canal_id": "UCo0jMsIPccAXghE_FCWIdNg",
-    "duracao": "6:06",
-    "quando": "há 11 meses",
-    "views": "42.801 visualizações"
-   }
-  ]
- },
- {
-  "tema": "civico",
-  "busca": "escola cívico-militar pais aprovam disciplina resultado",
-  "resultados": [
-   {
-    "id": "BSFb5NtIpmU",
-    "titulo": "Escola cívico-militar: valorizando a cidadania e disciplina no ensino",
-    "canal": "Programa ND Notícias",
-    "canal_id": "UCsv_0d3QHC1Gsxwwsk5wIxg",
-    "duracao": "4:04",
-    "quando": "há 2 anos",
-    "views": "727 visualizações"
-   },
-   {
-    "id": "_sQkQ6_1d_4",
-    "titulo": "Escola cívico-militar #educação #stf #disciplina",
-    "canal": "Izalci Lucas",
-    "canal_id": "UCKDa5K0okYZFF68qddBxnaw",
-    "duracao": "0:48",
-    "quando": "há 1 ano",
-    "views": "1.188 visualizações"
-   },
-   {
-    "id": "BkchXqRFJl4",
-    "titulo": "Escola Cívico-Militar Educação e Disciplina",
-    "canal": "Veterano Madruga",
-    "canal_id": "UC11-ngHzH2a-E028cTW9LJg",
-    "duracao": "0:21",
-    "quando": "há 3 anos",
-    "views": "42.990 visualizações"
-   },
-   {
-    "id": "1vTlXy84pyU",
-    "titulo": "7 regras de uma escola cívico-militar",
-    "canal": "UOL Prime ",
-    "canal_id": "UCY0tVnGvYPmYm7RbwJ89UNg",
-    "duracao": "2:13",
-    "quando": "há 1 ano",
-    "views": "22.832 visualizações"
-   },
-   {
-    "id": "evZvcwuh8Tk",
-    "titulo": "Escolas cívico-militares melhoram a disciplina? Especialistas discutem | Visão Crítica",
-    "canal": "Jovem Pan News",
-    "canal_id": "UCP391YRAjSOdM_bwievgaZA",
-    "duracao": "7:49",
-    "quando": "há 8 meses",
-    "views": "1.007 visualizações"
-   },
-   {
-    "id": "Wz09u9s4-QQ",
-    "titulo": "Disciplina da escola cívico militar @Rodrigo-Pimentel #crimes #boperj #militarismo",
-    "canal": "Rodrigo Pimentel | Papo De Elite",
-    "canal_id": "UCHbDrAtUpJzibwpgn13DRKw",
-    "duracao": "0:48",
-    "quando": "há 1 ano",
-    "views": "59.928 visualizações"
-   },
-   {
-    "id": "9a0tR01AVG8",
-    "titulo": "Chapecó: Pais, alunos e professores conhecem como será a escola cívico-militar",
-    "canal": "Balanço Geral Oeste",
-    "canal_id": "UCM7JhsmRtBVA4AurJE7s6gA",
-    "duracao": "4:35",
-    "quando": "há 6 anos",
-    "views": "1.835 visualizações"
-   },
-   {
-    "id": "qs4sb9C3UV0",
-    "titulo": "Disciplina nas escolas: o modelo cívico-militar funciona? | VISÃO CRÍTICA",
-    "canal": "Jovem Pan News",
-    "canal_id": "UCP391YRAjSOdM_bwievgaZA",
-    "duracao": "10:00",
-    "quando": "há 8 meses",
-    "views": "846 visualizações"
-   },
-   {
-    "id": "Xfsv6LwTyEo",
-    "titulo": "Veja por dentro como é uma escola cívico-militar",
-    "canal": "Estadão",
-    "canal_id": "UCrtOL8bJsh-csozGS2aV77Q",
-    "duracao": "6:02",
-    "quando": "há 5 anos",
-    "views": "59.586 visualizações"
-   },
-   {
-    "id": "UoVJ5eVNsW4",
-    "titulo": "Escola militarizada: um debate sobre a proposta de gestão compartilhada da educação",
-    "canal": "TV Senado",
-    "canal_id": "UCLgti7NuK0RuW9wty-fxPjQ",
-    "duracao": "27:51",
-    "quando": "há 7 anos",
-    "views": "18.221 visualizações"
-   },
-   {
-    "id": "b2KpFPy5kE8",
-    "titulo": "Banner convida pais de alunos para importante reunião. Escola Cívico-militar é o tema",
-    "canal": "Câmara Municipal de União do Sul - MT",
-    "canal_id": "UC4VZfZPBwSS_em7Yc_YKIFg",
-    "duracao": "1:39",
-    "quando": "há 6 meses",
-    "views": "41 visualizações"
-   },
-   {
-    "id": "lttn0h0dmEY",
-    "titulo": "No Sul do estado, Colégio Militar é exemplo de educação e disciplina",
-    "canal": "Balanço Geral Criciúma",
-    "canal_id": "UCIdN11UZFANc6gjtFqJJrOw",
-    "duracao": "5:37",
-    "quando": "há 5 anos",
-    "views": "57.031 visualizações"
-   },
-   {
-    "id": "H7rN0pJYbf4",
-    "titulo": "🔴 Escola cívico-militar: especialistas debatem fim do PECIM, decisão de Lula e mais | UOL Debate",
-    "canal": "UOL",
-    "canal_id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
-    "duracao": "55:58",
-    "quando": "Transmitido há 3 anos",
-    "views": "10.659 visualizações"
-   },
-   {
-    "id": "zSdCD3cNYuM",
-    "titulo": "Seminário - Escolas cívico-militares",
-    "canal": "Professora Rosa Neide",
-    "canal_id": "UC4CfnB9C6PN_RHQJ0gEgXNw",
-    "duracao": "3:53:45",
-    "quando": "há 7 anos",
-    "views": "36 visualizações"
-   },
-   {
-    "id": "2pxrKRVIYoE",
-    "titulo": "Governadores anunciam manutenção do modelo de escolas cívico-militares | SBT Brasil (13/07/23)",
-    "canal": "SBT News",
-    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
-    "duracao": "2:41",
-    "quando": "há 3 anos",
-    "views": "25.612 visualizações"
-   }
-  ]
- },
- {
-  "tema": "civico",
-  "busca": "Tarcísio escolas cívico-militares defende",
-  "resultados": [
-   {
-    "id": "47J4jFJcIgM",
-    "titulo": "Tarcísio defende escolas cívico-militares em evento convervador | AGORA CNN",
-    "canal": "CNN Brasil",
-    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
-    "duracao": "1:50",
-    "quando": "há 2 anos",
-    "views": "2.920 visualizações"
-   },
-   {
-    "id": "eDmWWm_htZ0",
-    "titulo": "Josias: Tarcísio defende escolas militares em SP e faz afago ao eleitor de Bolsonaro",
-    "canal": "UOL",
-    "canal_id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
-    "duracao": "6:12",
-    "quando": "há 3 anos",
-    "views": "16.200 visualizações"
-   },
-   {
-    "id": "Uv75acacq3o",
-    "titulo": "Justiça extingue ação contra escolas cívico-militares | LIVE CNN",
-    "canal": "CNN Brasil",
-    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
-    "duracao": "2:22",
-    "quando": "há 2 anos",
-    "views": "1.202 visualizações"
-   },
-   {
-    "id": "KtgNzeKVWkA",
-    "titulo": "Justiça autoriza governo Tarcísio a contratar PMs para escolas cívico-militares",
-    "canal": "Jovem Pan News",
-    "canal_id": "UCP391YRAjSOdM_bwievgaZA",
-    "duracao": "3:40",
-    "quando": "há 1 ano",
-    "views": "646 visualizações"
-   },
-   {
-    "id": "_oIygGlFT_w",
-    "titulo": "Tarcísio anuncia programa próprio de escolas cívico-militares para SP; deputado analisa",
-    "canal": "Morning Show",
-    "canal_id": "UC-wcdrzucnlKGBjyEUaEWaQ",
-    "duracao": "15:02",
-    "quando": "há 3 anos",
-    "views": "9.011 visualizações"
-   },
-   {
-    "id": "vK-QAphmHgY",
-    "titulo": "Josias de Souza / As escolas cívico-militares de Tarcísio",
-    "canal": "Jornal da Gazeta",
-    "canal_id": "UCNl_i-ggJbZNyOLlhE7yyhw",
-    "duracao": "2:22",
-    "quando": "há 2 anos",
-    "views": "3.293 visualizações"
-   },
-   {
-    "id": "8vFgGjHdjgU",
-    "titulo": "Giro VEJA | O plano de Tarcísio para as escolas cívico-militares em SP",
-    "canal": "VEJA+",
-    "canal_id": "UCV6Ue4o5UIeKQ3IEkjnXRlg",
-    "duracao": "2:55",
-    "quando": "há 3 anos",
-    "views": "5.057 visualizações"
-   },
-   {
-    "id": "jISrP7Szshs",
-    "titulo": "Moraes dá prazo para Tarcísio explicar escolas cívico-militares em São Paulo",
-    "canal": "Revista Oeste",
-    "canal_id": "UCBQAI1ZhurW3nbtJR-gBBZg",
-    "duracao": "15:22",
-    "quando": "há 2 anos",
-    "views": "150.977 visualizações"
-   },
-   {
-    "id": "yO_vS7TBViY",
-    "titulo": "Governador Tarcísio explica seu planejamento para a criação de escolas cívico-militares",
-    "canal": "Jovem Pan News Ribeirão Preto",
-    "canal_id": "UCxrBk1NnTWsu7H0wfbXnbQQ",
-    "duracao": "1:30",
-    "quando": "há 5 meses",
-    "views": "1.132 visualizações"
-   },
-   {
-    "id": "UO8HktQ74aw",
-    "titulo": "RF News - TCE-SP suspende programa de escolas cívico-militares de Tarcísio",
-    "canal": "RFTV ",
-    "canal_id": "UC9n34_IrC-Bgt3DIlfdC8pQ",
-    "duracao": "3:24",
-    "quando": "há 1 ano",
-    "views": "30 visualizações"
-   },
-   {
-    "id": "BrfpWwRFESU",
-    "titulo": "Tarcísio defende monitor de escola cívico-militar que escreveu 'descançar': 'Quem não erra?'",
-    "canal": "UOL",
-    "canal_id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
-    "duracao": "5:07",
-    "quando": "há 8 meses",
-    "views": "45.846 visualizações"
-   },
-   {
-    "id": "rbIpzlXAW-Q",
-    "titulo": "Tarcísio sobre escolas cívico-militares: “Adesão é voluntária” | LINHA DE FRENTE",
-    "canal": "Jovem Pan News",
-    "canal_id": "UCP391YRAjSOdM_bwievgaZA",
-    "duracao": "20:22",
-    "quando": "há 2 anos",
-    "views": "35.485 visualizações"
-   },
-   {
-    "id": "hIWFZp8fTm0",
-    "titulo": "📢 Tarcísio recorre a Alesp para implantar escola cívico-militar à força",
-    "canal": "Carlos Giannazi",
-    "canal_id": "UCcw5LxOx4RABRj4h3M15NcA",
-    "duracao": "5:05",
-    "quando": "há 2 anos",
-    "views": "3.661 visualizações"
-   },
-   {
-    "id": "kCUFSEFmvuU",
-    "titulo": "TARCÍSIO ENFRENTA MP E DEFENSORIA PARA TER ESCOLAS CÍVICO-MILITARES",
-    "canal": "Segurança e Defesa TV",
-    "canal_id": "UCaCkXjWTXbWHlP3BULRJ2iA",
-    "duracao": "0:59",
-    "quando": "há 2 anos",
-    "views": "5.748 visualizações"
-   },
-   {
-    "id": "1ez9PeQ0FKw",
-    "titulo": "Foco das escolas cívico-militares não é qualidade já que Tarcísio diminuiu recursos para a Educação",
-    "canal": "Instituto Conhecimento Liberta",
-    "canal_id": "UCaIqJHHo9TJiLINzOFJRl2Q",
-    "duracao": "5:11",
-    "quando": "há 2 anos",
-    "views": "716 visualizações"
-   }
-  ]
- },
- {
-  "tema": "civico",
-  "busca": "Daniel Cara escola cívico-militar",
-  "resultados": [
-   {
-    "id": "20ZPHEmC9nM",
-    "titulo": "“Escolas cívico-militares não são exceção, é continuidade do fracasso”, afirma Daniel Cara",
-    "canal": "TV 247",
-    "canal_id": "UCRuy5PigeeBuecKnwqhM4yg",
-    "duracao": "27:57",
-    "quando": "Transmitido há 7 meses",
-    "views": "1.958 visualizações"
-   },
-   {
-    "id": "1Biy0FzoZXU",
-    "titulo": "Daniel Cara: \"A gente precisa fazer com que o MEC do Bolsonaro corresponda à Constituição Federal\"",
-    "canal": "CartaCapital",
-    "canal_id": "UCDGz2exMIsPQ4k9VrsuhKTA",
-    "duracao": "17:13",
-    "quando": "há 6 anos",
-    "views": "13.031 visualizações"
-   },
-   {
-    "id": "RsewFm7fDG8",
-    "titulo": "Escola cívico-militar; uma esperança para o Brasil",
-    "canal": " Zucco",
-    "canal_id": "UCCbPHWmV0DpxUProz6KtYMQ",
-    "duracao": "0:46",
-    "quando": "há 4 anos",
-    "views": "333 visualizações"
-   },
-   {
-    "id": "iR5pIufPtN8",
-    "titulo": "DANIEL CARA COMENTA O ATAQUE À ESCOLA EM SP | Direto da Redação AO VIVO",
-    "canal": "CartaCapital",
-    "canal_id": "UCDGz2exMIsPQ4k9VrsuhKTA",
-    "duracao": "1:08:51",
-    "quando": "Transmitido há 3 anos",
-    "views": "3.963 visualizações"
-   },
-   {
-    "id": "UulYSmUvcxM",
-    "titulo": "Daniel Cara analisa tamanho da extrema direita, Pablo Marçal e escolas cívico-militares de Tarcísio",
-    "canal": "TV Fórum",
-    "canal_id": "UC3sMBA3BdnsKSVI0WB9yVWQ",
-    "duracao": "36:46",
-    "quando": "há 2 anos",
-    "views": "12.177 visualizações"
-   },
-   {
-    "id": "Elr6ncjgyZU",
-    "titulo": "Daniel Cara: “nossas escolas estão sendo incapazes de enfrentar o extremismo”",
-    "canal": "TV Fórum",
-    "canal_id": "UC3sMBA3BdnsKSVI0WB9yVWQ",
-    "duracao": "32:03",
-    "quando": "há 1 ano",
-    "views": "11.585 visualizações"
-   },
-   {
-    "id": "nu0uKLuQ6-k",
-    "titulo": "‘Escolas cívico-militares não preparam para um mundo mais pacífico’, diz especialista",
-    "canal": "Estadão",
-    "canal_id": "UCrtOL8bJsh-csozGS2aV77Q",
-    "duracao": "2:34",
-    "quando": "há 3 anos",
-    "views": "389 visualizações"
-   },
-   {
-    "id": "lnPyeDzzqfk",
-    "titulo": "Justiça suspende regras de escolas cívico militares",
-    "canal": "Jornal da Gazeta",
-    "canal_id": "UCNl_i-ggJbZNyOLlhE7yyhw",
-    "duracao": "1:52",
-    "quando": "há 8 meses",
-    "views": "27.158 visualizações"
-   },
-   {
-    "id": "z3YUptsJ61k",
-    "titulo": "O que está por trás das escolas cívico-militares?",
-    "canal": "Le Monde Diplomatique Brasil",
-    "canal_id": "UCO0Wd2SV2Wp_661FEFkN08A",
-    "duracao": "54:30",
-    "quando": "há 3 anos",
-    "views": "1.114 visualizações"
-   },
-   {
-    "id": "0sHM_mU0jag",
-    "titulo": "Direto ao fato #50 - Escola Cívico-Militar não é alternativa",
-    "canal": "RCIA Araraquara",
-    "canal_id": "UCqKvXU6u7g0LR_NFlwnnVrQ",
-    "duracao": "7:35",
-    "quando": "há 8 meses",
-    "views": "30 visualizações"
-   },
-   {
-    "id": "EOdvOWgbwqo",
-    "titulo": "Modelo de escola cívico-militar não é democrático, avalia professora da Unicamp",
-    "canal": "Instituto Claro",
-    "canal_id": "UCTSXpxZFVk0sneQ2ZIBxyrA",
-    "duracao": "9:33",
-    "quando": "há 6 anos",
-    "views": "21.445 visualizações"
-   },
-   {
-    "id": "0rv629vCLZU",
-    "titulo": "Ultraconservadorismo e extremismo de direita entre jovens, com Letícia Oliveira e Daniel Cara",
-    "canal": "Carlos Alberto Jr.",
-    "canal_id": "UCc4eZav_MB7LUDH_jKmSAdg",
-    "duracao": "1:20:42",
-    "quando": "há 3 anos",
-    "views": "1.410 visualizações"
-   },
-   {
-    "id": "IUfN6Fmc9Zw",
-    "titulo": "Escola Tradicional ou Cívico-Militar? O Debate Sobre Educação | O Cara Cast",
-    "canal": "O Cara Cast",
-    "canal_id": "UC8fKxhA9VwZ4KRjL1qMywOQ",
-    "duracao": "1:56:50",
-    "quando": "há 8 meses",
-    "views": "606 visualizações"
-   }
-  ]
- },
- {
-  "tema": "civico",
-  "busca": "Flow escola cívico-militar debate",
-  "resultados": [
-   {
-    "id": "dfki1CCSY8E",
-    "titulo": "OS DEBATES ELEITORAIS são INJUSTOS? ⚖️ #lula #flownews #politica #eleicoes",
-    "canal": "Flow Podcast",
-    "canal_id": "UC4ncvgh5hFr5O83MH7-jRJg",
-    "duracao": "0:31",
-    "quando": "há 5 horas",
-    "views": "17.651 visualizações"
-   },
-   {
-    "id": "GMy-sQP5w6w",
-    "titulo": "Aparecida Debate: Escolas cívico-militares",
-    "canal": "TV Aparecida",
-    "canal_id": "UCfYrK5JU5EznsnK3wQE7iIg",
-    "duracao": "43:34",
-    "quando": "há 6 anos",
-    "views": "2.194 visualizações"
-   },
-   {
-    "id": "H7rN0pJYbf4",
-    "titulo": "🔴 Escola cívico-militar: especialistas debatem fim do PECIM, decisão de Lula e mais | UOL Debate",
-    "canal": "UOL",
-    "canal_id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
-    "duracao": "55:58",
-    "quando": "Transmitido há 3 anos",
-    "views": "10.659 visualizações"
-   },
-   {
-    "id": "liS-SUSreGw",
-    "titulo": "DEBATE PRESIDENCIAL FLOW 2026",
-    "canal": "Flow Podcast",
-    "canal_id": "UC4ncvgh5hFr5O83MH7-jRJg",
-    "duracao": "3:49:25",
-    "quando": "Transmitido há 3 semanas",
-    "views": "4.974.174 visualizações"
-   },
-   {
-    "id": "cfTPtZ5dsMQ",
-    "titulo": "Como são as escolas cívico-militares?",
-    "canal": "Política em Cortes",
-    "canal_id": "UCDG16czkYetXHznlzV0JkJg",
-    "duracao": "0:40",
-    "quando": "há 2 dias",
-    "views": "1.349 visualizações"
-   },
-   {
-    "id": "pWMtzsm7bsQ",
-    "titulo": "Cardozo e Coppolla debatem se escolas cívico-militares podem melhorar educação | O GRANDE DEBATE",
-    "canal": "CNN Brasil",
-    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
-    "duracao": "12:50",
-    "quando": "há 2 anos",
-    "views": "24.234 visualizações"
-   },
-   {
-    "id": "2uP08vbbG6k",
-    "titulo": "Sargento Castro diz a verdade sobre escolas cívico-militares no Flow#sargentocastro #podcast #escola",
-    "canal": "ShinClips",
-    "canal_id": "UCepLUIV4ZGEKOCzB6Rj3AhQ",
-    "duracao": "0:47",
-    "quando": "há 10 meses",
-    "views": "7.165 visualizações"
-   },
-   {
-    "id": "la-1P76jfns",
-    "titulo": "DEBATE ESCOLAS CÍVICO-MILITARES: Tenente Coimbra e Mônica Seixas AO VIVO no Talk Churras #EP95",
-    "canal": "MathiasTV",
-    "canal_id": "UCARu6TU-jEPZISboI3TEYZw",
-    "duracao": "1:17:51",
-    "quando": "Transmitido há 3 anos",
-    "views": "2.788 visualizações"
-   },
-   {
-    "id": "mOhyo2KnAQs",
-    "titulo": "Escolas cívico-militar (debate Faixa Livre 14-02-2020)",
-    "canal": "Faixa Livre",
-    "canal_id": "UC0FuVyieidmqk9bcELQDR5Q",
-    "duracao": "1:10:41",
-    "quando": "há 6 anos",
-    "views": "80 visualizações"
-   },
-   {
-    "id": "3LQLtfJHTnA",
-    "titulo": "Debate Público sobre Escola Cívico-Militar 16-12-2019",
-    "canal": "TV CÂMARA CAMPINAS",
-    "canal_id": "UCCRttUKYDsV-YHKrsGzSoGA",
-    "duracao": "2:48:30",
-    "quando": "há 6 anos",
-    "views": "182 visualizações"
-   },
-   {
-    "id": "isPd00cpQ9c",
-    "titulo": "JORNAL CÂMARA NOTÍCIA - Debate Escola Cívico-Militar 17-12-2019",
-    "canal": "TV CÂMARA CAMPINAS",
-    "canal_id": "UCCRttUKYDsV-YHKrsGzSoGA",
-    "duracao": "2:49",
-    "quando": "há 6 anos",
-    "views": "48 visualizações"
-   },
-   {
-    "id": "MDEFywIVSQw",
-    "titulo": "Debate sobre escolas civico militar e ideologia",
-    "canal": "Eduardo Girão",
-    "canal_id": "UCnCLvcoF4iYagNOFA86ooAg",
-    "duracao": "3:11",
-    "quando": "há 2 anos",
-    "views": "123 visualizações"
-   },
-   {
-    "id": "UoVJ5eVNsW4",
-    "titulo": "Escola militarizada: um debate sobre a proposta de gestão compartilhada da educação",
-    "canal": "TV Senado",
-    "canal_id": "UCLgti7NuK0RuW9wty-fxPjQ",
-    "duracao": "27:51",
-    "quando": "há 7 anos",
-    "views": "18.221 visualizações"
-   },
-   {
-    "id": "I_jwAwaagUA",
-    "titulo": "É CERTO O FIM DAS ESCOLAS CÍVICO MILITARES? #TN",
-    "canal": "Flow News",
-    "canal_id": "UCYpE7GffL46a9WT5b-Rekpg",
-    "duracao": "6:32",
-    "quando": "há 3 anos",
-    "views": "1.780 visualizações"
-   },
-   {
-    "id": "wFYhQFVB-WE",
-    "titulo": "Grande debate sobre Escolas Cívico-Militares",
-    "canal": "Comandante Nádia",
-    "canal_id": "UCnjyRntU_CvtYHQ7gvjTOmw",
-    "duracao": "43:39",
-    "quando": "Transmitido há 4 anos",
-    "views": "271 visualizações"
-   }
-  ]
- },
- {
-  "tema": "cameras",
-  "busca": "Derrite câmeras corporais críticas",
-  "resultados": [
-   {
-    "id": "KqTx3YUVMSc",
-    "titulo": "Derrite nega acabar com câmeras nos uniformes de policiais; Schelp e Capez analisam",
-    "canal": "Jovem Pan News",
-    "canal_id": "UCP391YRAjSOdM_bwievgaZA",
-    "duracao": "5:12",
-    "quando": "há 3 anos",
-    "views": "7.643 visualizações"
-   },
-   {
-    "id": "gdncQ9qv5Yo",
-    "titulo": "Governo já gastou R$ 61 mi com câmeras da PM que Derrite quer rever | Boletim Metrópoles 1º",
-    "canal": "Metrópoles",
-    "canal_id": "UC9mdw2mmn49ZuqGOpSri7Fw",
-    "duracao": "1:42",
-    "quando": "há 3 anos",
-    "views": "1.150 visualizações"
-   },
-   {
-    "id": "gMY2wIhVeSA",
-    "titulo": "Derrite explica “liga e desliga” das câmeras da PM | CNN 360º",
-    "canal": "CNN Brasil",
-    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
-    "duracao": "7:33",
-    "quando": "há 2 anos",
-    "views": "5.449 visualizações"
-   },
-   {
-    "id": "aKh5v_I8GBE",
-    "titulo": "Marina chama Derrite de \"tóxico\": \"Querem nos descredibilizar\"",
-    "canal": "UOL",
-    "canal_id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
-    "duracao": "2:43",
-    "quando": "há 3 semanas",
-    "views": "418.396 visualizações"
-   },
-   {
-    "id": "j5MI3yEX3jc",
-    "titulo": "\"Que moral a senhora tem pra falar de corrupção?\", diz Derrite a Tebet | #Shorts",
-    "canal": "Band Jornalismo",
-    "canal_id": "UCoa-D_VfMkFrCYodrOC9-mA",
-    "duracao": "0:58",
-    "quando": "há 1 mês",
-    "views": "2.815.843 visualizações"
-   },
-   {
-    "id": "UFCAESRoxPA",
-    "titulo": "Guilherme Derrite: “Nós buscamos ampliar as funcionalidades das câmeras corporais”",
-    "canal": "Jovem Pan News",
-    "canal_id": "UCP391YRAjSOdM_bwievgaZA",
-    "duracao": "16:55",
-    "quando": "há 2 anos",
-    "views": "36.326 visualizações"
-   },
-   {
-    "id": "C0s63iXwH44",
-    "titulo": "Fala de Tarcísio sobre câmeras é constatação da realidade, diz secretário de segurança: 'Alívio'",
-    "canal": "UOL",
-    "canal_id": "UCVFbXI6Gu8U2f9Gjtxw4A-Q",
-    "duracao": "21:23",
-    "quando": "há 1 ano",
-    "views": "2.428 visualizações"
-   },
-   {
-    "id": "BjSbk1i6r2Q",
-    "titulo": "Uso de câmeras em uniformes de PMs reduziu mais de 50% das mortes em ações | SBT Brasil (06/12/22)",
-    "canal": "SBT News",
-    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
-    "duracao": "2:31",
-    "quando": "há 3 anos",
-    "views": "6.757 visualizações"
-   },
-   {
-    "id": "XMSksUBjbaY",
-    "titulo": "🚨 Câmeras Corporais: A Revolução na Segurança Pública! #segurançapública #combateaocrime",
-    "canal": "CortesCast",
-    "canal_id": "UCHPvnCHQ2Dz9ed2Trk1y_EQ",
-    "duracao": "1:05",
-    "quando": "há 1 ano",
-    "views": "144 visualizações"
-   },
-   {
-    "id": "TAXuvrKRERE",
-    "titulo": "desligue sua câmera corporal para que possamos conversar, policial",
-    "canal": "Shields of Shame ",
-    "canal_id": "UCM9tnaM29_jP9pUgVd49sNw",
-    "duracao": "0:58",
-    "quando": "há 3 anos",
-    "views": "746 visualizações"
-   },
-   {
-    "id": "RUJeOF_uiFI",
-    "titulo": "O poder do governo, Derrite e as câmeras corporais",
-    "canal": "Deputado Reis",
-    "canal_id": "UC2kqdSmgEW1I7DBKUDyQIDA",
-    "duracao": "12:14",
-    "quando": "há 1 ano",
-    "views": "1.554 visualizações"
-   },
-   {
-    "id": "7bQmu3-23bI",
-    "titulo": "Derrite muda de opinião: “Câmeras protegem o bom policial”",
-    "canal": "Metrópoles",
-    "canal_id": "UC9mdw2mmn49ZuqGOpSri7Fw",
-    "duracao": "2:56",
-    "quando": "há 1 ano",
-    "views": "2.771 visualizações"
-   },
-   {
-    "id": "0tqTIAb0dtQ",
-    "titulo": "Derrite deixa Secretaria de Segurança e volta à Câmara após defender política de confronto",
-    "canal": "Rádio CBN",
-    "canal_id": "UCbiGwU0-W1XCDUrt3BTVrag",
-    "duracao": "2:59",
-    "quando": "há 10 meses",
-    "views": "294 visualizações"
-   },
-   {
-    "id": "VzmYeTE3hJs",
-    "titulo": "🚨Derrite REBATE jornalistas ao vivo e dá AULA de Segurança Pública na GLOBO!",
-    "canal": "Mão Direita",
-    "canal_id": "UCi1SAQpJZ7AV3myrsfyhF2w",
-    "duracao": "13:04",
-    "quando": "há 11 meses",
-    "views": "101.313 visualizações"
-   },
-   {
-    "id": "qDIvE7zZhko",
-    "titulo": "Derrite critica governo federal após EUA classificarem PCC e CV como terroristas",
-    "canal": "Rádio Bandeirantes",
-    "canal_id": "UCF453hXTROcm9CfCERYUjtQ",
-    "duracao": "2:09",
-    "quando": "há 4 meses",
-    "views": "710 visualizações"
-   }
-  ]
- },
- {
-  "tema": "cameras",
-  "busca": "câmeras corporais policiais atrapalham trabalho policial",
-  "resultados": [
-   {
-    "id": "SCflb-YSjQ8",
-    "titulo": "Minha opinião sincera sobre câmeras corporais em policiais. #delegadopalumbo",
-    "canal": "Delegado Palumbo",
-    "canal_id": "UCsreODHfDcG5W4EAZZJBY0w",
-    "duracao": "1:00",
-    "quando": "há 1 ano",
-    "views": "197.550 visualizações"
-   },
-   {
-    "id": "xODGLO70NXs",
-    "titulo": "Câmeras corporais em policiais: Lewandowski assina portaria com diretrizes nesta terça (28)",
-    "canal": "SBT News",
-    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
-    "duracao": "9:41",
-    "quando": "há 2 anos",
-    "views": "4.612 visualizações"
-   },
-   {
-    "id": "0V3Dg2wOxbM",
-    "titulo": "Giro News: Ministério divulga regras para câmeras corporais por policiais",
-    "canal": "SBT News",
-    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
-    "duracao": "0:59",
-    "quando": "há 2 anos",
-    "views": "4.333 visualizações"
-   },
-   {
-    "id": "gBHKCkZd840",
-    "titulo": "USO DE CÂMERAS POR POLICIAIS MILITARES PODERIA REDUZIR VIOLÊNCIA POLICIAL",
-    "canal": "TV Band Minas",
-    "canal_id": "UC4HvOqEHSll8ieikr6ffvqQ",
-    "duracao": "3:49",
-    "quando": "há 5 anos",
-    "views": "712 visualizações"
-   },
-   {
-    "id": "B8jQF5COuEU",
-    "titulo": "O uso de câmeras corporais pela polícia, explicado por Melina Risso do Instituto Igarapé",
-    "canal": "Headline Brasil",
-    "canal_id": "UCMkxP79lf86HnR_a7qoaY1A",
-    "duracao": "3:04",
-    "quando": "há 4 anos",
-    "views": "372 visualizações"
-   },
-   {
-    "id": "PE0e21HJ6cw",
-    "titulo": "SGT NANTES | As CÂMERAS CORPORAIS só servem pra ATRAPALHAR o trabalho da POLÍCIA ",
-    "canal": "TR_SOUZA",
-    "canal_id": "UC4RhkgTF0lv04UygqnRDUvg",
-    "duracao": "7:05",
-    "quando": "há 10 meses",
-    "views": "86 visualizações"
-   },
-   {
-    "id": "BjSbk1i6r2Q",
-    "titulo": "Uso de câmeras em uniformes de PMs reduziu mais de 50% das mortes em ações | SBT Brasil (06/12/22)",
-    "canal": "SBT News",
-    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
-    "duracao": "2:31",
-    "quando": "há 3 anos",
-    "views": "6.757 visualizações"
-   },
-   {
-    "id": "QiDx4pgEbT8",
-    "titulo": "Justiça de SP determina uso de câmeras corporais em todos os uniformes de PMs | CNN NOVO DIA",
-    "canal": "CNN Brasil",
-    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
-    "duracao": "2:38",
-    "quando": "há 3 anos",
-    "views": "4.676 visualizações"
-   },
-   {
-    "id": "I6ZEe01-2zo",
-    "titulo": "VÍDEO FLAGRA MOMENTO DA ABORDAGEM POLICIAL DE JOVEM MORTO COM 27 TIROS EM SP",
-    "canal": "Itatiaia",
-    "canal_id": "UC9T0ZAarQHL4cJGFzORVsFg",
-    "duracao": "0:34",
-    "quando": "há 1 dia",
-    "views": "51.988 visualizações"
-   },
-   {
-    "id": "hrhNcCtbJxg",
-    "titulo": "Câmeras Corporais da Polícia! A Maior Novidade do Mundo Moderno #policia",
-    "canal": "Oslaim Brito",
-    "canal_id": "UCPQyjbBvA_PVyJNB5lgyaNw",
-    "duracao": "0:05",
-    "quando": "há 2 anos",
-    "views": "11.934 visualizações"
-   },
-   {
-    "id": "4Wd5Vn-ubYc",
-    "titulo": "Estudo mostra redução de 60% de força quando policiais utilizam câmera individual",
-    "canal": "Programa ND Notícias",
-    "canal_id": "UCsv_0d3QHC1Gsxwwsk5wIxg",
-    "duracao": "3:35",
-    "quando": "há 5 anos",
-    "views": "461 visualizações"
-   },
-   {
-    "id": "RHtFFzNFPfk",
-    "titulo": "Câmeras corporais de PMs registram conversa com homem que roubou arma e atirou em policiais",
-    "canal": "g1",
-    "canal_id": "UCaGmdJSSiR7fkh2A-c6emsA",
-    "duracao": "1:26",
-    "quando": "há 3 anos",
-    "views": "314.010 visualizações"
-   },
-   {
-    "id": "oWlcgJ0WAz0",
-    "titulo": "POLICIAIS AGIRAM EM LEGÍTIMA DEFESA; CÂMERAS DESMENTEM NARRATIVA DE EXECUÇÃO",
-    "canal": "Dr. Sandro Gonçalves",
-    "canal_id": "UCUmN4RWoL4HavTlMLrkaxHQ",
-    "duracao": "2:54",
-    "quando": "há 1 hora",
-    "views": "4.086 visualizações"
-   },
-   {
-    "id": "6alVDqd1Vik",
-    "titulo": "PMs manipulam câmeras corporais e burlam sistema de armazenamento de vídeos",
-    "canal": "UOL Prime ",
-    "canal_id": "UCY0tVnGvYPmYm7RbwJ89UNg",
-    "duracao": "6:17",
-    "quando": "há 2 anos",
-    "views": "83.301 visualizações"
-   },
-   {
-    "id": "1YfuE9ei28A",
-    "titulo": "Polícia Militar de SC terá câmeras corporais para qualificar flagrantes",
-    "canal": "Balanço Geral Florianópolis",
-    "canal_id": "UCZWIbJQKWlzqjWYcx_xVuhg",
-    "duracao": "2:14",
-    "quando": "há 8 anos",
-    "views": "273 visualizações"
-   }
-  ]
- },
- {
-  "tema": "cameras",
-  "busca": "Flow câmera corporal policial",
-  "resultados": [
-   {
-    "id": "Ei1SHiBwQuI",
-    "titulo": "IGOR e SARGENTO CASTRO DISCUTEM sobre o uso de CÂMERA em POLICIAIS",
+    "id": "RqANge5pFGk",
+    "titulo": "ARTHUR DO VAL é SINCERO ATÉ DEMAIS sobre o Partido Missão nas ELEIÇÕES 2026",
     "canal": "Cortes do Flow [OFICIAL]",
     "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
-    "duracao": "8:56",
-    "quando": "há 1 ano",
-    "views": "31.929 visualizações"
+    "duracao": "8:17",
+    "quando": "há 22 horas",
+    "views": "251.411 visualizações"
    },
    {
-    "id": "GGBLPA863FQ",
-    "titulo": "COMO FUNCIONA a LEGÍTIMA DEFESA",
-    "canal": "Flow Podcast",
-    "canal_id": "UC4ncvgh5hFr5O83MH7-jRJg",
-    "duracao": "0:40",
-    "quando": "há 4 meses",
-    "views": "767.275 visualizações"
-   },
-   {
-    "id": "xuaGh45PFFw",
-    "titulo": "Como é que é? | As câmeras corporais da PM são eficazes?",
-    "canal": "Folha de S.Paulo",
-    "canal_id": "UCmYuiV9wAR3i8p19Ygc7izg",
-    "duracao": "28:55",
-    "quando": "Transmitido há 2 anos",
-    "views": "1.111 visualizações"
-   },
-   {
-    "id": "hrhNcCtbJxg",
-    "titulo": "Câmeras Corporais da Polícia! A Maior Novidade do Mundo Moderno #policia",
-    "canal": "Oslaim Brito",
-    "canal_id": "UCPQyjbBvA_PVyJNB5lgyaNw",
-    "duracao": "0:05",
-    "quando": "há 2 anos",
-    "views": "11.934 visualizações"
-   },
-   {
-    "id": "0V3Dg2wOxbM",
-    "titulo": "Giro News: Ministério divulga regras para câmeras corporais por policiais",
-    "canal": "SBT News",
-    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
+    "id": "EDqwX_Vlynk",
+    "titulo": "Petróleo e Gás Natural  Segredos da Margem Equatorial",
+    "canal": "Bits & Cortes",
+    "canal_id": "UCAh8WIFF3lFxHb7SbqXQsBw",
     "duracao": "0:59",
-    "quando": "há 2 anos",
-    "views": "4.333 visualizações"
-   },
-   {
-    "id": "rRiKPRbp-kA",
-    "titulo": "Câmeras corporais - uso contra policiais. #processopenal #controleexterno #policial",
-    "canal": "Professor Flávio Milhomem",
-    "canal_id": "UCJG42ymcc8yIYikJQAqATlg",
-    "duracao": "0:58",
     "quando": "há 1 ano",
-    "views": "1.123 visualizações"
+    "views": "717 visualizações"
    },
    {
-    "id": "_HhmBhuJwQs",
-    "titulo": "Câmera corporal salva policial de ir para a cadeia",
-    "canal": "Positivo +",
-    "canal_id": "UCpJQiq6mOvMsJ4q4Xm3x4wQ",
-    "duracao": "3:15",
-    "quando": "há 4 anos",
-    "views": "808 visualizações"
+    "id": "mZal-NT4xu0",
+    "titulo": "IGOR faz as PERGUNTAS que TODO MUNDO queria fazer pro LULA",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:41",
+    "quando": "há 12 dias",
+    "views": "283.331 visualizações"
    },
    {
-    "id": "B8jQF5COuEU",
-    "titulo": "O uso de câmeras corporais pela polícia, explicado por Melina Risso do Instituto Igarapé",
-    "canal": "Headline Brasil",
-    "canal_id": "UCMkxP79lf86HnR_a7qoaY1A",
-    "duracao": "3:04",
-    "quando": "há 4 anos",
-    "views": "372 visualizações"
+    "id": "kpR2l6Xe238",
+    "titulo": "Lula comenta Margem Equatorial e diz que petróleo financiará transição | BASTIDORES CNN",
+    "canal": "CNN Brasil",
+    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
+    "duracao": "1:39",
+    "quando": "há 11 meses",
+    "views": "1.871 visualizações"
    },
    {
-    "id": "xODGLO70NXs",
-    "titulo": "Câmeras corporais em policiais: Lewandowski assina portaria com diretrizes nesta terça (28)",
-    "canal": "SBT News",
-    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
-    "duracao": "9:41",
-    "quando": "há 2 anos",
-    "views": "4.612 visualizações"
+    "id": "pdsSAPRDPVQ",
+    "titulo": "LULA em RISCO no 2º TURNO? 🗳️ #politica #eleicoes #lula #viral #flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "1:11",
+    "quando": "há 2 dias",
+    "views": "225.542 visualizações"
    },
    {
-    "id": "6k7oyUJKpRc",
-    "titulo": "Gravações de câmera corporal mostram PMs intimidados com tenente-coronel após assassinato",
-    "canal": "Plox Brasil",
-    "canal_id": "UCpC_6h3x1gVjV4Hfj_bNFYg",
-    "duracao": "7:49",
-    "quando": "Transmitido há 6 meses",
-    "views": "1.896 visualizações"
+    "id": "G6nED9nUKR0",
+    "titulo": "A Petrobras Poderá Explorar O Petróleo Da Margem Equatorial!",
+    "canal": "Corte Views",
+    "canal_id": "UCFiUkfSxC0HRadFdGOqriOw",
+    "duracao": "1:10",
+    "quando": "há 11 meses",
+    "views": "2.238 visualizações"
    },
    {
-    "id": "gBHKCkZd840",
-    "titulo": "USO DE CÂMERAS POR POLICIAIS MILITARES PODERIA REDUZIR VIOLÊNCIA POLICIAL",
-    "canal": "TV Band Minas",
-    "canal_id": "UC4HvOqEHSll8ieikr6ffvqQ",
-    "duracao": "3:49",
-    "quando": "há 5 anos",
-    "views": "712 visualizações"
+    "id": "qRwTUqdyG2k",
+    "titulo": "IGOR foi sincero ATÉ DEMAIS com Presidente Lula...",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "11:14",
+    "quando": "há 12 dias",
+    "views": "72.283 visualizações"
    },
    {
-    "id": "Dt6WIyQLEaQ",
-    "titulo": "Câmeras em Policiais: Proteção ou Desconfiança do Estado? | Flow Podcast",
-    "canal": "A Verdade Está Aqui Dentro",
-    "canal_id": "UCbL4YmJMYqwv0rzH3aF73Sg",
-    "duracao": "1:44",
-    "quando": "há 8 meses",
-    "views": "854 visualizações"
+    "id": "3uI0uaexj7E",
+    "titulo": "IGOR REVELA BASTIDORES com a equipe de LULA em entrevista no PLANALTO CENTRAL",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:03",
+    "quando": "há 5 dias",
+    "views": "139.843 visualizações"
    },
    {
-    "id": "BjSbk1i6r2Q",
-    "titulo": "Uso de câmeras em uniformes de PMs reduziu mais de 50% das mortes em ações | SBT Brasil (06/12/22)",
-    "canal": "SBT News",
-    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
-    "duracao": "2:31",
-    "quando": "há 3 anos",
-    "views": "6.757 visualizações"
+    "id": "V7xMrCzFmDE",
+    "titulo": "Exploração de Petróleo na Margem Equatorial e Crítica ao Ibama",
+    "canal": "cortes do dia",
+    "canal_id": "UCqSVjMTL2CcF389P-EtdEZA",
+    "duracao": "1:29",
+    "quando": "há 2 semanas",
+    "views": "2 visualizações"
    },
    {
-    "id": "MV9k1zyLlSc",
-    "titulo": "Exclusivo: registros indicam esquema na PM para fraudar câmera corporal",
-    "canal": "Metrópoles",
-    "canal_id": "UC9mdw2mmn49ZuqGOpSri7Fw",
-    "duracao": "9:10",
+    "id": "6xaTRFpFOWM",
+    "titulo": "O Impacto do Petróleo na Margem Equatorial  Descubra",
+    "canal": "Business Cut",
+    "canal_id": "UCnwJlf6ujcviXBqD2Atjm8g",
+    "duracao": "0:57",
     "quando": "há 1 ano",
-    "views": "53.094 visualizações"
+    "views": "10 visualizações"
    },
    {
-    "id": "QN0RiPMYiJ0",
-    "titulo": "Sargento Castro: Camera Corporal",
-    "canal": "CorteHub",
-    "canal_id": "UC7QlLZq93ZCAEWRpg52yM9w",
-    "duracao": "0:46",
-    "quando": "há 5 meses",
-    "views": "1.939 visualizações"
+    "id": "zKRUPARs1wQ",
+    "titulo": "🚨 SERJÃO explica os SEGREDOS da REVOLUCIONÁRIA RESERVA DE PETRÓLEO MARGEM EQUATORIAL",
+    "canal": "Top 10 Cortes | Podcast [OFICIAL]",
+    "canal_id": "UCEbLyfgrlhohpSNceecPMnA",
+    "duracao": "12:57",
+    "quando": "há 10 meses",
+    "views": "963 visualizações"
+   },
+   {
+    "id": "uLwT3FOhcHA",
+    "titulo": "Petróleo na margem equatorial: Flávio defende exploração #shorts",
+    "canal": "SegueTopShorts",
+    "canal_id": "UC__VXSWZMqz8sD-dqcu52gA",
+    "duracao": "0:55",
+    "quando": "há 1 dia",
+    "views": "2 visualizações"
    }
   ]
  },
  {
-  "tema": "cameras",
-  "busca": "câmeras corporais FGV estudo letalidade policial São Paulo",
+  "tema": "foz",
+  "busca": "cortes do flow petrobras amazonia",
   "resultados": [
    {
-    "id": "RqEVCF6213Q",
-    "titulo": "Letalidade policial em São Paulo cai com uso de câmeras corporais | SBT Brasil (16/05/23)",
-    "canal": "SBT News",
-    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
-    "duracao": "3:01",
-    "quando": "há 3 anos",
-    "views": "3.040 visualizações"
+    "id": "MV8CmIrShSQ",
+    "titulo": "A FARSA da PETROBÁS de MILHÕES DE DÓLARES",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "9:35",
+    "quando": "há 10 meses",
+    "views": "71.578 visualizações"
    },
    {
-    "id": "0fs0MNCg1Ro",
-    "titulo": "Câmeras corporais da Polícia Militar do Estado de São Paulo.",
-    "canal": "CPI-5 Polícia Militar",
-    "canal_id": "UCVJRVVa2bS9JRfmQlhrwuSw",
-    "duracao": "48:02",
-    "quando": "há 5 anos",
-    "views": "3.680 visualizações"
-   },
-   {
-    "id": "TyIkP_y5Hks",
-    "titulo": "Letalidade Policial e o Uso de Câmeras Corporais em Debate",
-    "canal": "Rede Século 21 | Jornalismo",
-    "canal_id": "UC0APLxALWhTrAA00T4Y7Ulw",
-    "duracao": "3:49",
+    "id": "WbmP9KeBaN8",
+    "titulo": "PETRÓLEO DA AMAZÔNIA #sergiosacani #amazonia #education #ciencia #petróleo #fyp #cortespodcast",
+    "canal": "BIG Z CORTES",
+    "canal_id": "UCF-8Bjx3mdvL8hiSe3eDyFw",
+    "duracao": "1:15",
     "quando": "há 1 ano",
-    "views": "53 visualizações"
+    "views": "547 visualizações"
    },
    {
-    "id": "eL-ANlvWoW4",
-    "titulo": "Câmeras corporais diminuem letalidade em ações da Polícia Militar",
-    "canal": "RedeTV",
-    "canal_id": "UCd7VVhgnd2eCv9JEghvR_1w",
-    "duracao": "2:37",
-    "quando": "há 5 anos",
-    "views": "3.905 visualizações"
+    "id": "xPkN8QSkjOQ",
+    "titulo": "70% das vezes, furar petróleo dá nisto... 🛢️💸#petroleo #engenharia #petrobras #negocios #podcast",
+    "canal": "Tava no Flow",
+    "canal_id": "UCcNrl6_yRN_BQywqrx-9bTg",
+    "duracao": "1:32",
+    "quando": "há 6 meses",
+    "views": "1.198 visualizações"
    },
    {
-    "id": "BjSbk1i6r2Q",
-    "titulo": "Uso de câmeras em uniformes de PMs reduziu mais de 50% das mortes em ações | SBT Brasil (06/12/22)",
-    "canal": "SBT News",
-    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
-    "duracao": "2:31",
-    "quando": "há 3 anos",
-    "views": "6.757 visualizações"
+    "id": "UrbDzAJhP3Y",
+    "titulo": "LULA EXPÕE o real objetivo das TARIFAS de TRUMP e revela BASTIDORES com o presidente",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:31",
+    "quando": "há 12 dias",
+    "views": "17.054 visualizações"
    },
    {
-    "id": "vi-yopZasbw",
-    "titulo": "Câmeras em uniformes reduzem letalidade policial em São Paulo",
-    "canal": "Cortes TVT",
-    "canal_id": "UCqKlBRKeYOsCXmgqzxC-AbQ",
-    "duracao": "1:02",
+    "id": "JQ_HTeSfom4",
+    "titulo": "PETROBRAS | Cortes do Ciência Sem Fim",
+    "canal": "Cortes do Ciência Sem Fim [OFICIAL]",
+    "canal_id": "UCbiNMBd57pgETEFbiDSa4yQ",
+    "duracao": "8:10",
     "quando": "há 4 anos",
-    "views": "32 visualizações"
+    "views": "116.405 visualizações"
    },
    {
-    "id": "B8jQF5COuEU",
-    "titulo": "O uso de câmeras corporais pela polícia, explicado por Melina Risso do Instituto Igarapé",
-    "canal": "Headline Brasil",
-    "canal_id": "UCMkxP79lf86HnR_a7qoaY1A",
-    "duracao": "3:04",
+    "id": "DP2uVBQsTeE",
+    "titulo": "O que NINGUÉM FALA sobre a AMAZÔNIA [Richard Rasmussen]",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "12:14",
+    "quando": "há 1 ano",
+    "views": "77.691 visualizações"
+   },
+   {
+    "id": "JHc5HucgQaE",
+    "titulo": "Como é Feita a Extração do Petróleo - Corte SPACE TODAY Flow Podcast",
+    "canal": "Cortes Cast",
+    "canal_id": "UCu-NNshgPWPGPMrX01BG6UA",
+    "duracao": "10:15",
+    "quando": "há 5 anos",
+    "views": "90 visualizações"
+   },
+   {
+    "id": "CBoqwUNj0BY",
+    "titulo": "CONSTANTINO COMENTA DEMISSÃO POLÊMICA | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "6:33",
     "quando": "há 4 anos",
-    "views": "372 visualizações"
+    "views": "9.575 visualizações"
    },
    {
-    "id": "vjfsVXpD3dY",
-    "titulo": "Letalidade policial:Estudo compara antes e depois do uso de câmeras corporais|#SBTNewsnaTV(17/05/23)",
-    "canal": "SBT News",
-    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
-    "duracao": "2:22",
+    "id": "-2I288Z8WN8",
+    "titulo": "Petrobras ainda não explicou à ANP o vazamento de fluido na Foz do Amazonas | HORA H",
+    "canal": "CNN Brasil",
+    "canal_id": "UCvdwhh_fDyWccR42-rReZLw",
+    "duracao": "2:10",
+    "quando": "há 9 meses",
+    "views": "563 visualizações"
+   },
+   {
+    "id": "3uI0uaexj7E",
+    "titulo": "IGOR REVELA BASTIDORES com a equipe de LULA em entrevista no PLANALTO CENTRAL",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:03",
+    "quando": "há 5 dias",
+    "views": "139.843 visualizações"
+   },
+   {
+    "id": "cpmbnjyUtGI",
+    "titulo": "AÇÕES DA PETROBRAS AFUNDAM EM MEIO A RESULTADO DESASTROSO E QUEDA BILIONÁRIA #FN",
+    "canal": "Cortes do Flow News [OFICIAL]",
+    "canal_id": "UCKonBrqdQ0ZgKicDsLTjO-g",
+    "duracao": "12:16",
+    "quando": "há 1 ano",
+    "views": "2.046 visualizações"
+   },
+   {
+    "id": "c3FN0PXOljA",
+    "titulo": "COMO É TRABALHAR NUMA PLATAFORMA DA PETROBRAS | Clips Casts",
+    "canal": "Clips Casts ✂️",
+    "canal_id": "UC2Jfvnke0SvAQRz6Uvi1sPg",
+    "duracao": "15:17",
+    "quando": "há 4 anos",
+    "views": "475 visualizações"
+   },
+   {
+    "id": "U1DkNqLigak",
+    "titulo": "REINALDO AZEVEDO - Flow #660",
+    "canal": "Flow Podcast",
+    "canal_id": "UC4ncvgh5hFr5O83MH7-jRJg",
+    "duracao": "3:09:09",
+    "quando": "Transmitido há 5 dias",
+    "views": "1.016.670 visualizações"
+   },
+   {
+    "id": "N3eU-2VIByQ",
+    "titulo": "FABIO AKITA - Flow #663",
+    "canal": "Flow Podcast",
+    "canal_id": "UC4ncvgh5hFr5O83MH7-jRJg",
+    "duracao": "",
+    "quando": "",
+    "views": "6.750 assistindo"
+   },
+   {
+    "id": "mZal-NT4xu0",
+    "titulo": "IGOR faz as PERGUNTAS que TODO MUNDO queria fazer pro LULA",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:41",
+    "quando": "há 12 dias",
+    "views": "283.331 visualizações"
+   }
+  ]
+ },
+ {
+  "tema": "privatizacoes",
+  "busca": "cortes do flow privatização",
+  "resultados": [
+   {
+    "id": "OM50BxU8vuc",
+    "titulo": "AS PRIVATIZAÇÕES FORAM UM ERRO! 🚨 #fernandohaddad #tarcisio #sabesp #flow #fyp",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "1:04",
+    "quando": "há 2 semanas",
+    "views": "32.595 visualizações"
+   },
+   {
+    "id": "ioCpJsYSgJc",
+    "titulo": "PRIVATIZAÇÃO NO BRASIL | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "10:53",
+    "quando": "há 5 anos",
+    "views": "48.410 visualizações"
+   },
+   {
+    "id": "nwQhzupr54s",
+    "titulo": "O ESCÂNDALO DAS EMENDAS DE R$ 67 BI! 💰 #simonetebet #dinheiropublico #brasil #flow #viral",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "0:46",
+    "quando": "há 2 semanas",
+    "views": "25.393 visualizações"
+   },
+   {
+    "id": "whmc7x-eFfs",
+    "titulo": "CAIADO CRITÍCA PRIVATIZAÇÕES e a CANDIDATURA de FLÁVIO BOLSONARO",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:04",
+    "quando": "há 3 meses",
+    "views": "6.545 visualizações"
+   },
+   {
+    "id": "B-joKygVSAs",
+    "titulo": "FLOW E HADDAD DEBATEM PRIVATIZAÇÃO | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "13:46",
+    "quando": "há 5 anos",
+    "views": "227.522 visualizações"
+   },
+   {
+    "id": "ZXfVyFAuvhU",
+    "titulo": "MANDETTA QUER PRIVATIZAR O SUS? | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "7:15",
+    "quando": "há 5 anos",
+    "views": "49.918 visualizações"
+   },
+   {
+    "id": "QWnAJkamq9k",
+    "titulo": "PRIVATIZAR OU ESTATIZAR? | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "14:07",
+    "quando": "há 6 anos",
+    "views": "538.636 visualizações"
+   },
+   {
+    "id": "UrbDzAJhP3Y",
+    "titulo": "LULA EXPÕE o real objetivo das TARIFAS de TRUMP e revela BASTIDORES com o presidente",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:31",
+    "quando": "há 12 dias",
+    "views": "17.054 visualizações"
+   },
+   {
+    "id": "ai6ON6sezyw",
+    "titulo": "'A população vai se ASSUSTAR': REINALDO AZEVEDO REFUTA TODO O PLANO ECONOMICO de Flávio Bolsonaro",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "35:30",
+    "quando": "há 5 dias",
+    "views": "1.203.141 visualizações"
+   },
+   {
+    "id": "G4hsiy-UAOA",
+    "titulo": "PRIVATIZAR OU ESTATIZAR?  -  Cortes do Flow",
+    "canal": "CORTES FLOWS PODCASTS",
+    "canal_id": "UCLIBehGRaNRNy74LVzoYLRg",
+    "duracao": "14:07",
+    "quando": "há 5 anos",
+    "views": "5 visualizações"
+   },
+   {
+    "id": "pFtP6OGn7-o",
+    "titulo": "Privatização dos correios? - Cortes do Flow - Vídeo de Opinião",
+    "canal": "Brother Zureta",
+    "canal_id": "UCIGgojFGZz5OMpkTYvlQSig",
+    "duracao": "3:15",
+    "quando": "há 5 anos",
+    "views": "22 visualizações"
+   },
+   {
+    "id": "4YwVbs7hn5E",
+    "titulo": "LULA RESPONDE CRÍTICAS e explica suas propostas",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "11:44",
+    "quando": "há 12 dias",
+    "views": "46.321 visualizações"
+   },
+   {
+    "id": "cRIGFLSsT4w",
+    "titulo": "LULA ABRE o JOGO sobre EMENDAS PARLAMENTARES e SURPREENDE IGOR com PERGUNTA SINCERA",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "12:13",
+    "quando": "há 12 dias",
+    "views": "35.701 visualizações"
+   },
+   {
+    "id": "OlCgWsQKmdQ",
+    "titulo": "MANDETTA QUER PRIVATIZAR O SUS    Cortes do Flow",
+    "canal": "A Rejeição",
+    "canal_id": "UC-Qx9a1KuKiAD0PopojfZ3w",
+    "duracao": "7:15",
+    "quando": "há 5 anos",
+    "views": "117 visualizações"
+   },
+   {
+    "id": "_VBXtMHrcEk",
+    "titulo": "CIRO GOMES SOBRE GOVERNO DO PT | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "3:07",
+    "quando": "há 5 anos",
+    "views": "70.426 visualizações"
+   }
+  ]
+ },
+ {
+  "tema": "tarifa",
+  "busca": "cortes do flow transporte público",
+  "resultados": [
+   {
+    "id": "RqANge5pFGk",
+    "titulo": "ARTHUR DO VAL é SINCERO ATÉ DEMAIS sobre o Partido Missão nas ELEIÇÕES 2026",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:17",
+    "quando": "há 22 horas",
+    "views": "251.411 visualizações"
+   },
+   {
+    "id": "CegirMQfQW0",
+    "titulo": "PERRENGUES EM TRANSPORTE PÚBLICO | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "14:26",
+    "quando": "há 5 anos",
+    "views": "167.004 visualizações"
+   },
+   {
+    "id": "pdsSAPRDPVQ",
+    "titulo": "LULA em RISCO no 2º TURNO? 🗳️ #politica #eleicoes #lula #viral #flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "1:11",
+    "quando": "há 2 dias",
+    "views": "225.542 visualizações"
+   },
+   {
+    "id": "3uI0uaexj7E",
+    "titulo": "IGOR REVELA BASTIDORES com a equipe de LULA em entrevista no PLANALTO CENTRAL",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:03",
+    "quando": "há 5 dias",
+    "views": "139.843 visualizações"
+   },
+   {
+    "id": "N3eU-2VIByQ",
+    "titulo": "FABIO AKITA - Flow #663",
+    "canal": "Flow Podcast",
+    "canal_id": "UC4ncvgh5hFr5O83MH7-jRJg",
+    "duracao": "",
+    "quando": "",
+    "views": "6.750 assistindo"
+   },
+   {
+    "id": "ivVjaZbpNLI",
+    "titulo": "'200 MIL UNIDADES em 6 minutos': Como o PERFUME DO CEBOLINHA, e outros produtos, VIRARAM UM FENÔMENO",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "11:32",
+    "quando": "há 1 dia",
+    "views": "53.269 visualizações"
+   },
+   {
+    "id": "UrbDzAJhP3Y",
+    "titulo": "LULA EXPÕE o real objetivo das TARIFAS de TRUMP e revela BASTIDORES com o presidente",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:31",
+    "quando": "há 12 dias",
+    "views": "17.054 visualizações"
+   },
+   {
+    "id": "RRnXyFsGsPM",
+    "titulo": "TREINANDO os CANDIDATOS à PRESIDÊNCIA: Julio Balestrin é 100% SINCERO no Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:07",
+    "quando": "há 2 meses",
+    "views": "656.957 visualizações"
+   },
+   {
+    "id": "2w9qadG9nco",
+    "titulo": "O SUBMARINO DO IBERÊ THENÓRIO | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "11:38",
+    "quando": "há 5 anos",
+    "views": "223.989 visualizações"
+   },
+   {
+    "id": "U1DkNqLigak",
+    "titulo": "REINALDO AZEVEDO - Flow #660",
+    "canal": "Flow Podcast",
+    "canal_id": "UC4ncvgh5hFr5O83MH7-jRJg",
+    "duracao": "3:09:09",
+    "quando": "Transmitido há 5 dias",
+    "views": "1.016.670 visualizações"
+   },
+   {
+    "id": "mZal-NT4xu0",
+    "titulo": "IGOR faz as PERGUNTAS que TODO MUNDO queria fazer pro LULA",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:41",
+    "quando": "há 12 dias",
+    "views": "283.331 visualizações"
+   },
+   {
+    "id": "SxcibCqZQOI",
+    "titulo": "A MÁFIA do TRANSPORTE PÚBLICO de SP: PCC ENVOLVIDO nas GREVES e LICITAÇÕES?",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "14:02",
+    "quando": "há 10 meses",
+    "views": "42.442 visualizações"
+   },
+   {
+    "id": "ADS5L4fouIs",
+    "titulo": "PERRENGUES EM TRANSPORTE PÚBLICO   Cortes do Flow",
+    "canal": "Flow Cortes Cinco estrelas",
+    "canal_id": "UCPXwdVyCY2eUdbUio8RalLA",
+    "duracao": "14:26",
+    "quando": "há 5 anos",
+    "views": "5 visualizações"
+   },
+   {
+    "id": "mr4vMdHGR3E",
+    "titulo": "IGOR INTERROMPE o podcast e convidados NÃO SE AGUENTAM",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "9:40",
+    "quando": "há 1 dia",
+    "views": "7.959 visualizações"
+   },
+   {
+    "id": "pE2OpT-zW14",
+    "titulo": "FLÁVIO SAIU MUDADO APÓS CONVERSA COM JAIR? [com Arthur do Val]",
+    "canal": "Flow Podcast",
+    "canal_id": "UC4ncvgh5hFr5O83MH7-jRJg",
+    "duracao": "1:53:11",
+    "quando": "Transmitido há 22 horas",
+    "views": "392.084 visualizações"
+   }
+  ]
+ },
+ {
+  "tema": "redes",
+  "busca": "cortes do flow regulação redes sociais",
+  "resultados": [
+   {
+    "id": "wRL4YDOHKko",
+    "titulo": "A QUEM interessa REGULAR as REDES SOCIAIS? Especialista é 100% SINCERO no Flow  [com Fábio Zambeli]",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:36",
+    "quando": "há 1 ano",
+    "views": "1.902 visualizações"
+   },
+   {
+    "id": "xXGTk98nrpU",
+    "titulo": "A VERDADE que NINGUÉM FALA na TV! 💣 #politica #lula #stf  #flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "0:39",
+    "quando": "há 2 dias",
+    "views": "23.064 visualizações"
+   },
+   {
+    "id": "eEB7whCM2Z4",
+    "titulo": "REGULAMENTAÇÃO da INTERNET",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "10:33",
     "quando": "há 3 anos",
-    "views": "1.066 visualizações"
+    "views": "24.377 visualizações"
    },
    {
-    "id": "pP13PS87UEw",
-    "titulo": "Entendendo a metodologia usada na avaliação de impacto do uso das câmeras corporais pela PMESP",
-    "canal": "FGV CCAS",
-    "canal_id": "UC7lmZNF6kNpCXR8Q8KOj_sg",
-    "duracao": "6:03",
-    "quando": "há 3 anos",
-    "views": "481 visualizações"
+    "id": "GU9m1zJH548",
+    "titulo": "CEO do Google 100% SINCERO sobre a REGULAÇÃO das Redes Sociais",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "3:19",
+    "quando": "há 11 meses",
+    "views": "1.844 visualizações"
    },
    {
-    "id": "9DlZLyBaVv8",
-    "titulo": "O uso de câmeras corporais em seus uniformes",
-    "canal": "Rede Século 21 | Jornalismo",
-    "canal_id": "UC0APLxALWhTrAA00T4Y7Ulw",
-    "duracao": "0:51",
+    "id": "6Hr_akc3Psg",
+    "titulo": "REDES SOCIAIS | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "5:43",
+    "quando": "há 6 anos",
+    "views": "37.076 visualizações"
+   },
+   {
+    "id": "pj33wColNGA",
+    "titulo": "Igor SOLTA O VERBO sobre a regulamentação das REDES SOCIAIS",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "15:22",
     "quando": "há 1 ano",
-    "views": "24 visualizações"
+    "views": "80.278 visualizações"
    },
    {
-    "id": "L0lHUbH6W8o",
-    "titulo": "Entenda decisão do STF que obriga uso de câmeras corporais da Polícia Militar de São Paulo",
-    "canal": "SBT News",
-    "canal_id": "UC376n347Ob5Lwzq2WGzF1AA",
-    "duracao": "8:02",
+    "id": "nSqHA8VbVbo",
+    "titulo": "CLIMA ESQUENTA no Flow: Convidados sobre CENSURA e REGULAÇÃO da Internet com a Lei Felca",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:01",
+    "quando": "há 6 meses",
+    "views": "3.694 visualizações"
+   },
+   {
+    "id": "IwgSoC_i26M",
+    "titulo": "DITADURA do SUPREMO? MENTIRAM pra você sobre A REGULAÇÃO das Rede Sociais [com Reinaldo Azevedo]",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "12:21",
     "quando": "há 1 ano",
-    "views": "1.289 visualizações"
+    "views": "36.295 visualizações"
    },
    {
-    "id": "L27vsOdG3f0",
-    "titulo": "‘Não faltavam dados para mostrar que as câmeras corporais eram uma política pública bem-sucedida’",
-    "canal": "Rádio CBN",
-    "canal_id": "UCbiGwU0-W1XCDUrt3BTVrag",
-    "duracao": "2:19",
-    "quando": "há 1 ano",
-    "views": "153 visualizações"
+    "id": "mZal-NT4xu0",
+    "titulo": "IGOR faz as PERGUNTAS que TODO MUNDO queria fazer pro LULA",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:41",
+    "quando": "há 12 dias",
+    "views": "283.331 visualizações"
    },
    {
-    "id": "fg9Pe5xYj-4",
-    "titulo": "Letalidade Policial em São Paulo",
-    "canal": "FGV EAESP Pesquisa",
-    "canal_id": "UCTW1CKZpNIXVRs-KrqQr2cA",
-    "duracao": "10:32",
-    "quando": "há 8 anos",
-    "views": "1.423 visualizações"
+    "id": "qR1fQYYAlZU",
+    "titulo": "QUAL o LIMITE das REDES SOCIAIS? OS ABSURDOS que as PESSOAS POSTAM na INTERNET",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "11:22",
+    "quando": "há 11 meses",
+    "views": "7.723 visualizações"
    },
    {
-    "id": "vlylUBqynbU",
-    "titulo": "Barroso estabelece situações para uso obrigatório de câmeras corporais por PMs em São Paulo",
-    "canal": "Record News",
-    "canal_id": "UCuiLR4p6wQ3xLEm15pEn1Xw",
-    "duracao": "0:40",
-    "quando": "há 1 ano",
-    "views": "1.038 visualizações"
+    "id": "N3eU-2VIByQ",
+    "titulo": "FABIO AKITA - Flow #663",
+    "canal": "Flow Podcast",
+    "canal_id": "UC4ncvgh5hFr5O83MH7-jRJg",
+    "duracao": "",
+    "quando": "",
+    "views": "6.750 assistindo"
    },
    {
-    "id": "78rcnnTvPhM",
-    "titulo": "Novas imagens mostram abordagem policial que terminou com morte de jovem em SP | #SBTBrasil",
-    "canal": "SBT News e SBT Jornalismo",
-    "canal_id": null,
-    "duracao": "2:29",
-    "quando": "há 23 horas",
-    "views": "60.711 visualizações"
+    "id": "HHcVQYRUqjU",
+    "titulo": "DEBATE COM O DEPUTADO DO PT E O CLIMA ESQUENTOU | Cortes do Flow",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "9:30",
+    "quando": "há 6 anos",
+    "views": "873.776 visualizações"
+   },
+   {
+    "id": "qRwTUqdyG2k",
+    "titulo": "IGOR foi sincero ATÉ DEMAIS com Presidente Lula...",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "11:14",
+    "quando": "há 12 dias",
+    "views": "72.283 visualizações"
+   },
+   {
+    "id": "niaU9kM3gdY",
+    "titulo": "CRIPTOMOEDAS nas Relações INTERNACIONAIS",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "9:09",
+    "quando": "há 4 anos",
+    "views": "86.198 visualizações"
+   },
+   {
+    "id": "p_9lw8YVG0U",
+    "titulo": "O QUE ESPERAR se FLÁVIO BOLSONARO for PRESIDENTE?",
+    "canal": "Cortes do Flow [OFICIAL]",
+    "canal_id": "UC3uYvpJ3J6oNoNYRXfZXjEw",
+    "duracao": "8:06",
+    "quando": "há 7 dias",
+    "views": "49.486 visualizações"
    }
   ]
  }
