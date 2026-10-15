@@ -1865,12 +1865,12 @@ window.TEMAS = [
     ],
     "videos": [
       {
-        "id": "5a75td96eRY",
+        "id": "-qkYuJvzCbo",
         "lado": "favoravel",
-        "titulo": "A verdade sobre legítima defesa, com Bene Barbosa no Flow",
-        "canal": "Mundo dos Cortes",
-        "nota": "O principal defensor do armamento civil no país explica seu argumento.",
-        "duracao": "7:32"
+        "titulo": "Bene Barbosa refuta as críticas ao armamento",
+        "canal": "Cortes do Flow",
+        "nota": "O presidente do Movimento Viva Brasil rebate os argumentos do desarmamento.",
+        "duracao": "6:15"
       },
       {
         "id": "0XB4c71GPPc",
@@ -2739,12 +2739,12 @@ window.TEMAS = [
     ],
     "videos": [
       {
-        "id": "u-p4mowR3Tc",
+        "id": "unZcDsqrgEM",
         "lado": "favoravel",
-        "titulo": "Igor e Whindersson Nunes 100% sinceros sobre a legalização da maconha",
-        "canal": "Talk Flow",
-        "nota": "Os dois conversam sem rodeios sobre legalizar.",
-        "duracao": "15:33"
+        "titulo": "A legalização resolveria a superlotação dos presídios?",
+        "canal": "Cortes do Flow",
+        "nota": "Convidados discutem um dos argumentos centrais de quem defende a mudança: tirar usuários e pequenos traficantes das cadeias.",
+        "duracao": "14:08"
       },
       {
         "id": "agAWz6TkueU",
@@ -3037,12 +3037,12 @@ window.TEMAS = [
         "duracao": "11:49"
       },
       {
-        "id": "2rnlmxbXNS4",
+        "id": "MLpsKK2KF1M",
         "lado": "favoravel",
-        "titulo": "Por que os super-ricos pagam menos impostos que você",
-        "canal": "Cortes do Flow News",
-        "nota": "Como os dividendos isentos reduzem o imposto do topo.",
-        "duracao": "7:10"
+        "titulo": "Rico deveria pagar mais imposto",
+        "canal": "Cortes do Flow",
+        "nota": "Eduardo Marinho e Chavoso da USP defendem cobrar mais de quem ganha mais.",
+        "duracao": "6:00"
       },
       {
         "id": "sxRE7OlCRcg",
@@ -3918,12 +3918,12 @@ window.TEMAS = [
         "duracao": "1:38"
       },
       {
-        "id": "bMSNPlkuHWE",
+        "id": "7hA73CvycCg",
         "lado": "contrario",
-        "titulo": "O que Lucas Pavanato tem a dizer sobre o aborto",
-        "canal": "Cortes do Flow News",
-        "nota": "O influenciador conservador defende a proteção da vida desde a concepção.",
-        "duracao": "6:30"
+        "titulo": "Meu corpo, minhas regras? Pastor opina sobre o aborto",
+        "canal": "Cortes do Flow",
+        "nota": "Um pastor explica por que é contra o aborto e responde ao argumento da autonomia da mulher.",
+        "duracao": "17:54"
       },
       {
         "id": "Jd8b-ZEesWY",
@@ -4496,12 +4496,12 @@ window.TEMAS = [
         "duracao": "4:22"
       },
       {
-        "id": "do8wR9_HQN4",
+        "id": "DmBHXVHe2S0",
         "lado": "contrario",
-        "titulo": "Marco temporal pode ter brechas para garimpo em terras indígenas",
-        "canal": "Cortes do Flow News",
-        "nota": "Os riscos que o projeto traria para os territórios.",
-        "duracao": "16:06"
+        "titulo": "Presidente da Funai: aprovação do marco temporal seria retrocesso",
+        "canal": "CNN Brasil",
+        "nota": "Joenia Wapichana, primeira mulher indígena a presidir a Funai, explica por que é contra.",
+        "duracao": "2:36"
       },
       {
         "id": "izZmxp6QXMY",
