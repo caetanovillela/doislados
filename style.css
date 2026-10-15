@@ -371,24 +371,32 @@ body { overflow-x: clip; }
 
 /* Capa da página inicial com foto de fundo (cores fixas para contraste) */
 .capa.capa-foto {
+  --fade: clamp(220px, 32vh, 340px);
   position: relative; isolation: isolate; overflow: hidden; color: #fff;
-  margin: 0 calc(50% - 50vw); padding: clamp(80px, 14vh, 150px) max(var(--margem), env(safe-area-inset-left, 0px)) 72px;
-  min-height: clamp(460px, 72vh, 720px); align-content: center; background: #111;
+  margin: 0 calc(50% - 50vw); padding: clamp(80px, 14vh, 150px) max(var(--margem), env(safe-area-inset-left, 0px)) calc(var(--fade) + 8px);
+  min-height: clamp(620px, 92vh, 980px); align-content: center; background: var(--papel);
   text-shadow: 0 2px 24px rgba(0,0,0,0.5);
 }
 .capa-foto .banner-foto { object-position: 50% 60%; }
+/* Escurece a foto atrás do texto e dissolve suavemente na cor da página */
 .capa-foto::before {
   content: ""; position: absolute; inset: 0; z-index: -1;
-  background: radial-gradient(ellipse at 50% 50%, rgba(8,8,8,0.55) 0%, rgba(8,8,8,0.72) 70%), linear-gradient(to top, rgba(8,8,8,0.6), rgba(8,8,8,0) 40%);
+  background:
+    linear-gradient(to bottom, rgba(8,8,8,0) 0%, rgba(8,8,8,0) calc(100% - var(--fade)), var(--papel) 100%),
+    radial-gradient(ellipse 70% 55% at 50% 42%, rgba(8,8,8,0.62) 0%, rgba(8,8,8,0.5) 60%, rgba(8,8,8,0.35) 100%);
+}
+.capa-foto .banner-foto {
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 calc(100% - var(--fade) * 1.15), rgba(0,0,0,0.4) calc(100% - var(--fade) * 0.5), transparent 100%);
+          mask-image: linear-gradient(to bottom, #000 0%, #000 calc(100% - var(--fade) * 1.15), rgba(0,0,0,0.4) calc(100% - var(--fade) * 0.5), transparent 100%);
 }
 .capa-foto h1 .grifo { text-shadow: none; }
 .capa-credito {
   position: absolute; right: max(var(--margem), env(safe-area-inset-right, 0px)); bottom: 14px; left: max(var(--margem), env(safe-area-inset-left, 0px));
-  margin: 0; text-align: right; font-size: 0.62rem; color: rgba(255,255,255,0.7); text-shadow: none;
+  margin: 0; text-align: right; font-size: 0.62rem; color: var(--apagado); text-shadow: none;
 }
 .capa-credito a { color: inherit; text-underline-offset: 2px; }
-.capa-credito a:hover { color: #fff; }
-.capa-foto + * { margin-top: 40px; }
+.capa-credito a:hover { color: var(--tinta); }
+.capa-foto + * { margin-top: 8px; }
 
 /* Continue lendo: fim do dossiê */
 .continue-grade { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
@@ -454,7 +462,7 @@ a.menu-cat { text-decoration: none; }
   .busca-topo { order: 3; flex-basis: 100%; max-width: none; }
   .menu { margin-left: auto; }
   .capa { padding-block: 44px 36px; }
-  .capa.capa-foto { padding-block: 72px 64px; min-height: 560px; }
+  .capa.capa-foto { --fade: 200px; padding-top: 72px; min-height: 680px; }
   .capa-credito { text-align: left; }
   .capa h1 { font-size: clamp(3.4rem, 17vw, 5.5rem); }
   /* Ponto a ponto vira cartões empilhados */
