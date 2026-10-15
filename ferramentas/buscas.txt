@@ -1,14 +1,13 @@
-foz | Randolfe petróleo margem equatorial Amapá desenvolvimento
-foz | Magda Chambriard margem equatorial
-foz | margem equatorial petróleo a favor soberania energética
-foz | Marina Silva foz do Amazonas petróleo
-foz | Observatório do Clima foz do Amazonas petróleo
-foz | Flow petróleo margem equatorial
-civico | escola cívico-militar pais aprovam disciplina resultado
-civico | Tarcísio escolas cívico-militares defende
-civico | Daniel Cara escola cívico-militar
-civico | Flow escola cívico-militar debate
-cameras | Derrite câmeras corporais críticas
-cameras | câmeras corporais policiais atrapalham trabalho policial
-cameras | Flow câmera corporal policial
-cameras | câmeras corporais FGV estudo letalidade policial São Paulo
+armas | cortes do flow armas legítima defesa
+armas | cortes do flow desarmamento
+maconha | cortes do flow maconha legalização
+maconha | cortes do flow drogas descriminalização
+super-ricos | cortes do flow imposto ricos
+aborto | cortes do flow aborto
+marco-temporal | cortes do flow marco temporal indígenas
+marco-temporal | cortes do flow terra indígena agro
+foz | cortes do flow petróleo margem equatorial
+foz | cortes do flow petrobras amazonia
+privatizacoes | cortes do flow privatização
+tarifa | cortes do flow transporte público
+redes | cortes do flow regulação redes sociais
