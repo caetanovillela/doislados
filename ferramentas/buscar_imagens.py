@@ -53,6 +53,8 @@ if os.path.exists("ferramentas/imagens.json"):
 saida["candidatas"] = {}
 cands = saida["candidatas"]
 for tema, termos in ler("imagens_busca.txt"):
+    livre_origem = termos.startswith("*")
+    termos = termos.lstrip("*").strip()
     try:
         r = get({"action": "query", "list": "search", "srsearch": termos + " filetype:bitmap", "srnamespace": 6, "srlimit": 50})
         titulos = [x["title"] for x in r["query"]["search"]]
@@ -60,7 +62,7 @@ for tema, termos in ler("imagens_busca.txt"):
         lista = []
         for k in range(0, len(titulos), 25):
             lista += [i for i in info(titulos[k:k+25], 480) if i["livre"] and i["mime"] == "image/jpeg" and (i["largura"] or 0) >= 1000
-                      and any(b in (i["autor"] + " " + i.get("credito", "")).lower() for b in BRASIL)]
+                      and (livre_origem or any(b in (i["autor"] + " " + i.get("credito", "")).lower() for b in BRASIL))]
         lista = lista[:14]
         for n, i in enumerate(lista):
             nome = f"{tema}/{re.sub(r'[^a-z0-9]+', '-', termos.lower())[:30]}-{n}.jpg"

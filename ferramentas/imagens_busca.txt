@@ -1,36 +1,19 @@
-escala-6x1 | comerciários
-escala-6x1 | carteira de trabalho
-escala-6x1 | trabalhadores comércio
-reforma-tributaria | nota fiscal
-reforma-tributaria | reforma tributária
-reforma-tributaria | impostos
-maioridade-penal | socioeducativo
-maioridade-penal | sistema prisional
-maioridade-penal | maioridade penal
-tarifa-zero | passageiros ônibus
-tarifa-zero | Passe Livre
-tarifa-zero | tarifa zero
-bolsa-familia | Bolsa Família
-bolsa-familia | Cadastro Único
-armas | armas apreendidas
-armas | desarmamento
-armas | Estatuto do Desarmamento
-privatizacoes | Sabesp
-privatizacoes | Eletrobras
-privatizacoes | privatização
-maconha | Marcha da Maconha
-maconha | cannabis
-maconha | maconha
-super-ricos | Faria Lima
-super-ricos | Imposto de Renda
-super-ricos | Ibovespa
-cotas-universidades | cotas raciais
-cotas-universidades | vestibular
-cotas-universidades | Enem
-civico-militares | cívico-militar
-civico-militares | escola estadual alunos
-civico-militares | sala de aula
-redes-sociais | fake news
-foz-amazonas | Margem Equatorial
-foz-amazonas | Macapá
-foz-amazonas | plataforma de petróleo
+reforma-tributaria | *supermercado Brasil
+reforma-tributaria | *feira livre São Paulo
+reforma-tributaria | *Congresso Nacional Brasília
+bolsa-familia | *Bolsa Família
+bolsa-familia | *Cadastro Único
+bolsa-familia | *comunidade periferia São Paulo
+armas | *Taurus pistola
+armas | *armas de fogo Brasil
+armas | *clube de tiro
+privatizacoes | *Sabesp
+privatizacoes | *Eletrobras
+privatizacoes | *Edifício sede Petrobras
+maconha | *Marcha da Maconha
+maconha | *cannabis medicinal Brasil
+super-ricos | *Avenida Brigadeiro Faria Lima
+super-ricos | *Receita Federal
+super-ricos | *B3 bolsa São Paulo
+civico-militares | *escola cívico-militar
+civico-militares | *Colégio da Polícia Militar
