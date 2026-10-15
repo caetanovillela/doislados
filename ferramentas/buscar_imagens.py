@@ -59,7 +59,7 @@ for tema, termos in ler("imagens_busca.txt"):
         if not titulos: continue
         lista = []
         for k in range(0, len(titulos), 25):
-            lista += [i for i in info(titulos[k:k+25], 480) if i["livre"] and i["mime"] == "image/jpeg" and (i["largura"] or 0) >= 1200
+            lista += [i for i in info(titulos[k:k+25], 480) if i["livre"] and i["mime"] == "image/jpeg" and (i["largura"] or 0) >= 1000
                       and any(b in (i["autor"] + " " + i.get("credito", "")).lower() for b in BRASIL)]
         lista = lista[:14]
         for n, i in enumerate(lista):
@@ -67,7 +67,7 @@ for tema, termos in ler("imagens_busca.txt"):
             try: baixar(i["thumb"], "img/candidatas/" + nome); i["local"] = nome
             except Exception as e: i["erro"] = str(e)
         cands.setdefault(tema, {})[termos] = lista
-        print(tema, termos, len(lista))
+        print(tema, termos, "achados", len(titulos), "brasileiras", len(lista))
     except Exception as e:
         print("ERRO", tema, termos, e)
 esc = saida.setdefault("escolhidas", {})

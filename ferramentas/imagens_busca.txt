@@ -1,37 +1,36 @@
-escala-6x1 | trabalhadores comércio loja
-escala-6x1 | carteira de trabalho emprego
-escala-6x1 | trabalhadores metrô lotado
-reforma-tributaria | notas fiscais impostos consumidor
-reforma-tributaria | Câmara dos Deputados plenário votação reforma
-reforma-tributaria | consumidores supermercado preços
-maioridade-penal | adolescentes internação socioeducativa
-maioridade-penal | presídio celas detentos
-maioridade-penal | Fundação Casa
+escala-6x1 | comerciários
+escala-6x1 | carteira de trabalho
+escala-6x1 | trabalhadores comércio
+reforma-tributaria | nota fiscal
+reforma-tributaria | reforma tributária
+reforma-tributaria | impostos
+maioridade-penal | socioeducativo
+maioridade-penal | sistema prisional
+maioridade-penal | maioridade penal
 tarifa-zero | passageiros ônibus
-tarifa-zero | ônibus terminal BRT
-tarifa-zero | tarifa ônibus protesto passe livre
-bolsa-familia | Bolsa Família cartão Caixa
-bolsa-familia | Cadastro Único atendimento
-bolsa-familia | beneficiárias programa social famílias
+tarifa-zero | Passe Livre
+tarifa-zero | tarifa zero
+bolsa-familia | Bolsa Família
+bolsa-familia | Cadastro Único
 armas | armas apreendidas
-armas | destruição de armas Exército
-armas | campanha desarmamento entrega armas
-privatizacoes | Petrobras edifício sede
+armas | desarmamento
+armas | Estatuto do Desarmamento
 privatizacoes | Sabesp
-privatizacoes | Correios agência
+privatizacoes | Eletrobras
+privatizacoes | privatização
 maconha | Marcha da Maconha
-maconha | cannabis medicinal
-maconha | maconha apreendida
-super-ricos | Avenida Faria Lima
-super-ricos | declaração imposto de renda Receita Federal
-super-ricos | B3 bolsa de valores
-cotas-universidades | estudantes universidade cotas
-cotas-universidades | Enem estudantes prova
-cotas-universidades | universidade campus estudantes
-civico-militares | escola cívico-militar alunos
-civico-militares | estudantes escola pública sala de aula
-redes-sociais | celular redes sociais
-redes-sociais | smartphone internet jovens
-foz-amazonas | Macapá orla rio Amazonas
-foz-amazonas | plataforma petróleo Petrobras
-foz-amazonas | navio-sonda Petrobras
+maconha | cannabis
+maconha | maconha
+super-ricos | Faria Lima
+super-ricos | Imposto de Renda
+super-ricos | Ibovespa
+cotas-universidades | cotas raciais
+cotas-universidades | vestibular
+cotas-universidades | Enem
+civico-militares | cívico-militar
+civico-militares | escola estadual alunos
+civico-militares | sala de aula
+redes-sociais | fake news
+foz-amazonas | Margem Equatorial
+foz-amazonas | Macapá
+foz-amazonas | plataforma de petróleo
