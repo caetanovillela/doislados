@@ -337,16 +337,37 @@ tbody td { width: 40%; font-size: 1rem; line-height: 1.45; }
 @keyframes pagina-sai { to { opacity: 0; } }
 @keyframes pagina-entra { from { opacity: 0; transform: translateY(10px); } }
 
-/* Foto de topo do dossiê: preto e branco para manter a identidade neutra */
-.foto-topo { margin: 24px 0 0; display: grid; gap: 8px; }
-.foto-topo img {
-  display: block; width: 100%; aspect-ratio: 21 / 8; object-fit: cover; background: var(--fio);
-  filter: grayscale(1) contrast(1.05); border: 1.5px solid var(--tinta);
+/* Banner do dossiê: foto de ponta a ponta com o título por cima.
+   Cores fixas (não seguem o tema) para garantir contraste sobre a foto. */
+body { overflow-x: clip; }
+.banner {
+  position: relative; display: grid; align-items: end;
+  margin: 20px calc(50% - 50vw) 0; min-height: clamp(420px, 62vh, 640px);
+  background: #111; color: #fff; overflow: hidden; isolation: isolate;
 }
-.foto-topo figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; color: var(--apagado); font-size: 0.66rem; line-height: 1.5; }
-.foto-topo figcaption a { color: inherit; text-underline-offset: 2px; }
-.foto-topo figcaption a:hover { color: var(--tinta); }
-.foto-topo + .dossie { padding-top: 28px; }
+.banner-foto {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2;
+  filter: grayscale(1) contrast(1.05) brightness(0.9);
+}
+.banner::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(to top, rgba(8,8,8,0.92) 0%, rgba(8,8,8,0.72) 38%, rgba(8,8,8,0.25) 72%, rgba(8,8,8,0.1) 100%),
+    linear-gradient(to right, rgba(8,8,8,0.55) 0%, rgba(8,8,8,0) 65%);
+}
+.banner-miolo {
+  width: 100%; max-width: calc(var(--largura) + 2 * var(--margem)); margin-inline: auto;
+  padding-inline: max(var(--margem), env(safe-area-inset-left, 0px));
+}
+.dossie.dossie-banner { padding-block: 64px 40px; text-shadow: 0 1px 18px rgba(0,0,0,0.45); }
+.dossie-banner .apagado, .dossie-banner .quem { color: rgba(255,255,255,0.78); }
+.dossie-banner h1 { color: #fff; }
+.banner-credito {
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px;
+  margin: 8px 0 20px; color: var(--apagado); font-size: 0.66rem; line-height: 1.5;
+}
+.banner-credito a { color: inherit; text-underline-offset: 2px; }
+.banner-credito a:hover { color: var(--tinta); }
 
 /* Página da categoria */
 a.menu-cat { text-decoration: none; }
@@ -419,8 +440,8 @@ a.menu-cat { text-decoration: none; }
   .sumario button { padding: 16px 0 13px; }
   .dossie p { font-size: 1.1rem; }
   .capa .sub { font-size: 1.08rem; }
-  .foto-topo img { aspect-ratio: 4 / 3; }
-  .foto-topo { margin-top: 16px; }
+  .banner { margin-top: 14px; min-height: 520px; }
+  .dossie.dossie-banner { padding-block: 120px 28px; }
   .rodape { grid-template-columns: minmax(0, 1fr); gap: 28px; padding-top: 36px; margin-top: 72px; }
   .rodape-aviso, .autoria { justify-self: start; justify-items: start; text-align: left; }
   .em-alta { padding: 20px 18px 22px 28px; }

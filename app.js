@@ -229,13 +229,10 @@
   ];
 
   // Foto de topo do dossiê, sempre com autor, licença e link para a origem.
-  function fotoTopo(f) {
+  function creditoFoto(f) {
     const autor = f.autor ? esc(f.autor) : "Autor desconhecido";
     const licenca = f.licenca_url ? `<a href="${esc(f.licenca_url)}" target="_blank" rel="noopener">${esc(f.licenca)}</a>` : esc(f.licenca || "");
-    return `<figure class="foto-topo">
-        <img src="${esc(f.arquivo)}" alt="${esc(f.alt || "")}" style="object-position:${esc(f.posicao || "50% 50%")}" decoding="async" fetchpriority="high">
-        <figcaption class="mono">${f.legenda ? `<span>${esc(f.legenda)}</span>` : ""}<span>Foto: ${autor} · ${licenca} · <a href="${esc(f.fonte_url)}" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
-      </figure>`;
+    return `<p class="banner-credito mono">${f.legenda ? `<span>${esc(f.legenda)}</span>` : ""}<span>Foto: ${autor} · ${licenca} · <a href="${esc(f.fonte_url)}" target="_blank" rel="noopener">Wikimedia Commons</a></span></p>`;
   }
 
   function paginaTema(tema) {
@@ -259,13 +256,21 @@
 
     raiz.innerHTML = `
       <nav class="migalha mono"><a href="#">Início</a><span>/</span><a href="#categoria/${tema.categoria}">${esc(nomeCategoria(tema.categoria))}</a><span>/</span><span>${esc(tema.titulo)}</span></nav>
-      ${tema.imagem ? fotoTopo(tema.imagem) : ""}
-      <header class="dossie">
+      ${tema.imagem ? `<div class="banner">
+        <img class="banner-foto" src="${esc(tema.imagem.arquivo)}" alt="${esc(tema.imagem.alt || "")}" style="object-position:${esc(tema.imagem.posicao || "50% 50%")}" decoding="async" fetchpriority="high">
+        <div class="banner-miolo">      <header class="dossie dossie-banner">
         <span class="mono apagado">Dossiê ${numero(tema)} · ${esc(nomeCategoria(tema.categoria))}${tema.atualizado ? " · atualizado em " + dataBR(tema.atualizado) : ""}</span>
         <h1>${esc(tema.pergunta)}</h1>
         <p>${esc(tema.resumo)}</p>
         ${instituicoes.length ? `<p class="quem mono">Leituras de ${instituicoes.map(esc).join(", ")}</p>` : ""}
-      </header>
+      </header></div>
+      </div>
+      ${creditoFoto(tema.imagem)}` : `      <header class="dossie">
+        <span class="mono apagado">Dossiê ${numero(tema)} · ${esc(nomeCategoria(tema.categoria))}${tema.atualizado ? " · atualizado em " + dataBR(tema.atualizado) : ""}</span>
+        <h1>${esc(tema.pergunta)}</h1>
+        <p>${esc(tema.resumo)}</p>
+        ${instituicoes.length ? `<p class="quem mono">Leituras de ${instituicoes.map(esc).join(", ")}</p>` : ""}
+      </header>`}
       ${ctx && ctx.fatos ? `<dl class="numeros">${ctx.fatos.map((f) => `<div><dt>${esc(f.rotulo)}</dt><dd>${esc(f.valor)}</dd></div>`).join("")}</dl>` : ""}
 
       <nav class="sumario" aria-label="Seções do dossiê">
