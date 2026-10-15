@@ -369,6 +369,27 @@ body { overflow-x: clip; }
 .banner-credito a { color: inherit; text-underline-offset: 2px; }
 .banner-credito a:hover { color: var(--tinta); }
 
+/* Capa da página inicial com foto de fundo (cores fixas para contraste) */
+.capa.capa-foto {
+  position: relative; isolation: isolate; overflow: hidden; color: #fff;
+  margin: 0 calc(50% - 50vw); padding: clamp(80px, 14vh, 150px) max(var(--margem), env(safe-area-inset-left, 0px)) 72px;
+  min-height: clamp(460px, 72vh, 720px); align-content: center; background: #111;
+  text-shadow: 0 2px 24px rgba(0,0,0,0.5);
+}
+.capa-foto .banner-foto { object-position: 50% 60%; }
+.capa-foto::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: radial-gradient(ellipse at 50% 50%, rgba(8,8,8,0.55) 0%, rgba(8,8,8,0.72) 70%), linear-gradient(to top, rgba(8,8,8,0.6), rgba(8,8,8,0) 40%);
+}
+.capa-foto h1 .grifo { text-shadow: none; }
+.capa-credito {
+  position: absolute; right: max(var(--margem), env(safe-area-inset-right, 0px)); bottom: 14px; left: max(var(--margem), env(safe-area-inset-left, 0px));
+  margin: 0; text-align: right; font-size: 0.62rem; color: rgba(255,255,255,0.7); text-shadow: none;
+}
+.capa-credito a { color: inherit; text-underline-offset: 2px; }
+.capa-credito a:hover { color: #fff; }
+.capa-foto + * { margin-top: 40px; }
+
 /* Continue lendo: fim do dossiê */
 .continue-grade { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .continue-cartao {
@@ -433,6 +454,8 @@ a.menu-cat { text-decoration: none; }
   .busca-topo { order: 3; flex-basis: 100%; max-width: none; }
   .menu { margin-left: auto; }
   .capa { padding-block: 44px 36px; }
+  .capa.capa-foto { padding-block: 72px 64px; min-height: 560px; }
+  .capa-credito { text-align: left; }
   .capa h1 { font-size: clamp(3.4rem, 17vw, 5.5rem); }
   /* Ponto a ponto vira cartões empilhados */
   .tabela-rolagem { overflow: visible; }

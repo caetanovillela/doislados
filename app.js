@@ -193,9 +193,11 @@
 
   function paginaInicio() {
     raiz.innerHTML = `
-      <section class="capa">
+      <section class="capa capa-foto">
+        <img class="banner-foto" src="img/capa/congresso.jpg" alt="Congresso Nacional, em Brasília, à noite" decoding="async" fetchpriority="high">
         <h1>Duvide.<br><span class="grifo">Compare.</span><br>Decida.</h1>
         <p class="sub">Cada tema reúne estudos das principais universidades e instituições do país, de um lado e do outro, com quem fez cada um e de onde ele parte.</p>
+        <p class="capa-credito mono">Congresso Nacional, Brasília · Foto: Rodolfo Stuckert/Câmara dos Deputados · <a href="https://creativecommons.org/licenses/by/3.0" target="_blank" rel="noopener">CC BY 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Congresso_Nacional_do_Brasil_em_noite_de_lua_cheia.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></p>
       </section>
       ${emAlta()}
       <section class="metodo" aria-labelledby="metodo-titulo">
