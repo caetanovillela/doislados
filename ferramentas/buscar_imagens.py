@@ -7,6 +7,9 @@ import json, os, re, urllib.parse, urllib.request, html
 
 API = "https://commons.wikimedia.org/w/api.php"
 UA = {"User-Agent": "DoisLadosBot/1.0 (https://caetanovillela.github.io/doislados/)"}
+BRASIL = ("agência brasil", "agencia brasil", "abr", "agência senado", "agencia senado", "câmara dos deputados", "agência petrobras", "governo", "prefeitura", "fiocruz", "ufjf",
+          "marcelo camargo", "fernando frazão", "tânia rêgo", "rovena rosa", "valter campanato", "josé cruz", "pozzebom", "marcello casal", "antonio cruz",
+          "tomaz silva", "joédson alves", "elza fiúza", "wilson dias", "paulo pinto", "lula marques", "ricardo stuckert", "pedro frança", "geraldo magela", "roque de sá")
 LIVRES = ("cc0", "public domain", "pd", "cc by", "cc-by", "cc by-sa", "cc-by-sa")
 
 def get(params):
@@ -47,13 +50,18 @@ def ler(nome):
 saida = {}
 if os.path.exists("ferramentas/imagens.json"):
     saida = json.load(open("ferramentas/imagens.json", encoding="utf-8"))
-cands = saida.setdefault("candidatas", {})
+saida["candidatas"] = {}
+cands = saida["candidatas"]
 for tema, termos in ler("imagens_busca.txt"):
     try:
-        r = get({"action": "query", "list": "search", "srsearch": termos + " filetype:bitmap", "srnamespace": 6, "srlimit": 20})
+        r = get({"action": "query", "list": "search", "srsearch": termos + " filetype:bitmap", "srnamespace": 6, "srlimit": 50})
         titulos = [x["title"] for x in r["query"]["search"]]
         if not titulos: continue
-        lista = [i for i in info(titulos, 480) if i["livre"] and i["mime"] == "image/jpeg" and (i["largura"] or 0) >= 1200]
+        lista = []
+        for k in range(0, len(titulos), 25):
+            lista += [i for i in info(titulos[k:k+25], 480) if i["livre"] and i["mime"] == "image/jpeg" and (i["largura"] or 0) >= 1200
+                      and any(b in (i["autor"] + " " + i.get("credito", "")).lower() for b in BRASIL)]
+        lista = lista[:14]
         for n, i in enumerate(lista):
             nome = f"{tema}/{re.sub(r'[^a-z0-9]+', '-', termos.lower())[:30]}-{n}.jpg"
             try: baixar(i["thumb"], "img/candidatas/" + nome); i["local"] = nome
