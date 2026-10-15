@@ -235,6 +235,54 @@
     return `<p class="banner-credito mono">${f.legenda ? `<span>${esc(f.legenda)}</span>` : ""}<span>Foto: ${autor} · ${licenca} · <a href="${esc(f.fonte_url)}" target="_blank" rel="noopener">Wikimedia Commons</a></span></p>`;
   }
 
+  // Fim do dossiê: sugere temas vizinhos para a pessoa seguir lendo
+  const RELACIONADOS = {
+    "escala-6x1": ["reforma-tributaria", "bolsa-familia", "super-ricos"],
+    "reforma-tributaria": ["privatizacoes", "super-ricos", "escala-6x1"],
+    "maioridade-penal": ["cameras-corporais", "armas", "civico-militares"],
+    "tarifa-zero": ["bolsa-familia", "privatizacoes", "super-ricos"],
+    "bolsa-familia": ["super-ricos", "escala-6x1", "tarifa-zero"],
+    "armas": ["cameras-corporais", "maioridade-penal", "maconha"],
+    "cameras-corporais": ["armas", "maioridade-penal", "maconha"],
+    "privatizacoes": ["reforma-tributaria", "foz-amazonas", "tarifa-zero"],
+    "maconha": ["aborto", "armas", "maioridade-penal"],
+    "super-ricos": ["reforma-tributaria", "bolsa-familia", "escala-6x1"],
+    "cotas-universidades": ["civico-militares", "marco-temporal", "bolsa-familia"],
+    "civico-militares": ["cotas-universidades", "maioridade-penal", "redes-sociais"],
+    "aborto": ["maconha", "redes-sociais", "marco-temporal"],
+    "redes-sociais": ["aborto", "civico-militares", "cameras-corporais"],
+    "marco-temporal": ["foz-amazonas", "cotas-universidades", "aborto"],
+    "foz-amazonas": ["marco-temporal", "privatizacoes", "reforma-tributaria"],
+  };
+  function continueLendo(tema) {
+    const pronto = (t) => t && t.id !== tema.id && !t.emBreve;
+    const achar = (id) => window.TEMAS.find((t) => t.id === id);
+    let lista = (RELACIONADOS[tema.id] || []).map(achar).filter(pronto);
+    for (const t of window.TEMAS) {
+      if (lista.length >= 3) break;
+      if (pronto(t) && !lista.includes(t) && t.categoria === tema.categoria) lista.push(t);
+    }
+    for (const t of window.TEMAS) {
+      if (lista.length >= 3) break;
+      if (pronto(t) && !lista.includes(t)) lista.push(t);
+    }
+    if (!lista.length) return "";
+    return `
+      <section class="bloco continue" aria-labelledby="continue-h">
+        <div class="bloco-cab"><h2 id="continue-h">Continue lendo</h2><span class="mono apagado">Outros temas em debate</span></div>
+        <div class="continue-grade">
+          ${lista.slice(0, 3).map((t) => `
+          <a class="continue-cartao" href="#${t.id}">
+            ${t.imagem ? `<img src="${esc(t.imagem.arquivo)}" alt="" loading="lazy" decoding="async" style="object-position:${esc(t.imagem.posicao || "50% 50%")}">` : ""}
+            <span class="mono apagado">${esc(nomeCategoria(t.categoria))}</span>
+            <strong>${esc(t.titulo)}</strong>
+            <span class="perg">${esc(t.pergunta)}</span>
+            <span class="mono continue-ir">Abrir dossiê →</span>
+          </a>`).join("")}
+        </div>
+      </section>`;
+  }
+
   function paginaTema(tema) {
     raiz.onclick = null;
     const ctx = tema.contexto;
@@ -339,7 +387,8 @@
         <ul class="fontes">
           ${tema.fontes.map((f) => `<li><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.titulo)}</a></li>`).join("")}
         </ul>
-      </section>` : ""}`;
+      </section>` : ""}
+      ${continueLendo(tema)}`;
 
     // Filtro de lados: com os dois lados, cartões enxutos; com um lado só, cartões completos
     const DICAS = {
