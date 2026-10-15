@@ -15,6 +15,7 @@ jobs:
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          mkdir -p img/candidatas img/temas && touch img/temas/.gitkeep
           git add -A img/candidatas img/temas ferramentas/imagens.json
           git commit -m "Imagens do Commons" || exit 0
           git pull --rebase -q || true
