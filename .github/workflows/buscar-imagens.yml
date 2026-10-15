@@ -1,0 +1,21 @@
+name: Buscar imagens
+on:
+  push:
+    branches: [miniaturas]
+    paths: [ferramentas/imagens_busca.txt, ferramentas/imagens_escolha.txt, ferramentas/buscar_imagens.py, .github/workflows/buscar-imagens.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  imagens:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 ferramentas/buscar_imagens.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -A img/candidatas img/temas ferramentas/imagens.json
+          git commit -m "Imagens do Commons" || exit 0
+          git pull --rebase -q || true
+          git push
