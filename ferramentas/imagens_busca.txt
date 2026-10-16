@@ -1,11 +1,4 @@
-autonomia-banco-central | *Banco Central do Brasil Brasília
-autonomia-banco-central | *Edifício sede Banco Central
-licenciamento-ambiental | *Usina Hidrelétrica Belo Monte
-licenciamento-ambiental | *desmatamento Amazônia
-licenciamento-ambiental | *Ibama fiscalização
-fim-reeleicao | *Palácio do Planalto
-fim-reeleicao | *urna eletrônica
-zona-franca-manaus | *Distrito Industrial Manaus
-zona-franca-manaus | *Manaus porto Rio Negro
-taxa-blusinhas | *Correios centro de tratamento
-taxa-blusinhas | *encomendas pacotes
+taxa-blusinhas | *Receita Federal remessas internacionais
+taxa-blusinhas | *centro de distribuição encomendas
+taxa-blusinhas | *Correios Curitiba encomendas internacionais
+taxa-blusinhas | *compras online pacote entrega
