@@ -2,8 +2,8 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "escala-6x1",
-  "veiculos": 7,
-  "noticias": 90,
+  "veiculos": 8,
+  "noticias": 93,
   "manchetes": [
     {
       "veiculo": "g1",
@@ -30,5 +30,5 @@ window.EM_ALTA_AUTO = {
       "data": "2026-10-15T23:49+00:00"
     }
   ],
-  "atualizado": "2026-10-16T01:13+00:00"
+  "atualizado": "2026-10-16T01:14+00:00"
 };
