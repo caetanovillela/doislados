@@ -5,7 +5,7 @@
   Com `url` vazio, o perfil funciona só no navegador.
 */
 window.SUPABASE = {
-  url: "",
+  url: "https://jupaffbvyzyynodzvped.supabase.co",
   chave: "sb_publishable_OlG7g0kxgDETYGWCOzTojw_jvzWG4RJ",
   // Para onde os links de e-mail (confirmar conta, trocar senha) levam a pessoa.
   site: "https://caetanovillela.github.io/doislados/",
