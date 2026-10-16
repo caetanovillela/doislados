@@ -4,7 +4,7 @@ on:
     - cron: "17 */2 * * *"   # a cada 2 horas (horário UTC)
   workflow_dispatch:
   push:
-    branches: [main, claude/project-thread-nh352u]
+    branches: [main]
     paths: [ferramentas/em_alta.py, .github/workflows/em-alta.yml]
 permissions:
   contents: write
