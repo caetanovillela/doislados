@@ -1,4 +1,5 @@
--- Dois Lados: tabela de perfis. Rode uma vez no Supabase, em SQL Editor > New query > Run.
+-- Dois Lados, passo 1: tabela de perfis. Rode uma vez no Supabase, em SQL Editor > New query > Run.
+-- Depois rode também perfis-2-perfil-completo.sql.
 
 create table if not exists public.perfis (
   id uuid primary key references auth.users (id) on delete cascade,

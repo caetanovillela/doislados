@@ -55,6 +55,31 @@
     }
   }
 
+  /* ---------- Campos do perfil ---------- */
+
+  // Só aceita valores destas listas; o banco tem as mesmas regras (supabase/perfis.sql).
+  const NIVEIS = [
+    ["medio", "Ensino médio"], ["cursinho", "Cursinho ou pré-vestibular"], ["graduacao", "Graduação"],
+    ["pos", "Pós-graduação"], ["formado", "Já me formei"], ["nao-estuda", "Não estou estudando"],
+  ];
+  const UFS = "AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO".split(" ");
+  const INSTITUICOES = ["UFJF", "USP", "Unicamp", "Unesp", "UFRJ", "UFF", "UERJ", "UFMG", "UnB", "UFBA", "UFPE", "UFC", "UFRGS", "UFSC", "UFPR", "UFG", "UFPA", "UFAM", "PUC-Rio", "PUC-SP", "PUC Minas", "FGV", "Insper", "Mackenzie", "Ibmec", "IFSP", "Colégio Pedro II", "Escola estadual", "Escola particular"];
+  const categoriasSite = () => (window.CATEGORIAS || []).filter((c) => temas.some((t) => t.categoria === c.id));
+  const limpo = (v, max) => String(v ?? "").replace(/[\u0000-\u001f\u007f<>]/g, "").replace(/\s+/g, " ").trim().slice(0, max);
+
+  // Devolve só campos conhecidos e válidos, venham do formulário, do arquivo importado ou da conta.
+  function perfilSeguro(p) {
+    p = p && typeof p === "object" ? p : {};
+    const ids = (window.CATEGORIAS || []).map((c) => c.id);
+    return {
+      nome: limpo(p.nome, 40),
+      instituicao: limpo(p.instituicao, 80),
+      nivel: NIVEIS.some(([id]) => id === p.nivel) ? p.nivel : "",
+      uf: UFS.includes(p.uf) ? p.uf : "",
+      interesses: Array.isArray(p.interesses) ? [...new Set(p.interesses.filter((x) => ids.includes(x)))].slice(0, 20) : [],
+    };
+  }
+
   /* ---------- Conta (Supabase) ---------- */
 
   const SB = window.SUPABASE || {};
@@ -69,7 +94,8 @@
     [/invalid login credentials/i, "E-mail ou senha incorretos."],
     [/already registered|already exists/i, "Esse e-mail já tem conta. Use “Já tenho conta” para entrar."],
     [/not confirmed/i, "Falta confirmar o e-mail: abra o link que enviamos para você."],
-    [/password.*(6|short|weak)|weak_password/i, "A senha precisa ter pelo menos 6 caracteres."],
+    [/password.*(short|weak|characters)|weak_password/i, "Senha fraca: use pelo menos 8 caracteres, com letras e números."],
+    [/pwned|leaked|compromised/i, "Essa senha já apareceu em vazamentos na internet. Escolha outra."],
     [/rate limit|too many|over_email_send_rate_limit/i, "Muitas tentativas seguidas. Espere alguns minutos e tente de novo."],
     [/invalid.*email|email_address_invalid/i, "Esse e-mail não parece válido."],
     [/signups not allowed|signup_disabled/i, "Os cadastros estão fechados no momento."],
@@ -140,15 +166,23 @@
   async function puxar() {
     const t = await token();
     if (!t) return;
-    const linhas = await api(`/rest/v1/perfis?select=nome,dados&id=eq.${encodeURIComponent(sessao.user.id)}`, { token: t });
+    const filtro = `&id=eq.${encodeURIComponent(sessao.user.id)}`;
+    // Se o banco ainda não tem as colunas do perfil completo, lê só o básico (os campos também vão dentro de `dados`).
+    const linhas = await api("/rest/v1/perfis?select=nome,instituicao,nivel,uf,interesses,dados" + filtro, { token: t })
+      .catch((e) => { if (e.status === 400) return api("/rest/v1/perfis?select=nome,dados" + filtro, { token: t }); throw e; });
     const remoto = Array.isArray(linhas) ? linhas[0] : null;
     if (remoto) mesclar(remoto.dados);
     const antes = (remoto && remoto.dados && remoto.dados.conta) || dados.conta || {};
-    dados.conta = {
-      nome: (remoto && remoto.nome) || sessao.user.nome || antes.nome || String(sessao.user.email || "").split("@")[0],
+    const cheio = (v) => (Array.isArray(v) ? v.length : !!v);
+    const colunas = {};
+    for (const k of ["nome", "instituicao", "nivel", "uf", "interesses"]) if (remoto && cheio(remoto[k])) colunas[k] = remoto[k];
+    const campos = perfilSeguro(Object.assign({}, antes, colunas));
+    dados.conta = Object.assign(campos, {
+      nome: campos.nome || limpo(sessao.user.nome, 40) || String(sessao.user.email || "").split("@")[0].slice(0, 40),
       desde: antes.desde || agora(),
-      email: sessao.user.email,
-    };
+      aceite: antes.aceite || (dados.conta && dados.conta.aceite) || "",
+      pulou: !!(antes.pulou || (dados.conta && dados.conta.pulou)),
+    });
     armazem.gravar(dados);
     pintarBotoes();
     pintarTopo();
@@ -168,15 +202,26 @@
     const t = await token();
     if (!t) { conta.sincronia = sessao ? "erro" : ""; pintarSincronia(); return; }
     try {
-      await api("/rest/v1/perfis?on_conflict=id", {
-        metodo: "POST", token: t, prefer: "resolution=merge-duplicates,return=minimal",
-        corpo: { id: sessao.user.id, nome: (dados.conta && dados.conta.nome) || "", dados, atualizado_em: agora() },
+      const gravar = (corpo) => api("/rest/v1/perfis?on_conflict=id", {
+        metodo: "POST", token: t, prefer: "resolution=merge-duplicates,return=minimal", corpo,
+      });
+      const p = perfilSeguro(dados.conta);
+      const basico = { id: sessao.user.id, nome: p.nome, dados: paraEnvio(), atualizado_em: agora() };
+      await gravar(Object.assign({}, basico, p)).catch((e) => {
+        if (e.status === 400 && /column|PGRST204/i.test(e.message + e.codigo)) return gravar(basico);
+        throw e;
       });
       conta.sincronia = "ok";
     } catch (e) {
       conta.sincronia = "erro";
     }
     pintarSincronia();
+  }
+
+  // O que vai para o banco: só o necessário (o e-mail já fica no login, não se repete aqui).
+  function paraEnvio() {
+    const c = dados.conta || {};
+    return { versao: 1, conta: Object.assign(perfilSeguro(c), { desde: c.desde || "", aceite: c.aceite || "", pulou: !!c.pulou }), itens: dados.itens, historico: dados.historico };
   }
 
   function pintarSincronia() {
@@ -186,10 +231,11 @@
   }
 
   async function cadastrar(nome, email, senha) {
-    const j = await api("/auth/v1/signup?redirect_to=" + encodeURIComponent(siteRetorno + "#perfil"), {
+    const j = await api("/auth/v1/signup?redirect_to=" + encodeURIComponent(siteRetorno), {
       metodo: "POST", corpo: { email, password: senha, data: { nome } },
     });
-    dados.conta = Object.assign({ desde: agora() }, dados.conta, { nome });
+    dados.conta = Object.assign({ desde: agora() }, dados.conta, { nome, aceite: agora() });
+    conta.completar = true;
     armazem.gravar(dados);
     if (j && j.access_token) { guardarSessao(j); await puxar(); return "dentro"; }
     // Projeto com confirmação de e-mail: a conta só vale depois do link.
@@ -225,10 +271,13 @@
   // Links dos e-mails do Supabase voltam com o resultado no endereço (#access_token=... ou #error=...).
   // Isso é lido antes do app.js montar a página, e o endereço vira #perfil.
   let retorno = null;
-  if (nuvem && /(^#|&)(access_token|error)=/.test(location.hash)) {
-    const p = new URLSearchParams(location.hash.slice(1));
-    retorno = Object.fromEntries(p.entries());
-    try { history.replaceState(null, "", location.pathname + location.search + "#perfil"); } catch (e) { location.hash = "perfil"; }
+  if (nuvem) {
+    const h = location.hash, i = h.search(/(access_token|error|error_code)=/);
+    const q = new URLSearchParams(location.search);
+    if (i >= 0) retorno = Object.fromEntries(new URLSearchParams(h.slice(i)).entries());
+    else if (q.get("error")) retorno = { error: q.get("error"), error_code: q.get("error_code") || "", error_description: q.get("error_description") || "" };
+    // Tira o token do endereço na hora, para ele não ficar no histórico nem ir junto se a pessoa copiar o link.
+    if (retorno) { try { history.replaceState(null, "", location.pathname + "#perfil"); } catch (e) { location.hash = "perfil"; } }
   }
 
   async function tratarRetorno() {
@@ -246,12 +295,9 @@
     try {
       const u = await api("/auth/v1/user", { token: retorno.access_token });
       guardarSessao(retorno, u);
-      if (retorno.type === "recovery") {
-        conta.modo = "nova-senha";
-        conta.msg = "";
-      } else {
-        conta.msg = "";
-      }
+      conta.msg = "";
+      if (retorno.type === "recovery") conta.modo = "nova-senha";
+      else if (retorno.type === "signup") { conta.completar = true; avisar("E-mail confirmado. Sua conta está ativa."); }
       await puxar();
     } catch (e) {
       conta.erro = true;
@@ -490,7 +536,7 @@
     if (m === "nova-senha") {
       return `<form class="conta-form" id="conta-form" data-acao="nova-senha" novalidate>
         <p class="perfil-nota">Escolha uma senha nova para a sua conta.</p>
-        ${campo("senha", "Nova senha", 'type="password" autocomplete="new-password" minlength="6" required')}
+        ${campo("senha", "Nova senha (mínimo 8 caracteres, com letras e números)", 'type="password" autocomplete="new-password" minlength="8" required')}
         ${aviso}
         <div class="conta-linha"><button class="botao" type="submit"${conta.ocupado ? " disabled" : ""}>Salvar senha</button></div>
       </form>`;
@@ -512,7 +558,8 @@
     return `${abas}<form class="conta-form" id="conta-form" data-acao="${criar ? "criar" : "entrar"}" novalidate>
       ${criar ? campo("nome", "Como quer ser chamado", 'maxlength="40" autocomplete="nickname" required') : ""}
       ${campo("email", "E-mail", 'type="email" autocomplete="email" required')}
-      ${campo("senha", criar ? "Crie uma senha (mínimo 6 caracteres)" : "Senha", `type="password" autocomplete="${criar ? "new-password" : "current-password"}" minlength="6" required`)}
+      ${campo("senha", criar ? "Crie uma senha (mínimo 8 caracteres, com letras e números)" : "Senha", `type="password" autocomplete="${criar ? "new-password" : "current-password"}" minlength="${criar ? 8 : 6}" required`)}
+      ${criar ? `<label class="aceite"><input type="checkbox" name="aceite"${conta.campos.aceite ? " checked" : ""}> <span>Li e aceito a <a href="#privacidade" target="_blank" rel="noopener">política de privacidade</a>.</span></label>` : ""}
       ${aviso}
       <div class="conta-linha"><button class="botao" type="submit"${conta.ocupado ? " disabled" : ""}>${conta.ocupado ? "Um instante…" : criar ? "Criar conta" : "Entrar"}</button>
       ${criar ? "" : '<button type="button" class="botao-texto" data-modo="esqueci">Esqueci a senha</button>'}</div>
@@ -526,22 +573,26 @@
     const v = (n) => (form.elements[n] ? form.elements[n].value.trim() : "");
     const acao = form.dataset.acao;
     const email = v("email"), senha = form.elements.senha ? form.elements.senha.value : "", nome = v("nome").slice(0, 40);
-    const falta = (acao === "criar" && !nome) ? "Diga como quer ser chamado."
-      : (acao !== "nova-senha" && !/^\S+@\S+\.\S+$/.test(email)) ? "Digite um e-mail válido."
-      : (acao !== "esqueci" && senha.length < 6) ? "A senha precisa ter pelo menos 6 caracteres." : "";
+    const novaSenha = acao === "criar" || acao === "nova-senha";
+    const falta = (acao === "criar" && !limpo(nome, 40)) ? "Diga como quer ser chamado."
+      : (acao !== "nova-senha" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) ? "Digite um e-mail válido."
+      : (acao === "entrar" && !senha) ? "Digite sua senha."
+      : (novaSenha && (senha.length < 8 || !/[A-Za-zÀ-ÿ]/.test(senha) || !/\d/.test(senha))) ? "A senha precisa ter pelo menos 8 caracteres, com letras e números."
+      : (novaSenha && senha.length > 72) ? "Use uma senha de até 72 caracteres."
+      : (acao === "criar" && !form.elements.aceite.checked) ? "Para criar a conta, aceite a política de privacidade." : "";
     if (falta) { conta.erro = true; conta.msg = falta; repintarPerfil(); return; }
     conta.ocupado = true; conta.erro = false; conta.msg = "";
     repintarPerfil();
     try {
       if (acao === "criar") {
-        const r = await cadastrar(nome, email, senha);
+        const r = await cadastrar(limpo(nome, 40), email, senha);
         if (r === "confirmar") { conta.modo = "confirmar"; conta.msg = `Quase lá: enviamos um link para ${email}. Abra o e-mail e toque no link para ativar a conta.`; }
         else avisar(`Conta criada. Bem-vindo, ${nome}!`);
       } else if (acao === "entrar") {
         await entrar(email, senha);
         avisar("Você entrou na sua conta.");
       } else if (acao === "esqueci") {
-        await api("/auth/v1/recover?redirect_to=" + encodeURIComponent(siteRetorno + "#perfil"), { metodo: "POST", corpo: { email } });
+        await api("/auth/v1/recover?redirect_to=" + encodeURIComponent(siteRetorno), { metodo: "POST", corpo: { email } });
         conta.msg = `Se existir uma conta com ${email}, o link para trocar a senha chega em instantes.`;
       } else if (acao === "nova-senha") {
         const t = await token();
@@ -565,6 +616,7 @@
     const lidos = listaDe("lido");
     const ladoLido = (l) => lidos.filter((x) => x.info.tipo === "l" && x.info.lado === l).length;
     const mostrarConta = nuvem && (!logado || conta.modo === "nova-senha");
+    const completar = logado && perfil && (conta.completar || (!(perfil.interesses || []).length && !perfil.pulou));
     let cab;
     if (mostrarConta) {
       cab = `<header class="dossie perfil-cab">
@@ -574,11 +626,21 @@
           <div class="perfil-form">${formConta()}</div>
         </header>`;
     } else if (perfil && perfil.nome) {
+      const resumo = [nomeNivel(perfil.nivel), perfil.instituicao, perfil.uf].filter(Boolean).map(esc).join(" · ");
+      const ints = (perfil.interesses || []).map(nomeCategoria).filter(Boolean);
       cab = `<header class="dossie perfil-cab">
-          <span class="mono apagado">Perfil · desde ${dataBR(perfil.desde)}${logado && sessao.user.email ? " · " + esc(sessao.user.email) : ""}</span>
+          <span class="mono apagado">Perfil · desde ${dataBR(perfil.desde)}</span>
           <h1>Oi, <span class="grifo">${esc(perfil.nome)}</span>.</h1>
+          ${resumo ? `<p class="perfil-resumo">${resumo}</p>` : ""}
+          ${ints.length ? `<ul class="chips" aria-label="Seus interesses">${ints.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>` : ""}
           <p>O que você guardou para depois, o que já leu e quanto leu de cada lado.</p>
-        </header>`;
+        </header>
+        ${completar ? `
+        <section class="completar" aria-labelledby="completar-h">
+          <h2 id="completar-h">Complete seu perfil</h2>
+          <p>Conte onde você estuda e o que mais te interessa. Assim o Dois Lados mostra primeiro os temas da sua área. Tudo é opcional.</p>
+          ${formPerfil(perfil, "completar")}
+        </section>` : ""}`;
     } else {
       cab = `<header class="dossie perfil-cab">
           <span class="mono apagado">Perfil</span>
@@ -597,17 +659,12 @@
 
     const blocoDados = logado
       ? `<section class="bloco perfil-conta" aria-labelledby="conta-h">
-        <div class="bloco-cab"><h2 id="conta-h">Sua conta</h2><span class="mono apagado" id="perfil-sincronia"></span></div>
+        <div class="bloco-cab"><h2 id="conta-h">Seu perfil</h2><span class="mono apagado" id="perfil-sincronia"></span></div>
         <div class="perfil-conta-grade">
-          <form class="perfil-form" id="perfil-renomear">
-            <label for="perfil-novo-nome" class="mono apagado">Nome no perfil</label>
-            <div class="perfil-form-linha">
-              <input id="perfil-novo-nome" name="nome" maxlength="40" value="${esc((perfil && perfil.nome) || "")}" required>
-              <button class="botao" type="submit">Salvar</button>
-            </div>
-          </form>
+          ${completar ? `<p class="apagado">Preencha seu perfil no quadro lá em cima.</p>` : formPerfil(perfil || {}, "editar")}
           <div class="perfil-acoes">
-            <p class="apagado">Entrou como ${esc(sessao.user.email)}.</p>
+            <h3 class="mono apagado">Conta</h3>
+            <p class="apagado">Entrou como ${esc(sessao.user.email)}. Só você vê o seu perfil. <a href="#privacidade">Como cuidamos dos seus dados</a>.</p>
             <div class="perfil-botoes">
               <button type="button" class="botao" data-sair>Sair</button>
               <button type="button" class="botao botao-claro" data-exportar>Baixar meus dados</button>
@@ -694,7 +751,7 @@
     const formConta_ = document.getElementById("conta-form");
     if (formConta_) {
       if (formConta_.elements.nome && !formConta_.elements.nome.value && dados.conta) formConta_.elements.nome.value = dados.conta.nome || "";
-      formConta_.addEventListener("input", (e) => { if (e.target.name) conta.campos[e.target.name] = e.target.value; });
+      formConta_.addEventListener("input", (e) => { if (e.target.name) conta.campos[e.target.name] = e.target.type === "checkbox" ? e.target.checked : e.target.value; });
       formConta_.addEventListener("submit", (e) => { e.preventDefault(); enviarConta(formConta_); });
     }
     const formNome = document.getElementById("perfil-criar") || document.getElementById("perfil-renomear");
@@ -707,8 +764,113 @@
       repintar();
       if (sessao) avisar("Nome salvo.");
     });
+    raiz.querySelectorAll("[data-form-perfil]").forEach((f) => f.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const novo = perfilSeguro({
+        nome: f.elements.nome.value, instituicao: f.elements.instituicao.value, nivel: f.elements.nivel.value, uf: f.elements.uf.value,
+        interesses: [...f.querySelectorAll("input[name=interesses]:checked")].map((x) => x.value),
+      });
+      if (!novo.nome) { avisar("Diga como quer ser chamado."); return; }
+      dados.conta = Object.assign({ desde: agora() }, dados.conta, novo);
+      conta.completar = false;
+      salvar();
+      repintar();
+      avisar("Perfil salvo.");
+    }));
+    const pular = raiz.querySelector("[data-pular]");
+    if (pular) pular.addEventListener("click", () => { conta.completar = false; dados.conta.pulou = true; salvar(); repintar(); });
     const imp = raiz.querySelector("[data-importar]");
     if (imp) imp.addEventListener("change", () => importar(imp.files[0], repintar));
+  }
+
+  const nomeNivel = (id) => (NIVEIS.find(([x]) => x === id) || [])[1] || "";
+  const nomeCategoria = (id) => ((window.CATEGORIAS || []).find((c) => c.id === id) || {}).nome || "";
+
+  // Formulário do perfil: nome, onde estuda, nível, estado e áreas de interesse.
+  function formPerfil(p, onde) {
+    const id = (x) => `${onde}-${x}`;
+    const sel = (nome, opcoes, atual, vazio) => `<select id="${id(nome)}" name="${nome}"><option value="">${vazio}</option>${opcoes.map(([v, t]) => `<option value="${esc(v)}"${v === atual ? " selected" : ""}>${esc(t)}</option>`).join("")}</select>`;
+    const ints = p.interesses || [];
+    return `<form class="perfil-form form-perfil" data-form-perfil novalidate>
+      <label class="campo"><span class="mono apagado">Nome no perfil</span><input name="nome" maxlength="40" autocomplete="nickname" required value="${esc(p.nome || "")}"></label>
+      <label class="campo"><span class="mono apagado">Onde você estuda ou estudou</span><input name="instituicao" maxlength="80" list="${id("inst")}" autocomplete="organization" placeholder="Ex.: UFJF, Colégio Pedro II" value="${esc(p.instituicao || "")}"></label>
+      <datalist id="${id("inst")}">${INSTITUICOES.map((x) => `<option value="${esc(x)}">`).join("")}</datalist>
+      <div class="campo-par">
+        <label class="campo"><span class="mono apagado">Nível</span>${sel("nivel", NIVEIS, p.nivel, "Prefiro não dizer")}</label>
+        <label class="campo"><span class="mono apagado">Estado</span>${sel("uf", UFS.map((u) => [u, u]), p.uf, "—")}</label>
+      </div>
+      <fieldset class="campo interesses">
+        <legend class="mono apagado">Áreas que mais te interessam</legend>
+        <div class="chips-escolha">${categoriasSite().map((c) => `<label><input type="checkbox" name="interesses" value="${esc(c.id)}"${ints.includes(c.id) ? " checked" : ""}><span>${esc(c.nome)}</span></label>`).join("")}</div>
+      </fieldset>
+      <div class="conta-linha"><button class="botao" type="submit">Salvar perfil</button>${onde === "completar" ? '<button type="button" class="botao-texto" data-pular>Agora não</button>' : ""}</div>
+    </form>`;
+  }
+
+  /* ---------- Política de privacidade ---------- */
+
+  function privacidade(raiz) {
+    raiz.onclick = null;
+    const secao = (t, corpo) => `<section class="bloco"><div class="bloco-cab"><h2>${t}</h2></div><div class="texto-corrido">${corpo}</div></section>`;
+    raiz.innerHTML = `
+      <nav class="migalha mono"><a href="#">Início</a><span>/</span><a href="#perfil">Perfil</a><span>/</span><span>Privacidade</span></nav>
+      <header class="dossie">
+        <span class="mono apagado">Atualizada em 16/10/2026</span>
+        <h1>Seus dados, <span class="grifo">só seus</span>.</h1>
+        <p>O que o Dois Lados guarda quando você cria uma conta, para quê, e como você controla tudo. Escrito para ser lido, não para esconder nada.</p>
+      </header>
+      ${secao("O que guardamos", `
+        <p><strong>Para a conta:</strong> seu e-mail e sua senha. A senha é guardada pelo Supabase, o serviço de login que usamos, de forma embaralhada (com hash bcrypt). Nem nós conseguimos ver qual é.</p>
+        <p><strong>No perfil, se você quiser preencher:</strong> nome ou apelido, onde estuda, nível de estudo, estado e áreas de interesse. Tudo é opcional, menos o nome.</p>
+        <p><strong>O que você faz no site:</strong> os temas, estudos e vídeos que salvou para depois, os que marcou como lidos e os temas que abriu.</p>
+        <p><strong>O que não guardamos:</strong> CPF, telefone, endereço, data de nascimento, localização, contatos ou qualquer dado de cartão. Não há anúncios, nem rastreadores, nem cookies de propaganda.</p>`)}
+      ${secao("Para que usamos", `
+        <p>Só para fazer o seu perfil funcionar: mostrar o que você salvou em qualquer aparelho e sugerir primeiro os temas das áreas que você escolheu.</p>
+        <p>Seus dados não são vendidos, alugados nem compartilhados com ninguém. Ninguém do site lê o que você salvou.</p>`)}
+      ${secao("Quem pode ver", `
+        <p>Só você. O banco de dados tem uma regra que só entrega um perfil para quem está logado nele (Row Level Security). Mesmo quem souber o endereço do banco não consegue ler o perfil de outra pessoa.</p>
+        <p>O tráfego entre o site e o banco é sempre criptografado (HTTPS).</p>`)}
+      ${secao("Seus direitos (LGPD)", `
+        <p>Pela Lei Geral de Proteção de Dados (Lei 13.709/2018), você pode a qualquer momento:</p>
+        <ul>
+          <li><strong>ver e baixar</strong> tudo o que está guardado, pelo botão “Baixar meus dados” no seu perfil;</li>
+          <li><strong>corrigir</strong> seu perfil, na própria página do perfil;</li>
+          <li><strong>apagar sua conta</strong>, pelo botão “Apagar minha conta”. O login e tudo o que você salvou são apagados na hora, sem volta.</li>
+        </ul>
+        <p>Dúvidas ou pedidos: fale com o responsável pelo projeto em <a href="https://caetanovillela.com.br/" target="_blank" rel="noopener">caetanovillela.com.br</a>.</p>`)}
+      ${secao("Cuidados que você pode tomar", `
+        <ul>
+          <li>Use uma senha que você não usa em nenhum outro site.</li>
+          <li>Em computador compartilhado, toque em “Sair” ao terminar. Ao sair, o site apaga do navegador o que estava salvo.</li>
+          <li>Nunca pedimos sua senha por e-mail ou mensagem.</li>
+        </ul>`)}`;
+  }
+
+  // Página inicial: temas das áreas de interesse, primeiro os que a pessoa ainda não leu.
+  function paraVoce() {
+    const p = dados.conta;
+    const ints = (p && p.interesses) || [];
+    if (!ints.length) return "";
+    const lidosDoTema = (t) => (t.leituras || []).filter((a) => estadoDe(`l:${t.id}:${a.id}`) === "lido").length;
+    const lista = temas.filter((t) => !t.emBreve && ints.includes(t.categoria))
+      .map((t, i) => ({ t, i, lidos: lidosDoTema(t), total: (t.leituras || []).length }))
+      .sort((a, b) => (a.lidos >= a.total) - (b.lidos >= b.total) || a.lidos - b.lidos || a.i - b.i)
+      .slice(0, 3);
+    if (!lista.length) return "";
+    return `
+      <section class="bloco continue para-voce" aria-labelledby="para-voce-h">
+        <div class="bloco-cab"><h2 id="para-voce-h">Para você, ${esc(p.nome)}</h2><span class="mono apagado">Pelos seus interesses: ${ints.map(nomeCategoria).filter(Boolean).map(esc).join(", ")} · <a href="#perfil">mudar</a></span></div>
+        <div class="continue-grade">
+          ${lista.map(({ t, lidos, total }) => `
+          <a class="continue-cartao" href="#${esc(t.id)}">
+            ${t.imagem ? `<img src="${esc(t.imagem.arquivo)}" alt="" loading="lazy" decoding="async" style="object-position:${esc(t.imagem.posicao || "50% 50%")}">` : ""}
+            <span class="mono apagado">${esc(nomeCategoria(t.categoria))}${lidos ? ` · ${lidos} de ${total} estudos lidos` : ""}</span>
+            <strong>${esc(t.titulo)}</strong>
+            <span class="perg">${esc(t.pergunta)}</span>
+            <span class="mono continue-ir">${lidos ? "Continuar →" : "Abrir dossiê →"}</span>
+          </a>`).join("")}
+        </div>
+      </section>`;
   }
 
   function exportar() {
@@ -729,7 +891,7 @@
         const d = JSON.parse(leitor.result);
         if (!d || typeof d.itens !== "object") throw new Error("formato");
         mesclar(d);
-        if (!dados.conta && d.conta && typeof d.conta.nome === "string") dados.conta = { nome: d.conta.nome.slice(0, 40), desde: String(d.conta.desde || agora()) };
+        if (!dados.conta && d.conta && typeof d.conta.nome === "string") dados.conta = Object.assign(perfilSeguro(d.conta), { desde: limpo(d.conta.desde, 30) || agora() });
         salvar();
         depois();
         avisar("Perfil importado.");
@@ -740,7 +902,7 @@
     leitor.readAsText(arquivo);
   }
 
-  window.Perfil = { botoes, pagina, pintarBotoes };
+  window.Perfil = { botoes, pagina, pintarBotoes, paraVoce, privacidade };
   registrarVisita();
   if (nuvem) {
     if (!sessao && dados.conta && dados.conta.email) conta.modo = "entrar";

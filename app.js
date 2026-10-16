@@ -244,6 +244,7 @@
         <p class="capa-credito mono">Congresso Nacional, Brasília · Foto: Rodolfo Stuckert/Câmara dos Deputados · <a href="https://creativecommons.org/licenses/by/3.0" target="_blank" rel="noopener">CC BY 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Congresso_Nacional_do_Brasil_em_noite_de_lua_cheia.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></p>
       </section>
       ${emAlta()}
+      ${window.Perfil ? window.Perfil.paraVoce() : ""}
       <section class="metodo" aria-labelledby="metodo-titulo">
         <h2 id="metodo-titulo" class="mono apagado">Como usar</h2>
         <ol>
@@ -496,7 +497,7 @@
     return `
       <figure class="video" data-chave-auto="v:${tema.id}:${esc(v.id)}">
         <a class="video-capa" href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener" data-video="${esc(v.id)}" aria-label="Assistir: ${esc(v.titulo)}">
-          <img src="img/videos/${id}.jpg" alt="" loading="lazy" onerror="if(!this.dataset.yt){this.dataset.yt=1;this.src='https://i.ytimg.com/vi/${id}/hqdefault.jpg'}else{this.remove()}">
+          <img src="img/videos/${id}.jpg" alt="" loading="lazy" data-yt="${id}">
           <span class="video-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
           ${v.duracao ? `<span class="video-tempo mono">${esc(v.duracao)}</span>` : ""}
         </a>
@@ -508,6 +509,15 @@
         </figcaption>
       </figure>`;
   }
+
+  // Sem miniatura local, tenta a do YouTube; sem nenhuma, some. (Ouvinte único: a política de segurança barra onerror="...")
+  document.addEventListener("error", (e) => {
+    const img = e.target;
+    if (!(img instanceof HTMLImageElement) || !img.dataset.yt) return;
+    if (img.dataset.tentou) { img.remove(); return; }
+    img.dataset.tentou = "1";
+    img.src = `https://i.ytimg.com/vi/${img.dataset.yt}/hqdefault.jpg`;
+  }, true);
 
   function secaoVideos(tema) {
     const lados = ["favoravel", "contrario"].map((pos) => {
@@ -583,6 +593,7 @@
     const tema = temas.find((t) => t.id === hash.split(".")[0] && !t.emBreve);
     const cat = categoriaDaRota();
     if (hash === "perfil" && window.Perfil) window.Perfil.pagina(raiz);
+    else if (hash === "privacidade" && window.Perfil) window.Perfil.privacidade(raiz);
     else if (tema) paginaTema(tema);
     else if (cat) paginaCategoria(categorias.find((c) => c.id === cat));
     else paginaInicio();
