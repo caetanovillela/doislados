@@ -1,13 +1,8 @@
-aplicativos | entregador aplicativo
-aplicativos | entregadores manifestação
-aplicativos | *motoboy delivery São Paulo
-voto-obrigatorio | urna eletrônica
-voto-obrigatorio | eleições seção eleitoral eleitores
-emendas | plenário Câmara dos Deputados votação
-emendas | Congresso Nacional orçamento
-ensino-medio | estudantes ensino médio escola
-ensino-medio | sala de aula alunos escola estadual
-bets | *apostas esportivas
-bets | CPI bets Senado
-arcabouco | arcabouço fiscal Haddad
-arcabouco | Ministério da Fazenda Esplanada
+voto-obrigatorio | *eleitores fila votação Brasil
+voto-obrigatorio | *eleições 2022 votação seção eleitoral
+voto-obrigatorio | *urna eletrônica eleitor votando
+voto-obrigatorio | Agência Senado eleições urna
+ensino-medio | *escola estadual alunos sala de aula Brasil
+ensino-medio | *estudantes ensino médio escola pública
+ensino-medio | Agência Brasil estudantes escola
+ensino-medio | *ocupação escola estudantes secundaristas
