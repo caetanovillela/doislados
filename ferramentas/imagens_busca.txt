@@ -1,0 +1,20 @@
+previdencia-salario-minimo | INSS agência atendimento
+previdencia-salario-minimo | aposentados idosos Agência Brasil
+autonomia-banco-central | Banco Central do Brasil sede
+autonomia-banco-central | Galípolo Comissão Senado
+licenciamento-ambiental | licenciamento ambiental Senado comissão
+licenciamento-ambiental | Ibama fiscalização
+desoneracao-folha | fábrica operários Agência Brasil
+desoneracao-folha | desoneração da folha Senado
+reeleicao | urna eletrônica
+reeleicao | plenário Senado votação PEC
+reforma-administrativa | servidores públicos Esplanada
+reforma-administrativa | reforma administrativa Câmara
+zona-franca-manaus | Zona Franca de Manaus
+zona-franca-manaus | Polo Industrial de Manaus
+taxa-blusinhas | encomendas Correios centro de distribuição
+taxa-blusinhas | Correios encomendas internacionais
+acordo-mercosul-ue | Mercosul União Europeia acordo
+acordo-mercosul-ue | porto de Santos contêineres
+pec-seguranca-publica | PEC da segurança pública
+pec-seguranca-publica | Polícia Rodoviária Federal operação
