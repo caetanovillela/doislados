@@ -1,8 +1,5 @@
-voto-obrigatorio | *eleitores fila votação Brasil
-voto-obrigatorio | *eleições 2022 votação seção eleitoral
-voto-obrigatorio | *urna eletrônica eleitor votando
-voto-obrigatorio | Agência Senado eleições urna
-ensino-medio | *escola estadual alunos sala de aula Brasil
-ensino-medio | *estudantes ensino médio escola pública
-ensino-medio | Agência Brasil estudantes escola
-ensino-medio | *ocupação escola estudantes secundaristas
+ensino-medio | sala de aula alunos Agência Brasília
+ensino-medio | *sala de aula escola pública Brasil alunos carteiras
+ensino-medio | *escola de tempo integral ensino médio
+ensino-medio | instituto federal estudantes laboratório
+ensino-medio | *Escola Técnica Estadual alunos
