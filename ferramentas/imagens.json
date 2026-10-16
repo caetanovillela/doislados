@@ -1,25 +1,5 @@
 {
- "candidatas": {
-  "ensino-medio": {
-   "alunos sala de aula escola estadual Brasil 2023": [
-    {
-     "arquivo": "File:Palestra de Mentalidade Marítima e da Cultura Oceânica para crianças. (52690423517).jpg",
-     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Palestra_de_Mentalidade_Mar%C3%ADtima_e_da_Cultura_Oce%C3%A2nica_para_crian%C3%A7as._%2852690423517%29.jpg/500px-Palestra_de_Mentalidade_Mar%C3%ADtima_e_da_Cultura_Oce%C3%A2nica_para_crian%C3%A7as._%2852690423517%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "pagina": "https://commons.wikimedia.org/wiki/File:Palestra_de_Mentalidade_Mar%C3%ADtima_e_da_Cultura_Oce%C3%A2nica_para_crian%C3%A7as._(52690423517).jpg",
-     "largura": 4032,
-     "altura": 3024,
-     "mime": "image/jpeg",
-     "autor": "Marinha do Brasil",
-     "licenca": "CC BY-SA 2.0",
-     "licenca_url": "https://creativecommons.org/licenses/by-sa/2.0",
-     "descricao": "A Agência da Capitania dos Portos em Camocim (AgCamocim) concluiu, em 16 de dezembro, seu ciclo anual de visitas e recepções às instituições públicas e privadas da rede Municipal e Estadual de ensino, localizadas no litoral oeste cearense. A iniciativa teve como propósito suscitar, entre os estudant",
-     "credito": "Palestra de Mentalidade Marítima e da Cultura Oceânica para crianças.",
-     "livre": true,
-     "local": "ensino-medio/alunos-sala-de-aula-escola-est-0.jpg"
-    }
-   ]
-  }
- },
+ "candidatas": {},
  "escolhidas": {
   "escala-6x1": {
    "arquivo": "File:Carteiradetrabalho.jpg",
@@ -341,6 +321,20 @@
    "licenca_url": "https://creativecommons.org/licenses/by/2.0",
    "descricao": "Comissão Mista da Medida Provisória (CMMPV) nº 746 de 2016, que institui a política de fomento à implementação de escolas de Ensino Médio em tempo integral, realiza audiência pública para instruir a matéria. Mesa: presidente da Associação Nacional pela Formação dos Profissionais da Educação (Anfope)",
    "credito": "CMMPV - Comissão Mista da Medida Provisoria",
+   "livre": true
+  },
+  "ensino-teste": {
+   "arquivo": "File:Escola Estadual de Ensino Médio Prof. Tolentino Maia.jpg",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Escola_Estadual_de_Ensino_M%C3%A9dio_Prof._Tolentino_Maia.jpg/1920px-Escola_Estadual_de_Ensino_M%C3%A9dio_Prof._Tolentino_Maia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Escola_Estadual_de_Ensino_M%C3%A9dio_Prof._Tolentino_Maia.jpg",
+   "largura": 7049,
+   "altura": 2380,
+   "mime": "image/jpeg",
+   "autor": "Paulo rsmenezes",
+   "licenca": "CC BY-SA 3.0 br",
+   "licenca_url": "https://creativecommons.org/licenses/by-sa/3.0/br/deed.en",
+   "descricao": "Escola Estadual de Ensino Médio Professor Tolentino Maia",
+   "credito": "Own work",
    "livre": true
   }
  }
