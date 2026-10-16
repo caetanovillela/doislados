@@ -2,6 +2,7 @@
   Navegação pelo endereço (#):
     (vazio)        -> início: busca, categorias e índice de temas
     #escala-6x1    -> dossiê do tema
+    #perfil        -> perfil: salvos, lidos e equilíbrio entre os lados (perfil.js)
 */
 (function () {
   const temas = window.TEMAS || [];
@@ -21,19 +22,22 @@
   const sinal = (pos) => `<span class="lado-sinal ${LETRA[pos].toLowerCase()}" aria-hidden="true">${LETRA[pos]}</span>`;
   const codigo = (tema, a) => LETRA[a.posicao] + (doLado(tema, a.posicao).indexOf(a) + 1);
   const dataBR = (iso) => (iso ? iso.split("-").reverse().join("/") : "");
+  // Botões "Ler depois" / "Já li" do perfil (perfil.js)
+  const salvar = (chave, compacto) => (window.Perfil ? window.Perfil.botoes(chave, compacto) : "");
 
   /* ---------- Cartão de leitura (link para o texto da instituição) ---------- */
 
   // Versão enxuta, usada quando os dois lados aparecem juntos.
   function leituraCurta(tema, a) {
     return `
-      <article class="leitura curta" id="l-${a.id}">
+      <article class="leitura curta" id="l-${a.id}" data-chave-auto="l:${tema.id}:${a.id}">
         <span class="cod">${codigo(tema, a)}</span>
         <div class="curta-corpo">
           <span class="inst">${esc(a.instituicao)}</span>
           <h3><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.titulo)}<span class="seta" aria-hidden="true"> ↗</span></a></h3>
           <span class="mono apagado">${esc(a.tipo)} · ${esc(a.data)}${a.formato === "PDF" ? " · PDF" : ""}</span>
           <button type="button" class="botao-texto detalhes" data-detalhe="${a.posicao}" data-alvo="${a.id}">Ver resumo e números</button>
+          ${salvar(`l:${tema.id}:${a.id}`, true)}
         </div>
       </article>`;
   }
@@ -41,7 +45,7 @@
   function leitura(tema, a) {
     const lista = (xs) => `<ul>${xs.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>`;
     return `
-      <article class="leitura" id="l-${a.id}">
+      <article class="leitura" id="l-${a.id}" data-chave-auto="l:${tema.id}:${a.id}">
         <header class="leitura-cab">
           <span class="cod">${codigo(tema, a)}</span>
           <div>
@@ -59,7 +63,10 @@
           ${a.premissas ? `<h4>O argumento parte de que</h4>${lista(a.premissas)}` : ""}
           ${a.pergunte ? `<h4>Pergunte-se</h4>${lista(a.pergunte)}` : ""}
         </details>` : ""}
-        <a class="ir-fonte" href="${esc(a.url)}" target="_blank" rel="noopener">Ler o texto original${a.formato === "PDF" ? " (PDF)" : ""}</a>
+        <div class="leitura-pe">
+          <a class="ir-fonte" href="${esc(a.url)}" target="_blank" rel="noopener">Ler o texto original${a.formato === "PDF" ? " (PDF)" : ""}</a>
+          ${salvar(`l:${tema.id}:${a.id}`, true)}
+        </div>
       </article>`;
   }
 
@@ -362,6 +369,7 @@
         <p>${esc(tema.resumo)}</p>
         ${instituicoes.length ? `<p class="quem mono">Leituras de ${instituicoes.map(esc).join(", ")}</p>` : ""}
       </header>`}
+      <div class="salvar-tema">${salvar("t:" + tema.id)}</div>
       ${ctx && ctx.fatos ? `<dl class="numeros">${ctx.fatos.map((f) => `<div><dt>${esc(f.rotulo)}</dt><dd>${esc(f.valor)}</dd></div>`).join("")}</dl>` : ""}
 
       <nav class="sumario" aria-label="Seções do dossiê">
@@ -487,10 +495,10 @@
   const podeIncorporar = (() => { try { return window.self === window.top; } catch (e) { return false; } })();
 
   // Miniatura salva no próprio site (img/videos); se faltar, tenta a do YouTube.
-  function cartaoVideo(v) {
+  function cartaoVideo(v, tema) {
     const id = encodeURIComponent(v.id);
     return `
-      <figure class="video">
+      <figure class="video" data-chave-auto="v:${tema.id}:${esc(v.id)}">
         <a class="video-capa" href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener" data-video="${esc(v.id)}" aria-label="Assistir: ${esc(v.titulo)}">
           <img src="img/videos/${id}.jpg" alt="" loading="lazy" onerror="if(!this.dataset.yt){this.dataset.yt=1;this.src='https://i.ytimg.com/vi/${id}/hqdefault.jpg'}else{this.remove()}">
           <span class="video-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
@@ -500,6 +508,7 @@
           <strong>${esc(v.titulo)}</strong>
           ${v.nota ? `<span>${esc(v.nota)}</span>` : ""}
           <span class="mono apagado">${[v.canal, v.data].filter(Boolean).map(esc).join(" · ")}${podeIncorporar ? "" : " · abre no YouTube"}</span>
+          ${salvar(`v:${tema.id}:${v.id}`, true)}
         </figcaption>
       </figure>`;
   }
@@ -511,11 +520,11 @@
       return `
         <div class="videos-lado">
           <div class="lado-cab">${sinal(pos)}<strong>Lado ${LETRA[pos]}</strong><span class="mono apagado">${esc(rotulo(tema, pos))}</span></div>
-          <div class="videos">${lista.map(cartaoVideo).join("")}</div>
+          <div class="videos">${lista.map((v) => cartaoVideo(v, tema)).join("")}</div>
         </div>`;
     }).join("");
     const soltos = tema.videos.filter((v) => !v.lado);
-    return `<div class="videos-lados">${lados}</div>${soltos.length ? `<div class="videos">${soltos.map(cartaoVideo).join("")}</div>` : ""}`;
+    return `<div class="videos-lados">${lados}</div>${soltos.length ? `<div class="videos">${soltos.map((v) => cartaoVideo(v, tema)).join("")}</div>` : ""}`;
   }
 
   function ligarVideos() {
@@ -577,7 +586,8 @@
     const hash = decodeURIComponent(location.hash.replace(/^#/, ""));
     const tema = temas.find((t) => t.id === hash.split(".")[0] && !t.emBreve);
     const cat = categoriaDaRota();
-    if (tema) paginaTema(tema);
+    if (hash === "perfil" && window.Perfil) window.Perfil.pagina(raiz);
+    else if (tema) paginaTema(tema);
     else if (cat) paginaCategoria(categorias.find((c) => c.id === cat));
     else paginaInicio();
     pintarCategorias();
