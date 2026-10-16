@@ -3,32 +3,32 @@
 window.EM_ALTA_AUTO = {
   "tema": "escala-6x1",
   "veiculos": 8,
-  "noticias": 83,
+  "noticias": 75,
   "manchetes": [
     {
-      "veiculo": "Poder360",
-      "titulo": "Lula acena a empresários: “Ninguém vai ter prejuízo com fim da 6 X 1”",
-      "url": "https://www.poder360.com.br/poder-eleicoes-2026/lula-acena-a-empresarios-ninguem-vai-ter-prejuizo-com-fim-da-6-x-1/",
-      "data": "2026-10-16T19:16+00:00"
+      "veiculo": "g1",
+      "titulo": "Fim da escala 6x1 é oficializado no Diário Oficial; quando entra em vigor? Veja datas",
+      "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/16/fim-da-escala-6x1-diario.ghtml",
+      "data": "2026-10-16T22:55+00:00"
     },
     {
-      "veiculo": "g1",
-      "titulo": "De quem é o projeto que acabou com a escala 6x1? Conheça propostas",
-      "url": "https://g1.globo.com/politica/noticia/2026/10/16/de-quem-e-o-projeto-que-acabou-com-a-escala-6x1-conheca-propostas.ghtml",
-      "data": "2026-10-16T18:47+00:00"
+      "veiculo": "Agência Senado",
+      "titulo": "Vídeo: Senado Aprova: Fim da escala 6x1",
+      "url": "https://www12.senado.leg.br/noticias/videos/2026/10/senado-aprova-fim-da-escala-6x1-1",
+      "data": "2026-10-16T21:42+00:00"
     },
     {
       "veiculo": "Agência Brasil",
-      "titulo": "Alcolumbre homenageia Paim no fim da 6x1; entenda motivo",
-      "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/alcolumbre-homenageia-paim-no-fim-da-6x1-entenda-motivo",
-      "data": "2026-10-16T18:44+00:00"
+      "titulo": "Governo prevê crédito a empresas afetadas por fim da 6x1, diz Durigan",
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/governo-preve-credito-empresas-afetadas-por-fim-da-6x1-diz-durigan",
+      "data": "2026-10-16T21:36+00:00"
     },
     {
       "veiculo": "Folha de S.Paulo",
-      "titulo": "Trabalhadores celebram fim da escala 6x1; pesquisas mostram ganho de produtividade",
-      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/trabalhadores-celebram-fim-da-escala-6x1-pesquisas-mostram-ganho-de-produtividade.shtml",
-      "data": "2026-10-16T18:37+00:00"
+      "titulo": "Governo prepara crédito e capacitação para empresas afetadas pelo fim da escala 6x1, diz Durigan",
+      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/governo-prepara-credito-e-capacitacao-para-empresas-afetadas-pelo-fim-da-escala-6x1-diz-durigan.shtml",
+      "data": "2026-10-16T21:27+00:00"
     }
   ],
-  "atualizado": "2026-10-16T19:36+00:00"
+  "atualizado": "2026-10-16T22:54+00:00"
 };
