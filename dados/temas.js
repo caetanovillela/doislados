@@ -6572,5 +6572,3077 @@ window.TEMAS = [
       "alt": "Fachada do prédio do Ministério da Fazenda em Brasília",
       "posicao": "50% 50%"
     }
+  },
+  {
+    "id": "previdencia-salario-minimo",
+    "titulo": "Aposentadorias e salário mínimo",
+    "categoria": "economia",
+    "tags": [
+      "previdência",
+      "reforma da previdência",
+      "salário mínimo",
+      "desvinculação",
+      "aposentadoria",
+      "bpc",
+      "inss",
+      "piso previdenciário",
+      "gasto público",
+      "arcabouço fiscal"
+    ],
+    "pergunta": "As aposentadorias e o BPC devem deixar de acompanhar o salário mínimo?",
+    "resumo": "Cerca de 29,3 milhões de beneficiários do INSS recebem exatamente um salário mínimo, que é de R$ 1.621 em 2026. Uma parte dos candidatos e economistas quer separar esses benefícios do mínimo para conter o gasto, e outra parte vê nisso um corte na renda dos mais pobres.",
+    "atualizado": "2026-10-16",
+    "rotulos": {
+      "favoravel": "A favor de desvincular",
+      "contrario": "Contra desvincular"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "A Constituição diz que nenhuma aposentadoria ou pensão que substitui o salário pode ser menor que o salário mínimo (artigo 201). O BPC, benefício pago a idosos e pessoas com deficiência de baixa renda, também vale um salário mínimo. Por isso, quando o mínimo sobe acima da inflação, o gasto da Previdência e da assistência sobe junto.",
+        "Desde 2023 o mínimo é corrigido pela inflação (INPC) mais o crescimento do PIB de dois anos antes. No fim de 2024, o Congresso limitou esse ganho real a 2,5% ao ano, dentro do arcabouço fiscal. Em 2026 o mínimo passou a R$ 1.621. Segundo o DIEESE, cada R$ 1 a mais no mínimo custa cerca de R$ 380 milhões por ano à Previdência.",
+        "Na campanha de 2026, a ideia de uma nova reforma da Previdência voltou. Grupos de especialistas ligados ao CDPP e ao IMDS propuseram idade mínima de 67 anos, e parte deles defende corrigir benefícios só pela inflação. Representantes de Renan Santos (Missão) e Ronaldo Caiado (PSD) apoiaram a desvinculação. Romeu Zema (Novo) tratou como possibilidade. O governo Lula diz que não discute o tema.",
+        "Quem defende a mudança diz que o vínculo faz a despesa obrigatória crescer sozinha e espreme o resto do orçamento, e que o salário mínimo não é a melhor ferramenta contra a pobreza. Quem é contra diz que esses benefícios são a renda principal de milhões de famílias, ajudaram a reduzir a desigualdade e que parte do custo volta como imposto. Há ainda o debate jurídico: um benefício abaixo do mínimo pode ferir a Constituição."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Salário mínimo em 2026",
+          "valor": "R$ 1.621"
+        },
+        {
+          "rotulo": "Beneficiários do INSS que recebem o piso",
+          "valor": "29,3 milhões"
+        },
+        {
+          "rotulo": "Custo anual de cada R$ 1 a mais no mínimo (Previdência)",
+          "valor": "R$ 380,5 milhões"
+        },
+        {
+          "rotulo": "Gasto com BPC em 2025 (IFI)",
+          "valor": "R$ 127,2 bilhões, cerca de 1% do PIB"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Custo fiscal",
+        "favoravel": "O ganho real do mínimo, repassado a aposentadorias e BPC, aumentou o gasto em cerca de R$ 165 bilhões entre 2023 e 2026, e só em 2026 foram R$ 64 bilhões. (A2)",
+        "contrario": "O reajuste de 2026 custa R$ 39,1 bilhões a mais à Previdência, mas coloca R$ 81,7 bilhões na economia, e parte disso volta ao governo como imposto. (B1)",
+        "fonte_favoravel": "ibre-giambiagi-indexacao-sm",
+        "fonte_contrario": "dieese-nt289-salario-minimo"
+      },
+      {
+        "tema": "Desigualdade",
+        "favoravel": "Se o piso estivesse desvinculado desde 2012, seria de cerca de R$ 1.180 em 2023, e a economia somaria R$ 400 bilhões até 2035. A proteção aos mais vulneráveis viria de outros programas. (A1)",
+        "contrario": "Entre 1995 e 2014, o mínimo explicou 72,4% da queda da desigualdade, e o maior pedaço veio das aposentadorias ligadas a ele. (B2)",
+        "fonte_favoravel": "clp-diagnostico-previdencia",
+        "fonte_contrario": "made-usp-npe30-salario-minimo"
+      },
+      {
+        "tema": "BPC e direitos",
+        "favoravel": "No BPC, cada aumento real do mínimo eleva o valor e também o limite de renda para entrar. De 2021 a 2025, a despesa real subiu 50%. (A3)",
+        "contrario": "Para muitas famílias o benefício é a renda da casa, e a Constituição proíbe aposentadoria abaixo do mínimo. Dá para discutir o ganho real, não o piso. (B3)",
+        "fonte_favoravel": "ifi-raf110-bpc",
+        "fonte_contrario": "ieprev-badari-aposentadoria-minimo"
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Piso previdenciário",
+        "definicao": "Menor valor que uma aposentadoria ou pensão do INSS pode ter. Hoje é igual ao salário mínimo."
+      },
+      {
+        "termo": "BPC",
+        "definicao": "Benefício de Prestação Continuada. Paga um salário mínimo por mês a idosos com 65 anos ou mais e a pessoas com deficiência de famílias de baixa renda, mesmo sem contribuição ao INSS."
+      },
+      {
+        "termo": "Desvinculação",
+        "definicao": "Separar o valor dos benefícios do salário mínimo. Os benefícios passariam a ser corrigidos por outro índice, em geral só pela inflação."
+      },
+      {
+        "termo": "Ganho real",
+        "definicao": "Aumento acima da inflação. Desde 2024 o ganho real do salário mínimo está limitado a 2,5% ao ano."
+      },
+      {
+        "termo": "INPC",
+        "definicao": "Índice de inflação do IBGE usado para corrigir o salário mínimo e os benefícios do INSS acima do piso."
+      }
+    ],
+    "incertezas": [
+      "Se uma emenda que deixe benefícios abaixo do mínimo seria aceita pelo STF, já que pode ser vista como cláusula pétrea.",
+      "Quanto do gasto extra com o mínimo volta aos cofres como imposto, por causa do consumo maior das famílias.",
+      "Qual seria o efeito sobre a pobreza de idosos se o piso ficasse para trás do mínimo por vários anos."
+    ],
+    "fontes": [
+      {
+        "titulo": "Viva: Aposentadorias e salário mínimo: o que defendem os presidenciáveis (16/09/2026)",
+        "url": "https://viva.com.br/politica/aposentadorias-e-salario-minimo-o-que-defendem-os-presidenciaveis.html"
+      },
+      {
+        "titulo": "Folhapress/Bahia Notícias: Propostas de reforma da Previdência defendem aumento da idade mínima, mudança no MEI e bônus para mulher (19/07/2026)",
+        "url": "https://www.bahianoticias.com.br/folha/noticia/401363-propostas-de-reforma-da-previdencia-defendem-aumento-da-idade-minima-mudanca-no-mei-e-bonus-para-mulher"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "clp-diagnostico-previdencia",
+        "posicao": "favoravel",
+        "instituicao": "CLP (Centro de Liderança Pública)",
+        "natureza": "Organização privada sem fins lucrativos, de orientação liberal, que defende reformas do Estado",
+        "tipo": "Nota técnica",
+        "titulo": "Um diagnóstico sobre o sistema previdenciário do Brasil",
+        "autores": "Daniel Duque",
+        "data": "17/05/2024",
+        "formato": "Página",
+        "url": "https://clp.org.br/um-diagnostico-sobre-o-sistema-previdenciario-do-brasil/",
+        "tese": "Mostra que Previdência e benefícios custaram cerca de R$ 1,1 trilhão em 2023, perto de 10% do PIB, e que o regime geral é onde há mais espaço para economia. Propõe soltar o piso dos benefícios do salário mínimo. Se isso valesse desde 2012, o piso seria de cerca de R$ 1.180 em 2023. A economia começaria em R$ 6 bilhões em 2026 e somaria cerca de R$ 400 bilhões até 2035.",
+        "numero": {
+          "valor": "R$ 400 bi",
+          "legenda": "de economia acumulada entre 2026 e 2035 com a desvinculação do piso, segundo o CLP"
+        },
+        "premissas": [
+          "O salário mínimo segue com ganho real perto de 1,5% ao ano.",
+          "A proteção aos mais vulneráveis pode ser mantida com outros programas sociais."
+        ],
+        "pergunte": [
+          "O texto não calcula o efeito sobre a pobreza. Quanto renda perderiam os idosos que vivem só do benefício?"
+        ]
+      },
+      {
+        "id": "ibre-giambiagi-indexacao-sm",
+        "posicao": "favoravel",
+        "instituicao": "FGV Ibre (revista Conjuntura Econômica)",
+        "natureza": "Centro de pesquisa privado da Fundação Getulio Vargas; o autor é um dos principais defensores de nova reforma da Previdência",
+        "tipo": "Artigo",
+        "titulo": "Efeito da regra de indexação do salário mínimo: R$ 165 bilhões em quatro anos",
+        "autores": "Fabio Giambiagi",
+        "data": "09/2025",
+        "formato": "PDF",
+        "url": "https://static.poder360.com.br/2025/09/revista-conjuntura-economica.pdf",
+        "tese": "Calcula que o ganho real do salário mínimo, ao passar para aposentadorias e BPC, aumentou o gasto em cerca de R$ 165 bilhões entre 2023 e 2026, sendo R$ 64 bilhões só em 2026. Mantida a regra, seriam mais R$ 182 bilhões de 2027 a 2030. O autor diz que isso torna o orçamento quase impossível de cumprir e propõe corrigir o mínimo só pela inflação a partir de 2027. Ele cita a desvinculação por emenda constitucional como alternativa, mas alerta para o risco de o STF barrar a medida.",
+        "numero": {
+          "valor": "R$ 165 bi",
+          "legenda": "de gasto extra com INSS e BPC entre 2023 e 2026 por causa do ganho real do mínimo"
+        },
+        "premissas": [
+          "O dinheiro economizado iria para reduzir a dívida, e não para outros gastos."
+        ],
+        "pergunte": [
+          "A proposta principal congela o mínimo de todos os trabalhadores, não só dos benefícios. É melhor isso ou separar os dois?"
+        ]
+      },
+      {
+        "id": "ifi-raf110-bpc",
+        "posicao": "favoravel",
+        "instituicao": "IFI (Senado Federal)",
+        "natureza": "Instituição Fiscal Independente, órgão técnico do Senado; o texto não propõe desvinculação, mas mostra o mecanismo de custo usado por quem a defende",
+        "tipo": "Relatório de Acompanhamento Fiscal",
+        "titulo": "Evolução da despesa com o Benefício de Prestação Continuada (BPC), no Relatório de Acompanhamento Fiscal nº 110",
+        "autores": "Rafael Bacciotti",
+        "data": "19/03/2026",
+        "formato": "PDF",
+        "url": "https://www12.senado.leg.br/ifi/pdf/raf110_mar2026.pdf",
+        "tese": "O BPC custou R$ 127,2 bilhões em 2025, cerca de 1% do PIB, para 6,4 milhões de benefícios. Como o valor e o limite de renda para entrar no programa são ligados ao mínimo, cada aumento real faz o benefício ficar mais caro e mais gente ter direito. Entre 2021 e 2025, o mínimo subiu 10,1% acima da inflação, o número de benefícios subiu 35,1% e a despesa real subiu 50%. A projeção é chegar a 1,2% a 1,4% do PIB em 2035.",
+        "numero": {
+          "valor": "+50%",
+          "legenda": "de alta real na despesa com BPC entre 2021 e 2025"
+        },
+        "premissas": [
+          "As tendências de concessão e de judicialização dos últimos anos continuam."
+        ],
+        "pergunte": [
+          "Cerca de 70% da alta veio do número de beneficiários, não do valor. Desvincular resolveria o principal motor do gasto?"
+        ]
+      },
+      {
+        "id": "dieese-nt289-salario-minimo",
+        "posicao": "contrario",
+        "instituicao": "DIEESE",
+        "natureza": "Departamento de estudos mantido por centrais sindicais; defende a valorização do salário mínimo",
+        "tipo": "Nota técnica",
+        "titulo": "Impactos do aumento do salário mínimo para R$ 1.621,00 em 2026 (Nota Técnica nº 289)",
+        "autores": "DIEESE",
+        "data": "22/12/2025",
+        "formato": "PDF",
+        "url": "https://www.dieese.org.br/notatecnica/2025/notaTec289salarioMinimo.pdf",
+        "tese": "Cerca de 61,9 milhões de pessoas têm renda ligada ao mínimo, entre elas 29,3 milhões de beneficiários do INSS. O reajuste de 2026 custa cerca de R$ 39,1 bilhões a mais por ano à Previdência, mas injeta R$ 81,7 bilhões na economia. Para o DIEESE, essa renda vira consumo, emprego e crescimento, e parte do custo volta ao governo como imposto.",
+        "numero": {
+          "valor": "61,9 milhões",
+          "legenda": "de pessoas com renda referenciada no salário mínimo em 2026"
+        },
+        "premissas": [
+          "O dinheiro a mais na mão de quem ganha pouco é gasto quase todo em consumo no Brasil."
+        ],
+        "pergunte": [
+          "A nota diz que parte do custo volta como imposto, mas não calcula quanto. Isso cobre o gasto extra?"
+        ]
+      },
+      {
+        "id": "made-usp-npe30-salario-minimo",
+        "posicao": "contrario",
+        "instituicao": "Made-USP",
+        "natureza": "Centro de pesquisa da USP (universidade pública) sobre macroeconomia das desigualdades, de linha heterodoxa",
+        "tipo": "Nota de Política Econômica",
+        "titulo": "Impactos distributivos do salário mínimo: uma estimativa para o período 2014-2021 (Nota nº 030)",
+        "autores": "Rikelme Duarte Gomes, Matias Rebello Cardomingo, Marina da Silva Sanches, Gustavo Pereira Serra, Alessandra Scalioni Brito e Celia Lessa Kerstenetzky",
+        "data": "23/01/2023",
+        "formato": "PDF",
+        "url": "https://madeusp.com.br/wp-content/uploads/2023/01/npe_30_vf.pdf",
+        "tese": "Lembra que, entre 1995 e 2014, o salário mínimo explicou 72,4% da queda da desigualdade de renda das famílias, e que o maior pedaço disso (37,7 pontos) veio das aposentadorias ligadas ao mínimo. Entre 2014 e 2021, com o mercado de trabalho em crise, a desigualdade subiu, mas as aposentadorias continuaram puxando no sentido contrário. Para os autores, a ligação dos benefícios ao mínimo é peça central da redução da desigualdade.",
+        "numero": {
+          "valor": "37,7 pontos",
+          "legenda": "dos 72,4% de queda da desigualdade explicados pelo mínimo (1995-2014) vieram das aposentadorias"
+        },
+        "premissas": [
+          "Os efeitos medidos no passado continuam valendo com a população mais velha."
+        ],
+        "pergunte": [
+          "O próprio estudo diz que famílias com alguém ganhando um mínimo já não estão entre as mais pobres. O dinheiro chega a quem mais precisa?"
+        ]
+      },
+      {
+        "id": "ieprev-badari-aposentadoria-minimo",
+        "posicao": "contrario",
+        "instituicao": "IEPREV (Instituto de Estudos Previdenciários)",
+        "natureza": "Associação privada de advogados e estudiosos de direito previdenciário, que atua na defesa dos segurados",
+        "tipo": "Artigo de opinião",
+        "titulo": "A aposentadoria não pode valer menos que o mínimo",
+        "autores": "João Badari",
+        "data": "15/09/2026",
+        "formato": "Página",
+        "url": "https://ieprev.com.br/blog/a-aposentadoria-nao-pode-valer-menos-que-o-minimo",
+        "tese": "Aceita discutir custo, fraudes e se os benefícios devem ter o mesmo ganho real do mínimo. Mas diz que deixar uma aposentadoria abaixo do salário mínimo esbarra no artigo 201 da Constituição. Para muitas famílias, o benefício é a renda da casa, usada em comida, remédio, luz e aluguel. Uma reforma pode mudar idade e cálculo, mas não esse piso.",
+        "premissas": [
+          "O piso igual ao mínimo é um direito protegido pela Constituição, que não pode ser retirado por emenda."
+        ],
+        "pergunte": [
+          "O autor separa reduzir o ganho real de deixar o piso abaixo do mínimo. Na prática, a proposta em debate faz qual das duas coisas?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "gKiUL-_dAkE",
+        "titulo": "Novo salário mínimo vai impactar contas públicas? Economista explica",
+        "canal": "Jovem Pan News",
+        "duracao": "8:50",
+        "nota": "Como cada real a mais no mínimo pesa na Previdência e no BPC."
+      },
+      {
+        "id": "v6T_1mGSEmw",
+        "titulo": "Por que outra reforma da Previdência será inevitável, segundo Felipe Salto",
+        "canal": "BM&C News",
+        "duracao": "7:32",
+        "nota": "O ex-diretor da IFI explica por que vê a conta crescendo além do limite."
+      },
+      {
+        "id": "PCZyLvywURI",
+        "titulo": "E se os aposentados ganharem menos de um salário mínimo?",
+        "canal": "Rascunhos Econômicos",
+        "duracao": "18:49",
+        "nota": "Um canal de economia simula o que mudaria com a desvinculação."
+      },
+      {
+        "id": "JRUeVYuKssk",
+        "titulo": "Dieese: novo salário mínimo impacta R$ 39,1 bi nas contas da Previdência",
+        "canal": "CNN Brasil",
+        "duracao": "0:53",
+        "nota": "O número do Dieese, que defende a valorização do mínimo."
+      },
+      {
+        "id": "MACSN8AW5Vs",
+        "titulo": "Lula descarta desvincular piso das aposentadorias do salário mínimo",
+        "canal": "SBT News",
+        "duracao": "2:35",
+        "nota": "A posição do governo em 2024."
+      },
+      {
+        "id": "zuv335ZI17o",
+        "titulo": "Câmara aprova limite ao salário mínimo e restrição ao BPC",
+        "canal": "SBT News",
+        "duracao": "1:51",
+        "nota": "O pacote de 2024 que pôs um teto no aumento real do mínimo."
+      }
+    ],
+    "imagem": {
+      "arquivo": "img/temas/previdencia-salario-minimo.jpg",
+      "autor": "Elza Fiúza/Agência Brasil",
+      "licenca": "CC BY 3.0 BR",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Instituto_Nacional_do_Seguro_Social.JPG",
+      "legenda": "Atendimento em agência da Previdência Social, em Brasília.",
+      "alt": "Guichês de atendimento numerados em uma agência do INSS",
+      "posicao": "50% 50%"
+    }
+  },
+  {
+    "id": "autonomia-banco-central",
+    "titulo": "Autonomia financeira do Banco Central",
+    "categoria": "economia",
+    "tags": [
+      "banco central",
+      "autonomia financeira",
+      "pec 65",
+      "senhoriagem",
+      "orçamento",
+      "pix",
+      "galípolo",
+      "política monetária",
+      "senado",
+      "dívida pública"
+    ],
+    "pergunta": "O Banco Central deve ter autonomia financeira e orçamentária, além da autonomia que já tem?",
+    "resumo": "A PEC 65/2023 daria ao Banco Central orçamento próprio, pago com receitas como a senhoriagem, que rendeu em média R$ 23,3 bilhões por ano entre 2017 e 2025, contra um orçamento de R$ 4,8 bilhões. Aprovada na CCJ do Senado em junho de 2026, a proposta aguarda votação no Plenário.",
+    "atualizado": "2026-10-16",
+    "rotulos": {
+      "favoravel": "A favor da autonomia financeira",
+      "contrario": "Contra a PEC 65"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "O Banco Central (BC) cuida da inflação, fiscaliza os bancos e opera o Pix. Desde 2021, a Lei Complementar 179 garante mandatos fixos de quatro anos para o presidente e os diretores, que não coincidem com o do presidente da República. Isso é a autonomia operacional: o governo não pode demitir a diretoria por discordar dos juros. Mas o dinheiro para salários, sistemas e concursos ainda depende do Orçamento federal, aprovado pelo Congresso e sujeito a cortes do governo.",
+        "A PEC 65/2023, do senador Vanderlan Cardoso (PSD-GO), quer mudar isso. No texto aprovado, o BC deixa de ser autarquia e vira uma entidade pública de natureza especial. Ele aprovaria o próprio orçamento, pago com receitas próprias, como o rendimento das reservas internacionais e a senhoriagem, o ganho que vem de emitir moeda. Hoje esse ganho vai para o Tesouro. O texto também põe o Pix na Constituição e proíbe que ele seja vendido ou concedido.",
+        "A Comissão de Constituição e Justiça (CCJ) do Senado aprovou o texto do relator Plínio Valério (PSDB-AM) em 10 de junho de 2026, em votação simbólica. Desde então, a PEC está pronta para o Plenário, onde precisa de 49 dos 81 votos em dois turnos, antes de ir à Câmara. Até outubro de 2026 ela não foi votada. O Ministério da Fazenda pediu ajustes e o governo apresentou um texto alternativo, que manteria o BC como autarquia.",
+        "Quem defende diz que o BC ganhou tarefas, como o Pix e a fiscalização de novas empresas financeiras, mas perdeu servidores e verba, e que sem dinheiro garantido a autonomia de 2021 fica incompleta. Quem critica diz que a senhoriagem é receita do Estado e hoje ajuda a abater a dívida pública, que a PEC reduz o controle do Congresso sobre o BC e que ela pode deixar o banco mais exposto à influência do mercado que ele fiscaliza."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Senhoriagem média por ano (2017-2025)",
+          "valor": "R$ 23,3 bilhões"
+        },
+        {
+          "rotulo": "Orçamento médio do BC por ano (2017-2025)",
+          "valor": "R$ 4,8 bilhões"
+        },
+        {
+          "rotulo": "Servidores efetivos do BC (vagas criadas)",
+          "valor": "cerca de 3.400 (6.470)"
+        },
+        {
+          "rotulo": "Votos necessários no Plenário do Senado",
+          "valor": "49 de 81, em dois turnos"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Falta de pessoal",
+        "favoravel": "Desde 2011, o BC perdeu cerca de 1.400 servidores, 35% do quadro, e hoje só 32 pessoas operam, regulam e fiscalizam o Pix, que tem mais de 6 bilhões de transações por mês. (A2)",
+        "contrario": "Das 911 saídas de servidores entre 2016 e 2023, só 296 foram voluntárias, e os gastos administrativos do BC subiram 4,5% em 2023. Não haveria a debandada nem a falta de dinheiro que justificam a PEC. (B1)",
+        "fonte_favoravel": "anbcb-nota-pec65-2025",
+        "fonte_contrario": "ufpr-dornelas-bkr-2024"
+      },
+      {
+        "tema": "Contas públicas",
+        "favoravel": "O texto melhora a relação financeira entre o BC e o Tesouro, porque dá mais clareza, previsibilidade e transparência às estatísticas fiscais. (A3)",
+        "contrario": "A senhoriagem rendeu em média R$ 23,4 bilhões por ano entre 2017 e 2025, cinco vezes o gasto do BC. Se ficasse com o banco, a dívida bruta seria cerca de R$ 167 bilhões maior no período. (B2)",
+        "fonte_favoravel": "carta-ex-presidentes-bc-2026",
+        "fonte_contrario": "transforma-unicamp-nt22-2026"
+      },
+      {
+        "tema": "Exemplo de fora",
+        "favoravel": "Segundo estudo do FMI, mais de 90% dos bancos centrais têm autonomia financeira, e presidentes de bancos centrais apontaram essa autonomia como a mais importante entre dez dimensões. (A1)",
+        "contrario": "Nenhum grande banco central combina autonomia financeira, orçamento fora da lei orçamentária e menos controle do Congresso. E, como a senhoriagem cresce com os juros, o BC teria incentivo para mantê-los altos. (B3)",
+        "fonte_favoravel": "diretores-bc-autonomia-2024",
+        "fonte_contrario": "manifesto-economistas-pec65-2026"
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Autonomia operacional",
+        "definicao": "Garantia de que a diretoria do BC decide os juros sem poder ser demitida pelo governo. Foi criada pela Lei Complementar 179, de 2021, com mandatos fixos de quatro anos."
+      },
+      {
+        "termo": "Autonomia financeira e orçamentária",
+        "definicao": "Poder de o BC aprovar e gastar o próprio orçamento, com receitas próprias, sem depender do Orçamento federal nem de cortes do governo."
+      },
+      {
+        "termo": "Senhoriagem",
+        "definicao": "Ganho que o BC tem por emitir moeda: as pessoas guardam dinheiro que não rende juros, e o BC aplica esse valor. Hoje o resultado vai para o Tesouro."
+      },
+      {
+        "termo": "PEC",
+        "definicao": "Proposta de Emenda à Constituição. Precisa de 3/5 dos votos em dois turnos na Câmara e no Senado."
+      },
+      {
+        "termo": "Captura regulatória",
+        "definicao": "Quando um órgão que fiscaliza um setor passa a agir mais no interesse das empresas fiscalizadas do que no interesse público."
+      }
+    ],
+    "incertezas": [
+      "Qual texto chegará ao Plenário: o do relator, com o BC como entidade especial, ou um acordo mais próximo da proposta do governo, que mantém o BC como autarquia.",
+      "Quanto a mudança afetaria a dívida pública. A senhoriagem varia muito de ano para ano e foi negativa em 2021, 2023 e 2025.",
+      "Se a falta de servidores e verba pode ser resolvida com o Orçamento atual ou se só uma mudança na Constituição garante recursos estáveis."
+    ],
+    "fontes": [
+      {
+        "titulo": "Senado Notícias: PEC que dá ampla autonomia ao Banco Central vai a Plenário (10/06/2026)",
+        "url": "https://www12.senado.leg.br/noticias/materias/2026/06/10/pec-que-da-ampla-autonomia-ao-banco-central-vai-a-plenario"
+      },
+      {
+        "titulo": "Senado Notícias: Plínio Valério cobra votação de PEC que amplia autonomia do Banco Central (01/09/2026)",
+        "url": "https://www12.senado.leg.br/noticias/materias/2026/09/01/plinio-valerio-cobra-votacao-de-pec-que-amplia-autonomia-do-banco-central"
+      },
+      {
+        "titulo": "Senado Federal: tramitação da PEC 65/2023",
+        "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/161269"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "diretores-bc-autonomia-2024",
+        "posicao": "favoravel",
+        "instituicao": "Banco Central do Brasil (diretoria)",
+        "natureza": "Artigo assinado por quatro diretores do próprio BC, órgão público diretamente interessado na proposta",
+        "tipo": "Artigo de opinião",
+        "titulo": "4 diretores do BC defendem autonomia orçamentária e financeira",
+        "autores": "Ailton Aquino, Diogo Guillen, Otávio Damaso e Renato Gomes",
+        "data": "09/07/2024",
+        "formato": "Página",
+        "url": "https://www.poder360.com.br/opiniao/4-diretores-do-bc-defendem-autonomia-orcamentaria-e-financeira/",
+        "tese": "Os diretores dizem que o BC nasceu autônomo há 60 anos, mas mudanças legais o deixaram sob fortes restrições de orçamento. Citam estudo do FMI segundo o qual mais de 90% dos bancos centrais têm autonomia financeira, e uma pesquisa em que presidentes de bancos centrais apontaram a autonomia financeira como a dimensão mais importante entre dez. Argumentam que fiscalizar criptoativos, novos meios de pagamento e inteligência artificial exige investimento contínuo. Dizem que a PEC traria mais controles, como limite ao crescimento dos gastos, aprovação do orçamento pelo Senado e fiscalização do TCU.",
+        "numero": {
+          "valor": "mais de 90%",
+          "legenda": "dos bancos centrais têm autonomia financeira, segundo estudo do FMI citado pelos diretores"
+        },
+        "premissas": [
+          "A experiência de outros países pode ser aplicada ao Brasil sem grandes adaptações.",
+          "Mais recursos garantidos levam a um BC mais eficiente."
+        ],
+        "pergunte": [
+          "Os autores dirigem o próprio BC. Quem ganha com a mudança é também quem a defende?",
+          "Os outros bancos centrais com autonomia financeira também ficam com a senhoriagem e têm orçamento fora do Congresso?"
+        ]
+      },
+      {
+        "id": "anbcb-nota-pec65-2025",
+        "posicao": "favoravel",
+        "instituicao": "ANBCB (Associação Nacional dos Auditores do Banco Central)",
+        "natureza": "Associação de servidores de carreira do BC; parte interessada, já que a PEC trata de salários e carreiras",
+        "tipo": "Nota técnica",
+        "titulo": "Nota ANBCB: Sobre PEC 65",
+        "autores": "Auditores e servidores do Banco Central (ANBCB)",
+        "data": "01/08/2025",
+        "formato": "PDF",
+        "url": "https://static.poder360.com.br/2025/08/nota-ANBCB-funcionalismo-PEC-65.pdf",
+        "tese": "A nota diz que anos de falta de verba deixaram o BC em grave deterioração, enquanto suas tarefas cresceram. Desde 2011, o banco perdeu cerca de 1.400 servidores, 35% do quadro, contra 1% em outros órgãos federais. Apenas 32 pessoas operam, regulam e fiscalizam o Pix, que movimenta mais de 6 bilhões de transações por mês, e 155 servidores fiscalizam 1.100 instituições não bancárias. Para os autores, a PEC 65 é a solução estrutural.",
+        "numero": {
+          "valor": "-35%",
+          "legenda": "no número de servidores do BC desde 2011, segundo a ANBCB"
+        },
+        "premissas": [
+          "A falta de pessoal vem da dependência do Orçamento federal, e não de escolhas de gestão."
+        ],
+        "pergunte": [
+          "Os problemas de pessoal poderiam ser resolvidos com concursos autorizados no Orçamento atual, sem mudar a Constituição?"
+        ]
+      },
+      {
+        "id": "carta-ex-presidentes-bc-2026",
+        "posicao": "favoravel",
+        "instituicao": "Ex-presidentes e ex-diretores do Banco Central",
+        "natureza": "Carta de cinco ex-presidentes do BC de governos de diferentes partidos e 32 ex-diretores; vários hoje atuam no mercado financeiro",
+        "tipo": "Carta pública",
+        "titulo": "Ex-presidentes e ex-diretores do BC divulgam carta em apoio à PEC da autonomia",
+        "autores": "Wadico Bucchi, Gustavo Loyola, Henrique Meirelles, Alexandre Tombini, Roberto Campos Neto e 32 ex-diretores (relato do InfoMoney/Estadão Conteúdo)",
+        "data": "30/06/2026",
+        "formato": "Página",
+        "url": "https://www.infomoney.com.br/economia/ex-presidentes-e-ex-diretores-do-bc-divulgam-carta-em-apoio-a-pec-da-autonomia/",
+        "tese": "Os signatários dizem que a autonomia de 2021 fortaleceu a política de juros, mas deixou o arranjo incompleto. O BC ganhou tarefas, como a fiscalização do sistema financeiro e a operação do Pix, sem receber os instrumentos correspondentes, e limites de orçamento podem prejudicar suas funções. Respondendo à equipe econômica, afirmam que o texto melhora a relação financeira entre BC e Tesouro, com mais clareza e transparência nas estatísticas fiscais. Consideram o texto da CCJ pronto para o Plenário.",
+        "premissas": [
+          "Um BC com orçamento previsível protege melhor a moeda e o sistema financeiro."
+        ],
+        "pergunte": [
+          "Se o texto melhora as contas públicas, por que o Ministério da Fazenda pediu mudanças antes da votação?"
+        ]
+      },
+      {
+        "id": "ufpr-dornelas-bkr-2024",
+        "posicao": "contrario",
+        "instituicao": "UFPR (Brazilian Keynesian Review)",
+        "natureza": "Universidade pública; artigo em revista acadêmica da Associação Keynesiana Brasileira, de linha heterodoxa",
+        "tipo": "Artigo científico",
+        "titulo": "PEC 65/2023 e a negligenciada relação entre Banco Central e Tesouro Nacional",
+        "autores": "Larissa Naves Deus Dornelas (UFPR)",
+        "data": "2º semestre de 2024",
+        "formato": "PDF",
+        "url": "https://bkr.emnuvens.com.br/BKR/article/download/384/231",
+        "tese": "A autora diz que a justificativa da PEC cita outros países sem estudos que a sustentem e ignora como o BC e o Tesouro funcionam juntos no Brasil. Contesta a tese de falta de dinheiro: os gastos administrativos do BC subiram 4,5% em 2023. Contesta também a ideia de debandada de servidores: das 911 saídas entre 2016 e 2023, 615 foram aposentadorias ou mortes e só 296 foram saídas voluntárias. Conclui que a PEC não é um avanço institucional e que o país precisaria de uma reforma monetária mais ampla.",
+        "numero": {
+          "valor": "296 de 911",
+          "legenda": "saídas de servidores do BC entre 2016 e 2023 foram voluntárias; o resto foram aposentadorias e mortes"
+        },
+        "premissas": [
+          "O BC é parte do Estado e suas receitas pertencem à União."
+        ],
+        "pergunte": [
+          "O artigo analisa a versão de 2023, que transformava o BC em empresa pública. As críticas valem para o texto aprovado em 2026?"
+        ]
+      },
+      {
+        "id": "transforma-unicamp-nt22-2026",
+        "posicao": "contrario",
+        "instituicao": "Transforma (Unicamp) com a Fundação Friedrich Ebert",
+        "natureza": "Centro de pesquisa ligado ao Instituto de Economia da Unicamp que se define como think tank de esquerda",
+        "tipo": "Nota técnica",
+        "titulo": "Autonomia financeira do Banco Central: o que propõe a PEC 65/2023 e por que ela ameaça a regulação prudencial e a dívida pública da União",
+        "autores": "Pedro Paulo Zahluth Bastos (Unicamp)",
+        "data": "05/2026",
+        "formato": "PDF",
+        "url": "https://transformaeconomia.org/wp-content/uploads/2026/05/NT22-PT-2026.pdf",
+        "tese": "Entre 2017 e 2025, a senhoriagem rendeu em média R$ 23,4 bilhões por ano, cerca de cinco vezes os R$ 4,8 bilhões que o BC gastou. Hoje essa diferença abate a dívida da União. Se o BC ficar com ela, a dívida bruta seria cerca de R$ 167 bilhões maior no período, e o alívio no resultado primário seria só de uns R$ 4 bilhões por ano. A nota diz ainda que nenhum grande banco central reúne todas as regras da PEC e que falta de pessoal pode ser resolvida com o Orçamento atual.",
+        "numero": {
+          "valor": "R$ 167 bilhões",
+          "legenda": "a mais de dívida bruta entre 2017 e 2025 se a senhoriagem tivesse ficado com o BC, segundo a nota"
+        },
+        "premissas": [
+          "A senhoriagem é receita soberana do Estado e deve servir para reduzir a dívida."
+        ],
+        "pergunte": [
+          "A senhoriagem foi negativa em 2021, 2023 e 2025. Como o BC pagaria suas contas nesses anos, em qualquer modelo?"
+        ]
+      },
+      {
+        "id": "manifesto-economistas-pec65-2026",
+        "posicao": "contrario",
+        "instituicao": "Economistas da FGV, Unicamp, USP, UFRJ e outras universidades",
+        "natureza": "Manifesto de economistas de linha desenvolvimentista e heterodoxa, entre eles Bresser-Pereira e Belluzzo",
+        "tipo": "Manifesto",
+        "titulo": "PEC no Senado facilita cooptação do Banco Central, dizem economistas",
+        "autores": "Luiz Carlos Bresser-Pereira, Luiz Gonzaga Belluzzo, Élida Graziane, Leda Paulani, Lena Lavinas e outros (relato da Agência Brasil)",
+        "data": "06/06/2026",
+        "formato": "Página",
+        "url": "https://www.folhape.com.br/economia/pec-no-senado-facilita-cooptacao-do-banco-central-dizem-economistas/492267/",
+        "tese": "O manifesto diz que a PEC cria uma independência seletiva: tira o BC do controle democrático, ao retirar seu orçamento da lei orçamentária e limitar o TCU, mas o deixa aberto ao mercado. Como a senhoriagem depende dos juros, o BC teria incentivo para manter juros altos. O banco poderia virar um regulador capturado, que fiscaliza os bancos que indiretamente pagam suas contas. Os autores dizem que nenhum grande banco central combina essa mistura de regras.",
+        "numero": {
+          "valor": "5 vezes",
+          "legenda": "a senhoriagem é cerca de cinco vezes o orçamento do BC, segundo o manifesto"
+        },
+        "premissas": [
+          "Menos controle do Congresso significa mais espaço para a influência do setor financeiro."
+        ],
+        "pergunte": [
+          "O BC define os juros pela meta de inflação. Na prática, o ganho com senhoriagem pesaria nessa decisão?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "QPxVMHAROOw",
+        "titulo": "PEC 65 e a autonomia financeira do Banco Central",
+        "canal": "Lupa Econômica",
+        "duracao": "7:22",
+        "nota": "Explica o que muda se o BC deixar de depender do Orçamento."
+      },
+      {
+        "id": "XyBU2qR0dKU",
+        "titulo": "Galípolo pede autonomia financeira para reforçar papel do BC",
+        "canal": "CNN Brasil",
+        "duracao": "6:23",
+        "nota": "O presidente do BC defende a proposta."
+      },
+      {
+        "id": "SZ7d4ljE3XI",
+        "titulo": "Associação dos Analistas do Banco Central apoia PEC da autonomia",
+        "canal": "SBT News",
+        "duracao": "10:54",
+        "nota": "Por que parte dos servidores do BC quer a mudança."
+      },
+      {
+        "id": "1T1XEWgy-YA",
+        "titulo": "Sinal rejeita PEC da autonomia financeira",
+        "canal": "Conecta FM",
+        "duracao": "1:15",
+        "nota": "O sindicato dos servidores do BC explica por que é contra."
+      },
+      {
+        "id": "7T3bpiX9_aM",
+        "titulo": "PEC pretende ampliar autonomia do Banco Central",
+        "canal": "Band Jornalismo",
+        "duracao": "8:52",
+        "nota": "Reportagem com o andamento da proposta no Senado."
+      },
+      {
+        "id": "DrPLFq0pfNE",
+        "titulo": "Lula x Banco Central: críticas do presidente e os efeitos na economia",
+        "canal": "Cortes do Flow",
+        "duracao": "5:50",
+        "nota": "O conflito entre governo e BC que alimenta o debate."
+      }
+    ],
+    "imagem": {
+      "arquivo": "img/temas/autonomia-banco-central.jpg",
+      "autor": "Arquivo/Agência Brasil",
+      "licenca": "CC BY 3.0 BR",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Arquivo_da_Ag%C3%AAncia_Brasil_-_Bras%C3%ADlia_01_(cropped).jpg",
+      "legenda": "Sede do Banco Central, em Brasília, ao lado do Eixo Monumental.",
+      "alt": "Edifício escuro de duas torres do Banco Central, com avenidas de Brasília ao fundo",
+      "posicao": "50% 40%"
+    }
+  },
+  {
+    "id": "licenciamento-ambiental",
+    "titulo": "Nova lei do licenciamento ambiental",
+    "categoria": "ambiente",
+    "tags": [
+      "licenciamento ambiental",
+      "lei 15.190",
+      "pl 2159",
+      "lac",
+      "licença ambiental especial",
+      "autodeclaração",
+      "vetos",
+      "stf",
+      "ibama",
+      "meio ambiente"
+    ],
+    "pergunta": "A nova Lei Geral do Licenciamento Ambiental foi um avanço para o país?",
+    "resumo": "A Lei 15.190/2025 está em vigor desde fevereiro de 2026, depois que o Congresso derrubou 52 dos 63 vetos do presidente Lula. Três ações no STF pedem que partes dela sejam anuladas, e o julgamento foi adiado sem nova data.",
+    "atualizado": "2026-10-16",
+    "rotulos": {
+      "favoravel": "A favor da nova lei",
+      "contrario": "Contra a nova lei"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "Licenciamento ambiental é a autorização que obras e atividades que podem poluir ou degradar precisam ter antes de sair do papel, como estradas, linhas de energia, fábricas e mineração. Até 2025, o Brasil não tinha uma lei nacional sobre o tema. As regras vinham sobretudo de resoluções do Conama de 1986 e 1997 e de normas diferentes em cada estado.",
+        "O projeto de lei geral tramitou por mais de 20 anos. Começou em 2004 na Câmara, passou a se chamar PL 2.159/2021 no Senado e foi aprovado em julho de 2025. O presidente Lula sancionou a Lei 15.190 em 8 de agosto de 2025 com 63 vetos. Os pontos mais polêmicos eram a Licença por Adesão e Compromisso (LAC), em que o próprio empreendedor declara cumprir as regras, e dispensas de licença para parte da agropecuária. O governo também editou uma medida provisória que virou a Lei 15.300/2025, da Licença Ambiental Especial (LAE), um rito mais rápido para obras consideradas estratégicas.",
+        "Em 27 de novembro de 2025, uma semana após a COP30, o Congresso derrubou 52 vetos, entre eles o que impedia a LAC para empreendimentos de médio potencial poluidor. A lei entrou em vigor em 4 de fevereiro de 2026. PV, Rede com a Anamma, e PSOL com a Apib entraram com três ações no STF (ADIs 7913, 7916 e 7919). A CBIC, da construção civil, pediu o contrário: que a lei seja declarada constitucional (ADC 102). O relator é Alexandre de Moraes. Em maio de 2026, a PGR opinou pela procedência parcial das ações. O julgamento marcado para 12 de agosto de 2026 foi adiado, e até agora não há nova data.",
+        "Quem defende a lei diz que ela troca um sistema lento, confuso e cheio de brigas na Justiça por regras nacionais claras, com prazos e procedimentos proporcionais ao risco de cada obra. Quem critica diz que a autodeclaração, as dispensas e a LAE reduzem o controle prévio, deixam povos indígenas e quilombolas de fora e podem aumentar a insegurança jurídica e o risco de desastres."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Vetos derrubados pelo Congresso",
+          "valor": "52 de 63"
+        },
+        {
+          "rotulo": "Tempo de tramitação do projeto",
+          "valor": "Mais de 20 anos (2004 a 2025)"
+        },
+        {
+          "rotulo": "Tempo médio de uma licença de infraestrutura (Acende Brasil)",
+          "valor": "Cerca de 40 meses"
+        },
+        {
+          "rotulo": "Ações no STF sobre a lei",
+          "valor": "3 ADIs contra e 1 ADC a favor"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Regras nacionais",
+        "favoravel": "Antes, o licenciamento dependia de resoluções do Conama de 1986 a 1997. A lei cria prazos, tipos de licença padronizados e listas claras de dispensa, o que reduz interpretações caso a caso. (A2)",
+        "contrario": "A lei acelera procedimentos, mas não fixa critérios comuns e tende a aumentar a diferença entre estados. Em Minas, o limite para dispensar licença rural já subiu de 100 para 1.000 hectares. (B1)",
+        "fonte_favoravel": "acende-uhlig-seguranca",
+        "fonte_contrario": "usp-ufop-polemico-limitado"
+      },
+      {
+        "tema": "Autodeclaração",
+        "favoravel": "Simplificar a licença de atividades de baixo impacto libera técnicos para obras maiores. O Ibama tinha só cerca de 106 servidores por estado em 2020, e simplificar não é o mesmo que retroceder. (A1)",
+        "contrario": "A LAC passa ao próprio empreendedor a responsabilidade inicial pela análise de risco. Para os autores, isso fere a proibição de retrocesso ambiental do artigo 225 da Constituição. (B2)",
+        "fonte_favoravel": "ipea-td-2808",
+        "fonte_contrario": "fgv-resmpu-marco-legal"
+      },
+      {
+        "tema": "Segurança jurídica",
+        "favoravel": "Regras fragmentadas fazem licenças serem suspensas ou anuladas na Justiça. Uma lei única destrava obras como as de saneamento, que precisam de R$ 667 bilhões até 2040. (A3)",
+        "contrario": "Vários artigos contrariam decisões do STF, como ouvir a Funai só em terras indígenas homologadas. Isso convida a novas ações judiciais, e não a menos. (B3)",
+        "fonte_favoravel": "cbic-carta-sancao",
+        "fonte_contrario": "mpf-nt-vetos"
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Licenciamento ambiental",
+        "definicao": "Processo em que um órgão ambiental avalia os impactos de uma obra ou atividade e decide se ela pode ser feita e com quais condições."
+      },
+      {
+        "termo": "LAC (Licença por Adesão e Compromisso)",
+        "definicao": "Licença emitida de forma quase automática, com base numa declaração do próprio empreendedor de que cumpre as regras. A análise do órgão vem depois, por amostragem."
+      },
+      {
+        "termo": "LAE (Licença Ambiental Especial)",
+        "definicao": "Rito criado pela Lei 15.300/2025 para obras que o governo considera estratégicas, com prioridade e prazo máximo de um ano para a decisão."
+      },
+      {
+        "termo": "EIA/Rima",
+        "definicao": "Estudo de Impacto Ambiental e seu relatório resumido. É o estudo mais completo, exigido para obras de grande impacto."
+      },
+      {
+        "termo": "Derrubada de veto",
+        "definicao": "Quando o Congresso, por maioria absoluta de deputados e senadores, restaura trechos de uma lei que o presidente tinha vetado."
+      }
+    ],
+    "incertezas": [
+      "O que o STF vai decidir sobre a LAC, as dispensas e a LAE, e quando. Estados que já aplicam as novas regras podem ter de rever processos.",
+      "Se as licenças vão de fato sair mais rápido. A demora também vem da falta de servidores e de sistemas nos órgãos ambientais, que a lei não resolve sozinha.",
+      "Quanto a autodeclaração vai aumentar ou não os danos ambientais. Isso depende da fiscalização depois da licença, que ainda não tem dados."
+    ],
+    "fontes": [
+      {
+        "titulo": "Agência Brasil (Diario de Pernambuco): Lei do licenciamento ambiental entra em vigor com ações no STF (04/02/2026)",
+        "url": "https://www.diariodepernambuco.com.br/brasil/2026/02/11706860-lei-do-licenciamento-ambiental-entra-em-vigor-com-acoes-no-stf.html"
+      },
+      {
+        "titulo": "Agência Pública: Congresso derruba vetos de Lula sobre licenciamento ambiental uma semana após COP30 (27/11/2025)",
+        "url": "https://apublica.org/2025/11/congresso-derruba-56-vetos-de-licenciamento-ambiental-apos-cop30/"
+      },
+      {
+        "titulo": "Rádio Senado: Lei sobre licenciamento ambiental tem julgamento adiado pelo STF (26/08/2026)",
+        "url": "https://www12.senado.leg.br/radio/1/noticia/2026/08/26/lei-sobre-licenciamento-ambiental-tem-julgamento-adiado-pelo-stf"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "ipea-td-2808",
+        "posicao": "favoravel",
+        "instituicao": "Ipea",
+        "natureza": "Instituto público de pesquisa ligado ao governo federal",
+        "tipo": "Texto para Discussão",
+        "titulo": "O licenciamento como instrumento de regulação ambiental: desafios, propostas e perspectivas",
+        "autores": "Luiz Felipe Monteiro Seixas e Nilo Luiz Saccaro Junior",
+        "data": "11/2022",
+        "formato": "PDF",
+        "url": "https://repositorio.ipea.gov.br/bitstreams/87341ce5-0578-4ee0-bc96-5b81555470be/download",
+        "tese": "Defende que o licenciamento é um meio para controlar a poluição, não um fim, e por isso precisa ser otimizado. Propõe simplificar a licença de atividades de baixo impacto e liberar servidores para obras maiores e para a fiscalização. Considera o PL 2.159/2021 a proposta mais avançada, a ser aprovada com ajustes pontuais. Rejeita a ideia de que simplificar é sempre retroceder.",
+        "numero": {
+          "valor": "2.861",
+          "legenda": "servidores tinha o Ibama em 2020, cerca de 106 por estado, contra uma média de 473 nos órgãos estaduais"
+        },
+        "premissas": [
+          "A fiscalização depois da licença continua funcionando.",
+          "Separar obras de baixo e alto impacto com critérios técnicos é possível."
+        ],
+        "pergunte": [
+          "O texto é de 2022 e pede ajustes. A lei aprovada, com os vetos derrubados, fez esses ajustes?"
+        ]
+      },
+      {
+        "id": "acende-uhlig-seguranca",
+        "posicao": "favoravel",
+        "instituicao": "Instituto Acende Brasil",
+        "natureza": "Centro de estudos privado do setor elétrico, financiado por empresas do setor",
+        "tipo": "Artigo de opinião (Valor Econômico)",
+        "titulo": "Segurança jurídica no licenciamento ambiental",
+        "autores": "Alexandre Uhlig (diretor de Sustentabilidade do Instituto Acende Brasil)",
+        "data": "09/2025",
+        "formato": "PDF",
+        "url": "https://gesel.ie.ufrj.br/wp-content/uploads/2025/09/Artigo-Alexandre-Uhlig-09.09.2025.pdf",
+        "tese": "Afirma que a lei dá base legal a um sistema que dependia de resoluções do Conama de 1986 a 1997 e traz previsibilidade. Destaca prazos para os órgãos responderem, padrões nacionais de licenças e listas claras de atividades dispensadas ou simplificadas. Diz que a lei não cria isenção geral, mas ritos proporcionais ao impacto. Ainda vê falhas e defende ajustes, como limitar a LAC a projetos de baixo impacto.",
+        "numero": {
+          "valor": "40 meses",
+          "legenda": "levava, em média, uma licença para projetos de infraestrutura, segundo estudo do Acende Brasil"
+        },
+        "premissas": [
+          "A demora no licenciamento vem mais de regras confusas do que da falta de estrutura dos órgãos."
+        ],
+        "pergunte": [
+          "O próprio autor queria limitar a LAC a baixo impacto. Com os vetos derrubados, a LAC vale para médio impacto. Isso muda a avaliação?"
+        ]
+      },
+      {
+        "id": "cbic-carta-sancao",
+        "posicao": "favoravel",
+        "instituicao": "CBIC (Câmara Brasileira da Indústria da Construção)",
+        "natureza": "Entidade privada que representa empresas da construção; autora da ADC 102 no STF",
+        "tipo": "Carta institucional",
+        "titulo": "Manifestação de apoio à sanção do Projeto de Lei nº 2.159/2021 (Lei Geral do Licenciamento Ambiental)",
+        "autores": "Renato de Sousa Correia (presidente da CBIC)",
+        "data": "25/07/2025",
+        "formato": "PDF",
+        "url": "https://cbic.org.br/wp-content/uploads/2025/07/car1182025-pr-manifestacao-de-apoio-a-sancao-do-projeto-de-lei-no-21592021-lei-gera-1.pdf",
+        "tese": "Pede a sanção integral do projeto. Argumenta que regras fragmentadas geram insegurança jurídica, com licenças suspensas ou anuladas na Justiça. Diz que a LAC é mais rápida para atividades de risco conhecido e que a lei simplifica obras de saneamento e ampliações em faixas já ocupadas por estradas e linhas de energia. Afirma que as compensações passam a ser proporcionais aos impactos de cada obra.",
+        "numero": {
+          "valor": "R$ 667 bilhões",
+          "legenda": "de investimento estimado em saneamento até 2040 para universalizar o serviço, que a carta diz depender de licenças mais ágeis"
+        },
+        "premissas": [
+          "Licença mais rápida destrava investimentos sem aumentar os danos ambientais."
+        ],
+        "pergunte": [
+          "A carta é de um setor que ganha com licenças mais rápidas. Que dados mostram que a proteção ambiental não piora?"
+        ]
+      },
+      {
+        "id": "usp-ufop-polemico-limitado",
+        "posicao": "contrario",
+        "instituicao": "USP e UFOP",
+        "natureza": "Universidades públicas; parecer técnico de pesquisadores de avaliação de impacto ambiental",
+        "tipo": "Parecer técnico",
+        "titulo": "Polêmico e limitado: o projeto da Lei Geral do Licenciamento Ambiental",
+        "autores": "Luis E. Sánchez (USP) e Alberto Fonseca (UFOP)",
+        "data": "08/2025",
+        "formato": "PDF",
+        "url": "https://ocean.correiosabia.com.br/content/files/2025/11/Polemico-Limitado-Parecer-Tecnico-PL2159.pdf",
+        "tese": "Conclui que o projeto é profundamente limitado e uma oportunidade perdida. Ele foca em acelerar procedimentos, mas não harmoniza critérios entre estados e municípios, como uma lei geral deveria, e tende a aumentar a fragmentação. A LAC, as dispensas e a menor participação de órgãos como Funai e ICMBio podem elevar a insegurança jurídica e a degradação. O texto ignora avaliação ambiental estratégica, impactos cumulativos e mudança do clima.",
+        "numero": {
+          "valor": "100 → 1.000 ha",
+          "legenda": "subiu o limite para dispensar licença de agropecuária e silvicultura em Minas Gerais entre 2004 e 2025, exemplo de competição entre estados"
+        },
+        "premissas": [
+          "Sem critérios nacionais, estados afrouxam regras para atrair investimentos."
+        ],
+        "pergunte": [
+          "Se o sistema antigo já era lento e confuso, qual seria a alternativa concreta à lei aprovada?"
+        ]
+      },
+      {
+        "id": "fgv-resmpu-marco-legal",
+        "posicao": "contrario",
+        "instituicao": "FGV (com MPSP e ICLEI)",
+        "natureza": "Artigo científico de pesquisadores da FGV, do Ministério Público de SP e do ICLEI, na revista da Escola Superior do MPU",
+        "tipo": "Artigo científico",
+        "titulo": "O novo marco legal do licenciamento ambiental no Brasil: uma análise crítica da gênese da Lei n. 15.190/2025 e suas implicações para a governança ambiental",
+        "autores": "Florenci Cassab Milani, Lorena Bulhões, Ana Júlia Dias Santiago, Thais Scharfenberg e André Pereira de Carvalho",
+        "data": "03/2026",
+        "formato": "PDF",
+        "url": "https://escola.mpu.mp.br/publicacoescientificas/index.php/revista2/article/download/879/699/3066",
+        "tese": "Analisa a tramitação e conclui que venceu a tese da rapidez sobre a precaução. A LAC transfere ao empreendedor a responsabilidade inicial pela análise de risco, e a dispensa para a agropecuária com base só no CAR não mede impactos sobre água e biodiversidade. Para os autores, a lei viola o princípio da proibição de retrocesso ambiental do artigo 225 da Constituição e gera insegurança jurídica.",
+        "numero": {
+          "valor": "52 de 63",
+          "legenda": "vetos presidenciais foram derrubados pelo Congresso, restaurando a visão original do projeto"
+        },
+        "premissas": [
+          "Um nível de proteção ambiental já alcançado não pode ser reduzido sem compensação."
+        ],
+        "pergunte": [
+          "O artigo se apoia bastante em fontes de ONGs ambientalistas. Que dados de campo mostram aumento de dano onde a LAC já existia nos estados?"
+        ]
+      },
+      {
+        "id": "mpf-nt-vetos",
+        "posicao": "contrario",
+        "instituicao": "Ministério Público Federal (4ª e 6ª CCR e PFDC)",
+        "natureza": "Órgão público independente que fiscaliza o cumprimento da lei e defende direitos coletivos",
+        "tipo": "Nota técnica",
+        "titulo": "Nota Técnica Conjunta 4ª CCR, 6ª CCR e PFDC: sugestão de vetos ao Projeto de Lei n.º 2.159/2021 (Lei Geral do Licenciamento Ambiental)",
+        "autores": "Luiza Cristina Fonseca Frischeisen, Nicolao Dino de Castro e Costa Neto e Eliana Peres Torelly de Carvalho",
+        "data": "29/07/2025",
+        "formato": "PDF",
+        "url": "https://www.mpf.mp.br/atuacao/ccr4/coordenacao/notas-tecnicas/pgr-00276370-2025-1.pdf",
+        "tese": "Pede o veto de dezenas de artigos. Chama a LAC de autolicenciamento e diz que o STF já limitou licenças simplificadas a obras de pequeno impacto. Critica a regra que só ouve Funai e Fundação Palmares em terras indígenas e quilombolas já homologadas, contra decisões do STF. Aponta que a licença corretiva extingue a punição de quem operou sem licença, o que incentiva a ilegalidade.",
+        "premissas": [
+          "Decisões anteriores do STF sobre leis estaduais valem também para a lei federal."
+        ],
+        "pergunte": [
+          "A nota foi escrita antes dos vetos e da derrubada. Quais desses pontos ainda estão na lei em vigor?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "kNXqbqLmQOQ",
+        "titulo": "Análise: o que muda na lei de Licenciamento Ambiental",
+        "canal": "CNN Brasil",
+        "duracao": "3:46",
+        "nota": "Resumo das principais mudanças da nova lei."
+      },
+      {
+        "id": "xcSb7-xXR5k",
+        "titulo": "Entenda o que é a Licença por Adesão e Compromisso",
+        "canal": "VIVA de Licenciamento Ambiental",
+        "duracao": "6:05",
+        "nota": "Como funciona a licença autodeclarada, ponto central da polêmica."
+      },
+      {
+        "id": "CdLfcAiGmtk",
+        "titulo": "LAC: a nova licença vai acelerar obras no Brasil",
+        "canal": "Sienge",
+        "duracao": "6:25",
+        "nota": "A visão do setor de construção, que defende a lei."
+      },
+      {
+        "id": "wSl_taK6zbY",
+        "titulo": "Congresso derruba vetos à Lei de Licenciamento Ambiental",
+        "canal": "CNN Brasil",
+        "duracao": "2:49",
+        "nota": "O que voltou para a lei depois da derrubada dos vetos."
+      },
+      {
+        "id": "fSAWe5NmP9A",
+        "titulo": "Marina Silva critica vetos derrubados na Lei do Licenciamento",
+        "canal": "Itatiaia",
+        "duracao": "2:59",
+        "nota": "A ministra do Meio Ambiente explica suas objeções."
+      },
+      {
+        "id": "wmwTUZ3hBjY",
+        "titulo": "Governo pode recorrer à Justiça contra derrubada de vetos",
+        "canal": "Canal Rural",
+        "duracao": "7:06",
+        "nota": "O caminho até o STF, contado por um canal do agro."
+      }
+    ],
+    "imagem": {
+      "arquivo": "img/temas/licenciamento-ambiental.jpg",
+      "autor": "Bruno Batista/Vice-Presidência da República",
+      "licenca": "CC BY 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:09_09_2021_Visita_%C3%A0_Usina_Hidrel%C3%A9trica_Belo_Monte_(51441660737).jpg",
+      "legenda": "Usina Hidrelétrica de Belo Monte, no rio Xingu, em Altamira (PA), em 2021.",
+      "alt": "Vista aérea da barragem de uma hidrelétrica sobre um rio largo, cercado de vegetação",
+      "posicao": "50% 55%"
+    }
+  },
+  {
+    "id": "desoneracao-folha",
+    "titulo": "Desoneração da folha de pagamento",
+    "categoria": "trabalho",
+    "tags": [
+      "desoneração da folha",
+      "reoneração",
+      "17 setores",
+      "contribuição previdenciária",
+      "CPRB",
+      "emprego formal",
+      "renúncia fiscal",
+      "lei 14.973",
+      "encargos trabalhistas",
+      "INSS patronal"
+    ],
+    "pergunta": "A desoneração da folha de pagamento dos 17 setores deve continuar?",
+    "resumo": "Pela Lei 14.973/2024, os 17 setores beneficiados voltam aos poucos a pagar a contribuição de 20% sobre a folha: em 2026 pagam 10% sobre a folha mais uma parte menor sobre o faturamento, e em 2028 o benefício acaba. O Ministério da Fazenda estimou o custo da medida em R$ 15,8 bilhões em 2024, e o debate é se ela protege empregos o bastante para valer esse preço.",
+    "atualizado": "2026-10-16",
+    "rotulos": {
+      "favoravel": "A favor de manter a desoneração",
+      "contrario": "Contra manter a desoneração"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "Toda empresa que contrata com carteira assinada paga ao INSS uma contribuição de 20% sobre os salários, a chamada contribuição patronal. A desoneração da folha permite que alguns setores troquem essa cobrança por uma alíquota sobre o faturamento, de 1% a 4,5%. Para empresas com muitos funcionários, isso costuma sair mais barato. A diferença que deixa de ser arrecadada é coberta pelo Tesouro.",
+        "A medida foi criada em 2011, no governo Dilma (Lei 12.546), como algo temporário para alguns setores, como tecnologia, têxteis e calçados. Chegou a valer para 56 setores em 2015. Depois foi reduzida e, desde 2018, ficou restrita a 17 setores, entre eles construção civil, transporte, comunicação, call center, tecnologia da informação e confecções. Foi prorrogada várias vezes pelo Congresso, muitas vezes contra a vontade do governo do momento.",
+        "Em 2023, o Congresso prorrogou o benefício até 2027 e derrubou o veto do presidente Lula. O governo levou o caso ao STF, que exigiu uma fonte de compensação. O acordo virou a Lei 14.973, de setembro de 2024, que cria uma transição: em 2025 as empresas pagaram 5% sobre a folha, em 2026 pagam 10%, em 2027 pagarão 15% e, em 2028, voltam aos 20% cheios. Quem fica na transição precisa manter pelo menos 75% da média de empregados do ano anterior.",
+        "Quem defende manter o benefício diz que esses setores usam muita mão de obra e que cobrar sobre a folha encarece a contratação formal e empurra trabalhadores para a informalidade. Quem defende o fim diz que os estudos mais rigorosos encontram pouco ou nenhum efeito sobre o emprego, que o custo por vaga é alto e que, se o objetivo é baratear o emprego formal, seria melhor reduzir o encargo para todos os salários mais baixos, e não para setores escolhidos."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Contribuição sobre a folha em 2026 (setores na transição)",
+          "valor": "10% (20% a partir de 2028)"
+        },
+        {
+          "rotulo": "Custo estimado em 2024 (Ministério da Fazenda)",
+          "valor": "R$ 15,8 bilhões"
+        },
+        {
+          "rotulo": "Empregos formais nos setores desonerados (2022, Brasscom)",
+          "valor": "8,9 milhões"
+        },
+        {
+          "rotulo": "Alíquota sobre o faturamento antes da transição",
+          "valor": "1% a 4,5%"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Efeito no emprego",
+        "favoravel": "Comparando setores parecidos, um estudo publicado na revista da USP encontrou efeito positivo de 1,12 ponto percentual no número de vínculos de emprego e de 2,44 pontos nas horas trabalhadas nos setores desonerados. (A1)",
+        "contrario": "Um estudo com dados da RAIS de 2009 a 2021 testou sete formas de comparação e não achou efeito significativo da desoneração sobre o emprego, nem queda de vagas quando parte dos setores voltou a pagar sobre a folha em 2018. (B1)",
+        "fonte_favoravel": "freitas-paes-desoneracao-emprego",
+        "fonte_contrario": "albernaz-carvalho-idp-reoneracao"
+      },
+      {
+        "tema": "Quem mais emprega",
+        "favoravel": "Entre 2017 e 2022, o emprego nos setores que seguiram desonerados cresceu 15,5%, contra 6,8% nos 13 setores que voltaram a pagar sobre a folha em 2018. (A3)",
+        "contrario": "Entre 2012 e 2022, os empregados com carteira nos setores desonerados caíram 13% (960 mil), enquanto nos demais setores privados subiram 6,3%. Eles não estão entre os que mais empregam. (B2)",
+        "fonte_favoravel": "brasscom-desoneracao-reoneracao",
+        "fonte_contrario": "ipea-radar-setores-que-mais-desempregam"
+      },
+      {
+        "tema": "Custo e desenho",
+        "favoravel": "Nas pequenas empresas dos primeiros setores desonerados, o emprego cresceu cerca de 14% a mais que no grupo de comparação, o que indicaria uns 320 mil empregos a mais. (A2)",
+        "contrario": "A medida custou cerca de R$ 15,8 bilhões em 2024, sem metas nem prazo. A Fazenda propõe trocar o benefício por setor por um desconto no primeiro salário mínimo de cada trabalhador. (B3)",
+        "fonte_favoravel": "scherer-ipea-desoneracao-emprego",
+        "fonte_contrario": "fazenda-spe-desoneracao-2024"
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Contribuição patronal",
+        "definicao": "Valor que a empresa paga ao INSS sobre os salários dos empregados. A regra geral é 20% da folha."
+      },
+      {
+        "termo": "Desoneração da folha",
+        "definicao": "Troca da contribuição de 20% sobre a folha por uma alíquota menor sobre o faturamento, válida só para alguns setores."
+      },
+      {
+        "termo": "CPRB",
+        "definicao": "Contribuição Previdenciária sobre a Receita Bruta. É a cobrança sobre o faturamento que substitui a contribuição sobre a folha."
+      },
+      {
+        "termo": "Reoneração",
+        "definicao": "Volta da cobrança cheia sobre a folha. A Lei 14.973/2024 faz isso de forma gradual entre 2025 e 2028."
+      },
+      {
+        "termo": "Renúncia fiscal",
+        "definicao": "Dinheiro que o governo deixa de arrecadar por causa de um benefício tributário. Também é chamada de gasto tributário."
+      }
+    ],
+    "incertezas": [
+      "Qual o efeito real da desoneração sobre o emprego. Estudos com métodos parecidos chegam a resultados diferentes, de um ganho pequeno a nenhum efeito.",
+      "O que acontece com as vagas quando a cobrança volta. As empresas podem demitir, repassar o custo aos preços ou contratar mais como pessoa jurídica.",
+      "Se um corte de encargos para todos os salários baixos, em vez de para setores escolhidos, geraria mais empregos pelo mesmo custo."
+    ],
+    "fontes": [
+      {
+        "titulo": "COAD: Publicada Lei que trata da reoneração gradual da folha de pagamento (17/09/2024)",
+        "url": "https://www.coad.com.br/home/noticias-detalhe/128000/publicada-lei-que-trata-da-reoneracao-gradual-da-folha-de-pagamento"
+      },
+      {
+        "titulo": "Jovem Pan: Durigan diz que custo de desoneração da folha em 2025 pode chegar a R$ 35 bilhões (02/09/2024)",
+        "url": "https://jovempan.com.br/economia/macroeconomia/durigan-diz-que-custo-de-desoneracao-da-folha-em-2025-pode-chegar-a-r-35-bilhoes/"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "freitas-paes-desoneracao-emprego",
+        "posicao": "favoravel",
+        "instituicao": "Estudos Econômicos (USP)",
+        "natureza": "Revista científica da FEA-USP, com revisão por pares; autores da Universidade Federal de Rondonópolis e da UFPE",
+        "tipo": "Artigo científico",
+        "titulo": "Impactos da desoneração da folha de pagamentos sobre o emprego formal e a competitividade industrial: uma aproximação pelo método de Difference in Differences com Propensity Score Matching",
+        "autores": "Carlos Eduardo de Freitas e Nélson Leitão Paes",
+        "data": "30/06/2022",
+        "formato": "Página",
+        "url": "https://revistas.usp.br/ee/article/view/183248",
+        "tese": "Compara setores desonerados e não desonerados com dados da RAIS e da CNI. Encontra efeito positivo médio de 1,12 ponto percentual no número de vínculos de emprego e de 2,44 pontos nas horas trabalhadas. O efeito foi maior em 2012, quando a lei começou, e caiu para cerca de 0,6 ponto em 2018. Também aponta ganho de competitividade da indústria em 2015 e 2016.",
+        "numero": {
+          "valor": "+1,12 p.p.",
+          "legenda": "de efeito médio no número de vínculos de emprego nos setores desonerados"
+        },
+        "premissas": [
+          "Setores não desonerados parecidos são um bom retrato do que teria acontecido sem a medida."
+        ],
+        "pergunte": [
+          "Se o efeito caiu de 1,5 para 0,6 ponto ao longo dos anos, ele ainda justifica o custo hoje?"
+        ]
+      },
+      {
+        "id": "scherer-ipea-desoneracao-emprego",
+        "posicao": "favoravel",
+        "instituicao": "Ipea (autor do Dieese)",
+        "natureza": "Nota técnica publicada pelo Ipea, órgão público de pesquisa; autor economista do Dieese, departamento de estudos ligado aos sindicatos",
+        "tipo": "Nota técnica",
+        "titulo": "Desoneração da folha de pagamentos: efeitos no emprego e nos salários",
+        "autores": "Clóvis Scherer",
+        "data": "10/2015",
+        "formato": "PDF",
+        "url": "https://static.poder360.com.br/2024/05/efeito-desoneracao-ipea.pdf",
+        "tese": "Publicada no boletim Mercado de Trabalho nº 59, compara empresas pequenas dos primeiros setores desonerados (têxtil, confecção, calçados, TI e call center) com empresas do Simples entre 2011 e 2012. As empresas beneficiadas aumentaram o emprego em cerca de 14% e as horas trabalhadas em cerca de 8%. Aplicado a 2,28 milhões de vagas, o resultado indicaria uns 320 mil empregos a mais, número que o autor apresenta só como ilustração.",
+        "numero": {
+          "valor": "~14%",
+          "legenda": "a mais de emprego nas pequenas empresas beneficiadas, frente ao grupo de comparação"
+        },
+        "premissas": [
+          "Empresas do Simples, que já não pagavam a contribuição sobre a folha, são um bom grupo de comparação."
+        ],
+        "pergunte": [
+          "O estudo olha só o primeiro ano e só empresas com menos de 50 empregados. O efeito vale para as grandes e para os anos seguintes?"
+        ]
+      },
+      {
+        "id": "brasscom-desoneracao-reoneracao",
+        "posicao": "favoravel",
+        "instituicao": "Brasscom",
+        "natureza": "Associação privada das empresas de tecnologia da informação, um dos setores beneficiados; defende a desoneração",
+        "tipo": "Relatório",
+        "titulo": "Desoneração e Reoneração da Folha (BRI2-2023-006, Relatório de Inteligência e Informação)",
+        "autores": "Brasscom",
+        "data": "03/2023",
+        "formato": "PDF",
+        "url": "https://brasscom.org.br/wp-content/uploads/2023/03/BRI2-2023-006-Desoneracao-x-Reoneracao-da-Folha-2022-v22.pdf",
+        "tese": "Com dados da RAIS e do Caged, mostra que o emprego nos setores que continuaram desonerados cresceu 15,5% entre 2017 e 2022, contra 6,8% nos 13 setores que voltaram a pagar sobre a folha em 2018. Simula que, se os setores desonerados tivessem tido o mesmo desempenho dos reonerados, teriam sido 1,6 milhão de empregos a menos até 2022, e o salário médio cairia de R$ 2.430 para R$ 2.136.",
+        "numero": {
+          "valor": "15,5% x 6,8%",
+          "legenda": "de crescimento do emprego entre 2017 e 2022 nos setores desonerados e nos reonerados"
+        },
+        "premissas": [
+          "A diferença de crescimento entre os dois grupos se deve à desoneração, e não a outras diferenças entre os setores."
+        ],
+        "pergunte": [
+          "Os setores que continuaram desonerados podem ter crescido por outros motivos, como a demanda por tecnologia. A comparação isola o efeito do imposto?"
+        ]
+      },
+      {
+        "id": "albernaz-carvalho-idp-reoneracao",
+        "posicao": "contrario",
+        "instituicao": "IDP",
+        "natureza": "Instituição privada de ensino em Brasília; artigo de mestrado orientado por ex-técnico do Ipea, em revista sem ISSN que publica resultados preliminares",
+        "tipo": "Artigo científico",
+        "titulo": "Desoneração e Reoneração da Folha de Salários: Efeitos sobre o Emprego em Setores Beneficiados entre 2013 e 2018",
+        "autores": "Leonardo Rodrigues Albernaz e Alexandre Xavier Ywata de Carvalho",
+        "data": "12/12/2025",
+        "formato": "Página",
+        "url": "https://www.portaldeperiodicos.idp.edu.br/redea/article/view/8808",
+        "tese": "Usa dados da RAIS de 2009 a 2021 e testa sete estratégias de comparação entre setores. Não encontra efeito estatisticamente significativo da desoneração de 2013 sobre o emprego formal. Também não encontra queda de emprego quando parte dos setores voltou a pagar sobre a folha, em 2018. Os resultados se mantêm por região e por tamanho de empresa.",
+        "premissas": [
+          "Os setores que não receberam o benefício são uma boa comparação para os que receberam."
+        ],
+        "pergunte": [
+          "Um efeito pequeno, mas real, pode não aparecer nesse tipo de teste. Ausência de prova é prova de ausência?"
+        ]
+      },
+      {
+        "id": "ipea-radar-setores-que-mais-desempregam",
+        "posicao": "contrario",
+        "instituicao": "Ipea",
+        "natureza": "Instituto de pesquisa do governo federal, ligado ao Ministério do Planejamento",
+        "tipo": "Artigo em boletim (Radar nº 73)",
+        "titulo": "Os setores que mais (des)empregam no Brasil",
+        "autores": "Marcos Hecksher",
+        "data": "08/2023",
+        "formato": "PDF",
+        "url": "https://repositorio.ipea.gov.br/bitstream/11058/12343/6/Radar_73_Art2_setores_que_mais_desempregam_br.pdf",
+        "tese": "Com dados da PNAD Contínua, testa a ideia de que os setores desonerados são os que mais empregam e conclui que não são. Entre 2012 e 2022, o número de empregados com carteira nesses setores caiu 13% (960 mil), enquanto nos demais setores privados subiu 6,3%. Só 54,9% dos trabalhadores dos setores desonerados contribuem para a Previdência, contra 63,7% na média.",
+        "numero": {
+          "valor": "-13%",
+          "legenda": "de empregados com carteira nos setores desonerados entre 2012 e 2022"
+        },
+        "premissas": [
+          "A comparação descritiva entre setores ajuda a avaliar quem deve receber o benefício."
+        ],
+        "pergunte": [
+          "Sem a desoneração, a queda de emprego nesses setores poderia ter sido ainda maior?"
+        ]
+      },
+      {
+        "id": "fazenda-spe-desoneracao-2024",
+        "posicao": "contrario",
+        "instituicao": "Ministério da Fazenda (SPE)",
+        "natureza": "Secretaria de Política Econômica do governo federal, que tentou acabar com a medida e é parte interessada no debate",
+        "tipo": "Estudo econômico",
+        "titulo": "Desoneração da Folha de Pagamentos: Análise setorial da política prorrogada e proposta de revisão",
+        "autores": "Secretaria de Política Econômica, Ministério da Fazenda",
+        "data": "26/04/2024",
+        "formato": "PDF",
+        "url": "https://www.gov.br/fazenda/pt-br/central-de-conteudo/publicacoes/analises-e-estudos/arquivos/2024/desoneracao_final_3-1.pdf/view",
+        "tese": "Estima o custo da medida em R$ 15,8 bilhões em 2024. Mostra que, entre 2015 e 2021, o emprego formal nas atividades desoneradas caiu 0,1% ao ano, enquanto nas demais cresceu 2,1% ao ano. Diz que a política não segue boas práticas internacionais, porque não tem metas nem prazo, e propõe trocar o benefício por setor por um desconto sobre o primeiro salário mínimo de cada empregado, com fim em 2027.",
+        "numero": {
+          "valor": "R$ 15,8 bi",
+          "legenda": "de custo estimado da desoneração em 2024"
+        },
+        "premissas": [
+          "O dinheiro da renúncia teria uso melhor em outro desenho de política ou no ajuste das contas."
+        ],
+        "pergunte": [
+          "O estudo vem do governo que queria acabar com o benefício. Os números se sustentam quando comparados a análises independentes?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "ZMzAdTbUjoY",
+        "titulo": "Desoneração da folha de pagamentos: entenda os principais fatos",
+        "canal": "TV Senado",
+        "duracao": "1:34",
+        "nota": "A história da medida em menos de dois minutos."
+      },
+      {
+        "id": "lbgLpVw_cb4",
+        "titulo": "O que é desoneração da folha de pagamento?",
+        "canal": "O Tempo",
+        "duracao": "5:15",
+        "nota": "Explicação didática de como o imposto muda."
+      },
+      {
+        "id": "YqENJQQcc94",
+        "titulo": "Desoneração da folha: o que muda em 2026, 2027 e 2028",
+        "canal": "ASTEC Contabilidade",
+        "duracao": "4:05",
+        "nota": "O cronograma da volta gradual da contribuição."
+      },
+      {
+        "id": "TJlfJUcqJ3k",
+        "titulo": "Desoneração da folha de pagamento e o impacto nos empregos",
+        "canal": "Grupo Teixeira",
+        "duracao": "6:08",
+        "nota": "O argumento das empresas de que a medida segura vagas."
+      },
+      {
+        "id": "0-EZ1VOOrF8",
+        "titulo": "Desoneração da folha pode gerar prejuízo fiscal e desemprego",
+        "canal": "Jovem Pan News",
+        "duracao": "2:31",
+        "nota": "O custo para o governo e o risco de não gerar empregos."
+      },
+      {
+        "id": "avUGXdu41AQ",
+        "titulo": "Sindicatos afirmam que desoneração é boa para a empresa e não gera emprego",
+        "canal": "Rede TVT",
+        "duracao": "4:10",
+        "nota": "A crítica do movimento sindical."
+      }
+    ],
+    "imagem": {
+      "arquivo": "img/temas/desoneracao-folha.jpg",
+      "autor": "Manu Dias/Agecom Bahia",
+      "licenca": "CC BY 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Governador_visita_%C3%A0s_Instala%C3%A7%C3%B5es_da_F%C3%A1brica_da_Suzano_em_Mucuri_(4702790205).jpg",
+      "legenda": "Linha de produção de uma fábrica de papel e celulose em Mucuri (BA).",
+      "alt": "Interior amplo de uma fábrica, com máquinas e esteiras",
+      "posicao": "50% 50%"
+    }
+  },
+  {
+    "id": "fim-reeleicao",
+    "titulo": "Fim da reeleição no Executivo",
+    "categoria": "instituicoes",
+    "tags": [
+      "reeleição",
+      "fim da reeleição",
+      "pec 12/2022",
+      "mandato de cinco anos",
+      "eleições unificadas",
+      "prefeitos",
+      "presidente",
+      "governadores",
+      "reforma política",
+      "senado"
+    ],
+    "pergunta": "O Brasil deve acabar com a reeleição para presidente, governadores e prefeitos?",
+    "resumo": "Em 2024, 82% dos prefeitos que tentaram um segundo mandato foram reeleitos, o maior índice desde que a reeleição foi criada, em 1997. Uma PEC aprovada na CCJ do Senado em 2025 acaba com a reeleição e cria mandatos de cinco anos, mas ainda não foi votada no plenário.",
+    "atualizado": "2026-10-16",
+    "rotulos": {
+      "favoravel": "A favor de acabar com a reeleição",
+      "contrario": "Contra acabar com a reeleição"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "Hoje, presidente, governadores e prefeitos podem disputar um segundo mandato seguido de quatro anos. A Proposta de Emenda à Constituição 12/2022, do senador Jorge Kajuru (GO), proíbe essa recondução e aumenta os mandatos do Executivo para cinco anos.",
+        "A reeleição foi criada pela Emenda Constitucional 16, de 1997, e permitiu a Fernando Henrique Cardoso disputar um segundo mandato em 1998. Desde então, Lula, Dilma e Bolsonaro também tentaram a reeleição. Nos municípios, a taxa de sucesso variou bastante: 49% dos prefeitos candidatos foram reeleitos em 2016 e 82% em 2024, segundo a Confederação Nacional de Municípios.",
+        "Em 21 de maio de 2025, a CCJ do Senado aprovou um texto substitutivo do relator Marcelo Castro (MDB-PI). Ele prevê mandatos de cinco anos, fim da reeleição para prefeitos a partir de 2028 e para governadores e presidente a partir de 2030, e eleições unificadas para todos os cargos em 2034. Desde então, a PEC está pronta para o plenário, mas não foi votada. Ela precisa de 49 votos em dois turnos no Senado e depois passa pela Câmara. Em março de 2026, o senador Flávio Bolsonaro (PL-RJ) apresentou outra PEC, que acaba só com a reeleição para presidente, e transformou o tema em promessa de campanha no segundo turno contra Lula.",
+        "Quem defende o fim da reeleição diz que o governante usa a máquina pública, o orçamento e as emendas parlamentares para se manter no cargo, o que desequilibra a disputa. Quem é contra diz que a reeleição é a forma de o eleitor premiar ou punir uma gestão, e que, sem ela, o governante não tem incentivo para cuidar bem das contas no fim do mandato."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Prefeitos reeleitos em 2024",
+          "valor": "82% (2.461 de 3.006)"
+        },
+        {
+          "rotulo": "Prefeitos reeleitos em 2016",
+          "valor": "49%"
+        },
+        {
+          "rotulo": "Mandato proposto pela PEC 12/2022",
+          "valor": "5 anos, sem reeleição"
+        },
+        {
+          "rotulo": "Votos necessários no Senado",
+          "valor": "49 de 81, em dois turnos"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Uso do orçamento",
+        "favoravel": "Prefeitos que podem se reeleger gastam cerca de 3% a mais em ano eleitoral, e quem aumenta o gasto tem mais chance de vencer. (A2)",
+        "contrario": "Prefeitos que tentam a reeleição têm contas mais equilibradas que os de segundo mandato, que não podem concorrer. Proibir a reeleição pode piorar as finanças locais. (B1)",
+        "fonte_favoravel": "fgv-klein-ciclo-orcamentario",
+        "fonte_contrario": "unb-rbe-reeleicao-fiscal"
+      },
+      {
+        "tema": "Vantagem do cargo",
+        "favoravel": "Em 2024, quanto mais emendas de saúde por habitante o município recebeu, maior a chance de reeleição do prefeito, que sobe de cerca de 70% para 80% a cada 100 unidades a mais. (A1)",
+        "contrario": "Um estudo com 42 mil candidatos de 1996 a 2008 não achou vantagem para quem está no cargo: o prefeito que tenta a reeleição perde em média 4 pontos de margem. (B3)",
+        "fonte_favoravel": "fiocruz-emendas-reeleicao-2024",
+        "fonte_contrario": "cebrap-reeleicao-continuismo"
+      },
+      {
+        "tema": "Qualidade da gestão",
+        "favoravel": "Em mais de 12 mil eleições, o segundo mandato não trouxe ganho em educação nem em saúde. O prefeito reeleito repete o foco em obras e áreas visíveis. (A3)",
+        "contrario": "O eleitor premia a boa gestão: em 2008, ir da pior para a melhor nota de gestão fiscal aumentava em cerca de 25% a chance de reeleição. (B2)",
+        "fonte_favoravel": "uerj-efeitos-reeleicao-municipal",
+        "fonte_contrario": "unicamp-op-bom-prefeito"
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "PEC",
+        "definicao": "Proposta de Emenda à Constituição. Precisa de três quintos dos votos, em dois turnos, na Câmara e no Senado."
+      },
+      {
+        "termo": "Reeleição",
+        "definicao": "Possibilidade de o ocupante de um cargo disputar o mesmo cargo no mandato seguinte. No Brasil, é permitida uma vez seguida para o Executivo desde 1997."
+      },
+      {
+        "termo": "Ciclo político orçamentário",
+        "definicao": "Quando o governante aumenta gastos visíveis ou corta impostos perto da eleição para ganhar votos."
+      },
+      {
+        "termo": "Voto retrospectivo",
+        "definicao": "Quando o eleitor decide o voto olhando para o que o governante fez no mandato, premiando ou punindo a gestão."
+      },
+      {
+        "termo": "Eleições unificadas",
+        "definicao": "Eleições para todos os cargos, de vereador a presidente, no mesmo dia. Hoje há eleições a cada dois anos, alternando municipais e gerais."
+      }
+    ],
+    "incertezas": [
+      "Se os prefeitos no último mandato, sem poder concorrer de novo, cuidam pior das contas. Os estudos brasileiros chegam a conclusões diferentes.",
+      "Quanto da alta taxa de reeleição de 2024 vem da vantagem do cargo, como emendas e obras, e quanto vem de gestões bem avaliadas.",
+      "Se um mandato único de cinco anos é tempo suficiente para planejar e entregar políticas públicas."
+    ],
+    "fontes": [
+      {
+        "titulo": "Senado Federal: tramitação da Proposta de Emenda à Constituição nº 12, de 2022",
+        "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/153068"
+      },
+      {
+        "titulo": "Agência Brasil: Relator antecipa fim da reeleição para 2030 e CCJ adia votação (05/2025)",
+        "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2025-05/relator-antecipa-fim-da-reeleicao-para-2030-e-ccj-adia-votacao"
+      },
+      {
+        "titulo": "O Liberal: Flávio diz que fim da reeleição deve valer já em eventual mandato (08/10/2026)",
+        "url": "https://www.oliberal.com/eleicoes/flavio-diz-que-fim-da-reeleicao-deve-valer-ja-em-eventual-mandato-1.1179036"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "fiocruz-emendas-reeleicao-2024",
+        "posicao": "favoravel",
+        "instituicao": "Fiocruz (ENSP) e UnB",
+        "natureza": "Fundação pública de pesquisa em saúde e universidade pública; artigo na revista Cadernos de Saúde Pública",
+        "tipo": "Artigo científico",
+        "titulo": "Emendas parlamentares destinadas ao Sistema Único de Saúde e a reeleição de prefeitos municipais do Brasil em 2024",
+        "autores": "João Gabriel Ribeiro Pessanha Leal, Luciana Dias de Lima, Frederico Bertholini Santos Rodrigues e André Schimidt da Silva",
+        "data": "04/2025",
+        "formato": "PDF",
+        "url": "https://cadernos.ensp.fiocruz.br/ojs/index.php/csp/article/download/9921/20452/66614",
+        "tese": "Analisa 2.818 municípios cujos prefeitos tentaram a reeleição em 2024. Quanto mais dinheiro de emendas parlamentares para a saúde por habitante o município recebeu, maior a chance de o prefeito ser reeleito, em todos os modelos testados. Os autores sugerem que as emendas reforçam a imagem do prefeito como quem consegue trazer recursos. Para eles, esse uso político entra em conflito com os critérios técnicos do SUS.",
+        "numero": {
+          "valor": "0,7 → 0,8",
+          "legenda": "probabilidade prevista de reeleição a cada 100 unidades a mais de emendas de saúde por habitante"
+        },
+        "premissas": [
+          "A associação entre emendas e reeleição reflete vantagem do cargo, e não apenas boa gestão."
+        ],
+        "pergunte": [
+          "O estudo mostra associação, não causa. Prefeitos mais bem articulados podem atrair emendas e votos ao mesmo tempo?",
+          "Acabar com a reeleição resolve o problema, ou o mais direto seria mudar as regras das emendas?"
+        ]
+      },
+      {
+        "id": "fgv-klein-ciclo-orcamentario",
+        "posicao": "favoravel",
+        "instituicao": "FGV (EAESP)",
+        "natureza": "Fundação privada de ensino e pesquisa; artigo na Revista de Administração Pública, da FGV",
+        "tipo": "Artigo científico",
+        "titulo": "Reelection incentives and political budget cycle: evidence from Brazil",
+        "autores": "Fabio Alvim Klein",
+        "data": "04/2010",
+        "formato": "Página",
+        "url": "https://scielo.br/j/rap/a/vprCCc7Y5f3z8m8KY8PhJgN/abstract/?lang=en",
+        "tese": "Usa dados fiscais e eleitorais de 5.406 municípios para testar se prefeitos aumentam gastos perto da eleição. Prefeitos que podem se reeleger gastam cerca de 3% a mais em ano eleitoral do que os que não podem. Entre os que de fato concorrem, a diferença chega a quase 5%. E quem aumenta o gasto na eleição tem mais chance de ser reeleito, desde que o déficit não passe do que o eleitor aceita.",
+        "numero": {
+          "valor": "3%",
+          "legenda": "a mais de gasto em ano eleitoral entre prefeitos que podem se reeleger"
+        },
+        "premissas": [
+          "Gasto extra em ano eleitoral é uso oportunista do orçamento, e não resposta a demandas reais."
+        ],
+        "pergunte": [
+          "O próprio autor diz que o tamanho do efeito depende de como se definem os anos eleitorais. Quão robusto é o resultado?",
+          "Os dados são anteriores a 2010. A Lei de Responsabilidade Fiscal e a fiscalização atual mudaram esse comportamento?"
+        ]
+      },
+      {
+        "id": "uerj-efeitos-reeleicao-municipal",
+        "posicao": "favoravel",
+        "instituicao": "UERJ (IESP)",
+        "natureza": "Universidade pública estadual; Instituto de Estudos Sociais e Políticos. Pré-print SciELO, depois publicado em revista",
+        "tipo": "Artigo científico",
+        "titulo": "Os efeitos da reeleição sobre políticas municipais: evidências de eleições acirradas no Brasil",
+        "autores": "Bruno Schaefer e Fernando Meireles",
+        "data": "12/12/2025",
+        "formato": "Página",
+        "url": "https://preprints.scielo.org/index.php/scielo/preprint/view/14552",
+        "tese": "Compara mais de 12 mil eleições municipais de 2000 a 2020, olhando cidades onde o prefeito ganhou ou perdeu por pouco. Prefeitos reeleitos mantêm o padrão de gasto do primeiro mandato, com foco em áreas visíveis como obras e assistência social. Não há ganho significativo em educação nem em saúde no segundo mandato. Os autores concluem que a reeleição é um mecanismo ambíguo: traz estabilidade, mas pode sustentar uma gestão voltada a manter o poder.",
+        "numero": {
+          "valor": "12.379",
+          "legenda": "eleições municipais com prefeito candidato analisadas, de 2000 a 2020"
+        },
+        "premissas": [
+          "Se a reeleição trouxesse experiência e continuidade, o segundo mandato deveria mostrar resultados melhores."
+        ],
+        "pergunte": [
+          "O estudo também não encontra piora no segundo mandato. Isso pesa mais a favor ou contra a reeleição?",
+          "Os resultados valem só para eleições acirradas. Eles se aplicam a cidades onde o prefeito ganha com folga?"
+        ]
+      },
+      {
+        "id": "unb-rbe-reeleicao-fiscal",
+        "posicao": "contrario",
+        "instituicao": "UnB (publicado pela FGV EPGE)",
+        "natureza": "Universidade pública; artigo na Revista Brasileira de Economia, da FGV",
+        "tipo": "Artigo científico",
+        "titulo": "A influência da reeleição nas políticas fiscais subnacionais",
+        "autores": "Fernanda Ledo Marciniuk e Maurício S. Bugarin",
+        "data": "19/06/2019",
+        "formato": "Página",
+        "url": "https://periodicos.fgv.br/rbe/article/view/71120",
+        "tese": "Estuda o efeito que o fim da reeleição teria sobre as contas dos municípios, com dados de 2001 a 2012. Prefeitos de primeiro mandato que tentam a reeleição têm contas mais equilibradas do que prefeitos de segundo mandato, que não podem mais concorrer. Para os autores, a reeleição funciona como um instrumento do eleitor para controlar o governante. Eles alertam que proibir a reeleição pode piorar as finanças de estados e municípios.",
+        "numero": {
+          "valor": "0,58%",
+          "legenda": "do PIB municipal de melhora no resultado primário entre prefeitos que buscam a reeleição (estimativa por diferenças em diferenças)"
+        },
+        "premissas": [
+          "O comportamento de prefeitos no último mandato mostra como todos agiriam sem reeleição."
+        ],
+        "pergunte": [
+          "Com mandato único de cinco anos, todos os prefeitos seriam como os de segundo mandato hoje?",
+          "Contas melhores antes da eleição significam boa gestão ou só adiar gastos?"
+        ]
+      },
+      {
+        "id": "unicamp-op-bom-prefeito",
+        "posicao": "contrario",
+        "instituicao": "Unicamp (Cesop), autor da Enap",
+        "natureza": "Revista Opinião Pública, do Centro de Estudos de Opinião Pública da Unicamp, universidade pública; autor da Escola Nacional de Administração Pública",
+        "tipo": "Artigo científico",
+        "titulo": "Vale a pena ser um bom prefeito? Comportamento eleitoral e reeleição no Brasil",
+        "autores": "Pedro Cavalcante",
+        "data": "2015",
+        "formato": "PDF",
+        "url": "https://periodicos.sbu.unicamp.br/ojs/index.php/op/article/download/8641577/9077",
+        "tese": "Testa se o eleitor premia ou pune o prefeito pela gestão fiscal, usando o Índice Firjan de Gestão Fiscal nas eleições de 2008, em 2.916 municípios. Prefeitos com melhor gestão fiscal tiveram mais chance de ser reeleitos. O autor vê isso como prova de voto retrospectivo: o eleitor não é míope e usa a reeleição para cobrar resultados. O efeito aparece em cidades de até 100 mil habitantes.",
+        "numero": {
+          "valor": "25%",
+          "legenda": "a mais de chance de reeleição ao passar da pior para a melhor nota no índice de gestão fiscal"
+        },
+        "premissas": [
+          "Premiar boa gestão nas urnas cria incentivo para governar bem."
+        ],
+        "pergunte": [
+          "O autor diz que os resultados são preliminares e só olham 2008. O padrão se manteve em 2024, com 82% de reeleição?",
+          "Se o eleitor premia boa gestão, por que o efeito some nas cidades com mais de 100 mil habitantes?"
+        ]
+      },
+      {
+        "id": "cebrap-reeleicao-continuismo",
+        "posicao": "contrario",
+        "instituicao": "Cebrap (Centro de Estudos da Metrópole)",
+        "natureza": "Centro privado de pesquisa em ciências sociais, sem fins lucrativos; artigo na revista Novos Estudos Cebrap",
+        "tipo": "Artigo científico",
+        "titulo": "Reeleição e Continuísmo nos Municípios Brasileiros",
+        "autores": "Thomas Brambor e Ricardo Ceneviva",
+        "data": "07/2012",
+        "formato": "PDF",
+        "url": "https://bibliotecadigital.tse.jus.br/bitstreams/cf91c5e0-4065-449a-a61a-ebb28ed9937a/download",
+        "tese": "Analisa 42.493 candidatos em 5.563 municípios, nas eleições de 1996 a 2008. Não encontra vantagem eleitoral para o prefeito que tenta a reeleição. Pelo contrário: quem concorre perde em média cerca de 4 pontos de margem de votos. Para os autores, isso contradiz o medo de que a reeleição leve ao continuísmo.",
+        "numero": {
+          "valor": "-4 pontos",
+          "legenda": "de margem de votos, em média, para o prefeito que tenta a reeleição"
+        },
+        "premissas": [
+          "O passado recente das eleições municipais representa como a reeleição funciona."
+        ],
+        "pergunte": [
+          "Os dados vão até 2008. Com emendas Pix e reeleição recorde em 2024, a conclusão ainda vale?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "pDs4Ex7NUL0",
+        "titulo": "Eleição unificada e mandato de 5 anos: entenda a PEC que acaba com a reeleição",
+        "canal": "g1",
+        "duracao": "1:48",
+        "nota": "O que a proposta aprovada na CCJ do Senado muda."
+      },
+      {
+        "id": "YB53e6vBBeo",
+        "titulo": "Entenda PEC aprovada pela CCJ do Senado que acaba com reeleição",
+        "canal": "SBT News",
+        "duracao": "7:36",
+        "nota": "Reportagem com os detalhes e o calendário."
+      },
+      {
+        "id": "Vwd74XHZfCE",
+        "titulo": "CCJ aprova fim da reeleição e mandato de 5 anos; autor explica",
+        "canal": "TV Senado",
+        "duracao": "12:33",
+        "nota": "O autor da proposta apresenta seus argumentos."
+      },
+      {
+        "id": "WGE4YOJ0NO8",
+        "titulo": "Reeleição para cargos executivos",
+        "canal": "Cortes do Flow",
+        "duracao": "5:02",
+        "nota": "Conversa sobre prós e contras da reeleição."
+      },
+      {
+        "id": "F3vShLPxa24",
+        "titulo": "PEC em discussão no Senado prevê fim da reeleição e eleições unificadas",
+        "canal": "TV Paranaíba",
+        "duracao": "6:12",
+        "nota": "O impacto para prefeitos e vereadores."
+      },
+      {
+        "id": "IJN32vSgnN0",
+        "titulo": "É verdade que Flávio propôs o fim da reeleição para presidente?",
+        "canal": "TV Unesp",
+        "duracao": "1:44",
+        "nota": "Checagem de uma universidade sobre a proposta na campanha de 2026."
+      }
+    ],
+    "imagem": {
+      "arquivo": "img/temas/fim-reeleicao.jpg",
+      "autor": "Romério Cunha/Vice-Presidência da República",
+      "licenca": "CC BY 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Pal%C3%A1cio_do_Planalto_(14091330379).jpg",
+      "legenda": "Palácio do Planalto, sede da Presidência da República, em Brasília.",
+      "alt": "Fachada branca do Palácio do Planalto sob céu azul, com flores em primeiro plano",
+      "posicao": "50% 45%"
+    }
+  },
+  {
+    "id": "reforma-administrativa",
+    "titulo": "Reforma administrativa",
+    "categoria": "instituicoes",
+    "tags": [
+      "reforma administrativa",
+      "pec 38",
+      "pec 32",
+      "servidores públicos",
+      "estabilidade",
+      "avaliação de desempenho",
+      "supersalários",
+      "penduricalhos",
+      "bônus de resultado",
+      "serviço público"
+    ],
+    "pergunta": "O Brasil precisa de uma reforma administrativa que mude as regras do serviço público?",
+    "resumo": "A PEC 38/2025, apresentada na Câmara com 171 assinaturas, propõe avaliação de desempenho, bônus por metas e fim de privilégios como férias de 60 dias. Para aprovar, são necessários 308 votos em dois turnos, e a votação ficou para depois das eleições de outubro de 2026.",
+    "atualizado": "2026-10-16",
+    "rotulos": {
+      "favoravel": "A favor da reforma",
+      "contrario": "Contra a reforma proposta"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "A reforma administrativa muda as regras de trabalho de quem atua no setor público: como servidores entram, são avaliados, promovidos e pagos. A proposta atual vale para União, estados e municípios. Ela prevê metas para os órgãos, avaliação de desempenho, bônus por resultado, carreiras com pelo menos 20 níveis, limite para cargos comissionados e o fim de benefícios como férias acima de 30 dias.",
+        "Em 2020, o governo Bolsonaro enviou a PEC 32/2020, que limitava a estabilidade a algumas carreiras. Ela passou por uma comissão especial da Câmara em 2021, mas nunca foi votada no plenário. Em 2025, um grupo de trabalho da Câmara coordenado pelo deputado Pedro Paulo (PSD-RJ) preparou 70 propostas, divididas em uma PEC, um projeto de lei complementar e um projeto de lei. A PEC 38/2025 foi protocolada em outubro de 2025 com 171 assinaturas, o mínimo exigido, e mantém a estabilidade de quem já é servidor.",
+        "Em 2026, a proposta perdeu força. Mais de 30 deputados pediram para retirar a assinatura após pressão de servidores, e o governo federal não apoiou o texto. Em janeiro, Pedro Paulo admitiu que o debate poderia ficar para 2027. Em maio, o presidente da Câmara, Hugo Motta, indicou que quer retomar a votação depois das eleições de outubro. Para passar, a PEC precisa de 308 dos 513 votos em dois turnos na Câmara e depois no Senado.",
+        "Quem defende a reforma diz que o Estado premia tempo de serviço em vez de resultado, que há privilégios caros como os supersalários e que regras melhores podem economizar bilhões e melhorar serviços. Quem critica diz que a proposta enfraquece a estabilidade e as carreiras, abre espaço para indicações políticas, impõe regras iguais a realidades diferentes nos municípios e tem pouco efeito fiscal, já que os problemas mais caros poderiam ser resolvidos com as regras atuais."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Assinaturas na apresentação da PEC 38",
+          "valor": "171 deputados"
+        },
+        {
+          "rotulo": "Votos necessários na Câmara",
+          "valor": "308 de 513, em dois turnos"
+        },
+        {
+          "rotulo": "Gasto anual acima do teto (estimativa)",
+          "valor": "R$ 20 bilhões"
+        },
+        {
+          "rotulo": "Teto salarial do serviço público (2025)",
+          "valor": "R$ 46.366,19 por mês"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Contas públicas",
+        "favoravel": "Um estudo da IFI simula que carreiras mais longas, salário inicial 30% menor e reposição parcial de quem se aposenta economizariam cerca de R$ 128 bilhões até 2031 na União e nos estados. (A3)",
+        "contrario": "A Consultoria de Orçamentos do Senado concluiu que a PEC 32 tenderia a piorar as contas da União, porque muitos benefícios cortados já não existiam e o risco de indicação política e corrupção aumentaria. (B3)",
+        "fonte_favoravel": "ifi-gestao-pessoas-despesas",
+        "fonte_contrario": "senado-conorf-nt69-pec32"
+      },
+      {
+        "tema": "Desempenho e estabilidade",
+        "favoravel": "O grupo de trabalho da Câmara afirma que os salários hoje premiam tempo de serviço e títulos, não resultado, e propõe acordos com metas e bônus de até 2 salários por servidor. (A1)",
+        "contrario": "Pesquisadores do Ipea mostram que a estabilidade não impede punição: foram 7.588 demissões de servidores federais entre 2003 e 2019. Para eles, metas individuais copiadas do setor privado reduzem a cooperação. (B2)",
+        "fonte_favoravel": "camara-gt-fichario",
+        "fonte_contrario": "fonacate-caderno7-desempenho"
+      },
+      {
+        "tema": "Salários",
+        "favoravel": "Pagamentos acima do teto custam cerca de R$ 20 bilhões por ano e vão para cerca de 1% dos servidores, enquanto metade deles ganha até R$ 4.034,60. (A2)",
+        "contrario": "O DIEESE aponta que o bônus por metas não é garantido nem quando as metas são cumpridas e que limitar o salário inicial a 50% do final pode travar carreiras e pressionar salários para baixo. (B1)",
+        "fonte_favoravel": "mpaf-supersalarios-2026",
+        "fonte_contrario": "dieese-nt288-reforma"
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Estabilidade",
+        "definicao": "Garantia de que o servidor concursado, depois de três anos, só perde o cargo por decisão judicial, processo administrativo ou avaliação de desempenho negativa, nos termos da lei."
+      },
+      {
+        "termo": "PEC",
+        "definicao": "Proposta de Emenda à Constituição. Precisa de 3/5 dos votos na Câmara (308) e no Senado (49), em dois turnos em cada Casa."
+      },
+      {
+        "termo": "Teto constitucional",
+        "definicao": "Limite de salário no serviço público, igual ao salário de um ministro do STF. Em 2025, era R$ 46.366,19 por mês."
+      },
+      {
+        "termo": "Penduricalhos",
+        "definicao": "Auxílios e verbas chamadas de indenizatórias que ficam fora do teto e permitem que alguns servidores ganhem acima do limite, os chamados supersalários."
+      },
+      {
+        "termo": "Bônus de resultado",
+        "definicao": "Pagamento extra a servidores de um órgão que cumprir metas definidas em um acordo de resultados. Na PEC 38, seria opcional."
+      }
+    ],
+    "incertezas": [
+      "Quanto a reforma economizaria de fato. A PEC 38 não traz uma estimativa oficial de impacto fiscal, e boa parte das regras depende de leis posteriores.",
+      "Se avaliações de desempenho funcionariam bem no setor público ou virariam formalidade ou instrumento de perseguição.",
+      "Se a PEC terá votos depois das eleições de 2026, com um Congresso renovado e novos governos estaduais."
+    ],
+    "fontes": [
+      {
+        "titulo": "Metrópoles: Promessa de Motta, reforma administrativa trava e frustra expectativa (11/01/2026)",
+        "url": "https://www.metropoles.com/brasil/promessa-de-motta-reforma-administrativa-nao-deve-sair-em-2026"
+      },
+      {
+        "titulo": "Sintrajufe: Reforma administrativa pode ficar mesmo para 2027, reconhece Pedro Paulo (22/01/2026)",
+        "url": "https://sintrajufe.org.br/reforma-administrativa-pode-ficar-mesmo-para-2027-reconhece-pedro-paulo-sindicatos-seguem-atentos-para-evitar-surpresas/"
+      },
+      {
+        "titulo": "Condsef: Após eleições, Hugo Motta quer retomar reforma administrativa no Congresso (25/05/2026)",
+        "url": "https://www.condsef.org.br/noticias/apos-eleicoes-hugo-motta-quer-retomar-reforma-administrativa-congresso"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "camara-gt-fichario",
+        "posicao": "favoravel",
+        "instituicao": "Câmara dos Deputados (Grupo de Trabalho da Reforma Administrativa)",
+        "natureza": "Grupo de trabalho político da Câmara que escreveu a proposta; documento de defesa do próprio texto",
+        "tipo": "Relatório",
+        "titulo": "Reforma Administrativa: Um Estado com Foco em Resultados: Eficiente, Digital e Justo",
+        "autores": "Grupo de Trabalho da Reforma Administrativa, coordenado pelo deputado Pedro Paulo",
+        "data": "10/2025",
+        "formato": "PDF",
+        "url": "https://infograficos.camara.leg.br/wp-content/uploads/2025/10/Fichario-Reforma-Administrativa.pdf",
+        "tese": "Apresenta 70 propostas em quatro eixos, resultado de 7 audiências públicas e cerca de 500 horas de reuniões técnicas. O diagnóstico é que a administração vive de curto prazo, sem metas mensuráveis, e que os salários premiam tempo e títulos, não desempenho. Propõe planejamento estratégico obrigatório, acordos de resultado com bônus de até 2 salários por servidor, carreiras com pelo menos 20 níveis e fim de férias de 60 dias.",
+        "numero": {
+          "valor": "70",
+          "legenda": "propostas reunidas em uma PEC, um projeto de lei complementar e um projeto de lei"
+        },
+        "premissas": [
+          "Metas e bônus mudam o comportamento de órgãos e servidores para melhor.",
+          "As regras podem valer de forma parecida para União, estados e municípios."
+        ],
+        "pergunte": [
+          "Quem escreveu o documento é quem defende a proposta. Que evidências independentes mostram que bônus por metas melhoram serviços públicos?"
+        ]
+      },
+      {
+        "id": "mpaf-supersalarios-2026",
+        "posicao": "favoravel",
+        "instituicao": "Movimento Pessoas à Frente",
+        "natureza": "Organização da sociedade civil, financiada por fundações privadas, que defende modernizar a gestão de pessoas no setor público; autores ligados a Insper, FGV e IDP",
+        "tipo": "Nota técnica",
+        "titulo": "Supersalários no Serviço Público: Soluções Econômicas, Jurídicas e de Gestão",
+        "autores": "Marcos Mendes, Humberto Falcão e João Paulo Bachur",
+        "data": "03/2026",
+        "formato": "PDF",
+        "url": "https://movimentopessoasafrente.org.br/wp-content/uploads/2026/03/Supersalarios-no-servico-publico-solucoes-economicas-juridicas-e-de-gestao.pdf",
+        "tese": "Estima que pagamentos acima do teto custam cerca de R$ 20 bilhões por ano, 21 vezes o valor da Argentina. Cerca de 1% dos servidores recebe acima do teto, sobretudo juízes, promotores e advogados públicos, enquanto metade dos servidores ganha até R$ 4.034,60. O gasto acima do teto no Judiciário subiu de R$ 7 bilhões para R$ 10,5 bilhões entre 2023 e 2024. Propõe lei nacional que defina o que é verba indenizatória, cobre imposto sobre o que não for reembolso e limite férias a 30 dias.",
+        "numero": {
+          "valor": "R$ 20 bi",
+          "legenda": "por ano é o custo estimado dos pagamentos acima do teto constitucional"
+        },
+        "premissas": [
+          "Boa parte das verbas chamadas de indenizatórias é, na prática, salário disfarçado."
+        ],
+        "pergunte": [
+          "Os supersalários se concentram em poucas carreiras do sistema de Justiça. Uma reforma ampla para todos os servidores é o melhor caminho para atacar esse problema?"
+        ]
+      },
+      {
+        "id": "ifi-gestao-pessoas-despesas",
+        "posicao": "favoravel",
+        "instituicao": "IFI (Senado Federal), publicado pelo Tesouro Nacional",
+        "natureza": "Estudo de analista da Instituição Fiscal Independente, órgão técnico do Senado, na revista Cadernos de Finanças Públicas do Tesouro",
+        "tipo": "Artigo científico",
+        "titulo": "Impacto de medidas de gestão de pessoas sobre as despesas com pessoal",
+        "autores": "Alessandro Ribeiro de Carvalho Casalecchi",
+        "data": "02/2022",
+        "formato": "PDF",
+        "url": "https://publicacoes.tesouro.gov.br/index.php/cadernos/article/download/154/151/637",
+        "tese": "Simula o efeito de mudanças nas regras de pessoal sobre os gastos com servidores ativos da União e dos estados entre 2022 e 2031. Combinar carreiras mais longas, salário inicial 30% menor e reposição de só 60% dos que se aposentam economizaria cerca de R$ 128 bilhões no período. O corte no salário inicial e a menor reposição são as medidas de maior efeito; alongar a carreira sozinho rende pouco.",
+        "numero": {
+          "valor": "R$ 128 bi",
+          "legenda": "de economia estimada até 2031 com o pacote de medidas, na União e nos estados"
+        },
+        "premissas": [
+          "As regras simuladas seriam aprovadas e aplicadas a quem entra no serviço público.",
+          "Repor menos servidores não prejudica os serviços."
+        ],
+        "pergunte": [
+          "O próprio autor diz que o estudo não mede o impacto direto da PEC 32. Quanto dessas medidas está, de fato, na PEC 38?"
+        ]
+      },
+      {
+        "id": "dieese-nt288-reforma",
+        "posicao": "contrario",
+        "instituicao": "DIEESE",
+        "natureza": "Departamento técnico mantido por sindicatos de trabalhadores",
+        "tipo": "Nota técnica",
+        "titulo": "Notas sobre a proposta de reforma administrativa apresentada em 2025 (Nota Técnica nº 288)",
+        "autores": "Carolina Gagliano Rodrigues Felipe, Ernesto Johannes Kokke do Rego, Lucas Colucio, Mariel Angeli Lopes, Max Leno de Almeida, Patrícia Pelatieri, Ricardo Melo Tamashiro e Thiago Soares",
+        "data": "15/12/2025",
+        "formato": "PDF",
+        "url": "https://www.dieese.org.br/notatecnica/2025/notaTec288reformaAdm.pdf",
+        "tese": "Analisa a PEC 38/2025 e conclui que ela pode enfraquecer a estabilidade, as carreiras e a negociação coletiva, que o setor público ainda não tem. O bônus equivalente a um 14º salário não é garantido nem quando as metas são cumpridas, porque a distribuição depende da administração. Carreiras com 20 níveis e salário inicial de no máximo 50% do final podem travar a progressão e pressionar salários para baixo. As regras seriam impostas de forma igual a estados e municípios, sem considerar as diferenças locais.",
+        "numero": {
+          "valor": "50%",
+          "legenda": "do salário final seria o limite para o salário de entrada nas carreiras"
+        },
+        "premissas": [
+          "Pagamento ligado a metas tende a virar ferramenta de arrocho salarial."
+        ],
+        "pergunte": [
+          "Se o modelo atual não funciona bem para o cidadão, que alternativa a nota propõe para cobrar resultados?"
+        ]
+      },
+      {
+        "id": "fonacate-caderno7-desempenho",
+        "posicao": "contrario",
+        "instituicao": "Fonacate (autores do Ipea)",
+        "natureza": "Fórum de associações de carreiras típicas de Estado; autores são pesquisadores do Ipea, um deles presidente da Afipea-Sindical",
+        "tipo": "Caderno da Reforma Administrativa",
+        "titulo": "Gestão de Pessoas e Avaliação de Desempenho no Setor Público Brasileiro: crítica à proposta fiscal-gerencialista da reforma administrativa e diretrizes para um modelo de Estado orientado à reflexividade, inovação e efetividade",
+        "autores": "José Celso Cardoso Jr. e Roberto R. Pires",
+        "data": "08/2020",
+        "formato": "PDF",
+        "url": "https://www.sinait.org.br/storage/landing-pages/reforma/caderno7.pdf",
+        "tese": "Argumenta que a reforma de 2020 tinha objetivo fiscal: cortar a folha e facilitar demissões com metas individuais copiadas do setor privado. Mostra que a estabilidade não impede punições: entre 2003 e julho de 2019 houve 7.588 demissões de servidores federais, 64% delas por corrupção. Defende uma avaliação voltada ao aprendizado das equipes, que depende de estabilidade, salário previsível, formação contínua e cooperação.",
+        "numero": {
+          "valor": "7.588",
+          "legenda": "servidores federais estatutários demitidos entre 2003 e julho de 2019"
+        },
+        "premissas": [
+          "Metas individuais e competição entre servidores reduzem a motivação e a cooperação."
+        ],
+        "pergunte": [
+          "Cerca de 500 demissões por ano em um universo de centenas de milhares de servidores mostram que o sistema funciona ou que quase ninguém é afastado por mau desempenho?"
+        ]
+      },
+      {
+        "id": "senado-conorf-nt69-pec32",
+        "posicao": "contrario",
+        "instituicao": "Consultoria de Orçamentos do Senado (Conorf)",
+        "natureza": "Órgão técnico e apartidário do Senado Federal",
+        "tipo": "Nota técnica",
+        "titulo": "Nota Técnica 69/2021: Aspectos Fiscais da PEC 32/2020 (\"Reforma Administrativa\") e Proposta de Medidas Alternativas",
+        "autores": "Vinícius Leopoldino do Amaral",
+        "data": "19/05/2021",
+        "formato": "Página",
+        "url": "https://www12.senado.leg.br/orcamento/documentos/estudos/tipos-de-estudos/notas-tecnicas-e-informativos/nota-tecnica-69-2021-aspectos-fiscais-da-pec-32-2020-201creforma-administrativa201d-e-proposta-de-medidas-alternativas",
+        "tese": "Conclui que a PEC 32/2020 tenderia a piorar as contas da União, e não melhorar. O governo não apresentou estimativa de impacto, e vários benefícios cortados já não existiam no nível federal. O maior risco seria abrir pelo menos 207 mil postos a pessoas sem vínculo com o serviço público, aumentando indicação política e corrupção. Propõe alternativas como cumprir o teto, limitar cargos comissionados e aplicar as regras fiscais que já existem.",
+        "numero": {
+          "valor": "29%",
+          "legenda": "de aumento, no mínimo, dos cargos que poderiam ser ocupados por pessoas sem vínculo com o serviço público"
+        },
+        "premissas": [
+          "Menos servidores de carreira em cargos de chefia aumenta o risco de desvios."
+        ],
+        "pergunte": [
+          "A nota analisa a PEC 32, que acabava com a estabilidade para muitos. As críticas valem para a PEC 38, que mantém a estabilidade e limita comissionados a 5%?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "MpfVnwfj7zw",
+        "titulo": "O texto da Reforma Administrativa é robusto e complexo, diz deputado",
+        "canal": "CNN Brasil",
+        "duracao": "3:58",
+        "nota": "O relator resume o que propõe."
+      },
+      {
+        "id": "pqhr9pNiMmM",
+        "titulo": "PEC 38/2025: o que a nova reforma administrativa muda para o servidor",
+        "canal": "Jorge Vianna",
+        "duracao": "1:49",
+        "nota": "Resumo rápido das mudanças para quem é servidor."
+      },
+      {
+        "id": "SgPWahYRyFc",
+        "titulo": "Canal Livre debate o projeto de reforma administrativa",
+        "canal": "Band Jornalismo",
+        "duracao": "2:28",
+        "nota": "Trecho de debate com visões diferentes."
+      },
+      {
+        "id": "nzGxjL-vp_I",
+        "titulo": "Especialista: supersalários impactam negativamente a administração",
+        "canal": "CNN Brasil",
+        "duracao": "3:44",
+        "nota": "Por que os pagamentos acima do teto entraram na reforma."
+      },
+      {
+        "id": "4yZWKP3tBDE",
+        "titulo": "O Brasil vai conseguir acabar com os supersalários do serviço público?",
+        "canal": "IstoÉ Dinheiro",
+        "duracao": "6:57",
+        "nota": "O tamanho do problema e as tentativas anteriores."
+      },
+      {
+        "id": "Me-EZ_OvVOg",
+        "titulo": "Fonacate critica reforma administrativa na Câmara",
+        "canal": "Fonacate",
+        "duracao": "1:34",
+        "nota": "A crítica das carreiras de Estado (sobre a PEC 32, de 2020)."
+      }
+    ],
+    "imagem": {
+      "arquivo": "img/temas/reforma-administrativa.jpg",
+      "autor": "Edilson Rodrigues/Agência Senado",
+      "licenca": "CC BY 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Esplanada_dos_Minist%C3%A9rios_em_2018.jpg",
+      "legenda": "Vista aérea da Esplanada dos Ministérios, em Brasília, em 2018.",
+      "alt": "Prédios dos ministérios enfileirados ao longo de uma avenida, vistos do alto",
+      "posicao": "50% 50%"
+    }
+  },
+  {
+    "id": "zona-franca-manaus",
+    "titulo": "Zona Franca de Manaus",
+    "categoria": "economia",
+    "tags": [
+      "zona franca de manaus",
+      "zfm",
+      "incentivos fiscais",
+      "gasto tributário",
+      "polo industrial de manaus",
+      "suframa",
+      "amazonas",
+      "reforma tributária",
+      "desenvolvimento regional",
+      "amazônia"
+    ],
+    "pergunta": "Os incentivos fiscais da Zona Franca de Manaus devem ser mantidos?",
+    "resumo": "A Zona Franca de Manaus tem incentivos garantidos pela Constituição até 2073 e foi preservada na reforma tributária. A Receita projetou para 2024 uma renúncia de R$ 22,95 bilhões, e o debate é se o retorno em empregos e renda compensa esse custo.",
+    "atualizado": "2026-10-16",
+    "rotulos": {
+      "favoravel": "A favor de manter os incentivos",
+      "contrario": "Contra manter os incentivos como estão"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "A Zona Franca de Manaus (ZFM) é uma área com impostos menores criada em 1967 para levar indústria e empregos à Amazônia. Empresas que produzem no Polo Industrial de Manaus deixam de pagar ou pagam menos IPI, PIS, Cofins, imposto de importação e ICMS. O dinheiro que o governo deixa de arrecadar é chamado de gasto tributário.",
+        "A ZFM foi prorrogada várias vezes. Hoje a Constituição garante os incentivos até 2073. A reforma tributária, aprovada em 2023 e regulamentada pelas Leis Complementares 214/2025 e 227/2026, manteve a vantagem da região no novo sistema, com alíquota zero e créditos presumidos de IBS e CBS durante a transição, que vai de 2026 a 2033.",
+        "O polo segue grande. De janeiro a novembro de 2025, faturou R$ 209,5 bilhões e empregou em média 131,4 mil pessoas de forma direta, segundo a Suframa. O custo também é alto: a ZFM está entre os maiores gastos tributários da União, mas as estimativas oficiais variam muito de um documento para outro, de cerca de R$ 23 bilhões a mais de R$ 50 bilhões por ano.",
+        "Há duas visões. Uma diz que os incentivos sustentam empregos e renda numa região isolada, ajudam a manter a floresta em pé e custam menos do que parece. A outra diz que, depois de quase 60 anos, não há prova firme de que o modelo gere crescimento além de Manaus, que a política nunca foi avaliada de forma sistemática e que o dinheiro poderia ter usos melhores."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Prazo dos incentivos na Constituição",
+          "valor": "até 2073"
+        },
+        {
+          "rotulo": "Renúncia federal projetada pela Receita (2024)",
+          "valor": "R$ 22,95 bilhões"
+        },
+        {
+          "rotulo": "Empregos diretos no polo (média jan-nov/2025)",
+          "valor": "131,4 mil"
+        },
+        {
+          "rotulo": "Faturamento do polo (jan-nov/2025)",
+          "valor": "R$ 209,5 bilhões"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Custo fiscal",
+        "favoravel": "Pelos dados efetivos de 2021, a parte industrial do polo custa cerca de R$ 7,5 bilhões por ano, só 1,8% dos gastos tributários do país, e as estimativas oficiais maiores não explicam suas diferenças. (A2)",
+        "contrario": "A ZFM e as Áreas de Livre Comércio custaram cerca de R$ 29 bilhões em 2020, e nenhuma versão do modelo mostrou ganho de PIB ao mesmo tempo no município, nos vizinhos e no total. (B3)",
+        "fonte_favoravel": "fgv-eesp-gastos-tributarios-2025",
+        "fonte_contrario": "enap-zfm-alc-diff-diff"
+      },
+      {
+        "tema": "Crescimento e renda",
+        "favoravel": "Comparando Manaus com áreas parecidas do Norte, cerca de 44% do PIB por pessoa da cidade em 1999 seria efeito da Zona Franca. (A3)",
+        "contrario": "Entre 2002 e 2014, o gasto tributário subiu de R$ 5,5 bilhões para R$ 24,3 bilhões sem efeito positivo sobre o PIB, a renda ou a arrecadação do Amazonas. (B2)",
+        "fonte_favoravel": "rbe-possebom-controle-sintetico",
+        "fonte_contrario": "ipea-ppe-efeitos-zfm"
+      },
+      {
+        "tema": "Empregos",
+        "favoravel": "O polo responde por cerca de 500 mil empregos diretos e indiretos, e cada real de incentivo gera de R$ 1,14 a R$ 3,03 em renda na região. (A1)",
+        "contrario": "Os números de empregos não usam grupo de comparação, e um teste com o Pará como referência encontrou efeito multiplicador negativo. (B1)",
+        "fonte_favoravel": "fgv-eesp-zfm-2019",
+        "fonte_contrario": "cgu-cmap-avaliacao-zfm"
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Gasto tributário",
+        "definicao": "Imposto que o governo deixa de cobrar para incentivar uma região, setor ou grupo. Funciona como um gasto público, mas não aparece como despesa no orçamento."
+      },
+      {
+        "termo": "Polo Industrial de Manaus (PIM)",
+        "definicao": "Conjunto de fábricas instaladas em Manaus com os incentivos da Zona Franca, como as de eletrônicos, motos e bebidas."
+      },
+      {
+        "termo": "Suframa",
+        "definicao": "Superintendência da Zona Franca de Manaus. Autarquia federal que aprova os projetos das empresas e administra os incentivos."
+      },
+      {
+        "termo": "Processo Produtivo Básico (PPB)",
+        "definicao": "Lista de etapas de fabricação que a empresa precisa fazer no Brasil para ter direito aos incentivos."
+      },
+      {
+        "termo": "Controle sintético",
+        "definicao": "Método estatístico que cria uma 'Manaus de comparação', combinando outras cidades parecidas, para estimar como a cidade estaria sem a Zona Franca."
+      }
+    ],
+    "incertezas": [
+      "Quanto a ZFM realmente custa. Documentos oficiais trazem números muito diferentes para o mesmo ano, e parte do incentivo pode ser vista como regime constitucional, e não como renúncia.",
+      "Quantos empregos e quanta renda existiriam no Amazonas sem os incentivos. Os estudos usam métodos e comparações diferentes e chegam a conclusões opostas.",
+      "Se o polo industrial ajuda a proteger a floresta. Um estudo da FGV não descarta o efeito, mas o estima como muito pequeno."
+    ],
+    "fontes": [
+      {
+        "titulo": "Portal Amazônia: Faturamento do PIM chega a R$ 200 bilhões e supera ano de 2024 (05/01/2026)",
+        "url": "https://portalamazonia.com/economia/faturamento-pim-2025/"
+      },
+      {
+        "titulo": "Gazeta do Povo: Reforma tributária e Zona Franca de Manaus: o que muda para a indústria nacional (11/03/2026)",
+        "url": "https://www.gazetadopovo.com.br/opiniao/artigos/reforma-tributaria-e-zona-franca-de-manaus-o-que-muda-para-a-industria-nacional/"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "fgv-eesp-zfm-2019",
+        "posicao": "favoravel",
+        "instituicao": "FGV EESP",
+        "natureza": "Escola de economia de fundação privada; estudo feito a pedido de um grupo de investidores da região",
+        "tipo": "Relatório",
+        "titulo": "Zona Franca de Manaus: Impactos, Efetividade e Oportunidades",
+        "autores": "Márcio Holland (coord.), Angelo Gurgel, Felippe Serigatti, Daniel Gelcer, José Maria Arruda de Andrade, Priscilla Albuquerque, Cláudia Cerqueira e Renan Pieri",
+        "data": "02/2019",
+        "formato": "PDF",
+        "url": "https://www.gov.br/suframa/pt-br/centrais-de-conteudo/biblioteca/estudo_fgv_zfm_impactos_efetividade_e_oportunidades.pdf",
+        "tese": "Estima cerca de 500 mil empregos diretos e indiretos ligados ao polo e um gasto tributário de uns R$ 25 bilhões por ano. Calcula que cada real de incentivo gera de R$ 1,14 a R$ 3,03 em renda na região, acima do efeito de outros gastos públicos. Encontra ganhos de salário e escolaridade entre trabalhadores da indústria e não descarta um efeito de contenção do desmatamento, embora pequeno. Recomenda preservar o modelo e diversificar a economia do estado.",
+        "numero": {
+          "valor": "1,14 a 3,03",
+          "legenda": "reais de renda regional para cada real de incentivo, conforme o método"
+        },
+        "premissas": [
+          "A comparação com regiões sem incentivo mostra bem o que Manaus seria sem a ZFM.",
+          "Os empregos indiretos estimados dependem de fato do polo."
+        ],
+        "pergunte": [
+          "O estudo foi encomendado por investidores da região. Isso afeta a escolha dos métodos?",
+          "O próprio estudo diz que não há efeito claro para a população do estado como um todo. Quem ganha de fato?"
+        ]
+      },
+      {
+        "id": "fgv-eesp-gastos-tributarios-2025",
+        "posicao": "favoravel",
+        "instituicao": "FGV EESP",
+        "natureza": "Escola de economia de fundação privada; autor foi secretário de Política Econômica da Fazenda e coordenou estudo anterior pró-ZFM",
+        "tipo": "Relatório",
+        "titulo": "Gastos Tributários no Brasil e o Custo Fiscal da Zona Franca de Manaus",
+        "autores": "Márcio Holland",
+        "data": "18/06/2025",
+        "formato": "PDF",
+        "url": "https://eesp.fgv.br/sites/default/files/files-eesp/relatorio_gastos_tributarios_e_zona_franca_de_manaus_v_18_de_junho2025.pdf",
+        "tese": "Mostra que documentos oficiais estimam o gasto tributário da ZFM entre R$ 24,2 bilhões e R$ 55,3 bilhões em anos próximos, sem explicar a diferença. Pelos dados efetivos de 2021, a parte industrial do polo custaria cerca de R$ 7,5 bilhões por ano, ou 1,8% de todos os gastos tributários do país. As empresas ainda pagam cerca de R$ 6 bilhões por ano em contrapartidas. O autor defende mais transparência e lembra que o Sul e o Sudeste ficam com 62% dos gastos tributários federais.",
+        "numero": {
+          "valor": "R$ 7,5 bilhões",
+          "legenda": "por ano seria o custo do polo industrial, com dados efetivos de 2021"
+        },
+        "premissas": [
+          "Parte do incentivo é um regime previsto na Constituição, e não um desvio da regra geral."
+        ],
+        "pergunte": [
+          "Se o custo do polo é menor, para onde vai o restante da renúncia da ZFM, como comércio e serviços?",
+          "O relatório não avalia se o programa funciona. Custar menos basta para justificá-lo?"
+        ]
+      },
+      {
+        "id": "rbe-possebom-controle-sintetico",
+        "posicao": "favoravel",
+        "instituicao": "Revista Brasileira de Economia (FGV)",
+        "natureza": "Revista acadêmica da FGV; autor era pesquisador da Universidade Yale",
+        "tipo": "Artigo científico",
+        "titulo": "Free Trade Zone of Manaus: An Impact Evaluation using the Synthetic Control Method",
+        "autores": "Vítor Possebom",
+        "data": "06/2017",
+        "formato": "Página",
+        "url": "https://scielo.br/j/rbe/a/BjtvDXjCkLGFWYDpLqM3h7b/?lang=en",
+        "tese": "Compara Manaus com uma combinação de outras áreas da região Norte que eram parecidas antes de 1967. Conclui que a Zona Franca aumentou o PIB por pessoa e a produção de serviços. Em 1999, cerca de 44% do PIB por pessoa de Manaus seria efeito da ZFM. O autor também aponta queda forte na agricultura, sinal de que os recursos foram puxados de um setor para outro.",
+        "numero": {
+          "valor": "44%",
+          "legenda": "do PIB por pessoa de Manaus em 1999 seria efeito da Zona Franca"
+        },
+        "premissas": [
+          "As áreas usadas na comparação mostram bem o caminho que Manaus teria sem a ZFM."
+        ],
+        "pergunte": [
+          "O efeito na indústria não foi estatisticamente significativo. O crescimento veio de onde?",
+          "Os dados vão só até 1999. O resultado vale para hoje?"
+        ]
+      },
+      {
+        "id": "cgu-cmap-avaliacao-zfm",
+        "posicao": "contrario",
+        "instituicao": "CGU (Conselho de Monitoramento e Avaliação de Políticas Públicas)",
+        "natureza": "Órgão de controle do governo federal; avaliação oficial com análises do Ipea, da Receita e do Ministério da Economia",
+        "tipo": "Relatório de avaliação",
+        "titulo": "Relatório de Avaliação: Zona Franca de Manaus, Ciclo 2019",
+        "autores": "Controladoria-Geral da União (CGU), no âmbito do CMAP",
+        "data": "2020",
+        "formato": "PDF",
+        "url": "https://www.gov.br/planejamento/pt-br/assuntos/avaliacao-de-politicas-publicas/conselho-de-monitoramento-e-avaliacao-de-politicas-publicas-cmap/avaliacoes/relatoriozfm.pdf/@@display-file/file",
+        "tese": "Descreve a ZFM como o quarto maior gasto tributário, com cerca de R$ 24 bilhões em 2019, mas sem objetivos claros, metas ou modelo de avaliação. Os números de empregos da Suframa não comparam com um grupo de controle, então não provam causa. Ao usar o Pará como comparação, o teste da CGU encontra um efeito multiplicador negativo. Cerca de 70% dos recursos para o interior acabaram gastos em Manaus.",
+        "numero": {
+          "valor": "70%",
+          "legenda": "dos recursos de interiorização ligados à ZFM foram gastos na própria Manaus"
+        },
+        "premissas": [
+          "O Pará é uma boa comparação para o Amazonas sem Manaus."
+        ],
+        "pergunte": [
+          "Se a política nunca teve metas, a falta de resultados é culpa do incentivo ou da gestão?",
+          "O que aconteceria com os empregos do polo se os incentivos fossem cortados de uma vez?"
+        ]
+      },
+      {
+        "id": "ipea-ppe-efeitos-zfm",
+        "posicao": "contrario",
+        "instituicao": "Ipea (revista Pesquisa e Planejamento Econômico)",
+        "natureza": "Revista acadêmica do Ipea, fundação pública federal de pesquisa",
+        "tipo": "Artigo científico",
+        "titulo": "Efeitos Econômicos da Zona Franca de Manaus",
+        "autores": "Rogério da Cruz Gonçalves e Philipp Ehrl",
+        "data": "12/2021",
+        "formato": "PDF",
+        "url": "https://ppe.ipea.gov.br/index.php/ppe/article/viewFile/2061/1345",
+        "tese": "Analisa os 27 estados de 2002 a 2014, período em que o gasto tributário com a ZFM subiu de R$ 5,5 bilhões para R$ 24,3 bilhões. Não encontra efeito positivo dos incentivos sobre o PIB, a renda ou a arrecadação do Amazonas. O efeito positivo aparece no emprego e na população: cada R$ 1 bilhão a mais se associa a quase 0,9% mais pessoas ocupadas. Os autores concluem que o modelo precisa de reforma, porque gera vagas de baixa qualificação e depende dos incentivos.",
+        "numero": {
+          "valor": "60,3%",
+          "legenda": "dos trabalhadores da ZFM ganham até 2 salários mínimos"
+        },
+        "premissas": [
+          "Comparar estados ao longo do tempo isola o efeito dos incentivos."
+        ],
+        "pergunte": [
+          "Os próprios autores dizem que o método não prova causa. Quanto confiar nos números?",
+          "Gerar empregos e atrair moradores não é justamente o objetivo de uma política regional?"
+        ]
+      },
+      {
+        "id": "enap-zfm-alc-diff-diff",
+        "posicao": "contrario",
+        "instituicao": "Enap",
+        "natureza": "Escola de governo federal; estudo do programa Cátedras, com revisão de pares",
+        "tipo": "Caderno de pesquisa",
+        "titulo": "Zona Franca de Manaus e Áreas de Livre Comércio: uma avaliação dos impactos econômicos via modelos espaciais de diferença em diferenças",
+        "autores": "Thais Waideman Niquito",
+        "data": "2022",
+        "formato": "PDF",
+        "url": "https://repositorio.enap.gov.br/bitstream/1/7255/2/Caderno_101_Zona_franca_20220920.pdf",
+        "tese": "Estima que a ZFM e as Áreas de Livre Comércio custaram cerca de R$ 29 bilhões em 2020, mais de 8% de todos os gastos tributários federais. Mede o efeito sobre o PIB por pessoa nos municípios do Norte, inclusive sobre os vizinhos. Nenhuma das versões do modelo mostra efeitos positivos ao mesmo tempo para o município beneficiado, os vizinhos e o total. A autora conclui que as evidências não sustentam a continuidade dessas políticas, mas pede estudos com dados de empresas.",
+        "numero": {
+          "valor": "R$ 29 bilhões",
+          "legenda": "custo estimado da ZFM e das Áreas de Livre Comércio em 2020"
+        },
+        "premissas": [
+          "Os efeitos sobre municípios vizinhos aparecem nos dados de PIB municipal."
+        ],
+        "pergunte": [
+          "A autora diz que os resultados são indicativos e não robustos. Eles bastam para cortar a política?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "ANNqszoTvAk",
+        "titulo": "Como funciona a Zona Franca de Manaus",
+        "canal": "Curioso Mercado",
+        "duracao": "16:15",
+        "nota": "A história e as regras do polo, explicadas do zero."
+      },
+      {
+        "id": "hH8rGsDbVJA",
+        "titulo": "A verdade sobre os impostos da Zona Franca de Manaus",
+        "canal": "Os Economistas Podcast",
+        "duracao": "7:00",
+        "nota": "Economistas discutem custo e retorno dos incentivos."
+      },
+      {
+        "id": "FJ15eqo54e0",
+        "titulo": "A criação da Zona Franca de Manaus foi um erro? Marcos Lisboa comenta",
+        "canal": "Warren Investimentos",
+        "duracao": "0:45",
+        "nota": "A crítica de um economista ao modelo."
+      },
+      {
+        "id": "hiv-ClZgTbk",
+        "titulo": "Economista explica a situação da Zona Franca diante dos ataques",
+        "canal": "TV Norte Amazonas",
+        "duracao": "9:34",
+        "nota": "A defesa do polo vista de Manaus."
+      },
+      {
+        "id": "9fW1fVgNhqE",
+        "titulo": "Reforma tributária e Zona Franca de Manaus: qual é o impacto?",
+        "canal": "BandNews Difusora",
+        "duracao": "5:53",
+        "nota": "Como o novo sistema de impostos trata a região."
+      },
+      {
+        "id": "BY-dvoWZgHo",
+        "titulo": "O regime favorecido da Zona Franca de Manaus",
+        "canal": "Ágora Fiscal",
+        "duracao": "6:34",
+        "nota": "Os detalhes técnicos do benefício na reforma."
+      }
+    ],
+    "imagem": {
+      "arquivo": "img/temas/zona-franca-manaus.jpg",
+      "autor": "Pontanegra (modificações de Cornischong)",
+      "licenca": "CC BY-SA 3.0",
+      "licenca_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Manaus-Hafen-Rio-Negro_w.jpg",
+      "legenda": "Porto de Manaus, no rio Negro, em 2005.",
+      "alt": "Contêineres e navio de carga no porto de Manaus, com casas em primeiro plano e o rio ao fundo",
+      "posicao": "50% 50%"
+    }
+  },
+  {
+    "id": "taxa-blusinhas",
+    "titulo": "Taxa das blusinhas",
+    "categoria": "economia",
+    "tags": [
+      "taxa das blusinhas",
+      "remessa conforme",
+      "imposto de importação",
+      "compras internacionais",
+      "shein",
+      "shopee",
+      "aliexpress",
+      "icms",
+      "comércio eletrônico",
+      "indústria têxtil"
+    ],
+    "pergunta": "O imposto de importação sobre compras internacionais de até US$ 50 deve voltar a ser cobrado?",
+    "resumo": "Desde 13 de maio de 2026, compras internacionais de até US$ 50 não pagam mais os 20% de imposto de importação, e a Lei 15.502/2026 confirmou a mudança em setembro. Em 2025, a taxa arrecadou R$ 3,5 bilhões, e a indústria quer que ela volte.",
+    "atualizado": "2026-10-16",
+    "rotulos": {
+      "favoravel": "A favor de voltar a taxar",
+      "contrario": "Contra a taxa"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "A chamada taxa das blusinhas é o imposto de importação de 20% cobrado sobre compras de até US$ 50 feitas em sites estrangeiros, como Shein, Shopee e AliExpress. Além dele, essas compras pagam ICMS, um imposto estadual que varia de 17% a 20% conforme o estado.",
+        "Até 2023, muitas dessas encomendas entravam sem pagar quase nada. Em agosto de 2023, a Receita criou o programa Remessa Conforme: as plataformas que aderem informam os dados das compras antes e recolhem o ICMS. Em junho de 2024, a Lei 14.902 criou o imposto de 20% para compras de até US$ 50, cobrado a partir de agosto de 2024.",
+        "Em 12 de maio de 2026, o governo editou a Medida Provisória 1.357, que permitiu zerar o imposto nessa faixa. O Congresso aprovou o texto em 3 de setembro, e a Lei 15.502 foi publicada em 10 de setembro de 2026. O ICMS continua sendo cobrado. A lei obriga o Ministério da Fazenda a avaliar os efeitos sobre setores como roupas, calçados, brinquedos e cosméticos. A CNI questiona a medida no STF.",
+        "Há duas visões principais. Uma diz que o imposto é questão de igualdade: quem produz e vende no Brasil paga muito mais tributos, e a concorrência dos sites estrangeiros tira empregos da indústria e do comércio. A outra diz que a taxa encarece produtos baratos para quem tem menos renda, arrecada pouco e não mostrou efeito claro sobre o emprego."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Imposto de importação até US$ 50",
+          "valor": "0% desde 13/05/2026 (era 20%)"
+        },
+        {
+          "rotulo": "ICMS sobre essas compras",
+          "valor": "17% a 20%, conforme o estado"
+        },
+        {
+          "rotulo": "Arrecadação da taxa em 2025",
+          "valor": "R$ 3,5 bilhões"
+        },
+        {
+          "rotulo": "Encomendas pelo Remessa Conforme em 2025",
+          "valor": "159,6 milhões"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Empregos",
+        "favoravel": "A CNI estima que a taxa evitou R$ 4,5 bilhões em importações e preservou cerca de 135,8 mil empregos no Brasil. (A1)",
+        "contrario": "A LCA comparou 12 meses antes e depois da taxa e não achou diferença estatisticamente significativa no emprego do varejo e da indústria protegidos. (B1)",
+        "fonte_favoravel": "cni-nota-remessa-conforme",
+        "fonte_contrario": "lca-taxa-blusinhas"
+      },
+      {
+        "tema": "Igualdade de impostos",
+        "favoravel": "Para a Abit, mesmo com os 20%, os sites estrangeiros pagam bem menos impostos que quem produz no Brasil, num setor com 1,3 milhão de trabalhadores diretos. (A3)",
+        "contrario": "O parecer aprovado no Congresso trata o fim da taxa como justiça tributária para famílias de menor renda e lembra que as compras ainda pagam ICMS de 17% a 20%. (B2)",
+        "fonte_favoravel": "abit-isonomia-tributaria",
+        "fonte_contrario": "parecer-mp-1357"
+      },
+      {
+        "tema": "Arrecadação",
+        "favoravel": "A Receita calculou o ganho de arrecadação supondo que as importações cairiam 20%, porque o produto nacional ficaria mais competitivo. (A2)",
+        "contrario": "Segundo a LCA, a União ganhou cerca de R$ 265 milhões por mês, mas os estados perderam até R$ 258 milhões em ICMS, e o ganho líquido foi de só R$ 7 milhões. (B1)",
+        "fonte_favoravel": "receita-cetad-118",
+        "fonte_contrario": "lca-taxa-blusinhas"
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Remessa Conforme",
+        "definicao": "Programa da Receita Federal, criado em 2023, em que as plataformas estrangeiras informam os dados das compras antes da chegada e recolhem os impostos na hora da venda."
+      },
+      {
+        "termo": "Imposto de importação",
+        "definicao": "Tributo federal cobrado sobre produtos que entram no país. Nas compras de pessoas físicas pela internet, segue um regime simplificado."
+      },
+      {
+        "termo": "ICMS",
+        "definicao": "Imposto estadual sobre a circulação de mercadorias. Nas compras internacionais, é cobrado mesmo sem o imposto de importação."
+      },
+      {
+        "termo": "Isonomia tributária",
+        "definicao": "Ideia de que empresas em situação parecida devem pagar impostos parecidos. É o principal argumento da indústria a favor da taxa."
+      },
+      {
+        "termo": "Imposto regressivo",
+        "definicao": "Imposto que pesa mais, em proporção da renda, sobre quem ganha menos."
+      }
+    ],
+    "incertezas": [
+      "Quantos empregos a taxa realmente protegeu. Os estudos da indústria e os das plataformas chegam a conclusões opostas, e os dois lados encomendaram ou produziram suas próprias análises.",
+      "Quanto da queda nas encomendas virou compra no comércio brasileiro e quanto virou consumo que simplesmente deixou de acontecer.",
+      "O que o STF vai decidir sobre a ação da CNI e o que mostrarão as avaliações que a Fazenda é obrigada a publicar."
+    ],
+    "fontes": [
+      {
+        "titulo": "Agência Câmara: Fim da 'taxa das blusinhas' para compras até US$ 50 agora é lei (11/09/2026)",
+        "url": "https://camara.leg.br/noticias/1304183-fim-da-taxa-das-blusinhas-para-compras-ate-us-50-agora-e-lei"
+      },
+      {
+        "titulo": "Agência Senado: Medida provisória zera 'taxa das blusinhas' para importações de até US$ 50 (13/05/2026)",
+        "url": "https://www12.senado.leg.br/noticias/materias/2026/05/13/medida-provisoria-zera-taxa-das-blusinhas-para-importacoes-de-ate-us-50"
+      },
+      {
+        "titulo": "Revista Oeste: CNI aciona STF contra fim da taxa das blusinhas (23/05/2026)",
+        "url": "https://www.revistaoeste.com/economia/cni-aciona-stf-contra-fim-da-taxa-das-blusinhas/"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "cni-nota-remessa-conforme",
+        "posicao": "favoravel",
+        "instituicao": "CNI",
+        "natureza": "Confederação Nacional da Indústria, entidade privada que representa a indústria e defende a taxa",
+        "tipo": "Nota técnica",
+        "titulo": "Programa Remessa Conforme: mais formalização e menor assimetria no consumo digital (Nota Técnica nº 32/2026)",
+        "autores": "Superintendência de Economia da CNI",
+        "data": "22/04/2026",
+        "formato": "PDF",
+        "url": "https://static.portaldaindustria.com.br/portaldaindustria/noticias/media/filer_public/2a/f3/2af3cf1a-f82b-4ae9-a24f-0ae15f457f61/nota_tecnica-_programa_remessa_conforme.pdf",
+        "tese": "As encomendas pelo Remessa Conforme caíram de 179,1 milhões em 2024 para 159,6 milhões em 2025. Sem a taxa, a CNI projeta que seriam 205,9 milhões. Pelas suas contas, isso evitou R$ 4,5 bilhões em importações e preservou cerca de 135,8 mil empregos e R$ 19,7 bilhões em produção no Brasil. A nota diz que o programa reduziu a diferença de impostos, mas não a eliminou, porque o produto nacional ainda paga IPI e PIS/Cofins.",
+        "numero": {
+          "valor": "135,8 mil",
+          "legenda": "empregos preservados pela taxa, segundo a estimativa da CNI"
+        },
+        "premissas": [
+          "Cada compra que deixou de ser feita no exterior virou compra de produto feito no Brasil.",
+          "A tendência de crescimento das encomendas sem a taxa seria a projetada pela CNI."
+        ],
+        "pergunte": [
+          "O estudo mede empregos efetivamente criados ou estima a partir de uma projeção?",
+          "As importações de bens de consumo pelas vias normais subiram 15,8% em 2025. A demanda foi para a indústria nacional ou para outros importados?"
+        ]
+      },
+      {
+        "id": "receita-cetad-118",
+        "posicao": "favoravel",
+        "instituicao": "Receita Federal (Cetad)",
+        "natureza": "Centro de estudos tributários da Receita Federal, órgão público do Ministério da Fazenda",
+        "tipo": "Nota técnica",
+        "titulo": "Nota Técnica Cetad/Coest nº 118, de 31 de julho de 2024: Alteração de Alíquota das Remessas Postais Internacionais",
+        "autores": "Luana Almeida Felix, Douglas de Freitas Calaça e Filipe Nogueira da Gama",
+        "data": "31/07/2024",
+        "formato": "Página",
+        "url": "https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/estudos/notas-cetad/notas-tecnicas/2024/nota-cetad-coest-no-118-2024",
+        "tese": "Explica a mudança que passou a cobrar 20% de imposto de importação nas remessas de até US$ 50 a partir de agosto de 2024 e estima o ganho de arrecadação de 2024 a 2027. A Receita supõe que o volume de importações cairia 20%, porque os preços maiores tornariam o produto nacional mais competitivo. Os autores reconhecem que não tinham dados por produto para calcular isso com mais precisão.",
+        "numero": {
+          "valor": "20%",
+          "legenda": "de queda no volume de importações, suposta pela Receita ao calcular a arrecadação"
+        },
+        "premissas": [
+          "Parte da demanda por importados migra para produtos feitos no Brasil quando o preço sobe."
+        ],
+        "pergunte": [
+          "Sem dados de quanto o consumidor reage ao preço, quão confiável é a estimativa de 20%?"
+        ]
+      },
+      {
+        "id": "abit-isonomia-tributaria",
+        "posicao": "favoravel",
+        "instituicao": "Abit",
+        "natureza": "Associação Brasileira da Indústria Têxtil e de Confecção, entidade privada do setor mais exposto à concorrência; texto de opinião",
+        "tipo": "Artigo de opinião",
+        "titulo": "Taxa das blusinhas significa igualdade tributária, mais empregos e estabilidade",
+        "autores": "Fernando Valente Pimentel",
+        "data": "11/2025",
+        "formato": "PDF",
+        "url": "https://www.abit.org.br/uploads/arquivos/Taxa%20das%20blusinhas%20significa%20igualdade%20tribut%C3%A1ria,%20mais%20empregos%20e%20estabilidade.pdf",
+        "tese": "Defende que a taxa não é protecionismo, e sim igualdade: mesmo com os 20%, os sites estrangeiros pagam bem menos impostos que quem produz no Brasil. Lembra que o setor têxtil tem cerca de 1,3 milhão de trabalhadores diretos e criou 29,6 mil vagas formais entre janeiro e setembro de 2025. Argumenta que roupas tiveram a menor inflação acumulada entre os grupos do IPCA desde 1994 e que o frete, não o imposto, é o que mais faz o consumidor desistir da compra.",
+        "numero": {
+          "valor": "1,3 milhão",
+          "legenda": "de trabalhadores diretos na indústria têxtil e de confecção"
+        },
+        "premissas": [
+          "A diferença de impostos é a principal causa da vantagem dos sites estrangeiros."
+        ],
+        "pergunte": [
+          "O texto não traz o cálculo da diferença de impostos. Quanto exatamente o produto nacional paga a mais?",
+          "Se o frete pesa mais que o imposto, a taxa faz tanta diferença para a indústria?"
+        ]
+      },
+      {
+        "id": "lca-taxa-blusinhas",
+        "posicao": "contrario",
+        "instituicao": "LCA Consultores",
+        "natureza": "Consultoria econômica privada; segundo o InfoMoney, o estudo foi encomendado pela Amobitec, associação que reúne empresas de tecnologia e comércio eletrônico",
+        "tipo": "Relatório",
+        "titulo": "Taxa das blusinhas: Resultados econômicos para população e governo",
+        "autores": "Eric Brasil, Davi Alencar, Luís Jorge, Louise Cruz e Ana Wakabayashi (LCA)",
+        "data": "10/2025",
+        "formato": "PDF",
+        "url": "https://static.poder360.com.br/2025/10/LCA-Taxa-das-Blusinhas-out-2025.pdf",
+        "tese": "As importações de bens de consumo pelo Remessa Conforme caíram 43% logo após a taxa. O emprego nos setores de varejo e indústria protegidos não mudou de forma estatisticamente significativa. A União ganhou cerca de R$ 265 milhões por mês, mas os estados perderam até R$ 258 milhões em ICMS, sobrando só R$ 7 milhões líquidos. Cerca de 70% da taxa é paga pelas classes C, D e E, e o peso na renda delas é o dobro do que nas classes A e B.",
+        "numero": {
+          "valor": "R$ 7 milhões",
+          "legenda": "por mês de arrecadação líquida, somando o ganho federal e a perda de ICMS dos estados"
+        },
+        "premissas": [
+          "Sem a taxa, as importações seguiriam a tendência de janeiro a julho de 2024.",
+          "Comparar 12 meses antes e depois basta para medir o efeito no emprego."
+        ],
+        "pergunte": [
+          "Um estudo pago por empresas do setor de plataformas pode ser neutro?",
+          "Um ano de dados é suficiente para ver efeito no emprego?"
+        ]
+      },
+      {
+        "id": "parecer-mp-1357",
+        "posicao": "contrario",
+        "instituicao": "Congresso Nacional (Comissão Mista da MP 1.357)",
+        "natureza": "Parecer da relatora, senadora Leila Barros, aprovado na comissão mista; documento político-legislativo",
+        "tipo": "Parecer legislativo",
+        "titulo": "Parecer da Comissão Mista da Medida Provisória nº 1.357, de 2026",
+        "autores": "Senadora Leila Barros (relatora)",
+        "data": "09/2026",
+        "formato": "PDF",
+        "url": "https://www.reformatributaria.com/wp-content/uploads/2026/09/relatorio-MP-blusinhas.pdf",
+        "tese": "Defende zerar o imposto como um instrumento de justiça tributária em favor das famílias de menor renda. Lembra que as compras continuam pagando ICMS de 17% a 20%. Afirma que as evidências não permitem uma relação robusta entre a tributação das pequenas remessas e o emprego. Acrescenta regras contra fraude, limites de quantidade e avaliações periódicas dos efeitos sobre os setores nacionais.",
+        "numero": {
+          "valor": "17% a 20%",
+          "legenda": "de ICMS que continua sendo cobrado nas compras de até US$ 50"
+        },
+        "premissas": [
+          "Quem mais compra nesses sites são famílias de renda mais baixa."
+        ],
+        "pergunte": [
+          "O parecer não traz números próprios sobre emprego ou arrecadação. Em que estudos ele se baseia?"
+        ]
+      },
+      {
+        "id": "fazenda-em-1146-2026",
+        "posicao": "contrario",
+        "instituicao": "Ministério da Fazenda",
+        "natureza": "Órgão do governo federal que propôs o fim da taxa",
+        "tipo": "Exposição de Motivos",
+        "titulo": "Exposição de Motivos nº 1146/2026 (Medida Provisória nº 1.357, de 12 de maio de 2026)",
+        "autores": "Dario Carnevalli Durigan, ministro da Fazenda",
+        "data": "12/05/2026",
+        "formato": "Página",
+        "url": "https://www2.camara.leg.br/legin/fed/medpro/2026/medidaprovisoria-1357-12-maio-2026-799111-exposicaodemotivos-179369-pe.html",
+        "tese": "Argumenta que reduzir o imposto sobre pequenas remessas estimula as plataformas a informar os dados das compras de forma antecipada e espontânea. Diz que o Remessa Conforme já trouxe mais transparência e rastreabilidade e que tributação menor reduz incentivos ao subfaturamento, à ocultação do remetente e ao fracionamento de encomendas. Pede flexibilidade para o ministro ajustar as alíquotas conforme o mercado mudar.",
+        "premissas": [
+          "Imposto alto empurra parte das compras para canais informais, onde nada é arrecadado."
+        ],
+        "pergunte": [
+          "O documento diz que a medida não gera perda de receita, mas não apresenta números. Como isso é possível se a taxa arrecadou R$ 3,5 bilhões em 2025?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "h5ZOtyJyIso",
+        "titulo": "Taxa das blusinhas: o que muda com o fim do imposto",
+        "canal": "g1",
+        "duracao": "1:30",
+        "nota": "O que deixou de ser cobrado e o que continua."
+      },
+      {
+        "id": "1U-1wQ4mBu4",
+        "titulo": "Lula assina Medida Provisória que zera a taxa das blusinhas",
+        "canal": "Rádio CBN",
+        "duracao": "3:02",
+        "nota": "A decisão de maio de 2026, explicada."
+      },
+      {
+        "id": "Mdx1kpwR8SE",
+        "titulo": "Lula sanciona fim da taxa das blusinhas para compras de até 50 dólares",
+        "canal": "g1",
+        "duracao": "3:09",
+        "nota": "A lei que confirmou o fim do imposto."
+      },
+      {
+        "id": "kD4va1EvbVE",
+        "titulo": "Fim da taxa das blusinhas: como ficam impostos de compras internacionais?",
+        "canal": "CNN Brasil Money",
+        "duracao": "1:29",
+        "nota": "Quanto o consumidor ainda paga de ICMS."
+      },
+      {
+        "id": "piGjh3hMJLY",
+        "titulo": "Varejo e indústria formam coalizão para impedir o fim da taxa das blusinhas",
+        "canal": "Jovem Pan News",
+        "duracao": "5:19",
+        "nota": "O argumento das empresas brasileiras."
+      },
+      {
+        "id": "V3jwAlR07sU",
+        "titulo": "Foi um erro do governo? Os desdobramentos da taxa das blusinhas",
+        "canal": "O Primo Rico",
+        "duracao": "2:46",
+        "nota": "Uma análise crítica do vai e vem da taxa."
+      }
+    ],
+    "imagem": {
+      "arquivo": "img/temas/taxa-blusinhas.jpg",
+      "autor": "Wilfredor",
+      "licenca": "CC BY-SA 4.0",
+      "licenca_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Correios_Building,_S%C3%A3o_Paulo,_Brazil.jpg",
+      "legenda": "Prédio histórico dos Correios no centro de São Paulo.",
+      "alt": "Fachada iluminada do antigo prédio dos Correios em São Paulo, ao anoitecer",
+      "posicao": "50% 45%"
+    }
+  },
+  {
+    "id": "acordo-mercosul-ue",
+    "titulo": "Acordo Mercosul-União Europeia",
+    "categoria": "economia",
+    "tags": [
+      "mercosul",
+      "união europeia",
+      "acordo comercial",
+      "livre comércio",
+      "tarifas",
+      "exportações",
+      "indústria",
+      "agronegócio",
+      "desmatamento",
+      "ipea"
+    ],
+    "pergunta": "O acordo comercial entre Mercosul e União Europeia é bom para o Brasil?",
+    "resumo": "O acordo foi assinado em janeiro de 2026 e a parte comercial vale de forma provisória desde 1º de maio. Entre maio e setembro, as exportações do Brasil para a União Europeia cresceram 30,7% sobre o mesmo período de 2025, segundo o governo.",
+    "atualizado": "2026-10-16",
+    "rotulos": {
+      "favoravel": "A favor do acordo",
+      "contrario": "Críticos do acordo"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "O acordo cria uma zona de livre comércio entre os países do Mercosul (Brasil, Argentina, Uruguai e Paraguai) e os 27 países da União Europeia, um mercado de mais de 700 milhões de pessoas. Os dois lados vão zerar, aos poucos, a maior parte das tarifas de importação. O acordo também tem regras sobre compras do governo, origem dos produtos e um capítulo de desenvolvimento sustentável, que inclui o compromisso de manter o Acordo de Paris.",
+        "A negociação começou em 1999. Houve um anúncio de acordo em 2019, mas o texto travou, em parte por críticas europeias à política ambiental do Brasil. Em dezembro de 2024, os blocos fecharam uma nova versão, que deu ao Brasil mais espaço em compras públicas e uma salvaguarda para a indústria de carros.",
+        "O acordo foi assinado em 17 de janeiro de 2026. Em 21 de janeiro, o Parlamento Europeu decidiu, por 334 votos a 324, pedir um parecer ao Tribunal de Justiça da União Europeia, o que adia a aprovação definitiva. Mesmo assim, a parte comercial passou a valer de forma provisória em 1º de maio de 2026 entre a União Europeia e os países do Mercosul que já tinham ratificado, entre eles o Brasil, cujo Congresso aprovou o texto em março.",
+        "Os defensores dizem que o acordo abre um grande mercado, atrai investimento e beneficia o agro e parte da indústria. Os críticos dizem que os ganhos são pequenos, que a indústria brasileira perde em setores mais avançados e que o acordo reforça o papel do Brasil como exportador de matérias-primas, com risco de mais pressão sobre florestas."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Exportações do Brasil à UE em 2025",
+          "valor": "US$ 49,8 bilhões"
+        },
+        {
+          "rotulo": "Alta das exportações à UE (maio a set/2026)",
+          "valor": "30,7%"
+        },
+        {
+          "rotulo": "Ganho de PIB do Brasil até 2040 (Ipea)",
+          "valor": "0,46%"
+        },
+        {
+          "rotulo": "Exportações à UE com tarifa zero já na entrada em vigor (CNI)",
+          "valor": "82,7%"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Ganhos totais",
+        "favoravel": "O Ipea estima que o acordo eleva o PIB do Brasil em 0,46% e o investimento em 1,49% até 2040, com o agro produzindo 2% a mais. (A1)",
+        "contrario": "Até o estudo mais otimista, o do Ipea, prevê só cerca de 0,45% de PIB após 15 anos, e o acordo reforça a especialização do Brasil em produtos básicos, com empregos menos formais. (B1)",
+        "fonte_favoravel": "ipea-nt68-mercosul-ue",
+        "fonte_contrario": "ufrj-gic-reflexoes-mercosul-ue"
+      },
+      {
+        "tema": "Indústria",
+        "favoravel": "Já na entrada em vigor, mais de 2.700 produtos industriais brasileiros deixam de pagar tarifa na Europa, e o Mercosul tem de 8 a 15 anos para abrir a maior parte da sua indústria. (A2)",
+        "contrario": "A indústria europeia gera cerca de 8 vezes mais valor que a do Mercosul, e projeções citadas mostram as exportações industriais dela crescendo 72,7%, contra 7,9% das nossas. (B2)",
+        "fonte_favoravel": "cni-manual-acordo-mercosul-ue",
+        "fonte_contrario": "unicamp-ufrj-industria-mercosul-ue"
+      },
+      {
+        "tema": "Agro e regiões",
+        "favoravel": "O Sul ganha logo com carnes e lácteos e o Centro-Oeste tende a ser o maior ganhador com as cotas de carne e etanol, se o país cumprir as exigências de rastreabilidade. (A3)",
+        "contrario": "Ampliar a venda de produtos primários em troca de bens industriais pode perpetuar a dependência econômica, e as margens nas compras públicas não bastam sem política industrial. (B3)",
+        "fonte_favoravel": "fgv-impactos-regionais-mercosul-ue",
+        "fonte_contrario": "ufjf-tcc-dependencia-mercosul-ue"
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Tarifa de importação",
+        "definicao": "Imposto cobrado sobre um produto quando ele entra em um país. O acordo reduz essas tarifas até zero, em prazos que vão de imediato a 15 anos ou mais."
+      },
+      {
+        "termo": "Aplicação provisória",
+        "definicao": "Quando parte de um acordo começa a valer antes de todos os parlamentos aprovarem o texto final. É o caso da parte comercial desde maio de 2026."
+      },
+      {
+        "termo": "Cota tarifária",
+        "definicao": "Quantidade limitada de um produto que pode entrar com tarifa reduzida. Acima dela, paga a tarifa normal. Vale para carne, açúcar e etanol, por exemplo."
+      },
+      {
+        "termo": "Salvaguarda",
+        "definicao": "Mecanismo que permite suspender a redução de tarifas por um tempo se as importações crescerem demais e prejudicarem um setor local."
+      },
+      {
+        "termo": "Reprimarização",
+        "definicao": "Quando a economia passa a depender mais de produtos básicos, como grãos, carne e minérios, e menos de produtos industriais."
+      }
+    ],
+    "incertezas": [
+      "Quando o Tribunal de Justiça da União Europeia vai dar seu parecer e se ele pode mudar ou atrasar a aprovação definitiva do acordo.",
+      "Se a alta das exportações desde maio de 2026 vem do acordo ou de outros fatores, como preços de commodities e a situação do comércio mundial.",
+      "Se as regras europeias contra produtos ligados ao desmatamento, previstas para janeiro de 2027, vão limitar os ganhos do agro brasileiro."
+    ],
+    "fontes": [
+      {
+        "titulo": "Poder360: Vendas do Brasil para a UE sobem 31% após acordo (14/10/2026)",
+        "url": "https://www.poder360.com.br/poder-economia/vendas-do-brasil-para-a-ue-sobem-31-apos-acordo/"
+      },
+      {
+        "titulo": "Band: Acordo provisório Mercosul-UE entrará em vigor em 1º de maio, diz governo (25/03/2026)",
+        "url": "https://www.band.com.br/economia/noticias/acordo-provisorio-mercosul-ue-entrara-em-vigor-em-1-de-maio-diz-governo-202603250734"
+      },
+      {
+        "titulo": "Mercado & Consumo: Parlamento Europeu pede parecer judicial e freia processo de ratificação do acordo (21/01/2026)",
+        "url": "https://mercadoeconsumo.com.br/21/01/2026/economia/mercosul-ue-parlamento-europeu-pede-parecer-judicial-e-freia-processo-de-ratificacao-do-acordo/"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "ipea-nt68-mercosul-ue",
+        "posicao": "favoravel",
+        "instituicao": "Ipea (com pesquisadores da UFJF)",
+        "natureza": "Instituto público de pesquisa ligado ao governo federal; dois dos autores são professores da Universidade Federal de Juiz de Fora",
+        "tipo": "Nota técnica",
+        "titulo": "Avaliação dos impactos do acordo de livre comércio Mercosul-União Europeia",
+        "autores": "Fernando José da Silva Paiva Ribeiro, Admir Antonio Betarelli Junior e Weslem Rodrigues Faria",
+        "data": "12/2023",
+        "formato": "PDF",
+        "url": "https://repositorio.ipea.gov.br/bitstream/11058/12718/1/NT_68_Dinte_Avaliacao_dos_impactos.pdf",
+        "tese": "Simula a redução de tarifas e as cotas entre 2024 e 2040 com um modelo da economia mundial. O PIB do Brasil cresceria 0,46% a mais, cerca de US$ 9,3 bilhões, e o investimento 1,49%. O agronegócio aumentaria a produção em 2%, cerca de US$ 11 bilhões. A indústria como um todo quase não muda, mas setores como veículos, máquinas e têxteis perdem produção.",
+        "numero": {
+          "valor": "+0,46%",
+          "legenda": "no PIB do Brasil até 2040, frente a um cenário sem acordo"
+        },
+        "premissas": [
+          "O modelo, calibrado com dados de 2014, representa bem a economia de hoje.",
+          "As cotas de exportação serão usadas de forma plena."
+        ],
+        "pergunte": [
+          "Um ganho de 0,46% do PIB em 16 anos é grande ou pequeno?",
+          "Quem trabalha nos setores industriais que perdem vai conseguir emprego nos que ganham?"
+        ]
+      },
+      {
+        "id": "cni-manual-acordo-mercosul-ue",
+        "posicao": "favoravel",
+        "instituicao": "CNI",
+        "natureza": "Confederação Nacional da Indústria, entidade privada que representa empresas industriais; apoia o acordo",
+        "tipo": "Manual",
+        "titulo": "Manual do Acordo de Parceria Mercosul-União Europeia",
+        "autores": "Confederação Nacional da Indústria, Superintendência de Relações Internacionais",
+        "data": "2026",
+        "formato": "PDF",
+        "url": "https://static.portaldaindustria.com.br/media/filer_public/11/d1/11d1dc18-c56e-42f9-b67e-e59bfb13f994/manual_do_acordo_mercosul-ue_cni_sri_gcii.pdf",
+        "tese": "A CNI chama o texto de o acordo mais impactante já negociado pelo Mercosul. Já na entrada em vigor, 82,7% do que o Brasil exportou à União Europeia em 2024, cerca de US$ 40,1 bilhões, passa a ter tarifa zero, e mais de 2.700 produtos industriais deixam de pagar imposto. Do lado do Mercosul, a abertura é mais lenta: cerca de 60% dos bens industriais levam de 8 a 15 anos para chegar a tarifa zero, o que dá tempo para a indústria se ajustar. Compras do SUS ficaram de fora.",
+        "numero": {
+          "valor": "82,7%",
+          "legenda": "das exportações do Brasil à UE com tarifa zero já na entrada em vigor"
+        },
+        "premissas": [
+          "Tarifa menor se traduz em mais vendas, sem que barreiras sanitárias ou ambientais anulem o ganho."
+        ],
+        "pergunte": [
+          "Se tantas exportações já entram com tarifa zero, quanto o acordo de fato muda para elas?",
+          "A CNI representa as empresas que vão disputar mercado com as europeias. Todos os setores ganham igualmente?"
+        ]
+      },
+      {
+        "id": "fgv-impactos-regionais-mercosul-ue",
+        "posicao": "favoravel",
+        "instituicao": "FGV (Blog do Ibre)",
+        "natureza": "Fundação privada de ensino e pesquisa; o texto expressa a opinião dos autores, não da FGV",
+        "tipo": "Artigo",
+        "titulo": "Avaliando os impactos regionais no Brasil do acordo Mercosul–União Europeia",
+        "autores": "Flávio Ataliba Barreto, Thiago de Araújo Freitas, João Mário Santos de França e Pedro Avelino",
+        "data": "2026",
+        "formato": "PDF",
+        "url": "https://blogdoibre.fgv.br/sites/blogdoibre.fgv.br/files/u139/mercosul-uniao_europeia_0.pdf",
+        "tese": "Vê o acordo como uma oportunidade, mas condicionada. O Sul deve ganhar logo, com carnes, alimentos e lácteos, e o Centro-Oeste tende a ser o maior ganhador no longo prazo, com as cotas de carne e etanol. O Sudeste tem saldo misto, com ganhos em café, suco de laranja e aviões e mais concorrência em remédios, carros e máquinas. O maior obstáculo não são as tarifas, mas as exigências técnicas e ambientais europeias.",
+        "numero": {
+          "valor": "até 97,5%",
+          "legenda": "de alta nas exportações à UE se metade das barreiras não tarifárias fosse harmonizada, segundo estudo citado"
+        },
+        "premissas": [
+          "O Brasil fará políticas de apoio, como crédito mais barato, logística e rastreabilidade."
+        ],
+        "pergunte": [
+          "Pequenas e médias empresas conseguem pagar os custos de certificação para vender na Europa?"
+        ]
+      },
+      {
+        "id": "ufrj-gic-reflexoes-mercosul-ue",
+        "posicao": "contrario",
+        "instituicao": "UFRJ (Instituto de Economia, GIC)",
+        "natureza": "Universidade pública; Grupo de Indústria e Competitividade, de linha desenvolvimentista",
+        "tipo": "Nota técnica",
+        "titulo": "Reflexões acerca dos impactos do acordo Mercosul - União Europeia",
+        "autores": "Marta Castilho, Kethelyn Ferreira e João Braga",
+        "data": "12/2024",
+        "formato": "PDF",
+        "url": "https://www.ie.ufrj.br/images/IE/grupos/GIC/publica%C3%A7%C3%B5es/2024/Nota%20UE-MS%20VF_RESUMO.pdf",
+        "tese": "Argumenta que o acordo reforça uma especialização regressiva do Mercosul em produtos de recursos naturais. O Mercosul vai eliminar 91% das tarifas sobre importados europeus, como carros, máquinas, químicos e remédios. Os empregos ligados à exportação tendem a ser menos formais e pior pagos que os ameaçados pelas importações, e a expansão agrícola pode elevar as emissões. A versão de 2024 dá mais espaço à política industrial, mas não reverte as perdas.",
+        "numero": {
+          "valor": "US$ 15,2 bilhões",
+          "legenda": "de déficit do Brasil com a UE em produtos manufaturados em 2019"
+        },
+        "premissas": [
+          "Exportar produtos industriais mais sofisticados é essencial para o desenvolvimento de longo prazo."
+        ],
+        "pergunte": [
+          "Sem o acordo, a indústria brasileira ficaria mais competitiva ou só mais protegida?"
+        ]
+      },
+      {
+        "id": "unicamp-ufrj-industria-mercosul-ue",
+        "posicao": "contrario",
+        "instituicao": "Unicamp e UFRJ (Institutos de Economia)",
+        "natureza": "Universidades públicas; autores de linha desenvolvimentista que estudam política industrial",
+        "tipo": "Artigo científico",
+        "titulo": "Impactos do Acordo Mercosul e União Europeia sobre a Indústria Brasileira",
+        "autores": "Fernando Sarti (Unicamp) e Marta Castilho (UFRJ)",
+        "data": "2021",
+        "formato": "PDF",
+        "url": "https://pdf.blucher.com.br/engineeringproceedings/v-enei/731.pdf",
+        "tese": "Mostra que a disputa é desigual: em 2019, a indústria da União Europeia gerava cerca de 8 vezes mais valor que a do Mercosul. Um estudo da LSE citado projeta as exportações industriais europeias ao Mercosul crescendo 72,7%, contra 7,9% no sentido contrário. Os autores dizem que as regras de compras públicas, propriedade intelectual e investimento limitam políticas industriais ativas e reforçam a especialização regressiva do Brasil.",
+        "numero": {
+          "valor": "72,7% x 7,9%",
+          "legenda": "alta projetada das exportações industriais da UE ao Mercosul e do Mercosul à UE (cenário conservador da LSE)"
+        },
+        "premissas": [
+          "A política industrial ativa é o caminho para recuperar a indústria brasileira."
+        ],
+        "pergunte": [
+          "O texto analisa a versão de 2019. As mudanças de 2024 em compras públicas e carros respondem a essas críticas?"
+        ]
+      },
+      {
+        "id": "ufjf-tcc-dependencia-mercosul-ue",
+        "posicao": "contrario",
+        "instituicao": "UFJF (campus Governador Valadares)",
+        "natureza": "Universidade pública; trabalho de conclusão de curso de graduação em Direito, de base estruturalista",
+        "tipo": "Trabalho de conclusão de curso",
+        "titulo": "O Acordo Mercosul-União Europeia e a Perpetuação da Divisão Internacional do Trabalho: Entre o Livre Comércio ou a Dependência Econômica",
+        "autores": "Sérgio Augusto Fonseca Figueiredo (orientação de Luciana Tasse Ferreira)",
+        "data": "2025",
+        "formato": "PDF",
+        "url": "https://repositorio.ufjf.br/jspui/bitstream/ufjf/18510/1/sergioaugustofonsecafigueiredo.pdf",
+        "tese": "Com base em Prebisch e Furtado, argumenta que o acordo pode funcionar como um mecanismo de perpetuação da dependência econômica. A abertura para bens industriais europeus é mais demorada, mas acontece, enquanto o Mercosul segue vendendo produtos primários. As margens de preferência nas compras públicas, de até 10% ou 25% para pequenas empresas, são vistas como avanço, mas insuficiente sem uma política de industrialização e tecnologia.",
+        "premissas": [
+          "Trocar produtos primários por industriais tende a desfavorecer quem exporta os primários."
+        ],
+        "pergunte": [
+          "A teoria da dependência, dos anos 1950, explica bem o comércio de hoje, em que o agro também usa muita tecnologia?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "pBsb1JsQ29w",
+        "titulo": "Entenda o acordo Mercosul-UE, que entra em vigor de forma provisória",
+        "canal": "CNN Brasil",
+        "duracao": "3:23",
+        "nota": "O básico do acordo e do que já vale."
+      },
+      {
+        "id": "x0b23usx21g",
+        "titulo": "Acordo Mercosul e União Europeia começou: pontos positivos e negativos",
+        "canal": "Professor Ricardo Marcílio",
+        "duracao": "16:27",
+        "nota": "Aula com os ganhos e os riscos para o Brasil."
+      },
+      {
+        "id": "KFidjBuTJck",
+        "titulo": "Principais ganhos do acordo Mercosul-UE estão no agro",
+        "canal": "CNN Brasil Money",
+        "duracao": "9:48",
+        "nota": "Quem mais ganha, segundo um especialista."
+      },
+      {
+        "id": "GY_lTpWHmB4",
+        "titulo": "Salvaguardas no acordo Mercosul-UE limitam interesses brasileiros",
+        "canal": "CNN Brasil Money",
+        "duracao": "9:54",
+        "nota": "As cláusulas que podem frear os ganhos."
+      },
+      {
+        "id": "Isir5TMaqxs",
+        "titulo": "Acordo Mercosul-UE: agora que entrou em vigor, quais os próximos passos?",
+        "canal": "Confederação Nacional da Indústria",
+        "duracao": "2:31",
+        "nota": "A visão da indústria, que apoia o acordo."
+      },
+      {
+        "id": "VD71o_gHYN8",
+        "titulo": "Abimaq alerta que acordo Mercosul-UE é risco para a indústria",
+        "canal": "Jovem Pan FM",
+        "duracao": "1:21",
+        "nota": "A preocupação dos fabricantes de máquinas."
+      }
+    ],
+    "imagem": {
+      "arquivo": "img/temas/acordo-mercosul-ue.jpg",
+      "autor": "Claus Bunks",
+      "licenca": "CC BY 3.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Port_Santos.jpg",
+      "legenda": "Terminal de contêineres no Porto de Santos (SP).",
+      "alt": "Guindastes e contêineres coloridos ao lado de um navio no Porto de Santos",
+      "posicao": "50% 50%"
+    }
+  },
+  {
+    "id": "pec-seguranca-publica",
+    "titulo": "PEC da Segurança Pública",
+    "categoria": "seguranca",
+    "tags": [
+      "pec da segurança",
+      "pec 18/2025",
+      "susp",
+      "segurança pública",
+      "polícia federal",
+      "prf",
+      "governadores",
+      "crime organizado",
+      "facções",
+      "federalismo"
+    ],
+    "pergunta": "A União deve ganhar mais poder para coordenar a segurança pública?",
+    "resumo": "A PEC 18/2025 põe na Constituição o Sistema Único de Segurança Pública e amplia o papel do governo federal no combate ao crime organizado. Aprovada na Câmara por 461 a 14 em março de 2026, passou na CCJ do Senado em 14 de outubro, mas foi retirada da pauta do plenário no dia seguinte por falta de acordo.",
+    "atualizado": "2026-10-16",
+    "rotulos": {
+      "favoravel": "A favor de mais coordenação federal",
+      "contrario": "Contra mais poder para a União"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "Pela Constituição de 1988, quem cuida da maior parte da segurança pública são os estados, que comandam as polícias militar e civil. A União tem a Polícia Federal e a Polícia Rodoviária Federal, e os municípios têm as guardas. A PEC 18/2025, enviada pelo governo Lula em abril de 2025, quer dar à União um papel maior de coordenação, pôr na Constituição o Sistema Único de Segurança Pública (SUSP) e os fundos nacionais de segurança e penitenciário.",
+        "O SUSP já existe por lei desde 2018, mas avançou pouco. O governo argumenta que facções como PCC e Comando Vermelho atuam no país inteiro e que polícias estaduais isoladas não dão conta. Na Câmara, o relator Mendonça Filho (União-PE) retirou o trecho que dava à União o poder exclusivo de fazer normas gerais de segurança, ponto mais criticado pelos governadores. Ele também incluiu penas mais duras para membros de facções, a criação de polícias municipais e a ampliação da PRF para ferrovias e hidrovias.",
+        "A Câmara aprovou o texto em 4 de março de 2026, por 487 a 15 no primeiro turno e 461 a 14 no segundo. No Senado, a CCJ aprovou o parecer do relator Rogério Carvalho (PT-SE) e concluiu a votação em 14 de outubro. No dia 15, o presidente do Senado, Davi Alcolumbre, retirou a PEC da pauta do plenário, sem nova data, depois de divergências sobre emendas para reduzir a maioridade penal. A PEC precisa de 49 votos em dois turnos e, se o Senado mudar o texto, volta para a Câmara.",
+        "Quem defende diz que o crime organizado é nacional e que falta um comando que integre dados, metas e operações entre as mais de 1.500 instituições de segurança do país. Quem critica, como governadores do Sul e do Sudeste, diz que a PEC centraliza poder em Brasília, ameaça a autonomia das polícias estaduais e não traz dinheiro novo suficiente para quem faz o policiamento no dia a dia."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Votos na Câmara (2º turno, mar/2026)",
+          "valor": "461 a 14"
+        },
+        {
+          "rotulo": "Votos necessários no Senado",
+          "valor": "49 em cada turno"
+        },
+        {
+          "rotulo": "Instituições de segurança previstas na Constituição (Esfera/FBSP)",
+          "valor": "1.595"
+        },
+        {
+          "rotulo": "Facções ligadas ao narcotráfico (Senappen, via Esfera/FBSP)",
+          "valor": "72"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Crime organizado",
+        "favoravel": "Estudo da Esfera Brasil com o FBSP conta 72 facções ligadas ao tráfico e 1.595 instituições de segurança sem mecanismos formais de coordenação, metas ou prioridades comuns. (A2)",
+        "contrario": "Para o Le Monde Diplomatique Brasil, o problema é real, mas resultados dependem mais da qualidade da cooperação entre governos do que de concentrar competências na União. (B2)",
+        "fonte_favoravel": "esfera-fbsp-crime-organizado",
+        "fonte_contrario": "diplomatique-centralizacao-seguranca"
+      },
+      {
+        "tema": "Autonomia dos estados",
+        "favoravel": "O Instituto Sou da Paz avalia que a PEC dá à União a coordenação estratégica do SUSP sem tirar dos estados o comando das polícias civil e militar. (A3)",
+        "contrario": "Os sete governadores do Cosud pedem que as polícias continuem subordinadas a eles e que a União atue de forma complementar, e nunca substitutiva. (B1)",
+        "fonte_favoravel": "soudapaz-o-que-esperar-pec",
+        "fonte_contrario": "cosud-carta-rio-2025"
+      },
+      {
+        "tema": "Novas funções federais",
+        "favoravel": "O relator no Senado diz que o modelo descentralizado deixou as facções crescerem e que ampliar a PRF para ferrovias e hidrovias é mais rápido e barato que criar outra polícia. (A1)",
+        "contrario": "A Cobrapol afirma que a PEC amplia a Polícia Federal sem metas nem investimento, enquanto as polícias estaduais, que enfrentam a maior parte do crime, seguem sem recursos. (B3)",
+        "fonte_favoravel": "senado-ccj-parecer-pec18",
+        "fonte_contrario": "cobrapol-centralizacao-sem-solucao"
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "PEC",
+        "definicao": "Proposta de Emenda à Constituição. Precisa de 3/5 dos votos em dois turnos na Câmara (308) e no Senado (49)."
+      },
+      {
+        "termo": "SUSP",
+        "definicao": "Sistema Único de Segurança Pública. Criado pela Lei 13.675/2018 para integrar polícias, dados e planos da União, dos estados e dos municípios, inspirado no SUS."
+      },
+      {
+        "termo": "FNSP e Funpen",
+        "definicao": "Fundo Nacional de Segurança Pública e Fundo Penitenciário Nacional. Repassam dinheiro federal a estados para segurança e presídios."
+      },
+      {
+        "termo": "Competência concorrente",
+        "definicao": "Quando União e estados podem fazer leis sobre o mesmo assunto. A União faz as normas gerais e os estados detalham."
+      },
+      {
+        "termo": "Cosud",
+        "definicao": "Consórcio de Integração Sul e Sudeste, que reúne os governadores de SP, RJ, MG, ES, PR, SC e RS."
+      }
+    ],
+    "incertezas": [
+      "Se a coordenação federal reduz crimes na prática. O SUSP existe desde 2018 e há pouca avaliação de resultado.",
+      "Se a PEC será votada no Senado e em que versão, já que mudanças no texto obrigam nova votação na Câmara.",
+      "Quanto dinheiro novo chegará de fato a estados e municípios, depois que a fonte das apostas on-line saiu do texto."
+    ],
+    "fontes": [
+      {
+        "titulo": "Diario de Pernambuco: Câmara aprova PEC da Segurança Pública; texto vai ao Senado (04/03/2026)",
+        "url": "https://www.diariodepernambuco.com.br/politica/2026/03/11709138-camara-aprova-pec-da-seguranca-publica-texto-vai-ao-senado.html"
+      },
+      {
+        "titulo": "Congresso em Foco: CCJ conclui votação da PEC da Segurança e envia texto ao plenário (14/10/2026)",
+        "url": "https://www.congressoemfoco.com.br/noticia/123231/ccj-conclui-votacao-da-pec-da-seguranca-e-envia-texto-ao-plenario"
+      },
+      {
+        "titulo": "O Tempo: Alcolumbre retira PEC da Segurança Pública da pauta do Senado após divergências sobre texto (15/10/2026)",
+        "url": "https://www.otempo.com.br/politica/congresso/2026/10/15/alcolumbre-retira-pec-da-seguranca-publica-da-pauta-do-senado-apos-divergencias-sobre-texto"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "senado-ccj-parecer-pec18",
+        "posicao": "favoravel",
+        "instituicao": "Senado Federal (CCJ)",
+        "natureza": "Parecer de relator na Comissão de Constituição e Justiça; relator do PT, partido do governo que propôs a PEC",
+        "tipo": "Parecer legislativo",
+        "titulo": "Parecer da CCJ sobre a Proposta de Emenda à Constituição nº 18, de 2025",
+        "autores": "Senador Rogério Carvalho (PT-SE), relator",
+        "data": "09/2026",
+        "formato": "PDF",
+        "url": "https://static.poder360.com.br/uploads/2026/09/parecer-pec-seguranca.pdf",
+        "tese": "Diz que a crise atual vem da expansão do domínio territorial das facções, nascidas em presídios estaduais, e que o modelo muito descentralizado de 1988 deixou isso crescer. Defende que é preciso pôr os entes federados e as polícias para colaborarem entre si, não para competirem. Apoia o SUSP na Constituição, com forças-tarefa, troca de informações e sistemas integrados. Considera ampliar a PRF para ferrovias e hidrovias mais rápido e barato do que criar uma nova polícia.",
+        "numero": {
+          "valor": "50%",
+          "legenda": "do FNSP e do Funpen teriam de ser repassados pela União a estados e DF, pelo texto analisado"
+        },
+        "premissas": [
+          "A falta de integração entre polícias é uma causa importante do avanço das facções."
+        ],
+        "pergunte": [
+          "O parecer não traz dados de crime. Que evidência mostra que mais integração federal reduz a violência?",
+          "O relator é do partido do governo. Como os pontos rejeitados por ele seriam vistos por um relator da oposição?"
+        ]
+      },
+      {
+        "id": "esfera-fbsp-crime-organizado",
+        "posicao": "favoravel",
+        "instituicao": "Esfera Brasil e Fórum Brasileiro de Segurança Pública",
+        "natureza": "Esfera Brasil é um think tank ligado a empresários; o FBSP é uma ONG de pesquisa em segurança pública, apartidária",
+        "tipo": "Estudo",
+        "titulo": "Estudo inédito reúne dados sobre reflexos do crime organizado",
+        "autores": "Esfera Brasil e FBSP (texto de Nina Gattis e Andrezza Pugliesi)",
+        "data": "07/2024",
+        "formato": "Página",
+        "url": "https://esferabrasil.com.br/artigos/estudo-inedito-reune-dados-sobre-reflexos-do-crime-organizado/",
+        "tese": "Mapeia o crime organizado no Brasil: 72 facções ligadas ao narcotráfico e fluxos ilícitos de pelo menos 20 produtos. Conclui que não há mecanismos formais de coordenação com metas e prioridades comuns entre os órgãos do Estado, nem uma coordenação federativa capaz de integrar informações. Defende que a segurança seja tarefa compartilhada entre União, estados, DF e municípios.",
+        "numero": {
+          "valor": "1.595",
+          "legenda": "instituições de segurança pública previstas na Constituição, sem coordenação formal entre elas"
+        },
+        "premissas": [
+          "O crime organizado atua em escala nacional e internacional, além do alcance de cada estado."
+        ],
+        "pergunte": [
+          "Falta de coordenação se resolve com mais poder para a União ou com acordos entre os estados?"
+        ]
+      },
+      {
+        "id": "soudapaz-o-que-esperar-pec",
+        "posicao": "favoravel",
+        "instituicao": "Instituto Sou da Paz",
+        "natureza": "ONG de São Paulo que atua em segurança pública e controle de armas; costuma ser vista como progressista",
+        "tipo": "Artigo de opinião",
+        "titulo": "O que esperar da PEC da segurança pública?",
+        "autores": "Carolina Ricardo (diretora-executiva do Instituto Sou da Paz)",
+        "data": "14/05/2025",
+        "formato": "Página",
+        "url": "https://www.poder360.com.br/opiniao/o-que-esperar-da-pec-da-seguranca-publica/",
+        "tese": "Avalia que a PEC não é péssima nem excelente, mas abre um debate necessário e aumenta o papel do governo federal. Afirma que a União passa a ter a coordenação estratégica do SUSP sem sobrepor a autonomia dos estados sobre as polícias civil e militar. Elogia pôr os fundos na Constituição e criar corregedorias e ouvidorias autônomas. Alerta que ampliar PF, PRF e guardas pode gerar disputas entre corporações.",
+        "premissas": [
+          "Coordenar estratégia é diferente de comandar as polícias estaduais."
+        ],
+        "pergunte": [
+          "Se a União só coordena, sem mandar, o que muda de fato em relação ao SUSP de 2018?"
+        ]
+      },
+      {
+        "id": "cosud-carta-rio-2025",
+        "posicao": "contrario",
+        "instituicao": "Cosud (governadores do Sul e Sudeste)",
+        "natureza": "Consórcio de sete governos estaduais; a maioria dos governadores é de oposição ao governo Lula",
+        "tipo": "Carta institucional",
+        "titulo": "Carta do Rio de Janeiro (Carta dos Governadores, 14ª edição do Cosud)",
+        "autores": "Cláudio Castro, Renato Casagrande, Tarcísio de Freitas, Romeu Zema, Eduardo Leite, Ratinho Júnior e Jorginho Mello",
+        "data": "06/12/2025",
+        "formato": "PDF",
+        "url": "https://www.parana.pr.gov.br/sites/default/arquivos_restritos/files/documento/2025-12/carta_dos_governadores_-_4_0.pdf",
+        "tese": "Os governadores pedem participação plena no debate da PEC 18/2025, porque os estados executam o policiamento, as investigações, a custódia e os presídios. Defendem preservar a autonomia das polícias estaduais e mantê-las subordinadas aos governadores. Querem que a União atue de forma complementar, e nunca substitutiva, e pedem compensação financeira pelos gastos estaduais com crimes federais.",
+        "numero": {
+          "valor": "70%",
+          "legenda": "da produção econômica do país está nos sete estados que assinam a carta"
+        },
+        "premissas": [
+          "Quem executa a segurança deve ter o poder de decidir sobre ela."
+        ],
+        "pergunte": [
+          "A carta defende autonomia, mas também pede mais dinheiro federal. Dá para receber mais recursos sem aceitar mais coordenação?"
+        ]
+      },
+      {
+        "id": "diplomatique-centralizacao-seguranca",
+        "posicao": "contrario",
+        "instituicao": "Le Monde Diplomatique Brasil",
+        "natureza": "Revista de análise política de linha progressista; autor é consultor em direitos humanos no Congresso",
+        "tipo": "Artigo de análise",
+        "titulo": "O projeto de centralização da segurança pública no Brasil",
+        "autores": "Matheus Rojja Fernandes",
+        "data": "28/07/2025",
+        "formato": "Página",
+        "url": "https://diplomatique.org.br/a-pec-de-centralizacao-da-seguranca-publica-no-brasil/",
+        "tese": "Concorda que falta coordenação entre os entes, mas diz que o defeito central da PEC é apostar em centralização excessiva em vez de cooperação. Critica a competência exclusiva da União para legislar sobre segurança e o aumento das tarefas da PF, que é bem menor que as polícias civis estaduais. Argumenta que bons resultados dependem mais da qualidade da coordenação entre governos do que da concentração de competências.",
+        "numero": {
+          "valor": "R$ 250 milhões",
+          "legenda": "custo estimado de transformar a PRF em Polícia Viária Federal, sem ganho operacional, segundo o relator citado"
+        },
+        "premissas": [
+          "Os estados têm experiência policial que se perde quando o poder é concentrado."
+        ],
+        "pergunte": [
+          "O texto analisa a versão de julho de 2025. A retirada da competência exclusiva da União resolve a crítica?"
+        ]
+      },
+      {
+        "id": "cobrapol-centralizacao-sem-solucao",
+        "posicao": "contrario",
+        "instituicao": "Cobrapol (Confederação Brasileira dos Policiais Civis)",
+        "natureza": "Entidade sindical que representa policiais civis estaduais; defende interesses da categoria",
+        "tipo": "Artigo de opinião",
+        "titulo": "PEC da segurança pública: centralização sem solução",
+        "autores": "Leandro Barbosa de Almeida (vice-presidente da Cobrapol)",
+        "data": "11/05/2025",
+        "formato": "Página",
+        "url": "https://www.poder360.com.br/opiniao/pec-da-seguranca-publica-centralizacao-sem-solucao/",
+        "tese": "Diz que a PEC reforça o controle federal sobre os órgãos estaduais sem criar mecanismos reais de integração. Vê como objetivo principal ampliar o papel da Polícia Federal, sem metas, investimento ou transparência. Afirma que as polícias estaduais, que enfrentam a maior parte do crime no dia a dia, seguem com estruturas antigas e pouco dinheiro, e que os fundos na Constituição não têm percentual mínimo, como saúde e educação.",
+        "premissas": [
+          "O gargalo da segurança é falta de recursos nas polícias estaduais, não falta de comando federal."
+        ],
+        "pergunte": [
+          "A entidade representa policiais civis. Até que ponto a crítica reflete disputa com a Polícia Federal?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "owdbNaHxv-c",
+        "titulo": "PEC da Segurança: entenda o que pode mudar com a aprovação",
+        "canal": "CNN Brasil",
+        "duracao": "7:27",
+        "nota": "As principais mudanças da proposta."
+      },
+      {
+        "id": "P3dETHu3PM8",
+        "titulo": "Senado deve votar PEC da Segurança Pública; entenda o que pode mudar",
+        "canal": "Rádio CBN",
+        "duracao": "3:20",
+        "nota": "Resumo às vésperas da votação."
+      },
+      {
+        "id": "_aa-RkvtGN4",
+        "titulo": "Alcolumbre tira da pauta a PEC da Segurança Pública",
+        "canal": "g1",
+        "duracao": "4:19",
+        "nota": "Por que a votação foi adiada em outubro de 2026."
+      },
+      {
+        "id": "BjMwASBQAes",
+        "titulo": "Entenda detalhes da PEC da Segurança Pública; especialista explica",
+        "canal": "Jovem Pan News",
+        "duracao": "14:03",
+        "nota": "Um especialista comenta o texto enviado pelo governo."
+      },
+      {
+        "id": "pK4R7eAOlA4",
+        "titulo": "Governadores de SP e GO criticam PEC da Segurança Pública",
+        "canal": "Record News",
+        "duracao": "3:00",
+        "nota": "A crítica dos estados à centralização."
+      },
+      {
+        "id": "6gHYWtQZLA4",
+        "titulo": "Lula x crime organizado: a nova estratégia do governo para a segurança",
+        "canal": "Cortes do Flow",
+        "duracao": "9:00",
+        "nota": "Conversa sobre a aposta do governo federal."
+      }
+    ],
+    "imagem": {
+      "arquivo": "img/temas/pec-seguranca-publica.jpg",
+      "autor": "Antonio Cruz/Agência Brasil",
+      "licenca": "CC BY 3.0 BR",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Brazilian_Federal_Highway_Police_2.jpg",
+      "legenda": "Agentes da Polícia Rodoviária Federal em operação numa rodovia do Distrito Federal.",
+      "alt": "Dois policiais rodoviários federais sinalizam carros numa rodovia com cones",
+      "posicao": "50% 50%"
+    }
   }
 ];

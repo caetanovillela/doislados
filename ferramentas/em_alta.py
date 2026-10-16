@@ -62,6 +62,22 @@ TERMOS = {
     "redes-sociais": [r"regula\w* (das|de) (redes|plataformas|big ?techs)", r"big ?techs?", r"marco civil da internet", r"pl das fake news", r"pl 2\.?630", r"plataformas digitais", r"eca digital"],
     "marco-temporal": [r"marco temporal", r"terras? indigenas?", r"demarcac\w+ (de|das) terras", r"lei 14\.?701", r"pec 48"],
     "foz-amazonas": [r"foz do amazonas", r"margem equatorial", r"bloco 59", r"fz-?m-?59"],
+    "trabalho-aplicativos": [r"motoristas? de aplicativo", r"entregadores?", r"uberizacao", r"plp 12", r"plp 152", r"vinculo (de emprego|empregaticio) com (aplicativos|plataformas)"],
+    "voto-obrigatorio": [r"voto (obrigatorio|facultativo)", r"obrigatoriedade do voto", r"\babstencao"],
+    "emendas-parlamentares": [r"emendas? (parlamentar|pix|de bancada|de comissao|individua)", r"orcamento secreto", r"adpf 854"],
+    "novo-ensino-medio": [r"(novo )?ensino medio", r"itinerarios formativos", r"lei 14\.?945"],
+    "bets": [r"\bbets?\b", r"apostas (esportivas|online|de quota fixa)", r"cassino online", r"mp 1\.?394"],
+    "ajuste-fiscal": [r"arcabouco fiscal", r"corte de gastos", r"divida (publica|bruta)", r"meta fiscal", r"ajuste fiscal", r"deficit primario"],
+    "previdencia-salario-minimo": [r"reforma da previdencia", r"desvincula\w* .{0,40}salario minimo", r"aposentadorias? .{0,30}salario minimo", r"\bbpc\b", r"rombo da previdencia"],
+    "autonomia-banco-central": [r"autonomia (financeira|orcamentaria) do (bc|banco central)", r"pec 65", r"autonomia do (bc|banco central)"],
+    "licenciamento-ambiental": [r"licenciamento ambiental", r"lei 15\.?190", r"\blicenca (ambiental especial|por adesao)", r"pl da devastacao"],
+    "desoneracao-folha": [r"desoneracao da folha", r"reoneracao", r"17 setores"],
+    "fim-reeleicao": [r"fim da reeleicao", r"acabar com a reeleicao", r"pec 12/2022", r"mandatos? de (cinco|5) anos", r"eleicoes unificadas"],
+    "reforma-administrativa": [r"reforma administrativa", r"pec 38", r"supersalarios", r"penduricalhos", r"estabilidade (do|dos) servidor"],
+    "zona-franca-manaus": [r"zona franca", r"\bsuframa\b", r"polo industrial de manaus"],
+    "taxa-blusinhas": [r"taxa das blusinhas", r"remessa conforme", r"compras internacionais", r"mp 1\.?357"],
+    "acordo-mercosul-ue": [r"mercosul", r"acordo .{0,20}uniao europeia"],
+    "pec-seguranca-publica": [r"pec da seguranca", r"pec 18/2025", r"\bsusp\b", r"sistema unico de seguranca"],
 }
 
 JANELA_HORAS = 48
