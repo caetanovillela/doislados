@@ -642,9 +642,7 @@
   window.addEventListener("popstate", rotear);
   ligarBarra();
   // Abertura: entrada suave da página e o grifo do "Compare." traçado como marca-texto (só na primeira carga).
-  if (!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches)) {
-    document.documentElement.classList.add("abrindo");
-    setTimeout(() => document.documentElement.classList.remove("abrindo"), 1700);
-  }
+  document.documentElement.classList.add("abrindo");
+  setTimeout(() => document.documentElement.classList.remove("abrindo"), 2200);
   rotear();
 })();
