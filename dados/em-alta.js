@@ -3,19 +3,19 @@
 window.EM_ALTA_AUTO = {
   "tema": "escala-6x1",
   "veiculos": 8,
-  "noticias": 86,
+  "noticias": 79,
   "manchetes": [
+    {
+      "veiculo": "Poder360",
+      "titulo": "Fim da 6 X 1: Brasil terá tempo menor de transição que outros países",
+      "url": "https://www.poder360.com.br/poder-economia/fim-da-6-x-1-brasil-tera-tempo-menor-de-transicao-que-outros-paises/",
+      "data": "2026-10-16T09:00+00:00"
+    },
     {
       "veiculo": "Folha de S.Paulo",
       "titulo": "Governo quer regulamentar escala 6x1 em 60 dias e tenta esvaziar críticas da oposição",
       "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/governo-quer-regulamentar-escala-6x1-em-60-dias-e-tenta-esvaziar-criticas-da-oposicao.shtml",
       "data": "2026-10-16T07:00+00:00"
-    },
-    {
-      "veiculo": "Metrópoles",
-      "titulo": "Aprovação do fim da escala 6x1 atingirá 192 mil trabalhadores no DF",
-      "url": "https://www.metropoles.com/distrito-federal/aprovacao-do-fim-da-escala-6x1-atingira-192-mil-trabalhadores-no-df",
-      "data": "2026-10-16T05:44+00:00"
     },
     {
       "veiculo": "g1",
@@ -30,5 +30,5 @@ window.EM_ALTA_AUTO = {
       "data": "2026-10-16T00:21+00:00"
     }
   ],
-  "atualizado": "2026-10-16T07:08+00:00"
+  "atualizado": "2026-10-16T10:57+00:00"
 };
