@@ -1,27 +1,7 @@
-aplicativos | regulamentação motoristas de aplicativo PLP 12 a favor
-aplicativos | motoristas de aplicativo contra regulamentação PLP 12
-aplicativos | entregadores aplicativo direitos CLT uberização
-aplicativos | Cortes do Flow motorista de aplicativo
-aplicativos | Uber iFood regulamentação liberdade trabalhador autônomo
-voto-obrigatorio | voto obrigatório ou facultativo debate
-voto-obrigatorio | fim do voto obrigatório Brasil
-voto-obrigatorio | voto obrigatório defesa democracia
-voto-obrigatorio | Cortes do Flow voto obrigatório
-emendas | emendas parlamentares orçamento secreto explicado
-emendas | emendas pix Flávio Dino STF transparência
-emendas | deputado defende emendas parlamentares municípios
-emendas | Cortes do Flow emendas parlamentares
-ensino-medio | novo ensino médio críticas revogação
-ensino-medio | novo ensino médio defesa itinerários formativos
-ensino-medio | reforma do ensino médio 2024 explicada
-ensino-medio | Cortes do Flow ensino médio
-bets | proibir bets apostas online
-bets | regulamentação apostas esportivas bets Brasil defesa
-bets | bets vício endividamento jovens
-bets | Cortes do Flow bets
-bets | liberdade individual apostas bets proibição não funciona
-arcabouco | arcabouço fiscal explicado
-arcabouco | arcabouço fiscal críticas dívida pública
-arcabouco | gasto público investimento social defesa Haddad arcabouço
-arcabouco | Cortes do Flow gasto público dívida
-arcabouco | corte de gastos ajuste fiscal Brasil economista
+emendas | Arthur Lira defende emendas parlamentares
+emendas | Hugo Motta defende emendas parlamentares prefeitos
+emendas | Alcolumbre emendas parlamentares defesa Congresso
+ensino-medio | Mendonça Filho defende novo ensino médio
+ensino-medio | Priscila Cruz novo ensino médio
+ensino-medio | novo ensino médio ensino técnico vantagens estudante
+voto-obrigatorio | voto obrigatório importante democracia cientista político
