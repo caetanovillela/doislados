@@ -1,0 +1,24 @@
+name: Conferir Supabase
+# Confere, só com a chave pública, se a tabela de perfis e as regras de acesso estão no lugar.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/supabase-check.yml, supabase/**]
+permissions:
+  contents: read
+jobs:
+  conferir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Conferir
+        run: |
+          U=$(grep -o 'https://[a-z0-9]*\.supabase\.co' dados/supabase.js)
+          K=$(grep -o 'sb_publishable_[A-Za-z0-9_-]*' dados/supabase.js)
+          h=(-H "apikey: $K")
+          echo "== Configuração de login"; curl -sS "${h[@]}" "$U/auth/v1/settings" | python3 -c 'import json,sys; d=json.load(sys.stdin); print({k:d.get(k) for k in ("disable_signup","mailer_autoconfirm","phone_autoconfirm")}); print("e-mail ligado:", d.get("external",{}).get("email"))'
+          echo "== Tabela perfis (visitante anônimo deve ver lista vazia ou ser barrado)"; curl -sS "${h[@]}" "$U/rest/v1/perfis?select=*&limit=5" -w "  [HTTP %{http_code}]\n"
+          echo "== Colunas"; for c in id nome dados atualizado_em instituicao nivel uf interesses; do printf "%s: " $c; curl -sS -o /dev/null -w "%{http_code}\n" "${h[@]}" "$U/rest/v1/perfis?select=$c&limit=0"; done
+          echo "== Anônimo tentando gravar (deve falhar)"; curl -sS "${h[@]}" -H "Content-Type: application/json" -X POST "$U/rest/v1/perfis" -d '{"id":"00000000-0000-0000-0000-000000000000","nome":"x"}' -w "  [HTTP %{http_code}]\n"
+          echo "== Função apagar_conta como anônimo (deve ser barrada)"; curl -sS "${h[@]}" -H "Content-Type: application/json" -X POST "$U/rest/v1/rpc/apagar_conta" -d '{}' -w "  [HTTP %{http_code}]\n"
