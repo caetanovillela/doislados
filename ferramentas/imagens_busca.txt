@@ -1,19 +1,11 @@
-licenciamento-ambiental | *licenciamento ambiental
-licenciamento-ambiental | Ibama
-licenciamento-ambiental | *hidrelétrica Belo Monte
-desoneracao-folha | indústria trabalhadores fábrica
-desoneracao-folha | *fábrica Brasil linha de produção
-desoneracao-folha | carteira de trabalho
-reeleicao | eleições urna
-reeleicao | posse presidente Congresso
-reforma-administrativa | servidores públicos
-reforma-administrativa | Esplanada dos Ministérios
-zona-franca-manaus | *Manaus polo industrial
-zona-franca-manaus | *Zona Franca Manaus
-zona-franca-manaus | Manaus
-taxa-blusinhas | Correios
-taxa-blusinhas | *Correios encomendas
-taxa-blusinhas | Receita Federal aduana
-acordo-mercosul-ue | Mercosul cúpula
-acordo-mercosul-ue | *Porto de Santos
-acordo-mercosul-ue | Mercosul União Europeia
+autonomia-banco-central | *Banco Central do Brasil Brasília
+autonomia-banco-central | *Edifício sede Banco Central
+licenciamento-ambiental | *Usina Hidrelétrica Belo Monte
+licenciamento-ambiental | *desmatamento Amazônia
+licenciamento-ambiental | *Ibama fiscalização
+fim-reeleicao | *Palácio do Planalto
+fim-reeleicao | *urna eletrônica
+zona-franca-manaus | *Distrito Industrial Manaus
+zona-franca-manaus | *Manaus porto Rio Negro
+taxa-blusinhas | *Correios centro de tratamento
+taxa-blusinhas | *encomendas pacotes
