@@ -3,8 +3,20 @@
 window.EM_ALTA_AUTO = {
   "tema": "escala-6x1",
   "veiculos": 8,
-  "noticias": 93,
+  "noticias": 86,
   "manchetes": [
+    {
+      "veiculo": "Folha de S.Paulo",
+      "titulo": "Governo quer regulamentar escala 6x1 em 60 dias e tenta esvaziar críticas da oposição",
+      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/governo-quer-regulamentar-escala-6x1-em-60-dias-e-tenta-esvaziar-criticas-da-oposicao.shtml",
+      "data": "2026-10-16T07:00+00:00"
+    },
+    {
+      "veiculo": "Metrópoles",
+      "titulo": "Aprovação do fim da escala 6x1 atingirá 192 mil trabalhadores no DF",
+      "url": "https://www.metropoles.com/distrito-federal/aprovacao-do-fim-da-escala-6x1-atingira-192-mil-trabalhadores-no-df",
+      "data": "2026-10-16T05:44+00:00"
+    },
     {
       "veiculo": "g1",
       "titulo": "Alcolumbre diz que vai promulgar fim da 6x1 e aposentadoria especial para agentes de saúde na sexta",
@@ -16,19 +28,7 @@ window.EM_ALTA_AUTO = {
       "titulo": "Mendonça proíbe Lula de dizer que Flávio é contra o fim da escala 6x1",
       "url": "https://www.estadao.com.br/politica/eleicoes/mendonca-proibe-lula-de-dizer-que-flavio-e-contra-o-fim-da-escala-6x1/",
       "data": "2026-10-16T00:21+00:00"
-    },
-    {
-      "veiculo": "Poder360",
-      "titulo": "Fim da 6 X 1 pode elevar mensalidades escolares em até 23%",
-      "url": "https://www.poder360.com.br/poder-educacao/fim-da-6-x-1-pode-elevar-mensalidades-escolares-em-ate-23/",
-      "data": "2026-10-16T00:18+00:00"
-    },
-    {
-      "veiculo": "Agência Câmara",
-      "titulo": "Congresso promulga o fim da escala 6x1 e aposentadoria especial para agentes de saúde",
-      "url": "https://www.camara.leg.br/noticias/1311742-congresso-promulga-o-fim-da-escala-6x1-e-aposentadoria-especial-para-agentes-de-saude",
-      "data": "2026-10-15T23:49+00:00"
     }
   ],
-  "atualizado": "2026-10-16T01:14+00:00"
+  "atualizado": "2026-10-16T07:08+00:00"
 };
