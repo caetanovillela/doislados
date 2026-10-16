@@ -208,12 +208,12 @@
     const n = a.veiculos;
     return `
       <section class="em-alta" aria-labelledby="em-alta-titulo">
-        <div class="em-alta-selo mono"><span class="pulso" aria-hidden="true"></span>Em alta agora<span class="apagado">· Nas notícias ${esc(haQuanto(a.manchetes[0].data))}</span></div>
+        <div class="em-alta-selo mono"><span class="pulso" aria-hidden="true"></span>Em alta agora<span class="apagado">· Atualizado ${esc(haQuanto(a.manchetes[0].data))}</span></div>
         <h2 id="em-alta-titulo"><a href="#${tema.id}">${esc(tema.pergunta || tema.titulo)}</a></h2>
         <p>Esse assunto voltou ao noticiário e apareceu em ${n} ${n === 1 ? "veículo" : "veículos"} nos últimos dois dias. Antes de ler as manchetes, veja o que está em jogo e o que cada lado argumenta.</p>
         <div class="em-alta-acoes">
           <a class="botao" href="#${tema.id}">Entenda os dois lados</a>
-          <span class="mono apagado">${doLado(tema, "favoravel").length + doLado(tema, "contrario").length} estudos · ${esc(nomeCategoria(tema.categoria))}</span>
+          <span class="mono apagado">${doLado(tema, "favoravel").length + doLado(tema, "contrario").length} estudos no dossiê · Categoria: <a href="#categoria/${tema.categoria}">${esc(nomeCategoria(tema.categoria))}</a></span>
         </div>
         <p class="em-alta-veiculos mono apagado">Depois, compare a cobertura:${a.manchetes.map((m) => ` <a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.veiculo)} ↗</a>`).join(" ·")}</p>
       </section>`;
@@ -229,7 +229,7 @@
         <p>${esc(e.texto)}</p>
         <div class="em-alta-acoes">
           <a class="botao" href="#${tema.id}">Entenda os dois lados</a>
-          <span class="mono apagado">${doLado(tema, "favoravel").length + doLado(tema, "contrario").length} estudos · ${esc(nomeCategoria(tema.categoria))}</span>
+          <span class="mono apagado">${doLado(tema, "favoravel").length + doLado(tema, "contrario").length} estudos no dossiê · Categoria: <a href="#categoria/${tema.categoria}">${esc(nomeCategoria(tema.categoria))}</a></span>
           ${e.fonte ? `<a class="botao-texto" href="${esc(e.fonte.url)}" target="_blank" rel="noopener">Ver a notícia ↗</a>` : ""}
         </div>
       </section>`;

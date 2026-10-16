@@ -125,6 +125,8 @@ h1, h2, h3 { font-family: var(--f-titulo); text-wrap: balance; margin: 0; }
 .em-alta-veiculos a:hover { color: var(--tinta); }
 .em-alta-acoes { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; padding-top: 4px; }
 .em-alta-acoes .botao { text-decoration: none; }
+.em-alta-acoes .mono a { color: inherit; }
+.em-alta-acoes .mono a:hover { color: var(--tinta); }
 
 /* Utilidades */
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
