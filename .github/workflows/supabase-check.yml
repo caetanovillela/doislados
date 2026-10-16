@@ -18,7 +18,6 @@ jobs:
           K=$(grep -o 'sb_publishable_[A-Za-z0-9_-]*' dados/supabase.js)
           h=(-H "apikey: $K")
           echo "== Configuração de login"; curl -sS "${h[@]}" "$U/auth/v1/settings" | python3 -c 'import json,sys; d=json.load(sys.stdin); print({k:d.get(k) for k in ("disable_signup","mailer_autoconfirm","phone_autoconfirm")}); print("e-mail ligado:", d.get("external",{}).get("email"))'
-          echo "== Visitante sem login lendo a tabela (deve ser barrado: 401)"; curl -sS "${h[@]}" "$U/rest/v1/perfis?select=id&limit=1" -w "  [HTTP %{http_code}]
-"
+          echo "== Visitante sem login lendo a tabela (deve ser barrado: 401)"; curl -sS "${h[@]}" "$U/rest/v1/perfis?select=id&limit=1" -w "  [HTTP %{http_code}]\n"
           echo "== Anônimo tentando gravar (deve falhar)"; curl -sS "${h[@]}" -H "Content-Type: application/json" -X POST "$U/rest/v1/perfis" -d '{"id":"00000000-0000-0000-0000-000000000000","nome":"x"}' -w "  [HTTP %{http_code}]\n"
           echo "== Função apagar_conta como anônimo (deve ser barrada)"; curl -sS "${h[@]}" -H "Content-Type: application/json" -X POST "$U/rest/v1/rpc/apagar_conta" -d '{}' -w "  [HTTP %{http_code}]\n"
