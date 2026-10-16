@@ -239,7 +239,7 @@
     raiz.innerHTML = `
       <section class="capa capa-foto">
         <img class="banner-foto" src="img/capa/congresso.jpg" alt="Congresso Nacional, em Brasília, à noite" decoding="async" fetchpriority="high">
-        <h1>Duvide.<br><span class="grifo">Compare.</span><br>Decida.</h1>
+        <h1>Duvide.<br><span class="grifo" data-t="Compare.">Compare.</span><br>Decida.</h1>
         <p class="sub">Cada tema reúne estudos das principais universidades e instituições do país, de um lado e do outro, com quem fez cada um e de onde ele parte.</p>
         <p class="capa-credito mono">Congresso Nacional, Brasília · Foto: Rodolfo Stuckert/Câmara dos Deputados · <a href="https://creativecommons.org/licenses/by/3.0" target="_blank" rel="noopener">CC BY 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Congresso_Nacional_do_Brasil_em_noite_de_lua_cheia.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></p>
       </section>
@@ -641,5 +641,10 @@
   window.addEventListener("hashchange", rotear);
   window.addEventListener("popstate", rotear);
   ligarBarra();
+  // Abertura: entrada suave da página e o grifo do "Compare." traçado como marca-texto (só na primeira carga).
+  if (!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches)) {
+    document.documentElement.classList.add("abrindo");
+    setTimeout(() => document.documentElement.classList.remove("abrindo"), 1700);
+  }
   rotear();
 })();
