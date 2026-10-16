@@ -1,4 +1,4 @@
-taxa-blusinhas | *Receita Federal remessas internacionais
-taxa-blusinhas | *centro de distribuição encomendas
-taxa-blusinhas | *Correios Curitiba encomendas internacionais
-taxa-blusinhas | *compras online pacote entrega
+taxa-blusinhas | *Correios Brazil
+taxa-blusinhas | *Receita Federal aduana aeroporto
+taxa-blusinhas | Marcelo Camargo Correios
+taxa-blusinhas | *parcel sorting center
