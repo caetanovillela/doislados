@@ -80,6 +80,48 @@
     };
   }
 
+  /* ---------- Ícones de perfil (desenhados para o site) ---------- */
+
+  // Cada ícone brinca com a ideia de dois lados. Cores pelo tema: av-t (tinta), av-g (lilás), av-p (papel).
+  const AVATARES = [
+    ["metade", "Metade e metade", '<rect class="av-p" width="48" height="48"/><path class="av-t" d="M24 9a15 15 0 0 0 0 30z"/><path class="av-g" d="M24 9a15 15 0 0 1 0 30z"/>'],
+    ["diagonal", "Diagonal", '<rect class="av-t" width="48" height="48"/><path class="av-g" d="M48 0v48H0z"/>'],
+    ["eclipse", "Eclipse", '<rect class="av-g" width="48" height="48"/><circle class="av-t" cx="19" cy="24" r="11"/><circle class="av-ts" cx="29" cy="24" r="11" fill="none" stroke-width="3"/>'],
+    ["balanca", "Balança", '<rect class="av-p" width="48" height="48"/><path class="av-ts" fill="none" stroke-width="3" d="M24 11v25M11 16h26M16 37h16"/><path class="av-ts" fill="none" stroke-width="1.6" d="M11 16 6 27M11 16l5 11M37 16l-5 11M37 16l5 11"/><path class="av-t" d="M5 27h12a6 6 0 0 1-12 0z"/><path class="av-g" d="M31 27h12a6 6 0 0 1-12 0z"/>'],
+    ["baloes", "Conversa", '<rect class="av-p" width="48" height="48"/><path class="av-t" d="M6 9h21v15H15l-6 6v-6H6z"/><path class="av-g" d="M42 21H21v15h12l6 6v-6h3z"/>'],
+    ["livro", "Livro aberto", '<rect class="av-p" width="48" height="48"/><path class="av-t" d="M24 15c-4-3-10-4-17-3v24c7-1 13 0 17 3z"/><path class="av-g" d="M24 15c4-3 10-4 17-3v24c-7-1-13 0-17 3z"/>'],
+    ["aspas", "Aspas", '<rect class="av-g" width="48" height="48"/><path class="av-t" d="M9 33V23c0-7 4-11 10-12l1.5 3.5C17 15.5 15.5 18 15.5 21H20v12zM27 33V23c0-7 4-11 10-12l1.5 3.5C35 15.5 33.5 18 33.5 21H38v12z"/>'],
+    ["setas", "Ida e volta", '<rect class="av-g" width="48" height="48"/><path class="av-ts" fill="none" stroke-width="3.5" stroke-linecap="square" d="M9 18h28m-7-7 7 7-7 7M39 31H11m7-7-7 7 7 7"/>'],
+    ["lupa", "Lupa", '<rect class="av-p" width="48" height="48"/><circle class="av-g" cx="21" cy="21" r="10"/><circle class="av-ts" cx="21" cy="21" r="10" fill="none" stroke-width="3.5"/><path class="av-ts" stroke-width="5.5" d="M28.5 28.5l10 10"/>'],
+    ["listras", "Listras", '<rect class="av-t" width="48" height="48"/><path class="av-gs" stroke-width="5" d="M-4 20 20-4M-4 36 36-4M4 52 52 4M20 52 52 20M36 52 52 36"/>'],
+    ["pontos", "Pontos", '<rect class="av-p" width="48" height="48"/>' + [9, 19, 29, 39].map((y) => [9, 19, 29, 39].map((x) => `<circle class="${x < 24 ? "av-t" : "av-g"}" cx="${x}" cy="${y}" r="4"/>`).join("")).join("")],
+    ["ab", "A e B", '<rect class="av-t" width="24" height="48"/><rect class="av-g" x="24" width="24" height="48"/><path class="av-p" fill-rule="evenodd" d="M5.5 34 10.6 14h3.8l5.1 20h-3.6l-1.1-4.6H10.2L9.1 34zm5.4-7.8h3.2L12.5 19z"/><path class="av-t" fill-rule="evenodd" d="M29 14h7.2c3.3 0 5.3 1.8 5.3 4.7 0 1.9-1 3.3-2.6 3.9 2 .5 3.3 2.1 3.3 4.4 0 3.2-2.3 5-5.8 5H29zm3.5 3v5.3h3.3c1.6 0 2.5-1 2.5-2.7 0-1.6-.9-2.6-2.5-2.6zm0 8.2V31h3.7c1.8 0 2.8-1.1 2.8-2.9s-1-2.9-2.8-2.9z"/>'],
+  ];
+  const svgAvatar = (id) => {
+    const a = AVATARES.find((x) => x[0] === id) || AVATARES[0];
+    return `<svg viewBox="0 0 48 48" aria-hidden="true" class="avatar-svg">${a[2]}</svg>`;
+  };
+  // Ícone padrão: escolhido pelo nome, para cada pessoa já começar com um diferente.
+  const avatarPadrao = (semente) => AVATARES[[...String(semente || "")].reduce((n, c) => (n * 31 + c.charCodeAt(0)) >>> 0, 7) % AVATARES.length][0];
+
+  // Preferências do site; o padrão é tudo ligado e o tema claro.
+  const PREFS_PADRAO = { autoLido: true, paraVoce: true, historico: true, tema: "light" };
+  const prefs = () => Object.assign({}, PREFS_PADRAO, (dados.conta && dados.conta.prefs) || {});
+
+  // Aparência e preferências, também só com valores conhecidos.
+  function extrasSeguros(c) {
+    c = c && typeof c === "object" ? c : {};
+    const p = c.prefs && typeof c.prefs === "object" ? c.prefs : {};
+    const prefsOk = {};
+    for (const k of ["autoLido", "paraVoce", "historico"]) if (typeof p[k] === "boolean") prefsOk[k] = p[k];
+    if (p.tema === "light" || p.tema === "dark") prefsOk.tema = p.tema;
+    return {
+      avatar: AVATARES.some((a) => a[0] === c.avatar) ? c.avatar : "",
+      foto: typeof c.foto === "string" && /^\d{4}-\d\d-\d\dT[\d:.]+Z$/.test(c.foto) ? c.foto : "",
+      prefs: prefsOk,
+    };
+  }
+
   /* ---------- Conta (Supabase) ---------- */
 
   const SB = window.SUPABASE || {};
@@ -182,11 +224,13 @@
       desde: antes.desde || agora(),
       aceite: antes.aceite || (dados.conta && dados.conta.aceite) || "",
       pulou: !!(antes.pulou || (dados.conta && dados.conta.pulou)),
-    });
+    }, extrasSeguros(remoto && remoto.dados && remoto.dados.conta ? antes : Object.assign({}, dados.conta, antes)));
     armazem.gravar(dados);
+    aplicarTema();
     pintarBotoes();
     pintarTopo();
     await enviar();
+    if (dados.conta.foto && fotoCache().v !== dados.conta.foto) baixarFoto().catch(() => {});
   }
 
   let envioTimer;
@@ -221,7 +265,7 @@
   // O que vai para o banco: só o necessário (o e-mail já fica no login, não se repete aqui).
   function paraEnvio() {
     const c = dados.conta || {};
-    return { versao: 1, conta: Object.assign(perfilSeguro(c), { desde: c.desde || "", aceite: c.aceite || "", pulou: !!c.pulou }), itens: dados.itens, historico: dados.historico };
+    return { versao: 1, conta: Object.assign(perfilSeguro(c), extrasSeguros(c), { desde: c.desde || "", aceite: c.aceite || "", pulou: !!c.pulou }), itens: dados.itens, historico: dados.historico };
   }
 
   function pintarSincronia() {
@@ -253,7 +297,8 @@
     clearTimeout(envioTimer);
     if (t && !semAvisarServidor) api("/auth/v1/logout", { metodo: "POST", token: t }).catch(() => {});
     esquecerSessao();
-    // Quem sai não deixa o que salvou à vista de quem usar o aparelho depois.
+    // Quem sai não deixa o que salvou (nem a foto) à vista de quem usar o aparelho depois.
+    try { localStorage.removeItem(CHAVE_FOTO); } catch (e) {}
     dados = vazio();
     armazem.gravar(dados);
     conta.sincronia = "";
@@ -264,9 +309,126 @@
   async function apagarConta() {
     const t = await token();
     if (!t) throw new Error("rede");
+    // A foto fica no armazenamento de arquivos, que não é apagado junto com o login: sai primeiro.
+    await arquivo("DELETE", t).catch(() => {});
     await api("/rest/v1/rpc/apagar_conta", { metodo: "POST", token: t, corpo: {} });
     await sair(true);
   }
+
+  /* ---------- Foto de perfil ---------- */
+
+  // A foto fica num balde privado do Supabase, em <id da pessoa>/avatar.jpg: só a dona consegue ler ou trocar.
+  const CHAVE_FOTO = "dois-lados-foto";
+  const caminhoFoto = () => `/storage/v1/object/avatares/${encodeURIComponent(sessao.user.id)}/avatar.jpg`;
+  async function arquivo(metodo, t, corpo) {
+    let r;
+    try {
+      r = await fetch(base + (metodo === "GET" ? caminhoFoto().replace("/object/", "/object/authenticated/") : caminhoFoto()), {
+        method: metodo,
+        headers: Object.assign({ apikey: SB.chave, Authorization: "Bearer " + t }, corpo ? { "Content-Type": "image/jpeg", "x-upsert": "true" } : {}),
+        body: corpo,
+      });
+    } catch (e) { throw new Error("rede"); }
+    if (!r.ok) {
+      const texto = await r.text().catch(() => "");
+      const err = new Error(/bucket not found/i.test(texto) ? "sem-balde" : texto || "HTTP " + r.status);
+      err.status = r.status;
+      throw err;
+    }
+    return r;
+  }
+  function fotoCache() {
+    try {
+      const f = JSON.parse(localStorage.getItem(CHAVE_FOTO) || "null");
+      if (f && sessao && f.uid === sessao.user.id && /^data:image\/jpeg;base64,[A-Za-z0-9+/=]+$/.test(f.url)) return f;
+    } catch (e) {}
+    return {};
+  }
+  function guardarFotoCache(v, url) {
+    try { localStorage.setItem(CHAVE_FOTO, JSON.stringify({ uid: sessao.user.id, v, url })); } catch (e) {}
+  }
+  const paraDataUrl = (blob) => new Promise((ok, falha) => {
+    const r = new FileReader();
+    r.onload = () => ok(r.result);
+    r.onerror = falha;
+    r.readAsDataURL(blob);
+  });
+  async function baixarFoto() {
+    const t = await token();
+    if (!t || !dados.conta.foto) return;
+    const r = await arquivo("GET", t);
+    // Força o tipo: o que vier do servidor só é usado como imagem JPEG.
+    const url = await paraDataUrl(new Blob([await r.arrayBuffer()], { type: "image/jpeg" }));
+    guardarFotoCache(dados.conta.foto, url);
+    pintarTopo();
+    repintarPerfil();
+  }
+
+  // Recorta no centro, reduz para 320×320 e salva de novo como JPEG. Isso descarta os dados escondidos
+  // da foto original (localização GPS, modelo do celular, data) e qualquer coisa que não seja a imagem.
+  async function prepararFoto(arq) {
+    if (!arq || !/^image\/(jpeg|png|webp)$/.test(arq.type)) throw new Error("Use uma foto JPG, PNG ou WebP.");
+    if (arq.size > 15 * 1024 * 1024) throw new Error("Essa foto é grande demais. Use uma de até 15 MB.");
+    let img;
+    try { img = await createImageBitmap(arq, { imageOrientation: "from-image" }); }
+    catch (e) { try { img = await createImageBitmap(arq); } catch (er) { throw new Error("Não deu para abrir essa imagem."); } }
+    const lado = Math.min(img.width, img.height);
+    const tela = document.createElement("canvas");
+    tela.width = tela.height = 320;
+    const ctx = tela.getContext("2d");
+    ctx.drawImage(img, (img.width - lado) / 2, (img.height - lado) / 2, lado, lado, 0, 0, 320, 320);
+    if (img.close) img.close();
+    const gerar = (q) => new Promise((ok) => tela.toBlob(ok, "image/jpeg", q));
+    let blob = await gerar(0.85);
+    if (blob && blob.size > 280000) blob = await gerar(0.7);
+    if (!blob) throw new Error("Não deu para preparar essa imagem.");
+    return { blob, url: tela.toDataURL("image/jpeg", 0.85) };
+  }
+
+  async function enviarFoto(arq) {
+    const t = await token();
+    if (!t) throw new Error("Entre na sua conta para enviar uma foto.");
+    const { blob, url } = await prepararFoto(arq);
+    try { await arquivo("POST", t, blob); }
+    catch (e) { throw new Error(e.message === "sem-balde" ? "O envio de fotos ainda não foi liberado no servidor." : e.message === "rede" ? "Não deu para falar com o servidor." : "Não deu para enviar a foto. Tente outra."); }
+    dados.conta.foto = agora();
+    dados.conta.avatar = "";
+    guardarFotoCache(dados.conta.foto, url);
+    salvar();
+  }
+
+  async function removerFoto() {
+    const t = await token();
+    if (t) await arquivo("DELETE", t).catch(() => {});
+    dados.conta.foto = "";
+    try { localStorage.removeItem(CHAVE_FOTO); } catch (e) {}
+    salvar();
+  }
+
+  // Imagem de perfil pronta para o HTML: foto (se houver) ou ícone.
+  function avatarHTML(c) {
+    c = c || dados.conta || {};
+    const foto = sessao && c.foto ? fotoCache() : {};
+    if (foto.url && foto.v === c.foto) return `<img class="avatar-foto" src="${esc(foto.url)}" alt="">`;
+    return svgAvatar(c.avatar || avatarPadrao((sessao && sessao.user.id) || c.nome));
+  }
+
+  /* ---------- Tema (preferência que acompanha a conta) ---------- */
+
+  const raizHtml = document.documentElement;
+  function aplicarTema() {
+    const t = sessao && dados.conta && dados.conta.prefs && dados.conta.prefs.tema;
+    if (t && raizHtml.dataset.theme !== t) {
+      raizHtml.dataset.theme = t;
+      try { localStorage.setItem("tema", t); } catch (e) {}
+    }
+  }
+  // O botão de lua/sol do topo também vale como preferência da conta.
+  new MutationObserver(() => {
+    if (!sessao || !dados.conta) return;
+    const t = raizHtml.dataset.theme === "dark" ? "dark" : "light";
+    if (prefs().tema !== t) { dados.conta.prefs = Object.assign({}, dados.conta.prefs, { tema: t }); salvar(); }
+  }).observe(raizHtml, { attributes: true, attributeFilter: ["data-theme"] });
 
   // Links dos e-mails do Supabase voltam com o resultado no endereço (#access_token=... ou #error=...).
   // Isso é lido antes do app.js montar a página, e o endereço vira #perfil.
@@ -363,13 +525,14 @@
     });
   }
 
-  // Ícone do topo: mostra a inicial do nome quando o perfil tem nome.
+  // Ícone do topo: a foto ou o ícone escolhido, quando a pessoa tem perfil.
+  const ICONE_PESSOA = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="none" stroke="currentColor" stroke-width="2"/></svg>';
   function pintarTopo() {
     const a = document.getElementById("perfil-botao");
     if (!a) return;
     const nome = dados.conta && dados.conta.nome;
     a.classList.toggle("com-nome", !!nome);
-    a.querySelector(".perfil-inicial").textContent = nome ? nome.trim()[0].toUpperCase() : "";
+    a.innerHTML = nome ? `<span class="avatar">${avatarHTML()}</span>` : ICONE_PESSOA;
     const rot = nome ? `Seu perfil, ${nome}` : nuvem ? "Entrar ou criar conta" : "Seu perfil: o que salvou e o que já leu";
     a.setAttribute("aria-label", rot);
     a.title = rot;
@@ -410,7 +573,7 @@
     // Abrir o texto original de um estudo ou tocar um vídeo conta como lido.
     const cartao = e.target.closest("[data-chave-auto]");
     const link = e.target.closest("a[href^='http'], [data-video]");
-    if (cartao && link && cartao.contains(link)) {
+    if (cartao && link && cartao.contains(link) && prefs().autoLido) {
       const chave = cartao.dataset.chaveAuto;
       const antes = estadoDe(chave);
       if (antes !== "lido") {
@@ -423,7 +586,7 @@
   // Histórico: últimos temas abertos.
   function registrarVisita() {
     const id = decodeURIComponent(location.hash.replace(/^#/, "")).split(".")[0];
-    if (temas.some((t) => t.id === id && !t.emBreve)) {
+    if (prefs().historico && temas.some((t) => t.id === id && !t.emBreve)) {
       dados.historico = [{ tema: id, em: agora() }, ...dados.historico.filter((h) => h.tema !== id)].slice(0, 30);
       armazem.gravar(dados);
       agendarEnvio();
@@ -630,7 +793,7 @@
       const ints = (perfil.interesses || []).map(nomeCategoria).filter(Boolean);
       cab = `<header class="dossie perfil-cab">
           <span class="mono apagado">Perfil · desde ${dataBR(perfil.desde)}</span>
-          <h1>Oi, <span class="grifo">${esc(perfil.nome)}</span>.</h1>
+          <div class="perfil-titulo"><span class="avatar avatar-grande">${avatarHTML(perfil)}</span><h1>Oi, <span class="grifo">${esc(perfil.nome)}</span>.</h1></div>
           ${resumo ? `<p class="perfil-resumo">${resumo}</p>` : ""}
           ${ints.length ? `<ul class="chips" aria-label="Seus interesses">${ints.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>` : ""}
           <p>O que você guardou para depois, o que já leu e quanto leu de cada lado.</p>
@@ -661,7 +824,12 @@
       ? `<section class="bloco perfil-conta" aria-labelledby="conta-h">
         <div class="bloco-cab"><h2 id="conta-h">Seu perfil</h2><span class="mono apagado" id="perfil-sincronia"></span></div>
         <div class="perfil-conta-grade">
-          ${completar ? `<p class="apagado">Preencha seu perfil no quadro lá em cima.</p>` : formPerfil(perfil || {}, "editar")}
+          <div class="perfil-coluna">
+            ${blocoAparencia(perfil || {})}
+            ${completar ? `<p class="apagado">Preencha seu perfil no quadro lá em cima.</p>` : formPerfil(perfil || {}, "editar")}
+          </div>
+          <div class="perfil-coluna">
+          ${blocoPreferencias()}
           <div class="perfil-acoes">
             <h3 class="mono apagado">Conta</h3>
             <p class="apagado">Entrou como ${esc(sessao.user.email)}. Só você vê o seu perfil. <a href="#privacidade">Como cuidamos dos seus dados</a>.</p>
@@ -670,6 +838,7 @@
               <button type="button" class="botao botao-claro" data-exportar>Baixar meus dados</button>
               <button type="button" class="botao-texto remover" data-apagar-conta>Apagar minha conta</button>
             </div>
+          </div>
           </div>
         </div>
       </section>`
@@ -777,10 +946,69 @@
       repintar();
       avisar("Perfil salvo.");
     }));
+    raiz.querySelectorAll("[data-avatar]").forEach((b) => b.addEventListener("click", async () => {
+      if (dados.conta.foto && !confirm("Usar este ícone no lugar da sua foto? A foto será apagada.")) return;
+      if (dados.conta.foto) await removerFoto();
+      dados.conta.avatar = b.dataset.avatar;
+      salvar();
+      repintar();
+      avisar("Ícone trocado.");
+    }));
+    const foto = raiz.querySelector("[data-foto]");
+    if (foto) foto.addEventListener("change", async () => {
+      const arq = foto.files[0];
+      foto.value = "";
+      if (!arq) return;
+      avisar("Enviando a foto…");
+      try { await enviarFoto(arq); repintar(); avisar("Foto atualizada."); }
+      catch (e) { avisar(e.message); }
+    });
+    const tirar = raiz.querySelector("[data-remover-foto]");
+    if (tirar) tirar.addEventListener("click", async () => { await removerFoto(); repintar(); avisar("Foto removida."); });
+    raiz.querySelectorAll("[data-pref]").forEach((x) => x.addEventListener("change", () => {
+      const k = x.dataset.pref;
+      const valor = k === "tema" ? (x.checked ? "dark" : "light") : x.checked;
+      dados.conta.prefs = Object.assign({}, dados.conta.prefs, { [k]: valor });
+      if (k === "historico" && !valor) dados.historico = [];
+      if (k === "tema") aplicarTema();
+      salvar();
+      avisar(k === "historico" && !valor ? "Histórico desligado e apagado." : "Preferência salva.");
+    }));
     const pular = raiz.querySelector("[data-pular]");
     if (pular) pular.addEventListener("click", () => { conta.completar = false; dados.conta.pulou = true; salvar(); repintar(); });
     const imp = raiz.querySelector("[data-importar]");
     if (imp) imp.addEventListener("change", () => importar(imp.files[0], repintar));
+  }
+
+  function blocoAparencia(p) {
+    const temFoto = !!(p.foto && fotoCache().v === p.foto);
+    const atual = temFoto ? "" : p.avatar || avatarPadrao((sessao && sessao.user.id) || p.nome);
+    return `<div class="aparencia">
+      <h3 class="mono apagado">Sua imagem</h3>
+      <div class="aparencia-atual">
+        <span class="avatar avatar-grande">${avatarHTML(p)}</span>
+        <div class="aparencia-acoes">
+          ${sessao ? `<label class="botao botao-claro">${temFoto ? "Trocar foto" : "Enviar foto"}<input type="file" accept="image/jpeg,image/png,image/webp" data-foto hidden></label>` : ""}
+          ${temFoto ? '<button type="button" class="botao-texto remover" data-remover-foto>Remover foto</button>' : ""}
+          <p class="perfil-nota apagado">${sessao ? "A foto é recortada, reduzida e limpa de dados escondidos (como a localização) antes de sair do seu aparelho. Só você vê." : "Escolha um ícone."}</p>
+        </div>
+      </div>
+      <div class="avatar-grade" role="group" aria-label="Ou escolha um ícone">
+        ${AVATARES.map(([id, nome]) => `<button type="button" class="avatar avatar-opcao" data-avatar="${id}" aria-pressed="${id === atual}" title="${esc(nome)}" aria-label="${esc(nome)}">${svgAvatar(id)}</button>`).join("")}
+      </div>
+    </div>`;
+  }
+
+  function blocoPreferencias() {
+    const p = prefs();
+    const chave = (k, texto, marcado) => `<label class="chave"><input type="checkbox" role="switch" data-pref="${k}"${marcado ? " checked" : ""}><span class="chave-trilho" aria-hidden="true"></span><span>${texto}</span></label>`;
+    return `<div class="preferencias">
+      <h3 class="mono apagado">Preferências</h3>
+      ${chave("autoLido", "Marcar como lido quando eu abrir um estudo ou vídeo", p.autoLido)}
+      ${chave("paraVoce", "Mostrar “Para você” na página inicial", p.paraVoce)}
+      ${chave("historico", "Guardar os temas que eu abro (histórico)", p.historico)}
+      ${chave("tema", "Usar o modo escuro", (raizHtml.dataset.theme || p.tema) === "dark")}
+    </div>`;
   }
 
   const nomeNivel = (id) => (NIVEIS.find(([x]) => x === id) || [])[1] || "";
@@ -822,6 +1050,8 @@
       ${secao("O que guardamos", `
         <p><strong>Para a conta:</strong> seu e-mail e sua senha. A senha é guardada pelo Supabase, o serviço de login que usamos, de forma embaralhada (com hash bcrypt). Nem nós conseguimos ver qual é.</p>
         <p><strong>No perfil, se você quiser preencher:</strong> nome ou apelido, onde estuda, nível de estudo, estado e áreas de interesse. Tudo é opcional, menos o nome.</p>
+        <p><strong>Foto de perfil, se você enviar:</strong> antes de sair do seu aparelho, a foto é recortada, reduzida e salva de novo, o que apaga os dados escondidos nela (como a localização GPS e o modelo do celular). Ela fica numa área privada: só você consegue abrir. Se preferir, use um dos ícones do site.</p>
+        <p><strong>Suas preferências:</strong> como o site se comporta para você (modo escuro, histórico, marcação automática).</p>
         <p><strong>O que você faz no site:</strong> os temas, estudos e vídeos que salvou para depois, os que marcou como lidos e os temas que abriu.</p>
         <p><strong>O que não guardamos:</strong> CPF, telefone, endereço, data de nascimento, localização, contatos ou qualquer dado de cartão. Não há anúncios, nem rastreadores, nem cookies de propaganda.</p>`)}
       ${secao("Para que usamos", `
@@ -835,7 +1065,8 @@
         <ul>
           <li><strong>ver e baixar</strong> tudo o que está guardado, pelo botão “Baixar meus dados” no seu perfil;</li>
           <li><strong>corrigir</strong> seu perfil, na própria página do perfil;</li>
-          <li><strong>apagar sua conta</strong>, pelo botão “Apagar minha conta”. O login e tudo o que você salvou são apagados na hora, sem volta.</li>
+          <li><strong>apagar sua conta</strong>, pelo botão “Apagar minha conta”. O login, a foto e tudo o que você salvou são apagados na hora, sem volta.</li>
+          <li><strong>desligar o histórico</strong> nas preferências do perfil, o que também apaga o que já estava guardado.</li>
         </ul>
         <p>Dúvidas ou pedidos: fale com o responsável pelo projeto em <a href="https://caetanovillela.com.br/" target="_blank" rel="noopener">caetanovillela.com.br</a>.</p>`)}
       ${secao("Cuidados que você pode tomar", `
@@ -850,7 +1081,7 @@
   function paraVoce() {
     const p = dados.conta;
     const ints = (p && p.interesses) || [];
-    if (!ints.length) return "";
+    if (!ints.length || !prefs().paraVoce) return "";
     const lidosDoTema = (t) => (t.leituras || []).filter((a) => estadoDe(`l:${t.id}:${a.id}`) === "lido").length;
     const lista = temas.filter((t) => !t.emBreve && ints.includes(t.categoria))
       .map((t, i) => ({ t, i, lidos: lidosDoTema(t), total: (t.leituras || []).length }))
@@ -903,6 +1134,7 @@
   }
 
   window.Perfil = { botoes, pagina, pintarBotoes, paraVoce, privacidade };
+  aplicarTema();
   registrarVisita();
   if (nuvem) {
     if (!sessao && dados.conta && dados.conta.email) conta.modo = "entrar";
