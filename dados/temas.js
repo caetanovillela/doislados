@@ -17,7 +17,8 @@
     contexto, pontos, glossario, incertezas, fontes
     leituras    textos de instituições: posicao ("favoravel" | "contrario"), instituicao, natureza,
                 tipo, titulo, autores, data, formato, url, tese, numero, premissas, pergunte
-    videos      { id: código do YouTube (o que vem depois de watch?v=), lado ("favoravel" ou "contrario"), titulo, canal, nota, duracao opcional }
+    videos      { id: código do YouTube (o que vem depois de watch?v=), titulo, canal, nota, duracao opcional }
+                Uma lista só, sem divisão por lado: vídeos curtos e técnicos, de canais variados.
                 A miniatura fica em img/videos/<id>.jpg.
 
   Antes de adicionar uma leitura, confira o link, a data e a posição do texto.
@@ -74,6 +75,11 @@ window.CATEGORIAS = [
     "id": "ambiente",
     "nome": "Meio ambiente e energia",
     "descricao": "Petróleo, floresta, clima e energia. Como conciliar crescimento econômico com a proteção do meio ambiente."
+  },
+  {
+    "id": "instituicoes",
+    "nome": "Política e instituições",
+    "descricao": "Eleições, Congresso, Orçamento e a relação entre os Poderes. Como as regras do jogo político funcionam e quem decide o quê."
   }
 ];
 
@@ -213,49 +219,38 @@ window.TEMAS = [
     ],
     "videos": [
       {
-        "id": "9jLot1VITcM",
-        "lado": "favoravel",
-        "titulo": "Renan Santos é sincero sobre a escala 6x1",
-        "canal": "Cortes do Flow",
-        "nota": "O líder do MBL, de direita, explica por que apoia o fim da escala.",
-        "duracao": "10:38"
-      },
-      {
-        "id": "WvP1x1DfLs8",
-        "lado": "favoravel",
-        "titulo": "Michael Jackson (Lord) é sincero sobre a escala 6x1",
-        "canal": "Cortes do Flow",
-        "nota": "Convidado conta a rotina de quem trabalha seis dias por semana.",
-        "duracao": "4:31"
-      },
-      {
-        "id": "WW9Fnuk4oiU",
-        "lado": "favoravel",
-        "titulo": "O terrorismo econômico contra o fim da escala 6x1",
-        "canal": "Frederico Krepe",
-        "nota": "Comentarista rebate as previsões de demissões e quebradeira."
-      },
-      {
         "id": "jJziTJdnjrw",
-        "lado": "contrario",
         "titulo": "Fim da escala 6x1 não deve trazer ganhos de produtividade, diz economista",
         "canal": "CNN Brasil",
         "nota": "Economista questiona a ideia de que folga a mais aumenta a produtividade."
       },
       {
-        "id": "EcpTkixsta8",
-        "lado": "contrario",
-        "titulo": "Fim da escala 6x1 resultará na troca de pessoas por máquinas, diz deputado do Novo",
-        "canal": "UOL",
-        "nota": "Deputado do Novo diz que o custo extra vai acelerar a automação."
-      },
-      {
         "id": "_uZzA37vAvw",
-        "lado": "contrario",
         "titulo": "Economista alerta para riscos do fim da escala 6x1 nos negócios",
         "canal": "Jovem Pan News",
         "nota": "Os efeitos sobre pequenas empresas e preços.",
         "duracao": "11:07"
+      },
+      {
+        "id": "4WXQY1Yq5rs",
+        "titulo": "Redução da jornada de trabalho e fim da escala 6x1",
+        "canal": "DIEESE",
+        "nota": "O departamento de estudos dos sindicatos explica por que defende jornadas menores.",
+        "duracao": "13:20"
+      },
+      {
+        "id": "HS7033HJAj8",
+        "titulo": "Especialista explica impactos da PEC que acaba com a escala 6x1",
+        "canal": "SBT News",
+        "nota": "O que muda para empresas e trabalhadores, em detalhe.",
+        "duracao": "8:34"
+      },
+      {
+        "id": "TobOP0ZXdUE",
+        "titulo": "Como funciona a escala de trabalho em outros países?",
+        "canal": "InfoMoney",
+        "nota": "Comparação rápida com as jornadas lá fora.",
+        "duracao": "1:54"
       }
     ],
     "leituras": [
@@ -699,48 +694,37 @@ window.TEMAS = [
     ],
     "videos": [
       {
-        "id": "LM7bFbphX_I",
-        "lado": "favoravel",
-        "titulo": "A maior reforma tributária da história, com Fernando Haddad",
-        "canal": "Cortes do Flow",
-        "nota": "O ministro da Fazenda defende a reforma no Flow.",
-        "duracao": "6:38"
-      },
-      {
         "id": "XKXSNKXxsUo",
-        "lado": "favoravel",
         "titulo": "O que muda com a reforma tributária? Entenda com Bernard Appy",
         "canal": "Valor Econômico",
-        "nota": "O principal formulador da reforma explica o novo sistema."
-      },
-      {
-        "id": "rHPvNqN4ozY",
-        "lado": "favoravel",
-        "titulo": "Bernard Appy fala sobre a reforma tributária",
-        "canal": "Record News",
-        "nota": "Entrevista com o secretário que conduziu a reforma no governo."
-      },
-      {
-        "id": "hBKfSw-zcdY",
-        "lado": "contrario",
-        "titulo": "O que não te contaram sobre a reforma tributária no Brasil",
-        "canal": "Cortes do Flow",
-        "nota": "Os pontos da reforma que pesam no bolso de quem consome.",
-        "duracao": "8:26"
+        "nota": "O principal formulador da reforma explica o novo sistema.",
+        "duracao": "1:39:11"
       },
       {
         "id": "VssJp5eDXsI",
-        "lado": "contrario",
         "titulo": "Setor de serviços será mais impactado pela nova reforma tributária, diz especialista",
         "canal": "CNN Brasil Money",
         "nota": "Por que serviços tendem a pagar mais imposto."
       },
       {
         "id": "cXXZE8-6rFQ",
-        "lado": "contrario",
         "titulo": "Livro reúne críticas e aponta riscos na reforma tributária",
         "canal": "Band Jornalismo",
         "nota": "Reportagem sobre as críticas de tributaristas ao texto aprovado."
+      },
+      {
+        "id": "LM7bFbphX_I",
+        "titulo": "A maior reforma tributária da história, com Fernando Haddad",
+        "canal": "Cortes do Flow",
+        "nota": "O ministro da Fazenda defende a reforma no Flow.",
+        "duracao": "6:38"
+      },
+      {
+        "id": "hBKfSw-zcdY",
+        "titulo": "O que não te contaram sobre a reforma tributária no Brasil",
+        "canal": "Cortes do Flow",
+        "nota": "Os pontos da reforma que pesam no bolso de quem consome.",
+        "duracao": "8:26"
       }
     ],
     "imagem": {
@@ -1012,38 +996,13 @@ window.TEMAS = [
     ],
     "videos": [
       {
-        "id": "Fc-ffSyxZcA",
-        "lado": "favoravel",
-        "titulo": "Derrite sobre redução da maioridade penal: “Sou 100% favorável”",
-        "canal": "Jovem Pan News",
-        "nota": "O ex-secretário de Segurança de SP defende a redução.",
-        "duracao": "2:29"
-      },
-      {
-        "id": "S7rCLZlJ6H8",
-        "lado": "favoravel",
-        "titulo": "Kim Kataguiri defende a redução da maioridade penal",
-        "canal": "Rádio Bandeirantes",
-        "nota": "Deputado apresenta os argumentos a favor da redução para 16 anos."
-      },
-      {
         "id": "vZINcut0CrM",
-        "lado": "favoravel",
         "titulo": "Argumento: redução da maioridade penal, com Sérgio Souza",
         "canal": "TV Senado",
         "nota": "Parlamentar explica por que defende a mudança."
       },
       {
-        "id": "xOlbW1o44R4",
-        "lado": "contrario",
-        "titulo": "Liberação de armas e maioridade penal no Brasil, com Reinaldo Azevedo",
-        "canal": "Cortes do Flow",
-        "nota": "O jornalista explica por que é contra reduzir a maioridade.",
-        "duracao": "15:07"
-      },
-      {
         "id": "BmpWjuXtVZA",
-        "lado": "contrario",
         "titulo": "Redução da maioridade penal",
         "canal": "Drauzio Varella",
         "nota": "O médico, que atendeu por anos em presídios, fala dos efeitos da prisão em jovens.",
@@ -1051,10 +1010,23 @@ window.TEMAS = [
       },
       {
         "id": "sTi55E33SSg",
-        "lado": "contrario",
         "titulo": "Maioridade penal não diminui violência, mas reduziria a percepção de impunidade, diz ex-Bope",
         "canal": "UOL",
         "nota": "Ex-policial do Bope avalia o efeito real da medida sobre o crime."
+      },
+      {
+        "id": "Fc-ffSyxZcA",
+        "titulo": "Derrite sobre redução da maioridade penal: “Sou 100% favorável”",
+        "canal": "Jovem Pan News",
+        "nota": "O ex-secretário de Segurança de SP defende a redução.",
+        "duracao": "2:29"
+      },
+      {
+        "id": "xOlbW1o44R4",
+        "titulo": "Liberação de armas e maioridade penal no Brasil, com Reinaldo Azevedo",
+        "canal": "Cortes do Flow",
+        "nota": "O jornalista explica por que é contra reduzir a maioridade.",
+        "duracao": "15:07"
       }
     ],
     "imagem": {
@@ -1320,37 +1292,13 @@ window.TEMAS = [
     ],
     "videos": [
       {
-        "id": "dB9252ZQwew",
-        "lado": "favoravel",
-        "titulo": "Tarifa zero pode beneficiar pessoas de baixa renda e desempregados",
-        "canal": "Rádio Bandeirantes",
-        "nota": "Quem mais ganha com o ônibus de graça.",
-        "duracao": "3:34"
-      },
-      {
-        "id": "6-4OoR8G4jM",
-        "lado": "favoravel",
-        "titulo": "Tarifa zero no transporte público",
-        "canal": "Senador Paulo Paim",
-        "nota": "Senador defende o transporte gratuito como direito."
-      },
-      {
         "id": "g4Rgqyx4fro",
-        "lado": "favoravel",
         "titulo": "Lúcio Gregori fala sobre a tarifa zero",
         "canal": "Coletivo Maruim",
         "nota": "O ex-secretário que criou a proposta em São Paulo explica a ideia."
       },
       {
-        "id": "qVxj49bdrbU",
-        "lado": "contrario",
-        "titulo": "Secretário municipal explica por que projeto de tarifa zero foi rejeitado na Câmara de BH",
-        "canal": "Itatiaia",
-        "nota": "Os motivos financeiros que barraram a proposta em Belo Horizonte."
-      },
-      {
         "id": "7idbokYAhR4",
-        "lado": "contrario",
         "titulo": "Tarifa zero: quais são os custos do transporte?",
         "canal": "Rádio BandNews FM",
         "nota": "Quanto custa o sistema e quem teria de pagar.",
@@ -1358,11 +1306,23 @@ window.TEMAS = [
       },
       {
         "id": "6KERqXKCzkA",
-        "lado": "contrario",
         "titulo": "Vantagens e desvantagens da tarifa zero",
         "canal": "Via Trolebus",
         "nota": "Mostra os riscos: lotação, queda de qualidade e dependência do orçamento.",
         "duracao": "7:31"
+      },
+      {
+        "id": "dB9252ZQwew",
+        "titulo": "Tarifa zero pode beneficiar pessoas de baixa renda e desempregados",
+        "canal": "Rádio Bandeirantes",
+        "nota": "Quem mais ganha com o ônibus de graça.",
+        "duracao": "3:34"
+      },
+      {
+        "id": "qVxj49bdrbU",
+        "titulo": "Secretário municipal explica por que projeto de tarifa zero foi rejeitado na Câmara de BH",
+        "canal": "Itatiaia",
+        "nota": "Os motivos financeiros que barraram a proposta em Belo Horizonte."
       }
     ],
     "imagem": {
@@ -1622,48 +1582,37 @@ window.TEMAS = [
     "videos": [
       {
         "id": "lMRUN7Kq_IQ",
-        "lado": "favoravel",
         "titulo": "Bolsa Família deixa as pessoas preguiçosas? A verdade baseada em estudos",
         "canal": "Daniel Martins de Barros",
         "nota": "Psiquiatra revisa o que as pesquisas dizem sobre trabalho e benefício.",
         "duracao": "8:55"
       },
       {
-        "id": "Q2vYC_GRjHs",
-        "lado": "favoravel",
-        "titulo": "Economista critica tese de que Bolsa Família afasta pessoas do trabalho",
-        "canal": "VEJA+",
-        "nota": "Economista contesta a ideia de que o benefício desestimula o emprego."
-      },
-      {
         "id": "KwBEofa-xBE",
-        "lado": "favoravel",
         "titulo": "Luciano Huck x Bolsa Família: estudos desmentem falas sobre dependência",
         "canal": "UOL",
         "nota": "O que as pesquisas dizem sobre a dependência do programa.",
         "duracao": "12:53"
       },
       {
-        "id": "dw5_IU9NoLw",
-        "lado": "contrario",
-        "titulo": "Cury explode sobre o aumento do Bolsa Família",
-        "canal": "Cortes do Flow",
-        "nota": "Crítica ao custo e ao aumento do benefício.",
-        "duracao": "3:00"
+        "id": "Q2vYC_GRjHs",
+        "titulo": "Economista critica tese de que Bolsa Família afasta pessoas do trabalho",
+        "canal": "VEJA+",
+        "nota": "Economista contesta a ideia de que o benefício desestimula o emprego."
       },
       {
-        "id": "pJG-ls1kT24",
-        "lado": "contrario",
-        "titulo": "Cidade do RS mostra que o trabalho liberta da dependência do Bolsa Família",
-        "canal": "Gazeta do Povo",
-        "nota": "Alexandre Garcia comenta o caso de Bento Gonçalves, que trocou benefícios por emprego."
+        "id": "sYCPsoAHpMI",
+        "titulo": "Paulo Rabello de Castro analisa impacto do Bolsa Família no mercado de trabalho",
+        "canal": "Rádio Bandeirantes",
+        "nota": "O ex-presidente do IBGE e do BNDES discute os efeitos sobre o emprego.",
+        "duracao": "6:56"
       },
       {
-        "id": "3gqvU4wIcWs",
-        "lado": "contrario",
-        "titulo": "Não há estímulo para sair do Bolsa Família, diz Luciano Huck",
-        "canal": "Poder360",
-        "nota": "A fala que reacendeu o debate sobre as portas de saída do programa."
+        "id": "ObiyT9Bt9bk",
+        "titulo": "Bolsa Família ainda busca eficiência e porta de saída",
+        "canal": "CNN Brasil",
+        "nota": "Os desafios de focalizar o programa e ajudar as famílias a sair dele.",
+        "duracao": "5:16"
       }
     ],
     "imagem": {
@@ -1692,7 +1641,7 @@ window.TEMAS = [
     ],
     "pergunta": "Deve ficar mais fácil para o cidadão comum ter e portar uma arma?",
     "resumo": "Entre 2019 e 2022 as regras para comprar armas foram afrouxadas, e em 2023 voltaram a ser apertadas. A dúvida é se armas nas mãos de cidadãos protegem ou aumentam a violência.",
-    "atualizado": "2026-10-14",
+    "atualizado": "2026-10-16",
     "rotulos": {
       "favoravel": "A favor de facilitar o acesso",
       "contrario": "A favor de mais controle"
@@ -1823,29 +1772,6 @@ window.TEMAS = [
         ]
       },
       {
-        "id": "referendo-2005",
-        "posicao": "favoravel",
-        "instituicao": "TSE",
-        "natureza": "Resultado oficial do referendo, noticiado pela imprensa",
-        "tipo": "Dado oficial",
-        "titulo": "Referendo de 2005: diferença final do Não foi de quase 26 milhões de votos",
-        "autores": "Congresso em Foco, com dados do Tribunal Superior Eleitoral",
-        "data": "24/10/2005",
-        "formato": "Página",
-        "url": "https://www.congressoemfoco.com.br/noticia/103497/referendo-diferenca-final-do-nao-foi-de-quase-26-milhoes-de-votos",
-        "tese": "A maioria votou contra proibir a venda de armas, e o Não ganhou em todos os estados. Para quem defende o acesso, é a prova de que a população quer manter o direito de se defender.",
-        "numero": {
-          "valor": "63,94%",
-          "legenda": "dos votos válidos foram contra proibir a venda de armas"
-        },
-        "premissas": [
-          "Uma votação popular deve orientar as regras sobre armas."
-        ],
-        "pergunte": [
-          "A pergunta de 2005 era sobre proibir a venda. Ela diz algo sobre quantas armas cada pessoa deve poder ter?"
-        ]
-      },
-      {
         "id": "ipea-td-1721",
         "posicao": "contrario",
         "instituicao": "Ipea",
@@ -1913,36 +1839,34 @@ window.TEMAS = [
         "pergunte": [
           "O Sou da Paz é uma ONG pelo controle de armas. Que dado mostraria de onde vieram as pistolas apreendidas?"
         ]
+      },
+      {
+        "id": "rebelo-cepedes-datasus",
+        "posicao": "favoravel",
+        "instituicao": "CEPEDES",
+        "natureza": "Centro de Pesquisa em Direito e Segurança, entidade privada favorável ao acesso a armas",
+        "tipo": "Artigo",
+        "titulo": "DATASUS consolida indicadores e ratifica maior queda de homicídios em 40 anos",
+        "autores": "Fabricio Rebelo",
+        "data": "04/03/2021",
+        "formato": "Página",
+        "url": "https://jus.com.br/artigos/88927/datasus-consolida-indicadores-e-ratifica-maior-queda-de-homicidios-em-40-anos",
+        "tese": "Com dados oficiais de saúde e da Polícia Federal, mostra que entre 2017 e 2019 os registros de armas de civis subiram 65,6% enquanto os homicídios caíram 30,9%. Para o autor, isso contradiz a ideia de que mais armas legais levam a mais mortes. Ele mesmo ressalva que correlação não prova causa.",
+        "numero": {
+          "valor": "+65,6%",
+          "legenda": "de armas registradas por civis entre 2017 e 2019, com homicídios caindo 30,9%"
+        },
+        "premissas": [
+          "Se mais armas causassem mais mortes, os homicídios teriam subido."
+        ],
+        "pergunte": [
+          "Que outros fatores, como a trégua entre facções, podem explicar a queda no mesmo período?"
+        ]
       }
     ],
     "videos": [
       {
-        "id": "-qkYuJvzCbo",
-        "lado": "favoravel",
-        "titulo": "Bene Barbosa refuta as críticas ao armamento",
-        "canal": "Cortes do Flow",
-        "nota": "O presidente do Movimento Viva Brasil rebate os argumentos do desarmamento.",
-        "duracao": "6:15"
-      },
-      {
-        "id": "0XB4c71GPPc",
-        "lado": "favoravel",
-        "titulo": "Porte de armas: as pessoas querem, mas não podem",
-        "canal": "Nada ProLixo Cortes",
-        "nota": "Bene Barbosa no Flow critica as barreiras para andar armado.",
-        "duracao": "5:30"
-      },
-      {
-        "id": "xxXdY5in8s0",
-        "lado": "favoravel",
-        "titulo": "“Temos um avanço no direito de defesa do cidadão”, diz especialista sobre decreto de armas",
-        "canal": "Balanço Geral Florianópolis",
-        "nota": "Especialista defende o decreto que facilitou a posse em 2019.",
-        "duracao": "5:26"
-      },
-      {
         "id": "UyHRBY2PAXs",
-        "lado": "contrario",
         "titulo": "A liberação das armas de fogo é equivocada, afirma Daniel Cerqueira",
         "canal": "Exame",
         "nota": "O autor do estudo do Ipea explica por que mais armas trazem mais mortes.",
@@ -1950,7 +1874,6 @@ window.TEMAS = [
       },
       {
         "id": "UTXIMe7bJEM",
-        "lado": "contrario",
         "titulo": "Armas para a população resultam em menos crimes? Veja os mitos da segurança pública",
         "canal": "Estadão",
         "nota": "O que os dados dizem sobre armas e criminalidade.",
@@ -1958,11 +1881,24 @@ window.TEMAS = [
       },
       {
         "id": "uV7mOtZqclQ",
-        "lado": "contrario",
         "titulo": "Maior rigor na posse de armas teria evitado mais de seis mortes por dia, diz estudo",
         "canal": "Jornalismo TV Cultura",
         "nota": "Estimativa de vidas que um controle mais rígido teria poupado.",
         "duracao": "2:44"
+      },
+      {
+        "id": "xxXdY5in8s0",
+        "titulo": "“Temos um avanço no direito de defesa do cidadão”, diz especialista sobre decreto de armas",
+        "canal": "Balanço Geral Florianópolis",
+        "nota": "Especialista defende o decreto que facilitou a posse em 2019.",
+        "duracao": "5:26"
+      },
+      {
+        "id": "-qkYuJvzCbo",
+        "titulo": "Bene Barbosa refuta as críticas ao armamento",
+        "canal": "Cortes do Flow",
+        "nota": "O presidente do Movimento Viva Brasil rebate os argumentos do desarmamento.",
+        "duracao": "6:15"
       }
     ],
     "imagem": {
@@ -1991,7 +1927,7 @@ window.TEMAS = [
     ],
     "pergunta": "Policiais devem usar câmeras que gravam todo o turno de trabalho?",
     "resumo": "Em São Paulo, as câmeras ajudaram a derrubar as mortes em ações da PM. O governo Tarcísio trocou a gravação contínua por câmeras que o policial ou a central acionam, e o debate voltou.",
-    "atualizado": "2026-10-14",
+    "atualizado": "2026-10-16",
     "rotulos": {
       "favoravel": "A favor da gravação contínua",
       "contrario": "Contra ou com ressalvas"
@@ -2153,112 +2089,110 @@ window.TEMAS = [
         ]
       },
       {
-        "id": "conjur-derrite-2023",
+        "id": "genghini-privacidade-cop",
         "posicao": "contrario",
-        "instituicao": "Secretaria da Segurança de SP",
-        "natureza": "Declaração do secretário de Segurança Pública de São Paulo",
-        "tipo": "Declaração",
-        "titulo": "Secretário de Segurança de SP diz que vai rever câmeras da PM",
-        "autores": "Guilherme Derrite (relato do Conjur)",
-        "data": "04/01/2023",
-        "formato": "Reportagem",
-        "url": "https://www.conjur.com.br/2023-jan-04/secretario-seguranca-sp-rever-cameras-pm/",
-        "tese": "O novo governo anunciou que reveria o programa Olho Vivo e manteria só o que se provasse eficaz, com base em estudos próprios da PM e da FGV.",
+        "instituicao": "Revista de Direitos e Garantias Fundamentais (FDV)",
+        "natureza": "Artigo em revista jurídica acadêmica com revisão por pares",
+        "tipo": "Artigo científico",
+        "titulo": "O uso da câmera operacional portátil na Polícia Militar do Estado de São Paulo: um diálogo entre segurança, privacidade e cidadania",
+        "autores": "Marco Aurélio Barberato Genghini, Diogenes Wagner S. E. de Oliveira e Humberto Barrionuevo Fabretti",
+        "data": "12/2023",
+        "formato": "PDF",
+        "url": "https://sisbib.emnuvens.com.br/direitosegarantias/article/download/2310/651",
+        "tese": "Reconhece a utilidade das câmeras para a transparência e a prova, mas aponta que o programa vive só de normas internas, sem lei. A gravação contínua expõe o policial 24 horas, inclusive em momentos privados; o cidadão só obtém as imagens na Justiça; e a LGPD não cobre dados de segurança pública. Pede que o Legislativo regule o tema.",
+        "numero": {
+          "valor": "62 de 135",
+          "legenda": "batalhões da PM-SP usavam câmeras no fim de 2022"
+        },
         "premissas": [
-          "Uma política pública deve ser reavaliada quando muda o governo."
+          "A privacidade do policial em serviço também merece proteção."
         ],
         "pergunte": [
-          "Os dados da própria PM mostravam bons resultados. Que evidência justificaria mudar o programa?"
+          "Uma lei resolveria os problemas apontados sem acabar com a gravação contínua?"
         ]
       },
       {
-        "id": "oeste-criticas-2022",
+        "id": "pucrs-ibccrim-implementacao",
         "posicao": "contrario",
-        "instituicao": "Revista Oeste",
-        "natureza": "Reportagem que reúne as críticas de policiais e políticos às câmeras",
-        "tipo": "Reportagem",
-        "titulo": "Câmeras nas fardas policiais: segurança ou repressão?",
-        "autores": "Rute Moraes",
-        "data": "25/06/2022",
-        "formato": "Página",
-        "url": "https://www.revistaoeste.com/brasil/cameras-nas-fardas-policiais-seguranca-ou-repressao/",
-        "tese": "Para os críticos, a gravação contínua vigia o policial em vez do criminoso, expõe táticas, entrega provas à defesa dos suspeitos e deixa a tropa hesitante em ocorrências de risco.",
+        "instituicao": "PUCRS (Boletim IBCCRIM)",
+        "natureza": "Pesquisadores de universidade privada; boletim do Instituto Brasileiro de Ciências Criminais",
+        "tipo": "Artigo (resultados preliminares)",
+        "titulo": "A implementação das câmeras corporais nas polícias brasileiras",
+        "autores": "Augusto Jobim do Amaral, Eduardo Baldissera Carvalho Salles e Paula Fernanda F. A. de Oliveira",
+        "data": "07/2025",
+        "formato": "PDF",
+        "url": "https://static.poder360.com.br/2025/11/IMPLEMENTACAO-CAMERAS-POLICIAS-PUC-RS-20-NOV-2025.pdf",
+        "tese": "Levantou os programas de todo o país e concluiu que quase nenhum estado mede resultados. Onde há relatórios, são parciais ou frágeis: o Acre não viu mudança nos índices, Santa Catarina encerrou o projeto sem avaliação pública e Rondônia deixou os aparelhos caírem em desuso. O efeito visto em São Paulo não pode ser tomado como garantido em outros lugares.",
+        "numero": {
+          "valor": "28.182",
+          "legenda": "câmeras em uso nas polícias militares do país"
+        },
         "premissas": [
-          "O policial deve ter controle sobre quando grava.",
-          "O dinheiro renderia mais em outras ações, como tornozeleiras para presos soltos."
+          "Sem avaliação, não dá para saber se o dinheiro gasto traz resultado."
         ],
         "pergunte": [
-          "Se a câmera deixa o policial mais cauteloso, isso é um problema ou o objetivo?"
+          "O problema está na câmera ou na forma como os estados implantam e avaliam o programa?"
         ]
       },
       {
-        "id": "adpesp-2024",
+        "id": "ssp-sp-edital-2024",
         "posicao": "contrario",
-        "instituicao": "ADPESP",
-        "natureza": "Artigo de opinião do presidente da Associação dos Delegados de Polícia de São Paulo",
-        "tipo": "Artigo de opinião",
-        "titulo": "“Policiais são, talvez, os profissionais mais fiscalizados e não saem às ruas para cometer excessos”",
-        "autores": "André Santos Pereira (Tribuna de Jundiaí)",
-        "data": "04/04/2024",
+        "instituicao": "Secretaria da Segurança Pública de SP",
+        "natureza": "Órgão do governo paulista (gestão Tarcísio de Freitas)",
+        "tipo": "Justificativa oficial de edital",
+        "titulo": "Novo edital de câmeras corporais: gravação acionada em vez de contínua",
+        "autores": "SSP-SP, citada pelo Poder360",
+        "data": "22/05/2024",
         "formato": "Página",
-        "url": "https://tribunadejundiai.com.br/mais/opiniao/policiais-sao-talvez-os-profissionais-mais-fiscalizados-e-nao-saem-as-ruas-para-cometer-excessos-diz-especialista/",
-        "tese": "As câmeras podem ajudar, mas só com regras claras de sigilo e de quem pode pedir as imagens. Vigiar o policial o tempo todo parte da ideia errada de que ele sai para cometer abusos.",
+        "url": "https://www.poder360.com.br/seguranca-publica/gestao-tarcisio-quer-cameras-corporais-que-podem-ser-desligadas-por-pms/",
+        "tese": "O governo paulista justificou trocar a gravação ininterrupta pela acionada pelo policial ou pela central: boa parte do material não é aproveitada e encarece o armazenamento, a bateria falha mais, e gravar o tempo todo violaria a privacidade do policial. Prevê 12 mil câmeras novas e economia de 30% a 50% em relação ao contrato anterior.",
+        "numero": {
+          "valor": "30% a 50%",
+          "legenda": "de economia prevista pelo governo com o novo contrato"
+        },
         "premissas": [
-          "O policial já é controlado por superiores, Ministério Público, corregedoria e imprensa."
+          "A câmera acionada mantém os benefícios da gravação contínua."
         ],
         "pergunte": [
-          "Se a vigilância constante vale para a polícia, por que não para outros servidores com poder sobre os cidadãos?"
+          "Os estudos que mediram queda de mortes avaliaram a gravação contínua. O efeito se mantém se o policial puder escolher quando gravar?"
         ]
       }
     ],
     "videos": [
       {
-        "id": "BjSbk1i6r2Q",
-        "lado": "favoravel",
-        "titulo": "Uso de câmeras em uniformes de PMs reduziu mais de 50% das mortes em ações",
-        "canal": "SBT News",
-        "nota": "A reportagem mostra os números do programa paulista.",
-        "duracao": "2:31"
-      },
-      {
         "id": "B8jQF5COuEU",
-        "lado": "favoravel",
         "titulo": "O uso de câmeras corporais pela polícia, explicado",
         "canal": "Headline Brasil",
         "nota": "Melina Risso, do Instituto Igarapé, explica o que as pesquisas mostram.",
         "duracao": "3:04"
       },
       {
-        "id": "L27vsOdG3f0",
-        "lado": "favoravel",
-        "titulo": "“Não faltavam dados para mostrar que as câmeras eram uma política bem-sucedida”",
-        "canal": "Rádio CBN",
-        "nota": "Comentário sobre a mudança no programa de São Paulo.",
-        "duracao": "2:19"
+        "id": "BjSbk1i6r2Q",
+        "titulo": "Uso de câmeras em uniformes de PMs reduziu mais de 50% das mortes em ações",
+        "canal": "SBT News",
+        "nota": "A reportagem mostra os números do programa paulista.",
+        "duracao": "2:31"
       },
       {
         "id": "Ei1SHiBwQuI",
-        "lado": "contrario",
         "titulo": "Igor e Sargento Castro discutem sobre o uso de câmera em policiais",
         "canal": "Cortes do Flow",
         "nota": "O policial e youtuber explica por que vê problemas na câmera.",
         "duracao": "8:56"
       },
       {
-        "id": "PE0e21HJ6cw",
-        "lado": "contrario",
-        "titulo": "Sargento Nantes: as câmeras corporais só atrapalham o trabalho da polícia",
-        "canal": "TR_SOUZA",
-        "nota": "A visão de um policial da ponta sobre a gravação contínua.",
-        "duracao": "7:05"
+        "id": "E2URnRXAers",
+        "titulo": "Pesquisador fala sobre o uso de câmeras corporais na PM",
+        "canal": "CNN Brasil",
+        "nota": "O que as pesquisas mostram sobre o efeito das câmeras.",
+        "duracao": "5:24"
       },
       {
-        "id": "SCflb-YSjQ8",
-        "lado": "contrario",
-        "titulo": "Minha opinião sincera sobre câmeras corporais em policiais",
-        "canal": "Delegado Palumbo",
-        "nota": "O delegado e vereador de São Paulo em um minuto.",
-        "duracao": "1:00"
+        "id": "aSLcBo6-UIQ",
+        "titulo": "Não é para todos os policiais usarem câmeras corporais, diz coronel José Vicente",
+        "canal": "Jornalismo Novabrasil",
+        "nota": "Coronel da reserva da PM defende um uso mais seletivo das câmeras.",
+        "duracao": "9:27"
       }
     ],
     "imagem": {
@@ -2514,52 +2448,32 @@ window.TEMAS = [
     ],
     "videos": [
       {
-        "id": "PbxfQAxbl_I",
-        "lado": "favoravel",
-        "titulo": "Por que a privatização da Sabesp era necessária",
-        "canal": "Tarcísio de Freitas",
-        "nota": "O governador de SP defende a venda da empresa de saneamento.",
-        "duracao": "9:31"
-      },
-      {
         "id": "o_OlzlpfqTA",
-        "lado": "favoravel",
         "titulo": "“É muito positivo”, diz Wilson Ferreira Jr. sobre a privatização da Eletrobras",
         "canal": "Roda Viva",
         "nota": "O ex-presidente da Eletrobras explica o que muda com a venda.",
         "duracao": "2:48"
       },
       {
-        "id": "vroVI314kGc",
-        "lado": "favoravel",
-        "titulo": "Salim Mattar explica a diferença entre empresa estatal e privada",
-        "canal": "Jovem Pan News",
-        "nota": "O ex-secretário de Desestatização expõe a lógica da privatização.",
-        "duracao": "2:51"
-      },
-      {
-        "id": "OM50BxU8vuc",
-        "lado": "contrario",
-        "titulo": "As privatizações foram um erro!",
-        "canal": "Cortes do Flow",
-        "nota": "Fernando Haddad critica a venda da Sabesp.",
-        "duracao": "1:04"
-      },
-      {
         "id": "KTXHt1OQj_o",
-        "lado": "contrario",
         "titulo": "Privatização da Eletrobras deve aumentar conta de energia, alertam debatedores",
         "canal": "TV Senado",
         "nota": "Especialistas apontam o risco de alta nas tarifas.",
         "duracao": "5:25"
       },
       {
-        "id": "ZOxOkvKK-Zo",
-        "lado": "contrario",
-        "titulo": "Privatização da Sabesp: bolsos cheios no mercado, povo sem água e esgoto",
-        "canal": "Eduardo Moreira",
-        "nota": "O economista critica quem ganha com a venda da Sabesp.",
-        "duracao": "8:00"
+        "id": "vroVI314kGc",
+        "titulo": "Salim Mattar explica a diferença entre empresa estatal e privada",
+        "canal": "Jovem Pan News",
+        "nota": "O ex-secretário de Desestatização expõe a lógica da privatização.",
+        "duracao": "2:51"
+      },
+      {
+        "id": "PbxfQAxbl_I",
+        "titulo": "Por que a privatização da Sabesp era necessária",
+        "canal": "Tarcísio de Freitas",
+        "nota": "O governador de SP defende a venda da empresa de saneamento.",
+        "duracao": "9:31"
       }
     ],
     "imagem": {
@@ -2821,40 +2735,14 @@ window.TEMAS = [
     ],
     "videos": [
       {
-        "id": "unZcDsqrgEM",
-        "lado": "favoravel",
-        "titulo": "A legalização resolveria a superlotação dos presídios?",
-        "canal": "Cortes do Flow",
-        "nota": "Convidados discutem um dos argumentos centrais de quem defende a mudança: tirar usuários e pequenos traficantes das cadeias.",
-        "duracao": "14:08"
-      },
-      {
-        "id": "agAWz6TkueU",
-        "lado": "favoravel",
-        "titulo": "Kim Kataguiri diz ser a favor da liberação da maconha",
-        "canal": "INVEST Cortes",
-        "nota": "Um deputado de direita explica por que apoia a liberação.",
-        "duracao": "5:19"
-      },
-      {
         "id": "SR23ET60M-g",
-        "lado": "favoravel",
         "titulo": "“Proibir maconha é a mesma lógica que proibir cachorro”, diz o neurocientista Sidarta Ribeiro",
         "canal": "Santa Cannabis",
         "nota": "O pesquisador da UFRN critica a proibição.",
         "duracao": "2:51"
       },
       {
-        "id": "wNcSePF53MA",
-        "lado": "contrario",
-        "titulo": "Vamos impedir a liberação da maconha!",
-        "canal": "Deputado Osmar Terra",
-        "nota": "O ex-ministro e médico defende manter o porte como crime.",
-        "duracao": "3:26"
-      },
-      {
         "id": "Z_7TODf5JSs",
-        "lado": "contrario",
         "titulo": "Maconha e adolescência: depressão e suicídio",
         "canal": "Dr Ronaldo Laranjeira",
         "nota": "O psiquiatra da Unifesp fala dos riscos para quem começa cedo.",
@@ -2862,11 +2750,24 @@ window.TEMAS = [
       },
       {
         "id": "XE4gBkkKEvw",
-        "lado": "contrario",
         "titulo": "Prejuízos da maconha na infância e adolescência",
         "canal": "Café com o Psiquiatra",
         "nota": "Os efeitos do uso precoce no cérebro em formação.",
         "duracao": "4:43"
+      },
+      {
+        "id": "unZcDsqrgEM",
+        "titulo": "A legalização resolveria a superlotação dos presídios?",
+        "canal": "Cortes do Flow",
+        "nota": "Convidados discutem um dos argumentos centrais de quem defende a mudança: tirar usuários e pequenos traficantes das cadeias.",
+        "duracao": "14:08"
+      },
+      {
+        "id": "pRoqORpoB6I",
+        "titulo": "Descriminalização da maconha: entenda a diferença entre usuário e traficante",
+        "canal": "CNN Brasil",
+        "nota": "Como o STF passou a separar quem usa de quem vende.",
+        "duracao": "4:51"
       }
     ],
     "imagem": {
@@ -3121,52 +3022,32 @@ window.TEMAS = [
     ],
     "videos": [
       {
-        "id": "yJLt5aiPWhk",
-        "lado": "favoravel",
-        "titulo": "Precisamos taxar os mais ricos",
-        "canal": "Cortes do Flow",
-        "nota": "Convidado do Flow defende cobrar mais de quem está no topo.",
-        "duracao": "11:49"
-      },
-      {
-        "id": "MLpsKK2KF1M",
-        "lado": "favoravel",
-        "titulo": "Rico deveria pagar mais imposto",
-        "canal": "Cortes do Flow",
-        "nota": "Eduardo Marinho e Chavoso da USP defendem cobrar mais de quem ganha mais.",
-        "duracao": "6:00"
-      },
-      {
         "id": "sxRE7OlCRcg",
-        "lado": "favoravel",
         "titulo": "Bilionários: como os super-ricos escapam dos impostos no Brasil",
         "canal": "Politize!",
         "nota": "Uma explicação didática das brechas usadas pelo topo.",
         "duracao": "7:45"
       },
       {
-        "id": "VqRCGmi8XOQ",
-        "lado": "contrario",
-        "titulo": "Taxação dos super-ricos fracassa, diz Caio Coppolla",
-        "canal": "Caio Coppolla",
-        "nota": "O comentarista critica a arrecadação abaixo do previsto.",
-        "duracao": "6:06"
+        "id": "SWX7BzmUXTI",
+        "titulo": "“Quem ganha 600 mil por ano não é super-rico”, diz Kim Kataguiri",
+        "canal": "BBC News Brasil",
+        "nota": "A crítica à linha de corte do imposto mínimo.",
+        "duracao": "0:58"
       },
       {
         "id": "prWlxQXWMM8",
-        "lado": "contrario",
         "titulo": "Taxar dividendos é um erro",
         "canal": "Luiz Barsi",
         "nota": "O investidor explica por que vê a cobrança como prejudicial.",
         "duracao": "2:05"
       },
       {
-        "id": "SWX7BzmUXTI",
-        "lado": "contrario",
-        "titulo": "“Quem ganha 600 mil por ano não é super-rico”, diz Kim Kataguiri",
-        "canal": "BBC News Brasil",
-        "nota": "A crítica à linha de corte do imposto mínimo.",
-        "duracao": "0:58"
+        "id": "yJLt5aiPWhk",
+        "titulo": "Precisamos taxar os mais ricos",
+        "canal": "Cortes do Flow",
+        "nota": "Convidado do Flow defende cobrar mais de quem está no topo.",
+        "duracao": "11:49"
       }
     ],
     "imagem": {
@@ -3419,24 +3300,7 @@ window.TEMAS = [
     ],
     "videos": [
       {
-        "id": "P5nTR282gwE",
-        "lado": "favoravel",
-        "titulo": "A importância das cotas",
-        "canal": "Cortes do Flow",
-        "nota": "Por que as cotas fazem diferença na vida de quem entra pela reserva.",
-        "duracao": "4:28"
-      },
-      {
-        "id": "4c5HPYMzo-g",
-        "lado": "favoravel",
-        "titulo": "Helio de La Peña diz por que mudou de ideia sobre cotas raciais",
-        "canal": "UOL",
-        "nota": "O humorista, que já foi contra, explica por que passou a defender.",
-        "duracao": "9:53"
-      },
-      {
         "id": "-m7eO7hPkOA",
-        "lado": "favoravel",
         "titulo": "Por que precisamos de cotas raciais no Brasil?",
         "canal": "Nem 5 Minutos",
         "nota": "Desigualdade e representatividade em cinco minutos.",
@@ -3444,27 +3308,31 @@ window.TEMAS = [
       },
       {
         "id": "71TfULwLyHk",
-        "lado": "contrario",
         "titulo": "Professor Paulo Cruz explica por que é contra as cotas raciais",
         "canal": "Pânico Jovem Pan",
         "nota": "Professor negro e conservador expõe seus argumentos.",
         "duracao": "4:53"
       },
       {
+        "id": "4c5HPYMzo-g",
+        "titulo": "Helio de La Peña diz por que mudou de ideia sobre cotas raciais",
+        "canal": "UOL",
+        "nota": "O humorista, que já foi contra, explica por que passou a defender.",
+        "duracao": "9:53"
+      },
+      {
         "id": "Q_TDtYatslI",
-        "lado": "contrario",
         "titulo": "À CNN, Renan pede fim de cotas raciais: “injustas” e atendem a classe média",
         "canal": "CNN Brasil",
         "nota": "Candidato defende trocar as cotas raciais por foco na escola básica.",
         "duracao": "7:59"
       },
       {
-        "id": "FjLLIC4fdXU",
-        "lado": "contrario",
-        "titulo": "Cotas em universidades e suas falhas",
-        "canal": "Arthur do Val",
-        "nota": "Os problemas que ele vê no sistema de cotas.",
-        "duracao": "8:12"
+        "id": "P5nTR282gwE",
+        "titulo": "A importância das cotas",
+        "canal": "Cortes do Flow",
+        "nota": "Por que as cotas fazem diferença na vida de quem entra pela reserva.",
+        "duracao": "4:28"
       }
     ],
     "imagem": {
@@ -3715,52 +3583,39 @@ window.TEMAS = [
     ],
     "videos": [
       {
-        "id": "1-Xu1sn65cc",
-        "lado": "favoravel",
-        "titulo": "Fim das escolas militares? Tarcísio de Freitas",
-        "canal": "Cortes do Flow",
-        "nota": "O governador de São Paulo explica por que criou o programa paulista.",
-        "duracao": "4:08"
-      },
-      {
-        "id": "19x1L0j5RW8",
-        "lado": "favoravel",
-        "titulo": "Como funciona uma escola cívico-militar",
-        "canal": "Tenente Coimbra",
-        "nota": "O deputado autor da lei paulista mostra o dia a dia do modelo.",
-        "duracao": "6:52"
-      },
-      {
-        "id": "Ae6YhPiYBio",
-        "lado": "favoravel",
-        "titulo": "Escola cívico-militar: disciplina, respeito e valores",
-        "canal": "Senador Marcos Pontes",
-        "nota": "O senador defende o modelo.",
-        "duracao": "2:50"
-      },
-      {
         "id": "Wq9q0S6CeII",
-        "lado": "contrario",
         "titulo": "“Crianças não são soldados; escolas não são quartéis”",
         "canal": "UOL",
         "nota": "A pesquisadora Catarina de Almeida Santos (UnB) explica por que é contra.",
         "duracao": "7:28"
       },
       {
+        "id": "E3QnSCtQ7Rc",
+        "titulo": "A violência da militarização das escolas no Brasil",
+        "canal": "Laboratório de Políticas Públicas",
+        "nota": "Daniel Cara, professor da USP, resume as críticas.",
+        "duracao": "8:22"
+      },
+      {
         "id": "nu0uKLuQ6-k",
-        "lado": "contrario",
         "titulo": "“Escolas cívico-militares não preparam para um mundo mais pacífico”",
         "canal": "Estadão",
         "nota": "Especialista em educação critica o modelo.",
         "duracao": "2:34"
       },
       {
-        "id": "E3QnSCtQ7Rc",
-        "lado": "contrario",
-        "titulo": "A violência da militarização das escolas no Brasil",
-        "canal": "Laboratório de Políticas Públicas",
-        "nota": "Daniel Cara, professor da USP, resume as críticas.",
-        "duracao": "8:22"
+        "id": "19x1L0j5RW8",
+        "titulo": "Como funciona uma escola cívico-militar",
+        "canal": "Tenente Coimbra",
+        "nota": "O deputado autor da lei paulista mostra o dia a dia do modelo.",
+        "duracao": "6:52"
+      },
+      {
+        "id": "1-Xu1sn65cc",
+        "titulo": "Fim das escolas militares? Tarcísio de Freitas",
+        "canal": "Cortes do Flow",
+        "nota": "O governador de São Paulo explica por que criou o programa paulista.",
+        "duracao": "4:08"
       }
     ],
     "imagem": {
@@ -3790,7 +3645,7 @@ window.TEMAS = [
     ],
     "pergunta": "Interromper a gravidez até a 12ª semana deve deixar de ser crime?",
     "resumo": "Dois ministros do STF já votaram para descriminalizar o aborto até a 12ª semana, e o julgamento está parado. Na Câmara, avança uma proposta que vai no sentido oposto.",
-    "atualizado": "2026-10-14",
+    "atualizado": "2026-10-16",
     "rotulos": {
       "favoravel": "A favor de descriminalizar",
       "contrario": "Contra descriminalizar"
@@ -3949,48 +3804,6 @@ window.TEMAS = [
         ]
       },
       {
-        "id": "datafolha-2024",
-        "posicao": "contrario",
-        "instituicao": "Datafolha",
-        "natureza": "Instituto privado de pesquisa de opinião",
-        "tipo": "Pesquisa de opinião",
-        "titulo": "Opinião dos brasileiros sobre a lei do aborto",
-        "autores": "Datafolha (relato do DOL)",
-        "data": "03/2024",
-        "formato": "Reportagem",
-        "url": "https://dol.com.br/noticias/brasil/852923/datafolha-apenas-6-dos-brasileiros-defendem-aborto",
-        "tese": "A maioria quer manter a lei como está ou proibir o aborto por completo. Só 6% defendem liberar em qualquer situação. Para quem é contra a descriminalização, a mudança não pode vir contra a vontade da maioria.",
-        "numero": {
-          "valor": "77%",
-          "legenda": "querem manter a lei atual (42%) ou proibir totalmente (35%)"
-        },
-        "premissas": [
-          "Uma mudança desse peso deve refletir o que a população pensa."
-        ],
-        "pergunte": [
-          "A pesquisa pergunta sobre liberar em qualquer situação. Como responderiam a uma pergunta sobre o limite de 12 semanas?"
-        ]
-      },
-      {
-        "id": "ufpb-nascituro",
-        "posicao": "contrario",
-        "instituicao": "UFPB",
-        "natureza": "Universidade pública (curso de Direito)",
-        "tipo": "Trabalho de conclusão de curso",
-        "titulo": "Dos direitos do nascituro: há mitigação do direito à vida na busca pela legalização do aborto?",
-        "autores": "Soraya Meira Cavalcanti",
-        "data": "2023",
-        "formato": "PDF",
-        "url": "https://repositorio.ufpb.br/jspui/bitstream/123456789/29726/1/SMC%20071123.pdf",
-        "tese": "Lida como um todo, a lei brasileira já protege o nascituro: o Código Civil, o ECA e o Pacto de São José da Costa Rica reconhecem direitos a ele. Qualquer discussão sobre aborto que ignore isso fica incompleta.",
-        "premissas": [
-          "A corrente que reconhece direitos desde a concepção é a que mais combina com as leis em vigor."
-        ],
-        "pergunte": [
-          "Se o nascituro tem direitos, como pesá-los contra os direitos da mulher?"
-        ]
-      },
-      {
         "id": "pec-164-ccj",
         "posicao": "contrario",
         "instituicao": "Câmara dos Deputados",
@@ -4012,12 +3825,54 @@ window.TEMAS = [
         "pergunte": [
           "A PEC pode proibir até os abortos hoje permitidos, como em caso de estupro. Isso muda sua avaliação?"
         ]
+      },
+      {
+        "id": "cfm-nota-2023",
+        "posicao": "contrario",
+        "instituicao": "Conselho Federal de Medicina",
+        "natureza": "Autarquia federal que regula a profissão médica",
+        "tipo": "Nota oficial",
+        "titulo": "Nota aos brasileiros sobre o julgamento da ADPF 442",
+        "autores": "Conselho Federal de Medicina",
+        "data": "21/09/2023",
+        "formato": "PDF",
+        "url": "https://portal.cfm.org.br/wp-content/uploads/2023/09/NOTA-AOS-BRASILEIROS-CFM-ABORTO-1.pdf",
+        "tese": "Às vésperas do voto de Rosa Weber, o conselho dos médicos pediu que o STF levasse o caso ao plenário presencial e defendeu que a decisão cabe ao Congresso, que representa a população. Reafirma que o aborto só deve ocorrer nos casos já previstos em lei e que o Estado deve investir em planejamento familiar, educação e saúde.",
+        "premissas": [
+          "Um tema com tanta divergência moral deve ser decidido por quem é eleito."
+        ],
+        "pergunte": [
+          "A nota fala de quem deve decidir, não do mérito. O que o CFM diz sobre as mortes por aborto inseguro?"
+        ]
+      },
+      {
+        "id": "torres-mpgo-adpf442",
+        "posicao": "contrario",
+        "instituicao": "Ministério Público de Goiás (Revista do MPRJ)",
+        "natureza": "Artigo de procurador de Justiça em revista do Ministério Público do Rio",
+        "tipo": "Artigo jurídico",
+        "titulo": "A descriminalização do aborto até a 12ª semana de gravidez: inconstitucionalidade da ADPF 442",
+        "autores": "Benedito Torres Neto",
+        "data": "09/2020",
+        "formato": "PDF",
+        "url": "https://bdjur.stj.jus.br/jspui/bitstream/2011/152178/descriminalizacao_aborto_12_torres.pdf",
+        "tese": "Defende que a ação no STF seja rejeitada. Os casos de anencefalia e de embriões congelados, usados como precedente, tratavam de situações sem chance de vida, o que não vale para uma gestação saudável. O Código Civil e o STJ já reconhecem direitos ao nascituro, e criar uma nova exceção ao Código Penal seria o Supremo legislando no lugar do Congresso.",
+        "numero": {
+          "valor": "3",
+          "legenda": "Constituições (1946, 1967 e 1988) mantiveram o aborto como crime"
+        },
+        "premissas": [
+          "O direito à vida do nascituro pesa mais que a autonomia da gestante.",
+          "Se o Congresso não muda a lei, não há omissão a corrigir."
+        ],
+        "pergunte": [
+          "Se o Congresso nunca votar o tema, quem decide sobre os direitos em conflito?"
+        ]
       }
     ],
     "videos": [
       {
         "id": "tyKDUrx7ZzM",
-        "lado": "favoravel",
         "titulo": "Por que o aborto é um problema de saúde pública?",
         "canal": "Drauzio Varella",
         "nota": "O médico explica o que acontece com as mulheres que abortam na clandestinidade.",
@@ -4025,43 +3880,38 @@ window.TEMAS = [
       },
       {
         "id": "rpoIqxlaFvg",
-        "lado": "favoravel",
         "titulo": "Falar de aborto é falar de uma necessidade de saúde da mulher, diz Debora Diniz",
         "canal": "TV Senado",
         "nota": "A pesquisadora da UnB apresenta seus argumentos no Senado.",
         "duracao": "10:29"
       },
       {
-        "id": "vvEgKoc5vNI",
-        "lado": "favoravel",
-        "titulo": "Rosa Weber vota pela descriminalização do aborto até a 12ª semana",
-        "canal": "SBT News",
-        "nota": "O voto que abriu o julgamento no STF.",
-        "duracao": "1:38"
-      },
-      {
-        "id": "7hA73CvycCg",
-        "lado": "contrario",
-        "titulo": "Meu corpo, minhas regras? Pastor opina sobre o aborto",
-        "canal": "Cortes do Flow",
-        "nota": "Um pastor explica por que é contra o aborto e responde ao argumento da autonomia da mulher.",
-        "duracao": "17:54"
-      },
-      {
         "id": "Jd8b-ZEesWY",
-        "lado": "contrario",
         "titulo": "Aborto: quando começa a vida humana?",
         "canal": "Brasil Paralelo",
         "nota": "O argumento de que a vida começa na fecundação.",
         "duracao": "5:20"
       },
       {
-        "id": "BBLupcvOFNE",
-        "lado": "contrario",
-        "titulo": "O melhor argumento contra o aborto",
-        "canal": "Victor Victorelli – Academia de Lógica",
-        "nota": "Um argumento filosófico curto contra o aborto.",
-        "duracao": "1:26"
+        "id": "vvEgKoc5vNI",
+        "titulo": "Rosa Weber vota pela descriminalização do aborto até a 12ª semana",
+        "canal": "SBT News",
+        "nota": "O voto que abriu o julgamento no STF.",
+        "duracao": "1:38"
+      },
+      {
+        "id": "qAdOMJ5RKJ0",
+        "titulo": "Aborto: a visão de especialistas, ativistas, parlamentares e mulheres",
+        "canal": "TV Senado",
+        "nota": "Reportagem que ouve quem defende e quem critica a descriminalização.",
+        "duracao": "6:28"
+      },
+      {
+        "id": "4eDUsa6I_xM",
+        "titulo": "Em Discussão: a legalização do aborto (bloco 1)",
+        "canal": "TV Senado",
+        "nota": "Debate com convidados dos dois lados no programa do Senado.",
+        "duracao": "12:48"
       }
     ],
     "imagem": {
@@ -4310,39 +4160,20 @@ window.TEMAS = [
     "videos": [
       {
         "id": "pjwUbbHFye0",
-        "lado": "favoravel",
         "titulo": "Eugênio Bucci debate a regulação das redes e como responsabilizar as big techs",
         "canal": "Roda Viva",
         "nota": "O professor da USP defende regras para as plataformas.",
         "duracao": "4:12"
       },
       {
-        "id": "Ai3BiIo9LaM",
-        "lado": "favoravel",
-        "titulo": "“Não é censura, é limite”, diz Jorge Viana sobre regulação da internet",
-        "canal": "RedeTV",
-        "nota": "O argumento de que regular não é calar.",
-        "duracao": "3:54"
-      },
-      {
         "id": "dlI9Yk-9Hp4",
-        "lado": "favoravel",
         "titulo": "“A lei ficou insuficiente”, diz especialista sobre regulação das redes",
         "canal": "CNN Brasil",
         "nota": "Por que o Marco Civil de 2014 não daria mais conta.",
         "duracao": "7:02"
       },
       {
-        "id": "pj33wColNGA",
-        "lado": "contrario",
-        "titulo": "Igor solta o verbo sobre a regulação das redes sociais",
-        "canal": "Cortes do Flow",
-        "nota": "O apresentador do Flow critica a regulação e fala em risco de censura.",
-        "duracao": "15:22"
-      },
-      {
         "id": "MTN-jbFyjX8",
-        "lado": "contrario",
         "titulo": "Advogado do Google critica regulação no STF: “risco de censura”",
         "canal": "Correio Braziliense",
         "nota": "A posição das plataformas no julgamento.",
@@ -4350,11 +4181,17 @@ window.TEMAS = [
       },
       {
         "id": "3DwkDMzGmiU",
-        "lado": "contrario",
         "titulo": "Telegram critica PL das Fake News e o considera censura",
         "canal": "Jovem Pan News",
         "nota": "Comentaristas analisam a reação das empresas ao projeto.",
         "duracao": "5:07"
+      },
+      {
+        "id": "pj33wColNGA",
+        "titulo": "Igor solta o verbo sobre a regulação das redes sociais",
+        "canal": "Cortes do Flow",
+        "nota": "O apresentador do Flow critica a regulação e fala em risco de censura.",
+        "duracao": "15:22"
       }
     ],
     "imagem": {
@@ -4606,8 +4443,14 @@ window.TEMAS = [
     ],
     "videos": [
       {
+        "id": "izZmxp6QXMY",
+        "titulo": "O que é o marco temporal?",
+        "canal": "Greenpeace Brasil",
+        "nota": "A tese explicada por quem é contra, em um minuto.",
+        "duracao": "1:17"
+      },
+      {
         "id": "eMy_KN7Ypts",
-        "lado": "favoravel",
         "titulo": "“Marco temporal é a única maneira de preservar a segurança jurídica no país”",
         "canal": "Rádio Bandeirantes",
         "nota": "Defensor da tese explica o argumento da segurança jurídica.",
@@ -4615,23 +4458,13 @@ window.TEMAS = [
       },
       {
         "id": "r7Bz3z878QM",
-        "lado": "favoravel",
         "titulo": "Quem é beneficiado pelo marco temporal? Pedro Lupion opina",
         "canal": "Pânico Jovem Pan",
         "nota": "O presidente da Frente Parlamentar da Agropecuária defende a tese.",
         "duracao": "3:44"
       },
       {
-        "id": "QpZNMQuCXzI",
-        "lado": "favoravel",
-        "titulo": "Marco temporal assegura segurança jurídica",
-        "canal": "AgroMais",
-        "nota": "A visão dos produtores rurais.",
-        "duracao": "8:13"
-      },
-      {
         "id": "KW4EtANXwBE",
-        "lado": "contrario",
         "titulo": "Marco temporal é inconstitucional, diz Ailton Krenak",
         "canal": "UOL",
         "nota": "O pensador indígena explica por que é contra.",
@@ -4639,19 +4472,10 @@ window.TEMAS = [
       },
       {
         "id": "DmBHXVHe2S0",
-        "lado": "contrario",
         "titulo": "Presidente da Funai: aprovação do marco temporal seria retrocesso",
         "canal": "CNN Brasil",
         "nota": "Joenia Wapichana, primeira mulher indígena a presidir a Funai, explica por que é contra.",
         "duracao": "2:36"
-      },
-      {
-        "id": "izZmxp6QXMY",
-        "lado": "contrario",
-        "titulo": "O que é o marco temporal?",
-        "canal": "Greenpeace Brasil",
-        "nota": "A tese explicada por quem é contra, em um minuto.",
-        "duracao": "1:17"
       }
     ],
     "imagem": {
@@ -4681,7 +4505,7 @@ window.TEMAS = [
     ],
     "pergunta": "O Brasil deve explorar petróleo na Margem Equatorial, perto da foz do Amazonas?",
     "resumo": "O Ibama liberou a perfuração em 2025 e a Petrobras anunciou petróleo no Amapá em agosto de 2026. Agora o debate é se vale abrir uma nova fronteira de petróleo numa das regiões mais sensíveis do litoral.",
-    "atualizado": "2026-10-14",
+    "atualizado": "2026-10-16",
     "rotulos": {
       "favoravel": "A favor de explorar",
       "contrario": "Contra explorar"
@@ -4797,48 +4621,6 @@ window.TEMAS = [
         ]
       },
       {
-        "id": "cientistas-amapa",
-        "posicao": "favoravel",
-        "instituicao": "Cientistas do Amapá",
-        "natureza": "Carta de cerca de 130 pesquisadores de instituições do Amapá ao presidente Lula",
-        "tipo": "Carta aberta",
-        "titulo": "Em carta a Lula, cientistas do Amapá rejeitam ideia de fundos para não explorar a Margem Equatorial",
-        "autores": "Cerca de 130 pesquisadores (relato da agência eixos)",
-        "data": "05/2025",
-        "formato": "Reportagem",
-        "url": "https://eixos.com.br/petroleo-e-gas/em-carta-a-lula-cientistas-do-amapa-rejeitam-ideia-de-fundos-para-nao-explorar-margem-equatorial/",
-        "tese": "Pesquisadores do próprio Amapá defendem a exploração como chance de desenvolvimento para um dos estados mais pobres do país e rejeitam trocá-la por fundos de compensação pagos de fora.",
-        "numero": {
-          "valor": "≈ 130",
-          "legenda": "pesquisadores assinaram a carta"
-        },
-        "premissas": [
-          "Quem vive na região deve ter peso na decisão sobre ela."
-        ],
-        "pergunte": [
-          "Cientistas locais e ambientalistas nacionais divergem. Quem deve decidir o futuro da região?"
-        ]
-      },
-      {
-        "id": "poder360-tadeu",
-        "posicao": "favoravel",
-        "instituicao": "Governo do Amazonas",
-        "natureza": "Artigo de opinião do vice-governador do Amazonas",
-        "tipo": "Artigo de opinião",
-        "titulo": "A exploração da Margem Equatorial é oportunidade para a Amazônia",
-        "autores": "Tadeu de Souza (Poder360)",
-        "data": "11/04/2025",
-        "formato": "Página",
-        "url": "https://www.poder360.com.br/opiniao/a-exploracao-da-margem-equatorial-e-oportunidade-para-a-amazonia/",
-        "tese": "A renda do petróleo pode financiar desenvolvimento e preservação na Amazônia, onde boa parte da população vive com pouca oportunidade de emprego formal.",
-        "premissas": [
-          "Desenvolvimento econômico e proteção ambiental podem caminhar juntos."
-        ],
-        "pergunte": [
-          "Que garantias existem de que os royalties vão de fato para a região?"
-        ]
-      },
-      {
         "id": "unifap-riscos",
         "posicao": "contrario",
         "instituicao": "Unifap",
@@ -4903,44 +4685,95 @@ window.TEMAS = [
         "pergunte": [
           "Se a Justiça exigir consulta, a decisão final passa a ser dos povos consultados?"
         ]
+      },
+      {
+        "id": "fgv-energia-precioso",
+        "posicao": "favoravel",
+        "instituicao": "FGV Energia",
+        "natureza": "Centro de estudos de energia da Fundação Getulio Vargas (privada); coluna de opinião",
+        "tipo": "Artigo de opinião",
+        "titulo": "O petróleo da Margem Equatorial é precioso, quando explorado",
+        "autores": "Pesquisadores da FGV Energia",
+        "data": "06/2024",
+        "formato": "PDF",
+        "url": "https://fgvenergia.fgv.br/sites/fgvenergia.fgv.br/files/o_petroleo_da_margem_equatorial_e_precioso_quando_explorado_fgv_energia.pdf",
+        "tese": "Com as reservas atuais, o Brasil teria petróleo para só 13 anos de produção, e a produção deve atingir o pico por volta de 2030. Explorar a Margem Equatorial manteria a autossuficiência, levaria renda ao Norte e ao Nordeste e ajudaria a pagar a transição energética, desde que com segurança ambiental.",
+        "numero": {
+          "valor": "13 anos",
+          "legenda": "de reservas no ritmo atual de produção, segundo a ANP"
+        },
+        "premissas": [
+          "O mundo ainda vai consumir muito petróleo em 2050.",
+          "A renda do petróleo será usada na transição."
+        ],
+        "pergunte": [
+          "O que garante que os royalties vão financiar a transição e não só o orçamento comum?"
+        ]
+      },
+      {
+        "id": "fgv-energia-oportunidades",
+        "posicao": "favoravel",
+        "instituicao": "FGV Energia",
+        "natureza": "Centro de estudos de energia da Fundação Getulio Vargas (privada); coluna de opinião",
+        "tipo": "Artigo de opinião",
+        "titulo": "Oportunidades e desafios para a exploração petrolífera na Margem Equatorial amazônica",
+        "autores": "Gabriel Lobato Cardoso, Karina Farias Neves e João Victor Marques Cardoso",
+        "data": "12/2023",
+        "formato": "PDF",
+        "url": "https://fgvenergia.fgv.br/sites/fgvenergia.fgv.br/files/artigo_opiniao_-_gabriel_karina_joao_-_13-12-23_-_versao_final.pdf",
+        "tese": "A região pode repor as reservas do país, com 20 a 30 bilhões de barris estimados, mas só deve ser explorada com licenciamento rigoroso, salvaguardas para as comunidades de pesca e operações de baixo carbono. É a posição \"sim, com condições\".",
+        "numero": {
+          "valor": "20 a 30 bi",
+          "legenda": "de barris de petróleo estimados na Margem Equatorial"
+        },
+        "premissas": [
+          "As salvaguardas propostas serão de fato cumpridas."
+        ],
+        "pergunte": [
+          "Quem paga se um vazamento atingir os mangues e a pesca do Amapá?"
+        ]
+      },
+      {
+        "id": "anp-saboia-2023",
+        "posicao": "favoravel",
+        "instituicao": "ANP",
+        "natureza": "Agência federal que regula o setor de petróleo",
+        "tipo": "Apresentação oficial",
+        "titulo": "Perspectivas da exploração e produção de petróleo e gás no Brasil",
+        "autores": "Rodolfo Saboia, diretor-geral da ANP",
+        "data": "23/08/2023",
+        "formato": "PDF",
+        "url": "https://www.gov.br/anp/pt-br/centrais-de-conteudo/apresentacoes-palestras/2023/arquivos/2023-08-23-rodolfo-saboia-perspectivas.pdf",
+        "tese": "O regulador mostra que, sem novas descobertas, a produção brasileira começa a cair depois de 2030. Para evitar isso, defende acelerar a exploração em novas fronteiras, como a Margem Equatorial.",
+        "numero": {
+          "valor": "14,9 bi",
+          "legenda": "de barris em reservas provadas do país"
+        },
+        "premissas": [
+          "Manter a produção alta é de interesse do país."
+        ],
+        "pergunte": [
+          "A queda depois de 2030 seria um problema se o consumo também cair com a transição?"
+        ]
       }
     ],
     "videos": [
       {
-        "id": "kpR2l6Xe238",
-        "lado": "favoravel",
-        "titulo": "Lula comenta Margem Equatorial e diz que petróleo financiará transição",
-        "canal": "CNN Brasil",
-        "nota": "O presidente explica por que defende explorar a região.",
-        "duracao": "1:39"
-      },
-      {
-        "id": "4lS8xI2Awq4",
-        "lado": "favoravel",
-        "titulo": "O Amapá tem margem equatorial e potencial para extrair petróleo",
-        "canal": "Assembleia Legislativa do Amapá",
-        "nota": "A visão de quem vive no estado e espera o desenvolvimento.",
-        "duracao": "3:57"
-      },
-      {
         "id": "SNcmRFfKP5c",
-        "lado": "favoravel",
         "titulo": "Magda Chambriard: produção de petróleo vai continuar aumentando",
         "canal": "CNN Brasil",
         "nota": "A presidente da Petrobras sobre a necessidade de novas reservas.",
         "duracao": "3:40"
       },
       {
-        "id": "ExZYH-LWu6w",
-        "lado": "contrario",
-        "titulo": "Quais os impactos da exploração de petróleo na foz do Amazonas?",
-        "canal": "Brasil de Fato",
-        "nota": "Os riscos para o mar, os mangues e quem vive da pesca.",
-        "duracao": "3:53"
+        "id": "4lS8xI2Awq4",
+        "titulo": "O Amapá tem margem equatorial e potencial para extrair petróleo",
+        "canal": "Assembleia Legislativa do Amapá",
+        "nota": "A visão de quem vive no estado e espera o desenvolvimento.",
+        "duracao": "3:57"
       },
       {
         "id": "I8PH_WHoja4",
-        "lado": "contrario",
         "titulo": "Riscos da exploração de petróleo na foz do Amazonas",
         "canal": "PROAM",
         "nota": "Especialistas apontam falhas no licenciamento.",
@@ -4948,11 +4781,17 @@ window.TEMAS = [
       },
       {
         "id": "uSDVFcHqkec",
-        "lado": "contrario",
         "titulo": "Marina Silva reforça que negativa do Ibama à Petrobras é técnica",
         "canal": "TV Senado",
         "nota": "A ministra do Meio Ambiente defende a cautela do Ibama.",
         "duracao": "5:48"
+      },
+      {
+        "id": "ExZYH-LWu6w",
+        "titulo": "Quais os impactos da exploração de petróleo na foz do Amazonas?",
+        "canal": "Brasil de Fato",
+        "nota": "Os riscos para o mar, os mangues e quem vive da pesca.",
+        "duracao": "3:53"
       }
     ],
     "imagem": {
@@ -4964,6 +4803,1755 @@ window.TEMAS = [
       "legenda": "Plataforma de petróleo P-51 da Petrobras.",
       "alt": "Plataforma de petróleo em alto-mar",
       "posicao": "50% 55%"
+    }
+  },
+  {
+    "id": "trabalho-aplicativos",
+    "titulo": "Trabalho por aplicativo",
+    "categoria": "trabalho",
+    "tags": [
+      "Uber",
+      "iFood",
+      "99",
+      "entregadores",
+      "motoristas",
+      "uberização",
+      "PLP 152/2025",
+      "vínculo de emprego",
+      "CLT",
+      "autônomo",
+      "STF"
+    ],
+    "pergunta": "Motoristas e entregadores de aplicativo devem ter mais direitos garantidos por lei?",
+    "resumo": "Mais de 2 milhões de pessoas trabalham com Uber, 99, iFood e outros apps. O Congresso discute uma lei para elas e o STF julga se existe vínculo de emprego.",
+    "atualizado": "2026-10-16",
+    "rotulos": {
+      "favoravel": "A favor de mais direitos e regras",
+      "contrario": "A favor de manter a autonomia"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "Quem dirige ou entrega por aplicativo hoje é tratado como autônomo: escolhe quando trabalha, pode usar vários apps ao mesmo tempo e não tem carteira assinada. Em troca, não tem salário mínimo garantido, férias, 13º nem FGTS, e paga sozinho os custos do carro ou da moto.",
+        "Segundo o IBGE, cerca de 1,7 milhão de pessoas trabalhavam por meio de aplicativos em 2024. Um levantamento do Cebrap com dados das empresas contou 1,72 milhão de motoristas e 455 mil entregadores ativos naquele ano.",
+        "Em 2024, o governo enviou ao Congresso o PLP 12/2024, que criava uma remuneração mínima por hora para motoristas. O texto enfrentou protestos da própria categoria e não andou. A discussão passou para o PLP 152/2025, na Câmara. O parecer do relator, Augusto Coutinho (Republicanos-PE), publicado em abril de 2026, cria a figura do \"trabalhador autônomo plataformizado\": sem vínculo de emprego, mas com contribuição ao INSS, limite de 30% na taxa média cobrada pelas plataformas, piso de R$ 8,50 por entrega curta e seguro de vida. A votação na comissão foi cancelada em 14 de abril de 2026 e ficou sem data.",
+        "Ao mesmo tempo, o STF julga se existe vínculo de emprego entre motoristas e plataformas (casos da Uber e da Rappi, com repercussão geral). A PGR se manifestou contra o vínculo em 2025. Em junho de 2026, o julgamento foi adiado sem nova data, depois que a OIT aprovou uma convenção sobre trabalho em plataformas digitais.",
+        "No centro da disputa estão duas ideias: para uns, a autonomia é em boa parte aparente, porque o algoritmo define preço, corridas e punições; para outros, a flexibilidade é justamente o que atrai os trabalhadores, e regras rígidas encareceriam o serviço e reduziriam as vagas."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Trabalhadores por app (IBGE, 2024)",
+          "valor": "1,7 mi"
+        },
+        {
+          "rotulo": "Taxa máxima no parecer do PLP 152",
+          "valor": "30%"
+        },
+        {
+          "rotulo": "Jornada média de motoristas de app (Ipea)",
+          "valor": "48 h/sem"
+        },
+        {
+          "rotulo": "Julgamento no STF",
+          "valor": "Sem data"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Autonomia",
+        "favoravel": "O algoritmo define preços, bônus e bloqueios. A liberdade de escolher horário não basta para chamar isso de autonomia.",
+        "contrario": "A maioria dos trabalhadores diz preferir ser autônoma, poder recusar corridas e trabalhar quando quiser."
+      },
+      {
+        "tema": "Renda",
+        "favoravel": "Descontados os custos do carro, a renda por hora é baixa e as jornadas são longas.",
+        "contrario": "A renda líquida por hora é parecida ou maior que a de trabalhos com escolaridade semelhante."
+      },
+      {
+        "tema": "Proteção social",
+        "favoravel": "Só cerca de um em cada cinco motoristas contribui para o INSS. Um acidente pode deixar a família sem renda.",
+        "contrario": "Dá para incluir previdência e seguro sem transformar a relação em emprego com carteira."
+      },
+      {
+        "tema": "Preço e vagas",
+        "favoravel": "As empresas têm margem para pagar mais. O custo hoje recai sobre o trabalhador.",
+        "contrario": "Regras rígidas encarecem corridas e entregas e podem tirar centenas de milhares de pessoas do app."
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Uberização",
+        "definicao": "Nome dado ao modelo em que empresas contratam serviços por aplicativo, pagando por tarefa, sem vínculo de emprego."
+      },
+      {
+        "termo": "Vínculo de emprego",
+        "definicao": "Relação de trabalho com carteira assinada, regida pela CLT, com direitos como férias, 13º, FGTS e salário mínimo."
+      },
+      {
+        "termo": "PLP",
+        "definicao": "Projeto de lei complementar. Exige maioria absoluta para ser aprovado (257 deputados e 41 senadores)."
+      },
+      {
+        "termo": "Gestão algorítmica",
+        "definicao": "Quando um programa decide quem recebe cada corrida, quanto ela paga e quem é bloqueado, sem um chefe humano visível."
+      },
+      {
+        "termo": "Repercussão geral",
+        "definicao": "Quando o STF decide um caso que passa a valer para todos os processos parecidos no país."
+      }
+    ],
+    "incertezas": [
+      "Quanto um motorista ganha de verdade depois de pagar combustível, manutenção e depreciação. Os estudos usam premissas de custo diferentes e chegam a números distantes.",
+      "Quantas vagas sumiriam se houvesse vínculo ou piso mais alto. As projeções disponíveis foram encomendadas pelas próprias empresas.",
+      "O que o STF vai decidir e se a decisão sai antes de o Congresso votar uma lei."
+    ],
+    "fontes": [
+      {
+        "titulo": "Câmara dos Deputados: Cancelada reunião para votar regulamentação do trabalho por aplicativo; conheça a proposta (14/04/2026)",
+        "url": "https://www.camara.leg.br/noticias/1261809-comissao-pode-votar-regulamentacao-do-trabalho-por-aplicativo-conheca-a-proposta/"
+      },
+      {
+        "titulo": "Agência Brasil: Supremo Tribunal Federal adia julgamento sobre uberização (24/06/2026)",
+        "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-06/supremo-tribunal-federal-adia-julgamento-sobre-uberizacao"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "ipea-bmt77-plataformas",
+        "posicao": "favoravel",
+        "instituicao": "Ipea",
+        "natureza": "Instituto público de pesquisa do governo federal",
+        "tipo": "Artigo do Boletim Mercado de Trabalho",
+        "titulo": "Plataformização e precarização do trabalho de motoristas e entregadores no Brasil",
+        "autores": "Sandro Sacchet de Carvalho e Mauro Oddo Nogueira",
+        "data": "04/2024",
+        "formato": "PDF",
+        "url": "https://repositorio.ipea.gov.br/bitstream/11058/13810/1/BMT_77_PDRT_A1.pdf",
+        "tese": "Com dados da PNAD Contínua, mostra que motoristas e entregadores de aplicativo trabalham mais horas e contribuem menos para a previdência que colegas fora dos apps. Defende incluí-los em contratos que já existem, com direitos completos, e não numa categoria nova com menos proteção.",
+        "numero": {
+          "valor": "22%",
+          "legenda": "dos motoristas de aplicativo contribuíam para o INSS em 2022, contra 44% dos taxistas"
+        },
+        "premissas": [
+          "A PNAD capta bem quem trabalha por aplicativo.",
+          "Comparar com taxistas e entregadores sem app mostra o efeito das plataformas."
+        ],
+        "pergunte": [
+          "Se a renda média é parecida com a dos taxistas, o problema está na renda ou na falta de proteção?"
+        ]
+      },
+      {
+        "id": "fairwork-brasil-2025",
+        "posicao": "favoravel",
+        "instituicao": "Fairwork Brasil (UFRGS, UFRJ, UnB, UFPR)",
+        "natureza": "Projeto de pesquisa de universidades públicas, ligado à Universidade de Oxford",
+        "tipo": "Relatório anual",
+        "titulo": "Endividamento e precariedade: o retrato do trabalho em plataforma no Brasil",
+        "autores": "Equipe Fairwork Brasil",
+        "data": "09/2025",
+        "formato": "PDF",
+        "url": "https://abet-trabalho.org.br/wp-content/uploads/2025/09/Fairwork-Brazil-Report-PT-2025-V4-FINALFINAL1.pdf",
+        "tese": "Avalia dez plataformas em cinco princípios de trabalho justo (pagamento, condições, contratos, gestão e representação). Uber, 99, iFood, Rappi e Loggi tiraram zero. O relatório aponta bloqueios sem explicação, riscos jogados sobre o trabalhador e novas formas de endividamento, como aluguel de carro ligado à conta.",
+        "numero": {
+          "valor": "0 de 10",
+          "legenda": "nota de Uber, 99 e iFood na avaliação de 2025"
+        },
+        "premissas": [
+          "Os critérios de trabalho justo do Fairwork são uma boa régua.",
+          "A plataforma precisa provar que cumpre cada princípio para ganhar o ponto."
+        ],
+        "pergunte": [
+          "Uma nota zero mede condições ruins ou falta de comprovação pelas empresas?"
+        ]
+      },
+      {
+        "id": "tst-custos-motoristas-2026",
+        "posicao": "favoravel",
+        "instituicao": "TST",
+        "natureza": "Tribunal Superior do Trabalho, cúpula da Justiça do Trabalho",
+        "tipo": "Levantamento técnico",
+        "titulo": "Precarização na atividade de transporte individual de passageiros no Brasil",
+        "autores": "Conselho Superior da Justiça do Trabalho (supervisão do juiz Rodrigo Trindade)",
+        "data": "23/06/2026",
+        "formato": "PDF",
+        "url": "https://www.tst.jus.br/documents/d/guest/-diagramacao-_precarizacao-na-atividade-de-transporte-individual-de-passageiros-no-brasil_v2-pdf",
+        "tese": "Calcula quanto custa trabalhar com o próprio carro: combustível, manutenção, depreciação, seguro, internet e multas. Conclui que os custos passam de R$ 5 mil por mês para quem trabalha em tempo integral e que a jornada é maior que a média do setor privado.",
+        "numero": {
+          "valor": "R$ 5 mil+",
+          "legenda": "de custo mensal estimado para o motorista que roda 8 horas por dia, 22 dias por mês"
+        },
+        "premissas": [
+          "O motorista típico roda 8 horas por dia a 25 km/h.",
+          "Custos como depreciação e multas entram na conta."
+        ],
+        "pergunte": [
+          "A associação das empresas diz que o estudo não tem amostragem. Uma estimativa de custos precisa de amostra?"
+        ]
+      },
+      {
+        "id": "cebrap-amobitec-2024",
+        "posicao": "contrario",
+        "instituicao": "Cebrap",
+        "natureza": "Centro privado de pesquisa social; estudo patrocinado pela Amobitec, associação das empresas de apps",
+        "tipo": "Pesquisa",
+        "titulo": "Mobilidade urbana e logística de entregas: um panorama sobre o trabalho de motoristas e entregadores com aplicativos (2ª edição)",
+        "autores": "Victor Callil e Monise Picanço",
+        "data": "2025",
+        "formato": "PDF",
+        "url": "https://static.poder360.com.br/2025/06/motoristas-aplicativos-pesquisa-cebrap.pdf",
+        "tese": "Combina dados das plataformas e entrevistas. Mostra que muitos usam o app como renda extra, poucas horas por mês, e que a maioria prefere continuar autônoma. A desconfiança em relação à CLT é forte, sobretudo entre os mais velhos.",
+        "numero": {
+          "valor": "42%",
+          "legenda": "dos motoristas usam o aplicativo como complemento de renda"
+        },
+        "premissas": [
+          "Os dados enviados pelas empresas são completos.",
+          "O que os trabalhadores dizem preferir deve pesar na lei."
+        ],
+        "pergunte": [
+          "O estudo foi pago pelas empresas. Isso muda a forma como você lê os números?",
+          "Quem trabalha 50 horas por semana no app tem as mesmas preferências de quem faz bico?"
+        ]
+      },
+      {
+        "id": "ecoa-vinculo-desemprego",
+        "posicao": "contrario",
+        "instituicao": "Ecoa Consultoria Econômica",
+        "natureza": "Consultoria privada; estudo encomendado pela Amobitec",
+        "tipo": "Estudo apresentado na Câmara",
+        "titulo": "Por que vínculo de emprego em trabalho por aplicativo pode aumentar o desemprego no Brasil",
+        "autores": "Cláudia Viegas (doutora pela FEA-USP, ex-subsecretária da Seae/Fazenda)",
+        "data": "16/09/2025",
+        "formato": "PDF",
+        "url": "https://www2.camara.leg.br/atividade-legislativa/comissoes/comissoes-temporarias/especiais/57a-legislatura/comissao-especial-sobre-transporte-e-entrega-por-plataformas-digitais-plp-152-25/apresentacoes-em-eventos/16.09.25ClaudiaViegas.pdf",
+        "tese": "Simula o que aconteceria se motoristas e entregadores virassem empregados com carteira: os custos subiriam, o preço das corridas e entregas aumentaria e a procura cairia. Defende um modelo novo de regulação, e não aplicar as regras antigas da CLT.",
+        "numero": {
+          "valor": "1,3 mi",
+          "legenda": "de trabalhadores sairiam dos aplicativos com o vínculo, segundo a simulação"
+        },
+        "premissas": [
+          "Todo o custo extra seria repassado ao consumidor.",
+          "A procura por corridas é sensível ao preço."
+        ],
+        "pergunte": [
+          "A simulação compara com o vínculo pela CLT. E se a lei for um meio-termo, como o PLP 152?"
+        ]
+      },
+      {
+        "id": "pgr-parecer-uber",
+        "posicao": "contrario",
+        "instituicao": "PGR",
+        "natureza": "Procuradoria-Geral da República, chefia do Ministério Público da União",
+        "tipo": "Parecer ao STF",
+        "titulo": "PGR é contra vínculo trabalhista entre motoristas e aplicativos",
+        "autores": "Paulo Gonet, procurador-geral da República (relato do Poder360)",
+        "data": "30/09/2025",
+        "formato": "Página",
+        "url": "https://www.poder360.com.br/poder-justica/pgr-e-contra-vinculo-trabalhista-entre-motoristas-e-aplicativos/",
+        "tese": "No caso da Uber no STF, a PGR defende que o trabalho por aplicativo pode existir fora da CLT. Para Gonet, o próprio Supremo já aceitou várias formas de contratação distintas do emprego tradicional, e a decisão do TST que reconheceu o vínculo contraria esse entendimento.",
+        "premissas": [
+          "As decisões anteriores do STF sobre terceirização e contratos flexíveis valem para os apps."
+        ],
+        "pergunte": [
+          "Não ter vínculo pela CLT impede que uma lei crie outros direitos para a categoria?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "dM1UFJyZ2x8",
+        "titulo": "Aplicativos e relações de trabalho",
+        "canal": "TRT da 2ª Região",
+        "nota": "O tribunal do trabalho de São Paulo explica o que está em discussão sobre o vínculo.",
+        "duracao": "5:56"
+      },
+      {
+        "id": "qOhJ8af_HD4",
+        "titulo": "Uberização: STF define se motoristas de aplicativo têm vínculo de emprego",
+        "canal": "CNN Brasil",
+        "nota": "O caso que o Supremo vai julgar e o que pode mudar.",
+        "duracao": "3:47"
+      },
+      {
+        "id": "qZiCmvmZonE",
+        "titulo": "Motoristas de aplicativo: quais são os benefícios do PLP 12/2024?",
+        "canal": "TRT da 7ª Região (Ceará)",
+        "nota": "O que o projeto do governo garantiria a quem dirige por aplicativo.",
+        "duracao": "2:58"
+      },
+      {
+        "id": "BzCppYvVcss",
+        "titulo": "Uber e iFood: autônomos também têm direitos mínimos, diz presidente do TST",
+        "canal": "UOL",
+        "nota": "A visão de quem preside o Tribunal Superior do Trabalho.",
+        "duracao": "3:20"
+      },
+      {
+        "id": "E-uHfuf7eCk",
+        "titulo": "STF julga vínculo com aplicativos; iFood defende autonomia",
+        "canal": "SBT News",
+        "nota": "A posição da empresa: proteção sem carteira assinada.",
+        "duracao": "7:36"
+      }
+    ],
+    "imagem": {
+      "arquivo": "img/temas/trabalho-aplicativos.jpg",
+      "autor": "Gabrielle Lopes Fernandes",
+      "licenca": "CC BY-SA 4.0",
+      "licenca_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:O_mundo_da_entrega_-_Gabrielle_Lopes_Fernandes_-_vista_da_minha_vizinhan%C3%A7a.jpg",
+      "legenda": "Entregador de aplicativo na Avenida Engenheiro Caetano Álvares, em São Paulo, em 2021.",
+      "alt": "Entregador de moto com mochila térmica em uma avenida de São Paulo",
+      "posicao": "50% 50%"
+    }
+  },
+  {
+    "id": "voto-obrigatorio",
+    "titulo": "Voto obrigatório",
+    "categoria": "instituicoes",
+    "tags": [
+      "eleições",
+      "abstenção",
+      "voto facultativo",
+      "TSE",
+      "título de eleitor",
+      "democracia",
+      "participação",
+      "PEC"
+    ],
+    "pergunta": "O voto no Brasil deve continuar obrigatório?",
+    "resumo": "No primeiro turno de 2026, 21% dos eleitores não foram votar, a maior abstenção desde 1998. A cada eleição volta a pergunta: obrigar a votar fortalece ou enfraquece a democracia?",
+    "atualizado": "2026-10-16",
+    "rotulos": {
+      "favoravel": "A favor de manter obrigatório",
+      "contrario": "A favor do voto facultativo"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "A Constituição de 1988 (art. 14) torna o voto obrigatório para quem tem entre 18 e 70 anos e facultativo para quem tem 16 e 17 anos, mais de 70 ou não sabe ler e escrever. A obrigação existe desde o Código Eleitoral de 1932.",
+        "Quem não vota e não justifica paga uma multa pequena, de poucos reais. Sem quitar a pendência, a pessoa pode ter problemas para tirar passaporte, tomar posse em concurso público ou renovar matrícula em universidade pública. Três ausências seguidas sem justificativa levam ao cancelamento do título.",
+        "Mesmo assim, a abstenção cresce. No primeiro turno de 4 de outubro de 2026, 33,4 milhões de eleitores (21,08%) não compareceram, segundo o TSE. Foi o maior índice desde 1998. Em 2022, tinha sido 20,95%.",
+        "Só cerca de um em cada oito países do mundo obriga a votar, mas a regra é comum na América do Sul. Propostas de emenda à Constituição para acabar com a obrigação já foram apresentadas várias vezes no Congresso e nunca avançaram."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Abstenção no 1º turno de 2026",
+          "valor": "21,08%"
+        },
+        {
+          "rotulo": "Eleitores ausentes",
+          "valor": "33,4 mi"
+        },
+        {
+          "rotulo": "Voto obrigatório desde",
+          "valor": "1932"
+        },
+        {
+          "rotulo": "Idade da obrigação",
+          "valor": "18 a 70"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Igualdade",
+        "favoravel": "Sem obrigação, votariam mais os ricos e escolarizados, e os políticos dariam menos atenção aos pobres.",
+        "contrario": "Um estudo com dados do Brasil mostra que a obrigação aumenta mais o voto dos escolarizados, porque as punições pesam mais para eles."
+      },
+      {
+        "tema": "Liberdade",
+        "favoravel": "Votar é um dever cívico, como pagar impostos. Quem não quer escolher pode votar em branco ou anular.",
+        "contrario": "Votar é um direito, e um direito inclui a liberdade de não exercê-lo."
+      },
+      {
+        "tema": "Qualidade do voto",
+        "favoravel": "Ir às urnas cria o hábito de acompanhar política e leva o debate para dentro de casa.",
+        "contrario": "Quem vota obrigado e sem interesse fica mais exposto à compra de votos e à escolha de última hora."
+      },
+      {
+        "tema": "Legitimidade",
+        "favoravel": "Comparecimento alto dá mais força ao resultado e ao governo eleito.",
+        "contrario": "A legitimidade vem de convencer o eleitor, não de obrigá-lo. A abstenção já passa de 20% mesmo com a regra."
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Abstenção",
+        "definicao": "Quando o eleitor não vai votar. É diferente do voto em branco ou nulo, em que a pessoa vai à urna."
+      },
+      {
+        "termo": "Voto facultativo",
+        "definicao": "Sistema em que votar é opcional, como nos Estados Unidos, no Chile desde 2012 (o país voltou a obrigar em 2022) e na maior parte da Europa."
+      },
+      {
+        "termo": "Justificativa eleitoral",
+        "definicao": "Declaração de que o eleitor não pôde votar. Pode ser feita no dia da eleição ou até 60 dias depois, inclusive pelo aplicativo e-Título."
+      },
+      {
+        "termo": "PEC",
+        "definicao": "Proposta de emenda à Constituição. Precisa de 3/5 dos votos na Câmara e no Senado, em dois turnos em cada Casa."
+      }
+    ],
+    "incertezas": [
+      "Quantas pessoas deixariam de votar com o voto facultativo. Pesquisas sugerem que cerca de metade continuaria votando, mas o que se diz numa pesquisa nem sempre se faz no dia.",
+      "Quem deixaria de votar. Os estudos brasileiros divergem sobre se seriam mais os pobres ou mais os escolarizados.",
+      "Se partidos e candidatos mudariam o jeito de fazer campanha para convencer as pessoas a sair de casa."
+    ],
+    "fontes": [
+      {
+        "titulo": "Poder360: Abstenção no 1º turno foi de 21,08% em 2026, a maior desde 1998 (04/10/2026)",
+        "url": "https://www.poder360.com.br/poder-eleicoes-2026/abstencao-no-1o-turno-cresce-e-vai-a-2108-em-2026/"
+      },
+      {
+        "titulo": "Senado Federal: Vantagens e desvantagens do voto obrigatório e do voto facultativo (Texto para Discussão nº 6, 2004)",
+        "url": "https://www12.senado.leg.br/publicacoes/estudos-legislativos/tipos-de-estudos/textos-para-discussao/td-6-vantagens-e-desvantagens-do-voto-obrigatorio-e-do-voto-facultativo"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "ribeiro-voto-compulsorio",
+        "posicao": "favoravel",
+        "instituicao": "UEM",
+        "natureza": "Universidade pública (Universidade Estadual de Maringá)",
+        "tipo": "Artigo",
+        "titulo": "Voto compulsório: a desigualdade na participação política",
+        "autores": "Ednaldo Ribeiro (revista Em Debate, da UFMG)",
+        "data": "10/2013",
+        "formato": "PDF",
+        "url": "https://bibliotecadigital.tse.jus.br/bitstreams/4cc37040-80f2-4b4c-8c84-4b272a80eecc/download",
+        "tese": "Revisa a literatura internacional e defende manter a obrigação. Onde o voto é livre, os mais pobres votam menos, seus interesses ficam sub-representados e os governos investem menos em políticas sociais. A obrigação aumenta o comparecimento e reduz esse viés.",
+        "numero": {
+          "valor": "+8%",
+          "legenda": "de comparecimento médio em países com voto obrigatório"
+        },
+        "premissas": [
+          "Quem não vota tem seus interesses menos atendidos pelos políticos.",
+          "Resultados de outros países valem para o Brasil."
+        ],
+        "pergunte": [
+          "O próprio autor admite que alguns estudos não acham redução da desigualdade. O argumento se sustenta sem isso?"
+        ]
+      },
+      {
+        "id": "aguiar-casalecchi-facultativo",
+        "posicao": "favoravel",
+        "instituicao": "UFMG e UFSCar",
+        "natureza": "Universidades públicas; artigo na revista Opinião Pública (Unicamp)",
+        "tipo": "Artigo científico",
+        "titulo": "E se o voto fosse facultativo? Expectativas de participação eleitoral voluntária no Brasil e o papel do status socioeconômico",
+        "autores": "Natália Nunes Aguiar e Gabriel Casalecchi",
+        "data": "2021",
+        "formato": "Página",
+        "url": "https://doi.org/10.1590/1807-01912021271261",
+        "tese": "Usa a pesquisa eleitoral Eseb para estimar quem votaria se o voto fosse livre. Só 45% disseram que votariam com certeza, e ter ensino superior aumenta muito essa chance. Sem a obrigação, a participação ficaria mais desigual.",
+        "numero": {
+          "valor": "45%",
+          "legenda": "dos entrevistados disseram que votariam mesmo sem obrigação"
+        },
+        "premissas": [
+          "A resposta a uma pergunta hipotética antecipa o comportamento real."
+        ],
+        "pergunte": [
+          "Esse resultado conversa com o estudo de Cepaluni e Hidalgo, que diz o contrário. Por que os dois chegam a conclusões diferentes?"
+        ]
+      },
+      {
+        "id": "romao-tse-reforma",
+        "posicao": "favoravel",
+        "instituicao": "TSE (revista Estudos Eleitorais)",
+        "natureza": "Revista da Escola Judiciária Eleitoral do Tribunal Superior Eleitoral; autor da USP",
+        "tipo": "Artigo",
+        "titulo": "Considerações sobre o voto obrigatório no contexto da reforma política de 2015",
+        "autores": "Luis Fernando de França Romão",
+        "data": "12/2015",
+        "formato": "PDF",
+        "url": "https://bibliotecadigital.tse.jus.br/bitstreams/65a04e21-ba2a-4a60-b6c6-3fb1e4cee185/download",
+        "tese": "Lembra que a obrigação nasceu em 1932 para combater o coronelismo e a fraude. Argumenta que obrigar a comparecer não obriga a escolher, já que o voto branco e nulo existe, e que as punições são tão leves que o voto já é quase facultativo. O problema da democracia estaria nos partidos, não na regra.",
+        "premissas": [
+          "A história de 1932 ainda explica a regra hoje.",
+          "Sanções leves tornam a obrigação pouco custosa."
+        ],
+        "pergunte": [
+          "Se a punição é tão leve, a obrigação ainda faz diferença?"
+        ]
+      },
+      {
+        "id": "cepaluni-hidalgo-desigualdade",
+        "posicao": "contrario",
+        "instituicao": "Unesp e MIT (divulgado pelo Cepesp/FGV)",
+        "natureza": "Universidades; artigo na revista Political Analysis",
+        "tipo": "Artigo científico",
+        "titulo": "Compulsory Voting Can Increase Political Inequality: Evidence from Brazil",
+        "autores": "Gabriel Cepaluni e F. Daniel Hidalgo",
+        "data": "2016",
+        "formato": "Página (em inglês)",
+        "url": "https://repositorio.unesp.br/handle/11449/158857",
+        "tese": "Compara eleitores logo abaixo e logo acima dos 18 e dos 70 anos, idades em que a obrigação começa e termina, com o cadastro de mais de 140 milhões de eleitores. A obrigação aumenta o comparecimento, mas aumenta quase o dobro entre os mais escolarizados, porque as punições (passaporte, concurso, crédito) pesam mais para eles. Ou seja, a regra pode aumentar a desigualdade.",
+        "numero": {
+          "valor": "6,7% x 3,4%",
+          "legenda": "de aumento no comparecimento entre mais e menos escolarizados"
+        },
+        "premissas": [
+          "Quem está perto dos 18 ou dos 70 anos se comporta como o resto do eleitorado."
+        ],
+        "pergunte": [
+          "O resultado é um argumento contra a obrigação ou a favor de mudar as punições?"
+        ]
+      },
+      {
+        "id": "costa-ufrn-facultativo",
+        "posicao": "contrario",
+        "instituicao": "UFRN",
+        "natureza": "Universidade pública (Departamento de Ciências Sociais); texto no Jornal da OAB-SP",
+        "tipo": "Artigo de opinião",
+        "titulo": "Em defesa do voto facultativo",
+        "autores": "Homero de Oliveira Costa",
+        "data": "09/2010",
+        "formato": "PDF",
+        "url": "https://www.dhnet.org.br/direitos/militantes/homero_costa/homero_025_em_defesa_do_voto_facultativo.pdf",
+        "tese": "O cientista político argumenta que a obrigação não eliminou abstenções, brancos e nulos, que a maioria das democracias consolidadas usa o voto livre e que campanhas de marketing despolitizam mais do que educam. Para ele, legitimidade não se garante com obrigação.",
+        "premissas": [
+          "A experiência das democracias ricas vale para o Brasil."
+        ],
+        "pergunte": [
+          "O texto é de 2010. A abstenção crescente de lá para cá reforça ou enfraquece o argumento?"
+        ]
+      },
+      {
+        "id": "nobre-quem-tem-medo",
+        "posicao": "contrario",
+        "instituicao": "Justiça & Cidadania (ex-conselheiro do CNJ)",
+        "natureza": "Revista jurídica; autor foi conselheiro do Conselho Nacional de Justiça",
+        "tipo": "Artigo",
+        "titulo": "Quem tem medo do voto facultativo?",
+        "autores": "Marcelo Nobre",
+        "data": "06/2014",
+        "formato": "PDF",
+        "url": "https://bdjur.stj.jus.br/jspui/bitstream/2011/157032/quem_tem_medo_nobre.pdf",
+        "tese": "Propõe um plebiscito em duas etapas: se o eleitor escolher o voto facultativo, ele seria testado por algumas eleições e depois confirmado ou não. Argumenta que, depois de décadas de democracia, a obrigação já não é necessária e que cerca de 40% dos eleitores já fogem do voto de algum jeito.",
+        "premissas": [
+          "A democracia brasileira está madura o bastante para dispensar a obrigação."
+        ],
+        "pergunte": [
+          "Um teste por algumas eleições seria suficiente para medir os efeitos?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "5fkiuYg0hbg",
+        "titulo": "O voto deve ser facultativo ou obrigatório no Brasil?",
+        "canal": "Centro de Estudos Legislativos UFMG",
+        "nota": "Cientistas políticos da UFMG apresentam os argumentos e as pesquisas.",
+        "duracao": "8:20"
+      },
+      {
+        "id": "ePt6le_Vy8M",
+        "titulo": "Qual é a diferença entre voto obrigatório e voto facultativo",
+        "canal": "TRE do Paraná",
+        "nota": "A regra atual explicada pela Justiça Eleitoral.",
+        "duracao": "1:36"
+      },
+      {
+        "id": "AiKa5CzSO2I",
+        "titulo": "Entenda por que o voto é obrigatório e a importância da democracia",
+        "canal": "Portal Correio",
+        "nota": "A origem da obrigação e o argumento de quem quer mantê-la.",
+        "duracao": "3:07"
+      },
+      {
+        "id": "5p6S4NsCPZE",
+        "titulo": "Argumento: fim do voto obrigatório, com Alvaro Dias",
+        "canal": "TV Senado",
+        "nota": "O autor de uma proposta de voto facultativo apresenta suas razões.",
+        "duracao": "10:08"
+      },
+      {
+        "id": "pIKLwYpSh3M",
+        "titulo": "Voto: facultativo ou obrigatório? Kim e Guga debatem",
+        "canal": "Jovem Pan News",
+        "nota": "Debate entre um deputado favorável ao voto livre e um jornalista contrário.",
+        "duracao": "14:30"
+      }
+    ],
+    "imagem": {
+      "arquivo": "img/temas/voto-obrigatorio.jpg",
+      "autor": "Agência Senado",
+      "licenca": "CC BY-SA 4.0",
+      "licenca_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Elei%C3%A7%C3%B5es_2026_-_Primeiro_turno_(55569056826).jpg",
+      "legenda": "Eleitores na fila para votar no primeiro turno de 4 de outubro de 2026.",
+      "alt": "Fila de eleitores de várias idades diante de uma escola em dia de eleição",
+      "posicao": "50% 40%"
+    }
+  },
+  {
+    "id": "emendas-parlamentares",
+    "titulo": "Emendas parlamentares",
+    "categoria": "instituicoes",
+    "tags": [
+      "orçamento",
+      "emendas Pix",
+      "orçamento secreto",
+      "emendas impositivas",
+      "Congresso",
+      "Flávio Dino",
+      "STF",
+      "TCU",
+      "transparência",
+      "prefeituras"
+    ],
+    "pergunta": "Deputados e senadores devem continuar decidindo uma fatia tão grande do Orçamento?",
+    "resumo": "O Orçamento de 2026 reserva cerca de R$ 61 bilhões para emendas de deputados e senadores. Para uns, é o jeito de o dinheiro chegar às cidades; para outros, virou uma máquina de desperdício e falta de transparência.",
+    "atualizado": "2026-10-16",
+    "rotulos": {
+      "favoravel": "A favor das emendas",
+      "contrario": "Contra o modelo atual"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "Emendas parlamentares são a parte do Orçamento federal em que deputados e senadores indicam para onde vai o dinheiro, em geral para obras, hospitais e serviços nas cidades da sua base eleitoral.",
+        "Desde 2015, uma série de emendas à Constituição tornou boa parte delas obrigatória: o governo é obrigado a pagar. Em 2019 surgiram as \"emendas Pix\" (transferências especiais), em que o dinheiro cai direto na conta da prefeitura ou do estado sem um projeto definido. Entre 2020 e 2022, as emendas de relator, apelidadas de orçamento secreto, escondiam quem indicava o gasto, até o STF derrubá-las.",
+        "As emendas pagas passaram de cerca de R$ 3,9 bilhões em 2015 para R$ 48,3 bilhões em 2024, em valores corrigidos. Elas já ocupam perto de um quarto dos gastos livres do governo federal, o dinheiro que não está carimbado para salários, aposentadorias e outras despesas obrigatórias. A lei do Orçamento de 2026 prevê cerca de R$ 61 bilhões em emendas.",
+        "Desde 2024, o ministro Flávio Dino, do STF, vem exigindo regras de transparência e rastreio, e chegou a bloquear repasses e mandar a Polícia Federal investigar desvios. Em julho de 2026, o TCU encontrou falhas em 82% das emendas Pix que auditou. Do outro lado, prefeitos e a cúpula do Congresso defendem as emendas como a forma mais rápida de levar dinheiro federal aos municípios."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Emendas no Orçamento de 2026",
+          "valor": "R$ 61 bi"
+        },
+        {
+          "rotulo": "Emendas pagas em 2015",
+          "valor": "R$ 3,9 bi"
+        },
+        {
+          "rotulo": "Fatia dos gastos livres (2024)",
+          "valor": "~24%"
+        },
+        {
+          "rotulo": "Emendas Pix com falhas (TCU)",
+          "valor": "82%"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Quem conhece a cidade",
+        "favoravel": "O deputado conhece as necessidades locais melhor que um ministério em Brasília.",
+        "contrario": "Sem critérios técnicos, o dinheiro vai para onde dá voto, e não para onde falta mais."
+      },
+      {
+        "tema": "Resultado",
+        "favoravel": "Há estudo mostrando efeito positivo das emendas na educação dos municípios.",
+        "contrario": "O mesmo estudo mostra que o dinheiro vai mais para cidades que já estão melhores, e na saúde o efeito não aparece."
+      },
+      {
+        "tema": "Burocracia",
+        "favoravel": "A emenda Pix acaba com convênios lentos e com taxas cobradas pela Caixa, que deixavam obras paradas.",
+        "contrario": "Sem projeto definido, fica difícil saber em que o dinheiro foi gasto. O TCU achou falhas em quatro de cada cinco casos auditados."
+      },
+      {
+        "tema": "Equilíbrio entre Poderes",
+        "favoravel": "As emendas dão ao Congresso um papel real no Orçamento e tiram do governo a moeda de troca.",
+        "contrario": "Nenhum país rico estudado dá ao Parlamento uma fatia tão grande, e o planejamento nacional fica picotado."
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Emenda individual",
+        "definicao": "Indicada por cada deputado ou senador. É de pagamento obrigatório e metade precisa ir para a saúde."
+      },
+      {
+        "termo": "Emenda de bancada",
+        "definicao": "Indicada em conjunto pelos parlamentares de um mesmo estado."
+      },
+      {
+        "termo": "Emenda de comissão",
+        "definicao": "Indicada por comissões temáticas da Câmara ou do Senado. Não é obrigatória, mas virou objeto de negociação."
+      },
+      {
+        "termo": "Emenda Pix",
+        "definicao": "Nome popular da transferência especial: o dinheiro vai direto para a conta do estado ou município, sem convênio nem projeto prévio."
+      },
+      {
+        "termo": "Orçamento secreto",
+        "definicao": "Apelido das emendas de relator (RP9), usadas de 2020 a 2022 sem identificar o parlamentar que pediu o gasto. O STF as considerou inconstitucionais em 2022."
+      },
+      {
+        "termo": "Despesa discricionária",
+        "definicao": "Gasto que o governo pode decidir se faz ou não, como investimentos e custeio de programas. É o oposto da despesa obrigatória."
+      }
+    ],
+    "incertezas": [
+      "Quanto do dinheiro das emendas vira obra ou serviço que de fato melhora a vida das pessoas. Faltam avaliações de impacto.",
+      "Se as regras de transparência exigidas pelo STF vão funcionar ou só mudar o caminho do dinheiro.",
+      "Qual seria o tamanho certo das emendas num país com o sistema político do Brasil, em que o presidente precisa de coalizões grandes."
+    ],
+    "fontes": [
+      {
+        "titulo": "Câmara dos Deputados: Orçamento 2026 é sancionado com veto a R$ 400 milhões em emendas (15/01/2026)",
+        "url": "https://www.camara.leg.br/noticias/1238564-orcamento-2026-e-sancionado-com-veto-a-r-400-milhoes-em-emendas/"
+      },
+      {
+        "titulo": "TCU: Tribunal consolida auditorias sobre emendas parlamentares (31/07/2026)",
+        "url": "https://portal.tcu.gov.br/imprensa/minuto-do-tcu/ybfgsj9mq2s65i6htnsd42yo"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "motta-marcha-prefeitos-2026",
+        "posicao": "favoravel",
+        "instituicao": "Câmara dos Deputados",
+        "natureza": "Discurso do presidente da Câmara, relatado pela Agência Câmara",
+        "tipo": "Declaração oficial",
+        "titulo": "Hugo Motta defende pauta municipalista e destaca apoio da Câmara a prefeituras",
+        "autores": "Hugo Motta (Republicanos-PB), presidente da Câmara",
+        "data": "19/05/2026",
+        "formato": "Página",
+        "url": "https://www.camara.leg.br/noticias/1273795-hugo-motta-defende-pauta-municipalista-e-destaca-apoio-da-camara-a-prefeituras/",
+        "tese": "Na Marcha dos Prefeitos, Motta apresentou as emendas como a ponte entre o Orçamento federal e as necessidades das cidades. Para ele, quem está perto da população sabe quais obras e serviços são prioridade, e as emendas ajudam os prefeitos a administrar.",
+        "premissas": [
+          "Parlamentares e prefeitos sabem melhor que Brasília o que cada cidade precisa."
+        ],
+        "pergunte": [
+          "É um discurso para prefeitos, que recebem o dinheiro. Que dados sustentariam esse argumento?"
+        ]
+      },
+      {
+        "id": "mascarenhas-pge-transferencias",
+        "posicao": "favoravel",
+        "instituicao": "Revista da PGE-RJ",
+        "natureza": "Revista jurídica da Procuradoria-Geral do Estado do Rio; autor é procurador do MS e doutorando da USP",
+        "tipo": "Artigo",
+        "titulo": "Orçamento impositivo e as transferências do artigo 166-A da Constituição: notas sobre regime jurídico, accountability e corrupção",
+        "autores": "Caio Gama Mascarenhas",
+        "data": "2023",
+        "formato": "PDF",
+        "url": "https://revistaeletronica.pge.rj.gov.br/index.php/pge/article/download/340/269",
+        "tese": "Defende que as emendas Pix são constitucionais e trouxeram ganhos: menos burocracia que os convênios, que deixavam obras paradas, e fim das taxas que a Caixa cobrava para gerir os repasses. Reconhece que é preciso garantir transparência e reforçar o controle.",
+        "numero": {
+          "valor": "2,5% a 11,7%",
+          "legenda": "era a taxa que a Caixa cobrava sobre emendas por convênio"
+        },
+        "premissas": [
+          "Boa parte das críticas vale para qualquer repasse federal, não só para as emendas Pix."
+        ],
+        "pergunte": [
+          "Se o problema é transparência, ele se resolve com regras ou exige mudar o modelo?"
+        ]
+      },
+      {
+        "id": "enap-pork-para-quem-precisa",
+        "posicao": "favoravel",
+        "instituicao": "Enap (UnB)",
+        "natureza": "Artigo vencedor do Prêmio SOF, da Escola Nacional de Administração Pública; autores ligados à UnB",
+        "tipo": "Artigo premiado",
+        "titulo": "Pork para quem precisa? Determinantes da alocação de emendas e efeitos em indicadores sociais no contexto de impositividade",
+        "autores": "Frederico Bertholini, Lucio Rennó e João Gabriel Pessanha Leal",
+        "data": "2026",
+        "formato": "Página",
+        "url": "https://repositorio.enap.gov.br/handle/1/9897",
+        "tese": "Analisa as emendas de 2015 a 2024 e encontra efeito causal positivo sobre a educação nos municípios, sobretudo no Norte, Nordeste e Sul. É o argumento mais forte a favor. Mas o mesmo estudo mostra que o dinheiro vai mais para cidades que já estão melhores e não melhora a cobertura de saúde: \"os recursos podem até funcionar quando chegam, mas não chegam onde mais funcionariam\".",
+        "premissas": [
+          "O método de variáveis instrumentais isola o efeito das emendas."
+        ],
+        "pergunte": [
+          "Se as emendas funcionam quando chegam, o problema é a existência delas ou o critério de quem recebe?"
+        ]
+      },
+      {
+        "id": "ipea-td3149-sus-emendas",
+        "posicao": "contrario",
+        "instituicao": "Ipea",
+        "natureza": "Instituto público de pesquisa do governo federal",
+        "tipo": "Texto para discussão",
+        "titulo": "Financiamento do SUS e emendas parlamentares: uma análise da desigualdade das transferências de incremento ao custeio de serviços no período de 2019 a 2024",
+        "autores": "Filipe Matheus Silva Cavalcanti",
+        "data": "2025",
+        "formato": "PDF",
+        "url": "https://repositorio.ipea.gov.br/bitstreams/bf9e3f79-9f73-49fe-96d7-87acf1e7d1df/download",
+        "tese": "Mostra que quase todo o dinheiro extra do Ministério da Saúde para custear serviços em estados e municípios passou a depender de emendas, com distribuição muito desigual entre estados e parte relevante indo para entidades privadas sem fins lucrativos, que não aparecem com clareza nas bases públicas.",
+        "numero": {
+          "valor": "83%",
+          "legenda": "do incremento ao custeio do SUS entre 2019 e 2024 veio de emendas"
+        },
+        "premissas": [
+          "Distribuição desigual entre estados indica alocação sem critério de necessidade."
+        ],
+        "pergunte": [
+          "Se o SUS depende tanto de emendas, o que aconteceria se elas fossem cortadas de uma vez?"
+        ]
+      },
+      {
+        "id": "insper-ocde-emendas",
+        "posicao": "contrario",
+        "instituicao": "Insper",
+        "natureza": "Instituição privada de ensino e pesquisa",
+        "tipo": "Estudo",
+        "titulo": "É assim em todo lugar? Emendas parlamentares no Brasil e em 11 países da OCDE",
+        "autores": "Hélio Tollini (ex-secretário de Orçamento Federal) e Marcos Mendes",
+        "data": "09/2024",
+        "formato": "PDF",
+        "url": "https://static.poder360.com.br/2025/01/e-assim-em-todo-lugar-emendas-parlamentares-brasil-ocde-insper-2024.pdf",
+        "tese": "Compara o Brasil com 11 países ricos e conclui que nenhum dá ao Parlamento um poder parecido sobre o Orçamento. Nos outros países, as emendas costumam ser pequenas e nenhum governo é obrigado a reservar dinheiro para elas. O modelo brasileiro pressiona as contas e pulveriza o gasto em projetos locais.",
+        "numero": {
+          "valor": "24%",
+          "legenda": "dos gastos livres do governo foram para emendas em 2024, contra 2% em 2015"
+        },
+        "premissas": [
+          "Países da OCDE são uma boa comparação, mesmo com sistemas políticos diferentes."
+        ],
+        "pergunte": [
+          "O Brasil é presidencialista e muitos dos países comparados são parlamentaristas. Isso muda a comparação?"
+        ]
+      },
+      {
+        "id": "tcu-emendas-pix-2026",
+        "posicao": "contrario",
+        "instituicao": "TCU",
+        "natureza": "Tribunal de Contas da União, órgão de controle ligado ao Congresso",
+        "tipo": "Auditoria",
+        "titulo": "TCU consolida auditorias sobre emendas parlamentares",
+        "autores": "Tribunal de Contas da União (auditoria pedida pelo STF)",
+        "data": "29/07/2026",
+        "formato": "Página",
+        "url": "https://portal.tcu.gov.br/imprensa/minuto-do-tcu/ybfgsj9mq2s65i6htnsd42yo",
+        "tese": "A maior auditoria já feita sobre emendas Pix examinou 100 transferências para 73 municípios e dois estados, somando R$ 198 milhões. Encontrou prestação de contas falha, pagamentos sem comprovante, obras inacabadas, sobrepreço e indícios de fraude em licitações.",
+        "numero": {
+          "valor": "R$ 49 mi",
+          "legenda": "de prejuízo estimado, cerca de um quarto do valor auditado"
+        },
+        "premissas": [
+          "A amostra de 100 transferências representa o conjunto das emendas Pix."
+        ],
+        "pergunte": [
+          "Os problemas são das emendas em si ou da capacidade das prefeituras de gastar bem?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "vQefDDA5-G8",
+        "titulo": "Debate na Comissão de Orçamento expõe falta de fiscalização das emendas",
+        "canal": "TV Senado",
+        "nota": "O que os técnicos e parlamentares dizem sobre o controle do dinheiro.",
+        "duracao": "4:28"
+      },
+      {
+        "id": "qO3jb0wIVjc",
+        "titulo": "Senador Anibal Diniz defende a liberação de emendas parlamentares",
+        "canal": "TV Senado",
+        "nota": "O argumento de que as emendas levam recursos a cidades esquecidas.",
+        "duracao": "2:12"
+      },
+      {
+        "id": "jzFBr_X1rHE",
+        "titulo": "Hugo Motta acusa STF de intervir no Legislativo e defende emendas",
+        "canal": "SBT News",
+        "nota": "O presidente da Câmara defende o poder do Congresso sobre o Orçamento.",
+        "duracao": "2:54"
+      },
+      {
+        "id": "nmg-XK6huYc",
+        "titulo": "Análise: defesa de Alcolumbre às emendas parlamentares é institucional",
+        "canal": "CNN Brasil",
+        "nota": "Comentaristas analisam a posição do presidente do Senado.",
+        "duracao": "3:42"
+      },
+      {
+        "id": "sBhTYFyJcRg",
+        "titulo": "Dino manda PF apurar quadro generalizado de ilicitudes em emendas Pix",
+        "canal": "Metrópoles",
+        "nota": "O que o STF encontrou nas transferências sem destino definido.",
+        "duracao": "2:43"
+      },
+      {
+        "id": "OtptNLM2A04",
+        "titulo": "A verdade sobre as emendas parlamentares",
+        "canal": "Cortes do Flow",
+        "nota": "Conversa sobre como as emendas funcionam e por que viraram polêmica.",
+        "duracao": "8:25"
+      }
+    ],
+    "imagem": {
+      "arquivo": "img/temas/emendas-parlamentares.jpg",
+      "autor": "Agência Senado",
+      "licenca": "CC BY-SA 4.0",
+      "licenca_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Lan%C3%A7amento_do_novo_Portal_do_Or%C3%A7amento_do_Congresso_(54750453449).jpg",
+      "legenda": "Lançamento do novo Portal do Orçamento do Congresso.",
+      "alt": "Evento de lançamento do portal do Orçamento no Congresso Nacional",
+      "posicao": "50% 50%"
+    }
+  },
+  {
+    "id": "novo-ensino-medio",
+    "titulo": "Novo ensino médio",
+    "categoria": "educacao",
+    "tags": [
+      "itinerários formativos",
+      "BNCC",
+      "reforma do ensino médio",
+      "Lei 14.945",
+      "ensino técnico",
+      "Enem",
+      "escola pública",
+      "tempo integral"
+    ],
+    "pergunta": "O ensino médio deve ser flexível, com parte do currículo escolhida pelo aluno?",
+    "resumo": "A reforma de 2017 criou os itinerários formativos e cortou as aulas comuns. Depois de muita crítica, uma lei de 2024 refez a reforma, que está sendo aplicada em 2025 e 2026. A disputa é sobre quanto o aluno deve escolher.",
+    "atualizado": "2026-10-16",
+    "rotulos": {
+      "favoravel": "A favor da flexibilização",
+      "contrario": "Críticas à flexibilização"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "Até 2017, todo aluno do ensino médio cursava as mesmas 13 disciplinas obrigatórias. A reforma daquele ano (Lei 13.415, que veio de uma medida provisória de 2016) limitou a parte comum a no máximo 1.800 horas e criou os itinerários formativos: aprofundamentos em uma área ou formação técnica, escolhidos pelo estudante.",
+        "A implantação começou em 2022 e gerou muita reclamação. Escolas pequenas ofereciam só dois itinerários, faltavam professores, surgiram disciplinas como \"projeto de vida\" sem preparo e muitos alunos sentiram que perderam aulas de matérias cobradas no Enem. Entidades de estudantes e professores pediram a revogação.",
+        "Em 2024, o Congresso aprovou uma nova lei (Lei 14.945) que refez a reforma sem acabar com ela. A parte comum voltou a ter no mínimo 2.400 horas (2.100 para quem faz curso técnico), os itinerários passaram a ter diretrizes nacionais e toda escola deve oferecer pelo menos dois. A implantação ocorre em 2025 e 2026, e o Enem deve mudar a partir de 2027.",
+        "A discussão continua: para uns, a flexibilidade e o ensino técnico são o caminho para manter o jovem na escola; para outros, num país desigual, a escolha só existe no papel e a escola pública precisa garantir uma formação comum sólida a todos."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Parte comum na reforma de 2017",
+          "valor": "máx. 1.800 h"
+        },
+        {
+          "rotulo": "Parte comum na lei de 2024",
+          "valor": "mín. 2.400 h"
+        },
+        {
+          "rotulo": "Carga total do ensino médio",
+          "valor": "3.000 h"
+        },
+        {
+          "rotulo": "Novo Enem previsto para",
+          "valor": "2027"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Escolha",
+        "favoravel": "Jovens com interesses diferentes não precisam estudar exatamente a mesma coisa. Poder escolher dá sentido à escola.",
+        "contrario": "Na prática, muitas escolas oferecem só dois caminhos, e a escolha depende de onde o aluno mora."
+      },
+      {
+        "tema": "Ensino técnico",
+        "favoravel": "Quem faz ensino técnico no médio ganha mais e tem mais emprego formal, segundo estudos.",
+        "contrario": "O técnico de qualidade custa caro e não vira realidade só com uma mudança de lei."
+      },
+      {
+        "tema": "Desigualdade",
+        "favoravel": "O modelo antigo, com 13 disciplinas iguais para todos, tinha evasão alta e não funcionava para muitos jovens.",
+        "contrario": "Escolas ricas oferecem itinerários bons; as pobres oferecem o que dá. A distância entre elas aumenta."
+      },
+      {
+        "tema": "Professores",
+        "favoravel": "Com diretrizes nacionais e mais horas comuns, os erros da primeira versão foram corrigidos.",
+        "contrario": "Faltou formação e faltaram professores. Em São Paulo, mais de um quinto das aulas ficou sem professor em 2022."
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Itinerário formativo",
+        "definicao": "Parte do currículo em que o aluno aprofunda uma área (linguagens, matemática, ciências da natureza ou humanas) ou faz um curso técnico."
+      },
+      {
+        "termo": "Formação geral básica",
+        "definicao": "A parte comum do currículo, igual para todos, definida pela BNCC."
+      },
+      {
+        "termo": "BNCC",
+        "definicao": "Base Nacional Comum Curricular. Documento que define o que todo estudante brasileiro deve aprender em cada etapa."
+      },
+      {
+        "termo": "Ensino técnico integrado",
+        "definicao": "Quando o aluno faz o ensino médio e um curso técnico ao mesmo tempo, na mesma escola, como nos institutos federais."
+      }
+    ],
+    "incertezas": [
+      "Se a versão de 2024 vai resolver os problemas de oferta, já que a falta de professores e de estrutura não muda por lei.",
+      "Qual o efeito da reforma no aprendizado. Ainda não há avaliação nacional da nova versão.",
+      "Como o Enem vai cobrar os itinerários a partir de 2027."
+    ],
+    "fontes": [
+      {
+        "titulo": "Agência Gov: Sancionada lei que reestrutura o ensino médio (08/2024)",
+        "url": "https://agenciagov.ebc.com.br/noticias/202408/sancionada-lei-que-reestrutura-o-ensino-medio"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "tpe-analise-pl-5230",
+        "posicao": "favoravel",
+        "instituicao": "Todos Pela Educação",
+        "natureza": "Organização da sociedade civil, financiada por fundações empresariais",
+        "tipo": "Análise técnica",
+        "titulo": "Novo Ensino Médio: análise do projeto de lei aprovado no Congresso Nacional",
+        "autores": "Todos Pela Educação",
+        "data": "07/2024",
+        "formato": "PDF",
+        "url": "https://todospelaeducacao.org.br/wordpress/wp-content/uploads/2024/07/novo-ensino-medio-analise-do-todos-pela-educacao.pdf",
+        "tese": "Avalia o texto que virou a Lei 14.945 como \"um grande avanço\": mantém os princípios da reforma de 2017, como mais horas na escola e a flexibilidade, e corrige os erros de desenho, devolvendo horas à parte comum e criando diretrizes nacionais para os itinerários.",
+        "numero": {
+          "valor": "1.800 → 2.400 h",
+          "legenda": "de parte comum: o máximo de 2017 vira o mínimo de 2024"
+        },
+        "premissas": [
+          "A flexibilidade é boa em si; o problema estava na execução."
+        ],
+        "pergunte": [
+          "Se a parte comum voltou às 2.400 horas de antes, o que sobra de flexível na prática?"
+        ]
+      },
+      {
+        "id": "priscila-cruz-poder360",
+        "posicao": "favoravel",
+        "instituicao": "Todos Pela Educação",
+        "natureza": "Artigo da presidente-executiva da organização",
+        "tipo": "Artigo de opinião",
+        "titulo": "A chance para um verdadeiro Novo Ensino Médio",
+        "autores": "Priscila Cruz",
+        "data": "22/03/2023",
+        "formato": "Página",
+        "url": "https://www.poder360.com.br/opiniao/chance-para-um-verdadeiro-novo-ensino-medio/",
+        "tese": "Escrito no auge dos pedidos de revogação, defende corrigir a reforma em vez de jogá-la fora. Cita Pernambuco, que apostou em escolas de tempo integral e saiu do 21º lugar para o melhor Ideb do ensino médio do país, como prova de que mudar o modelo funciona quando vem junto com valorização docente e boa gestão.",
+        "numero": {
+          "valor": "+18%",
+          "legenda": "de salário médio para egressos de escolas de tempo integral em Pernambuco, segundo pesquisas citadas"
+        },
+        "premissas": [
+          "O exemplo de Pernambuco pode ser replicado em outros estados."
+        ],
+        "pergunte": [
+          "O sucesso de Pernambuco veio do tempo integral ou da flexibilização do currículo?"
+        ]
+      },
+      {
+        "id": "fgv-biondi-ensino-tecnico",
+        "posicao": "favoravel",
+        "instituicao": "FGV EESP",
+        "natureza": "Escola de economia da Fundação Getulio Vargas (privada)",
+        "tipo": "Tese de doutorado",
+        "titulo": "Três ensaios em economia da educação",
+        "autores": "Roberta Loboda Biondi, orientada por Sergio Firpo",
+        "data": "10/2015",
+        "formato": "PDF",
+        "url": "https://observatoriodeeducacao.institutounibanco.org.br/api/assets/d161302d-3590-4830-ab6c-5f99e4ed5997",
+        "tese": "Mede quanto o ensino técnico de nível médio muda a vida profissional. Para quem para no ensino médio, ter formação técnica aumenta o salário e a chance de emprego com carteira. É uma das bases do argumento de que o itinerário técnico vale a pena.",
+        "numero": {
+          "valor": "+14% a 16%",
+          "legenda": "de salário para quem tem formação técnica e no máximo o ensino médio"
+        },
+        "premissas": [
+          "Os métodos estatísticos separam o efeito do curso do perfil de quem escolhe fazê-lo."
+        ],
+        "pergunte": [
+          "O estudo é anterior à reforma. Um itinerário técnico numa escola sem estrutura teria o mesmo efeito de um bom curso técnico?"
+        ]
+      },
+      {
+        "id": "repu-nem-sp",
+        "posicao": "contrario",
+        "instituicao": "REPU (UFABC, USP e outras)",
+        "natureza": "Rede de pesquisadores de universidades públicas",
+        "tipo": "Nota técnica",
+        "titulo": "Novo Ensino Médio e indução de desigualdades escolares na rede estadual de São Paulo",
+        "autores": "Ana Paula Corti, Débora Cristina Goulart e Fernando Cássio",
+        "data": "06/2022",
+        "formato": "PDF",
+        "url": "https://anec.org.br/wp-content/uploads/2021/09/NT_NEM_REPU.pdf",
+        "tese": "Com dados da própria Secretaria de Educação, mostra que na maior rede do país a escolha era limitada: mais de um terço das escolas ofereceu só dois itinerários, faltavam professores e quase toda a ampliação de carga horária foi feita a distância, sobretudo para quem estuda à noite.",
+        "numero": {
+          "valor": "22%",
+          "legenda": "das aulas do novo ensino médio estavam sem professor em abril de 2022"
+        },
+        "premissas": [
+          "O que aconteceu em São Paulo se repete em outras redes."
+        ],
+        "pergunte": [
+          "Esses problemas são da ideia de flexibilizar ou de como São Paulo a implantou?"
+        ]
+      },
+      {
+        "id": "unesp-unicamp-flexibilizacao",
+        "posicao": "contrario",
+        "instituicao": "Unesp e Unicamp",
+        "natureza": "Universidades públicas paulistas",
+        "tipo": "Artigo (preprint)",
+        "titulo": "A flexibilização curricular do Novo Ensino Médio na experiência de docentes e estudantes",
+        "autores": "Márcia Lopes Reis e Amanda Hebling do Amaral",
+        "data": "09/2024",
+        "formato": "PDF",
+        "url": "https://preprints.scielo.org/index.php/scielo/preprint/download/9736/18073/18688",
+        "tese": "Observação e entrevistas numa escola estadual de tempo integral em Campinas. Alunos dizem ter perdido matérias importantes e temem o vestibular; professores relatam sobrecarga e disciplinas fragmentadas. Para as autoras, a flexibilização aprofunda a desigualdade da escola pública.",
+        "premissas": [
+          "Uma escola revela problemas que se repetem em outras.",
+          "Estudo preliminar e qualitativo, com amostra pequena."
+        ],
+        "pergunte": [
+          "O que os alunos de escolas que gostaram dos itinerários diriam?"
+        ]
+      },
+      {
+        "id": "ufjf-itinerarios-ceara",
+        "posicao": "contrario",
+        "instituicao": "UFJF",
+        "natureza": "Universidade pública (mestrado profissional em Gestão e Avaliação da Educação, CAEd)",
+        "tipo": "Dissertação",
+        "titulo": "A tradução da política dos itinerários formativos em uma escola-piloto do Ceará no contexto da proposta do Novo Ensino Médio",
+        "autores": "José Wilson Freitas de Miranda Filho",
+        "data": "11/2021",
+        "formato": "PDF",
+        "url": "https://mestrado-hmg.caeddigital.net/wp-content/uploads/2025/02/Dissertacao-revisada_final.pdf",
+        "tese": "Acompanha uma das 29 escolas-piloto do Ceará. A escola se esforçou, mas teve pouco apoio da Secretaria para entender a política, formar professores e montar os itinerários. O autor questiona se a escolha do aluno é real quando a oferta local é limitada.",
+        "premissas": [
+          "Os problemas de uma escola-piloto antecipam os da implantação em larga escala."
+        ],
+        "pergunte": [
+          "Com mais apoio do estado, a mesma escola teria feito a reforma funcionar?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "Vc-j43hMyNI",
+        "titulo": "O que é o Novo Ensino Médio? Entenda as mudanças da reforma",
+        "canal": "Nova Escola",
+        "nota": "Explicação didática feita por uma revista de educação.",
+        "duracao": "5:22"
+      },
+      {
+        "id": "DEJdLYp7mic",
+        "titulo": "Novo Ensino Médio: os benefícios e malefícios do modelo",
+        "canal": "Rádio Bandeirantes",
+        "nota": "Prós e contras discutidos com especialistas.",
+        "duracao": "5:34"
+      },
+      {
+        "id": "_RIQbkvjI14",
+        "titulo": "Mendonça Filho fala sobre a importância do Novo Ensino Médio",
+        "canal": "Mendonça Filho",
+        "nota": "O ministro que lançou a reforma em 2016 resume a ideia.",
+        "duracao": "0:38"
+      },
+      {
+        "id": "Tdhx3esnA60",
+        "titulo": "Novo Ensino Médio: a opinião de nossos alunos",
+        "canal": "SENAI Nacional",
+        "nota": "Estudantes de cursos técnicos contam como foi a experiência.",
+        "duracao": "2:02"
+      },
+      {
+        "id": "5MuVVYPf5JA",
+        "titulo": "Por que o Novo Ensino Médio é ruim? Entenda as críticas",
+        "canal": "geo ilustrada",
+        "nota": "As principais críticas à reforma, explicadas por um professor.",
+        "duracao": "9:23"
+      },
+      {
+        "id": "qgb88aj58w8",
+        "titulo": "Professor manda a real sobre a reforma do ensino médio",
+        "canal": "Cortes do Flow",
+        "nota": "Um professor conta o que viu da reforma dentro da sala de aula.",
+        "duracao": "7:19"
+      }
+    ],
+    "imagem": {
+      "arquivo": "img/temas/novo-ensino-medio.jpg",
+      "autor": "Gabinete do senador Aécio Neves",
+      "licenca": "CC BY 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:A%C3%A9cio_Neves_-_Boas-vindas_aos_estudantes_do_programa_Jovem_Senador_-_17_11_2015_(23095237335).jpg",
+      "legenda": "Estudantes de ensino médio de escolas públicas no programa Jovem Senador, no plenário do Senado, em 2015.",
+      "alt": "Estudantes de camiseta laranja de costas, diante da mesa do plenário do Senado",
+      "posicao": "50% 75%"
+    }
+  },
+  {
+    "id": "bets",
+    "titulo": "Proibição das bets",
+    "categoria": "economia",
+    "tags": [
+      "apostas online",
+      "apostas esportivas",
+      "jogo do tigrinho",
+      "cassino online",
+      "MP 1.394",
+      "vício em jogo",
+      "endividamento",
+      "Lei 14.790",
+      "mercado ilegal"
+    ],
+    "pergunta": "As apostas online devem continuar proibidas no Brasil?",
+    "resumo": "Em setembro de 2026, o governo proibiu as bets por medida provisória, menos de dois anos depois de regulamentá-las. O Congresso tem 120 dias para confirmar ou derrubar a decisão.",
+    "atualizado": "2026-10-16",
+    "rotulos": {
+      "favoravel": "A favor da proibição",
+      "contrario": "A favor de regular, não proibir"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "As apostas esportivas online foram legalizadas em 2018, mas ficaram anos sem regras. A Lei 14.790, de 2023, criou a regulamentação: desde 1º de janeiro de 2025, só podiam operar empresas autorizadas pelo Ministério da Fazenda, que pagaram R$ 30 milhões cada pela licença. Cassinos online, como o \"jogo do tigrinho\", também foram liberados.",
+        "O mercado explodiu. Em 2024, o Banco Central estimou que cerca de 24 milhões de pessoas mandavam perto de R$ 20 bilhões por mês para as bets via Pix, e que 5 milhões de pessoas de famílias do Bolsa Família enviaram R$ 3 bilhões só em agosto daquele ano. Uma CPI no Senado investigou influenciadores e manipulação de jogos.",
+        "Em 25 de setembro de 2026, o governo editou a Medida Provisória 1.394, que proíbe apostas de quota fixa e cassinos online em todo o país. Os depósitos foram bloqueados na hora, os sites saíram do ar em 6 de outubro e os saldos dos apostadores devem ser devolvidos pelos bancos. O governo também anunciou um projeto de lei com pena de prisão para quem explorar apostas.",
+        "A MP já vale, mas perde efeito se o Congresso não a aprovar em até 120 dias. As empresas autorizadas dizem que vão à Justiça, clubes de futebol perdem patrocínios e economistas alertam para a migração dos apostadores a sites ilegais. A decisão veio no meio da campanha eleitoral, o que também entrou na discussão."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Medida provisória",
+          "valor": "MP 1.394/2026"
+        },
+        {
+          "rotulo": "Sites fora do ar desde",
+          "valor": "06/10/2026"
+        },
+        {
+          "rotulo": "Pix para bets em ago/2024 (BC)",
+          "valor": "R$ 20,8 bi"
+        },
+        {
+          "rotulo": "Prazo para o Congresso",
+          "valor": "120 dias"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Saúde",
+        "favoravel": "Quase 11 milhões de brasileiros apostam de forma arriscada, e os adolescentes são os mais vulneráveis.",
+        "contrario": "O vício se combate com limites, bloqueio de quem tem diagnóstico e tratamento. Proibir não trata ninguém."
+      },
+      {
+        "tema": "Dinheiro das famílias",
+        "favoravel": "As apostas tiram dinheiro do consumo, aumentam a inadimplência e atingem até quem recebe Bolsa Família.",
+        "contrario": "Boa parte do valor apostado volta como prêmio. O gasto líquido é bem menor que os números que circulam."
+      },
+      {
+        "tema": "Mercado ilegal",
+        "favoravel": "A regulamentação não segurou o problema, e sites ilegais já existiam com a lei em vigor.",
+        "contrario": "Com a proibição, dezenas de milhões de apostadores vão para sites ilegais, sem fiscalização nem imposto."
+      },
+      {
+        "tema": "Segurança jurídica",
+        "favoravel": "Uma atividade que causa dano social pode ser proibida a qualquer momento.",
+        "contrario": "Empresas pagaram R$ 30 milhões por licenças de cinco anos. Mudar a regra de repente afasta investimentos."
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Aposta de quota fixa",
+        "definicao": "Aposta em que o prêmio é definido no momento em que se aposta, como nas apostas esportivas. É o nome legal das bets."
+      },
+      {
+        "termo": "Medida provisória",
+        "definicao": "Norma do presidente que vale na hora, mas precisa ser aprovada pelo Congresso em até 120 dias para não perder a validade."
+      },
+      {
+        "termo": "Ludopatia",
+        "definicao": "Transtorno do jogo: quando a pessoa perde o controle sobre as apostas, mesmo com prejuízo à vida financeira, familiar ou profissional."
+      },
+      {
+        "termo": "Outorga",
+        "definicao": "Valor pago ao governo por uma empresa para receber autorização de explorar uma atividade."
+      }
+    ],
+    "incertezas": [
+      "Quantos apostadores vão migrar para sites ilegais e se o bloqueio de pagamentos vai funcionar.",
+      "Se o Congresso vai aprovar, mudar ou derrubar a medida provisória, e o que a Justiça vai decidir sobre as licenças pagas.",
+      "Quanto do aumento do endividamento das famílias se deve às bets e quanto a outros fatores, como juros altos."
+    ],
+    "fontes": [
+      {
+        "titulo": "Metrópoles: Fim das bets: Lula assina MP e caso agora vai ao Congresso. Veja prazos (25/09/2026)",
+        "url": "https://www.metropoles.com/brasil/fim-das-bets-lula-assina-mp-e-caso-agora-vai-ao-congresso-veja-prazos"
+      },
+      {
+        "titulo": "InfoMoney: Governo anuncia MP que proíbe bets no Brasil; veja o que muda (26/09/2026)",
+        "url": "https://www.infomoney.com.br/politica/governo-anuncia-mp-das-bets/"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "bcb-nt-513-apostas",
+        "posicao": "favoravel",
+        "instituicao": "Banco Central",
+        "natureza": "Autoridade monetária do país",
+        "tipo": "Nota técnica",
+        "titulo": "Análise técnica sobre o mercado de apostas online no Brasil e o perfil dos apostadores (Nota Técnica 513/2024)",
+        "autores": "Banco Central do Brasil",
+        "data": "23/09/2024",
+        "formato": "PDF",
+        "url": "https://static.poder360.com.br/2024/09/estudo-apostas-bc-24set2024.pdf",
+        "tese": "Primeiro retrato oficial do tamanho das bets, a partir das transferências via Pix. Mostra um mercado de cerca de R$ 20 bilhões por mês, concentrado em jovens de 20 a 30 anos, e que alcançava famílias pobres: 17% das pessoas do Bolsa Família apostaram em agosto de 2024. O estudo é descritivo, mas virou a principal base de quem defende restringir ou proibir.",
+        "numero": {
+          "valor": "R$ 3 bi",
+          "legenda": "enviados às bets por 5 milhões de pessoas do Bolsa Família em agosto de 2024"
+        },
+        "premissas": [
+          "O Pix capta a maior parte do dinheiro que vai para as bets.",
+          "Estimativas preliminares, como o próprio BC avisa."
+        ],
+        "pergunte": [
+          "O BC calcula que cerca de 85% do valor apostado volta como prêmio. Isso muda a leitura dos R$ 3 bilhões?"
+        ]
+      },
+      {
+        "id": "unifesp-lenad-apostas",
+        "posicao": "favoravel",
+        "instituicao": "Unifesp",
+        "natureza": "Universidade pública federal (Levantamento Nacional de Álcool e Drogas, Lenad III)",
+        "tipo": "Pesquisa nacional",
+        "titulo": "Quase 11 milhões de brasileiros apostam de modo a pôr em risco a saúde e as finanças",
+        "autores": "Clarice Sandi Madruga e Ronaldo Laranjeira (relato da revista Pesquisa Fapesp)",
+        "data": "04/2025",
+        "formato": "Página",
+        "url": "https://revistapesquisa.fapesp.br/quase-11-milhoes-de-brasileiros-apostam-de-modo-a-por-em-risco-a-saude-e-as-financas/",
+        "tese": "Entrevistou quase 5 mil pessoas em 349 municípios. Encontrou 10,9 milhões de brasileiros com 14 anos ou mais apostando de forma arriscada e 1,4 milhão com padrão de transtorno do jogo. Entre adolescentes que apostam, mais da metade está em risco.",
+        "numero": {
+          "valor": "55%",
+          "legenda": "dos adolescentes que apostam estão em risco de transtorno do jogo, contra 38% dos adultos"
+        },
+        "premissas": [
+          "A escala PGSI mede bem o risco de vício.",
+          "As pessoas respondem com sinceridade sobre o próprio jogo."
+        ],
+        "pergunte": [
+          "Adolescentes já eram proibidos de apostar. Isso indica que proibir funciona ou que não funciona?"
+        ]
+      },
+      {
+        "id": "cnc-bets-varejo",
+        "posicao": "favoravel",
+        "instituicao": "CNC",
+        "natureza": "Confederação Nacional do Comércio, entidade patronal do varejo",
+        "tipo": "Estudo",
+        "titulo": "Bets prejudicaram o varejo em R$ 143 bilhões, afirma CNC",
+        "autores": "Confederação Nacional do Comércio (relato da Fenacon)",
+        "data": "2025",
+        "formato": "Página",
+        "url": "https://fenacon.org.br/?p=50948",
+        "tese": "Com dados da sua pesquisa de endividamento, a CNC associa o crescimento das apostas ao aumento da inadimplência grave e estima que o varejo deixou de vender cerca de R$ 143 bilhões em 2024 e 2025. O efeito seria maior nas famílias de até cinco salários mínimos.",
+        "numero": {
+          "valor": "R$ 143 bi",
+          "legenda": "em vendas perdidas pelo varejo em dois anos, segundo a CNC"
+        },
+        "premissas": [
+          "O método separa o efeito das bets de juros, desemprego e inflação.",
+          "A própria CNC diz que mostra associação, não causa plena."
+        ],
+        "pergunte": [
+          "A CNC representa o comércio, que concorre com as bets pelo dinheiro das famílias. Isso pesa na leitura?"
+        ]
+      },
+      {
+        "id": "werlang-regular-nao-proibir",
+        "posicao": "contrario",
+        "instituicao": "FGV EPGE",
+        "natureza": "Escola de economia da Fundação Getulio Vargas; autor foi diretor do Banco Central",
+        "tipo": "Artigo",
+        "titulo": "Apostas online: regular, mas não proibir",
+        "autores": "Sérgio Werlang",
+        "data": "08/10/2024",
+        "formato": "PDF",
+        "url": "https://iepecdg.com.br/wp-content/uploads/2024/10/ARTIGO_SERGIO-WERLANG_-APOSTAS-ONLINE-REGULAR-MAS-NAO-PROIBIR.pdf",
+        "tese": "Usa os próprios números do Banco Central para dizer que o gasto líquido das famílias é bem menor do que parece, porque a maior parte do valor apostado volta como prêmio. Propõe regular duro: limitar a publicidade, identificar e bloquear quem tem vício e pôr um teto de apostas para famílias de baixa renda. Proibir algo que milhões querem consumir, diz, causaria perda de bem-estar.",
+        "numero": {
+          "valor": "0,35% do PIB",
+          "legenda": "seria o gasto líquido mensal com bets, cerca de R$ 3,2 bilhões"
+        },
+        "premissas": [
+          "As pessoas apostam porque valorizam a diversão, e não só por vício."
+        ],
+        "pergunte": [
+          "Se o gasto líquido é pequeno na média, ele também é pequeno para quem tem vício?"
+        ]
+      },
+      {
+        "id": "lca-locomotiva-ilegal",
+        "posicao": "contrario",
+        "instituicao": "LCA Consultores e Instituto Locomotiva",
+        "natureza": "Consultoria econômica e instituto de pesquisa privados; estudo encomendado pelo IBJR, entidade das empresas de apostas",
+        "tipo": "Estudo",
+        "titulo": "Estudo aponta queda do mercado ilegal de apostas no Brasil",
+        "autores": "LCA e Locomotiva (relato da Máquina do Esporte)",
+        "data": "11/08/2026",
+        "formato": "Página",
+        "url": "https://maquinadoesporte.com.br/apostas/estudo-aponta-queda-do-mercado-ilegal-de-apostas-no-brasil/",
+        "tese": "Com entrevistas feitas em maio de 2026, estima que a fatia das apostas em sites ilegais caiu desde que a regulamentação entrou em vigor, e que o mercado regulado pagou quase R$ 10 bilhões em impostos no primeiro ano. É o principal argumento de que a regulação estava funcionando e de que proibir devolveria o mercado à ilegalidade.",
+        "numero": {
+          "valor": "38% a 44%",
+          "legenda": "das apostas online ainda iam para sites ilegais no 1º semestre de 2026, contra 41% a 51% em 2025"
+        },
+        "premissas": [
+          "Apostadores sabem dizer se o site que usam é autorizado."
+        ],
+        "pergunte": [
+          "O estudo foi pago pelo setor. Mesmo assim, ele mostra que quase metade das apostas era ilegal com a lei em vigor. Isso ajuda qual lado?"
+        ]
+      },
+      {
+        "id": "idp-economia-comportamental-bets",
+        "posicao": "contrario",
+        "instituicao": "IDP",
+        "natureza": "Instituição privada de ensino e pesquisa em Brasília",
+        "tipo": "Artigo",
+        "titulo": "A economia comportamental das bets: arquitetura de escolha e regulação baseada nas apostas online no Brasil",
+        "autores": "Iasmim Azevêdo Cardoso (Boletim Economia Empírica)",
+        "data": "2026",
+        "formato": "PDF",
+        "url": "https://www.portaldeperiodicos.idp.edu.br/bee/article/download/9167/3853/32907",
+        "tese": "Não defende proibir. Argumenta que a lei de 2023 foi um avanço, mas olhou só para licenças, pagamentos e lavagem de dinheiro. O risco está no desenho das plataformas (bônus, notificações, mensagens de urgência), que explora vieses como a aversão à perda. A regulação deveria mirar esse desenho.",
+        "premissas": [
+          "Mudar o design das plataformas reduz o dano sem acabar com a atividade."
+        ],
+        "pergunte": [
+          "Regular o design de apps estrangeiros é viável na prática?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "x9bRVsTzxlU",
+        "titulo": "Vício em jogos de aposta: o que fazer?",
+        "canal": "Drauzio Varella",
+        "nota": "O médico explica como o vício em apostas funciona e onde buscar ajuda.",
+        "duracao": "2:39"
+      },
+      {
+        "id": "r96MnQvLjjo",
+        "titulo": "Banco Central não regula apostas, mas estuda impacto na economia",
+        "canal": "TV Senado",
+        "nota": "O que o Banco Central sabe sobre o dinheiro gasto em bets.",
+        "duracao": "1:40"
+      },
+      {
+        "id": "58dNNCV86pc",
+        "titulo": "Campos Neto: Banco Central avalia impacto de bets na inadimplência",
+        "canal": "CNN Brasil Economia",
+        "nota": "O então presidente do BC fala do risco para o endividamento.",
+        "duracao": "1:32"
+      },
+      {
+        "id": "hLrsJK032Mc",
+        "titulo": "Análise: governo que turbinou bets agora quer proibir",
+        "canal": "CNN Brasil",
+        "nota": "Crítica à mudança de rumo, da regulação de 2023 à proibição.",
+        "duracao": "2:04"
+      },
+      {
+        "id": "PNyhJvg4M8k",
+        "titulo": "Clubes e bets se unem contra possível restrição ao setor",
+        "canal": "Band Jornalismo",
+        "nota": "O peso das apostas no patrocínio do futebol.",
+        "duracao": "3:21"
+      }
+    ],
+    "imagem": {
+      "arquivo": "img/temas/bets.jpg",
+      "autor": "Agência Senado",
+      "licenca": "CC BY 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:CPIMJAE_-_CPI_da_Manipula%C3%A7%C3%A3o_de_Jogos_e_Apostas_Esportivas_(53846739673).jpg",
+      "legenda": "Reunião da CPI da Manipulação de Jogos e Apostas Esportivas, no Senado.",
+      "alt": "Senadores reunidos em sala de comissão parlamentar de inquérito",
+      "posicao": "50% 45%"
+    }
+  },
+  {
+    "id": "ajuste-fiscal",
+    "titulo": "Gastos públicos e dívida",
+    "categoria": "economia",
+    "tags": [
+      "arcabouço fiscal",
+      "teto de gastos",
+      "dívida pública",
+      "ajuste fiscal",
+      "austeridade",
+      "corte de gastos",
+      "déficit",
+      "juros",
+      "IFI",
+      "Tesouro"
+    ],
+    "pergunta": "O governo precisa cortar gastos para controlar a dívida pública?",
+    "resumo": "A dívida bruta chegou a 82,9% do PIB em agosto de 2026 e as despesas obrigatórias crescem mais que o limite do arcabouço fiscal. O debate é se a saída é cortar gastos ou crescer mais.",
+    "atualizado": "2026-10-16",
+    "rotulos": {
+      "favoravel": "A favor de cortar gastos",
+      "contrario": "Contra cortes como prioridade"
+    },
+    "contexto": {
+      "titulo": "O que está em debate",
+      "paragrafos": [
+        "Desde 2014, o governo federal fechou quase todos os anos no vermelho, mesmo sem contar os juros. A diferença é coberta com dívida. A dívida bruta do governo geral chegou a 82,9% do PIB em agosto de 2026, cerca de R$ 11,1 trilhões, segundo o Banco Central.",
+        "Em 2016, a Emenda Constitucional 95 criou o teto de gastos, que congelava a despesa federal em termos reais por 20 anos. Ele foi furado várias vezes e, em 2023, foi trocado pelo arcabouço fiscal (Lei Complementar 200), que deixa a despesa crescer entre 0,6% e 2,5% acima da inflação por ano, conforme a arrecadação, e fixa metas de resultado primário.",
+        "O problema apontado por órgãos técnicos é que despesas obrigatórias, como aposentadorias, BPC e precatórios, crescem mais rápido que esse limite. Sobra cada vez menos para investimentos e custeio. A Instituição Fiscal Independente (IFI), do Senado, projeta a dívida acima de 100% do PIB em 2032 sem ajustes.",
+        "Há duas visões principais. Uma diz que é preciso cortar ou frear gastos, inclusive revendo regras como a ligação de benefícios ao salário mínimo e os pisos de saúde e educação, para baixar os juros e evitar uma crise. A outra diz que cortar gasto social e investimento derruba o crescimento e piora a própria relação entre dívida e PIB, e que o ajuste deveria vir de impostos sobre os mais ricos, de juros menores e de mais crescimento."
+      ],
+      "fatos": [
+        {
+          "rotulo": "Dívida bruta (ago/2026)",
+          "valor": "82,9% do PIB"
+        },
+        {
+          "rotulo": "Projeção da IFI para 2032",
+          "valor": "102% do PIB"
+        },
+        {
+          "rotulo": "Superávit que estabiliza a dívida (IFI)",
+          "valor": "2,1% do PIB"
+        },
+        {
+          "rotulo": "Aposentadorias do INSS em 2026",
+          "valor": "8,3% do PIB"
+        }
+      ]
+    },
+    "pontos": [
+      {
+        "tema": "Dívida e juros",
+        "favoravel": "Dívida alta e crescente faz o mercado cobrar juros maiores, o que encarece o crédito para todo mundo.",
+        "contrario": "Os juros altos são a principal causa do aumento da dívida. Cortar gasto social não resolve isso."
+      },
+      {
+        "tema": "Crescimento",
+        "favoravel": "Contas em ordem dão confiança para investir e ajudam a economia a crescer de forma duradoura.",
+        "contrario": "Cortar investimento e benefícios reduz a demanda e o crescimento, e a dívida pode subir em relação ao PIB."
+      },
+      {
+        "tema": "Onde cortar",
+        "favoravel": "As despesas obrigatórias crescem sozinhas e espremem o resto. Sem mexer nelas, o arcabouço não para em pé.",
+        "contrario": "As despesas obrigatórias são aposentadorias e benefícios de quem mais precisa. Há espaço em subsídios e benefícios fiscais a empresas."
+      },
+      {
+        "tema": "Desigualdade",
+        "favoravel": "Uma crise fiscal, com inflação e desemprego, prejudica mais os pobres do que qualquer corte planejado.",
+        "contrario": "Cortes em saúde e educação aumentam a desigualdade quando se conta o valor desses serviços para as famílias."
+      }
+    ],
+    "glossario": [
+      {
+        "termo": "Resultado primário",
+        "definicao": "Diferença entre o que o governo arrecada e o que gasta, sem contar os juros da dívida. Superávit quando sobra, déficit quando falta."
+      },
+      {
+        "termo": "Dívida bruta do governo geral",
+        "definicao": "Tudo o que União, estados e municípios devem. É o indicador mais usado para comparar países."
+      },
+      {
+        "termo": "Arcabouço fiscal",
+        "definicao": "Regra criada em 2023 que limita o crescimento das despesas federais e fixa metas de resultado primário."
+      },
+      {
+        "termo": "Despesa obrigatória",
+        "definicao": "Gasto que o governo é obrigado a fazer por lei ou pela Constituição, como aposentadorias, salários de servidores e o BPC."
+      },
+      {
+        "termo": "Multiplicador fiscal",
+        "definicao": "Quanto o PIB muda para cada real a mais ou a menos de gasto público. É no tamanho dele que economistas mais discordam."
+      }
+    ],
+    "incertezas": [
+      "Qual o tamanho dos multiplicadores fiscais no Brasil hoje. Disso depende se cortar gasto reduz ou aumenta a dívida em relação ao PIB.",
+      "Quanto o nível da dívida influencia os juros cobrados pelo mercado.",
+      "Qual o limite de dívida que um país emergente como o Brasil aguenta sem crise."
+    ],
+    "fontes": [
+      {
+        "titulo": "CNN Brasil: BC: Dívida bruta do governo geral avança para 82,9% do PIB em agosto (30/09/2026)",
+        "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/bc-divida-bruta-do-governo-geral-avanca-para-829-do-pib-em-agosto/"
+      }
+    ],
+    "leituras": [
+      {
+        "id": "ifi-raf-113",
+        "posicao": "favoravel",
+        "instituicao": "IFI (Senado Federal)",
+        "natureza": "Instituição Fiscal Independente, órgão técnico do Senado",
+        "tipo": "Relatório de Acompanhamento Fiscal",
+        "titulo": "Relatório de Acompanhamento Fiscal nº 113",
+        "autores": "Instituição Fiscal Independente",
+        "data": "25/06/2026",
+        "formato": "PDF",
+        "url": "https://www12.senado.leg.br/ifi/pdf/raf113_jun2026.pdf",
+        "tese": "Projeta déficits primários persistentes e a dívida bruta passando de 100% do PIB em 2032 e chegando a 115% em 2036. Para estabilizar a dívida, seria preciso um superávit de 2,1% do PIB ao ano. A IFI considera esse nível de dívida extremamente elevado para um país emergente e vê um cenário desafiador para o próximo governo.",
+        "numero": {
+          "valor": "115%",
+          "legenda": "do PIB seria a dívida bruta em 2036, no cenário base da IFI"
+        },
+        "premissas": [
+          "Juros e crescimento seguem perto do que o mercado espera hoje."
+        ],
+        "pergunte": [
+          "A IFI aponta o problema, mas não diz onde cortar. Que escolhas um superávit de 2% do PIB exigiria?"
+        ]
+      },
+      {
+        "id": "tesouro-rpf-2025",
+        "posicao": "favoravel",
+        "instituicao": "Tesouro Nacional",
+        "natureza": "Secretaria do Ministério da Fazenda que administra a dívida pública",
+        "tipo": "Relatório de Projeções Fiscais",
+        "titulo": "Relatório de Projeções Fiscais (2º semestre de 2025)",
+        "autores": "Secretaria do Tesouro Nacional",
+        "data": "12/2025",
+        "formato": "PDF",
+        "url": "https://cdn.tesouro.gov.br/sistemas-internos/apex/producao/sistemas/thot/arquivos/publicacoes/53580_2492838/RPF-dez25.pdf",
+        "tese": "Mesmo o próprio governo projeta a dívida subindo até 88,6% do PIB em 2032. O relatório mostra que, a partir de 2030, despesas como aposentadorias, BPC e precatórios crescem mais que o limite do arcabouço, espremendo os gastos livres. Para estabilizar a dívida já, seria preciso um superávit maior que o previsto.",
+        "numero": {
+          "valor": "1,7% → 1,4%",
+          "legenda": "do PIB para gastos livres do governo entre 2025 e 2035"
+        },
+        "premissas": [
+          "As metas fiscais serão cumpridas, com novas medidas de arrecadação."
+        ],
+        "pergunte": [
+          "O Tesouro prevê cumprir as metas com mais arrecadação. Aumentar imposto é alternativa a cortar gasto?"
+        ]
+      },
+      {
+        "id": "salto-arcabouco-obrigatorias",
+        "posicao": "favoravel",
+        "instituicao": "Warren Investimentos (ex-IFI)",
+        "natureza": "Entrevista de economista que dirigiu a IFI; hoje no setor privado",
+        "tipo": "Entrevista",
+        "titulo": "Arcabouço fiscal não sobreviverá sem medidas para conter gastos, diz economista",
+        "autores": "Felipe Salto (relato do InfoMoney)",
+        "data": "02/07/2024",
+        "formato": "Página",
+        "url": "https://www.infomoney.com.br/?p=2516426",
+        "tese": "As despesas obrigatórias crescem mais que o limite da regra e vão espremer o resto até o arcabouço ser abandonado. Salto sugere desligar aposentadorias e benefícios assistenciais do salário mínimo, rever os pisos de saúde e educação e reduzir a complementação da União ao Fundeb.",
+        "premissas": [
+          "Sem regra crível, os juros sobem e o custo para a economia é maior que o dos cortes."
+        ],
+        "pergunte": [
+          "Desligar benefícios do salário mínimo reduz o poder de compra de quem os recebe. Quem perde e quem ganha com essa troca?"
+        ]
+      },
+      {
+        "id": "usp-ajuste-receita-gasto",
+        "posicao": "contrario",
+        "instituicao": "USP",
+        "natureza": "Universidade pública; artigo na revista Estudos Econômicos",
+        "tipo": "Artigo científico",
+        "titulo": "Ajuste via receita ou via gasto? Cenários de ajuste fiscal considerando estimativas de efeitos multiplicadores",
+        "autores": "Hiaman Santos, Guilherme Klein Martins (Universidade de Leeds) e Marina Sanches",
+        "data": "03/2026",
+        "formato": "Página",
+        "url": "https://revistas.usp.br/ee/article/view/229421",
+        "tese": "Estima os multiplicadores fiscais do Brasil e conclui que investimento público e benefícios sociais são os gastos que mais movem o PIB. Por isso, cortá-los pode piorar a relação entre dívida e PIB. Seria possível reduzir a dívida e crescer ao mesmo tempo trocando subsídios por investimento e gasto social.",
+        "premissas": [
+          "Os efeitos estimados no passado continuam valendo."
+        ],
+        "pergunte": [
+          "Se o investimento tem efeito tão alto, por que ele é o primeiro a ser cortado quando falta dinheiro?"
+        ]
+      },
+      {
+        "id": "nemea-ufmg-austeridade",
+        "posicao": "contrario",
+        "instituicao": "UFMG (Cedeplar)",
+        "natureza": "Universidade pública; Núcleo de Estudos em Modelagem Econômica e Ambiental Aplicada",
+        "tipo": "Nota técnica",
+        "titulo": "Austeridade fiscal no Brasil: impactos na renda das famílias e na atividade econômica",
+        "autores": "Guilherme Silva Cardoso, Débora Freire Cardoso e Edson Paulo Domingues",
+        "data": "09/2019",
+        "formato": "PDF",
+        "url": "https://pesquisas.face.ufmg.br/nemea/wp-content/uploads/sites/20/2019/09/NEMEA_Austeridade.pdf",
+        "tese": "Simula 20 anos de teto de gastos. Olhando só a renda em dinheiro, a desigualdade até cai. Mas, quando se conta o valor da saúde e da educação públicas que as famílias deixam de receber, a austeridade aumenta a desigualdade e não gera crescimento extra.",
+        "numero": {
+          "valor": "-19%",
+          "legenda": "de gasto público com educação em 2037 no cenário de austeridade, frente ao cenário base"
+        },
+        "premissas": [
+          "O modelo econômico simula bem 20 anos de economia.",
+          "Serviços públicos devem ser contados como parte da renda das famílias."
+        ],
+        "pergunte": [
+          "O estudo simula o teto de 2016, que já acabou. As conclusões valem para o arcabouço?"
+        ]
+      },
+      {
+        "id": "fes-austeridade-educacao",
+        "posicao": "contrario",
+        "instituicao": "Fundação Friedrich Ebert (autores da Unicamp)",
+        "natureza": "Fundação alemã ligada à social-democracia; autores pesquisadores da Unicamp",
+        "tipo": "Análise",
+        "titulo": "Austeridade e impactos no Brasil: ajuste fiscal, teto de gastos e o financiamento da educação pública",
+        "autores": "Pedro Rossi, Ana Luiza Matos de Oliveira e Flávio Arantes",
+        "data": "09/2017",
+        "formato": "PDF",
+        "url": "https://collections.fes.de/publikationen/download/pdf/459214",
+        "tese": "Argumenta que austeridade em recessão é contraproducente: reduz o crescimento, aumenta a dívida e atinge mais os vulneráveis. Critica o teto de 2016 por transformar um ajuste de curto prazo num encolhimento do Estado por 20 anos, contrário ao projeto da Constituição de 1988.",
+        "premissas": [
+          "Em economia fraca, o gasto público puxa o crescimento."
+        ],
+        "pergunte": [
+          "O argumento vale do mesmo jeito com a economia crescendo e desemprego baixo?"
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "id": "b4SoNx0XRSM",
+        "titulo": "Desafio é equilibrar dívida pública em relação ao PIB, diz Felipe Salto",
+        "canal": "CNN Brasil Economia",
+        "nota": "O ex-diretor da IFI do Senado explica a conta da dívida.",
+        "duracao": "12:29"
+      },
+      {
+        "id": "mm7lQ1bwryQ",
+        "titulo": "Arcabouço fiscal não limitou crescimento da dívida pública, diz professor",
+        "canal": "CNN Brasil Money",
+        "nota": "Por que a regra atual não segurou a dívida.",
+        "duracao": "9:30"
+      },
+      {
+        "id": "knYjWl9fnkg",
+        "titulo": "Corte de despesas exige condução firme, diz economista-chefe da XP",
+        "canal": "CNN Brasil Money",
+        "nota": "A visão do mercado financeiro sobre onde cortar.",
+        "duracao": "2:30"
+      },
+      {
+        "id": "oSGYSfUKNO0",
+        "titulo": "Problema fiscal não será resolvido só com corte de gastos, diz Kayath",
+        "canal": "CNN Brasil",
+        "nota": "O argumento de que também é preciso mexer na arrecadação.",
+        "duracao": "5:22"
+      },
+      {
+        "id": "Oufcg6z8H6I",
+        "titulo": "A verdade sobre o arcabouço fiscal, com Juliane Furno",
+        "canal": "Opera Mundi",
+        "nota": "A economista Juliane Furno critica limitar o gasto público.",
+        "duracao": "9:45"
+      },
+      {
+        "id": "uxRTLqpdvGk",
+        "titulo": "Juros, inflação e gastos: Igor questiona Haddad",
+        "canal": "Cortes do Flow",
+        "nota": "O ministro da Fazenda responde sobre gastos e dívida.",
+        "duracao": "9:30"
+      }
+    ],
+    "imagem": {
+      "arquivo": "img/temas/ajuste-fiscal.jpg",
+      "autor": "Pedro França/Agência Senado",
+      "licenca": "CC BY 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+      "fonte_url": "https://commons.wikimedia.org/wiki/File:Imagens_de_Bras%C3%ADlia_(52652558481).jpg",
+      "legenda": "Prédio do Ministério da Fazenda, na Esplanada dos Ministérios, em Brasília.",
+      "alt": "Fachada do prédio do Ministério da Fazenda em Brasília",
+      "posicao": "50% 50%"
     }
   }
 ];
