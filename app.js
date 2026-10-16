@@ -208,7 +208,7 @@
     const n = a.veiculos;
     return `
       <section class="em-alta" aria-labelledby="em-alta-titulo">
-        <div class="em-alta-selo mono"><span class="pulso" aria-hidden="true"></span>Em alta agora<span class="apagado">· Atualizado ${esc(haQuanto(a.manchetes[0].data))}</span></div>
+        <div class="em-alta-selo mono"><span class="em-alta-rotulo"><span class="pulso" aria-hidden="true"></span>Em alta agora</span><span class="apagado">Atualizado ${esc(haQuanto(a.atualizado || a.manchetes[0].data))}</span></div>
         <h2 id="em-alta-titulo"><a href="#${tema.id}">${esc(tema.pergunta || tema.titulo)}</a></h2>
         <p>Esse assunto voltou ao noticiário e apareceu em ${n} ${n === 1 ? "veículo" : "veículos"} nos últimos dois dias. Antes de ler as manchetes, veja o que está em jogo e o que cada lado argumenta.</p>
         <div class="em-alta-acoes">
@@ -224,7 +224,7 @@
     if (!tema) return "";
     return `
       <section class="em-alta" aria-labelledby="em-alta-titulo">
-        <div class="em-alta-selo mono"><span class="pulso" aria-hidden="true"></span>Em alta agora<span class="apagado">· ${esc(e.selo)} · ${esc(e.data)}</span></div>
+        <div class="em-alta-selo mono"><span class="em-alta-rotulo"><span class="pulso" aria-hidden="true"></span>Em alta agora</span><span class="apagado">${esc(e.selo)} · ${esc(e.data)}</span></div>
         <h2 id="em-alta-titulo"><a href="#${tema.id}">${esc(e.titulo)}</a></h2>
         <p>${esc(e.texto)}</p>
         <div class="em-alta-acoes">

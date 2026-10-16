@@ -201,15 +201,8 @@ def main():
             "manchetes": manchetes,
         }
 
-    anterior = None
-    if os.path.exists(SAIDA):
-        m = re.search(r"window\.EM_ALTA_AUTO = (\{.*\});", open(SAIDA, encoding="utf-8").read(), re.S)
-        if m:
-            anterior = json.loads(m.group(1))
-            anterior.pop("atualizado", None)
-    if anterior == dados:
-        print("\nNada mudou.")
-        return
+    # Grava sempre, mesmo sem mudança de tema: "atualizado" é a hora em que o robô conferiu
+    # os feeds, e é ela que o selo "Atualizado há X" mostra no site.
     dados["atualizado"] = agora.isoformat(timespec="minutes")
     with open(SAIDA, "w", encoding="utf-8") as f:
         f.write("/* Gerado por ferramentas/em_alta.py a partir dos feeds da imprensa. Não edite à mão:\n"

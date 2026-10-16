@@ -1,7 +1,7 @@
 name: Atualizar Em alta
 on:
   schedule:
-    - cron: "17 */2 * * *"   # a cada 2 horas (horário UTC)
+    - cron: "23 * * * *"   # a cada hora (o GitHub às vezes pula ou atrasa execuções agendadas)
   workflow_dispatch:
   push:
     branches: [main]
