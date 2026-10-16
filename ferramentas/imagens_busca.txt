@@ -1,5 +1,0 @@
-ensino-medio | sala de aula alunos Agência Brasília
-ensino-medio | *sala de aula escola pública Brasil alunos carteiras
-ensino-medio | *escola de tempo integral ensino médio
-ensino-medio | instituto federal estudantes laboratório
-ensino-medio | *Escola Técnica Estadual alunos
