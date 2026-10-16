@@ -1,0 +1,13 @@
+aplicativos | entregador aplicativo
+aplicativos | entregadores manifestação
+aplicativos | *motoboy delivery São Paulo
+voto-obrigatorio | urna eletrônica
+voto-obrigatorio | eleições seção eleitoral eleitores
+emendas | plenário Câmara dos Deputados votação
+emendas | Congresso Nacional orçamento
+ensino-medio | estudantes ensino médio escola
+ensino-medio | sala de aula alunos escola estadual
+bets | *apostas esportivas
+bets | CPI bets Senado
+arcabouco | arcabouço fiscal Haddad
+arcabouco | Ministério da Fazenda Esplanada
