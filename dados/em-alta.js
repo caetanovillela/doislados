@@ -2,33 +2,33 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "escala-6x1",
-  "veiculos": 10,
-  "noticias": 86,
+  "veiculos": 8,
+  "noticias": 83,
   "manchetes": [
     {
-      "veiculo": "g1",
-      "titulo": "Fim da escala 6x1 é promulgado e prazos começam a contar; entenda como será a transição",
-      "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/16/transicao-fim-da-escala-6x1.ghtml",
-      "data": "2026-10-16T16:24+00:00"
-    },
-    {
       "veiculo": "Poder360",
-      "titulo": "“É uma conquista do povo brasileiro”, diz Lula sobre fim da 6 X 1",
-      "url": "https://www.poder360.com.br/poder-congresso/e-uma-conquista-do-povo-brasileiro-diz-lula-sobre-fim-da-6-x-1/",
-      "data": "2026-10-16T15:13+00:00"
+      "titulo": "Lula acena a empresários: “Ninguém vai ter prejuízo com fim da 6 X 1”",
+      "url": "https://www.poder360.com.br/poder-eleicoes-2026/lula-acena-a-empresarios-ninguem-vai-ter-prejuizo-com-fim-da-6-x-1/",
+      "data": "2026-10-16T19:16+00:00"
     },
     {
-      "veiculo": "Metrópoles",
-      "titulo": "Fim da 6X1: Joaquim Nabuco, a escravidão, Flávio e lixo de um senador do PL",
-      "url": "https://www.metropoles.com/colunas/reinaldo-azevedo/fim-da-6x1-joaquim-nabuco-a-escravidao-flavio-e-lixo-de-um-senador-do-pl",
-      "data": "2026-10-16T15:12+00:00"
+      "veiculo": "g1",
+      "titulo": "De quem é o projeto que acabou com a escala 6x1? Conheça propostas",
+      "url": "https://g1.globo.com/politica/noticia/2026/10/16/de-quem-e-o-projeto-que-acabou-com-a-escala-6x1-conheca-propostas.ghtml",
+      "data": "2026-10-16T18:47+00:00"
     },
     {
-      "veiculo": "Agência Câmara",
-      "titulo": "Congresso promulga emenda que acaba com escala 6x1 e estabelece jornada máxima de 40 horas semanais",
-      "url": "https://www.camara.leg.br/noticias/1311797-congresso-promulga-emenda-que-acaba-com-escala-6x1-e-estabelece-jornada-maxima-de-40-horas-semanais",
-      "data": "2026-10-16T15:08+00:00"
+      "veiculo": "Agência Brasil",
+      "titulo": "Alcolumbre homenageia Paim no fim da 6x1; entenda motivo",
+      "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/alcolumbre-homenageia-paim-no-fim-da-6x1-entenda-motivo",
+      "data": "2026-10-16T18:44+00:00"
+    },
+    {
+      "veiculo": "Folha de S.Paulo",
+      "titulo": "Trabalhadores celebram fim da escala 6x1; pesquisas mostram ganho de produtividade",
+      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/trabalhadores-celebram-fim-da-escala-6x1-pesquisas-mostram-ganho-de-produtividade.shtml",
+      "data": "2026-10-16T18:37+00:00"
     }
   ],
-  "atualizado": "2026-10-16T15:24+00:00"
+  "atualizado": "2026-10-16T19:36+00:00"
 };
