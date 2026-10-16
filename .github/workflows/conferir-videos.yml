@@ -18,4 +18,5 @@ jobs:
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
           git add img/videos ferramentas/videos.json ferramentas/buscas.json
           git commit -m "Busca, miniaturas e dados dos vídeos" || exit 0
+          git pull --rebase -q || true
           git push
