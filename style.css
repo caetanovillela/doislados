@@ -600,3 +600,16 @@ label.botao { display: inline-block; }
 }
 @media (prefers-reduced-motion: reduce) { .aviso { transition: none; } }
 @media (max-width: 760px) { .perfil-form-linha input { flex-basis: 100%; } }
+
+/* Conta: criar, entrar, esqueci a senha */
+.conta-abas { margin-bottom: 4px; }
+.conta-form { display: grid; gap: 14px; max-width: 30rem; }
+.campo { display: grid; gap: 6px; }
+.campo input {
+  height: 46px; padding: 0 12px; font: inherit; font-family: var(--f-titulo); font-size: 1rem;
+  border: 1.5px solid var(--tinta); background: var(--papel); color: var(--tinta); width: 100%;
+}
+.campo input:focus { outline: none; box-shadow: 0 0 0 3px var(--grifo); }
+.conta-linha { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+.dossie .conta-msg { margin: 0; padding: 10px 14px; font-size: 1rem; line-height: 1.45; border-left: 4px solid var(--grifo); background: color-mix(in srgb, var(--grifo) 22%, transparent); }
+.dossie .conta-msg.erro { border-left-color: var(--tinta); background: transparent; border: 1.5px solid var(--tinta); border-left-width: 4px; }
