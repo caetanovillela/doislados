@@ -1,7 +1,9 @@
 /*
   Conteúdo do site. O layout (app.js e style.css) não precisa mudar para adicionar conteúdo.
 
-  EM_ALTA: o assunto em destaque no topo da página inicial. Troque quando outro tema esquentar.
+  EM_ALTA: destaque escrito à mão para o topo da página inicial. Normalmente quem manda é
+    dados/em-alta.js, que um robô atualiza sozinho a partir dos feeds da imprensa
+    (ferramentas/em_alta.py). Este bloco só aparece se o robô não achar nada, ou se tiver "fixar": true.
     tema   id do tema que o botão abre
     data   quando aconteceu (aparece no selo)
 

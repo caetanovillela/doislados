@@ -120,6 +120,11 @@ h1, h2, h3 { font-family: var(--f-titulo); text-wrap: balance; margin: 0; }
 .em-alta h2 a { text-decoration: none; }
 .em-alta h2 a:hover { text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 6px; }
 .em-alta p { margin: 0; max-width: 46rem; font-size: 1.08rem; line-height: 1.5; }
+.em-alta-manchetes { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; max-width: 52rem; }
+.em-alta-manchetes li { display: grid; gap: 2px; padding-top: 10px; border-top: 1px solid var(--fio); }
+.em-alta-manchetes .mono { font-size: 0.8rem; }
+.em-alta-manchetes a { font-weight: 600; line-height: 1.35; text-decoration: none; }
+.em-alta-manchetes a:hover { text-decoration: underline; }
 .em-alta-acoes { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; padding-top: 4px; }
 .em-alta-acoes .botao { text-decoration: none; }
 

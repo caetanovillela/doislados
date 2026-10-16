@@ -174,8 +174,49 @@
     pintarCategorias();
   }
 
+  // "Em alta agora": por padrão vem de dados/em-alta.js, que um robô atualiza a partir
+  // dos feeds da imprensa (ferramentas/em_alta.py). EM_ALTA, em dados/temas.js, é o
+  // destaque escrito à mão: entra quando tem "fixar": true ou quando o robô não achou nada.
   function emAlta() {
-    const e = window.EM_ALTA;
+    const auto = window.EM_ALTA_AUTO;
+    const manual = window.EM_ALTA;
+    const temaAuto = auto && auto.manchetes && auto.manchetes.length && temas.find((t) => t.id === auto.tema && !t.emBreve);
+    const recente = temaAuto && Date.now() - new Date(auto.manchetes[0].data) < 4 * 864e5;
+    if (temaAuto && recente && !(manual && manual.fixar)) return emAltaAuto(auto, temaAuto);
+    return emAltaManual(manual);
+  }
+
+  function haQuanto(iso) {
+    const min = Math.max(0, Math.round((Date.now() - new Date(iso)) / 6e4));
+    if (min < 60) return min <= 1 ? "agora" : `há ${min} min`;
+    const h = Math.round(min / 60);
+    if (h < 24) return `há ${h} h`;
+    const d = Math.round(h / 24);
+    return d === 1 ? "ontem" : `há ${d} dias`;
+  }
+
+  function emAltaAuto(a, tema) {
+    const nomes = a.manchetes.map((m) => m.veiculo);
+    const outros = a.veiculos - nomes.length;
+    const quem = outros > 0 ? `${nomes.join(", ")} e mais ${outros} ${outros === 1 ? "veículo" : "veículos"}`
+      : nomes.length > 1 ? `${nomes.slice(0, -1).join(", ")} e ${nomes[nomes.length - 1]}` : nomes[0];
+    const qtd = a.noticias === 1 ? "uma reportagem" : `${a.noticias} reportagens`;
+    return `
+      <section class="em-alta" aria-labelledby="em-alta-titulo">
+        <div class="em-alta-selo mono"><span class="pulso" aria-hidden="true"></span>Em alta agora<span class="apagado">· Na imprensa · ${esc(haQuanto(a.manchetes[0].data))}</span></div>
+        <h2 id="em-alta-titulo"><a href="#${tema.id}">${esc(tema.pergunta || tema.titulo)}</a></h2>
+        <p>${esc(quem)} publicaram ${qtd} sobre ${esc(tema.titulo)} nos últimos dois dias.</p>
+        <ul class="em-alta-manchetes">
+          ${a.manchetes.map((m) => `<li><span class="mono apagado">${esc(m.veiculo)} · ${esc(haQuanto(m.data))}</span><a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.titulo)} ↗</a></li>`).join("")}
+        </ul>
+        <div class="em-alta-acoes">
+          <a class="botao" href="#${tema.id}">Entenda os dois lados</a>
+          <span class="mono apagado">${doLado(tema, "favoravel").length + doLado(tema, "contrario").length} estudos · ${esc(nomeCategoria(tema.categoria))}</span>
+        </div>
+      </section>`;
+  }
+
+  function emAltaManual(e) {
     const tema = e && temas.find((t) => t.id === e.tema && !t.emBreve);
     if (!tema) return "";
     return `

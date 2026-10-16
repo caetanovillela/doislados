@@ -38,10 +38,10 @@ FONTES = [
     ("Estadão", "https://www.estadao.com.br/arc/outboundfeeds/feeds/rss/sections/politica/"),
     ("Estadão", "https://www.estadao.com.br/arc/outboundfeeds/feeds/rss/sections/economia/"),
     ("Poder360", "https://www.poder360.com.br/feed/"),
-    ("CNN Brasil", "https://www.cnnbrasil.com.br/politica/feed/"),
+    ("CNN Brasil", "https://www.cnnbrasil.com.br/feed/"),
     ("BBC News Brasil", "https://feeds.bbci.co.uk/portuguese/rss.xml"),
     ("Agência Brasil", "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml"),
-    ("Agência Senado", "https://www12.senado.leg.br/noticias/feed/todasasnoticias/RSS"),
+    ("Agência Senado", "https://www12.senado.leg.br/noticias/rss"),
     ("Agência Câmara", "https://www.camara.leg.br/noticias/rss/ultimas-noticias"),
 ]
 
