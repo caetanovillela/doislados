@@ -202,24 +202,20 @@
     return d === 1 ? "ontem" : `há ${d} dias`;
   }
 
+  // Só acende o interesse: a pergunta do tema e onde ele está sendo noticiado.
+  // As manchetes ficam de fora de propósito, para não puxar a leitura para um lado antes do dossiê.
   function emAltaAuto(a, tema) {
-    const nomes = a.manchetes.map((m) => m.veiculo);
-    const outros = a.veiculos - nomes.length;
-    const quem = outros > 0 ? `${nomes.join(", ")} e mais ${outros} ${outros === 1 ? "veículo" : "veículos"}`
-      : nomes.length > 1 ? `${nomes.slice(0, -1).join(", ")} e ${nomes[nomes.length - 1]}` : nomes[0];
-    const qtd = a.noticias === 1 ? "uma reportagem" : `${a.noticias} reportagens`;
+    const n = a.veiculos;
     return `
       <section class="em-alta" aria-labelledby="em-alta-titulo">
-        <div class="em-alta-selo mono"><span class="pulso" aria-hidden="true"></span>Em alta agora<span class="apagado">· Na imprensa · ${esc(haQuanto(a.manchetes[0].data))}</span></div>
+        <div class="em-alta-selo mono"><span class="pulso" aria-hidden="true"></span>Em alta agora<span class="apagado">· Nas notícias ${esc(haQuanto(a.manchetes[0].data))}</span></div>
         <h2 id="em-alta-titulo"><a href="#${tema.id}">${esc(tema.pergunta || tema.titulo)}</a></h2>
-        <p>${esc(quem)} publicaram ${qtd} sobre ${esc(tema.titulo)} nos últimos dois dias.</p>
-        <ul class="em-alta-manchetes">
-          ${a.manchetes.map((m) => `<li><span class="mono apagado">${esc(m.veiculo)} · ${esc(haQuanto(m.data))}</span><a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.titulo)} ↗</a></li>`).join("")}
-        </ul>
+        <p>Esse assunto voltou ao noticiário e apareceu em ${n} ${n === 1 ? "veículo" : "veículos"} nos últimos dois dias. Antes de ler as manchetes, veja o que está em jogo e o que cada lado argumenta.</p>
         <div class="em-alta-acoes">
           <a class="botao" href="#${tema.id}">Entenda os dois lados</a>
           <span class="mono apagado">${doLado(tema, "favoravel").length + doLado(tema, "contrario").length} estudos · ${esc(nomeCategoria(tema.categoria))}</span>
         </div>
+        <p class="em-alta-veiculos mono apagado">Depois, compare a cobertura:${a.manchetes.map((m) => ` <a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.veiculo)} ↗</a>`).join(" ·")}</p>
       </section>`;
   }
 
