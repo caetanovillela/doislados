@@ -14,7 +14,9 @@
     tags        palavras extras que a busca encontra
     emBreve     true para mostrar o tema como "em preparação"
     rotulos     nome de cada lado (lado A = "favoravel", lado B = "contrario")
-    contexto, pontos, glossario, incertezas, fontes
+    contexto, glossario, incertezas, fontes
+    pontos      { tema, favoravel, contrario, fonte_favoravel, fonte_contrario }: cada lado sai de uma leitura
+                do próprio tema (o id vai em fonte_*, e o código A1/B2 entra no fim do texto).
     leituras    textos de instituições: posicao ("favoravel" | "contrario"), instituicao, natureza,
                 tipo, titulo, autores, data, formato, url, tese, numero, premissas, pergunte
     videos      { id: código do YouTube (o que vem depois de watch?v=), titulo, canal, nota, duracao opcional }
@@ -125,29 +127,25 @@ window.TEMAS = [
     },
     "pontos": [
       {
-        "tema": "Saúde e vida pessoal",
-        "favoravel": "Um dia de folga não basta para descansar, cuidar da casa e conviver com a família.",
-        "contrario": "Concorda que o descanso importa, mas defende que isso seja resolvido em acordos por setor."
-      },
-      {
         "tema": "Emprego",
-        "favoravel": "Menos horas por pessoa exigem mais contratações para cobrir a mesma operação.",
-        "contrario": "O custo maior pode levar a demissões, automação e mais trabalho informal."
+        "favoravel": "Quando a Constituição de 1988 reduziu a jornada, o salário por hora subiu e a chance de desemprego dos trabalhadores afetados não aumentou. (A4)",
+        "contrario": "A CNC estima 631 mil empregos formais a menos só no comércio, setor em que quase todos passam de 40 horas. (B3)",
+        "fonte_favoravel": "rbe-1988",
+        "fonte_contrario": "cnc-parecer"
       },
       {
-        "tema": "Custos e preços",
-        "favoravel": "Trabalhadores descansados erram menos e faltam menos, o que reduz parte do custo.",
-        "contrario": "Pequenos negócios teriam de contratar mais gente, e o custo iria para os preços."
+        "tema": "Custo para as empresas",
+        "favoravel": "O custo médio do trabalhador CLT subiria 7,84%, o que representa menos de 1% do custo total da indústria e do comércio. Limpeza, segurança e pequenos negócios precisariam de mais tempo. (A3)",
+        "contrario": "Sem ganho de produtividade, o custo extra chegaria a R$ 267 bilhões por ano no cenário mais alto e iria para o preço final. (B4)",
+        "fonte_favoravel": "ipea-nota-tecnica",
+        "fonte_contrario": "cni-custo"
       },
       {
-        "tema": "Produtividade",
-        "favoravel": "Testes com semana de quatro dias mostraram produção estável com menos horas.",
-        "contrario": "A produtividade brasileira está estagnada há anos; reduzir horas antes de elevá-la é arriscado."
-      },
-      {
-        "tema": "Como mudar",
-        "favoravel": "Só uma regra geral protege quem tem pouco poder de negociação.",
-        "contrario": "Cada setor tem uma realidade; a negociação coletiva se adapta melhor."
+        "tema": "Benefícios e custo para a economia",
+        "favoravel": "72,8% dos jovens ocupados de 14 a 29 anos trabalham 40 horas ou mais, o que tira o estudo da lista de prioridades. (A1)",
+        "contrario": "A FGV reconhece que os benefícios sociais podem ser grandes, mas calcula um custo imediato de 2,6% do PIB com 40 horas semanais. (B1)",
+        "fonte_favoravel": "unicamp-juventude",
+        "fonte_contrario": "fgv-impacto-imediato"
       }
     ],
     "glossario": [
@@ -494,24 +492,25 @@ window.TEMAS = [
     },
     "pontos": [
       {
-        "tema": "Crescimento",
-        "favoravel": "Simplificar e acabar com impostos em cascata aumenta a produtividade e o PIB.",
-        "contrario": "As exceções aprovadas reduzem muito o ganho previsto."
-      },
-      {
         "tema": "Quem paga",
-        "favoravel": "Um IVA uniforme é menos regressivo que o sistema atual, sobretudo com devolução de imposto aos mais pobres.",
-        "contrario": "O sistema continua apoiado no consumo, que pesa mais para quem ganha menos."
+        "favoravel": "Trocar os tributos atuais por um IVA deixa o sistema um pouco menos injusto com os mais pobres. Hoje 26% do benefício da cesta básica isenta vai para os 20% mais ricos. (A3)",
+        "contrario": "Quase metade da arrecadação (49,7%) vem do consumo, contra 32,4% na média da OCDE. Simplificar não muda esse peso. (B3)",
+        "fonte_favoravel": "ufpe-distributivo",
+        "fonte_contrario": "anfip-fenafisco"
       },
       {
-        "tema": "Serviços",
-        "favoravel": "O setor pagava menos que a indústria; equalizar corrige uma distorção.",
-        "contrario": "Serviços usam muita mão de obra e não têm muito crédito a abater, então a carga sobe."
+        "tema": "Exceções e setores",
+        "favoravel": "As exceções do texto aprovado reduzem o ganho de PIB (de 5,75% para 2,39%), mas diminuem as perdas de alguns setores e regiões. (A2)",
+        "contrario": "Com IVA de 25%, a carga sobre serviços subiria em média 84% em 30 segmentos, porque o setor usa muita mão de obra e tem pouco imposto a abater. (B1)",
+        "fonte_favoravel": "ipea-impactos",
+        "fonte_contrario": "cnc-servicos"
       },
       {
-        "tema": "Estados e municípios",
-        "favoravel": "A cobrança no destino acaba com a guerra fiscal e ajuda estados mais pobres.",
-        "contrario": "Estados e cidades perdem autonomia para usar impostos como política de desenvolvimento."
+        "tema": "Justiça fiscal",
+        "favoravel": "A crítica de que o IVA é regressivo estaria errada: devolver imposto às famílias pobres funciona melhor que dar desconto em produtos. (A1)",
+        "contrario": "A reforma não enfrenta a cobrança concentrada no consumo, e por isso não basta para os objetivos do Estado social. (B2)",
+        "fonte_favoravel": "insper-sete-mitos",
+        "fonte_contrario": "ufjf-justica-fiscal"
       }
     ],
     "glossario": [
@@ -786,24 +785,25 @@ window.TEMAS = [
     },
     "pontos": [
       {
-        "tema": "Discernimento",
-        "favoravel": "Jovens de 16 e 17 anos entendem o que fazem e podem responder como adultos.",
-        "contrario": "Adolescentes ainda estão em formação, e a lei deve priorizar a recuperação."
+        "tema": "Responsabilidade",
+        "favoravel": "Jovens de 16 e 17 anos entendem o que fazem. Pela proporcionalidade, quem comete crime hediondo deveria responder como adulto. (A1)",
+        "contrario": "Adolescentes respondem por 0,5% a 2% dos homicídios ou crimes hediondos e são sobretudo vítimas. O caminho seria cumprir o ECA e investir em prevenção. (B3)",
+        "fonte_favoravel": "mprj-capez",
+        "fonte_contrario": "sbp-2026"
       },
       {
-        "tema": "Violência",
-        "favoravel": "A punição mais dura desestimularia crimes e acabaria com a sensação de impunidade.",
-        "contrario": "Comparações entre países não mostram menos violência onde a idade penal é menor."
+        "tema": "Efeito na violência",
+        "favoravel": "Para o relator da PEC, jovens de 16 e 17 anos cometem crimes tão graves quanto adultos, e punição maior desestimula o crime. (A3)",
+        "contrario": "Comparando 197 países, não aparece relação entre idade penal mais baixa e menos violência. Se há alguma, é a contrária. (B2)",
+        "fonte_favoravel": "camara-pec-32-2015",
+        "fonte_contrario": "ufpe-comparado"
       },
       {
-        "tema": "Sistema prisional",
-        "favoravel": "Jovens que cometem crimes hediondos precisam de penas proporcionais.",
-        "contrario": "Prisões superlotadas aproximariam adolescentes de facções criminosas."
-      },
-      {
-        "tema": "Constituição",
-        "favoravel": "A idade penal não está entre os direitos individuais e pode mudar por emenda.",
-        "contrario": "O artigo 228 é uma garantia individual e, por isso, cláusula pétrea."
+        "tema": "Impunidade",
+        "favoravel": "Em vez de baixar a idade para todos, o Ministério Público poderia pedir, caso a caso, que jovens de 16 e 17 anos respondam como adultos em crimes graves. (A2)",
+        "contrario": "A impunidade é um mito: o ECA já responsabiliza o adolescente, e a internação é usada até mais do que a lei prevê. (B1)",
+        "fonte_favoravel": "senado-pec-33-2012",
+        "fonte_contrario": "ipea-adolescente"
       }
     ],
     "glossario": [
@@ -1088,24 +1088,25 @@ window.TEMAS = [
     },
     "pontos": [
       {
-        "tema": "Quem paga",
-        "favoravel": "Empresas e toda a sociedade se beneficiam do transporte, então faz sentido dividir o custo por impostos e contribuições.",
-        "contrario": "A conta recai sobre empresas e orçamentos municipais que já estão apertados."
-      },
-      {
         "tema": "Renda",
-        "favoravel": "A passagem pesa muito no orçamento dos mais pobres. Zerar a tarifa funciona como transferência de renda.",
-        "contrario": "Parte do benefício vai para quem já tem vale-transporte ou poderia pagar."
+        "favoravel": "Com tarifa zero nas 27 capitais e regiões metropolitanas, R$ 45,6 bilhões por ano ficariam no bolso da população. (A1)",
+        "contrario": "O próprio Ministério das Cidades prefere primeiro baratear a passagem e melhorar o serviço. A tarifa zero nacional custaria cerca de R$ 57 bilhões por ano. (B3)",
+        "fonte_favoravel": "unb-distribuicao-renda",
+        "fonte_contrario": "semob-modicidade"
       },
       {
-        "tema": "Qualidade",
-        "favoravel": "Pagar as empresas pelo serviço prestado, e não por passageiro, acaba com o incentivo a lotar os ônibus.",
-        "contrario": "Com mais passageiros e a mesma verba, os ônibus podem ficar mais cheios e piores."
+        "tema": "Quem paga",
+        "favoravel": "Pagar as empresas pelo custo do serviço, e não por passageiro, e financiar o sistema com impostos progressivos, como se faz com a coleta de lixo. (A2)",
+        "contrario": "Em Belo Horizonte, a taxa sobre as empresas não cobriria o custo, e até 19,4% do orçamento da prefeitura ficaria comprometido. (B1)",
+        "fonte_favoravel": "unicamp-gregori",
+        "fonte_contrario": "fiemg-bh"
       },
       {
-        "tema": "Cidade",
-        "favoravel": "Menos carros na rua significa menos trânsito, poluição e acidentes.",
-        "contrario": "Quem migra para o ônibus de graça muitas vezes ia a pé ou de bicicleta, e não de carro."
+        "tema": "Escala",
+        "favoravel": "Em Paris, a passagem já cobre só cerca de um terço do custo. Como a vacina, o transporte pode ser pago por todos via impostos. (A3)",
+        "contrario": "A gratuidade avança quase só em cidades pequenas, e oito já desistiram. No país todo, exigiria 20% mais ônibus e R$ 15 bilhões a mais por ano. (B2)",
+        "fonte_favoravel": "usp-zilbovicius",
+        "fonte_contrario": "ntu-2026"
       }
     ],
     "glossario": [
@@ -1384,24 +1385,25 @@ window.TEMAS = [
     },
     "pontos": [
       {
-        "tema": "Pobreza",
-        "favoravel": "É uma das políticas mais baratas e eficientes para reduzir a pobreza extrema.",
-        "contrario": "Reduz a pobreza no curto prazo, mas não basta para tirar as famílias dela de vez."
+        "tema": "Resultado e foco",
+        "favoravel": "Com menos de 0,5% do PIB, o programa reduziu a pobreza extrema em mais de 25% e respondeu por quase 10% da queda da desigualdade entre 2001 e 2015. (A1)",
+        "contrario": "Em visitas a 2.662 famílias, o TCU viu que 22,5% não se enquadravam nas regras do programa. (B3)",
+        "fonte_favoravel": "ipea-15-anos",
+        "fonte_contrario": "tcu-cadunico"
       },
       {
         "tema": "Trabalho",
-        "favoravel": "Quem sai do mercado deixa sobretudo empregos precários, e muitas vezes para cuidar dos filhos.",
-        "contrario": "O valor maior reduziu a busca por emprego, sobretudo entre homens jovens."
+        "favoravel": "O aumento para R$ 600 reduziu a participação no trabalho em 2,2 a 4,7 pontos, sobretudo de quem estava desempregado ou em trabalho precário, sem efeito sobre a formalidade. (A2)",
+        "contrario": "Quem passou a ter direito ao benefício reduziu em 11% a participação no mercado de trabalho, sobretudo homens jovens do Norte e Nordeste. (B1)",
+        "fonte_favoravel": "ipea-nt-78",
+        "fonte_contrario": "fgv-ibre-duque"
       },
       {
-        "tema": "Custo",
-        "favoravel": "Custa pouco perto de outros gastos públicos e o dinheiro volta para a economia local.",
-        "contrario": "O custo quadruplicou e pesa num orçamento federal apertado."
-      },
-      {
-        "tema": "Desenho",
-        "favoravel": "Os adicionais por criança focam o dinheiro em quem mais precisa.",
-        "contrario": "O valor fixo por família deveria cair, e o dinheiro ir para mães de crianças pequenas e jovens que estudam."
+        "tema": "Efeito nas famílias",
+        "favoravel": "64% dos jovens que recebiam o benefício em 2005 já não dependiam de programas federais em 2019. (A3)",
+        "contrario": "As condicionalidades jogam sobre as mães todo o cuidado com os filhos, sem remuneração, e limitam a autonomia delas. (B2)",
+        "fonte_favoravel": "imds-geracoes",
+        "fonte_contrario": "ufjf-mulheres"
       }
     ],
     "glossario": [
@@ -1675,24 +1677,25 @@ window.TEMAS = [
     },
     "pontos": [
       {
-        "tema": "Defesa",
-        "favoravel": "O Estado não consegue proteger todo mundo o tempo todo. A arma dá ao cidadão uma chance de se defender.",
-        "contrario": "Reagir armado a um assalto aumenta o risco de morrer, e a arma em casa costuma ser usada em brigas, feminicídios e suicídios."
-      },
-      {
         "tema": "Homicídios",
-        "favoravel": "Os homicídios caíram justamente no período em que o acesso a armas foi ampliado.",
-        "contrario": "Estudos com dados brasileiros mostram que mais armas em circulação andam junto com mais homicídios."
+        "favoravel": "Entre 2017 e 2019, os registros de armas de civis subiram 65,6% enquanto os homicídios caíram 30,9%. O autor ressalva que correlação não prova causa. (A3)",
+        "contrario": "Nos municípios paulistas, a redução de armas depois do Estatuto ajudou a derrubar os homicídios: 1% a mais de armas acompanha cerca de 2% a mais de homicídios. (B1)",
+        "fonte_favoravel": "rebelo-cepedes-datasus",
+        "fonte_contrario": "ipea-td-1721"
       },
       {
-        "tema": "Crime organizado",
-        "favoravel": "Bandido não compra arma em loja. Restringir o acesso legal só desarma quem segue a lei.",
-        "contrario": "Armas compradas legalmente, sobretudo por CACs, acabaram desviadas para facções."
+        "tema": "Efeito do Estatuto",
+        "favoravel": "O Estatuto não reduziu a violência como prometia. Polícia fraca, tráfico, prisões lotadas e Justiça lenta anularam os efeitos da lei. (A1)",
+        "contrario": "Nas capitais, mais armas em circulação andam junto com mais homicídios por arma de fogo, com efeito maior entre homens e vítimas negras. (B2)",
+        "fonte_favoravel": "senado-td-234",
+        "fonte_contrario": "ufv-dutra"
       },
       {
-        "tema": "Vontade popular",
-        "favoravel": "A maioria votou no referendo de 2005 para manter o direito de comprar armas.",
-        "contrario": "O referendo tratou da venda, não da quantidade de armas e munição liberada depois por decreto."
+        "tema": "Arma legal e crime",
+        "favoravel": "A ligação entre acesso legal a armas e crimes não está provada. Quem compra arma legalmente não é quem comete a maior parte dos crimes. (A2)",
+        "contrario": "Depois de 2019, as apreensões de pistolas 9mm com criminosos no Sudeste subiram 119%, sinal de desvio de armas compradas legalmente. (B3)",
+        "fonte_favoravel": "conjur-sannini",
+        "fonte_contrario": "sou-da-paz-arsenal"
       }
     ],
     "glossario": [
@@ -1962,23 +1965,24 @@ window.TEMAS = [
     "pontos": [
       {
         "tema": "Mortes",
-        "favoravel": "Com a câmera, as mortes em ações policiais caíram fortemente em São Paulo.",
-        "contrario": "A queda tem várias causas. A câmera sozinha não explica tudo."
+        "favoravel": "Nos batalhões que receberam câmeras, as mortes em ações da PM caíram 77%, contra 47% nos demais. (A1)",
+        "contrario": "Quase nenhum estado mede resultados. O Acre não viu mudança nos índices, e o efeito de São Paulo não pode ser tomado como garantido em outros lugares. (B2)",
+        "fonte_favoravel": "fgv-fbsp-2022",
+        "fonte_contrario": "pucrs-ibccrim-implementacao"
       },
       {
-        "tema": "Proteção do policial",
-        "favoravel": "A gravação defende o policial de acusações falsas e serve de prova contra criminosos.",
-        "contrario": "Gravar o turno inteiro expõe conversas, intimidade e táticas, e pode virar arma contra o policial."
+        "tema": "Gravação contínua",
+        "favoravel": "A letalidade policial em SP caiu 62,7% entre 2019 e 2022. Acabar com a gravação contínua ameaça o principal ganho do programa. (A2)",
+        "contrario": "Boa parte do que é gravado não é aproveitado e encarece armazenamento e bateria. O novo contrato prevê economia de 30% a 50%. (B3)",
+        "fonte_favoravel": "nev-nota-2024",
+        "fonte_contrario": "ssp-sp-edital-2024"
       },
       {
-        "tema": "Eficiência",
-        "favoravel": "Não há sinal de que a câmera atrapalhe o combate ao crime. Prisões e ocorrências registradas não caíram.",
-        "contrario": "Policiais ficam com medo de agir, e o crime ganha espaço."
-      },
-      {
-        "tema": "Quem liga",
-        "favoravel": "Se o policial pode desligar, a câmera falha justamente nos casos de abuso.",
-        "contrario": "O policial já é muito fiscalizado. Acionar a câmera nas ocorrências basta."
+        "tema": "Efeito sobre o policial",
+        "favoravel": "Em Santa Catarina, policiais sorteados para usar câmera recorreram 61% menos à força, e as ocorrências registradas aumentaram. (A3)",
+        "contrario": "A gravação contínua expõe o policial 24 horas, inclusive em momentos privados, e o programa não tem lei própria, só normas internas. (B1)",
+        "fonte_favoravel": "sc-uso-forca-2021",
+        "fonte_contrario": "genghini-privacidade-cop"
       }
     ],
     "glossario": [
@@ -2255,24 +2259,25 @@ window.TEMAS = [
     },
     "pontos": [
       {
-        "tema": "Eficiência",
-        "favoravel": "Empresas privadas respondem a acionistas e à concorrência, e tendem a gastar melhor.",
-        "contrario": "Em monopólios naturais, como água e esgoto, não há concorrência, e o ganho de eficiência pode virar só lucro."
+        "tema": "Saneamento",
+        "favoravel": "Nos municípios que passaram o esgoto para empresas privadas, o acesso à rede cresceu 26% a mais. Na água, não houve ganho claro. (A2)",
+        "contrario": "Não há evidência de que a empresa privada universalize mais rápido ou mais barato. Entre 2000 e 2019, 311 cidades no mundo retomaram o serviço. (B1)",
+        "fonte_favoravel": "ppe-saneamento",
+        "fonte_contrario": "manifesto-saneamento"
       },
       {
-        "tema": "Investimento",
-        "favoravel": "Sem as amarras do orçamento público, a empresa privada consegue investir mais e mais rápido.",
-        "contrario": "Boa parte do investimento continua vindo de bancos públicos e das tarifas pagas pela população."
+        "tema": "Eletrobras",
+        "favoravel": "Depois da capitalização, o investimento da empresa deu um salto e a dívida passou a ter prazos mais longos. O lucro não mudou de forma significativa. (A3)",
+        "contrario": "A venda foi menos transparente que um leilão, e os “jabutis” da lei favorecem usinas a gás e podem encarecer a energia. (B2)",
+        "fonte_favoravel": "ufu-eletrobras",
+        "fonte_contrario": "ufmg-eletrobras"
       },
       {
-        "tema": "Tarifas",
-        "favoravel": "Com regulação e metas no contrato, a tarifa pode até cair, como prometido na Sabesp.",
-        "contrario": "A busca por lucro e dividendos pressiona as contas de luz e de água para cima."
-      },
-      {
-        "tema": "Política",
-        "favoravel": "Estatais sofrem com indicações políticas e corrupção, como mostrou a Lava Jato.",
-        "contrario": "Setores estratégicos, como energia, deveriam ficar sob controle público para atender o interesse do país."
+        "tema": "Eficiência e investimento",
+        "favoravel": "As empresas vendidas desde 1991 passaram a lucrar mais e ficaram mais eficientes. Os efeitos sobre investimento e impostos não ficaram claros. (A1)",
+        "contrario": "Cinco anos depois do novo marco do saneamento, o investimento é de R$ 126 por habitante ao ano, contra R$ 224 necessários. (B3)",
+        "fonte_favoravel": "rbe-privatizadas",
+        "fonte_contrario": "trata-brasil-2025"
       }
     ],
     "glossario": [
@@ -2537,24 +2542,25 @@ window.TEMAS = [
     },
     "pontos": [
       {
-        "tema": "Prisões",
-        "favoravel": "Sem critério claro, muita gente pega com pouca droga é presa como traficante. Isso enche os presídios e alimenta as facções lá dentro.",
-        "contrario": "Traficantes passam a andar com quantidades pequenas para se passar por usuários."
+        "tema": "Critério de quantidade",
+        "favoravel": "No cenário mais conservador, 31% dos processos por tráfico com maconha poderiam ser presumidos como uso pessoal. (A2)",
+        "contrario": "A diferença entre usuário e traficante deve olhar as circunstâncias de cada caso, não só a quantidade. O usuário teria pena alternativa, sem prisão. (B2)",
+        "fonte_favoravel": "ipea-criterios-2023",
+        "fonte_contrario": "senado-pec-45"
       },
       {
         "tema": "Saúde",
-        "favoravel": "Uso de droga é questão de saúde. O usuário deve ser tratado, não processado.",
-        "contrario": "A maconha causa dependência e pode desencadear psicose, sobretudo em adolescentes. Tolerar o uso passa a ideia de que é inofensiva."
+        "favoravel": "Tirar o uso da esfera criminal ajudaria a garantir tratamento a pacientes e a combater o encarceramento em massa. (A3)",
+        "contrario": "A maconha causa dependência grave e pode desencadear psicoses. Facilitar o uso tende a aumentar o consumo. (B1)",
+        "fonte_favoravel": "ufjf-possato",
+        "fonte_contrario": "cfm-abp-nota"
       },
       {
-        "tema": "Tráfico",
-        "favoravel": "A polícia gasta tempo com usuários em vez de investigar o tráfico.",
-        "contrario": "Quem compra financia o tráfico. Mais consumo significa mais dinheiro para as facções."
-      },
-      {
-        "tema": "Igualdade",
-        "favoravel": "Jovens negros e pobres pegos com pouca droga são enquadrados como traficantes com mais frequência que brancos de classe média.",
-        "contrario": "A solução para abusos é corrigir a atuação da polícia, não mudar a lei."
+        "tema": "Efeitos esperados",
+        "favoravel": "De 23% a 35% dos réus por tráfico levavam quantidade de uso pessoal. Com um critério objetivo, milhares deixariam de ser presos. (A1)",
+        "contrario": "O uso no último ano passou de 2,8% para 6% dos brasileiros entre 2012 e 2023, e muitos jovens acham que experimentar quase não tem risco. (B3)",
+        "fonte_favoravel": "ipea-stf-2024",
+        "fonte_contrario": "lenad-iii"
       }
     ],
     "glossario": [
@@ -2830,24 +2836,25 @@ window.TEMAS = [
     },
     "pontos": [
       {
-        "tema": "Justiça",
-        "favoravel": "Hoje um assalariado de R$ 6 mil paga proporcionalmente mais que um milionário. O imposto mínimo corrige isso.",
-        "contrario": "O lucro já paga imposto na empresa. Cobrar de novo no dividendo é tributar duas vezes."
-      },
-      {
-        "tema": "Investimento",
-        "favoravel": "Países ricos tributam dividendos e continuam atraindo investimento.",
-        "contrario": "Encarecer o capital afasta investimento estrangeiro e reduz empregos."
+        "tema": "Quem paga mais",
+        "favoravel": "O 0,01% mais rico paga uma alíquota efetiva de 12,9%, menor que os 14,2% de quem ganha R$ 6 mil por mês. (A1)",
+        "contrario": "O lucro já paga até 34% na empresa. Somando o dividendo, o Brasil ficaria entre os que mais tributam o capital na OCDE. (B3)",
+        "fonte_favoravel": "ipea-progressividade",
+        "fonte_contrario": "ibdt-dividendos"
       },
       {
         "tema": "Arrecadação",
-        "favoravel": "A cobrança dos mais ricos paga a isenção de milhões de trabalhadores sem aumentar o rombo.",
-        "contrario": "A arrecadação veio abaixo do previsto, e os mais ricos acham formas legais de escapar."
+        "favoravel": "Um imposto mínimo de 15% sobre milionários renderia até R$ 90 bilhões por ano e pagaria a isenção para quem ganha até R$ 5 mil. (A2)",
+        "contrario": "A arrecadação com dividendos deve ficar R$ 10,8 bilhões abaixo do previsto no orçamento de 2026. (B2)",
+        "fonte_favoravel": "made-usp-minimo",
+        "fonte_contrario": "receita-2026"
       },
       {
-        "tema": "Quem é rico",
-        "favoravel": "Quem ganha mais de R$ 1,2 milhão por ano está entre os 0,2% do topo.",
-        "contrario": "Médicos e profissionais liberais que ganham R$ 600 mil por ano não são super-ricos e também são atingidos."
+        "tema": "Economia",
+        "favoravel": "Voltar a tributar dividendos, reduzindo impostos sobre o consumo, diminuiria a desigualdade de forma significativa. (A3)",
+        "contrario": "Cobrar 10% sobre dividendos enviados ao exterior afastaria investimento: 34,5 mil empregos a menos até 2035, segundo a simulação. (B1)",
+        "fonte_favoravel": "ipea-td-2449",
+        "fonte_contrario": "amcham-ufmg"
       }
     ],
     "glossario": [
@@ -3110,23 +3117,24 @@ window.TEMAS = [
     "pontos": [
       {
         "tema": "Desempenho",
-        "favoravel": "Cotistas têm notas e taxas de conclusão parecidas com as dos demais, e evadem menos.",
-        "contrario": "Em cursos mais exigentes, cotistas reprovam mais, sinal de que a escola básica não foi resolvida."
+        "favoravel": "No Enade de 2017, as cotas ampliaram o acesso sem prejudicar o desempenho dos cursos. No conjunto do país, cotistas foram até melhor. (A1)",
+        "contrario": "Na UFJF, 70% dos cotistas negros tiveram ao menos uma reprovação, contra 54% dos não cotistas. A universidade não se preparou para recebê-los. (B3)",
+        "fonte_favoravel": "ipea-enade-cotas",
+        "fonte_contrario": "ufjf-eficacia"
       },
       {
-        "tema": "Critério",
-        "favoravel": "A desigualdade racial existe mesmo entre pessoas de mesma renda, então só a cota social não basta.",
-        "contrario": "A renda explica boa parte da desigualdade; cotas sociais já incluiriam muitos negros sem classificar ninguém por raça."
+        "tema": "Quem entra",
+        "favoravel": "Pretos, pardos e indígenas passaram de 31% para 52% dos alunos do ensino superior público entre 2001 e 2020. (A3)",
+        "contrario": "Boa parte da desigualdade racial é de renda. Cotas para escola pública e baixa renda já incluiriam mais negros sem classificar ninguém por cor. (B1)",
+        "fonte_favoravel": "gemaa-10-anos",
+        "fonte_contrario": "ufmg-color-blind"
       },
       {
-        "tema": "Sociedade",
-        "favoravel": "Diversidade nas universidades forma profissionais e referências para toda a população negra.",
-        "contrario": "Oficializar a raça pode dividir um país miscigenado em grupos rivais."
-      },
-      {
-        "tema": "Quem se beneficia",
-        "favoravel": "As vagas vão para alunos de escola pública, o que já filtra os mais ricos.",
-        "contrario": "Parte das vagas fica com a classe média negra, e não com os mais pobres."
+        "tema": "Permanência",
+        "favoravel": "Na UFPE, cotistas abandonam menos, trancam menos e se formam mais no prazo. (A2)",
+        "contrario": "Classificar as pessoas por raça obriga o país a fazer uma separação que nunca fez, e políticas universais combateriam melhor a desigualdade. (B2)",
+        "fonte_favoravel": "ipea-ufpe-cotas",
+        "fonte_contrario": "ufrj-maggie"
       }
     ],
     "glossario": [
@@ -3396,24 +3404,25 @@ window.TEMAS = [
     },
     "pontos": [
       {
-        "tema": "Disciplina",
-        "favoravel": "Regras claras e presença de autoridade reduzem brigas, faltas e indisciplina.",
-        "contrario": "Disciplina imposta pelo medo não ensina convivência. Pode abafar conflitos em vez de resolvê-los."
-      },
-      {
         "tema": "Aprendizado",
-        "favoravel": "Há estudos que mostram notas melhores em matemática e português depois da adoção do modelo.",
-        "contrario": "Muitas escolas escolhidas já eram melhores ou recebem mais verba. Comparações sérias mostram resultados mistos."
+        "favoravel": "Em Goiás, escolas com gestão militar tiveram, em média, 15 pontos a mais em matemática no Saeb que escolas parecidas. (A1)",
+        "contrario": "No DF, só 6 das 14 escolas do modelo tinham Ideb comparável. Dessas, 4 subiram e 2 caíram. (B1)",
+        "fonte_favoravel": "enap-goias",
+        "fonte_contrario": "undf-ideb"
       },
       {
-        "tema": "Quem educa",
-        "favoravel": "Os militares não dão aula. Cuidam da gestão e liberam os professores para ensinar.",
-        "contrario": "Policiais não têm formação pedagógica, e a lógica do quartel não combina com a escola."
+        "tema": "Gestão da escola",
+        "favoravel": "89% dos pais das escolas do Paraná aprovam o modelo e dizem ver mais disciplina e mais aprendizado. (A3)",
+        "contrario": "Para mais de 100 entidades, o modelo viola a gestão democrática prevista na Constituição e tira policiais da segurança pública. (B2)",
+        "fonte_favoravel": "parana-pesquisa-2025",
+        "fonte_contrario": "carta-entidades-2026"
       },
       {
-        "tema": "Liberdade",
-        "favoravel": "A adesão é voluntária, e famílias que não querem podem escolher outra escola.",
-        "contrario": "Em muitas cidades não há outra escola por perto. Regras sobre cabelo, roupa e opinião atingem alunos e professores."
+        "tema": "Limites",
+        "favoravel": "O STF aceita o modelo se a direção for civil, a parte pedagógica ficar com os professores e houver outra escola por perto. (A2)",
+        "contrario": "O modelo padroniza comportamentos, pune a diferença e troca o diálogo pela obediência, afastando os alunos que mais precisam da escola. (B3)",
+        "fonte_favoravel": "stf-gilmar-2026",
+        "fonte_contrario": "ihu-catarina"
       }
     ],
     "glossario": [
@@ -3679,24 +3688,25 @@ window.TEMAS = [
     },
     "pontos": [
       {
-        "tema": "Vida",
-        "favoravel": "Nas primeiras semanas não há sistema nervoso formado, e a mulher já é uma vida plena com direitos.",
-        "contrario": "A vida começa na concepção. O embrião é um ser humano e merece proteção desde o início."
-      },
-      {
         "tema": "Saúde pública",
-        "favoravel": "A proibição não impede o aborto, só o torna inseguro. Muitas mulheres são internadas, e algumas morrem.",
-        "contrario": "O Estado deve reduzir os abortos com educação sexual, contracepção e apoio à gestante, não legalizá-los."
-      },
-      {
-        "tema": "Desigualdade",
-        "favoravel": "Quem tem dinheiro aborta com segurança em clínicas ou no exterior. Quem é pobre e negra corre os riscos.",
-        "contrario": "A pobreza se combate com política social, não com o fim da proteção ao nascituro."
+        "favoravel": "Cerca de 1 em cada 7 mulheres já fez um aborto até os 40 anos, mesmo sendo crime, e quase metade precisa ser internada. (A1)",
+        "contrario": "O aborto só deve ocorrer nos casos previstos em lei, e o Estado deve investir em planejamento familiar, educação e saúde. (B2)",
+        "fonte_favoravel": "pna-2021",
+        "fonte_contrario": "cfm-nota-2023"
       },
       {
         "tema": "Quem decide",
-        "favoravel": "Direitos fundamentais não dependem de maioria. Cabe ao STF proteger a liberdade da mulher.",
-        "contrario": "A maioria da população é contra, e o tema deve ser decidido pelo Congresso eleito, não pelo STF."
+        "favoravel": "Direito reprodutivo é fundamental e não depende de maioria política. A punição atinge sobretudo mulheres pobres. (A2)",
+        "contrario": "Criar uma nova exceção ao Código Penal seria o STF legislando no lugar do Congresso. Os precedentes usados tratavam de casos sem chance de vida. (B3)",
+        "fonte_favoravel": "stf-barroso-2025",
+        "fonte_contrario": "torres-mpgo-adpf442"
+      },
+      {
+        "tema": "Direitos em jogo",
+        "favoravel": "Mulheres pretas internadas por aborto tiveram 1,6 vez mais dificuldade para conseguir leito. A criminalização soma estigma ao racismo. (A3)",
+        "contrario": "A Constituição deve garantir o direito à vida desde a concepção. (B1)",
+        "fonte_favoravel": "fiocruz-ufba-racismo",
+        "fonte_contrario": "pec-164-ccj"
       }
     ],
     "glossario": [
@@ -3975,24 +3985,25 @@ window.TEMAS = [
     },
     "pontos": [
       {
-        "tema": "Golpes e crimes",
-        "favoravel": "As plataformas lucram com anúncios de golpe e só agem quando a Justiça manda. Precisam ter dever de cuidado.",
-        "contrario": "Já existem leis para punir golpistas. O foco deve ser quem comete o crime, não a empresa."
+        "tema": "Dever das plataformas",
+        "favoravel": "Em 11 dias, o NetLab achou 1.770 anúncios de golpe no Facebook e no Instagram. A empresa lucra com eles e não os barra. (A1)",
+        "contrario": "A decisão criou deveres vagos e sem período de transição, e as empresas pequenas sofrem mais. (B3)",
+        "fonte_favoravel": "netlab-golpes",
+        "fonte_contrario": "camara-e-net"
       },
       {
         "tema": "Liberdade de expressão",
-        "favoravel": "Liberdade de expressão não é absoluta e não protege ataques, fraudes e discurso de ódio.",
-        "contrario": "Com medo de multa, as empresas vão apagar conteúdo legítimo antes, sobretudo opiniões polêmicas."
+        "favoravel": "Exigir ordem judicial antes de qualquer responsabilidade deixava as vítimas desprotegidas. (A2)",
+        "contrario": "Com medo de punição, as plataformas vão remover conteúdo legal por precaução, e grupos podem usar notificações em massa para calar opiniões. (B1)",
+        "fonte_favoravel": "ufu-art19",
+        "fonte_contrario": "artigo19-nota"
       },
       {
         "tema": "Quem decide",
-        "favoravel": "O Congresso não atualizou a lei em uma década. O STF agiu diante da omissão.",
-        "contrario": "Regras desse tamanho deveriam ser feitas pelo Congresso, não pelo STF."
-      },
-      {
-        "tema": "Algoritmos",
-        "favoravel": "As redes não são murais neutros: escolhem o que viraliza e ganham com isso.",
-        "contrario": "Moderação automática erra com ironia e contexto, e quem perde voz são grupos menores."
+        "favoravel": "78% dos brasileiros acham que as redes devem ter mais responsabilidade pelo que fazem. (A3)",
+        "contrario": "O artigo 19 do Marco Civil é constitucional. Trocar de modelo é escolha política, que cabe ao Congresso, não ao STF. (B2)",
+        "fonte_favoravel": "nexus-opiniao",
+        "fonte_contrario": "streck-conjur"
       }
     ],
     "glossario": [
@@ -4256,23 +4267,24 @@ window.TEMAS = [
     "pontos": [
       {
         "tema": "Segurança jurídica",
-        "favoravel": "Uma data fixa encerra disputas e dá certeza a quem tem título da terra.",
-        "contrario": "Segurança jurídica também vale para os indígenas, cujo direito à terra a Constituição reconhece como originário."
+        "favoravel": "O marco temporal é um critério objetivo que o próprio STF fixou no caso Raposa Serra do Sol. Mudá-lo traz insegurança. (A1)",
+        "contrario": "Por 9 a 1, o STF decidiu que fixar 1988 viola o direito às terras tradicionalmente ocupadas, e propôs dez anos para concluir as demarcações. (B2)",
+        "fonte_favoravel": "agu-sustentacao",
+        "fonte_contrario": "stf-dez-2025"
       },
       {
-        "tema": "História",
-        "favoravel": "Sem um corte, qualquer área do país poderia ser reivindicada com base em ocupações antigas.",
-        "contrario": "Muitos povos tinham sido expulsos à força antes de 1988 e não podiam estar nas terras naquela data."
+        "tema": "Propriedade e história",
+        "favoravel": "A lei protege o direito de propriedade e evita que famílias com título legítimo percam suas terras. (A2)",
+        "contrario": "A tese mantém uma estrutura fundiária concentrada, herdada de séculos de expulsão de povos indígenas. (B3)",
+        "fonte_favoravel": "cna-stf",
+        "fonte_contrario": "ufjf-racismo-fundiario"
       },
       {
-        "tema": "Produção",
-        "favoravel": "Famílias que produzem há gerações podem perder suas terras e o país perde produção de alimentos.",
-        "contrario": "A PEC e o próprio STF já preveem indenização a quem ocupou de boa-fé."
-      },
-      {
-        "tema": "Meio ambiente",
-        "favoravel": "Terras produtivas também podem ser sustentáveis, com as políticas certas.",
-        "contrario": "As terras indígenas perderam cerca de 1% da vegetação nativa em 30 anos, contra mais de 20% nas áreas privadas."
+        "tema": "O que está em jogo",
+        "favoravel": "Pôr a data de 1988 na Constituição evita disputas retroativas e garante indenização prévia a quem ocupa terras demarcadas. (A3)",
+        "contrario": "Entre 1990 e 2020, as terras indígenas perderam 1% da vegetação nativa, contra 20,6% nas áreas privadas. (B1)",
+        "fonte_favoravel": "senado-pec-48",
+        "fonte_contrario": "mapbiomas-tis"
       }
     ],
     "glossario": [
@@ -4539,24 +4551,25 @@ window.TEMAS = [
     },
     "pontos": [
       {
-        "tema": "Economia",
-        "favoravel": "O petróleo pode trazer empregos, royalties e investimento para estados pobres como o Amapá.",
-        "contrario": "Projetos de petróleo costumam deixar pouca riqueza local e muito risco. Outros usos da região geram renda sem destruí-la."
+        "tema": "Ganhos e riscos",
+        "favoravel": "Se a região produzir petróleo, o PIB pode ganhar R$ 65 bilhões por ano, sobretudo no Norte e no Nordeste. (A1)",
+        "contrario": "Manguezais, recifes e comunidades de pesca são muito vulneráveis a um vazamento, e ainda se conhece pouco sobre a região. (B1)",
+        "fonte_favoravel": "cni-margem",
+        "fonte_contrario": "unifap-riscos"
       },
       {
-        "tema": "Risco ambiental",
-        "favoravel": "A Petrobras opera em águas profundas há décadas, e o licenciamento exigiu um plano de emergência testado.",
-        "contrario": "As correntes são fortes e a região tem corais e manguezais pouco conhecidos. Um vazamento seria difícil de conter."
+        "tema": "Energia e clima",
+        "favoravel": "A produção brasileira deve atingir o pico por volta de 2030, e com as reservas atuais o país tem petróleo para só 13 anos. (A2)",
+        "contrario": "A licença foi dada sem consulta prévia aos povos da costa do Amapá e sem avaliar o efeito do petróleo extraído sobre o clima. (B3)",
+        "fonte_favoravel": "fgv-energia-precioso",
+        "fonte_contrario": "acao-entidades-2025"
       },
       {
-        "tema": "Clima",
-        "favoravel": "O mundo ainda vai usar petróleo por décadas. Melhor que o Brasil produza e use o dinheiro na transição.",
-        "contrario": "Para limitar o aquecimento, não se deveria abrir nenhuma nova fronteira de petróleo. O Brasil perde credibilidade climática."
-      },
-      {
-        "tema": "Soberania",
-        "favoravel": "Sem novas reservas, a produção brasileira começa a cair na próxima década e o país volta a importar.",
-        "contrario": "Segurança energética também vem de solar, eólica e biocombustíveis, em que o Brasil já é forte."
+        "tema": "Licenciamento",
+        "favoravel": "A região só deve ser explorada com licenciamento rigoroso, salvaguardas para a pesca e operações de baixo carbono. (A3)",
+        "contrario": "Os técnicos do Ibama recomendaram negar a licença porque o plano de resgate de fauna atingida por óleo era insuficiente. (B2)",
+        "fonte_favoravel": "fgv-energia-oportunidades",
+        "fonte_contrario": "ibama-parecer-2024"
       }
     ],
     "glossario": [
@@ -4860,23 +4873,24 @@ window.TEMAS = [
     "pontos": [
       {
         "tema": "Autonomia",
-        "favoravel": "O algoritmo define preços, bônus e bloqueios. A liberdade de escolher horário não basta para chamar isso de autonomia.",
-        "contrario": "A maioria dos trabalhadores diz preferir ser autônoma, poder recusar corridas e trabalhar quando quiser."
+        "favoravel": "Uber, 99 e iFood tiraram zero em cinco princípios de trabalho justo. O relatório aponta bloqueios sem explicação e riscos jogados sobre o trabalhador. (A2)",
+        "contrario": "42% dos motoristas usam o aplicativo como complemento de renda, e a maioria prefere continuar autônoma. (B1)",
+        "fonte_favoravel": "fairwork-brasil-2025",
+        "fonte_contrario": "cebrap-amobitec-2024"
       },
       {
-        "tema": "Renda",
-        "favoravel": "Descontados os custos do carro, a renda por hora é baixa e as jornadas são longas.",
-        "contrario": "A renda líquida por hora é parecida ou maior que a de trabalhos com escolaridade semelhante."
+        "tema": "Custos",
+        "favoravel": "Quem roda em tempo integral gasta mais de R$ 5 mil por mês com o carro, e a jornada passa da média do setor privado. (A3)",
+        "contrario": "Com carteira assinada, os preços subiriam, a procura cairia e 1,3 milhão de pessoas sairiam dos aplicativos, segundo a simulação. (B2)",
+        "fonte_favoravel": "tst-custos-motoristas-2026",
+        "fonte_contrario": "ecoa-vinculo-desemprego"
       },
       {
-        "tema": "Proteção social",
-        "favoravel": "Só cerca de um em cada cinco motoristas contribui para o INSS. Um acidente pode deixar a família sem renda.",
-        "contrario": "Dá para incluir previdência e seguro sem transformar a relação em emprego com carteira."
-      },
-      {
-        "tema": "Preço e vagas",
-        "favoravel": "As empresas têm margem para pagar mais. O custo hoje recai sobre o trabalhador.",
-        "contrario": "Regras rígidas encarecem corridas e entregas e podem tirar centenas de milhares de pessoas do app."
+        "tema": "Proteção e lei",
+        "favoravel": "Só 22% dos motoristas de aplicativo contribuíam para o INSS em 2022, contra 44% dos taxistas. (A1)",
+        "contrario": "O trabalho por aplicativo pode existir fora da CLT, já que o STF aceitou outras formas de contratação além do emprego tradicional. (B3)",
+        "fonte_favoravel": "ipea-bmt77-plataformas",
+        "fonte_contrario": "pgr-parecer-uber"
       }
     ],
     "glossario": [
@@ -5156,24 +5170,25 @@ window.TEMAS = [
     },
     "pontos": [
       {
-        "tema": "Igualdade",
-        "favoravel": "Sem obrigação, votariam mais os ricos e escolarizados, e os políticos dariam menos atenção aos pobres.",
-        "contrario": "Um estudo com dados do Brasil mostra que a obrigação aumenta mais o voto dos escolarizados, porque as punições pesam mais para eles."
+        "tema": "Quem votaria",
+        "favoravel": "Sem obrigação, só 45% votariam com certeza, e quem tem ensino superior teria muito mais chance de ir. (A2)",
+        "contrario": "A obrigação aumenta o comparecimento dos mais escolarizados (6,7%) quase o dobro dos menos escolarizados (3,4%). (B1)",
+        "fonte_favoravel": "aguiar-casalecchi-facultativo",
+        "fonte_contrario": "cepaluni-hidalgo-desigualdade"
       },
       {
-        "tema": "Liberdade",
-        "favoravel": "Votar é um dever cívico, como pagar impostos. Quem não quer escolher pode votar em branco ou anular.",
-        "contrario": "Votar é um direito, e um direito inclui a liberdade de não exercê-lo."
+        "tema": "Representação",
+        "favoravel": "Onde o voto é livre, os mais pobres votam menos e os governos investem menos em políticas sociais. (A1)",
+        "contrario": "A obrigação não acabou com abstenções, brancos e nulos, e a maioria das democracias consolidadas usa o voto livre. (B2)",
+        "fonte_favoravel": "ribeiro-voto-compulsorio",
+        "fonte_contrario": "costa-ufrn-facultativo"
       },
       {
-        "tema": "Qualidade do voto",
-        "favoravel": "Ir às urnas cria o hábito de acompanhar política e leva o debate para dentro de casa.",
-        "contrario": "Quem vota obrigado e sem interesse fica mais exposto à compra de votos e à escolha de última hora."
-      },
-      {
-        "tema": "Legitimidade",
-        "favoravel": "Comparecimento alto dá mais força ao resultado e ao governo eleito.",
-        "contrario": "A legitimidade vem de convencer o eleitor, não de obrigá-lo. A abstenção já passa de 20% mesmo com a regra."
+        "tema": "A regra hoje",
+        "favoravel": "Obrigar a comparecer não obriga a escolher, e as punições são tão leves que o voto já é quase facultativo. (A3)",
+        "contrario": "Cerca de 40% dos eleitores já fogem do voto de algum jeito. A proposta é um plebiscito para testar o voto facultativo. (B3)",
+        "fonte_favoravel": "romao-tse-reforma",
+        "fonte_contrario": "nobre-quem-tem-medo"
       }
     ],
     "glossario": [
@@ -5439,24 +5454,25 @@ window.TEMAS = [
     },
     "pontos": [
       {
-        "tema": "Quem conhece a cidade",
-        "favoravel": "O deputado conhece as necessidades locais melhor que um ministério em Brasília.",
-        "contrario": "Sem critérios técnicos, o dinheiro vai para onde dá voto, e não para onde falta mais."
+        "tema": "Efeito nas políticas",
+        "favoravel": "As emendas tiveram efeito positivo sobre a educação nos municípios, sobretudo no Norte, Nordeste e Sul. (A3)",
+        "contrario": "83% do aumento do custeio do SUS entre 2019 e 2024 veio de emendas, distribuídas de forma muito desigual entre os estados. (B1)",
+        "fonte_favoravel": "enap-pork-para-quem-precisa",
+        "fonte_contrario": "ipea-td3149-sus-emendas"
       },
       {
-        "tema": "Resultado",
-        "favoravel": "Há estudo mostrando efeito positivo das emendas na educação dos municípios.",
-        "contrario": "O mesmo estudo mostra que o dinheiro vai mais para cidades que já estão melhores, e na saúde o efeito não aparece."
+        "tema": "Burocracia e controle",
+        "favoravel": "A emenda Pix tirou a burocracia dos convênios e acabou com taxas de 2,5% a 11,7% que a Caixa cobrava. (A2)",
+        "contrario": "Em 100 emendas Pix auditadas, o TCU estimou R$ 49 milhões de prejuízo, cerca de um quarto do valor. (B3)",
+        "fonte_favoravel": "mascarenhas-pge-transferencias",
+        "fonte_contrario": "tcu-emendas-pix-2026"
       },
       {
-        "tema": "Burocracia",
-        "favoravel": "A emenda Pix acaba com convênios lentos e com taxas cobradas pela Caixa, que deixavam obras paradas.",
-        "contrario": "Sem projeto definido, fica difícil saber em que o dinheiro foi gasto. O TCU achou falhas em quatro de cada cinco casos auditados."
-      },
-      {
-        "tema": "Equilíbrio entre Poderes",
-        "favoravel": "As emendas dão ao Congresso um papel real no Orçamento e tiram do governo a moeda de troca.",
-        "contrario": "Nenhum país rico estudado dá ao Parlamento uma fatia tão grande, e o planejamento nacional fica picotado."
+        "tema": "Quem decide",
+        "favoravel": "Quem está perto da população sabe quais obras e serviços são prioridade, e as emendas ajudam os prefeitos a administrar. (A1)",
+        "contrario": "Nenhum de 11 países ricos dá ao Parlamento poder parecido. Em 2024, 24% dos gastos livres do governo foram para emendas. (B2)",
+        "fonte_favoravel": "motta-marcha-prefeitos-2026",
+        "fonte_contrario": "insper-ocde-emendas"
       }
     ],
     "glossario": [
@@ -5738,23 +5754,24 @@ window.TEMAS = [
     "pontos": [
       {
         "tema": "Escolha",
-        "favoravel": "Jovens com interesses diferentes não precisam estudar exatamente a mesma coisa. Poder escolher dá sentido à escola.",
-        "contrario": "Na prática, muitas escolas oferecem só dois caminhos, e a escolha depende de onde o aluno mora."
+        "favoravel": "A lei de 2024 mantém a flexibilidade e corrige erros: a parte comum volta a ter no mínimo 2.400 horas e os itinerários ganham diretrizes nacionais. (A1)",
+        "contrario": "Em São Paulo, mais de um terço das escolas ofereceu só dois itinerários, e 22% das aulas estavam sem professor em abril de 2022. (B1)",
+        "fonte_favoravel": "tpe-analise-pl-5230",
+        "fonte_contrario": "repu-nem-sp"
       },
       {
         "tema": "Ensino técnico",
-        "favoravel": "Quem faz ensino técnico no médio ganha mais e tem mais emprego formal, segundo estudos.",
-        "contrario": "O técnico de qualidade custa caro e não vira realidade só com uma mudança de lei."
+        "favoravel": "Para quem para no ensino médio, a formação técnica aumenta o salário em 14% a 16% e a chance de emprego com carteira. (A3)",
+        "contrario": "Na escola-piloto do Ceará, faltou apoio da Secretaria para formar professores e montar os itinerários. (B3)",
+        "fonte_favoravel": "fgv-biondi-ensino-tecnico",
+        "fonte_contrario": "ufjf-itinerarios-ceara"
       },
       {
-        "tema": "Desigualdade",
-        "favoravel": "O modelo antigo, com 13 disciplinas iguais para todos, tinha evasão alta e não funcionava para muitos jovens.",
-        "contrario": "Escolas ricas oferecem itinerários bons; as pobres oferecem o que dá. A distância entre elas aumenta."
-      },
-      {
-        "tema": "Professores",
-        "favoravel": "Com diretrizes nacionais e mais horas comuns, os erros da primeira versão foram corrigidos.",
-        "contrario": "Faltou formação e faltaram professores. Em São Paulo, mais de um quinto das aulas ficou sem professor em 2022."
+        "tema": "Condições da escola",
+        "favoravel": "Pernambuco saiu do 21º lugar para o melhor Ideb do ensino médio apostando em tempo integral, com valorização dos professores e boa gestão. (A2)",
+        "contrario": "Numa escola de Campinas, alunos dizem ter perdido matérias e temem o vestibular, e professores relatam sobrecarga. (B2)",
+        "fonte_favoravel": "priscila-cruz-poder360",
+        "fonte_contrario": "unesp-unicamp-flexibilizacao"
       }
     ],
     "glossario": [
@@ -6025,24 +6042,25 @@ window.TEMAS = [
     },
     "pontos": [
       {
+        "tema": "Alcance",
+        "favoravel": "Em agosto de 2024, 5 milhões de pessoas do Bolsa Família enviaram R$ 3 bilhões às bets. (A1)",
+        "contrario": "A maior parte do valor apostado volta como prêmio. O gasto líquido seria de cerca de 0,35% do PIB por mês. (B1)",
+        "fonte_favoravel": "bcb-nt-513-apostas",
+        "fonte_contrario": "werlang-regular-nao-proibir"
+      },
+      {
         "tema": "Saúde",
-        "favoravel": "Quase 11 milhões de brasileiros apostam de forma arriscada, e os adolescentes são os mais vulneráveis.",
-        "contrario": "O vício se combate com limites, bloqueio de quem tem diagnóstico e tratamento. Proibir não trata ninguém."
+        "favoravel": "10,9 milhões de brasileiros apostam de forma arriscada, e 55% dos adolescentes que apostam estão em risco de transtorno do jogo. (A2)",
+        "contrario": "O risco está no desenho das plataformas, como bônus e notificações. A regulação deveria mirar esse desenho. (B3)",
+        "fonte_favoravel": "unifesp-lenad-apostas",
+        "fonte_contrario": "idp-economia-comportamental-bets"
       },
       {
-        "tema": "Dinheiro das famílias",
-        "favoravel": "As apostas tiram dinheiro do consumo, aumentam a inadimplência e atingem até quem recebe Bolsa Família.",
-        "contrario": "Boa parte do valor apostado volta como prêmio. O gasto líquido é bem menor que os números que circulam."
-      },
-      {
-        "tema": "Mercado ilegal",
-        "favoravel": "A regulamentação não segurou o problema, e sites ilegais já existiam com a lei em vigor.",
-        "contrario": "Com a proibição, dezenas de milhões de apostadores vão para sites ilegais, sem fiscalização nem imposto."
-      },
-      {
-        "tema": "Segurança jurídica",
-        "favoravel": "Uma atividade que causa dano social pode ser proibida a qualquer momento.",
-        "contrario": "Empresas pagaram R$ 30 milhões por licenças de cinco anos. Mudar a regra de repente afasta investimentos."
+        "tema": "Economia e mercado ilegal",
+        "favoravel": "O varejo deixou de vender cerca de R$ 143 bilhões em 2024 e 2025. A CNC fala em associação, não em causa plena. (A3)",
+        "contrario": "A fatia das apostas em sites ilegais caiu com a regulação, e o mercado autorizado pagou quase R$ 10 bilhões em impostos no primeiro ano. (B2)",
+        "fonte_favoravel": "cnc-bets-varejo",
+        "fonte_contrario": "lca-locomotiva-ilegal"
       }
     ],
     "glossario": [
@@ -6317,24 +6335,25 @@ window.TEMAS = [
     },
     "pontos": [
       {
-        "tema": "Dívida e juros",
-        "favoravel": "Dívida alta e crescente faz o mercado cobrar juros maiores, o que encarece o crédito para todo mundo.",
-        "contrario": "Os juros altos são a principal causa do aumento da dívida. Cortar gasto social não resolve isso."
+        "tema": "Dívida",
+        "favoravel": "No cenário da IFI, a dívida passa de 100% do PIB em 2032 e chega a 115% em 2036. Estabilizar exigiria superávit de 2,1% do PIB ao ano. (A1)",
+        "contrario": "Austeridade em economia fraca reduz o crescimento, aumenta a dívida e atinge mais os vulneráveis. (B3)",
+        "fonte_favoravel": "ifi-raf-113",
+        "fonte_contrario": "fes-austeridade-educacao"
       },
       {
-        "tema": "Crescimento",
-        "favoravel": "Contas em ordem dão confiança para investir e ajudam a economia a crescer de forma duradoura.",
-        "contrario": "Cortar investimento e benefícios reduz a demanda e o crescimento, e a dívida pode subir em relação ao PIB."
+        "tema": "Onde mexer",
+        "favoravel": "Desligar aposentadorias e benefícios do salário mínimo, rever os pisos de saúde e educação e reduzir a complementação ao Fundeb. (A3)",
+        "contrario": "Investimento público e benefícios sociais são os gastos que mais movem o PIB. Dá para trocar subsídios por esses gastos e reduzir a dívida. (B1)",
+        "fonte_favoravel": "salto-arcabouco-obrigatorias",
+        "fonte_contrario": "usp-ajuste-receita-gasto"
       },
       {
-        "tema": "Onde cortar",
-        "favoravel": "As despesas obrigatórias crescem sozinhas e espremem o resto. Sem mexer nelas, o arcabouço não para em pé.",
-        "contrario": "As despesas obrigatórias são aposentadorias e benefícios de quem mais precisa. Há espaço em subsídios e benefícios fiscais a empresas."
-      },
-      {
-        "tema": "Desigualdade",
-        "favoravel": "Uma crise fiscal, com inflação e desemprego, prejudica mais os pobres do que qualquer corte planejado.",
-        "contrario": "Cortes em saúde e educação aumentam a desigualdade quando se conta o valor desses serviços para as famílias."
+        "tema": "Espaço no orçamento",
+        "favoravel": "Aposentadorias, BPC e precatórios crescem acima do limite, e os gastos livres caem de 1,7% para 1,4% do PIB entre 2025 e 2035. (A2)",
+        "contrario": "Contando o valor da saúde e da educação públicas, 20 anos de austeridade aumentariam a desigualdade. O gasto com educação seria 19% menor em 2037. (B2)",
+        "fonte_favoravel": "tesouro-rpf-2025",
+        "fonte_contrario": "nemea-ufmg-austeridade"
       }
     ],
     "glossario": [
