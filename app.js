@@ -97,17 +97,18 @@
         const doGrupo = lista.filter((t) => t.categoria === c.id);
         if (!doGrupo.length) return "";
         return `<details class="grupo">
-          <summary><span class="grupo-nome">${esc(c.nome)}</span><span class="grupo-temas apagado">${doGrupo.map((t) => esc(t.titulo)).join(" · ")}</span><span class="grupo-conta mono">${doGrupo.length}</span></summary>
-          <div class="grupo-lista">${doGrupo.map((t) => linhaTema(t)).join("")}<a class="grupo-ver botao-texto" href="#categoria/${c.id}">Ver a página de ${esc(c.nome)}</a></div>
+          <summary><span class="grupo-nome">${esc(c.nome)}</span><span class="grupo-temas apagado">${doGrupo.slice(0, 3).map((t) => esc(t.titulo)).join(" · ")}</span><span class="grupo-conta mono">${doGrupo.length}</span></summary>
+          <div class="grupo-lista">${doGrupo.map((t, i) => linhaTema(t, false, i + 1)).join("")}<a class="grupo-ver botao-texto" href="#categoria/${c.id}">Ver a página de ${esc(c.nome)}</a></div>
         </details>`;
       }).join("");
     }
-    return meta + lista.map((t) => linhaTema(t)).join("");
+    return meta + lista.map((t, i) => linhaTema(t, false, i + 1)).join("");
   }
 
-  function linhaTema(t, comResumo) {
+  // pos: posição do tema na lista mostrada (1, 2, 3...), contada dentro de cada categoria.
+  function linhaTema(t, comResumo, pos) {
       const corpo = `
-        <span class="num">${numero(t)}</span>
+        <span class="num">${String(pos).padStart(2, "0")}</span>
         <span class="linha-txt">
           <span class="mono apagado">${esc(nomeCategoria(t.categoria))}</span>
           <span class="nome">${esc(t.titulo)}</span>
@@ -573,7 +574,7 @@
       </dl>
       <section class="temas categoria-temas" aria-label="Temas de ${esc(cat.nome)}">
         <div class="indice-cab mono apagado"><span>${lista.length} ${lista.length === 1 ? "tema" : "temas"}</span><span class="so-largo">Leituras por lado</span></div>
-        ${lista.map((t) => linhaTema(t, true)).join("")}
+        ${lista.map((t, i) => linhaTema(t, true, i + 1)).join("")}
       </section>
       ${outras.length ? `<section class="outras-cats" aria-labelledby="outras-titulo">
         <h2 id="outras-titulo" class="mono apagado">Outras categorias</h2>

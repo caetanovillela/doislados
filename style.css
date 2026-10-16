@@ -173,7 +173,7 @@ h1, h2, h3 { font-family: var(--f-titulo); text-wrap: balance; margin: 0; }
 .grupo > summary::after { content: "+"; font-family: var(--f-mono); font-size: 1.4rem; line-height: 1; width: 1ch; text-align: center; }
 .grupo[open] > summary::after { content: "−"; }
 .grupo-nome { font-family: var(--f-titulo); font-weight: 800; font-size: clamp(1.4rem, 3.2vw, 2rem); letter-spacing: -0.03em; line-height: 1.05; }
-.grupo-temas { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.95rem; }
+.grupo-temas { font-size: 0.95rem; }
 .grupo-conta { font-size: 0.8rem; color: var(--apagado); }
 .grupo > summary:hover .grupo-nome { text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 5px; }
 .grupo > summary:focus-visible { outline: 2px solid var(--tinta); outline-offset: 2px; }
