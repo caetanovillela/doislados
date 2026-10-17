@@ -2,20 +2,14 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "escala-6x1",
-  "veiculos": 6,
-  "noticias": 45,
+  "veiculos": 5,
+  "noticias": 39,
   "manchetes": [
     {
       "veiculo": "g1",
       "titulo": "Escala 6x1 acabou. E agora? Veja perguntas e respostas para entender tudo sobre mudança",
       "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/17/escala-6x1-acabou-e-agora-perguntas-respostas.ghtml",
       "data": "2026-10-17T06:00+00:00"
-    },
-    {
-      "veiculo": "Agência Brasil",
-      "titulo": "Lula faz campanha em MG e celebra fim da jornada 6x1",
-      "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/lula-faz-campanha-em-mg-e-celebra-fim-da-jornada-6x1",
-      "data": "2026-10-17T02:01+00:00"
     },
     {
       "veiculo": "Folha de S.Paulo",
@@ -28,7 +22,13 @@ window.EM_ALTA_AUTO = {
       "titulo": "Vídeo: Senado Aprova: Fim da escala 6x1",
       "url": "https://www12.senado.leg.br/noticias/videos/2026/10/senado-aprova-fim-da-escala-6x1-1",
       "data": "2026-10-16T21:42+00:00"
+    },
+    {
+      "veiculo": "Estadão",
+      "titulo": "Durigan fala em linhas de crédito e capacitação para empresas afetadas por fim da escala 6x1",
+      "url": "https://www.estadao.com.br/economia/durigan-fala-em-linhas-de-credito-e-capacitacao-para-empresas-afetadas-por-fim-da-escala-6x1/",
+      "data": "2026-10-16T21:00+00:00"
     }
   ],
-  "atualizado": "2026-10-17T14:17+00:00"
+  "atualizado": "2026-10-17T17:20+00:00"
 };
