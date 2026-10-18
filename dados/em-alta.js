@@ -2,14 +2,14 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "escala-6x1",
-  "veiculos": 6,
-  "noticias": 33,
+  "veiculos": 4,
+  "noticias": 21,
   "manchetes": [
     {
-      "veiculo": "Metrópoles",
-      "titulo": "Fim da 6x1 faz Lula repetir gesto de Ulysses Guimarães",
-      "url": "https://www.metropoles.com/blog-do-noblat/fim-da-6x1-faz-lula-repetir-gesto-de-ulysses-guimaraes",
-      "data": "2026-10-18T11:00+00:00"
+      "veiculo": "BBC News Brasil",
+      "titulo": "Fim da escala 6x1: o que pensa uma mãe solo e um pequeno empresário",
+      "url": "https://www.bbc.com/portuguese/articles/cq1kdz8dweezo?at_medium=RSS&at_campaign=rss",
+      "data": "2026-10-18T14:10+00:00"
     },
     {
       "veiculo": "Folha de S.Paulo",
@@ -30,5 +30,5 @@ window.EM_ALTA_AUTO = {
       "data": "2026-10-16T21:42+00:00"
     }
   ],
-  "atualizado": "2026-10-18T11:24+00:00"
+  "atualizado": "2026-10-18T15:59+00:00"
 };
