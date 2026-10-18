@@ -6,16 +6,16 @@ window.EM_ALTA_AUTO = {
   "noticias": 32,
   "manchetes": [
     {
+      "veiculo": "Folha de S.Paulo",
+      "titulo": "A escala 5x2 é eleitoreira",
+      "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/eliogaspari/2026/10/a-escala-5x2-e-eleitoreira.shtml",
+      "data": "2026-10-18T02:00+00:00"
+    },
+    {
       "veiculo": "g1",
       "titulo": "Escala 6x1 acabou. E agora? Veja perguntas e respostas para entender tudo sobre mudança",
       "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/17/escala-6x1-acabou-e-agora-perguntas-respostas.ghtml",
       "data": "2026-10-17T06:00+00:00"
-    },
-    {
-      "veiculo": "Folha de S.Paulo",
-      "titulo": "Moro diz que fim da escala 6x1 não é pauta dos trabalhadores e minimiza efeito para Lula",
-      "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/moro-diz-que-fim-da-escala-6x1-nao-e-pauta-dos-trabalhadores-e-minimiza-efeito-para-lula.shtml",
-      "data": "2026-10-17T01:00+00:00"
     },
     {
       "veiculo": "Agência Senado",
@@ -30,5 +30,5 @@ window.EM_ALTA_AUTO = {
       "data": "2026-10-16T21:00+00:00"
     }
   ],
-  "atualizado": "2026-10-18T01:13+00:00"
+  "atualizado": "2026-10-18T06:04+00:00"
 };
