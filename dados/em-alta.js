@@ -2,9 +2,15 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "escala-6x1",
-  "veiculos": 5,
-  "noticias": 32,
+  "veiculos": 6,
+  "noticias": 33,
   "manchetes": [
+    {
+      "veiculo": "Metrópoles",
+      "titulo": "Fim da 6x1 faz Lula repetir gesto de Ulysses Guimarães",
+      "url": "https://www.metropoles.com/blog-do-noblat/fim-da-6x1-faz-lula-repetir-gesto-de-ulysses-guimaraes",
+      "data": "2026-10-18T11:00+00:00"
+    },
     {
       "veiculo": "Folha de S.Paulo",
       "titulo": "A escala 5x2 é eleitoreira",
@@ -22,13 +28,7 @@ window.EM_ALTA_AUTO = {
       "titulo": "Vídeo: Senado Aprova: Fim da escala 6x1",
       "url": "https://www12.senado.leg.br/noticias/videos/2026/10/senado-aprova-fim-da-escala-6x1-1",
       "data": "2026-10-16T21:42+00:00"
-    },
-    {
-      "veiculo": "Estadão",
-      "titulo": "Durigan fala em linhas de crédito e capacitação para empresas afetadas por fim da escala 6x1",
-      "url": "https://www.estadao.com.br/economia/durigan-fala-em-linhas-de-credito-e-capacitacao-para-empresas-afetadas-por-fim-da-escala-6x1/",
-      "data": "2026-10-16T21:00+00:00"
     }
   ],
-  "atualizado": "2026-10-18T06:04+00:00"
+  "atualizado": "2026-10-18T11:24+00:00"
 };
