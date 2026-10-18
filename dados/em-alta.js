@@ -3,7 +3,7 @@
 window.EM_ALTA_AUTO = {
   "tema": "escala-6x1",
   "veiculos": 4,
-  "noticias": 14,
+  "noticias": 8,
   "manchetes": [
     {
       "veiculo": "BBC News Brasil",
@@ -30,5 +30,5 @@ window.EM_ALTA_AUTO = {
       "data": "2026-10-16T21:42+00:00"
     }
   ],
-  "atualizado": "2026-10-18T18:43+00:00"
+  "atualizado": "2026-10-18T21:36+00:00"
 };
