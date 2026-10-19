@@ -3,26 +3,26 @@
 window.EM_ALTA_AUTO = {
   "tema": "escala-6x1",
   "veiculos": 3,
-  "noticias": 3,
+  "noticias": 6,
   "manchetes": [
     {
+      "veiculo": "CNN Brasil",
+      "titulo": "Fim da escala 6×1 já deve pressionar inflação de janeiro, diz ABPA",
+      "url": "https://www.cnnbrasil.com.br/agro/fim-da-escala-6x1-ja-deve-pressionar-inflacao-de-janeiro-diz-abpa/",
+      "data": "2026-10-19T10:41+00:00"
+    },
+    {
       "veiculo": "Estadão",
-      "titulo": "Petrobras avalia impactos do fim da escala 6x1 a 130 mil terceirizados",
-      "url": "https://www.estadao.com.br/economia/coluna-da-broad/petrobras-avalia-impactos-do-fim-da-escala-6x1-a-130-mil-terceirizados/",
-      "data": "2026-10-19T00:59+00:00"
+      "titulo": "Escala 5x2 e jornada de 40 horas semanais podem acelerar a automação das empresas do varejo",
+      "url": "https://www.estadao.com.br/economia/escala-5x2-e-jornada-de-40-horas-semanais-podem-acelerar-a-automacao-do-varejo/",
+      "data": "2026-10-19T08:30+00:00"
     },
     {
       "veiculo": "Folha de S.Paulo",
       "titulo": "A escala 5x2 é eleitoreira",
       "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/eliogaspari/2026/10/a-escala-5x2-e-eleitoreira.shtml",
       "data": "2026-10-18T02:00+00:00"
-    },
-    {
-      "veiculo": "g1",
-      "titulo": "Escala 6x1 acabou. E agora? Veja perguntas e respostas para entender tudo sobre mudança",
-      "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/17/escala-6x1-acabou-e-agora-perguntas-respostas.ghtml",
-      "data": "2026-10-17T06:00+00:00"
     }
   ],
-  "atualizado": "2026-10-19T04:55+00:00"
+  "atualizado": "2026-10-19T10:57+00:00"
 };
