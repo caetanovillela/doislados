@@ -3,13 +3,13 @@
 window.EM_ALTA_AUTO = {
   "tema": "escala-6x1",
   "veiculos": 3,
-  "noticias": 5,
+  "noticias": 3,
   "manchetes": [
     {
-      "veiculo": "BBC News Brasil",
-      "titulo": "Fim da escala 6x1: o que pensa uma mãe solo e um pequeno empresário",
-      "url": "https://www.bbc.com/portuguese/articles/cq1kdz8dweezo?at_medium=RSS&at_campaign=rss",
-      "data": "2026-10-18T14:10+00:00"
+      "veiculo": "Estadão",
+      "titulo": "Petrobras avalia impactos do fim da escala 6x1 a 130 mil terceirizados",
+      "url": "https://www.estadao.com.br/economia/coluna-da-broad/petrobras-avalia-impactos-do-fim-da-escala-6x1-a-130-mil-terceirizados/",
+      "data": "2026-10-19T00:59+00:00"
     },
     {
       "veiculo": "Folha de S.Paulo",
@@ -24,5 +24,5 @@ window.EM_ALTA_AUTO = {
       "data": "2026-10-17T06:00+00:00"
     }
   ],
-  "atualizado": "2026-10-19T00:15+00:00"
+  "atualizado": "2026-10-19T04:55+00:00"
 };
