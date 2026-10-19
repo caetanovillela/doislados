@@ -2,8 +2,8 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "escala-6x1",
-  "veiculos": 4,
-  "noticias": 8,
+  "veiculos": 3,
+  "noticias": 5,
   "manchetes": [
     {
       "veiculo": "BBC News Brasil",
@@ -22,13 +22,7 @@ window.EM_ALTA_AUTO = {
       "titulo": "Escala 6x1 acabou. E agora? Veja perguntas e respostas para entender tudo sobre mudança",
       "url": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/10/17/escala-6x1-acabou-e-agora-perguntas-respostas.ghtml",
       "data": "2026-10-17T06:00+00:00"
-    },
-    {
-      "veiculo": "Agência Senado",
-      "titulo": "Vídeo: Senado Aprova: Fim da escala 6x1",
-      "url": "https://www12.senado.leg.br/noticias/videos/2026/10/senado-aprova-fim-da-escala-6x1-1",
-      "data": "2026-10-16T21:42+00:00"
     }
   ],
-  "atualizado": "2026-10-18T21:36+00:00"
+  "atualizado": "2026-10-19T00:15+00:00"
 };
