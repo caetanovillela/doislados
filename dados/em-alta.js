@@ -2,14 +2,14 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "bolsa-familia",
-  "veiculos": 5,
-  "noticias": 17,
+  "veiculos": 4,
+  "noticias": 15,
   "manchetes": [
     {
-      "veiculo": "Metrópoles",
-      "titulo": "Flávio mobiliza aliados para conter desgaste com episódio do Bolsa Família",
-      "url": "https://www.metropoles.com/brasil/flavio-mobiliza-aliados-para-conter-desgaste-com-episodio-do-bolsa-familia",
-      "data": "2026-10-20T07:30+00:00"
+      "veiculo": "Agência Brasil",
+      "titulo": "Beneficiários com NIS de final 2 recebem Bolsa Família de outubro",
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/beneficiarios-com-nis-de-final-2-recebem-bolsa-familia-de-outubro",
+      "data": "2026-10-20T10:30+00:00"
     },
     {
       "veiculo": "g1",
@@ -30,5 +30,5 @@ window.EM_ALTA_AUTO = {
       "data": "2026-10-20T00:22+00:00"
     }
   ],
-  "atualizado": "2026-10-20T07:45+00:00"
+  "atualizado": "2026-10-20T13:41+00:00"
 };
