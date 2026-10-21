@@ -2,8 +2,8 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "bolsa-familia",
-  "veiculos": 4,
-  "noticias": 16,
+  "veiculos": 3,
+  "noticias": 13,
   "manchetes": [
     {
       "veiculo": "g1",
@@ -18,17 +18,11 @@ window.EM_ALTA_AUTO = {
       "data": "2026-10-20T22:37+00:00"
     },
     {
-      "veiculo": "BBC News Brasil",
-      "titulo": "O que Flávio Bolsonaro e Lula propõem sobre o Bolsa Família",
-      "url": "https://www.bbc.com/portuguese/articles/c84g120zwq1zo?at_medium=RSS&at_campaign=rss",
-      "data": "2026-10-20T12:41+00:00"
-    },
-    {
       "veiculo": "Estadão",
       "titulo": "Governo Lula editou aumento do Bolsa Família em um dia e em processo sigiloso, mostram documentos",
       "url": "https://www.estadao.com.br/economia/documentos-internos-mostram-que-governo-lula-editou-aumento-do-bolsa-familia-em-apenas-um-dia/",
       "data": "2026-10-19T22:12+00:00"
     }
   ],
-  "atualizado": "2026-10-21T07:49+00:00"
+  "atualizado": "2026-10-21T13:57+00:00"
 };
