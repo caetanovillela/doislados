@@ -2,20 +2,14 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "bets",
-  "veiculos": 3,
-  "noticias": 9,
+  "veiculos": 2,
+  "noticias": 8,
   "manchetes": [
     {
       "veiculo": "Poder360",
-      "titulo": "Com 12 mi de seguidores, cantor Neiff divulga bets nas redes sociais",
-      "url": "https://www.poder360.com.br/poder-gente/com-12-mi-de-seguidores-cantor-neiff-divulga-bets-nas-redes-sociais/",
-      "data": "2026-10-22T22:23+00:00"
-    },
-    {
-      "veiculo": "Estadão",
-      "titulo": "Governo arrecadou R$ 6,86 bi com bets de janeiro a setembro",
-      "url": "https://www.estadao.com.br/economia/governo-arrecadacao-bets-janeiro-setembro/",
-      "data": "2026-10-22T16:35+00:00"
+      "titulo": "Bets não voltam: “Quem quiser ganhar dinheiro, vai trabalhar”, diz Lula",
+      "url": "https://www.poder360.com.br/poder-eleicoes-2026/bets-nao-voltam-quem-quiser-ganhar-dinheiro-vai-trabalhar-diz-lula/",
+      "data": "2026-10-23T00:26+00:00"
     },
     {
       "veiculo": "Folha de S.Paulo",
@@ -24,5 +18,5 @@ window.EM_ALTA_AUTO = {
       "data": "2026-10-22T15:33+00:00"
     }
   ],
-  "atualizado": "2026-10-22T22:29+00:00"
+  "atualizado": "2026-10-23T01:38+00:00"
 };
