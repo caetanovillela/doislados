@@ -3,13 +3,13 @@
 window.EM_ALTA_AUTO = {
   "tema": "bolsa-familia",
   "veiculos": 2,
-  "noticias": 2,
+  "noticias": 3,
   "manchetes": [
     {
       "veiculo": "Folha de S.Paulo",
-      "titulo": "Entenda como funciona a regra de proteção do Bolsa Família para quem consegue emprego",
-      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/entenda-como-funciona-a-regra-de-protecao-do-bolsa-familia-para-quem-consegue-emprego.shtml",
-      "data": "2026-10-23T07:00+00:00"
+      "titulo": "Quem é o pai do Bolsa Família? Veja a história do programa que tirou o Brasil do Mapa da Fome",
+      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/quem-e-o-pai-do-bolsa-familia-veja-a-historia-do-programa-que-tirou-o-brasil-do-mapa-da-fome.shtml",
+      "data": "2026-10-23T09:00+00:00"
     },
     {
       "veiculo": "g1",
@@ -18,5 +18,5 @@ window.EM_ALTA_AUTO = {
       "data": "2026-10-22T17:46+00:00"
     }
   ],
-  "atualizado": "2026-10-23T07:43+00:00"
+  "atualizado": "2026-10-23T13:36+00:00"
 };
