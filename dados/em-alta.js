@@ -3,7 +3,7 @@
 window.EM_ALTA_AUTO = {
   "tema": "escala-6x1",
   "veiculos": 3,
-  "noticias": 8,
+  "noticias": 6,
   "manchetes": [
     {
       "veiculo": "Folha de S.Paulo",
@@ -24,5 +24,5 @@ window.EM_ALTA_AUTO = {
       "data": "2026-10-23T20:13+00:00"
     }
   ],
-  "atualizado": "2026-10-24T19:34+00:00"
+  "atualizado": "2026-10-24T22:34+00:00"
 };
