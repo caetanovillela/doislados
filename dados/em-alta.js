@@ -3,8 +3,14 @@
 window.EM_ALTA_AUTO = {
   "tema": "escala-6x1",
   "veiculos": 3,
-  "noticias": 6,
+  "noticias": 7,
   "manchetes": [
+    {
+      "veiculo": "g1",
+      "titulo": "Datafolha: para 59%, o fim da escala de trabalho 6x1 é positiva para a vida pessoal",
+      "url": "https://g1.globo.com/politica/eleicoes/2026/pesquisa-eleitoral/noticia/2026/10/23/datafolha-para-59percent-o-fim-da-escala-de-trabalho-6x1-e-positiva-para-a-vida-pessoal.ghtml",
+      "data": "2026-10-24T01:24+00:00"
+    },
     {
       "veiculo": "Folha de S.Paulo",
       "titulo": "Flávio Bolsonaro advogou durante campanha para cliente de Willer e peticionou em dia da votação da 6x1",
@@ -16,13 +22,7 @@ window.EM_ALTA_AUTO = {
       "titulo": "Fim da escala 6x1 deve dificultar contratações no setor de petróleo e gás, sobretudo em plataformas",
       "url": "https://www.estadao.com.br/economia/fim-da-escala-6x1-deve-dificultar-contratacoes-no-setor-de-petroleo-e-gas-sobretudo-em-plataformas/",
       "data": "2026-10-23T20:13+00:00"
-    },
-    {
-      "veiculo": "g1",
-      "titulo": "Quaest: fim da escala 6x1 e Caso Master tiveram maior impacto no voto para presidente no 1º turno",
-      "url": "https://g1.globo.com/politica/eleicoes/2026/pesquisa-eleitoral/noticia/2026/10/22/quaest-noticia-impacto-escolha-voto-presidente-1-turno.ghtml",
-      "data": "2026-10-23T03:33+00:00"
     }
   ],
-  "atualizado": "2026-10-23T22:23+00:00"
+  "atualizado": "2026-10-24T01:42+00:00"
 };
