@@ -1,22 +1,28 @@
 /* Gerado por ferramentas/em_alta.py a partir dos feeds da imprensa. Não edite à mão:
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
-  "tema": "escala-6x1",
-  "veiculos": 2,
-  "noticias": 5,
+  "tema": "voto-obrigatorio",
+  "veiculos": 3,
+  "noticias": 3,
   "manchetes": [
     {
-      "veiculo": "Folha de S.Paulo",
-      "titulo": "Fim da escala 6x1 é maior conquista trabalhista desde a Constituição de 1988; entenda os motivos",
-      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/fim-da-escala-6x1-e-maior-conquista-trabalhista-desde-a-constituicao-de-1988-entenda-os-motivos.shtml",
-      "data": "2026-10-24T07:00+00:00"
+      "veiculo": "Poder360",
+      "titulo": "Só 11% dizem que não votaram no 1º turno, mas abstenção foi de 21,08%",
+      "url": "https://www.poder360.com.br/poderdata/so-11-dizem-que-nao-votaram-no-1o-turno-mas-abstencao-foi-de-2108/",
+      "data": "2026-10-25T04:51+00:00"
     },
     {
       "veiculo": "Estadão",
-      "titulo": "Fim da escala 6x1 deve dificultar contratações no setor de petróleo e gás, sobretudo em plataformas",
-      "url": "https://www.estadao.com.br/economia/fim-da-escala-6x1-deve-dificultar-contratacoes-no-setor-de-petroleo-e-gas-sobretudo-em-plataformas/",
-      "data": "2026-10-23T20:13+00:00"
+      "titulo": "Presença de eleitor nas urnas vira fator decisivo neste domingo após maior abstenção em 1º turno",
+      "url": "https://www.estadao.com.br/politica/eleicoes/apos-maior-abstencao-em-1-turno-campanhas-de-lula-e-flavio-vao-as-ruas-para-mobilizar-ausentes/",
+      "data": "2026-10-25T01:00+00:00"
+    },
+    {
+      "veiculo": "CNN Brasil",
+      "titulo": "Abstenção joga contra Lula no 2º turno, avalia especialista",
+      "url": "https://www.cnnbrasil.com.br/eleicoes/abstencao-joga-contra-lula-no-2o-turno-avalia-especialista/",
+      "data": "2026-10-24T23:13+00:00"
     }
   ],
-  "atualizado": "2026-10-25T01:18+00:00"
+  "atualizado": "2026-10-25T06:18+00:00"
 };
