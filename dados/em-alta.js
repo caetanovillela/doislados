@@ -3,26 +3,26 @@
 window.EM_ALTA_AUTO = {
   "tema": "voto-obrigatorio",
   "veiculos": 3,
-  "noticias": 9,
+  "noticias": 8,
   "manchetes": [
     {
+      "veiculo": "Agência Brasil",
+      "titulo": "Segundo turno das eleições registra menor abstenção em 20 anos",
+      "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/segundo-turno-das-eleicoes-registra-menor-abstencao-em-20-anos",
+      "data": "2026-10-26T18:14+00:00"
+    },
+    {
       "veiculo": "g1",
-      "titulo": "Abstenção cai do 1º para o 2º turno: São Paulo lidera com 275 mil faltas a menos; veja ranking das cidades",
-      "url": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/26/abstencao-cai-do-1o-para-o-2o-turno-sao-paulo-lidera-com-275-mil-faltas-a-menos-veja-ranking-das-cidades.ghtml",
-      "data": "2026-10-26T14:47+00:00"
+      "titulo": "Lula ganhou mais votos do que Flávio Bolsonaro nas 20 cidades com maior queda de abstenção no 2º turno",
+      "url": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/26/lula-ganhou-mais-votos-do-que-flavio-bolsonaro-nas-20-cidades-com-maior-queda-de-abstencao-no-2o-turno.ghtml",
+      "data": "2026-10-26T15:35+00:00"
     },
     {
       "veiculo": "BBC News Brasil",
       "titulo": "Abstenção tem a maior queda entre turnos desde a redemocratização",
       "url": "https://www.bbc.com/portuguese/articles/cmq8n4pn08p4o?at_medium=RSS&at_campaign=rss",
       "data": "2026-10-26T12:21+00:00"
-    },
-    {
-      "veiculo": "Estadão",
-      "titulo": "Abstenção cai em 17 Estados, no DF e no exterior no segundo turno",
-      "url": "https://www.estadao.com.br/politica/eleicoes/abstencao-cai-em-17-estados-no-df-e-no-exterior-no-segundo-turno/",
-      "data": "2026-10-26T04:01+00:00"
     }
   ],
-  "atualizado": "2026-10-26T14:25+00:00"
+  "atualizado": "2026-10-26T20:37+00:00"
 };
