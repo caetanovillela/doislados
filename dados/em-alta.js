@@ -3,32 +3,32 @@
 window.EM_ALTA_AUTO = {
   "tema": "reforma-tributaria",
   "veiculos": 4,
-  "noticias": 7,
+  "noticias": 6,
   "manchetes": [
     {
-      "veiculo": "CNN Brasil",
-      "titulo": "Reforma Tributária: TCU decide cálculo da alíquota da CBS nesta quarta (28)",
-      "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/reforma-tributaria-tcu-decide-calculo-de-aliquota-da-cbs-nesta-quarta-28/",
-      "data": "2026-10-28T09:20+00:00"
+      "veiculo": "Poder360",
+      "titulo": "Imposto Seletivo cobre 40% do IPI; CBS absorve 60% da perda",
+      "url": "https://www.poder360.com.br/poder-economia/imposto-seletivo-cobre-40-do-ipi-cbs-absorve-60-da-perda/",
+      "data": "2026-10-28T15:40+00:00"
     },
     {
-      "veiculo": "Metrópoles",
-      "titulo": "Carga tributária: TCU deve decidir alíquota da CBS nesta quarta (28/10)",
-      "url": "https://www.metropoles.com/brasil/tcu-aliquota-cbs-nesta-quarta",
-      "data": "2026-10-28T07:30+00:00"
+      "veiculo": "Agência Brasil",
+      "titulo": "TCU aprova cálculo da alíquota de referência da CBS em 11,3%",
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/tcu-aprova-calculo-da-aliquota-de-referencia-da-cbs-em-113",
+      "data": "2026-10-28T15:38+00:00"
+    },
+    {
+      "veiculo": "Estadão",
+      "titulo": "TCU dá aval à alíquota da CBS em 11,35% para 2027 e encaminhará cálculo ao Senado",
+      "url": "https://www.estadao.com.br/economia/tcu-aval-aliquota-cbs-2027-calculo-senado/",
+      "data": "2026-10-28T15:23+00:00"
     },
     {
       "veiculo": "Folha de S.Paulo",
-      "titulo": "Split payment começa em agosto de 2027 e deve ser obrigatório em até dois anos",
-      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/10/split-payment-comeca-em-agosto-de-2027-e-deve-ser-obrigatorio-em-ate-dois-anos.shtml",
-      "data": "2026-10-28T07:00+00:00"
-    },
-    {
-      "veiculo": "Agência Senado",
-      "titulo": "Áudio: Reforma tributária: alíquota da CBS será definida pelo Senado",
-      "url": "https://www12.senado.leg.br/noticias/audios/2026/10/reforma-tributaria-aliquota-da-cbs-sera-definida-pelo-senado",
-      "data": "2026-10-27T15:46+00:00"
+      "titulo": "TCU propõe alíquota de 11,3% para nova contribuição da reforma tributária em 2027, acima do esperado",
+      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/10/tcu-propoe-aliquota-de-113-para-nova-contribuicao-da-reforma-tributaria-em-2027.shtml",
+      "data": "2026-10-28T13:51+00:00"
     }
   ],
-  "atualizado": "2026-10-28T09:52+00:00"
+  "atualizado": "2026-10-28T16:44+00:00"
 };
