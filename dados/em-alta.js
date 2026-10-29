@@ -2,9 +2,21 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "reforma-tributaria",
-  "veiculos": 4,
-  "noticias": 7,
+  "veiculos": 5,
+  "noticias": 8,
   "manchetes": [
+    {
+      "veiculo": "CNN Brasil",
+      "titulo": "CBS: Fiesp vê gasto de R$ 100 bi com valor do TCU e pede mudança no Senado",
+      "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/cbs-fiesp-ve-gasto-de-r-100-bi-com-valor-do-tcu-e-pede-mudanca-no-senado/",
+      "data": "2026-10-28T22:25+00:00"
+    },
+    {
+      "veiculo": "Estadão",
+      "titulo": "Alíquota de novo imposto da reforma tributária assusta e carga tributária pode subir em 2027",
+      "url": "https://www.estadao.com.br/economia/aliquota-de-novo-imposto-da-reforma-tributaria-assusta-e-carga-tributaria-pode-subir-em-2027/",
+      "data": "2026-10-28T22:15+00:00"
+    },
     {
       "veiculo": "Agência Senado",
       "titulo": "Reforma tributária: TCU calcula alíquota da CBS em 11,3% para 2027",
@@ -16,19 +28,7 @@ window.EM_ALTA_AUTO = {
       "titulo": "Reforma tributária: TCU propôs alíquota de 11,3% para o imposto federal sobre consumo; veja o que muda para empresas em 2027",
       "url": "https://g1.globo.com/economia/noticia/2026/10/28/reforma-tributaria-tcu-propos-aliquota-de-113percent-para-o-imposto-federal-sobre-consumo-veja-o-que-muda-para-empresas-em-2027.ghtml",
       "data": "2026-10-28T20:12+00:00"
-    },
-    {
-      "veiculo": "Folha de S.Paulo",
-      "titulo": "Alíquota de 11,3% da CBS supera projeções e acende alerta no mercado",
-      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/blogs/que-imposto-e-esse/2026/10/aliquota-de-113-da-cbs-supera-projecoes-e-acende-alerta-no-mercado.shtml",
-      "data": "2026-10-28T18:35+00:00"
-    },
-    {
-      "veiculo": "Estadão",
-      "titulo": "TCU dá aval à alíquota da CBS em 11,35% para 2027 e encaminhará cálculo ao Senado",
-      "url": "https://www.estadao.com.br/economia/tcu-aval-aliquota-cbs-2027-calculo-senado/",
-      "data": "2026-10-28T15:23+00:00"
     }
   ],
-  "atualizado": "2026-10-28T21:45+00:00"
+  "atualizado": "2026-10-29T01:52+00:00"
 };
