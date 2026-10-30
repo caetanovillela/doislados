@@ -1,34 +1,34 @@
 /* Gerado por ferramentas/em_alta.py a partir dos feeds da imprensa. Não edite à mão:
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
-  "tema": "ajuste-fiscal",
-  "veiculos": 5,
-  "noticias": 8,
+  "tema": "reforma-tributaria",
+  "veiculos": 4,
+  "noticias": 5,
   "manchetes": [
     {
-      "veiculo": "Poder360",
-      "titulo": "Custo da dívida pública sobe para 12,63% ao ano em setembro",
-      "url": "https://www.poder360.com.br/poder-economia/custo-da-divida-publica-sobe-para-1263-ao-ano-em-setembro/",
-      "data": "2026-10-29T21:12+00:00"
-    },
-    {
-      "veiculo": "Agência Brasil",
-      "titulo": "Dívida pública fica em 82,9% do PIB, e déficit soma R$ 5,5 bilhões",
-      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/divida-publica-fica-em-829-do-pib-e-deficit-soma-r-55-bilhoes",
-      "data": "2026-10-29T19:49+00:00"
-    },
-    {
-      "veiculo": "CNN Brasil",
-      "titulo": "Dívida pública federal sobe 0,97% e chega a R$ 9,38 trilhões em setembro",
-      "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/divida-publica-federal-sobe-097-e-chega-a-r-938-trilhoes-em-setembro/",
-      "data": "2026-10-29T19:48+00:00"
+      "veiculo": "Folha de S.Paulo",
+      "titulo": "Abrasca vê risco de alta de impostos sobre empresas com CBS e possível mudança no IOF",
+      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/blogs/que-imposto-e-esse/2026/10/abrasca-ve-risco-de-alta-de-impostos-sobre-empresas-com-cbs-e-possivel-mudanca-no-iof.shtml",
+      "data": "2026-10-29T21:37+00:00"
     },
     {
       "veiculo": "Estadão",
-      "titulo": "Dívida pública fica em 82,9% do PIB em setembro, maior nível desde 2021",
-      "url": "https://www.estadao.com.br/economia/divida-publica-fica-em-829-do-pib-em-setembro-maior-nivel-desde-2021/",
-      "data": "2026-10-29T19:06+00:00"
+      "titulo": "Alíquota da CBS fica 23% acima do esperado e acende alerta para alta de preços em 2027",
+      "url": "https://www.estadao.com.br/economia/aliquota-da-cbs-fica-23-acima-do-esperado-e-acende-alerta-para-alta-de-precos-em-2027/",
+      "data": "2026-10-29T20:59+00:00"
+    },
+    {
+      "veiculo": "Agência Senado",
+      "titulo": "Áudio: Imposto Seletivo: governo define alíquotas nos próximos dias",
+      "url": "https://www12.senado.leg.br/noticias/audios/2026/10/imposto-seletivo-governo-define-aliquotas-nos-proximos-dias",
+      "data": "2026-10-29T18:40+00:00"
+    },
+    {
+      "veiculo": "g1",
+      "titulo": "Reforma tributária: TCU propôs alíquota de 11,3% para o imposto federal sobre consumo; veja o que muda para empresas em 2027",
+      "url": "https://g1.globo.com/economia/noticia/2026/10/28/reforma-tributaria-tcu-propos-aliquota-de-113percent-para-o-imposto-federal-sobre-consumo-veja-o-que-muda-para-empresas-em-2027.ghtml",
+      "data": "2026-10-28T20:12+00:00"
     }
   ],
-  "atualizado": "2026-10-29T21:15+00:00"
+  "atualizado": "2026-10-30T01:09+00:00"
 };
