@@ -2,15 +2,9 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "reforma-tributaria",
-  "veiculos": 4,
-  "noticias": 9,
+  "veiculos": 3,
+  "noticias": 8,
   "manchetes": [
-    {
-      "veiculo": "Metrópoles",
-      "titulo": "Adiar a reforma tributária atrasa devolução de imposto aos mais pobres",
-      "url": "https://www.metropoles.com/colunas/matheus-leitao/adiar-a-reforma-tributaria-atrasa-devolucao-de-imposto-aos-mais-pobres",
-      "data": "2026-10-30T14:09+00:00"
-    },
     {
       "veiculo": "Folha de S.Paulo",
       "titulo": "Alíquota acima do previsto dificulta adaptação das empresas à reforma tributária",
@@ -30,5 +24,5 @@ window.EM_ALTA_AUTO = {
       "data": "2026-10-29T18:40+00:00"
     }
   ],
-  "atualizado": "2026-10-30T14:21+00:00"
+  "atualizado": "2026-10-30T19:33+00:00"
 };
