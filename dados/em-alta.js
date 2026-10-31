@@ -2,8 +2,8 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "pec-seguranca-publica",
-  "veiculos": 5,
-  "noticias": 5,
+  "veiculos": 4,
+  "noticias": 4,
   "manchetes": [
     {
       "veiculo": "g1",
@@ -18,17 +18,17 @@ window.EM_ALTA_AUTO = {
       "data": "2026-10-30T23:10+00:00"
     },
     {
-      "veiculo": "Poder360",
-      "titulo": "Alcolumbre marca votação da PEC da Segurança para 3ª feira",
-      "url": "https://www.poder360.com.br/poder-congresso/alcolumbre-marca-votacao-da-pec-da-seguranca-para-3a-feira/",
-      "data": "2026-10-30T21:30+00:00"
-    },
-    {
       "veiculo": "CNN Brasil",
       "titulo": "Alcolumbre pauta PEC da Segurança para sessão de terça-feira (3) no Senado",
       "url": "https://www.cnnbrasil.com.br/politica/alcolumbre-pauta-pec-da-seguranca-para-sessao-de-terca-feira-3-no-senado/",
       "data": "2026-10-30T21:29+00:00"
+    },
+    {
+      "veiculo": "Folha de S.Paulo",
+      "titulo": "Alcolumbre pauta PEC da Segurança para terça e governo costura acordo sobre maioridade",
+      "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/alcolumbre-pauta-pec-da-seguranca-para-terca-e-governo-costura-acordo-sobre-maioridade.shtml",
+      "data": "2026-10-30T20:32+00:00"
     }
   ],
-  "atualizado": "2026-10-30T23:54+00:00"
+  "atualizado": "2026-10-31T05:57+00:00"
 };
