@@ -2,9 +2,15 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "pec-seguranca-publica",
-  "veiculos": 3,
-  "noticias": 3,
+  "veiculos": 4,
+  "noticias": 4,
   "manchetes": [
+    {
+      "veiculo": "CNN Brasil",
+      "titulo": "Governo tenta acelerar PEC da Segurança; oposição insiste em maioridade",
+      "url": "https://www.cnnbrasil.com.br/politica/governo-tenta-acelerar-pec-da-seguranca-oposicao-insiste-em-maioridade/",
+      "data": "2026-11-01T09:00+00:00"
+    },
     {
       "veiculo": "g1",
       "titulo": "Alcolumbre pauta votação da PEC da Segurança Pública para a próxima terça-feira",
@@ -24,5 +30,5 @@ window.EM_ALTA_AUTO = {
       "data": "2026-10-30T20:32+00:00"
     }
   ],
-  "atualizado": "2026-11-01T07:40+00:00"
+  "atualizado": "2026-11-01T15:18+00:00"
 };
