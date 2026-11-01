@@ -1,28 +1,28 @@
 /* Gerado por ferramentas/em_alta.py a partir dos feeds da imprensa. Não edite à mão:
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
-  "tema": "reforma-tributaria",
+  "tema": "pec-seguranca-publica",
   "veiculos": 3,
-  "noticias": 6,
+  "noticias": 3,
   "manchetes": [
     {
-      "veiculo": "Estadão",
-      "titulo": "Tributária: Comissão do Senado confirma Braga como relator da CBS e vai convidar Durigan para debate",
-      "url": "https://www.estadao.com.br/economia/tributaria-comissao-do-senado-confirma-braga-como-relator-da-cbs-e-vai-convidar-durigan-para-debate/",
-      "data": "2026-10-31T16:04+00:00"
+      "veiculo": "g1",
+      "titulo": "Alcolumbre pauta votação da PEC da Segurança Pública para a próxima terça-feira",
+      "url": "https://g1.globo.com/politica/noticia/2026/10/30/alcolumbre-pauta-votacao-da-pec-da-seguranca-publica-para-a-proxima-terca-feira.ghtml",
+      "data": "2026-10-31T00:32+00:00"
     },
     {
-      "veiculo": "g1",
-      "titulo": "Reforma tributária: novo imposto sobre consumo pode ficar acima de 30% e superar o de países ricos; veja a comparação",
-      "url": "https://g1.globo.com/economia/noticia/2026/10/31/reforma-tributaria-novo-imposto-sobre-consumo-pode-ficar-acima-de-30percent-e-superar-o-de-paises-ricos-veja-a-comparacao.ghtml",
-      "data": "2026-10-31T06:00+00:00"
+      "veiculo": "Agência Senado",
+      "titulo": "Davi marca para terça votação da PEC da Segurança",
+      "url": "https://www12.senado.leg.br/noticias/materias/2026/10/30/davi-marca-para-terca-votacao-da-pec-da-seguranca",
+      "data": "2026-10-30T23:10+00:00"
     },
     {
       "veiculo": "Folha de S.Paulo",
-      "titulo": "Alíquota acima do previsto dificulta adaptação das empresas à reforma tributária",
-      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/10/aliquota-acima-do-previsto-dificulta-adaptacao-das-empresas-a-reforma-tributaria.shtml",
-      "data": "2026-10-30T07:00+00:00"
+      "titulo": "Alcolumbre pauta PEC da Segurança para terça e governo costura acordo sobre maioridade",
+      "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/10/alcolumbre-pauta-pec-da-seguranca-para-terca-e-governo-costura-acordo-sobre-maioridade.shtml",
+      "data": "2026-10-30T20:32+00:00"
     }
   ],
-  "atualizado": "2026-11-01T01:17+00:00"
+  "atualizado": "2026-11-01T07:40+00:00"
 };
