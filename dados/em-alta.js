@@ -2,20 +2,14 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "bets",
-  "veiculos": 4,
-  "noticias": 5,
+  "veiculos": 3,
+  "noticias": 3,
   "manchetes": [
     {
       "veiculo": "Agência Brasil",
       "titulo": "Fux atende AGU e inclui ministérios e Abras em debate sobre bets",
       "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/fux-atende-agu-e-inclui-ministerios-e-abras-em-debate-sobre-bets",
       "data": "2026-11-01T20:55+00:00"
-    },
-    {
-      "veiculo": "Poder360",
-      "titulo": "Maior erro da minha vida, diz Felipe Neto sobre publicidade de bets",
-      "url": "https://www.poder360.com.br/poder-brasil/maior-erro-da-minha-vida-diz-felipe-neto-sobre-publicidade-de-bets/",
-      "data": "2026-11-01T20:34+00:00"
     },
     {
       "veiculo": "Folha de S.Paulo",
@@ -30,5 +24,5 @@ window.EM_ALTA_AUTO = {
       "data": "2026-10-31T12:11+00:00"
     }
   ],
-  "atualizado": "2026-11-01T23:41+00:00"
+  "atualizado": "2026-11-02T06:28+00:00"
 };
