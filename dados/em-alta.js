@@ -6,29 +6,29 @@ window.EM_ALTA_AUTO = {
   "noticias": 23,
   "manchetes": [
     {
-      "veiculo": "g1",
-      "titulo": "Senado conclui votação da PEC da Segurança; veja como ficou texto",
-      "url": "https://g1.globo.com/politica/noticia/2026/11/03/senado-conclui-votacao-da-pec-da-seguranca-veja-como-ficou-texto.ghtml",
-      "data": "2026-11-04T02:02+00:00"
+      "veiculo": "Metrópoles",
+      "titulo": "Jerônimo defende PEC da Segurança e diz que combate ao crime exige união",
+      "url": "https://www.metropoles.com/colunas/milena-teixeira/jeronimo-defende-pec-da-seguranca-e-diz-que-combate-ao-crime-exige-uniao",
+      "data": "2026-11-04T09:00+00:00"
     },
     {
-      "veiculo": "Poder360",
-      "titulo": "Com aprovação da PEC da Segurança, Lula diz que criará ministério",
-      "url": "https://www.poder360.com.br/poder-governo/com-aprovacao-da-pec-da-seguranca-lula-diz-que-criara-ministerio/",
-      "data": "2026-11-04T00:38+00:00"
+      "veiculo": "Folha de S.Paulo",
+      "titulo": "Tire suas dúvidas sobre a PEC da Segurança Pública",
+      "url": "https://redir.folha.com.br/redir/online/cotidiano/rss091/*https://www1.folha.uol.com.br/cotidiano/2026/11/tire-suas-duvidas-sobre-a-pec-da-seguranca-publica.shtml",
+      "data": "2026-11-04T07:00+00:00"
     },
     {
       "veiculo": "CNN Brasil",
-      "titulo": "Lula comemora aprovação da PEC da Segurança e reforça criação de ministério",
-      "url": "https://www.cnnbrasil.com.br/politica/lula-comemora-aprovacao-da-pec-da-seguranca-e-reforca-criacao-de-ministerio/",
-      "data": "2026-11-04T00:16+00:00"
+      "titulo": "Aprovação da PEC da Segurança abre caminho para Lula criar ministério",
+      "url": "https://www.cnnbrasil.com.br/politica/aprovacao-da-pec-da-seguranca-abre-caminho-para-lula-criar-ministerio/",
+      "data": "2026-11-04T06:50+00:00"
     },
     {
-      "veiculo": "BBC News Brasil",
-      "titulo": "Senado aprova PEC da Segurança sem redução da maioridade penal",
-      "url": "https://www.bbc.com/portuguese/articles/cw4g13g56zljo?at_medium=RSS&at_campaign=rss",
-      "data": "2026-11-04T00:08+00:00"
+      "veiculo": "g1",
+      "titulo": "Em vitória do governo, Senado aprova PEC da Segurança Pública; texto segue para promulgação",
+      "url": "https://g1.globo.com/politica/ao-vivo/pec-seguranca-publica-senado.ghtml",
+      "data": "2026-11-04T03:09+00:00"
     }
   ],
-  "atualizado": "2026-11-04T01:30+00:00"
+  "atualizado": "2026-11-04T09:29+00:00"
 };
