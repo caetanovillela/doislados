@@ -1,34 +1,34 @@
 /* Gerado por ferramentas/em_alta.py a partir dos feeds da imprensa. Não edite à mão:
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
-  "tema": "maioridade-penal",
-  "veiculos": 8,
-  "noticias": 15,
+  "tema": "reforma-tributaria",
+  "veiculos": 7,
+  "noticias": 11,
   "manchetes": [
     {
-      "veiculo": "CNN Brasil",
-      "titulo": "Pinacoteca exibe obras de internos da Fundação Casa em meio a debate sobre redução de maioridade penal",
-      "url": "https://www.cnnbrasil.com.br/nacional/sudeste/sp/pinacoteca-exibe-obras-de-internos-da-fundacao-casa-em-meio-a-debate-sobre-reducao-de-maioridade-penal/",
-      "data": "2026-11-05T03:16+00:00"
-    },
-    {
-      "veiculo": "Folha de S.Paulo",
-      "titulo": "Mitos sobre redução da maioridade penal",
-      "url": "https://redir.folha.com.br/redir/online/cotidiano/rss091/*https://www1.folha.uol.com.br/colunas/thiago-amparo/2026/11/mitos-sobre-reducao-da-maioridade-penal.shtml",
-      "data": "2026-11-05T02:00+00:00"
-    },
-    {
-      "veiculo": "Agência Brasil",
-      "titulo": "Alcolumbre retira maioridade penal da pauta e vai aguardar Câmara",
-      "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/alcolumbre-retira-maioridade-penal-da-pauta-e-vai-aguardar-camara",
-      "data": "2026-11-04T23:54+00:00"
+      "veiculo": "Agência Senado",
+      "titulo": "MP define as alíquotas do Imposto Seletivo para 2027",
+      "url": "https://www12.senado.leg.br/noticias/materias/2026/11/05/mp-define-as-aliquotas-do-imposto-seletivo-para-2027",
+      "data": "2026-11-05T15:29+00:00"
     },
     {
       "veiculo": "g1",
-      "titulo": "Alcolumbre decide aguardar Câmara votar redução da maioridade penal para pautar tema no Senado",
-      "url": "https://g1.globo.com/politica/noticia/2026/11/04/alcolumbre-decide-aguardar-camara-votar-reducao-da-maioridade-penal-para-pautar-tema-no-senado.ghtml",
-      "data": "2026-11-04T23:15+00:00"
+      "titulo": "Ministro da Fazenda diz que prazo de cobrança do imposto federal sobre consumo não será adiado; CBS começa em 1º de janeiro",
+      "url": "https://g1.globo.com/economia/noticia/2026/11/05/ministro-da-fazenda-diz-que-prazo-de-cobranca-do-imposto-federal-sobre-consumo-nao-sera-adiado-cbs-comeca-em-1o-de-janeiro.ghtml",
+      "data": "2026-11-05T15:16+00:00"
+    },
+    {
+      "veiculo": "Agência Câmara",
+      "titulo": "Medida provisória regulamenta o Imposto Seletivo para 2027",
+      "url": "https://www.camara.leg.br/noticias/1316363-medida-provisoria-regulamenta-o-imposto-seletivo-para-2027",
+      "data": "2026-11-05T15:16+00:00"
+    },
+    {
+      "veiculo": "Poder360",
+      "titulo": "Reforma tributária não será adiada e começa em 2027, diz Durigan",
+      "url": "https://www.poder360.com.br/reforma-tributaria-2027/reforma-tributaria-nao-sera-adiada-e-comeca-em-2027-diz-durigan/",
+      "data": "2026-11-05T14:37+00:00"
     }
   ],
-  "atualizado": "2026-11-05T07:01+00:00"
+  "atualizado": "2026-11-05T15:38+00:00"
 };
