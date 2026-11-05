@@ -2,33 +2,33 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "maioridade-penal",
-  "veiculos": 7,
-  "noticias": 13,
+  "veiculos": 8,
+  "noticias": 15,
   "manchetes": [
+    {
+      "veiculo": "CNN Brasil",
+      "titulo": "Pinacoteca exibe obras de internos da Fundação Casa em meio a debate sobre redução de maioridade penal",
+      "url": "https://www.cnnbrasil.com.br/nacional/sudeste/sp/pinacoteca-exibe-obras-de-internos-da-fundacao-casa-em-meio-a-debate-sobre-reducao-de-maioridade-penal/",
+      "data": "2026-11-05T03:16+00:00"
+    },
+    {
+      "veiculo": "Folha de S.Paulo",
+      "titulo": "Mitos sobre redução da maioridade penal",
+      "url": "https://redir.folha.com.br/redir/online/cotidiano/rss091/*https://www1.folha.uol.com.br/colunas/thiago-amparo/2026/11/mitos-sobre-reducao-da-maioridade-penal.shtml",
+      "data": "2026-11-05T02:00+00:00"
+    },
+    {
+      "veiculo": "Agência Brasil",
+      "titulo": "Alcolumbre retira maioridade penal da pauta e vai aguardar Câmara",
+      "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/alcolumbre-retira-maioridade-penal-da-pauta-e-vai-aguardar-camara",
+      "data": "2026-11-04T23:54+00:00"
+    },
     {
       "veiculo": "g1",
       "titulo": "Alcolumbre decide aguardar Câmara votar redução da maioridade penal para pautar tema no Senado",
       "url": "https://g1.globo.com/politica/noticia/2026/11/04/alcolumbre-decide-aguardar-camara-votar-reducao-da-maioridade-penal-para-pautar-tema-no-senado.ghtml",
       "data": "2026-11-04T23:15+00:00"
-    },
-    {
-      "veiculo": "Poder360",
-      "titulo": "Lula falou sobre maioridade penal para evitar uso eleitoral, diz Wagner",
-      "url": "https://www.poder360.com.br/poder-congresso/lula-falou-sobre-maioridade-penal-para-evitar-uso-eleitoral-diz-wagner/",
-      "data": "2026-11-04T22:26+00:00"
-    },
-    {
-      "veiculo": "Agência Senado",
-      "titulo": "Redução da maioridade penal: Senado aguardará votação de PEC da Câmara",
-      "url": "https://www12.senado.leg.br/noticias/materias/2026/11/04/reducao-da-maioridade-penal-senado-aguardara-votacao-de-pec-da-camara",
-      "data": "2026-11-04T22:03+00:00"
-    },
-    {
-      "veiculo": "Folha de S.Paulo",
-      "titulo": "Alcolumbre segura votação de PEC da maioridade penal após disputa entre Câmara e Senado",
-      "url": "https://redir.folha.com.br/redir/online/cotidiano/rss091/*https://www1.folha.uol.com.br/cotidiano/2026/11/alcolumbre-segura-votacao-de-pec-da-maioridade-penal-apos-disputa-entre-camara-e-senado.shtml",
-      "data": "2026-11-04T21:20+00:00"
     }
   ],
-  "atualizado": "2026-11-04T23:46+00:00"
+  "atualizado": "2026-11-05T07:01+00:00"
 };
