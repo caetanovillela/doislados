@@ -2,9 +2,15 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "reforma-tributaria",
-  "veiculos": 4,
-  "noticias": 10,
+  "veiculos": 5,
+  "noticias": 11,
   "manchetes": [
+    {
+      "veiculo": "CNN Brasil",
+      "titulo": "Reforma tributária pode elevar imposto sobre carga expressa a 117%",
+      "url": "https://www.cnnbrasil.com.br/infra/reforma-tributaria-pode-elevar-imposto-sobre-carga-expressa-a-117/",
+      "data": "2026-11-06T10:00+00:00"
+    },
     {
       "veiculo": "Folha de S.Paulo",
       "titulo": "Imposto Seletivo agrada setores e adia debate sobre tributação 'do pecado'",
@@ -22,13 +28,7 @@ window.EM_ALTA_AUTO = {
       "titulo": "Ministro da Fazenda diz que prazo de cobrança do imposto federal sobre consumo não será adiado; CBS começa em 1º de janeiro",
       "url": "https://g1.globo.com/economia/noticia/2026/11/05/ministro-da-fazenda-diz-que-prazo-de-cobranca-do-imposto-federal-sobre-consumo-nao-sera-adiado-cbs-comeca-em-1o-de-janeiro.ghtml",
       "data": "2026-11-05T15:16+00:00"
-    },
-    {
-      "veiculo": "Agência Câmara",
-      "titulo": "Medida provisória regulamenta o Imposto Seletivo para 2027",
-      "url": "https://www.camara.leg.br/noticias/1316363-medida-provisoria-regulamenta-o-imposto-seletivo-para-2027",
-      "data": "2026-11-05T15:16+00:00"
     }
   ],
-  "atualizado": "2026-11-06T02:35+00:00"
+  "atualizado": "2026-11-06T11:11+00:00"
 };
