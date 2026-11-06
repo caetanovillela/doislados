@@ -1,34 +1,34 @@
 /* Gerado por ferramentas/em_alta.py a partir dos feeds da imprensa. Não edite à mão:
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
-  "tema": "reforma-tributaria",
-  "veiculos": 5,
-  "noticias": 11,
+  "tema": "ajuste-fiscal",
+  "veiculos": 4,
+  "noticias": 6,
   "manchetes": [
     {
-      "veiculo": "CNN Brasil",
-      "titulo": "Reforma tributária pode elevar imposto sobre carga expressa a 117%",
-      "url": "https://www.cnnbrasil.com.br/infra/reforma-tributaria-pode-elevar-imposto-sobre-carga-expressa-a-117/",
-      "data": "2026-11-06T10:00+00:00"
-    },
-    {
-      "veiculo": "Folha de S.Paulo",
-      "titulo": "Imposto Seletivo agrada setores e adia debate sobre tributação 'do pecado'",
-      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/imposto-seletivo-agrada-setores-e-adia-debate-sobre-tributacao-do-pecado.shtml",
-      "data": "2026-11-06T02:00+00:00"
-    },
-    {
-      "veiculo": "Agência Senado",
-      "titulo": "MP define as alíquotas do Imposto Seletivo para 2027",
-      "url": "https://www12.senado.leg.br/noticias/materias/2026/11/05/mp-define-as-aliquotas-do-imposto-seletivo-para-2027",
-      "data": "2026-11-05T15:29+00:00"
+      "veiculo": "Poder360",
+      "titulo": "Lula rebate e diz que pobre não pagará “sacrifício” de ajuste fiscal",
+      "url": "https://www.poder360.com.br/poder-governo/lula-rebate-e-diz-que-pobre-nao-pagara-sacrificio-de-ajuste-fiscal/",
+      "data": "2026-11-06T16:46+00:00"
     },
     {
       "veiculo": "g1",
-      "titulo": "Ministro da Fazenda diz que prazo de cobrança do imposto federal sobre consumo não será adiado; CBS começa em 1º de janeiro",
-      "url": "https://g1.globo.com/economia/noticia/2026/11/05/ministro-da-fazenda-diz-que-prazo-de-cobranca-do-imposto-federal-sobre-consumo-nao-sera-adiado-cbs-comeca-em-1o-de-janeiro.ghtml",
-      "data": "2026-11-05T15:16+00:00"
+      "titulo": "Lula faz primeiros acenos concretos na direção de ajuste fiscal e alinha discurso com propostas de Durigan",
+      "url": "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/11/06/lula-faz-primeiros-acenos-concretos-na-direcao-de-ajuste-fiscal-e-alinha-discurso-com-propostas-de-durigan.ghtml",
+      "data": "2026-11-06T16:19+00:00"
+    },
+    {
+      "veiculo": "BBC News Brasil",
+      "titulo": "'Meu medo é o governo Lula buscar atalhos e brigar com o mercado': por que professor de Cambridge defende ajuste fiscal 'suave'",
+      "url": "https://www.bbc.com/portuguese/articles/cqglww4xw40do?at_medium=RSS&at_campaign=rss",
+      "data": "2026-11-06T10:14+00:00"
+    },
+    {
+      "veiculo": "Folha de S.Paulo",
+      "titulo": "Com ajuste fiscal no centro da transição, Lula reúne economistas, mas não apresenta propostas",
+      "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/lula-convoca-reuniao-com-economistas-proximos-ao-pt-e-quer-ampliar-discussao-sobre-cenario-economico.shtml",
+      "data": "2026-11-05T13:13+00:00"
     }
   ],
-  "atualizado": "2026-11-06T11:11+00:00"
+  "atualizado": "2026-11-06T18:07+00:00"
 };
