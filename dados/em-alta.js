@@ -2,9 +2,15 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "bets",
-  "veiculos": 5,
-  "noticias": 7,
+  "veiculos": 6,
+  "noticias": 8,
   "manchetes": [
+    {
+      "veiculo": "Metrópoles",
+      "titulo": "AGU alertou que decisões judiciais poderiam esvaziar veto de Lula às bets",
+      "url": "https://www.metropoles.com/colunas/manoela-alcantara/agu-alertou-que-decisoes-judiciais-poderiam-esvaziar-veto-de-lula-as-bets",
+      "data": "2026-11-07T07:00+00:00"
+    },
     {
       "veiculo": "CNN Brasil",
       "titulo": "PGR pede ao STF suspensão de ações sobre proibição das bets em todo o país",
@@ -22,13 +28,7 @@ window.EM_ALTA_AUTO = {
       "titulo": "Justiça suspende decisão que liberou o funcionamento de três bets",
       "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/justica-suspende-decisao-que-liberou-o-funcionamento-de-tres-bets",
       "data": "2026-11-06T23:39+00:00"
-    },
-    {
-      "veiculo": "Folha de S.Paulo",
-      "titulo": "Assaí relata alta nas vendas após veto às bets e mira expansão",
-      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/assai-relata-alta-nas-vendas-apos-veto-as-bets-e-mira-expansao.shtml",
-      "data": "2026-11-06T16:20+00:00"
     }
   ],
-  "atualizado": "2026-11-07T02:56+00:00"
+  "atualizado": "2026-11-07T10:28+00:00"
 };
