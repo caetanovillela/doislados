@@ -6,6 +6,12 @@ window.EM_ALTA_AUTO = {
   "noticias": 7,
   "manchetes": [
     {
+      "veiculo": "Agência Brasil",
+      "titulo": "PGR pede suspensão de ações contra proibição de bets",
+      "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/pgr-pede-suspensao-de-acoes-contra-proibicao-de-bets",
+      "data": "2026-11-07T17:12+00:00"
+    },
+    {
       "veiculo": "g1",
       "titulo": "Gonet pede ao STF suspensão de ações contra MP do fim das bets até Corte decidir sobre proibição",
       "url": "https://g1.globo.com/politica/noticia/2026/11/07/gonet-pede-ao-stf-suspensao-de-acoes-contra-mp-do-fim-das-bets-ate-corte-decidir-sobre-proibicao.ghtml",
@@ -22,13 +28,7 @@ window.EM_ALTA_AUTO = {
       "titulo": "Gonet pede ao STF para suspender ações sobre MP que acabou com as Bets",
       "url": "https://www.estadao.com.br/economia/gonet-pedido-stf-suspensao-acoes-bets-npr/",
       "data": "2026-11-07T14:42+00:00"
-    },
-    {
-      "veiculo": "BBC News Brasil",
-      "titulo": "Bets voltaram? Entenda as decisões da Justiça sobre as casas de apostas",
-      "url": "https://www.bbc.com/portuguese/articles/cq99zz57d872o?at_medium=RSS&at_campaign=rss",
-      "data": "2026-11-06T23:43+00:00"
     }
   ],
-  "atualizado": "2026-11-07T16:55+00:00"
+  "atualizado": "2026-11-07T20:59+00:00"
 };
