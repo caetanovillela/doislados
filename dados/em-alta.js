@@ -2,15 +2,9 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "bets",
-  "veiculos": 4,
-  "noticias": 6,
+  "veiculos": 3,
+  "noticias": 5,
   "manchetes": [
-    {
-      "veiculo": "Agência Brasil",
-      "titulo": "PGR pede suspensão de ações contra proibição de bets",
-      "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/pgr-pede-suspensao-de-acoes-contra-proibicao-de-bets",
-      "data": "2026-11-07T17:12+00:00"
-    },
     {
       "veiculo": "g1",
       "titulo": "Gonet pede ao STF suspensão de ações contra MP do fim das bets até Corte decidir sobre proibição",
@@ -30,5 +24,5 @@ window.EM_ALTA_AUTO = {
       "data": "2026-11-07T14:42+00:00"
     }
   ],
-  "atualizado": "2026-11-08T07:30+00:00"
+  "atualizado": "2026-11-08T15:23+00:00"
 };
