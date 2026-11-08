@@ -3,7 +3,7 @@
 window.EM_ALTA_AUTO = {
   "tema": "bets",
   "veiculos": 4,
-  "noticias": 7,
+  "noticias": 6,
   "manchetes": [
     {
       "veiculo": "Agência Brasil",
@@ -30,5 +30,5 @@ window.EM_ALTA_AUTO = {
       "data": "2026-11-07T14:42+00:00"
     }
   ],
-  "atualizado": "2026-11-07T20:59+00:00"
+  "atualizado": "2026-11-08T00:47+00:00"
 };
