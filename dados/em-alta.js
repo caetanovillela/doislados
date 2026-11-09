@@ -1,34 +1,28 @@
 /* Gerado por ferramentas/em_alta.py a partir dos feeds da imprensa. Não edite à mão:
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
-  "tema": "voto-obrigatorio",
-  "veiculos": 4,
+  "tema": "ajuste-fiscal",
+  "veiculos": 3,
   "noticias": 5,
   "manchetes": [
     {
-      "veiculo": "Metrópoles",
-      "titulo": "Ministro atribui alta abstenção do Enem 2026 ao modelo de inscrição",
-      "url": "https://www.metropoles.com/brasil/ministro-atribui-alta-abstencao-do-enem-2026-ao-modelo-de-inscricao",
-      "data": "2026-11-08T23:46+00:00"
-    },
-    {
-      "veiculo": "CNN Brasil",
-      "titulo": "Enem 2026: abstenção cresce para 32% no 1º dia, diz ministro da Educação",
-      "url": "https://www.cnnbrasil.com.br/educacao/enem-2026-abstencao-cresce-para-32-no-1o-dia-diz-ministro-da-educacao/",
-      "data": "2026-11-08T23:35+00:00"
-    },
-    {
-      "veiculo": "Poder360",
-      "titulo": "Abstenção no 1º dia do Enem 2026 é de 32%, diz MEC",
-      "url": "https://www.poder360.com.br/poder-educacao/abstencao-no-1o-dia-do-enem-2026-e-de-32-diz-mec/",
-      "data": "2026-11-08T23:19+00:00"
+      "veiculo": "g1",
+      "titulo": "Ajuste fiscal: o diagnóstico de organismos internacionais e o desafio de Lula 4",
+      "url": "https://g1.globo.com/economia/noticia/2026/11/09/ajuste-fiscal-o-diagnostico-de-organismos-internacionais-e-o-desafio-de-lula-4.ghtml",
+      "data": "2026-11-09T06:00+00:00"
     },
     {
       "veiculo": "Folha de S.Paulo",
-      "titulo": "Enem 2026 tem 32% de abstenção no primeiro dia da prova",
-      "url": "https://redir.folha.com.br/redir/online/cotidiano/rss091/*https://www1.folha.uol.com.br/educacao/2026/11/enem-2026-tem-32-de-abstencao-no-primeiro-dia-da-prova.shtml",
-      "data": "2026-11-08T23:16+00:00"
+      "titulo": "Títulos atrelados à Selic dobram e colchão para rolar dívida pública de curto prazo diminui",
+      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/titulos-atrelados-a-selic-dobram-e-colchao-para-rolar-divida-publica-de-curto-prazo-diminui.shtml",
+      "data": "2026-11-09T02:00+00:00"
+    },
+    {
+      "veiculo": "CNN Brasil",
+      "titulo": "Na TV, Lula diz que se preocupa com dívida pública e taxa de juros",
+      "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/na-tv-lula-diz-que-se-preocupa-com-divida-publica-e-taxa-de-juros/",
+      "data": "2026-11-08T23:42+00:00"
     }
   ],
-  "atualizado": "2026-11-09T01:01+00:00"
+  "atualizado": "2026-11-09T08:08+00:00"
 };
