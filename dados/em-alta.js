@@ -2,20 +2,20 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "bets",
-  "veiculos": 6,
+  "veiculos": 5,
   "noticias": 8,
   "manchetes": [
+    {
+      "veiculo": "g1",
+      "titulo": "Ministério pede derrubada de 348 perfis de influenciadores que divulgam bets ilegais",
+      "url": "https://g1.globo.com/politica/noticia/2026/11/09/ministerio-pede-derrubada-de-348-perfis-de-influenciadores-que-divulgam-bets-ilegais.ghtml",
+      "data": "2026-11-10T03:39+00:00"
+    },
     {
       "veiculo": "CNN Brasil",
       "titulo": "Governo pede derrubada de 348 perfis de influenciadores de bets",
       "url": "https://www.cnnbrasil.com.br/nacional/brasil/governo-pede-derrubada-de-348-perfis-de-influenciadores-de-bets/",
       "data": "2026-11-10T01:14+00:00"
-    },
-    {
-      "veiculo": "Metrópoles",
-      "titulo": "Governo Lula pede retirada do ar de 348 perfis que divulgam bets ilegais",
-      "url": "https://www.metropoles.com/brasil/governo-lula-pede-retirada-do-ar-de-348-perfis-que-divulgam-bets-ilegais",
-      "data": "2026-11-10T00:42+00:00"
     },
     {
       "veiculo": "Agência Senado",
@@ -30,5 +30,5 @@ window.EM_ALTA_AUTO = {
       "data": "2026-11-09T15:35+00:00"
     }
   ],
-  "atualizado": "2026-11-10T02:17+00:00"
+  "atualizado": "2026-11-10T10:04+00:00"
 };
