@@ -2,9 +2,21 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "bets",
-  "veiculos": 5,
+  "veiculos": 6,
   "noticias": 8,
   "manchetes": [
+    {
+      "veiculo": "CNN Brasil",
+      "titulo": "Governo pede derrubada de 348 perfis de influenciadores de bets",
+      "url": "https://www.cnnbrasil.com.br/nacional/brasil/governo-pede-derrubada-de-348-perfis-de-influenciadores-de-bets/",
+      "data": "2026-11-10T01:14+00:00"
+    },
+    {
+      "veiculo": "Metrópoles",
+      "titulo": "Governo Lula pede retirada do ar de 348 perfis que divulgam bets ilegais",
+      "url": "https://www.metropoles.com/brasil/governo-lula-pede-retirada-do-ar-de-348-perfis-que-divulgam-bets-ilegais",
+      "data": "2026-11-10T00:42+00:00"
+    },
     {
       "veiculo": "Agência Senado",
       "titulo": "Áudio: CAE terá audiência sobre fim das bets",
@@ -16,19 +28,7 @@ window.EM_ALTA_AUTO = {
       "titulo": "Decisão de Fux bloqueou ações de 29 bets, incluindo Blaze, Stake e EstrelaBet",
       "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/decisao-de-fux-bloqueou-acoes-de-29-bets-incluindo-blaze-stake-e-estrelabet.shtml",
       "data": "2026-11-09T15:35+00:00"
-    },
-    {
-      "veiculo": "g1",
-      "titulo": "Fux suspende processos sobre proibição das bets até STF decidir sobre validade da medida",
-      "url": "https://g1.globo.com/politica/noticia/2026/11/09/fux-suspende-processos-sobre-proibicao-das-bets-ate-stf-decidir-sobre-validade-da-medida.ghtml",
-      "data": "2026-11-09T13:49+00:00"
-    },
-    {
-      "veiculo": "BBC News Brasil",
-      "titulo": "Fux suspende processos sobre proibição de bets em todo país; o que acontece agora",
-      "url": "https://www.bbc.com/portuguese/articles/c6n8d8x9ee17o?at_medium=RSS&at_campaign=rss",
-      "data": "2026-11-09T12:27+00:00"
     }
   ],
-  "atualizado": "2026-11-09T18:56+00:00"
+  "atualizado": "2026-11-10T02:17+00:00"
 };
