@@ -3,8 +3,14 @@
 window.EM_ALTA_AUTO = {
   "tema": "reforma-tributaria",
   "veiculos": 4,
-  "noticias": 10,
+  "noticias": 9,
   "manchetes": [
+    {
+      "veiculo": "g1",
+      "titulo": "Pressão para adiar implementação da reforma tributária cresce, mas deputados descartam mudança no calendário",
+      "url": "https://g1.globo.com/politica/noticia/2026/11/11/pressao-para-adiar-implementacao-da-reforma-tributaria-cresce-mas-deputados-descartam-mudanca-no-calendario.ghtml",
+      "data": "2026-11-11T06:00+00:00"
+    },
     {
       "veiculo": "Agência Senado",
       "titulo": "Senado recebe acórdão do TCU que propõe alíquota de 11,3% para a CBS",
@@ -18,17 +24,11 @@ window.EM_ALTA_AUTO = {
       "data": "2026-11-10T19:57+00:00"
     },
     {
-      "veiculo": "g1",
-      "titulo": "'Split payment': 98% das operações entre empresas devem estar cobertas a partir de outubro de 2027, estima confederação",
-      "url": "https://g1.globo.com/economia/noticia/2026/11/10/split-payment-98percent-das-operacoes-devem-estar-cobertas-ate-outubro-de-2027-estima-confederacao-dos-bancos.ghtml",
-      "data": "2026-11-10T17:06+00:00"
-    },
-    {
       "veiculo": "Folha de S.Paulo",
       "titulo": "Mais de 70 entidades pedem prorrogação dos testes da reforma tributária",
       "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/mais-de-70-entidades-pedem-prorrogacao-dos-testes-da-reforma-tributaria.shtml",
       "data": "2026-11-10T14:39+00:00"
     }
   ],
-  "atualizado": "2026-11-10T23:33+00:00"
+  "atualizado": "2026-11-11T06:48+00:00"
 };
