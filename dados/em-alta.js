@@ -3,32 +3,32 @@
 window.EM_ALTA_AUTO = {
   "tema": "ajuste-fiscal",
   "veiculos": 6,
-  "noticias": 12,
+  "noticias": 16,
   "manchetes": [
     {
-      "veiculo": "Metrópoles",
-      "titulo": "Dólar abre a R$ 5,57 de olho em ajuste fiscal de até R$ 60 bilhões",
-      "url": "https://www.metropoles.com/brasil/dolar-nesta-quinta-12-11",
-      "data": "2026-11-12T12:20+00:00"
+      "veiculo": "Poder360",
+      "titulo": "Alcolumbre articula para votar ajuste fiscal ainda nesta 5ª feira",
+      "url": "https://www.poder360.com.br/poder-congresso/alcolumbre-articula-para-votar-ajuste-fiscal-ainda-nesta-5a-feira/",
+      "data": "2026-11-12T20:46+00:00"
     },
     {
-      "veiculo": "Agência Senado",
-      "titulo": "Vídeo: Consultor de Orçamento do Senado explica o que muda com o projeto de ajuste fiscal do governo",
-      "url": "https://www12.senado.leg.br/noticias/videos/2026/11/consultor-de-orcamento-do-senado-explica-o-que-muda-com-o-projeto-de-ajuste-fiscal-do-governo",
-      "data": "2026-11-12T11:58+00:00"
+      "veiculo": "Metrópoles",
+      "titulo": "OAB diz que ajuste fiscal aumenta carga tributária sobre advocacia",
+      "url": "https://www.metropoles.com/colunas/grande-angular/oab-diz-que-ajuste-fiscal-aumenta-carga-tributaria-sobre-advocacia",
+      "data": "2026-11-12T20:22+00:00"
     },
     {
       "veiculo": "Folha de S.Paulo",
-      "titulo": "Entenda ponto a ponto o 'plano Moretti', proposta de ajuste fiscal do governo Lula",
-      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/entenda-ponto-a-ponto-o-plano-moretti-proposta-de-ajuste-fiscal-do-governo-lula.shtml",
-      "data": "2026-11-12T02:00+00:00"
+      "titulo": "PT e aliados articulam projeto alternativo ao ajuste fiscal, com taxação dos mais ricos",
+      "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/11/pt-e-aliados-articulam-projeto-alternativo-ao-ajuste-fiscal-com-taxacao-dos-mais-ricos.shtml",
+      "data": "2026-11-12T20:19+00:00"
     },
     {
-      "veiculo": "g1",
-      "titulo": "Limite de supersalários, mudanças no piso da saúde; veja as medidas do governo para ajuste fiscal de até R$ 60 bilhões",
-      "url": "https://g1.globo.com/economia/noticia/2026/11/11/limite-de-supersalarios-mudancas-no-piso-da-saude-veja-as-medidas-do-governo-para-ajuste-fiscal-de-ate-r-60-bilhoes.ghtml",
-      "data": "2026-11-12T01:03+00:00"
+      "veiculo": "Agência Senado",
+      "titulo": "Vídeo: Projeto de ajuste fiscal do governo está na pauta do Plenário",
+      "url": "https://www12.senado.leg.br/noticias/videos/2026/11/projeto-de-ajuste-fiscal-do-governo-esta-na-pauta-do-plenario",
+      "data": "2026-11-12T19:18+00:00"
     }
   ],
-  "atualizado": "2026-11-12T12:57+00:00"
+  "atualizado": "2026-11-12T20:57+00:00"
 };
