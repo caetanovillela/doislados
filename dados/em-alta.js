@@ -2,33 +2,33 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "ajuste-fiscal",
-  "veiculos": 6,
-  "noticias": 12,
+  "veiculos": 7,
+  "noticias": 15,
   "manchetes": [
     {
-      "veiculo": "Metrópoles",
-      "titulo": "Meta fiscal: governo quer tirar até R$ 10,5 bilhões em subsídios ao diesel",
-      "url": "https://www.metropoles.com/brasil/meta-fiscal-governo-quer-tirar-ate-r-105-bilhoes-em-subsidios-ao-diesel",
-      "data": "2026-11-11T22:44+00:00"
+      "veiculo": "Folha de S.Paulo",
+      "titulo": "Entenda ponto a ponto o Plano Moretti, proposta de ajuste fiscal do governo Lula",
+      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/entenda-ponto-a-ponto-o-plano-moretti-proposta-de-ajuste-fiscal-do-governo-lula.shtml",
+      "data": "2026-11-12T02:00+00:00"
+    },
+    {
+      "veiculo": "Poder360",
+      "titulo": "70% do ajuste fiscal virá de arrecadação, diz Instituto Livre Mercado",
+      "url": "https://www.poder360.com.br/poder-congresso/70-do-ajuste-fiscal-vira-de-arrecadacao-diz-instituto-livre-mercado/",
+      "data": "2026-11-12T01:38+00:00"
+    },
+    {
+      "veiculo": "g1",
+      "titulo": "Limite de supersalários, mudanças no piso da saúde; veja as medidas do governo para ajuste fiscal de até R$ 60 bilhões",
+      "url": "https://g1.globo.com/economia/noticia/2026/11/11/limite-de-supersalarios-mudancas-no-piso-da-saude-veja-as-medidas-do-governo-para-ajuste-fiscal-de-ate-r-60-bilhoes.ghtml",
+      "data": "2026-11-12T01:03+00:00"
     },
     {
       "veiculo": "Agência Senado",
-      "titulo": "Ministro do Planejamento anuncia na CMO ajuste fiscal de R$ 60 bi em 2027",
-      "url": "https://www12.senado.leg.br/noticias/materias/2026/11/11/ministro-do-planejamento-anuncia-na-cmo-ajuste-fiscal-de-r-60-bi-em-2027",
-      "data": "2026-11-11T22:18+00:00"
-    },
-    {
-      "veiculo": "Folha de S.Paulo",
-      "titulo": "Projeto de ajuste fiscal autoriza tirar até R$ 10,5 bi de subvenção ao diesel da meta de 2026",
-      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/projeto-de-ajuste-fiscal-autoriza-tirar-ate-r-105-bi-de-subvencao-ao-diesel-da-meta-de-2026.shtml",
-      "data": "2026-11-11T22:09+00:00"
-    },
-    {
-      "veiculo": "Agência Câmara",
-      "titulo": "Ministro do Planejamento anuncia novas medidas de ajuste fiscal para 2027",
-      "url": "https://www.camara.leg.br/noticias/1318603-ministro-do-planejamento-anuncia-novas-medidas-de-ajuste-fiscal-para-2027",
-      "data": "2026-11-11T21:28+00:00"
+      "titulo": "Ajuste fiscal pode ser votado nesta quinta-feira",
+      "url": "https://www12.senado.leg.br/noticias/materias/2026/11/11/ajuste-fiscal-pode-ser-votado-nesta-quinta-feira",
+      "data": "2026-11-11T23:24+00:00"
     }
   ],
-  "atualizado": "2026-11-11T22:50+00:00"
+  "atualizado": "2026-11-12T03:55+00:00"
 };
