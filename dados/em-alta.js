@@ -3,32 +3,32 @@
 window.EM_ALTA_AUTO = {
   "tema": "ajuste-fiscal",
   "veiculos": 7,
-  "noticias": 30,
+  "noticias": 28,
   "manchetes": [
     {
-      "veiculo": "Metrópoles",
-      "titulo": "Ajuste fiscal: entenda o que prevê projeto aprovado no Senado",
-      "url": "https://www.metropoles.com/brasil/ajuste-fiscal-entenda-o-que-preve-projeto-aprovado-no-senado",
-      "data": "2026-11-13T09:12+00:00"
-    },
-    {
-      "veiculo": "CNN Brasil",
-      "titulo": "Projeto de ajuste fiscal pode bancar compensação do seguro rural em 2027",
-      "url": "https://www.cnnbrasil.com.br/agro/projeto-de-ajuste-fiscal-pode-bancar-compensacao-do-seguro-rural-em-2027/",
-      "data": "2026-11-13T08:00+00:00"
+      "veiculo": "g1",
+      "titulo": "Placar do ajuste fiscal no Senado indica que Lula terá dificuldades para aprovar PECs em 2027",
+      "url": "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/11/13/placar-do-ajuste-fiscal-no-senado-indica-que-o-governo-tera-dificuldades-para-aprovar-pecs-em-2027.ghtml",
+      "data": "2026-11-13T18:23+00:00"
     },
     {
       "veiculo": "Poder360",
-      "titulo": "Ajuste fiscal de Lula terá cortes em saúde e educação, diz Flávio",
-      "url": "https://www.poder360.com.br/poder-eleicoes-2026/ajuste-fiscal-de-lula-tera-cortes-em-saude-e-educacao-diz-flavio/",
-      "data": "2026-11-13T07:10+00:00"
+      "titulo": "João Paulo Cunha diz acreditar em aprovação de ajuste fiscal na Câmara",
+      "url": "https://www.poder360.com.br/poder-congresso/joao-paulo-cunha-diz-acreditar-em-aprovacao-de-ajuste-fiscal-na-camara/",
+      "data": "2026-11-13T17:34+00:00"
     },
     {
-      "veiculo": "g1",
-      "titulo": "Trava extra para gastos, mudanças no piso da saúde e corte em benefícios tributários: entenda ajuste fiscal aprovado pelo Senado",
-      "url": "https://g1.globo.com/politica/noticia/2026/11/13/trava-extra-para-gastos-mudancas-no-piso-da-saude-e-corte-em-beneficios-tributarios-entenda-ajuste-fiscal-aprovado-pelo-senado.ghtml",
-      "data": "2026-11-13T06:00+00:00"
+      "veiculo": "Folha de S.Paulo",
+      "titulo": "Ajuste fiscal não é incompatível com promessas do governo Lula 4, diz André Esteves",
+      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ajuste-fiscal-nao-e-incompativel-com-promessas-do-governo-lula-4-diz-andre-esteves.shtml",
+      "data": "2026-11-13T17:21+00:00"
+    },
+    {
+      "veiculo": "Metrópoles",
+      "titulo": "Bolsa tem alta de olho em ajuste fiscal, caso Nvidia e Microsoft",
+      "url": "https://www.metropoles.com/brasil/bolsa-nesta-sexta-5",
+      "data": "2026-11-13T17:20+00:00"
     }
   ],
-  "atualizado": "2026-11-13T09:44+00:00"
+  "atualizado": "2026-11-13T17:54+00:00"
 };
