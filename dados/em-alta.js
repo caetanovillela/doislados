@@ -2,14 +2,20 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "ajuste-fiscal",
-  "veiculos": 4,
-  "noticias": 14,
+  "veiculos": 5,
+  "noticias": 16,
   "manchetes": [
     {
+      "veiculo": "Poder360",
+      "titulo": "Ala do PT defende ajuste fiscal com mais impostos",
+      "url": "https://www.poder360.com.br/poder-congresso/ala-do-pt-defende-ajuste-fiscal-com-mais-impostos/",
+      "data": "2026-11-14T18:38+00:00"
+    },
+    {
       "veiculo": "Estadão",
-      "titulo": "Clareza sobre ajuste fiscal ajudará a sustentar promessas de Lula",
-      "url": "https://www.estadao.com.br/politica/silvio-cascione/clareza-sobre-ajuste-fiscal-ajudara-a-sustentar-promessas-de-lula/",
-      "data": "2026-11-13T20:59+00:00"
+      "titulo": "Ministro faz defesa do projeto de ajuste fiscal em vídeo divulgado pelo governo",
+      "url": "https://www.estadao.com.br/economia/ministro-faz-defesa-do-projeto-de-ajuste-fiscal-em-video-divulgado-pelo-governo/",
+      "data": "2026-11-14T16:48+00:00"
     },
     {
       "veiculo": "Agência Senado",
@@ -22,13 +28,7 @@ window.EM_ALTA_AUTO = {
       "titulo": "Placar do ajuste fiscal no Senado indica que Lula terá dificuldades para aprovar PECs em 2027",
       "url": "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/11/13/placar-do-ajuste-fiscal-no-senado-indica-que-o-governo-tera-dificuldades-para-aprovar-pecs-em-2027.ghtml",
       "data": "2026-11-13T18:23+00:00"
-    },
-    {
-      "veiculo": "Folha de S.Paulo",
-      "titulo": "Ajuste fiscal não é incompatível com promessas do governo Lula 4, diz André Esteves",
-      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ajuste-fiscal-nao-e-incompativel-com-promessas-do-governo-lula-4-diz-andre-esteves.shtml",
-      "data": "2026-11-13T17:21+00:00"
     }
   ],
-  "atualizado": "2026-11-14T14:19+00:00"
+  "atualizado": "2026-11-14T19:17+00:00"
 };
