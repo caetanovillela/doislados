@@ -3,8 +3,14 @@
 window.EM_ALTA_AUTO = {
   "tema": "escala-6x1",
   "veiculos": 6,
-  "noticias": 12,
+  "noticias": 11,
   "manchetes": [
+    {
+      "veiculo": "Metrópoles",
+      "titulo": "Dino defende folga negociada na 5x2 e diz que decisão perfeita \"não existe\"",
+      "url": "https://www.metropoles.com/brasil/dino-defende-folga-negociada-na-5x2-e-diz-que-decisao-perfeita-nao-existe",
+      "data": "2026-11-14T23:18+00:00"
+    },
     {
       "veiculo": "g1",
       "titulo": "Fux suspende julgamento sobre escala 5x2 e leva caso para plenário físico do STF",
@@ -18,17 +24,11 @@ window.EM_ALTA_AUTO = {
       "data": "2026-11-14T21:03+00:00"
     },
     {
-      "veiculo": "Metrópoles",
-      "titulo": "Fux suspende julgamento virtual da escala 6x1 e pede que caso vá a plenário",
-      "url": "https://www.metropoles.com/brasil/fux-suspende-julgamento-virtual-da-escala-6x1-e-pede-que-caso-va-a-plenario",
-      "data": "2026-11-14T21:01+00:00"
-    },
-    {
       "veiculo": "CNN Brasil",
       "titulo": "Fux interrompe julgamento sobre fim da escala 6×1 e leva caso ao plenário",
       "url": "https://www.cnnbrasil.com.br/politica/fux-interrompe-julgamento-sobre-fim-da-escala-6x1-e-leva-caso-ao-plenario/",
       "data": "2026-11-14T20:26+00:00"
     }
   ],
-  "atualizado": "2026-11-14T23:08+00:00"
+  "atualizado": "2026-11-15T02:51+00:00"
 };
