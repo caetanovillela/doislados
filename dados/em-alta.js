@@ -2,27 +2,33 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "ajuste-fiscal",
-  "veiculos": 3,
-  "noticias": 8,
+  "veiculos": 7,
+  "noticias": 16,
   "manchetes": [
     {
+      "veiculo": "Poder360",
+      "titulo": "PT reunirá bancada e ouvirá sugestões ao ajuste fiscal",
+      "url": "https://www.poder360.com.br/poder-congresso/pt-reunira-bancada-e-ouvira-sugestoes-ao-ajuste-fiscal/",
+      "data": "2026-11-16T22:00+00:00"
+    },
+    {
+      "veiculo": "Agência Câmara",
+      "titulo": "Líder do governo afirma que ajuste fiscal não retira recursos da saúde e da educação",
+      "url": "https://www.camara.leg.br/noticias/1319835-lider-do-governo-afirma-que-ajuste-fiscal-nao-retira-recursos-da-saude-e-da-educacao",
+      "data": "2026-11-16T21:15+00:00"
+    },
+    {
+      "veiculo": "Agência Senado",
+      "titulo": "Áudio: Plenário analisa destaques da oposição ao projeto de ajuste fiscal",
+      "url": "https://www12.senado.leg.br/noticias/audios/2026/11/plenario-analisa-destaques-da-oposicao-ao-projeto-de-ajuste-fiscal",
+      "data": "2026-11-16T20:06+00:00"
+    },
+    {
       "veiculo": "Folha de S.Paulo",
-      "titulo": "Podcast explica 'plano Moretti', pacote de ajuste fiscal para o governo Lula 4",
-      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/podcasts/2026/11/podcast-explica-plano-moretti-pacote-de-ajuste-fiscal-para-o-governo-lula-4.shtml",
-      "data": "2026-11-16T08:00+00:00"
-    },
-    {
-      "veiculo": "Estadão",
-      "titulo": "Aversão do PT ao ajuste fiscal mostra a falta que faz uma direita democrática",
-      "url": "https://www.estadao.com.br/politica/diogo-schelp/aversao-do-pt-ao-ajuste-fiscal-mostra-a-falta-que-faz-uma-direita-democratica/",
-      "data": "2026-11-15T21:14+00:00"
-    },
-    {
-      "veiculo": "g1",
-      "titulo": "Ajuste fiscal: Alckmin afirma que projeto do governo 'vai na direção correta' e diz esperar votação na Câmara nesta semana",
-      "url": "https://g1.globo.com/politica/noticia/2026/11/15/ajuste-fiscal-alckmin-afirma-que-projeto-do-governo-vai-na-direcao-correta-e-diz-esperar-votacao-na-camara-nesta-semana.ghtml",
-      "data": "2026-11-15T18:23+00:00"
+      "titulo": "O formato do ajuste fiscal importa",
+      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/cecilia-machado/2026/11/o-formato-do-ajuste-fiscal-importa.shtml",
+      "data": "2026-11-16T20:00+00:00"
     }
   ],
-  "atualizado": "2026-11-16T11:46+00:00"
+  "atualizado": "2026-11-16T22:21+00:00"
 };
