@@ -2,33 +2,33 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "ajuste-fiscal",
-  "veiculos": 9,
-  "noticias": 29,
+  "veiculos": 6,
+  "noticias": 22,
   "manchetes": [
     {
       "veiculo": "g1",
-      "titulo": "Dólar opera em alta e bate R$ 5,82, de olho em ajuste fiscal e ata do Fed; Ibovespa cai",
-      "url": "https://g1.globo.com/economia/noticia/2026/11/18/dolar-ibovespa.ghtml",
-      "data": "2026-11-18T15:01+00:00"
+      "titulo": "Ajuste fiscal: Senado faz acordo sobre mudança na Lei Kandir, rejeita outras alterações e conclui votação do projeto",
+      "url": "https://g1.globo.com/politica/noticia/2026/11/18/senado-comeca-a-votar-requerimentos-para-modificar-proposta-de-ajuste-fiscal-de-lula.ghtml",
+      "data": "2026-11-18T22:25+00:00"
     },
     {
       "veiculo": "Metrópoles",
-      "titulo": "Bolsa opera em leve baixa, com ajuste fiscal e juros dos EUA no radar",
-      "url": "https://www.metropoles.com/brasil/bolsa-opera-em-leve-baixa-com-ajuste-fiscal-e-juros-dos-eua-no-radar",
-      "data": "2026-11-18T14:16+00:00"
+      "titulo": "Bolsa fecha em queda de 1,34% com incertezas sobre pacote de ajuste fiscal",
+      "url": "https://www.metropoles.com/brasil/bolsa-fecha-em-queda-com-incertezas-sobre-pacote-de-ajuste-fiscal",
+      "data": "2026-11-18T21:50+00:00"
     },
     {
-      "veiculo": "Agência Senado",
-      "titulo": "Sargento Reginauro critica projeto de ajuste fiscal do governo",
-      "url": "https://www12.senado.leg.br/noticias/materias/2026/11/18/sargento-reginauro-critica-projeto-de-ajuste-fiscal-do-governo",
-      "data": "2026-11-18T13:38+00:00"
+      "veiculo": "Estadão",
+      "titulo": "Em vitória para governo Lula, Senado mantém dispositivo que preserva até R$ 18,3 bi do ajuste fiscal",
+      "url": "https://www.estadao.com.br/economia/senado-votacao-destaques-projeto-ajuste-fiscal/",
+      "data": "2026-11-18T21:13+00:00"
     },
     {
-      "veiculo": "Poder360",
-      "titulo": "Janones defende ajuste fiscal e critica “acusações irresponsáveis”",
-      "url": "https://www.poder360.com.br/poder-governo/janones-defende-ajuste-fiscal-e-critica-acusacoes-irresponsaveis/",
-      "data": "2026-11-18T12:34+00:00"
+      "veiculo": "CNN Brasil",
+      "titulo": "Senado analisa propostas de mudanças no texto do ajuste fiscal; acompanhe",
+      "url": "https://www.cnnbrasil.com.br/politica/senado-analisa-propostas-de-mudancas-no-texto-do-ajuste-fiscal-acompanhe/",
+      "data": "2026-11-18T19:56+00:00"
     }
   ],
-  "atualizado": "2026-11-18T14:19+00:00"
+  "atualizado": "2026-11-18T22:09+00:00"
 };
