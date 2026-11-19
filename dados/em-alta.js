@@ -3,32 +3,32 @@
 window.EM_ALTA_AUTO = {
   "tema": "ajuste-fiscal",
   "veiculos": 8,
-  "noticias": 28,
+  "noticias": 21,
   "manchetes": [
     {
       "veiculo": "Metrópoles",
-      "titulo": "Domingos Sávio critica ajuste fiscal de Lula: \"Brasil indo para o buraco\"",
-      "url": "https://www.metropoles.com/minas-gerais/domingos-savio-critica-ajuste-fiscal-de-lula-brasil-indo-para-o-buraco",
-      "data": "2026-11-19T13:03+00:00"
+      "titulo": "Relator da Câmara apresenta parecer sem mudanças no ajuste fiscal de Lula",
+      "url": "https://www.metropoles.com/brasil/relator-da-camara-apresenta-parecer-sem-mudancas-no-ajuste-fiscal-de-lula",
+      "data": "2026-11-19T22:05+00:00"
     },
     {
-      "veiculo": "CNN Brasil",
-      "titulo": "Após avanço do plano Moretti, Lula planeja novo pacote de ajuste fiscal",
-      "url": "https://www.cnnbrasil.com.br/politica/apos-avanco-do-plano-moretti-lula-planeja-novo-pacote-de-ajuste-fiscal/",
-      "data": "2026-11-19T12:48+00:00"
+      "veiculo": "Poder360",
+      "titulo": "Ibovespa cai 0,69% com incertezas sobre ajuste fiscal do governo",
+      "url": "https://www.poder360.com.br/poder-economia/ibovespa-cai-069-com-incertezas-sobre-ajuste-fiscal-do-governo/",
+      "data": "2026-11-19T21:34+00:00"
+    },
+    {
+      "veiculo": "Estadão",
+      "titulo": "Oposição defende mudar ajuste fiscal na Câmara, mas esbarra em acordo de Motta com governo",
+      "url": "https://www.estadao.com.br/economia/oposicao-defende-mudar-ajuste-fiscal-na-camara-mas-esbarra-em-acordo-de-motta-com-governo/",
+      "data": "2026-11-19T21:11+00:00"
     },
     {
       "veiculo": "Agência Senado",
-      "titulo": "Vídeo: Com acordo sobre estados e municípios, Senado conclui ajuste fiscal",
-      "url": "https://www12.senado.leg.br/noticias/videos/2026/11/com-acordo-sobre-estados-e-municipios-senado-conclui-ajuste-fiscal",
-      "data": "2026-11-19T12:33+00:00"
-    },
-    {
-      "veiculo": "Folha de S.Paulo",
-      "titulo": "Stedile, do MST, chama ajuste fiscal de enganação e defende ministros mais jovens e representativos",
-      "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/stedile-do-mst-chama-ajuste-fiscal-de-enganacao-e-defende-ministros-mais-jovens-e-representativos.shtml",
-      "data": "2026-11-19T07:00+00:00"
+      "titulo": "Vídeo: Senado Aprova: Ajuste fiscal para 2027",
+      "url": "https://www12.senado.leg.br/noticias/videos/2026/11/senado-aprova-ajuste-fiscal-para-2027",
+      "data": "2026-11-19T20:36+00:00"
     }
   ],
-  "atualizado": "2026-11-19T13:33+00:00"
+  "atualizado": "2026-11-19T22:17+00:00"
 };
