@@ -2,33 +2,33 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "ajuste-fiscal",
-  "veiculos": 7,
-  "noticias": 30,
+  "veiculos": 8,
+  "noticias": 28,
   "manchetes": [
     {
-      "veiculo": "g1",
-      "titulo": "Motta diz que vai convocar sessão para votar ajuste fiscal na segunda-feira",
-      "url": "https://g1.globo.com/politica/noticia/2026/11/18/motta-convoca-sessao-para-votar-ajuste-fiscal-na-segunda-feira.ghtml",
-      "data": "2026-11-19T02:41+00:00"
+      "veiculo": "Metrópoles",
+      "titulo": "Domingos Sávio critica ajuste fiscal de Lula: \"Brasil indo para o buraco\"",
+      "url": "https://www.metropoles.com/minas-gerais/domingos-savio-critica-ajuste-fiscal-de-lula-brasil-indo-para-o-buraco",
+      "data": "2026-11-19T13:03+00:00"
     },
     {
-      "veiculo": "Poder360",
-      "titulo": "Saiba como votou cada senador nos destaques do ajuste fiscal",
-      "url": "https://www.poder360.com.br/poder-congresso/saiba-como-votou-cada-senador-nos-destaques-do-ajuste-fiscal/",
-      "data": "2026-11-19T02:25+00:00"
+      "veiculo": "CNN Brasil",
+      "titulo": "Após avanço do plano Moretti, Lula planeja novo pacote de ajuste fiscal",
+      "url": "https://www.cnnbrasil.com.br/politica/apos-avanco-do-plano-moretti-lula-planeja-novo-pacote-de-ajuste-fiscal/",
+      "data": "2026-11-19T12:48+00:00"
     },
     {
-      "veiculo": "Agência Câmara",
-      "titulo": "Proposta de ajuste fiscal entra na pauta de sessão extraordinária da Câmara na próxima segunda-feira",
-      "url": "https://www.camara.leg.br/noticias/1320935-proposta-de-ajuste-fiscal-entra-na-pauta-de-sessao-extraordinaria-da-camara-na-proxima-segunda-feira",
-      "data": "2026-11-19T00:50+00:00"
+      "veiculo": "Agência Senado",
+      "titulo": "Vídeo: Com acordo sobre estados e municípios, Senado conclui ajuste fiscal",
+      "url": "https://www12.senado.leg.br/noticias/videos/2026/11/com-acordo-sobre-estados-e-municipios-senado-conclui-ajuste-fiscal",
+      "data": "2026-11-19T12:33+00:00"
     },
     {
-      "veiculo": "Estadão",
-      "titulo": "Veja como votou cada senador nos destaques do projeto de ajuste fiscal do governo Lula",
-      "url": "https://www.estadao.com.br/economia/veja-como-votou-cada-senador-destaques-projeto-ajuste-fiscal-lula/",
-      "data": "2026-11-19T00:28+00:00"
+      "veiculo": "Folha de S.Paulo",
+      "titulo": "Stedile, do MST, chama ajuste fiscal de enganação e defende ministros mais jovens e representativos",
+      "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/stedile-do-mst-chama-ajuste-fiscal-de-enganacao-e-defende-ministros-mais-jovens-e-representativos.shtml",
+      "data": "2026-11-19T07:00+00:00"
     }
   ],
-  "atualizado": "2026-11-19T03:41+00:00"
+  "atualizado": "2026-11-19T13:33+00:00"
 };
