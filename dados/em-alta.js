@@ -1,34 +1,34 @@
 /* Gerado por ferramentas/em_alta.py a partir dos feeds da imprensa. Não edite à mão:
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
-  "tema": "ajuste-fiscal",
+  "tema": "escala-6x1",
   "veiculos": 6,
-  "noticias": 17,
+  "noticias": 16,
   "manchetes": [
     {
-      "veiculo": "g1",
-      "titulo": "Relator do ajuste fiscal na Câmara mantém texto do Senado; projeto deve ser votado na segunda-feira",
-      "url": "https://g1.globo.com/politica/noticia/2026/11/19/relator-do-ajuste-fiscal-na-camara-mantem-texto-do-senado-projeto-deve-ser-votado-segunda-feira.ghtml",
-      "data": "2026-11-20T02:37+00:00"
-    },
-    {
-      "veiculo": "Metrópoles",
-      "titulo": "Flávio critica ajuste fiscal e diz que Congresso virou “capacho do governo”",
-      "url": "https://www.metropoles.com/brasil/flavio-critica-ajuste-fiscal-e-diz-que-congresso-virou-capacho-do-governo",
-      "data": "2026-11-20T01:34+00:00"
+      "veiculo": "Estadão",
+      "titulo": "Como as construtoras estão se preparando para reduzir o impacto do fim da escala 6x1",
+      "url": "https://www.estadao.com.br/economia/como-as-construtoras-estao-se-preparando-para-reduzir-o-impacto-do-fim-da-escala-6x1/",
+      "data": "2026-11-20T08:30+00:00"
     },
     {
       "veiculo": "CNN Brasil",
-      "titulo": "Relator do ajuste fiscal na Câmara mantém texto aprovado pelo Senado",
-      "url": "https://www.cnnbrasil.com.br/politica/relator-do-ajuste-fiscal-na-camara-mantem-texto-aprovado-pelo-senado/",
-      "data": "2026-11-19T22:29+00:00"
+      "titulo": "Regulamentação do fim da escala 6×1 gera insegurança, diz juiz do Trabalho",
+      "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/regulamentacao-do-fim-da-escala-6x1-gera-inseguranca-diz-juiz-do-trabalho/",
+      "data": "2026-11-20T07:24+00:00"
     },
     {
-      "veiculo": "Estadão",
-      "titulo": "Oposição defende mudar ajuste fiscal na Câmara, mas esbarra em acordo de Motta com governo",
-      "url": "https://www.estadao.com.br/economia/oposicao-defende-mudar-ajuste-fiscal-na-camara-mas-esbarra-em-acordo-de-motta-com-governo/",
-      "data": "2026-11-19T21:11+00:00"
+      "veiculo": "Folha de S.Paulo",
+      "titulo": "Regras para categorias específicas e descanso remunerado com fim da 6x1 saem a partir de segunda (23)",
+      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/regras-para-categorias-especificas-e-descanso-remunerado-com-fim-da-6x1-saem-a-partir-de-segunda-23.shtml",
+      "data": "2026-11-20T07:00+00:00"
+    },
+    {
+      "veiculo": "BBC News Brasil",
+      "titulo": "Hora extra mais cara com fim da 6x1? Veja conta com salário de R$ 3 mil e o que muda com decreto de Lula",
+      "url": "https://www.bbc.com/portuguese/articles/cvlyjkw9zr5jo?at_medium=RSS&at_campaign=rss",
+      "data": "2026-11-19T20:39+00:00"
     }
   ],
-  "atualizado": "2026-11-20T03:33+00:00"
+  "atualizado": "2026-11-20T13:14+00:00"
 };
