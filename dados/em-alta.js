@@ -2,9 +2,15 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "escala-6x1",
-  "veiculos": 5,
-  "noticias": 13,
+  "veiculos": 6,
+  "noticias": 14,
   "manchetes": [
+    {
+      "veiculo": "CNN Brasil",
+      "titulo": "Fim da escala 6×1: Marinho diz que contratação contem impacto de hora extra",
+      "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/fim-da-escala-6x1-marinho-diz-que-contratacao-contem-impacto-de-hora-extra/",
+      "data": "2026-11-20T21:41+00:00"
+    },
     {
       "veiculo": "Estadão",
       "titulo": "Como as construtoras estão se preparando para reduzir o impacto do fim da escala 6x1",
@@ -22,13 +28,7 @@ window.EM_ALTA_AUTO = {
       "titulo": "Hora extra mais cara com fim da 6x1? Veja conta com salário de R$ 3 mil e o que muda com decreto de Lula",
       "url": "https://www.bbc.com/portuguese/articles/cvlyjkw9zr5jo?at_medium=RSS&at_campaign=rss",
       "data": "2026-11-19T20:39+00:00"
-    },
-    {
-      "veiculo": "Agência Câmara",
-      "titulo": "Empresários pedem mais tempo para adaptação à escala 5x2 com 42 horas semanais",
-      "url": "https://www.camara.leg.br/noticias/1321259-empresarios-pedem-mais-tempo-para-adaptacao-a-escala-5x2-com-42-horas-semanais",
-      "data": "2026-11-19T19:11+00:00"
     }
   ],
-  "atualizado": "2026-11-20T21:19+00:00"
+  "atualizado": "2026-11-21T02:34+00:00"
 };
