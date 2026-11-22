@@ -2,21 +2,9 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "ajuste-fiscal",
-  "veiculos": 5,
-  "noticias": 7,
+  "veiculos": 2,
+  "noticias": 4,
   "manchetes": [
-    {
-      "veiculo": "Poder360",
-      "titulo": "Lula diz ficar triste com críticas da esquerda ao ajuste fiscal",
-      "url": "https://www.poder360.com.br/poder-governo/lula-diz-ficar-triste-com-criticas-da-esquerda-ao-ajuste-fiscal/",
-      "data": "2026-11-21T17:28+00:00"
-    },
-    {
-      "veiculo": "CNN Brasil",
-      "titulo": "Lula rebate críticas de “companheiros” a ajuste fiscal e elogia Moretti",
-      "url": "https://www.cnnbrasil.com.br/politica/lula-rebate-criticas-de-companheiros-a-ajuste-fiscal-e-elogia-moretti/",
-      "data": "2026-11-21T15:30+00:00"
-    },
     {
       "veiculo": "Estadão",
       "titulo": "Embate na esquerda sobre ajuste fiscal lembra disputa que deu origem ao PSOL em 2003",
@@ -30,5 +18,5 @@ window.EM_ALTA_AUTO = {
       "data": "2026-11-21T04:01+00:00"
     }
   ],
-  "atualizado": "2026-11-21T19:30+00:00"
+  "atualizado": "2026-11-22T00:29+00:00"
 };
