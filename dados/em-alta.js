@@ -2,27 +2,33 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "ajuste-fiscal",
-  "veiculos": 3,
-  "noticias": 5,
+  "veiculos": 7,
+  "noticias": 12,
   "manchetes": [
     {
+      "veiculo": "Metrópoles",
+      "titulo": "Ajuste fiscal: PSol pede destaque para limite de investimentos",
+      "url": "https://www.metropoles.com/colunas/igor-gadelha/ajuste-fiscal-psol-pede-destaque-para-limite-de-investimentos",
+      "data": "2026-11-23T14:31+00:00"
+    },
+    {
+      "veiculo": "CNN Brasil",
+      "titulo": "Risco Brasil atinge maior patamar desde 2025 com ajuste fiscal em foco",
+      "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/risco-brasil-atinge-maior-patamar-desde-2025-com-ajuste-fiscal-em-foco/",
+      "data": "2026-11-23T14:07+00:00"
+    },
+    {
+      "veiculo": "Poder360",
+      "titulo": "Câmara analisa pacote de ajuste fiscal do governo nesta 2ª feira",
+      "url": "https://www.poder360.com.br/poder-congresso/camara-analisa-pacote-de-ajuste-fiscal-do-governo-nesta-2a-feira/",
+      "data": "2026-11-23T13:56+00:00"
+    },
+    {
       "veiculo": "Estadão",
-      "titulo": "Centrão entra no jogo de Lula para garantir cargos e facilita aprovação do ajuste fiscal na Câmara",
-      "url": "https://www.estadao.com.br/politica/coluna-do-estadao/centrao-entra-no-jogo-de-lula-para-garantir-cargos-e-facilita-aprovacao-do-ajuste-fiscal-na-camara/",
-      "data": "2026-11-22T08:30+00:00"
-    },
-    {
-      "veiculo": "g1",
-      "titulo": "Câmara deve votar projeto de ajuste fiscal nesta segunda",
-      "url": "https://g1.globo.com/politica/noticia/2026/11/22/camara-deve-votar-projeto-de-ajuste-fiscal-nesta-segunda.ghtml",
-      "data": "2026-11-22T06:00+00:00"
-    },
-    {
-      "veiculo": "Folha de S.Paulo",
-      "titulo": "Os riscos políticos do ajuste fiscal",
-      "url": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/celso-rocha-de-barros/2026/11/os-riscos-politicos-do-ajuste-fiscal.shtml",
-      "data": "2026-11-22T02:00+00:00"
+      "titulo": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal",
+      "url": "https://www.estadao.com.br/economia/dolar-fuga-de-capital-cenario-sombrio-ajuste-fiscal-ashmore/",
+      "data": "2026-11-23T13:04+00:00"
     }
   ],
-  "atualizado": "2026-11-23T03:48+00:00"
+  "atualizado": "2026-11-23T14:58+00:00"
 };
