@@ -2,33 +2,33 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "ajuste-fiscal",
-  "veiculos": 7,
-  "noticias": 22,
+  "veiculos": 9,
+  "noticias": 31,
   "manchetes": [
     {
-      "veiculo": "CNN Brasil",
-      "titulo": "Ajuste fiscal passa com 7 votos do PL, mas sem apoio de Lindbergh e do PSOL",
-      "url": "https://www.cnnbrasil.com.br/politica/ajuste-fiscal-passa-com-7-votos-do-pl-mas-sem-apoio-de-lindbergh-e-do-psol/",
-      "data": "2026-11-24T12:27+00:00"
-    },
-    {
-      "veiculo": "Agência Câmara",
-      "titulo": "Motta: ajuste fiscal garante mais investimentos para melhorar a vida de quem mais precisa",
-      "url": "https://www.camara.leg.br/noticias/1322204-motta-ajuste-fiscal-garante-mais-investimentos-para-melhorar-a-vida-de-quem-mais-precisa",
-      "data": "2026-11-24T11:43+00:00"
+      "veiculo": "g1",
+      "titulo": "Brasil terá recessão se Lula não fizer ajuste fiscal mais robusto, diz Eduardo Giannetti",
+      "url": "https://g1.globo.com/economia/noticia/2026/11/24/brasil-tera-recessao-se-lula-nao-fizer-ajuste-fiscal-mais-robusto-diz-eduardo-giannetti.ghtml",
+      "data": "2026-11-24T22:24+00:00"
     },
     {
       "veiculo": "Agência Brasil",
-      "titulo": "Câmara aprova ajuste fiscal sem alterações; projeto segue para sanção",
-      "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/camara-aprova-ajuste-fiscal-sem-alteracoes-projeto-segue-para-sancao",
-      "data": "2026-11-24T11:22+00:00"
+      "titulo": "Dólar cai para R$ 5,91 com expectativa de ajuste fiscal",
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/dolar-cai-para-r-591-com-expectativa-de-ajuste-fiscal",
+      "data": "2026-11-24T22:01+00:00"
     },
     {
-      "veiculo": "g1",
-      "titulo": "Após Câmara aprovar ajuste fiscal de Lula, Hugo Motta defende novas medidas ainda em 2026",
-      "url": "https://g1.globo.com/politica/noticia/2026/11/24/apos-camara-aprovar-ajuste-de-lula-hugo-motta-defende-novas-medidas-fiscais-ainda-em-2026.ghtml",
-      "data": "2026-11-24T06:49+00:00"
+      "veiculo": "Agência Câmara",
+      "titulo": "Lei do ajuste fiscal é sancionada sem vetos e já está em vigor",
+      "url": "https://www.camara.leg.br/noticias/1322586-lei-do-ajuste-fiscal-e-sancionada-sem-vetos-e-ja-esta-em-vigor",
+      "data": "2026-11-24T21:58+00:00"
+    },
+    {
+      "veiculo": "Poder360",
+      "titulo": "Dólar cai a R$ 5,910 com ajuste fiscal; Bolsa também fecha em queda",
+      "url": "https://www.poder360.com.br/poder-economia/dolar-cai-a-r-5910-com-ajuste-fiscal-bolsa-tambem-fecha-em-queda/",
+      "data": "2026-11-24T21:37+00:00"
     }
   ],
-  "atualizado": "2026-11-24T12:46+00:00"
+  "atualizado": "2026-11-24T23:07+00:00"
 };
