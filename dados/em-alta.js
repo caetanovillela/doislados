@@ -2,9 +2,21 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "ajuste-fiscal",
-  "veiculos": 9,
-  "noticias": 31,
+  "veiculos": 7,
+  "noticias": 28,
   "manchetes": [
+    {
+      "veiculo": "Folha de S.Paulo",
+      "titulo": "Governo Lula libera R$ 3,4 bi do Orçamento após excluir mais R$ 10,5 bi da meta fiscal de 2026",
+      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-lula-libera-r-34-bi-do-orcamento-apos-excluir-mais-despesas-da-meta-de-2026.shtml",
+      "data": "2026-11-25T02:13+00:00"
+    },
+    {
+      "veiculo": "Estadão",
+      "titulo": "Após projeto de ajuste fiscal, PEC com novas medidas pode gerar novo ‘racha’ na bancada governista",
+      "url": "https://www.estadao.com.br/economia/apos-projeto-de-ajuste-fiscal-pec-com-novas-medidas-pode-gerar-novo-racha-na-bancada-governista/",
+      "data": "2026-11-24T23:15+00:00"
+    },
     {
       "veiculo": "g1",
       "titulo": "Brasil terá recessão se Lula não fizer ajuste fiscal mais robusto, diz Eduardo Giannetti",
@@ -16,19 +28,7 @@ window.EM_ALTA_AUTO = {
       "titulo": "Dólar cai para R$ 5,91 com expectativa de ajuste fiscal",
       "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/dolar-cai-para-r-591-com-expectativa-de-ajuste-fiscal",
       "data": "2026-11-24T22:01+00:00"
-    },
-    {
-      "veiculo": "Agência Câmara",
-      "titulo": "Lei do ajuste fiscal é sancionada sem vetos e já está em vigor",
-      "url": "https://www.camara.leg.br/noticias/1322586-lei-do-ajuste-fiscal-e-sancionada-sem-vetos-e-ja-esta-em-vigor",
-      "data": "2026-11-24T21:58+00:00"
-    },
-    {
-      "veiculo": "Poder360",
-      "titulo": "Dólar cai a R$ 5,910 com ajuste fiscal; Bolsa também fecha em queda",
-      "url": "https://www.poder360.com.br/poder-economia/dolar-cai-a-r-5910-com-ajuste-fiscal-bolsa-tambem-fecha-em-queda/",
-      "data": "2026-11-24T21:37+00:00"
     }
   ],
-  "atualizado": "2026-11-24T23:07+00:00"
+  "atualizado": "2026-11-25T05:30+00:00"
 };
