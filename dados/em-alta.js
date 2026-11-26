@@ -2,20 +2,20 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "ajuste-fiscal",
-  "veiculos": 5,
-  "noticias": 21,
+  "veiculos": 4,
+  "noticias": 19,
   "manchetes": [
+    {
+      "veiculo": "CNN Brasil",
+      "titulo": "Análise: Durigan assume protagonismo no ajuste fiscal",
+      "url": "https://www.cnnbrasil.com.br/politica/analise-durigan-assume-protagonismo-no-ajuste-fiscal/",
+      "data": "2026-11-25T22:27+00:00"
+    },
     {
       "veiculo": "g1",
       "titulo": "Equipe de Lula não descarta convocação do Congresso em janeiro, no recesso, para aprovar PEC da 2ª etapa do ajuste fiscal",
       "url": "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/11/25/equipe-de-lula-nao-descarta-convocacao-do-congresso-em-janeiro-no-recesso-para-aprovar-pec-da-2a-etapa-do-ajuste-fiscal.ghtml",
       "data": "2026-11-25T16:33+00:00"
-    },
-    {
-      "veiculo": "CNN Brasil",
-      "titulo": "Moretti projeta espaço adicional de R$ 9 bi no PLOA 2027 com ajuste fiscal",
-      "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/moretti-projeta-espaco-adicional-de-r-9-bi-no-ploa-2027-com-ajuste-fiscal/",
-      "data": "2026-11-25T15:50+00:00"
     },
     {
       "veiculo": "Folha de S.Paulo",
@@ -24,11 +24,11 @@ window.EM_ALTA_AUTO = {
       "data": "2026-11-25T02:13+00:00"
     },
     {
-      "veiculo": "Estadão",
-      "titulo": "Lula chama Haddad para discutir nova etapa de ajuste fiscal e dá bronca em Lindbergh",
-      "url": "https://www.estadao.com.br/politica/vera-rosa/lula-chama-haddad-para-discutir-nova-etapa-de-ajuste-fiscal-e-da-bronca-em-lindbergh/",
-      "data": "2026-11-24T21:36+00:00"
+      "veiculo": "BBC News Brasil",
+      "titulo": "Câmara aprova ajuste fiscal de Lula: por que pacote é tão polêmico e não deve ser suficiente, segundo economistas",
+      "url": "https://www.bbc.com/portuguese/articles/cqx2we1jgnzgo?at_medium=RSS&at_campaign=rss",
+      "data": "2026-11-24T02:50+00:00"
     }
   ],
-  "atualizado": "2026-11-25T17:26+00:00"
+  "atualizado": "2026-11-26T01:51+00:00"
 };
