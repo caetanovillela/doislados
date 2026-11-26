@@ -1,28 +1,34 @@
 /* Gerado por ferramentas/em_alta.py a partir dos feeds da imprensa. Não edite à mão:
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
-  "tema": "ajuste-fiscal",
-  "veiculos": 3,
+  "tema": "reforma-tributaria",
+  "veiculos": 5,
   "noticias": 9,
   "manchetes": [
     {
-      "veiculo": "Poder360",
-      "titulo": "José Guimarães volta ao cargo de ministro após votar ajuste fiscal",
-      "url": "https://www.poder360.com.br/poder-governo/jose-guimaraes-volta-ao-cargo-de-ministro-apos-votar-ajuste-fiscal/",
-      "data": "2026-11-26T09:47+00:00"
+      "veiculo": "Folha de S.Paulo",
+      "titulo": "Veja o que Trabuco, cotado para Fazenda, já disse sobre política fiscal, programas sociais e reforma tributária",
+      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/veja-o-que-trabuco-cotado-para-fazenda-ja-disse-sobre-politica-fiscal-programas-sociais-e-reforma-tributaria.shtml",
+      "data": "2026-11-26T19:48+00:00"
     },
     {
       "veiculo": "g1",
-      "titulo": "Equipe de Lula não descarta convocação do Congresso em janeiro, no recesso, para aprovar PEC da 2ª etapa do ajuste fiscal",
-      "url": "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/11/25/equipe-de-lula-nao-descarta-convocacao-do-congresso-em-janeiro-no-recesso-para-aprovar-pec-da-2a-etapa-do-ajuste-fiscal.ghtml",
-      "data": "2026-11-25T16:33+00:00"
+      "titulo": "Reforma tributária: sem benefícios a produtos e setores, imposto do governo cairia de 11,3% para 7% em 2027, estima órgão do Senado",
+      "url": "https://g1.globo.com/economia/noticia/2026/11/26/reforma-tributaria-sem-beneficios-a-produtos-e-setores-imposto-do-governo-cairia-de-113percent-para-7percent-em-2027-estima-orgao-do-senado.ghtml",
+      "data": "2026-11-26T19:00+00:00"
     },
     {
-      "veiculo": "Folha de S.Paulo",
-      "titulo": "Governo Lula libera R$ 3,4 bi do Orçamento após excluir mais R$ 10,5 bi da meta fiscal de 2026",
-      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-lula-libera-r-34-bi-do-orcamento-apos-excluir-mais-despesas-da-meta-de-2026.shtml",
-      "data": "2026-11-25T02:13+00:00"
+      "veiculo": "Poder360",
+      "titulo": "Agro, comércio e transporte pedem para STF adiar início da CBS",
+      "url": "https://www.poder360.com.br/poder-justica/agro-comercio-e-transporte-pedem-ao-stf-adiar-a-cbs/",
+      "data": "2026-11-26T18:39+00:00"
+    },
+    {
+      "veiculo": "Agência Senado",
+      "titulo": "IFI entrega estudo sobre alíquota da CBS para Eduardo Braga",
+      "url": "https://www12.senado.leg.br/noticias/materias/2026/11/26/ifi-entrega-estudo-sobre-aliquota-da-cbs-para-eduardo-braga",
+      "data": "2026-11-26T17:38+00:00"
     }
   ],
-  "atualizado": "2026-11-26T11:07+00:00"
+  "atualizado": "2026-11-26T20:18+00:00"
 };
