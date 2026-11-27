@@ -1,34 +1,34 @@
 /* Gerado por ferramentas/em_alta.py a partir dos feeds da imprensa. Não edite à mão:
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
-  "tema": "reforma-tributaria",
-  "veiculos": 5,
-  "noticias": 9,
+  "tema": "ajuste-fiscal",
+  "veiculos": 4,
+  "noticias": 5,
   "manchetes": [
     {
-      "veiculo": "Folha de S.Paulo",
-      "titulo": "Veja o que Trabuco, cotado para Fazenda, já disse sobre política fiscal, programas sociais e reforma tributária",
-      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/veja-o-que-trabuco-cotado-para-fazenda-ja-disse-sobre-politica-fiscal-programas-sociais-e-reforma-tributaria.shtml",
-      "data": "2026-11-26T19:48+00:00"
+      "veiculo": "CNN Brasil",
+      "titulo": "Trabuco deve participar da elaboração de ajuste fiscal, diz Furlanetti",
+      "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/trabuco-deve-participar-da-elaboracao-de-ajuste-fiscal-diz-furlanetti/",
+      "data": "2026-11-27T01:26+00:00"
+    },
+    {
+      "veiculo": "BBC News Brasil",
+      "titulo": "Trabuco aceita convite de Lula: quem é o novo ministro da Fazenda que defende ajuste fiscal e redução 'das desigualdades'",
+      "url": "https://www.bbc.com/portuguese/articles/c3gre9xxe92zo?at_medium=RSS&at_campaign=rss",
+      "data": "2026-11-26T23:47+00:00"
+    },
+    {
+      "veiculo": "Estadão",
+      "titulo": "Líder do PT na Câmara diz que Trabuco na Fazenda ‘não é a melhor opção’ e rechaça ‘ajuste fiscal 2′",
+      "url": "https://www.estadao.com.br/economia/lider-do-pt-na-camara-diz-que-trabuco-na-fazenda-nao-e-a-melhor-opcao-e-rechaca-ajuste-fiscal-2/",
+      "data": "2026-11-26T19:42+00:00"
     },
     {
       "veiculo": "g1",
-      "titulo": "Reforma tributária: sem benefícios a produtos e setores, imposto do governo cairia de 11,3% para 7% em 2027, estima órgão do Senado",
-      "url": "https://g1.globo.com/economia/noticia/2026/11/26/reforma-tributaria-sem-beneficios-a-produtos-e-setores-imposto-do-governo-cairia-de-113percent-para-7percent-em-2027-estima-orgao-do-senado.ghtml",
-      "data": "2026-11-26T19:00+00:00"
-    },
-    {
-      "veiculo": "Poder360",
-      "titulo": "Agro, comércio e transporte pedem para STF adiar início da CBS",
-      "url": "https://www.poder360.com.br/poder-justica/agro-comercio-e-transporte-pedem-ao-stf-adiar-a-cbs/",
-      "data": "2026-11-26T18:39+00:00"
-    },
-    {
-      "veiculo": "Agência Senado",
-      "titulo": "IFI entrega estudo sobre alíquota da CBS para Eduardo Braga",
-      "url": "https://www12.senado.leg.br/noticias/materias/2026/11/26/ifi-entrega-estudo-sobre-aliquota-da-cbs-para-eduardo-braga",
-      "data": "2026-11-26T17:38+00:00"
+      "titulo": "Equipe de Lula não descarta convocação do Congresso em janeiro, no recesso, para aprovar PEC da 2ª etapa do ajuste fiscal",
+      "url": "https://g1.globo.com/politica/blog/valdo-cruz/post/2026/11/25/equipe-de-lula-nao-descarta-convocacao-do-congresso-em-janeiro-no-recesso-para-aprovar-pec-da-2a-etapa-do-ajuste-fiscal.ghtml",
+      "data": "2026-11-25T16:33+00:00"
     }
   ],
-  "atualizado": "2026-11-26T20:18+00:00"
+  "atualizado": "2026-11-27T02:58+00:00"
 };
