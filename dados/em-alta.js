@@ -2,9 +2,21 @@
    para fixar um destaque escrito à mão, use EM_ALTA em dados/temas.js com "fixar": true. */
 window.EM_ALTA_AUTO = {
   "tema": "ajuste-fiscal",
-  "veiculos": 2,
-  "noticias": 7,
+  "veiculos": 4,
+  "noticias": 9,
   "manchetes": [
+    {
+      "veiculo": "Folha de S.Paulo",
+      "titulo": "Após 'efeito Trabuco', Lula inicia recalibragem do discurso do ajuste fiscal",
+      "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/adriana-fernandes/2026/11/apos-efeito-trabuco-lula-inicia-recalibragem-do-discurso-do-ajuste-fiscal.shtml",
+      "data": "2026-11-27T23:40+00:00"
+    },
+    {
+      "veiculo": "BBC News Brasil",
+      "titulo": "Ajuste fiscal: por que ele desagrada muita gente e divide economistas",
+      "url": "https://www.bbc.com/portuguese/watch/c64gnqg005zwo?at_medium=RSS&at_campaign=rss",
+      "data": "2026-11-27T22:28+00:00"
+    },
     {
       "veiculo": "g1",
       "titulo": "Meirelles defende que Trabuco anuncie medidas de ajuste fiscal logo no início da gestão",
@@ -18,5 +30,5 @@ window.EM_ALTA_AUTO = {
       "data": "2026-11-27T18:06+00:00"
     }
   ],
-  "atualizado": "2026-11-27T22:08+00:00"
+  "atualizado": "2026-11-28T04:00+00:00"
 };
